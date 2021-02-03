@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>The Tempest</name>
+        <update version="0.0.1">
+            <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/warlock-tempest.xml" />
+        </update>
+    </info>
+    <element name="The Tempest" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_THE_TEMPEST">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>You have made pact with a tempestuous being, born of wind and rain. An ancient elemental, powerful storm giant, or perhaps a demigod of disagreeable weather. What they sought through you may vary, but the mere touch of their powers causes the storm winds to bend the knee.</p>
+            <p class="indent">Such powers tend to be far better at calling the chaotic power at their disposal than calming it, and many who ride the tempest will find the same is true for them, leaving destruction in their wake if they are not careful in how the use their power... if they even care about what remains in their wake.</p>
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_EXPANDED_SPELL_LIST" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_BUILDING_STORM" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_ROLLING_THUNDER" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_TEMPESTUOUS_BLASTS" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_WHISPERING_WINDS" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_EVERSTORM" />
+        </description>
+        <sheet display="false">
+            <description>You have made pact with a tempestuous being, born of wind and rain. An ancient elemental, powerful storm giant, or perhaps a demigod of disagreeable weather.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_EXPANDED_SPELL_LIST" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_BUILDING_STORM" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_ROLLING_THUNDER" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_TEMPESTUOUS_BLASTS" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_WHISPERING_WINDS" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_EVERSTORM" level="14" />
+        </rules>
+    </element>
+    <element name="Expanded Spell List" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_EXPANDED_SPELL_LIST">
+        <description>
+            <p>The ancient entity of tempestuous power you've made a pact lets you choose from an expended list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+            <h5>TEMPEST EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>feather fall, thunderwave</td></tr>
+                <tr><td>2nd</td><td>gust of wind, levitate</td></tr>
+                <tr><td>3rd</td><td>lightning bolt, sleet storm</td></tr>
+                <tr><td>4th</td><td>ice storm, storm sphere</td></tr>
+                <tr><td>5th</td><td>control winds, maelstorm</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>The following spells are added to the warlock spell list for you.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_FEATHER_FALL</extend>
+            <extend>ID_PHB_SPELL_THUNDERWAVE</extend>
+            <extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+            <extend>ID_PHB_SPELL_LEVITATE</extend>
+            <extend>ID_PHB_SPELL_LIGHTNING_BOLT</extend>
+            <extend>ID_PHB_SPELL_SLEET_STORM</extend>
+            <extend>ID_PHB_SPELL_ICE_STORM</extend>
+            <extend>ID_XGTE_SPELL_STORM_SPHERE</extend>
+            <extend>ID_XGTE_SPELL_CONTROL_WINDS</extend>
+            <extend>ID_XGTE_SPELL_MAELSTROM</extend>
+        </spellcasting>
+    </element>
+    <element name="Building Storm" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_BUILDING_STORM">
+        <description>
+            <p>Starting at 1st level, when you cast a spell of first level or higher on your turn, a storm begins to brew around you. The storm gains Storm Levels based equal to the level of the spell slot used. If you cast a spell while the storm is active, the storm level is increased by the level of the spell slot used (up to a maximum equal to your Charisma ability modifier).</p>
+            <p class="indent">While a storm is active around you, you gain the following abilities based on how powerful the storm is:</p>
+            <table>
+                <thead>
+                    <tr><td>Storm Level</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>1</td><td>You can cast <i>gust</i> as a bonus action.</td></tr>
+                <tr><td>2</td><td>You can use your reaction to impose disadvantage on a ranged weapon attack made against a target within 15 feet of you.</td></tr>
+                <tr><td>3</td><td>You are under the effect of <i>levitate</i></td></tr>
+                <tr><td>4</td><td>If a creature ends their turn within 10 feet of you or strikes you with a melee attack, you can use your reaction to deal 1d8 lightning damage to them.</td></tr>
+                <tr><td>5</td><td>You gain flying speed equal to your movement speed.</td></tr>
+            </table>
+            <p class="indent">The storm loses 1 level each time you end your turn without casting a 1st level or higher spell. You can prevent the decay of storm by concentrating on maintaining the storm as if it were a spell for up to 1 minute after you last cast a spell 1st level or higher, provided you aren't concentrating on any other spells.</p>
+        </description>
+        <sheet>
+            <description level="1">When you cast a spell of first level or higher on your turn, your Storm Level increases by the level of the slot used (up to a maximum level of {{charisma:modifier}}. The storm loses 1 level each turn you don't cast a spell or concentrate on the storm. 
+            1) You can cast gust as a bonus action. 
+            2) You can use your reaction to impose disadvantage on a ranged weapon attack made against a target within 15 feet of you. 
+            3) You are under the effect of levitate. 
+            4) If a creature ends their turn within 10 feet of you or strikes you with a melee attack, you can use your reaction to deal 1d8 lightning damage to them. 
+            5) You gain flying speed of {{speed}}.</description>
+            <description level="14">When you cast a spell of first level or higher on your turn, your Storm Level increases by the level of the slot used (up to a maximum level of {{charisma:modifier}}. You can end the effect of your storm as an action. You can spend an action to start building a storm around you, or increase the storm level by one if you already have a storm.
+            1) You can cast gust as a bonus action. 
+            2) You can use your reaction to impose disadvantage on a ranged weapon attack made against a target within 15 feet of you. 
+            3) You are under the effect of levitate. 
+            4) If a creature ends their turn within 10 feet of you or strikes you with a melee attack, you can use your reaction to deal 1d8 lightning damage to them. 
+            5) You gain flying speed of {{speed}}.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_GUST" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
+        </rules>
+    </element>
+    <element name="Rolling Thunder" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_ROLLING_THUNDER">
+        <description>
+            <p>Starting at 6th level, you learn the spell <i>call lightning</i> and while you have a Storm Level of 1 or higher, you can use your action to conjure bolts of lightning as per a 3rd level <i>call lightning</i> spell, treating your Building Storm as the storm cloud (even if you are indoors). If your Storm Level is 2 or higher, you are considered under "stormy conditions" as per the spell.</p>
+            <p class="indent">If you cast <i>call lightning</i> expending a pact magic slot, your storm level does not decrease while concentrating on it.</p>
+        </description>
+        <sheet>
+            <description action="Action">You learn the spell call lightning and while you have a Storm Level of 1 or higher, you can use your action to conjure bolts of lightning as per a 3rd level call lightning spell, treating your Building Storm as the storm cloud (even if you are indoors). If your Storm Level is 2 or higher, you are considered under "stormy conditions" as per the spell. If you cast call lightning expending a pact magic slot, your storm level does not decrease while concentrating on it.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Tempestuous Blasts" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_TEMPESTUOUS_BLASTS">
+        <description>
+            <p>Additionally at 6th level, when you cast <i>eldritch blast</i> you can choose to replace the damage type with lightning or thunder damage.</p>
+        </description>
+        <sheet>
+            <description>When you cast <i>eldritch blast</i> you can choose to replace the damage type with lightning or thunder damage.</description>
+        </sheet>
+    </element>
+    <element name="Whispering Winds" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_WHISPERING_WINDS">
+        <description>
+            <p>Starting at 10th level, you can hear a whisper on the winds that tells you where they go what they do. You can predict the weather accurately up to 8 hours away, and know if any weather effect is natural or magical in nature.</p>
+            <p class="indent">Additionally, you may hear other things on the winds by way of what they hear; you can cast scrying without expending a spell slot or requiring any verbal or material components, but when cast in this way, your sensor can only hear and not see. A target gets a -5 to the save if they are in a place open to the wind (such as outdoors), and a +5 to a place that the wind could not reach (such as the Underdark).</p>
+            <p class="indent">Once you cast scrying in this way, you cannot cast it again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long rest">You can predict the weather accurately up to 8 hours away, and know if any weather effect is natural or magical in nature. You can cast scrying without expending a spell slot or requiring any verbal or material components, but when cast in this way, your sensor can only hear and not see. A target gets a -5 to the save if they are in a place open to the wind (such as outdoors), and a +5 to a place that the wind could not reach (such as the Underdark).</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" />
+        </rules>
+    </element>
+    <element name="name" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_EVERSTORM">
+        <description>
+            <p>Starting at 14th level, the Storm Level of your Building Storm no longer decreases at the end of your turn. You can end the effect of your storm as an action. You can spend an action to start building a storm around you, or increase the storm level by one if you already have a storm.</p>
+            <p class="indent">While the Storm Level is 1 or more, you can cast spells <i>feather fall</i> and <i>levitate</i> without expending spell slots as long as they are targeting creatures that are within 15 feet of you within the effect of the storm.</p>
+        </description>
+        <sheet>
+            <description>While the Storm Level is 1 or more, you can cast spells <i>feather fall</i> and <i>levitate</i> without expending spell slots as long as they are targeting creatures that are within 15 feet of you within the effect of the storm.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+        </rules>
+    </element>
+    <element name="Stormblessed" type="Class Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_CLASS_FEATURE_THE_TEMPEST_STORMBLESSED">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>The Tempest Patron</prerequisite>
+        <requirements>ID_KIBBLESTASTY_KTH_ARCHETYPE_THE_TEMPEST</requirements>
+        <description>
+            <p>You gain resistance to lightning and thunder damage. While in a natural storm, you are under the effect of <i>bless</i>.</p>
+        </description>
+        <sheet>
+            <description>You gain resistance to lightning and thunder damage. While in a natural storm, you are under the effect of <i>bless</i>.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_BLESS" />
+        </rules>
+    </element>
+    <element name="Stormcaller" type="Class Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_CLASS_FEATURE_THE_TEMPEST_STORMCALLER">
+        <supports>Eldritch Invocation</supports>
+        <prerequisite>The Tempest Patron, 15th level</prerequisite>
+        <requirements>ID_KIBBLESTASTY_KTH_ARCHETYPE_THE_TEMPEST, [level:15]</requirements>
+        <description>
+            <p>You learn the spell control weather and can cast it without expending a spell slot. When you cast it in this way, and change the Precipitation or Wind, you can only increase the stage.</p>
+        </description>
+        <sheet>
+            <description>You learn the spell control weather and can cast it without expending a spell slot. When you cast it in this way, and change the Precipitation or Wind, you can only increase the stage.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WEATHER" />
+        </rules>
+    </element>
+</elements>

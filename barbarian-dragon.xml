@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="barbarian-dragon.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/barbarian-dragon.xml" />
+        </update>
+    </info>
+    <element name="Path of the Dragon" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_PATH_OF_THE_DRAGON">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Barbarians tap into primal powers, and a Barbarian of this path taps into one of the most ancient and primeval of them all: the power of dragons.</p>
+            <p class="indent">Some say this path was born during the Dracorage by mortals tapping into the primal rage as it washed across the world, others say that only those with latent dragon blood coursing through them can walk this path. What all can agree on is the result is a being to be feared.</p>
+            <p class="indent">As with most Barbarian, ones following this path tend toward Chaos, as they contain potent destructive power that paces at the edges of the cage, just waiting to be unleashed. Some, particularly those rare individuals that channel metallic colors, may be exceptions to this tendency.</p>
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_UNLEASHED_SAVAGERY" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGONHIDE" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_TYRANT_OF_THE_SKIES" />
+        </description>
+        <sheet display="false">
+            <description>Barbarians of this path taps into one of the most ancient and primeval of them all: the power of dragons.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_UNLEASHED_SAVAGERY" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGONHIDE" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_TYRANT_OF_THE_SKIES" level="14" />
+        </rules>
+    </element>
+    <element name="Dragon Form" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM">
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you take on aspects of a draconic being, growing savage natural weapons as claws grow from your hands, fangs sprout from your maw, and a vicious lashing tail grows from your back which you can use to make unarmed strikes.</p>
+            <table>
+                <thead>
+                    <tr><td>Natural Weapon</td><td>Damage</td><td>Properties</td></tr>
+                </thead>
+                <tr><td>Claws</td><td>1d4 slashing</td><td></td></tr>
+                <tr><td>Tail</td><td>1d8 bludgeoning</td><td>Reach</td></tr>
+                <tr><td>Bite</td><td>1d10 piercing</td><td></td></tr>
+            </table>
+            <p class="indent">Whenever you attack with one of your natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action.</p>
+            <p class="indent">When you gain this feature, you pick a color, and gain resistance corresponding to the element type of that color on the following chart while raging.</p>
+            <table>
+                <thead>
+                    <tr><td>Dragon Color</td><td>Element Type</td></tr>
+                </thead>
+                <tr><td>Black</td><td>Acid</td></tr>
+                <tr><td>Blue</td><td>Lightning</td></tr>
+                <tr><td>Green</td><td>Poison</td></tr>
+                <tr><td>Red</td><td>Fire</td></tr>
+                <tr><td>White</td><td>Cold</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you enter a rage, you gain three natural weapons, which you can use to make unarmed strikes. Whenever you attack with one of your natural weapons using the Attack action on your turn, if you are not carrying any weapon or shield, you can make a single unarmed strike with your claws as a bonus action. Additionally, you gain resistance corresponding to your chosen color while raging.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_CLAWS" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_TAIL" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_BITE" />
+            <select type="Archetype Feature" name="Dragon Form" supports="Kibbles Dragon Form Color" />
+        </rules>
+    </element>
+    <element name="Claws" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_CLAWS">
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you take on aspects of a draconic being, growing savage natural weapons as claws grow from your hands. Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description level="3">When you enter a rage, your claws are natural weapons, which you can use to make unarmed strikes dealing 1d4+{{strength:modifier}} slashing damage.</description>
+            <description level="6">When you enter a rage, your claws are natural weapons, which you can use to make unarmed strikes dealing 1d4+{{strength:modifier}} slashing damage. They count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+    <element name="Tail" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_TAIL">
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you take on aspects of a draconic being, growing savage natural weapons as a vicious lashing tail grows from your back, which you can use to make unarmed strikes. If you hit with it, you deal bludgeoning damage equal to 1d8 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. Additionally, your tail gains the reach property.</p>
+        </description>
+        <sheet>
+            <description level="3">When you enter a rage, your tail is a natural weapon, which you can use to make unarmed strikes dealing 1d8+{{strength:modifier}} bludgeoning damage with the reach property.</description>
+            <description level="6">When you enter a rage, your tail is a natural weapon, which you can use to make unarmed strikes dealing 1d8+{{strength:modifier}} bludgeoning damage with the reach property. It counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+    <element name="Bite" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_BITE">
+        <description>
+            <p>When you choose this path at 3rd level, when you enter a rage, you take on aspects of a draconic being, growing savage natural weapons as fangs sprout from your maw. Your fangs are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d10 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+        </description>
+        <sheet>
+            <description level="3">When you enter a rage, your fangs are natural weapons, which you can use to make unarmed strikes dealing 1d10+{{strength:modifier}} piercing damage.</description>
+            <description level="6">When you enter a rage, your fangs are natural weapons, which you can use to make unarmed strikes dealing 1d10+{{strength:modifier}} piercing damage. They count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+        </sheet>
+    </element>
+    <element name="Black" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_BLACK">
+        <supports>Kibbles Dragon Form Color</supports>
+        <description>
+            <p>You associate with the power of the Black dragon, gaining an affinity for Acid.</p>
+        </description>
+        <sheet>
+            <description level="3">While raging, you have resistence to Acid damage.</description>
+            <description level="6">While raging, you have resistence to Acid damage. Your "Unleashed Savagery" feature deals Acid damage.</description>
+            <description level="10">You have resistence to Acid damage. Your "Unleashed Savagery" feature deals Acid damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" level="10" />
+        </rules>
+    </element>
+    <element name="Blue" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_BLUE">
+        <supports>Kibbles Dragon Form Color</supports>
+        <description>
+            <p>You associate with the power of the Blue dragon, gaining an affinity for Lightning.</p>
+        </description>
+        <sheet>
+            <description level="3">While raging, you have resistence to Lightning damage.</description>
+            <description level="6">While raging, you have resistence to Lightning damage. Your "Unleashed Savagery" feature deals Lightning damage.</description>
+            <description level="10">You have resistence to Lightning damage. Your "Unleashed Savagery" feature deals Lightning damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" level="10" />
+        </rules>
+    </element>
+    <element name="Green" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_GREEN">
+        <supports>Kibbles Dragon Form Color</supports>
+        <description>
+            <p>You associate with the power of the Green dragon, gaining an affinity for Poison.</p>
+        </description>
+        <sheet>
+            <description level="3">While raging, you have resistence to Poison damage.</description>
+            <description level="6">While raging, you have resistence to Poison damage. Your "Unleashed Savagery" feature deals Poison damage.</description>
+            <description level="10">You have resistence to Poison damage. Your "Unleashed Savagery" feature deals Poison damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" level="10" />
+        </rules>
+    </element>
+    <element name="Red" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_RED">
+        <supports>Kibbles Dragon Form Color</supports>
+        <description>
+            <p>You associate with the power of the Red dragon, gaining an affinity for Fire.</p>
+        </description>
+        <sheet>
+            <description level="3">While raging, you have resistence to Fire damage.</description>
+            <description level="6">While raging, you have resistence to Fire damage. Your "Unleashed Savagery" feature deals Fire damage.</description>
+            <description level="10">You have resistence to Fire damage. Your "Unleashed Savagery" feature deals Fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" level="10" />
+        </rules>
+    </element>
+    <element name="White" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGON_FORM_WHITE">
+        <supports>Kibbles Dragon Form Color</supports>
+        <description>
+            <p>You associate with the power of the White dragon, gaining an affinity for Cold.</p>
+        </description>
+        <sheet>
+            <description level="3">While raging, you have resistence to Cold damage.</description>
+            <description level="6">While raging, you have resistence to Cold damage. Your "Unleashed Savagery" feature deals Cold damage.</description>
+            <description level="10">You have resistence to Cold damage. Your "Unleashed Savagery" feature deals Cold damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" level="10" />
+        </rules>
+    </element>
+    <element name="Unleashed Savagery" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_UNLEASHED_SAVAGERY">
+        <description>
+            <p>Starting at 6th level, once during a rage, as an action, you can unleash your Rage into pure energy, exhaling a blast of elemental power. Creatures within 15 foot cone must make a Dexterity saving throw. The DC of this saving throw is 8 + your proficiency modifier + your strength modifier. A creature takes 6d6 damage of the Elemental Type of your Dragon Color on a failed save.</p>
+            <p class="indent">This increase by 2d6 at 9th level (8d6), 12th level (10d6), 15th level (12d6), and 18th level (14d6).</p>
+            <p class="indent">Additionally, the natural weapons you gain while raging now count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+        </description>
+        <sheet>
+            <description usage="1/Rage" action="Action" level="6">You can unleash your Rage into pure energy, exhaling a blast of elemental power. Creatures within 15 foot cone must make a Dexterity saving throw. The DC of this saving throw is 8 + {{proficiency}} + {{strength:modifier}}. A creature takes 6d6 damage of the Elemental Type of your Dragon Color on a failed save and half damage on a success.</description>
+            <description usage="1/Rage" action="Action" level="9">You can unleash your Rage into pure energy, exhaling a blast of elemental power. Creatures within 15 foot cone must make a Dexterity saving throw. The DC of this saving throw is 8 + {{proficiency}} + {{strength:modifier}}. A creature takes 8d6 damage of the Elemental Type of your Dragon Color on a failed save and half damage on a success.</description>
+            <description usage="1/Rage" action="Action" level="12">You can unleash your Rage into pure energy, exhaling a blast of elemental power. Creatures within 15 foot cone must make a Dexterity saving throw. The DC of this saving throw is 8 + {{proficiency}} + {{strength:modifier}}. A creature takes 10d6 damage of the Elemental Type of your Dragon Color on a failed save and half damage on a success.</description>
+            <description usage="1/Rage" action="Action" level="15">You can unleash your Rage into pure energy, exhaling a blast of elemental power. Creatures within 15 foot cone must make a Dexterity saving throw. The DC of this saving throw is 8 + {{proficiency}} + {{strength:modifier}}. A creature takes 12d6 damage of the Elemental Type of your Dragon Color on a failed save and half damage on a success.</description>
+            <description usage="1/Rage" action="Action" level="18">You can unleash your Rage into pure energy, exhaling a blast of elemental power. Creatures within 15 foot cone must make a Dexterity saving throw. The DC of this saving throw is 8 + {{proficiency}} + {{strength:modifier}}. A creature takes 14d6 damage of the Elemental Type of your Dragon Color on a failed save and half damage on a success.</description>
+        </sheet>
+    </element>
+    <element name="Dragonhide" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_DRAGONHIDE">
+        <description>
+            <p>Starting at 10th level, the marks of your Draconic path no longer entirely fade when you are not raging, and heavy scales grant you resistance to bludgeoning, piercing, and slashing damage from nonmagical sources even when you are not raging. Additionally, you gain resistance to your Dragon Color's Elemental Type when not raging.</p>
+        </description>
+        <sheet>
+            <description>You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical sources even when you are not raging. Additionally, you gain resistance to your Dragon Color's Elemental Type when not raging.</description>
+        </sheet>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+    </element>
+    <element name="Tyrant of the Skies" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_PATH_OF_THE_DRAGON_TYRANT_OF_THE_SKIES">
+        <description>
+            <p>By 14th level, when you enter a rage, massive dragon wings sprout from your back. If you are not wearing heavy armor, you gain a flying speed equal to your movement speed.</p>
+        </description>
+        <sheet>
+            <description>When you enter a rage, if you are not wearing heavy armor, you gain a flying speed of {{speed}}.</description>
+        </sheet>
+    </element>
+</elements>

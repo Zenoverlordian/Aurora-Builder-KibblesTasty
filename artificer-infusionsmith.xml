@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--Version 2.1-->
 <elements>
     <element name="Infusionsmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH">
         <supports>Artificer Specialization</supports>
@@ -217,15 +218,21 @@
         </rules>
     </element>
 
-    <element name="Deflecting Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_DEFLECTING_WEAPON">
+    <element name="Loyal Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_LOYAL_WEAPON">
         <supports>Specialization Upgrade</supports>
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
         <description>
-            <p>While you have an animated melee weapon, if you are attacked you can use your reaction to defend yourself with them, granting you +2 AC against a single attack. If the attack misses you and the attacker is within 5 feet of you, you can immediately attack the creature that attacked you, making a melee spell attack with one animated weapon against the attacker if they are in range.</p>
+            <p>You can cast the <em>returning weapon</em> spell as a first level spell without expending a spell slot, but if you cast it on a second weapon with this feature, the spell immediately fades from any previous use of this feature.</p>
+            <div class="reference">
+				<div element="ID_KTH_ARTIFICER_SPELL_RETURNING_WEAPON" />
+			</div>
         </description>
         <sheet>
-            <description action="Reaction">While you have an animated melee weapon, if you are attacked you can use your reaction to grant you +2 AC against a single attack. If the attack misses you and the attacker is within 5 feet of you, you can immediately attack the creature that attacked you, making a melee spell attack with one animated weapon against the attacker if they are in range.</description>
+            <description>You can cast the <em>returning weapon</em> spell as a first level spell without expending a spell slot, but if you cast it on a second weapon with this feature, the spell immediately fades from any previous use of this feature.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_RETURNING_WEAPON" />
+        </rules>
     </element>
 
     <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF">
@@ -239,31 +246,6 @@
         <sheet>
             <description>TODO</description>
         </sheet>
-    </element>
-
-    <element name="Infuse Elements" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_INFUSE_ELEMENTS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
-        <description>
-            <p>You can infuse elements with your magic temporarily, granting you limited control of them. You learn the cantrips control flames, mold earth, and shape water.</p>
-            <div class="reference">
-				<div element="ID_XGTE_SPELL_CONTROL_FLAMES" />
-			</div>
-            <div class="reference">
-				<div element="ID_XGTE_SPELL_MOLD_EARTH" />
-			</div>
-            <div class="reference">
-				<div element="ID_XGTE_SPELL_SHAPE_WATER" />
-			</div>
-        </description>
-        <sheet>
-            <description>You learn the cantrips control flames, mold earth, and shape water.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
-            <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
-            <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
-        </rules>
     </element>
 
     <element name="Skilled Animation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_SKILLED_ANIMATION">
@@ -322,6 +304,20 @@
         </description>
         <sheet>
             <description>You infuse a ranged weapon with special magic granting it magical ammunition. The weapons damage becomes force damage and it no longer requires ammunition to fire. If the weapon had the Loading property, it no longer has the Loading Property.</description>
+        </sheet>
+    </element>
+
+    <element name="Deflecting Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_DEFLECTING_WEAPON">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>While you have an animated melee weapon, if you are attacked by a weapon attack you can use your reaction to attempt to block the attack, rolling a d8 and adding it to your AC. You can decide to block after the attack is rolled, but before the outcome is determined. If you successfully block a melee weapon attack like this and the attack misses, you can immediately make one weapon attack against the target.</p>
+            <p class="indent">If you attempt to use a weapon to block an attack in this way until the end of your next turn if you take the Attack action, you can only make a single weapon attack, and you cannot make attacks with the animated weapon you used to block the attack.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">While you have an animated melee weapon, if you are attacked by a weapon attack you can use your reaction to attempt to block the attack, rolling a d8 and adding it to your AC. You can decide to block after the attack is rolled, but before the outcome is determined. If you successfully block a melee weapon attack like this and the attack misses, you can immediately make one weapon attack against the target. If you attempt to use a weapon to block an attack in this way until the end of your next turn if you take the Attack action, you can only make a single weapon attack, and you cannot make attacks with the animated weapon you used to block the attack.</description>
         </sheet>
     </element>
 

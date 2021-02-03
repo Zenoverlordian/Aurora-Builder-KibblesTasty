@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Divine Agent</name>
+        <update version="0.0.1">
+            <file name="rogue-divineagent.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/rogue-divineagent.xml" />
+        </update>
+    </info>
+    <element name="Divine Agent" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_DIVINE_AGENT">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Not all priests are clerics. Not all problems can be solved by prayer and preaching. Sometimes a more subtle touch is needed to steer the world as the faith dictates, and that is the roll of a Divine Agent. A blade in the night that commits the lesser evil for the greater good, or a quick end to someone that sniffed too close the Cult of Vecna's business, both could be the work of these divinely guided rogues.</p>
+            <p class="indent">Good is not nice, evil is not stupid. Whatever the organization or god a Divine Agent serves, it is one that understands the practical nature of the world. Spying, stealing, extracting information, purging the heretics... they have many tasks before them, and complete them with a grim determination.</p>
+            <p class="indent">A Divine Agent is almost always lawful following an organizational code with zealous focus, but the laws they follow may or may not have any relation to the laws of the land they are in.</p>
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_PURIFICATION" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_CHURCH_MILITANT" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_SANCTIFICATION" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_DIVINE_GUIDANCE" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_CLEANSING_FIRE" />
+        </description>
+        <sheet display="false">
+            <description>Good is not nice, evil is not stupid. Whatever the organization or god a Divine Agent serves, it is one that understands the practical nature of the world. Spying, stealing, extracting information, purging the heretics... they have many tasks before them, and complete them with a grim determination.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_PURIFICATION" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_CHURCH_MILITANT" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_SANCTIFICATION" level="9" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_DIVINE_GUIDANCE" level="13" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_CLEANSING_FIRE" level="17" />
+        </rules>
+    </element>
+    <element name="Purification" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_PURIFICATION">
+        <description>
+            <p>Starting at 3rd level, when you deal damage with your Sneak Attack, you can choose to deal the extra damage as Radiant damage.</p>
+        </description>
+        <sheet>
+            <description>When you deal damage with your Sneak Attack, you can choose to deal the extra damage as Radiant damage.</description>
+        </sheet>
+    </element>
+    <element name="Church Militant" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_CHURCH_MILITANT">
+        <description>
+            <p>When you choose this archetype at 3rd level, you gain proficiency with the religion skill, martial weapons, and when you use holy water as a weapon, it counts as a ranged weapon your have proficiency with. Your proficiency bonus is doubled for Intelligence (Religion) checks.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency with the religion skill, martial weapons, and when you use holy water as a weapon, it counts as a ranged weapon your have proficiency with. Your proficiency bonus is doubled for Intelligence (Religion) checks.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+            <stat name="religion:proficiency" value="proficiency" bonus="double" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+        </rules>
+    </element>
+    <element name="Sanctification" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_SANCTIFICATION">
+        <description>
+            <p>At 9th, you learn the spells <i>protection from good &amp; evil</i>, <i>divine favor</i>, and <i>shield of faith</i>. You can cast these spells without consuming a spell lot a number of times equal to your Wisdom modifier (combining all uses of these spells). You regain all uses after completing a long rest. You can use a Holy Symbol as your focus for these spells.</p>
+            <p class="indent">Additionally, during a short or long rest, you can create one use of Holy Water from normal water expending 25 gold of components by reciting a ten minute ritual.</p>
+        </description>
+        <sheet>
+            <description usage="{{wisdom:modifier}}/Long rest" level="9">You can cast <i>protection from good &amp; evil</i>, <i>divine favor</i>, and <i>shield of faith</i> without consuming a spell lot a number of times equal to your Wisdom modifier (combining all uses of these spells). Additionally, during a short or long rest, you can create one use of Holy Water from normal water expending 25 gold of components by reciting a ten minute ritual.</description>
+            <description usage="{{wisdom:modifier}}/Long rest" level="17">You can cast <i>protection from good &amp; evil</i>, <i>divine favor</i>, <i>flame strike</i>, <i>flame shield</i>, and <i>shield of faith</i> without consuming a spell lot a number of times equal to your Wisdom modifier (combining all uses of these spells). Additionally, during a short or long rest, you can create one use of Holy Water from normal water expending 25 gold of components by reciting a ten minute ritual.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIVINE_FAVOR" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="17" />
+        </rules>
+    </element>
+    <element name="Divine Guidance" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_DIVINE_GUIDANCE">
+        <description>
+            <p>Starting at 13th level, you gain the ability to cast <i>guidance</i> and <i>augury</i> at will (the normal consequence of casting augury multiple times still applies).</p>
+            <p class="indent">Additionally, if you have dealt radiant damage to a creature within the last minute, you have advantage on all Wisdom (Perception) or Intelligence (Investigation) checks against it or its magical effects, and can see that unimpeded by darkness (even magical darkness).</p>
+        </description>
+        <sheet>
+            <description>You may cast <i>guidance</i> and <i>augury</i> at will. Additionally, if you have dealt radiant damage to a creature within the last minute, you have advantage on all Wisdom (Perception) or Intelligence (Investigation) checks against it or its magical effects, and can see that unimpeded by darkness (even magical darkness).</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
+        </rules>
+    </element>
+    <element name="Cleansing Fire" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_CLEANSING_FIRE">
+        <description>
+            <p>Starting at 17th level, you can use the bonus action granted by your Cunning Action to grasp your holy symbol and burn away any evil affliction, ending the effect of a curse, disease, or condition inflicted by magic on yourself. When you do this, you take 1d12 fire damage that cannot be resisted in any way, but gain an equal number of temporary hit points.</p>
+            <p class="indent">Once you use this feature, you cannot do so again until you complete a short or long rest.</p>
+            <p class="indent">Additionally, flamestrike and fire shield are added to the spells you can cast using Sanctification.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short/Long rest" action="Bonus Action">You end the effect of a curse, disease, or condition inflicted by magic on yourself. When you do this, you take 1d12 fire damage that cannot be resisted in any way, but gain an equal number of temporary hit points.</description>
+        </sheet>
+    </element>
+</elements>

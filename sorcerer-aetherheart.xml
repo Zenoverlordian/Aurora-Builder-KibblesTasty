@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/sorcerer-aetherheart.xml" />
+        </update>
+    </info>
+    <element name="Aether Heart Origin" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>While it is not uncommon for a construct forged to be powered by magic, some of them have such a potent source of magic imbued that they find themselves completely suffused with the overwhelming power, able to channel it to their own ends. When such a creature ends up sentient, it's inherently magical nature makes it a fundamentally magical creature, able to naturally wield it's magic as a Sorcerer.</p>
+            <p class="indent">While this origin is most commonly found in constructed creatures - such as the Warforged - the world is a strange one and many paths can lead to such a fate. An alchemical attempt to raise the dead could leave the subject forever changed, implanted with a magical heart overflowing with power. A creature could even be born with such an abnormal condition, an elemental spark within them of ceaseless power.</p>
+            <p class="indent">However it got there, in the chest of every Aether Heart Sorcerer is a pulsing source of neigh boundless energy that they struggle to control.</p>
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_AETHER_HEART" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_OVERCHARGED_METAMAGIC" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_ARCANE_FUEL" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_TAP_POWER" />
+        </description>
+        <sheet display="false">
+            <description>However it got there, in the chest of every Aether Heart Sorcerer is a pulsing source of neigh boundless energy that they struggle to control.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_AETHER_HEART" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_OVERCHARGED_METAMAGIC" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_ARCANE_FUEL" level="14" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_TAP_POWER" level="18" />
+        </rules>
+    </element>
+    <element name="Aether Heart" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_AETHER_HEART">
+        <description>
+            <p>When you choose this origin at 1st level, your aether heart gives you several advantages. You have resistance to Force damage, and your heart can serve as your Arcane Focus.</p>
+            <p class='indent'>Additionally, when you reach 3rd level, you automatically gain the Empowered Spell metamagic option.</p>
+        </description>
+        <sheet>
+            <description level="1">You have resistance to Force damage, and your heart can serve as your Arcane Focus.</description>
+            <description level="3">You have resistance to Force damage, and your heart can serve as your Arcane Focus. Additionally, you automatically gain the Empowered Spell metamagic option.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" /> 
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL" level="3" />
+        </rules>
+    </element>
+    <element name="Overcharged Metamagic" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_OVERCHARGED_METAMAGIC">
+        <description>
+            <p>Starting at 6th level, you can unleash the power that rages within your heart. When you modify a spell that deals damage with your Metamagic options, you can add your Charisma modifier to one damage roll of that spell.</p>
+        </description>
+        <sheet>
+            <description>When you modify a spell that deals damage with your Metamagic options, you can add {{charisma:modifier}} to one damage roll of that spell.</description>
+        </sheet>
+    </element>
+    <element name="Arcane Fuel" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_ARCANE_FUEL">
+        <description>
+            <p>At 14th level, you gain immunity to Force damage. When you would take Force damage, you regain health equal to half the damage you would have taken.</p>
+            <p class='indent'>Additionally, you learn the spell <i>dispel magic</i> if you do not already know it. When you successfully <i>dispel magic</i>, you regain up to two expended Sorcerer points as you draw in the remnants of the broken magic.</p>
+        </description>
+        <sheet>
+            <description>You gain immunity to Force damage. When you would take Force damage, you regain health equal to half the damage you would have taken. Additionally, you learn the spell <i>dispel magic</i> if you do not already know it. When you successfully <i>dispel magic</i>, you regain up to two expended Sorcerer points as you draw in the remnants of the broken magic.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" />
+        </rules>
+    </element>
+    <element name="Tap Power" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_TAP_POWER">
+        <description>
+            <p>At 18th level, you can tap the power that surges through to replenish your magic. As a bonus action, you can expend a hit die and regain Sorcery Points equal to the number rolled + your Charisma modifier. Once you do this, you cannot do so again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Long rest">You can expend a hit die and regain Sorcery Points equal to the number rolled + {{charisma:modifier}}.</description>
+        </sheet>
+    </element>
+</elements>

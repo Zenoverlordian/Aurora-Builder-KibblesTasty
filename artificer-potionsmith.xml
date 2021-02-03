@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--Version 2.1-->
 <elements>
     <element name="Potionsmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH">
         <supports>Artificer Specialization</supports>
@@ -112,10 +113,10 @@
     </element>
     <element name="Empowered Alchemy" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_FEATURE_POTIONSMITH_EMPOWERED_ALCHEMY">
         <description>
-            <p>Starting at 5th level, when you deal damage, grant temporary hit points, or restore health with an instant reaction or alchemical infusion, you can add your intelligence modifier to the damage dealt or health restored.</p>
+            <p>Starting at 5th level, when you deal damage, grant temporary hit points, or restore health with an instant reaction or alchemical infusion on your turn, you can add your intelligence modifier to the damage dealt or health restored.</p>
         </description>
         <sheet>
-            <description>When you deal damage, grant temporary hit points, or restore health with an instant reaction or alchemical infusion, you can add {{intelligence:modifier}} to the damage dealt or health restored.</description>
+            <description>When you deal damage, grant temporary hit points, or restore health with an instant reaction or alchemical infusion on your turn, you can add {{intelligence:modifier}} to the damage dealt or health restored.</description>
         </sheet>
     </element>
     <element name="Infusion Expertise" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_FEATURE_POTIONSMITH_INFUSION_EXPERTISE">

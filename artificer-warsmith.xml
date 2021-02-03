@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--Version 2.1-->
 <elements>
     <element name="Warsmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH">
         <supports>Artificer Specialization</supports>
@@ -443,25 +444,22 @@
 
         <!--5th LEVEL UPGRADES-->
 
-    <element name="Arcaneware" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANEWEAR">
+    <element name="Artificial Guidance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARTIFICIAL_GUIDANCE">
         <supports>Specialization Upgrade</supports>
-        <prerequisite>5th level, Sentient Armor</prerequisite>
+        <prerequisite>5th level</prerequisite>
         <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
         <description>
-            <p><em>Prerequisite: 5th level, Sentient Armor</em></p>
-            <p>You upgrade the artificial personality integrated into your armor to assist with a new skill. While able to communicate with your armor, you can gain the effect of <em>guidance</em> when making an Intelligence ability check.</p>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>You upgrade the artificial personality integrated into your armor to assist with a new skill. While able to communicate with your armor, you can gain the effect of guidance when making an Intelligence or Wisdom ability check.</p>
             <div class="reference">
                 <div element="ID_PHB_SPELL_GUIDANCE" />
             </div>
         </description>
         <sheet>
-            <description>While able to communicate with your armor, you can gain the effect of <em>guidance</em> when making an Intelligence ability check.</description>
+            <description>While able to communicate with your armor, you can gain the effect of guidance when making an Intelligence or Wisdom ability check.</description>
         </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
-        </rules>
     </element>
-
+    
     <element name="Active Camouflage" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_CAMOUFLAGE">
         <supports>Specialization Upgrade</supports>
         <prerequisite>5th level</prerequisite>
@@ -494,10 +492,10 @@
         <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Sentient Armor</em></p>
-            <p>The intelligence in your armor will attempt to preserve your life. If you are Incapacitated or Unconscious and cannot take your action, it will cast a spell or take the dodge action. It can only cast spells using your armor's upgrades. It will act once, and cannot act again until you complete a short or long rest.</p>
+            <p>The intelligence in your armor will attempt to preserve your life. If you are Incapacitated or Unconscious and cannot take your action, it will cast a spell or take the dodge action. It can only cast spells using your armor's upgrades. It can act in this way up a number of turns equal to your Intelligence modifier, but this control strains its abilities, and it cannot take control again until you complete a short or long rest. You automatically resume control if you are no longer Incapacitated or Unconscious.</p>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">If you are Incapacitated or Unconscious and cannot take your action, your armor's intelligence will cast a spell or take the dodge action. It can only cast spells using your armor's upgrades.</description>
+            <description usage="{{intelligence:modifier}}/Short rest">If you are Incapacitated or Unconscious and cannot take your action, it will cast a spell or take the dodge action. It can only cast spells using your armor's upgrades. It can act in this way up a number of turns equal to your Intelligence modifier, but this control strains its abilities, and it cannot take control again until you complete a short or long rest. You automatically resume control if you are no longer Incapacitated or Unconscious.</description>
         </sheet>
     </element>
 
@@ -1181,7 +1179,7 @@
     <element name="Integrated Armor" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR">
 		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
 		<description>
-			<p>You magically integrate your armor into your own body.</p>
+			<p>You magically integrate your armor into your own body. Integrated armor cannot be removed, but does not confer any penalty when resting in it.</p>
             <p>While wearing Integrated Armor, your Strength ability score increases by 2, and your maximum Strength ability score becomes 22. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
 		</description>
 		<setters>
@@ -1213,7 +1211,7 @@
         </rules>
     </element>
 
-    <element name="KibblesTasty's Artificer" type="Source" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_SOURCE_ARTIFICER">
+    <element name="KibblesTasty Artificer" type="Source" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_SOURCE_ARTIFICER">
         <description>
             <![CDATA[<p>Forge armor, wield cannons, enchant swords, infuse potions... the power to innovate is in your hands! Magic item retrofitting, balance tweaks, streamlined mutations, and more!</p>]]>
         </description>

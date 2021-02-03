@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="School of Pathology" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_SCHOOL_PATHOLOGY">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>Curious minds delve in the mysteries of the world, and few hold more morbid fascination than the inner workings of diseases and plagues. Those that understand the nature of disease and pathogens are precious to any society, but at the same time shunned and feared as much as a necromancer might be for they deal in the darkest fears of many a village. It is often their superiority understanding of transmission that dooms their reputation, for arriving before the plague is widely understood oft leaves them the scapegoat of the superstitious.</p>
+            <p class="indent">But superstitious are born from a seed of truth, and some of those that delve the mysteries of pathogens and diseases do so for the darkest of purposes, for with great knowledge comes great power.</p>
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_STUDY_OF_MEDICINE" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_MALIGNANT_MAGIC" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_VACCINATION" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_TRANSMISSION" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_PANDEMIC" />
+        </description>
+        <sheet display="false">
+            <description>Those that understand the nature of disease and pathogens are precious to any society, but at the same time shunned and feared as much as a necromancer might be for they deal in the darkest fears of many a village.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_STUDY_OF_MEDICINE" level="2" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_MALIGNANT_MAGIC" level="2" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_VACCINATION" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_TRANSMISSION" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_PANDEMIC" level="14" />
+        </rules>
+    </element>
+    <element name="Study of Medicine" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_STUDY_OF_MEDICINE">
+        <description>
+            <p>Beginning when you select this school at 2nd level, you gain proficiency with the Medicine skill. When you make a check using the Medicine skill, your analytical approach allows you to use your Intelligence ability score in place of your Wisdom ability score.</p>
+            <p class="indent">When you are making an Intelligence (Medicine) ability check to identify the nature or effects of disease, you have advantage on the ability check.</p>
+        </description>
+        <sheet>
+            <description>When you make a check using the Medicine skill, you may use your Intelligence ability score in place of your Wisdom ability score. When you are making an Intelligence (Medicine) ability check to identify the nature or effects of disease, you have advantage on the ability check.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
+    </element>
+    <element name="Malignant Magic" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_MALIGNANT_MAGIC">
+        <description>
+            <p>Starting at 2nd level, you can weave leave a lingering touch behind. When you cast a spell of 1st level or higher that causes one or more creatures to make a saving throw, you can apply the effect of <em>malaise</em> to one or more creature that failed their saving throw.</p>
+            <p class="indent">You can apply this effect a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. Each creature you apply this to counts as an application of this effect.</p>
+        </description>
+        <sheet>
+            <description usage="{{proficiency}}/Long rest">When you cast a spell of 1st level or higher that causes one or more creatures to make a saving throw, you can apply the effect of <em>malaise</em> to one or more creature that failed their saving throw. Each creature you apply this to counts as an application of this effect.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KIBBLESTASTY_KTH_SPELL_SCHOOL_PATHOLOGY_MALAISE" />
+        </rules>
+    </element>
+    <element name="Vaccination" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_VACCINATION">
+        <description>
+            <p>Starting at 6th level, your frequent exposure and intricate knowledge about the subject with you study grants you advantage on all Constitution saving throws to save against disease.</p>
+            <p class="indent">You automatically pass a Constitution saving throw against a disease you have either contracted or successfully saved from in the past. After encountering a disease, either by saving from it, recovering from it, or from making a successful Medicine check to identify it another creature, with 8 hours of work, you can prepare a dose of medicine that counter acts that disease, which can be consumed by up to 5 creatures. These creatures gain advantage on saving throws against that disease.</p>
+            <p class="indent">Additionally, the spell lesser restoration is added to your spell list.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on all Constitution saving throws to save against disease. You automatically pass a Constitution saving throw against a disease you have either contracted or successfully saved from in the past. After encountering a disease, either by saving from it, recovering from it, or from making a successful Medicine check to identify it another creature, with 8 hours of work, you can prepare a dose of medicine that counter acts that disease, which can be consumed by up to 5 creatures. These creatures gain advantage on saving throws against that disease.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+        </rules>
+    </element>
+    <element name="Transmission" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_TRANSMISSION">
+        <description>
+            <p>Beginning at 10th level, your intricate knowledge of diseases lets you learn the spell <em>contagion</em>. You know this spell by heart and it is always prepared, but does not count against your spells prepared spells. You record this spell to your Spellbook without expending any gold to do so.</p>
+        </description>
+        <sheet>
+            <description>You learn the spell <em>contagion</em>. You know this spell by heart and it is always prepared, but does not count against your spells prepared spells. You record this spell to your Spellbook without expending any gold to do so.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" />
+        </rules>
+    </element>
+    <element name="Pandemic" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_PANDEMIC">
+        <description>
+            <p>Starting at 14th level, your extensive experience with the nature of disease with the spread of disease allows you manipulate it. When a target within 30 feet is under the effect of a disease or the spell contagion, as an action you can expend a spell slot. All creatures within a range determined by the level of the spell slot expended of the target must make a Constitution saving throw or become affected by the disease or the contagion spell (as if the original target it in its least severe form).</p>
+            <p class="indent">Once a creature passes this Constitution saving throw or recovers from the contagion spell, they automatically pass the save against Pandemic originating from the same contagion spell.</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Radius</td></tr>
+                </thead>
+                <tr><td>1st or 2nd</td><td>5 ft.</td></tr>
+                <tr><td>3rd or 4th</td><td>10 ft.</td></tr>
+                <tr><td>5th or 6th</td><td>20 ft.</td></tr>
+                <tr><td>7th or 8th</td><td>40 ft.</td></tr>
+                <tr><td>9th</td><td>1 mile.</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When a target within 30 feet is under the effect of a disease or the spell contagion, as an action you can expend a spell slot. All creatures within a range determined by the level of the spell slot expended of the target must make a Constitution saving throw or become affected by the disease or the contagion spell (as if the original target it in its least severe form). Once a creature passes this Constitution saving throw or recovers from the contagion spell, they automatically pass the save against Pandemic originating from the same contagion spell.</description>
+        </sheet>
+    </element>
+    
+    <element name="Malaise" type="Spell" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_SPELL_SCHOOL_PATHOLOGY_MALAISE">
+        <supports>Wizard, Druid, Occultist</supports>
+        <description>
+            <p>You touch a target, transmitting a minor disease to them. Make a melee spell attack against the target. On a hit, the target is inflicted with a disease that causes them to suffer discomfort and roll a d4 at start of each of their turns while infected to determine the symptom for that turn.</p>
+            <table>
+                <thead>
+                    <tr><td>d4</td><td>Symptom (Effect)</td></tr>
+                </thead>
+                <tr><td>1</td><td>The target suffers through the effects, suffering only discomfort.</td></tr>
+                <tr><td>2</td><td>The target feels dizzy and lightheaded. They have disadvantage on ability checks and saving throws until the start of their next turn.</td></tr>
+                <tr><td>3</td><td>The target immediately spends their reaction sneezing and coughing.</td></tr>
+                <tr><td>4</td><td>The target is overcome, suffering the effects of being poisoned until the start of their next turn.</td></tr>
+            </table>
+            <p class="indent">At the end of their turn, they make a Constitution saving throw. On a success, the disease ends. Symptoms that persist until the start of the next turn remain until the would normally end.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spirit Rot" type="Spell" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_SPELL_SCHOOL_PATHOLOGY_SPIRIT_ROT">
+        <supports>Druid, Occultist, Wizard</supports>
+        <description>
+            <p>You touch a target, infecting them with a magical rot empowered by negative energy. Make a melee spell attack, infected them with a magical disease on hit.</p>
+            <p class="indent">At the start of the target's turn, it must infected a Constitution saving throw. When the target fails their Constitution saving throw or receives magical healing, the severity of the infection increases by one level. When the target succeeds a Constitution saving throw, the infection decreases by one level, to a minimum of 1. The effects of each level are in addition the effects of the previous levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Infection Level</td><td>Symptoms</td></tr>
+                </thead>
+                <tr><td>1</td><td>Magical healing is reduced by half.</td></tr>
+                <tr><td>2</td><td>The creature takes 1d6 necrotic damage at the start of their turn.</td></tr>
+                <tr><td>3</td><td>Disadvantage on ability checks.</td></tr>
+                <tr><td>4</td><td>Speed halved.</td></tr>
+                <tr><td>5</td><td>Magical healing is negated.</td></tr>
+            </table>
+            <p class="indent">If another creature ends their turn within 5 feet of an infected creature, it must make a Constitution saving throw, or becoming infected on failure. If a creature with a infection level of 3 or higher dies, all creatures within 20 feet of it must make a Constitution saving throw, or become infected.</p>
+            <p class="indent">All instances of the disease end when the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small dead animal</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Vein Rot" type="Spell" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_SPELL_SCHOOL_PATHOLOGY_VEIN_ROT">
+        <supports>Druid, Occultist, Wizard</supports>
+        <description>
+            <p>You touch a target, attempting to magically infect them with a consumptive disease. Make a melee spell attack. On hit, the target is infected with a disease that corrupts their veins, causing them to weaken and wither. A target without blood or immune to disease is immune to this effect.</p>
+            <p class="indent">At the start of the target's turn, it must make a Constitution saving throw. If the target fails their Constitution saving throw , the severity of the infection increases by one level. If the target succeeds a Constitution saving throw, the infection decreases by one level, to a minimum of 1. The effects of each level are in addition the effects of the previous levels.</p>
+            <table>
+                <thead>
+                    <tr><td>Infection Level</td><td>Symptoms</td></tr>
+                </thead>
+                <tr><td>1</td><td>Disadvantage on ability checks using dexterity.</td></tr>
+                <tr><td>2</td><td>The target cannot take reactions.</td></tr>
+                <tr><td>3</td><td>All forms of vision reduced to 10 feet.</td></tr>
+                <tr><td>4</td><td>The target takes an additional 1d6 damage when taking piercing or slashing damage.</td></tr>
+                <tr><td>5</td><td>The target must roll a d4 and subtract the number rolled from the attack rolls or saving throws.</td></tr>
+            </table>
+            <p class="indent">If creature with an infection level of 3 or higher takes piercing damage from a bite attack, the attacker must make a Constitution saving throw or contract the disease at infection level 1. The effects of the disease end when the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small dead animal</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>

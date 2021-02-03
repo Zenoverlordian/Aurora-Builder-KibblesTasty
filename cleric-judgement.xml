@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Judgement Domain</name>
+        <update version="0.0.1">
+            <file name="cleric-judgement.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/cleric-judgement.xml" />
+        </update>
+    </info>
+    <element name="Judgement Domain" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_JUDGEMENT_DOMAIN">
+        <supports>Divine Domain</supports>
+        <description>
+            <p>A Judgment Domain cleric is a cleric who oversees the distribution of law and order. The may do so in the name Justice itself, or in service to a particular face of justice, be that a lawful god - such as Tyr, Forseti, Helm, Torm, Ilmater... or even Bane, for those that dispense the Iron Fist of Tyranny the World might need - or at the behest of an institution of justice in the land.</p>
+            <p class="indent">Employing a Justice Domain cleric is something that any ruling power must consider carefully. While they are almost always Lawful to the extreme, they answer only to their own, higher, ideals of justice.</p>
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_SPELLS" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_BONUS_CANTRIP" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_SACRED_JUDGEMENT" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_CD_INVOKE_JUDGEMENT" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_REBUKE" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_POTENT_CANTRIP" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_ETERNAL_JUDGEMENT" />
+        </description>
+        <sheet display="false">
+            <description>A Judgment Domain cleric is a cleric who oversees the distribution of law and order.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_BONUS_CANTRIP" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_SACRED_JUDGEMENT" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_CD_INVOKE_JUDGEMENT" level="2" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_REBUKE" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_POTENT_CANTRIP" level="8" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_ETERNAL_JUDGEMENT" level="17" />
+        </rules>
+    </element>
+    <element name="Judgement Domain Spells" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the Judgement Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+            <h5>Judgement Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>sanctuary, hellish rebuke</em></td></tr>
+                <tr><td>3rd</td><td><em>detect thoughts, zone of truth</em></td></tr>
+                <tr><td>5th</td><td><em>counterspell, fear</em></td></tr>
+                <tr><td>7th</td><td><em>banishment, locate creature</em></td></tr> 
+                <tr><td>9th</td><td><em>dispel good and evil, geas</em></td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+        <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_GEAS" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Bonus Cantrip" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_BONUS_CANTRIP">
+        <description>
+            <p>When you choose this domain at 1st level, you gain the sacred flame cantrip if you don't already know it.</p>
+        </description>
+        <sheet>
+            <description>You gain the sacred flame cantrip if you don't already know it.</description>
+        </sheet>
+        <grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" />
+    </element>
+    <element name="Sacred Judgement" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_SACRED_JUDGEMENT">
+        <description>
+            <p>Starting at 1st level, when deal damage to a creature with a cleric spell, you can apply additional damage to a creature equal to your Wisdom modifier damage if that target has dealt damage to another creature since the end of your last turn.</p>
+            <p class="indent">You can do this a number of times equal to your Wisdom modifier, regaining all uses on a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="{{wisdom:modifier}}/Long rest" level="1">When deal damage to a creature with a cleric spell, you can apply additional {{wisdom:modifier}} damage to a creature if that target has dealt damage to another creature since the end of your last turn.</description>
+            <description level="17">When deal damage to a creature with a cleric spell, you can apply additional {{wisdom:modifier}} damage to a creature if that target has dealt damage to another creature since the end of your last turn.</description>
+        </sheet>
+    </element> 
+    <element name="Channel Divinity: Invoke Judgement" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_CD_INVOKE_JUDGEMENT">
+        <description>
+            <p>Starting at 2nd level, as an action you can present your holy symbol and invoke judgment upon your enemies. You crush a target within 60 feet under the weight of their sins. The target makes a Wisdom saving throw. On failure, the creature is knocked prone and their movement speed is dropped to zero for 1 minute. The creature can repeat their saving throw at the end of each of their turns. They make this save disadvantage if they have dealt damage since the start of their turn.</p>
+            <p class="indent">You can apply the bonus damage of Sacred Judgement when dealing damage with a Cleric spell to a creature you have Invoked Judgement on regardless if they have damaged another creature. This persists for 1 minute regardless of their save.</p>
+        </description>
+        <sheet alt="Invoke Judgement" usage="Channel Divinity">
+            <description>As an action you crush a target within 60 feet under the weight of their sins. The target makes a Wisdom saving throw. On failure, the creature is knocked prone and their movement speed is dropped to zero for 1 minute. The creature can repeat their saving throw at the end of each of their turns. They make this save disadvantage if they have dealt damage since the start of their turn.
+            You can apply the bonus damage of Sacred Judgement when dealing damage with a Cleric spell to a creature you have Invoked Judgement on regardless if they have damaged another creature. This persists for 1 minute regardless of their save.</description>
+        </sheet>
+    </element>
+    <element name="Rebuke" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_REBUKE">
+        <description>
+            <p>Starting at 6th level, when an allied creature within 60 feet of you is reduced to zero hit points or takes damage from another creature while under the effect of a sanctuary spell you cast, you can cast hellish rebuke against the attacker them without expending a spell slot.</p>
+            <p class="indent">You can do this a number of times equal to your Wisdom modifier, regain all uses on a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="{{wisdom:modifier}}/Long rest">When an allied creature within 60 feet of you is reduced to zero hit points or takes damage from another creature while under the effect of a sanctuary spell you cast, you can cast hellish rebuke against the attacker them without expending a spell slot.</description>
+        </sheet>
+    </element>
+    <element name="Potent Cantrip" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_POTENT_CANTRIP">
+        <description>
+            <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+        </description>
+        <sheet>
+            <description>You add {{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+        </sheet>
+    </element>
+    <element name="Eternal Judgement" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_ETERNAL_JUDGEMENT">
+        <description>
+            <p>Starting at 17th level, your Sacred Judgement can be used an unlimited number of times.</p>
+        </description>
+        <sheet>
+            <description>Your Sacred Judgement can be used an unlimited number of times.</description>
+        </sheet>
+    </element>
+</elements>

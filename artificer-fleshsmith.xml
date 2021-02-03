@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--Version 2.1-->
 <elements>
     <element name="Fleshsmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH">
         <supports>Artificer Specialization</supports>
@@ -28,6 +29,7 @@
     <element name="Fleshsmith Proficiency" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_PROFICIENCY">
         <description>
             <p>When you choose this specialization at 1st level, you gain proficiency in the Medicine skill, as well as proficiency with Leatherworker's tools (it's best if you don't think about the details on that one too much...)</p>
+            <p class="indent">Additionally, you can make all Medicine checks as Intelligence (Medicine) check. When you take an Intelligence (Medicine) check to stabilize a creature, they regain 1 hit point.</p>
         </description>
         <sheet>
             <description>You gain proficiency in the Medicine skill and Leatherworker's tools</description>
@@ -44,7 +46,7 @@
             <p>Nature had its chance to make your form, now it's your turn to improve it. When you take this path, you gain the <strong>Fleshcrafted Mutation</strong> upgrade, and it does not count against your upgrade total.</p>
             <p class="indent">When you take the attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Artificer level. You regain all uses at the end of a long rest.</p>
             <h5>Perfection of Mind</h5>
-            <p>You know that perfection is an aspect of knowledge, a perfect understanding of the mechanics of the Body, inside and out. But particularly inside. You gain the <strong>Doctor</strong> upgrade, and it does not count against your upgrade total.</p>
+            <p>You know that perfection is an aspect of knowledge, a perfect understanding of the mechanics of the Body, inside and out. But particularly inside. You gain the <strong>Dissection</strong> upgrade, and it does not count against your upgrade total.</p>
             <p class="indent">You have a pool of d8s equal to your Artificer level. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend a number equal to Proficiency modifier at a time. You regain this pool of d8s at the end of a long rest.</p>
         </description>
         <sheet display="false" />
@@ -68,14 +70,15 @@
     <element name="Perfection of Mind" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_MIND">
         <supports>Thesis of Flesh</supports>
         <description>
-            <p>You know that perfection is an aspect of knowledge, a perfect understanding of the mechanics of the Body, inside and out. But particularly inside. You gain the <strong>Doctor</strong> upgrade, and it does not count against your upgrade total.</p>
+            <p>You know that perfection is an aspect of knowledge, a perfect understanding of the mechanics of the Body, inside and out. But particularly inside. You gain expertise in Medicine. Additionally, you gain the <strong>Dissection</strong> upgrade, and it does not count against your upgrade total.</p>
             <p class="indent">You have a pool of d8s equal to your Artificer level. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend a number equal to Proficiency modifier at a time. You regain this pool of d8s at the end of a long rest.</p>
         </description>
         <sheet>
             <description usage="{{level:artificer}}/Long rest">You have a pool of {{level:artificer}} d8s. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend up to {{proficiency}} at a time. You regain this pool of d8s at the end of a long rest.</description>
         </sheet>
         <rules>
-            <grant type="Class Feature" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DOCTOR" />
+            <grant type="Class Feature" id="ID_EXPERTISE_SKILL_MEDICINE" />
+            <grant type="Class Feature" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DISSECTION" />
         </rules>
     </element>
     <element name="Uncanny Vitality" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_UNCANNY_VITALITY">
@@ -234,16 +237,15 @@
         </rules>
     </element>
 
-    <element name="Doctor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DOCTOR">
+    <element name="Dissection" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DISSECTION">
         <supports>Specialization Upgrade</supports>
         <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
         <description>
-            <p>You master the knowledge of the mechanical properties of the body. You can make all Medicine checks as Intelligence (Medicine) checks and can add double your proficiency to Intelligence (Medicine) checks. When you take an Intelligence (Medicine) check to stabilize a creature, they regain 1 hit point.</p>
-            <p class="indent">As a doctor, you specialize not just in the repair of creatures, but in the dissection of them. If you are holding a melee finesse weapon you have proficiency with, as an action you can make an Intelligence (Medicine) ability check against a creature within reach with a DC equal to its armor class. If you succeed the check, you can deal damage to that creature equal to your weapons damage dice plus your Intelligence modifier. On a roll of 20, the roll weapon damage dice are doubled. If you have Extra Attack, you deal twice the weapon's damage die.</p>
+            <p>If you are holding a melee finesse weapon you have proficiency with, as an action you can make an Intelligence (Medicine) ability check against a creature within reach with a DC equal to its armor class. If you succeed the check, you can deal damage to that creature equal to your weapons damage dice plus your Intelligence modifier. On a roll of 20, the roll weapon damage dice are doubled.</p>
+            <p class="indent">If you could normally make more than one weapon attack as part of the Attack action, you can deal a number of additional dice equal to the number of attacks you could normally make as part of an attack action when taking this action (for example, if you have the Extra Attack feature and take this action with a dagger, you would deal 2d4 + your Intelligence modifier damage).</p>
         </description>
         <sheet>
-            <description>You can make all Medicine checks as Intelligence (Medicine) checks and can add double your proficiency to Intelligence (Medicine) checks. When you take an Intelligence (Medicine) check to stabilize a creature, they regain 1 hit point.
-            If you are holding a melee finesse weapon you have proficiency with, as an action you can make an Intelligence (Medicine) ability check against a creature within reach with a DC equal to its armor class. If you succeed the check, you can deal damage to that creature equal to your weapons damage dice plus {{intelligence:modifier}}. On a roll of 20, the roll weapon damage dice are doubled. If you have Extra Attack, you deal twice the weapon's damage die.</description>
+            <description>If you are holding a melee finesse weapon you have proficiency with, as an action you can make an Intelligence (Medicine) ability check against a creature within reach with a DC equal to its armor class. If you succeed the check, you can deal damage to that creature equal to your weapons damage dice plus {{intelligence:modifier}}. On a roll of 20, the roll weapon damage dice are doubled. If you could normally make more than one weapon attack as part of the Attack action, you can deal a number of additional dice equal to the number of attacks you could normally make as part of an attack action when taking this action (for example, if you have the Extra Attack feature and take this action with a dagger, you would deal 2d4 + {{intelligence:modifier}} damage).</description>
         </sheet>
     </element>
 
@@ -419,7 +421,7 @@
             <p>Once per turn, on your turn, when dealing damage with your Extra Fangs, you can drain the life from your victim adding 1d4 damage roll. If the target is a living creature over CR 1/4, you regain health equal to the necrotic damage dealt.</p>
             <p class="indent"><em>Empowered: </em>You gain a free extra d8 hit die that you can spend until the end of your next turn (after which it is lost).</p>
             <h5>Ghoulish</h5>
-            <p>Once per turn, on your turn, when make an attack roll (or ability check with Doctor) with your natural weapon, you can add d4 to the roll. If you've damaged the target with your natural weapons since the beginning of your last turn, you can add a d6 instead of a d4.</p>
+            <p>Once per turn, on your turn, when make an attack roll (or ability check with Dissection) with your natural weapon, you can add d4 to the roll. If you've damaged the target with your natural weapons since the beginning of your last turn, you can add a d6 instead of a d4.</p>
             <p class="indent"><em>Empowered: </em>You get advantage on your next attack with a natural weapon against the target.</p>
             <h5>Infernal</h5>
             <p>Once per turn, on your turn, when dealing damage with your Fangs or Claws you can ignite your claws with infernal flames, the attack deals an additional 1d8 fire damage.</p>
@@ -457,11 +459,11 @@
         <supports>Fleshcrafted Enhancement</supports>
         <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, (ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
         <description>
-            <p>Once per turn, on your turn, when make an attack roll (or ability check with Doctor) with your natural weapon, you can add d4 to the roll. If you've damaged the target with your natural weapons since the beginning of your last turn, you can add a d6 instead of a d4.</p>
+            <p>Once per turn, on your turn, when make an attack roll (or ability check with Dissection) with your natural weapon, you can add d4 to the roll. If you've damaged the target with your natural weapons since the beginning of your last turn, you can add a d6 instead of a d4.</p>
             <p class="indent"><em>Empowered: </em>You get advantage on your next attack with a natural weapon against the target.</p>
         </description>
         <sheet>
-            <description>Once per turn, on your turn, when make an attack roll (or ability check with Doctor) with your natural weapon, you can add d4 to the roll. If you've damaged the target with your natural weapons since the beginning of your last turn, you can add a d6 instead of a d4.
+            <description>Once per turn, on your turn, when make an attack roll (or ability check with Dissection) with your natural weapon, you can add d4 to the roll. If you've damaged the target with your natural weapons since the beginning of your last turn, you can add a d6 instead of a d4.
             <em>Empowered: </em>You get advantage on your next attack with a natural weapon against the target.</description>
         </sheet>
     </element>
@@ -519,10 +521,9 @@
         <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
         <description>
             <p>Some say that not all medical problems require surgery. Not you. As an action, you can repair a body to its natural limits far more quickly than its natural limits. You can repair a willing creature within 5 feet, allowing them to expend hit dice up to half Artificer level (rounded up). Each hit dice spent is rolled as normal, but you can add the higher value of their Constitution modifier or your Intelligence modifier.</p>
-            <p class="indent">This does not require the Doctor upgrade, but probably should. If taken without the Doctor upgrade, any hit die rolled as an odd number is taken as damage by the target creature.</p>
         </description>
         <sheet>
-            <description action="Action">You can repair a willing creature within 5 feet, allowing them to expend hit dice up to half Artificer level (rounded up). Each hit dice spent is rolled as normal, but you can add the higher value of their Constitution modifier or {{intelligence:modifier}}. If taken without the Doctor upgrade, any hit die rolled as an odd number is taken as damage by the target creature.</description>
+            <description action="Action">As an action, you can repair a willing creature within 5 feet, allowing them to expend up to {{level:artificer:half:up}} hit dice. Each hit dice spent is rolled as normal, but you can add the higher value of their Constitution modifier or {{intelligence:modifier}}.</description>
         </sheet>
     </element>
 
@@ -719,10 +720,10 @@
 
     <element name="Pressure Points" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_PRESSURE_POINTS">
         <supports>Specialization Upgrade</supports>
-        <prerequisite>5th level, Doctor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DOCTOR, [level:5]</requirements>
+        <prerequisite>5th level, Perfection of Mind</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_MIND, [level:5]</requirements>
         <description>
-            <p><em>Prerequisite: 5th level, Doctor</em></p>
+            <p><em>Prerequisite: 5th level, Perfection of Mind</em></p>
             <p>You extensive knowledge of anatomy allows you to target critical spots. When you deal damage to a target with a melee weapon, as a bonus action you can force them to roll a Constitution Saving Throw against your spell save DC.</p>
             <p class="indent">If they fail, they are slowed until the end of your next turn. If the target is already slowed they become restrained until the end of your next turn. If the creatures is already restrained they become stunned until the end of your next turn. If they already stunned they become paralyzed until the end of your next turn.</p>
             <p class="indent">If the target becomes paralyzed from these attacks or passes a Constitution saving throw against it, they become immune to this ability for 24 hours.</p>
@@ -749,10 +750,10 @@
 
     <element name="Safe Revival Technique" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SAFE_REVIVAL_TECHNIQUE">
         <supports>Specialization Upgrade</supports>
-        <prerequisite>5th level, Doctor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DOCTOR, [level:5]</requirements>
+        <prerequisite>5th level, Field Surgery</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FIELD_SURGERTY, [level:5]</requirements>
         <description>
-            <p><em>Prerequisite: 5th level, Doctor</em></p>
+            <p><em>Prerequisite: 5th level, Field Surgery</em></p>
             <p>You can cast <em>revivify</em> without expending a spell slot or material component. For some reason the target gains a level exhaustion, and is frightened of you for one minute upon reviving.</p>
             <div class="reference">
                 <div element="ID_PHB_SPELL_REVIVIFY" />
@@ -843,10 +844,10 @@
 
     <element name="Dark Miracle" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DARK_MIRACLE">
         <supports>Specialization Upgrade</supports>
-        <prerequisite>11th level, Doctor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DOCTOR, [level:11]</requirements>
+        <prerequisite>11th level</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:11]</requirements>
         <description>
-            <p><em>Prerequisite: 11th level, Doctor</em></p>
+            <p><em>Prerequisite: 11th level</em></p>
             <p>When you use an action that restores health another player, you can expend up to 4d4 of your own hit points to increase the amount of health restored by that much. Creatures that receive this strange surge vitality have advantage on their next attack or saving throw.</p>
         </description>
         <sheet>

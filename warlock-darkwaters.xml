@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>The Dark Waters Patron</name>
+        <description>The Dark Waters Patron</description>
+        <author>KibblesTasty</author>
+        <update version="0.0.1">
+            <file name="warlock-darkwaters.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/warlock-darkwaters.xml" />
+        </update>
+    </info>
+    <element name="The Dark Waters" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_THEDARKWATERS">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>Your patron is an entity of darkness, an entity from the depths of the sunless sea, the dark listless oceans of the shadowfell, the deep pools of underdark, or the ancient trackless depths of the ocean beyond the sun's reach. Ancient and forgotten these powers offer dark deals to fulfill their ancient grudges and settle long forgotten scores, though those that accept these pacts may make them for simpler reasons - power, desperation, or delving what should be best left shrouded in the dark.</p>
+            <p class="indent">The aims and drives of these powers are mysterious, but they are often willing to save creatures that have found themselves in the depths of doom in exchange for accepting this dark bargain, gaining land born agents to carry out their mysterious aims. Those that have gained their powers from these sources tend to be graced with extraordinary abilities of movement.</p>
+            <div element="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_EXPANDED_SPELL_LIST" />
+            <div element="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_SHADOWDIVE" />
+            <div element="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_POUNCEFROMDARKNESS" />
+            <div element="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_CLINGINGSHROUD" />
+            <div element="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_ESSENCETHIEF" />
+            <div element="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_SHADOWDANCE" />
+        </description>
+        <sheet display="false">
+            <description>Your patron is an entity of darkness from the depths of the sunless sea.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_EXPANDED_SPELL_LIST" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_SHADOWDIVE" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_POUNCEFROMDARKNESS" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_CLINGINGSHROUD" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_ESSENCETHIEF" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_SHADOWDANCE" level="14" />
+        </rules>
+    </element>
+    <element name="Expanded Spell List" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_EXPANDED_SPELL_LIST">
+        <description>
+			<p>The Dark Waters lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+			<h5>THE DARK WATERS EXPANDED SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><em>fog cloud, hunter's mark</em></td></tr>
+				<tr><td>2nd</td><td><em>blindness/deafness, blur</em></td></tr>
+				<tr><td>3rd</td><td><em>liquid shadows, nondetection</em></td></tr>
+				<tr><td>4th</td><td><em>freedom of movement, greater invisibility</em></td></tr>
+				<tr><td>5th</td><td><em>passwall, steel wind strike</em></td></tr>
+			</table>
+		</description>
+        <sheet display="false">
+            <description>The Dark Waters lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_FOG_CLOUD</extend>
+            <extend>ID_PHB_SPELL_HUNTERS_MARK</extend>
+            <extend>ID_PHB_SPELL_BLINDNESS_DEAFNESS</extend>
+            <extend>ID_PHB_SPELL_BLUR</extend>
+            <extend>ID_THEDARKWATERS_SPELL_LIQUID_SHADOWS</extend>
+            <extend>ID_PHB_SPELL_NONDETECTION</extend>
+            <extend>ID_PHB_SPELL_FREEDOM_OF_MOVEMENT</extend>
+            <extend>ID_PHB_SPELL_GREATER_INVISIBILITY</extend>
+            <extend>ID_PHB_SPELL_PASSWALL</extend>
+            <extend>ID_XGTE_SPELL_STEEL_WIND_STRIKE</extend>
+        </spellcasting>
+    </element>
+    <element name="Shadow Dive" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_SHADOWDIVE">
+        <description>
+            <p>Starting at 1st level, you can pass through the darkness of shadows in a burst of movement. While you are in darkness, your movement speed is increased by 5 feet. While you are invisible or hidden from all non-allied creatures in darkness, this movement bonus increases to 10 feet. In water, this bonus is doubled.</p>
+        </description>
+        <sheet>
+            <description>While you are in darkness, your movement speed is increased by 5 feet. While you are invisible or hidden from all non-allied creatures in darkness, this movement bonus increases to 10 feet. In water, this bonus is doubled.</description>
+        </sheet>
+    </element>
+    <element name="Pounce from Darkness" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_POUNCEFROMDARKNESS">
+        <description>
+            <p>Additionally at 1st level, when you jump from darkness or water, your jumping distance is doubled.</p>
+        </description>
+        <sheet>
+            <description>When you jump from darkness or water, your jumping distance is doubled.</description>
+        </sheet>
+    </element>
+    <element name="Clinging Shroud" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_CLINGINGSHROUD">
+        <description>
+            <p>Starting at 6th level, when you move out of an area of darkness (magical or otherwise) the darkness coats you in a swirling mist, causing you to be obscured by darkness until the end of your turn or until you attack, make a damage roll, cast a spell, or force someone to make a saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you move out of an area of darkness (magical or otherwise) the darkness coats you in a swirling mist, causing you to be obscured by darkness until the end of your turn or until you attack, make a damage roll, cast a spell, or force someone to make a saving throw.</description>
+        </sheet>
+    </element>
+    <element name="Essence Thief" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_ESSENCETHIEF">
+        <description>
+            <p>Beginning at 10th level, your patrons powers grant you the ability to sap away the powers of enemies, taking it for yourself. When you deal damage to a creature, you can drain away part of its essence; until the end of your next turn, the target creature subtracts 1d6 from all ability checks, attacks rolls, and saving throws, and you add 1d6 to all ability checks, attack rolls, and saving throws.</p>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short/Long rest">
+            <description>When you deal damage to a creature, you can drain away part of its essence; until the end of your next turn, the target creature subtracts 1d6 from all ability checks, attacks rolls, and saving throws, and you add 1d6 to all ability checks, attack rolls, and saving throws.</description>
+        </sheet>
+    </element>
+    <element name="Shadow Dive" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_FEATURE_THEDARKWATERS_SHADOWDANCE">
+        <description>
+            <p>Starting at 14th level, you gain the ability to more perfectly meld with the darkness, drawing upon it and taking its power.</p>
+            <p class="indent">As a bonus action, you partially merge with the darkness and shadows around you. For one minute while in dim light or darkness, you are invisible until you attack, make a damage roll, cast a spell, or force someone to make a saving throw. At the end of each of your turns for the duration you become invisible again.</p>
+            <p class="indent">If you end your turn in darkness, you additionally regain 1d6 hit points as it revitalizes you.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">You partially merge with the darkness and shadows around you. For one minute while in dim light or darkness, you are invisible until you attack, make a damage roll, cast a spell, or force someone to make a saving throw. At the end of each of your turns for the duration you become invisible again.If you end your turn in darkness, you additionally regain 1d6 hit points as it revitalizes you.</description>
+        </sheet>
+    </element>
+    <element name="Investiture of Shadow" type="Spell" source="KibblesTasty's Subclasses" id="ID_THEDARKWATERS_SPELL_INVESTITURE_OF_SHADOW">
+        <supports>Occulist, Warlock, Wizard</supports>
+        <description>
+            <p>Until the spell ends, shadows wrap around you, blending into your shadow as your shadow lengthens and grows. You gain the following benefits:</p>
+            <ul>
+                <li>You have resistance to necrotic damage.</li>
+                <li>Bright light within 10 feet of you becomes dim light. Dim light within 10 of you feet becomes darkness.</li>
+                <li>You can teleport between patches of darkness within 30 feet as a bonus action.</li>
+                <li>While in darkness, you can use your action to become invisible until you move, attack, or cast a spell.</li>
+                <li>You can use your action to make tendrils of darkness erupt from your shadow or from a patch of darkness within 30 feet, targeting a creature within 10 feet of the shadows. The target creature makes a Dexterity saving throw. On failure, the target becomes restrained, and takes 2d6 necrotic damage at the start of its turn while restrained. A creature restrained by the shadows can use its action to make a Strength check against your spell save DC. On a success, it frees itself. A creature has advantage on saving throws and ability checks against this effect while in bright light.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="duration">Concentration, up to 10 minutes</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+  </element>
+  <element name="Liquid Shadows" type="Spell" source="KibblesTasty's Subclasses" id="ID_THEDARKWATERS_SPELL_LIQUID_SHADOWS">
+    <supports>Occultist, Sorcerer, Wizard</supports>
+    <description>
+      <p> Shadows within 30 feet of you when you cast the spell deepen and darken, taking on a strange glassy appearance like the surface of dark water; you gain advantage on Dexterity (Stealth) checks made to hide in dim light or darkness of these shadows. Dim light and shadows are locked in place by the spell and cannot be illuminated unless illuminated by the magic a spell of equal or higher level.</p>
+      <p class="indent">Additionally, you can step into them, sliding beneath their surfaces as if they are pools of dark water. You can travel through darkness in the area of effect of the spell as if borrowing 5 feet under the surface of them using your swimming speed.</p>
+      <p class="indent">If a shadow is illuminated by magic of an equal or higher level while you are traveling through it, you are forced to the surface of shadow as if it is normal terrain.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">Concentration, up to 1 minute</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+      <set name="materialComponent">a vial of water from the underdark</set>
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Blade from the Dark" type="Class Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_CLASS_FEATURE_ELDRITCH_INVOCATION_BLADE_FROM_THE_DARK">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Dark Waters Patron, Pact of the Blade feature</prerequisite>
+		<requirements>ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_THEDARKWATERS, ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_BLADE</requirements>
+		<description>
+			<p><em>Prerequisite: The Dark Waters patron, Pact of the Blade feature</em></p>
+			<p>After using Pounce from the Darkness to leap 5 or more feat, your next attack has advantage. If your attack would already have advantage from being hidden you can reroll one of the attack roll dice once, using the higher value.</p>
+		</description>
+		<sheet display="true">
+			<description>After using Pounce from the Darkness to leap 5 or more feat, your next attack has advantage. If your attack would already have advantage from being hidden you can reroll one of the attack roll dice once, using the higher value.</description>
+		</sheet>
+	</element>
+    <element name="Dark Predator" type="Class Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_CLASS_FEATURE_ELDRITCH_INVOCATION_DARK_PREDATOR">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Dark Waters Patron, hunter's mark spell</prerequisite>
+		<requirements>ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_THEDARKWATERS, ID_PHB_SPELL_HUNTERS_MARK</requirements>
+		<description>
+			<p><em>Prerequisite: The Dark Waters patron, Hunter's Mark spell</em></p>
+			<p>When you leap toward a target that is under the effect of hunter's mark you can leap up to your entire movement speed, evading all attacks of opportunity attacks during this leap.</p>
+		</description>
+		<sheet display="true">
+			<description>When you leap toward a target that is under the effect of hunter's mark you can leap up to your entire movement speed, evading all attacks of opportunity attacks during this leap.</description>
+		</sheet>
+	</element>
+    <element name="Gift of Dark Waters" type="Class Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_CLASS_FEATURE_ELDRITCH_INVOCATION_GIFT_OF_DARK_WATERS">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>The Dark Waters Patron</prerequisite>
+		<requirements>ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_THEDARKWATERS</requirements>
+		<description>
+			<p><em>Prerequisite: The Dark Waters patron</em></p>
+			<p>You gain a swimming speed equal to your movement speed, and can leap from water as if leaping from land with a running start. If you already had a swimming speed, that speed is increased by 10 feet. While in water, bright light within 10 feet of you becomes dim light.</p>
+		</description>
+		<sheet display="true">
+			<description>You gain a swimming speed equal to your movement speed, and can leap from water as if leaping from land with a running start. If you already had a swimming speed, that speed is increased by 10 feet. While in water, bright light within 10 feet of you becomes dim light.</description>
+		</sheet>
+	</element>
+    <element name="Eldritch Sacrifice" type="Class Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SACRIFICE">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Eldritch blast cantrip</prerequisite>
+		<requirements>ID_PHB_SPELL_ELDRITCH_BLAST</requirements>
+		<description>
+			<p><em>Eldritch blast cantrip</em></p>
+			<p>When you cast eldritch blast, for each beam you can instead take half that beam's damage roll and burst the dark power outwards, forcing all creatures within 5 feet to pass a Dexterity saving throw or take damage equal to beam's damage roll. Multiple beams use a single saving throw, but increase the damage taken and dealt.</p>
+            <p class="indent">You can apply modifiers to eldritch blast to targets that fail their saving throw against this damage (such as Repelling Blast).</p>
+		</description>
+		<sheet display="true">
+			<description>When you cast eldritch blast, for each beam you can instead take half that beam's damage roll and burst the dark power outwards, forcing all creatures within 5 feet to pass a Dexterity saving throw or take damage equal to beam's damage roll. Multiple beams use a single saving throw, but increase the damage taken and dealt.You can apply modifiers to eldritch blast to targets that fail their saving throw against this damage (such as Repelling Blast).</description>
+		</sheet>
+	</element>
+    <element name="Shroud Self" type="Class Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_CLASS_FEATURE_ELDRITCH_INVOCATION_SHROUD_SELF">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><em>Prerequisite: 9th level</em></p>
+			<p>Your patron grants the ability to fade from sight. When you expend a Pact Magic spell slot, you can make a Dexterity (Stealth) check to hide as a bonus action until the end of your turn.</p>
+		</description>
+		<sheet display="true">
+			<description>Your patron grants the ability to fade from sight. When you expend a Pact Magic spell slot, you can make a Dexterity (Stealth) check to hide as a bonus action until the end of your turn.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     
-    <!--LATEST VERSTION 2.0.3-->
+    <!--LATEST VERSTION 2.1-->
     <!--CLASS-->
 
     <element name="Artificer" type="Class" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_CLASS_ARTIFICER">
@@ -396,8 +396,8 @@
             <p>At 1st level, you've mastered the creation of the essential reusable tools for surviving the battlefield as a gadgeteer. You have the following items:</p>
             <ul>
                 <li><strong>Grappling Hook.</strong> As an attack or as an action, you may target a surface, object or creature within 20 feet. If the target is Small or Smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it. Alternatively, if the target is Medium or larger, you can choose to be pulled to it, however, this does not grapple it.</li>
-                <li><strong>Smoke Bomb.</strong> As an action, you can use this to cast fog cloud centered on yourself without expending a spell slot. It lasts a number of rounds equal to your intelligence modifier and does not require concentration.</li>
-                <li><strong>Gadgetsmith Weapon.</strong> Pick one of Boomerang of Hitting, Impact Gauntlets, Lightning Baton, Repeating Crossbow, or Shock Generator from the upgrade section. You receive this upgrade and it does not count against your upgrade total.</li>
+                <li><strong>Smoke Bomb.</strong> As an action, you can use this to cast fog cloud centered on yourself without expending a spell slot. It lasts a number of rounds equal to your Intelligence modifier and does not require concentration. When you cast fog cloud in this way, you can set the radius at 5, 10, 15, or 20 feet.</li>
+                <li><strong>Gadgetsmith Weapon.</strong> Pick one of Ricocheting Weapon, Impact Gauntlets, Lightning Baton, Repeating Crossbow, or Shock Generator from the upgrade section. You receive this upgrade and it does not count against your upgrade total.</li>
             </ul>
         </description>
         <sheet>
@@ -419,10 +419,10 @@
     </element>
     <element name="Smoke Bomb" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_FEATURE_GADGETSMITH_ESSENTIAL_TOOLS_SMOKE">
         <description>
-            <p>As an action, you can use this to cast <em>fog cloud</em> centered on yourself without expending a spell slot. It lasts a number of rounds equal to your intelligence modifier and does not require concentration.</p>
+            <p>As an action, you can use this to cast <em>fog cloud</em> centered on yourself without expending a spell slot. It lasts a number of rounds equal to your intelligence modifier and does not require concentration. When you cast fog cloud in this way, you can set the radius at 5, 10, 15, or 20 feet.</p>
         </description>
         <sheet>
-            <description action="Action">You can cast <em>fog cloud</em> centered on yourself without expending a spell slot. It lasts {{intelligence:modifier}} rounds and does not require concentration.</description>
+            <description action="Action">You can cast <em>fog cloud</em> centered on yourself without expending a spell slot. It lasts {{intelligence:modifier}} rounds and does not require concentration. When you cast fog cloud in this way, you can set the radius at 5, 10, 15, or 20 feet.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" />
@@ -430,7 +430,7 @@
     </element>
     <element name="Gadgetsmith Weapon" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_FEATURE_GADGETSMITH_ESSENTIAL_TOOLS_WEAPON">
         <description>
-            <p>Pick one of <em>Boomerang of Hitting</em>, <em>Impact Gauntlets</em>, <em>Lightning Baton</em>, <em>Repeating Crossbow</em>, or <em>Shock Generator</em> from the upgrade section. You receive this upgrade and it does not count against your upgrade total.</p>
+            <p>Pick one of <em>Ricocheting Weapon</em>, <em>Impact Gauntlets</em>, <em>Lightning Baton</em>, <em>Repeating Crossbow</em>, or <em>Shock Generator</em> from the upgrade section. You receive this upgrade and it does not count against your upgrade total.</p>
         </description>
         <sheet>
             <description>You receive this upgrade and it does not count against your upgrade total.</description>
@@ -526,31 +526,31 @@
         </rules>
     </element>
 
-    <element name="Boomerang of Hitting" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_BOOMERANG_OF_HITTING">
+    <element name="Richocheting Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_RICOCHETING_WEAPON">
         <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_BOOMERANG_OF_HITTING</requirements>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_RICOCHETING_WEAPON</requirements>
         <description>
-            <p>You create a magical boomerang. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d4 bludgeoning damage. You can Arcane Retrofit this weapon.</p>
-            <p class="indent">Special: When this weapon is Thrown, you can target two creatures within 10 feet of each other, making a separate attack roll against each target.</p>
+            <p>You create a ranged weapon enchanted or engineered to ricochet of its targets and return to your hand. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d8 bludgeoning, piercing or slashing damage (chosen at the time you select this upgrade). You can Arcane Retrofit this weapon.</p>
+            <p class="indent">Special: When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for each target hit after the first.</p>
             <p class="indent">This weapon returns to your hand after you make an attack with it using the Thrown property.</p>
         </description>
         <sheet>
-            <description>You create a magical boomerang. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d4 bludgeoning damage. You can Arcane Retrofit this weapon.
-            Special: When this weapon is Thrown, you can target two creatures within 10 feet of each other, making a separate attack roll against each target.
+            <description>You create a ranged weapon enchanted or engineered to ricochet of its targets and return to your hand. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d8 bludgeoning, piercing or slashing damage (chosen at the time you select this upgrade). You can Arcane Retrofit this weapon
+            Special: When this weapon is Thrown, you When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for each target hit after the first.
             This weapon returns to your hand after you make an attack with it using the Thrown property.</description>
         </sheet>
     </element>
-    <element name="Boomerang of Hitting" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_BOOMERANG_OF_HITTING">
+    <element name="Richocheting Weapon" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_RICOCHETING_WEAPON">
         <supports>Cross Disciplinary Knowledge</supports>
-        <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_BOOMERANG_OF_HITTING, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_RICOCHETING_WEAPON, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
         <description>
-            <p>You create a magical boomerang. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d4 bludgeoning damage. You can Arcane Retrofit this weapon.</p>
-            <p class="indent">Special: When this weapon is Thrown, you can target two creatures within 10 feet of each other, making a separate attack roll against each target.</p>
+            <p>You create a ranged weapon enchanted or engineered to ricochet of its targets and return to your hand. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d8 bludgeoning, piercing or slashing damage (chosen at the time you select this upgrade). You can Arcane Retrofit this weapon.</p>
+            <p class="indent">Special: When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for each target hit after the first.</p>
             <p class="indent">This weapon returns to your hand after you make an attack with it using the Thrown property.</p>
         </description>
         <sheet>
-            <description>You create a magical boomerang. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d4 bludgeoning damage. You can Arcane Retrofit this weapon.
-            Special: When this weapon is Thrown, you can target two creatures within 10 feet of each other, making a separate attack roll against each target.
+            <description>You create a ranged weapon enchanted or engineered to ricochet of its targets and return to your hand. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d8 bludgeoning, piercing or slashing damage (chosen at the time you select this upgrade). You can Arcane Retrofit this weapon
+            Special: When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for each target hit after the first.
             This weapon returns to your hand after you make an attack with it using the Thrown property.</description>
         </sheet>
     </element>
@@ -719,16 +719,37 @@
         </rules>
     </element>
 
+    <element name="Gliding Cloak" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_GILDING_CLOAK">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_GILDING_CLOAK</requirements>
+        <description>
+            <p>You make a cloak that allows you to glide when falling. When you fall more than 10 feet and aren't incapacitated, can spread this cloak to reduce your falling speed to 30 feet a round take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</p>
+        </description>
+        <sheet>
+            <description>When you fall more than 10 feet and aren't incapacitated, can spread this cloak to reduce your falling speed to 30 feet a round take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</description>
+        </sheet>
+    </element>
+    <element name="Gliding Cloak" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_GILDING_CLOAK">
+        <supports>Cross Disciplinary Knowledge</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_GILDING_CLOAK, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
+        <description>
+            <p>You make a cloak that allows you to glide when falling. When you fall more than 10 feet and aren't incapacitated, can spread this cloak to reduce your falling speed to 30 feet a round take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</p>
+        </description>
+        <sheet>
+            <description>When you fall more than 10 feet and aren't incapacitated, can spread this cloak to reduce your falling speed to 30 feet a round take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</description>
+        </sheet>
+    </element>
+
     <element name="Impact Gauntlet" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET">
         <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_IMPACT_GAUNTLET</requirements>
         <description>
-            <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d8 bludgeoning damage.</p>
+            <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d6 bludgeoning damage.</p>
             <p class="indent">Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</p>
             <p class="indent">You can apply this upgrade up to 2 times, making a separate item each time.</p>
         </description>
         <sheet>
-            <description>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d8 bludgeoning damage.
+            <description>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d6 bludgeoning damage.
             Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.
             You can apply this upgrade up to 2 times, making a separate item each time.</description>
         </sheet>
@@ -737,7 +758,7 @@
         <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, (ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET||ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_IMPACT_GAUNTLET)</requirements>
         <description>
-            <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d8 bludgeoning damage.</p>
+            <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d6 bludgeoning damage.</p>
             <p class="indent">Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</p>
             <p class="indent">You can apply this upgrade up to 2 times, making a separate item each time.</p>
         </description>
@@ -749,12 +770,12 @@
         <supports>Cross Disciplinary Knowledge</supports>
         <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
         <description>
-            <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d8 bludgeoning damage.</p>
+            <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d6 bludgeoning damage.</p>
             <p class="indent">Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</p>
             <p class="indent">You can apply this upgrade up to 2 times, making a separate item each time.</p>
         </description>
         <sheet>
-            <description>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d8 bludgeoning damage.
+            <description>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d6 bludgeoning damage.
             Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.
             You can apply this upgrade up to 2 times, making a separate item each time.</description>
         </sheet>
@@ -926,11 +947,11 @@
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_REPEATING_HAND_CROSSBOW</requirements>
         <description>
             <p>You build an improved hand crossbow. You have proficiency in this weapon, and it has the Ammunition (range 30/120), Light, and Special properties and deals 1d6 piercing damage.</p>
-            <p class="indent">Special: This weapon does not require a free-hand to load, as it has a built in loader. Once per turn, when you take the Attack action with this weapon and have advantage on an attack, you can forgo advantage on an attack to make one additional weapon attack (also without advantage) with this weapon against the same target as a bonus action.</p>
+            <p class="indent">Special: This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</p>
         </description>
         <sheet>
             <description>You build an improved hand crossbow. You have proficiency in this weapon, and it has the Ammunition (range 30/120), Light, and Special properties and deals 1d6 piercing damage.
-            Special: This weapon does not require a free-hand to load, as it has a built in loader. Once per turn, when you take the Attack action with this weapon and have advantage on an attack, you can forgo advantage on an attack to make one additional weapon attack (also without advantage) with this weapon against the same target as a bonus action.</description>
+            Special: This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</description>
         </sheet>
     </element>
     <element name="Repeating Hand Crossbow" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_REPEATING_HAND_CROSSBOW">
@@ -938,11 +959,11 @@
         <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_REPEATING_HAND_CROSSBOW, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
         <description>
             <p>You build an improved hand crossbow. You have proficiency in this weapon, and it has the Ammunition (range 30/120), Light, and Special properties and deals 1d6 piercing damage.</p>
-            <p class="indent">Special: This weapon does not require a free-hand to load, as it has a built in loader. Once per turn, when you take the Attack action with this weapon and have advantage on an attack, you can forgo advantage on an attack to make one additional weapon attack (also without advantage) with this weapon against the same target as a bonus action.</p>
+            <p class="indent">Special: This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</p>
         </description>
         <sheet>
             <description>You build an improved hand crossbow. You have proficiency in this weapon, and it has the Ammunition (range 30/120), Light, and Special properties and deals 1d6 piercing damage.
-            Special: This weapon does not require a free-hand to load, as it has a built in loader. Once per turn, when you take the Attack action with this weapon and have advantage on an attack, you can forgo advantage on an attack to make one additional weapon attack (also without advantage) with this weapon against the same target as a bonus action.</description>
+            Special: This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</description>
         </sheet>
     </element>
 
@@ -1072,20 +1093,46 @@
 
         <!--5th Level Upgrades-->
 
-    <element name="Autonomous Crossbow" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_AUTONOMOUS_CROSSBOW">
+    <element name="Crossbow Spider" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_CROSSBOW_SPIDER">
         <supports>Specialization Upgrade</supports>
         <prerequisite>5th level</prerequisite>
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You modify a crossbow to be able to aim and fire on its own. As an action, you can deploy a tiny construct. Once deployed, the tiny construct can be fired as a bonus action making an attack from where it is deployed with a range of 30/120 feet. You make a ranged spell attack, and if the attack hits it deals 1d6 + your Intelligence modifier piercing damage. The construct becomes inactive after 1 minute has passed, or after it has fired 10 times.</p>
-            <p class="indent">Once you have activated it, you cannot activate it again until you complete a short or long rest.</p>
+            <p class="indent">Once you have activated it, you cannot activate it again until you complete a long rest. If it was not destroyed, you can activate it again early by expending a 1st level or higher spell slot (if it was destroyed, you cannot activate it again until repairing or recreating it during a long rest).</p>
+            <div class="reference">
+				<div element="ID_KIBBLESTASTY_ARTIFICER_INFORMATION_CROSSBOW_SPIDER" />
+			</div>
         </description>
         <sheet>
-            <description action="Action" usage="1/Short/Long rest">As an action, you can deploy a tiny construct. Once deployed, the tiny construct can be fired as a bonus action making an attack from where it is deployed with a range of 30/120 feet. You make a ranged spell attack, and if the attack hits it deals 1d6 + {{intelligence:modifier}} piercing damage. The construct becomes inactive after 1 minute has passed, or after it has fired 10 times.</description>
+            <description usage="1/Long Rest" action="Action">As an action, you can deploy a tiny construct. Once deployed, the tiny construct can be fired as a bonus action making an attack from where it is deployed with a range of 30/120 feet. You make a ranged spell attack, and if the attack hits it deals 1d6 + your Intelligence modifier piercing damage. The construct becomes inactive after 1 minute has passed, or after it has fired 10 times. Once you have activated it, you cannot activate it again until you complete a long rest. If it was not destroyed, you can activate it again early by expending a 1st level or higher spell slot (if it was destroyed, you cannot activate it again until repairing or recreating it during a long rest).</description>
         </sheet>
     </element>
-
+    <element name="Crossbow Spider" type="Information" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_INFORMATION_CROSSBOW_SPIDER">
+		<description>
+			<p><em>Tiny construct</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 10</li>
+				<li><strong>Hit Points</strong> 5</li>
+				<li><strong>Speed</strong> 15 ft., climb 15 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>2 (-4)</td><td>14 (+2)</td><td>10 (0)</td><td>1 (-5)</td><td>1 (-5)</td><td>1 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> poison</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened, paralyzed, petrified, poisoned</li>
+				<li><strong>Senses</strong> passive Perception 5</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Fire Crossbow.</em></strong> <em>Ranged Weapon Attack:</em> your spell attack modifier to hit, range 30/120 ft., one target you can see. <em>Hit:</em> 1d6 + your Intelligence modifier piercing damage.</p>
+		</description>
+	</element>
+    
     <element name="Binding Rope" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_BINDING_ROPE">
         <supports>Specialization Upgrade</supports>
         <prerequisite>5th level</prerequisite>
@@ -1105,11 +1152,11 @@
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5], (ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET||ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_IMPACT_GAUNTLET)</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Impact Gauntlets</em></p>
-            <p>Your gauntlets can exert massive kinetic force when striking. When you make an attack with your Impact Gauntlet, you can choose to move 10 feet in the opposite direction, or, as a bonus action, force the target to make a Strength saving throw or be knocked 10 feet backward.</p>
+            <p>Your gauntlets can exert massive kinetic force when striking. When you make an attack with your Impact Gauntlet, you can choose to move 10 feet in the opposite direction, or, as a bonus action, force the target to make a Strength saving throw or be knocked 10 feet backward. This movement does not provoke attacks of opportunity.</p>
             <p class="indent">You can expend an attack to use the movement effect of this gauntlet even if not attacking the target.</p>
         </description>
         <sheet>
-            <description>When you make an attack with your Impact Gauntlet, you can choose to move 10 feet in the opposite direction, or, as a bonus action, force the target to make a Strength saving throw or be knocked 10 feet backward. You can expend an attack to use the movement effect of this gauntlet even if not attacking the target.</description>
+            <description>When you make an attack with your Impact Gauntlet, you can choose to move 10 feet in the opposite direction, or, as a bonus action, force the target to make a Strength saving throw or be knocked 10 feet backward. This movement does not provoke attacks of opportunity. You can expend an attack to use the movement effect of this gauntlet even if not attacking the target.</description>
         </sheet>
     </element>
 
@@ -1242,25 +1289,6 @@
 
         <!--11th Level Upgrades-->
 
-    <element name="Crossbow Spider" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_CROSSBOW_SPIDER">
-        <supports>Specialization Upgrade</supports>
-        <prerequisite>Autonomous Crossbow, 11th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_AUTONOMOUS_CROSSBOW</requirements>
-        <description>
-            <p><em>Prerequisite: Autonomous Crossbow, 11th level</em></p>
-            <p>You upgrade your Autonomous Crossbow design to be mobile. When you use your bonus action to command it, you can move it up to 20 feet. It is under the effect of the spiderclimb spell and can skitter along and stand on any surface. You improve the central crossbow, increasing its damage to 1d8 + your Intelligence modifier, and its firing capacity to 20 shots before it becomes inactive. Additionally, you make it sturdier, and it gains hit points equal to twice your Artificer level.</p>
-            <div class="reference">
-				<div element="ID_PHB_SPELL_SPIDER_CLIMB" />
-			</div>
-        </description>
-        <sheet>
-            <description>You upgrade your Autonomous Crossbow design to be mobile. When you use your bonus action to command it, you can move it up to 20 feet. It is under the effect of the spiderclimb spell and can skitter along and stand on any surface. You improve the central crossbow, increasing its damage to 1d8 + {{intelligence:modifier}}, and its firing capacity to 20 shots before it becomes inactive. Additionally, you make it sturdier, and it gains {{level:artificer:double}} hit points.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" />
-        </rules>
-    </element>
-
     <element name="Flying Gadget" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FLYING_GADGET">
         <supports>Specialization Upgrade</supports>
         <prerequisite>11th level</prerequisite>
@@ -1284,7 +1312,7 @@
         <description>
             <p><em>Prerequisite: Shock Generator, 11th level</em></p>
             <p>You upgrade your shock generator with additional lightning capabilities. You can cast lightning lure at-will using it, and can overload it to cast lightning bolt without expending a spell slot. Once you overload it, you cannot use it to cast lightning bolt again until you complete a short or long rest.</p>
-            <p class="indent">Additionally, when dealing Lightning damage during your turn, you can add your Intelligence modifier to one roll of the damage dealt.</p>
+            <p class="indent">Additionally, once per turn when dealing Lightning damage with a spell, you can add your Intelligence modifier to one roll of the damage dealt.</p>
             <div class="reference">
 				<div element="ID_SCAG_SPELL_LIGHTNING_LURE" />
 			</div>
@@ -1294,7 +1322,7 @@
         </description>
         <sheet>
             <description>You can cast lightning lure at-will using it, and can overload it to cast lightning bolt without expending a spell slot. Once you overload it, you cannot use it to cast lightning bolt again until you complete a short or long rest.
-            Additionally, when dealing Lightning damage during your turn, you can add {{intelligence:modifier}} to one roll of the damage dealt.</description>
+            Additionally, once per turn when dealing Lightning damage with a spell, you can add {{intelligence:modifier}} to one roll of the damage dealt.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_SCAG_SPELL_LIGHTNING_LURE" />
@@ -1441,12 +1469,39 @@
             <set name="school">Transmutation</set>
             <set name="time">1 bonus action</set>
             <set name="range">Touch</set>
-            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="duration">1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent" />
-            <set name="isConcentration">true</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Awaken Rope" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_SPELL_AWAKEN_ROPE">
+        <supports>Artificer, Bard, Occultist, Ranger, Sorcerer, Wizard, KTHArtificer</supports>
+        <description>
+            <p>As an action, you can touch a rope 10 to 60 feet long and issue a single command to it, selecting from the following options:</p>
+            <ul>
+                <li><p class="indent"><strong><em>Bind.</em></strong> The rope attempts to bind a creature of your choice within 20 feet of you. The creature must make a Dexterity saving throw or become restrained until it is freed. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the rope (AC 10) also frees the creature without harming it, ending the effect and destroying the rope.</p></li>
+                <li><p class="indent"><strong><em>Fasten.</em></strong> The rope flies up 60 feet and ties one end to an object or surface that a rope could be tied to, before becoming inanimate again, hanging from the object.</p></li>
+                <li><p class="indent"><strong><em>Grab.</em></strong> The rope lashes out grabs one Small or smaller object that is not being worn by a creature within a range equal to the length of the rope and pulls that object back to your hand. If that object is being carried by a creature, it must make a Strength saving throw. On success, it retains the object, and on failure the object is pulled from the creature.</p></li>
+            </ul>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, you can target a chain instead of a rope. It has the same available actions, but it has a DC 15, an AC of 15, and resistance to slashing damage when taking the Bind action. When cast with a spell slot of 3rd level or higher targeting a rope, that rope is magically imbued for 1 minute, gaining an DC of 15, an AC 20, and 20 hit points.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">10 to 60 feet of cord or rope, worth at least 1 cp</set>
+            <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
@@ -1601,6 +1656,27 @@
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
             <set name="materialComponent">Any tiny nonmagical item, which is destroyed by the activation of the spell</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Returning Weapon" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_SPELL_RETURNING_WEAPON">
+        <supports>KTHArtificer</supports>
+        <description>
+            <p>You touch a weapon granting it the throwing 20/60 property. If it already has the thrown property, it's range increases by 10/30. It also gains the "returning" property. After being thrown it automatically reappears in the throwers hand.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">A magic item that casts a spell</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>

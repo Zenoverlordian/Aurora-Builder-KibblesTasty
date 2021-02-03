@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--Version 2.1-->
 <elements>
     <element name="Thundersmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH">
         <supports>Artificer Specialization</supports>
@@ -225,10 +226,10 @@
         <supports>Specialization Upgrade</supports>
         <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH</requirements>
         <description>
-            <p>You reclaim and rebalance your weapon to leverage the backdraft of the force it exerts. When you deal Thunder damage on your turn with your Stormforged weapon, you can move 5 feet away from the target that was damaged.</p>
+            <p>You reclaim and rebalance your weapon to leverage the backdraft of the force it exerts. When you deal Thunder damage on your turn with your Stormforged weapon, you can move 5 feet away from the target that was damaged. This movement does not provoke attacks of opportunity.</p>
         </description>
         <sheet>
-            <description>When you deal Thunder damage on your turn with your Stormforged weapon, you can move 5 feet away from the target that was damaged.</description>
+            <description>When you deal Thunder damage on your turn with your Stormforged weapon, you can move 5 feet away from the target that was damaged. This movement does not provoke attacks of opportunity.</description>
         </sheet>
     </element>
 
@@ -321,6 +322,33 @@
 
         <!--9TH LEVEL UPGRADES-->
 
+    <element name="Elemental Swapping" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_ELEMENTAL_SWAPPING">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:9]</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level</em></p>
+            <p>You upgrade the firing chamber for more adaptable damage. When you take the attack action with your Stormforged Weapon you can adjust the firing chamber, causing any bonus damage granted by Thundermonger to deal fire, cold, acid, or lightning damage instead of thunder damage. Alternatively, you can use a Vial of Holy Water to cause your next Thundermonger bonus damage to deal radiant damage.</p>
+        </description>
+        <sheet>
+            <description>When you take the attack action with your Stormforged Weapon you can adjust the firing chamber, causing any bonus damage granted by Thundermonger to deal fire, cold, acid, or lightning damage instead of thunder damage. Alternatively, you can use a Vial of Holy Water to cause your next Thundermonger bonus damage to deal radiant damage.</description>
+        </sheet>
+    </element>
+    
+    <element name="Mortar Shells" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_MORTAR_SHELLS">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level, Ammunition Property</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:9], (ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON|ID_KTH_ARTIFICER_WEAPON_HAND_CANNON)</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level, Ammunition Property</em></p>
+            <p>You build a secondary fire mode allowing you to fire your cannon like a mortar. Pick a target point within range, and make an attack roll. Apply the attack roll to all creatures within a 5 foot radius of the target point. Creatures hit take weapon damage plus half of Thunder monger bonus damage. Dealing damage this way counts as applying Thundermonger damage for the turn.</p>
+            <p class="indent">Creatures do not benefit from cover against this fire mode unless they have overhead cover as well.</p>
+        </description>
+        <sheet>
+            <description>You build a secondary fire mode allowing you to fire your cannon like a mortar. Pick a target point within range, and make an attack roll. Apply the attack roll to all creatures within a 5 foot radius of the target point. Creatures hit take weapon damage plus half of Thunder monger bonus damage. Dealing damage this way counts as applying Thundermonger damage for the turn. Creatures do not benefit from cover against this fire mode unless they have overhead cover as well.</description>
+        </sheet>
+    </element>
+    
     <element name="Ride the Lightning" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_RIDE_THE_LIGHTNING">
         <supports>Specialization Upgrade</supports>
         <prerequisite>9th level, Lightning Burst</prerequisite>
@@ -431,19 +459,6 @@
 
         <!--15TH LEVEL UPGRADES-->
 
-    <element name="Elemental Swapping" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_ELEMENTAL_SWAPPING">
-        <supports>Specialization Upgrade</supports>
-        <prerequisite>15th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:15]</requirements>
-        <description>
-            <p><em>Prerequisite: 15th level</em></p>
-            <p>You upgrade the firing chamber for more adaptable damage. When you take the attack action with your Stormforged Weapon you can adjust the firing chamber, causing any bonus damage granted by Thundermonger to deal fire, cold, acid, or lightning damage instead of thunder damage. Alternatively, you can use a Vial of Holy Water to cause your next Thundermonger bonus damage to deal radiant damage.</p>
-        </description>
-        <sheet>
-            <description>When you take the attack action with your Stormforged Weapon you can adjust the firing chamber, causing any bonus damage granted by Thundermonger to deal fire, cold, acid, or lightning damage instead of thunder damage. Alternatively, you can use a Vial of Holy Water to cause your next Thundermonger bonus damage to deal radiant damage.</description>
-        </sheet>
-    </element>
-
     <element name="Massive Overload" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_MASSIVE_OVERLOAD">
         <supports>Specialization Upgrade</supports>
         <prerequisite>15th level, Storm Blast or Lightning Burst</prerequisite>
@@ -469,20 +484,6 @@
         </description>
         <sheet>
             <description>The bonus to attack and damage rolls for your Stormforged Weapon increases by +2 (stacking with any existing bonus from Weapon Improvement or Arcane Retrofit), up to a maximum of +4.</description>
-        </sheet>
-    </element>
-
-    <element name="Mortar Shells" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_MORTAR_SHELLS">
-        <supports>Specialization Upgrade</supports>
-        <prerequisite>15th level, Ammunition Property</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:15], (ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON|ID_KTH_ARTIFICER_WEAPON_HAND_CANNON)</requirements>
-        <description>
-            <p><em>Prerequisite: 15th level, Ammunition Property</em></p>
-            <p>You build a secondary fire mode allowing you to fire your cannon like a mortar. Pick a target point within range, and make an attack roll. Apply the attack roll to all creatures within a 5 foot radius of the target point. Creatures hit take weapon damage plus half of Thunder monger bonus damage. Dealing damage this way counts as applying Thundermonger damage for the turn.</p>
-            <p class="indent">Creatures do not benefit from cover against this fire mode unless they have overhead cover as well.</p>
-        </description>
-        <sheet>
-            <description>You build a secondary fire mode allowing you to fire your cannon like a mortar. Pick a target point within range, and make an attack roll. Apply the attack roll to all creatures within a 5 foot radius of the target point. Creatures hit take weapon damage plus half of Thunder monger bonus damage. Dealing damage this way counts as applying Thundermonger damage for the turn. Creatures do not benefit from cover against this fire mode unless they have overhead cover as well.</description>
         </sheet>
     </element>
 

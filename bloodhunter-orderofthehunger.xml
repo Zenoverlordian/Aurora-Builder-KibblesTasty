@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Order of the Hunger</name>
+        <update version="0.0.1">
+            <file name="bloodhunter-orderofthehunger.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/bloodhunter-orderofthehunger.xml" />
+        </update>
+    </info>
+    <element name="Order of the Hunger" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_BLOOD_HUNTER_ORDER_OF_THE_HUNGER">
+        <supports>Blood Hunter Order</supports>
+        <description>
+            <p>When one walks the path of using the power of evil to destroy evil, few options are drastic as those that introduce the Hunger into themselves to enhance their abilities.</p>
+            <p class="indent">In an ancient and dark blood rite, Blood Hunters of this order consume that which consumes - they imbibe the blood of a vampire, mixing it with their own in a process that produces a cursed half-living half-undead hunter. Though horrific, the Hunger grants them strength and powers that allow them effective machines of destruction, hunting and destroying what haunts the shadows.</p>
+            <p class="indent">If they don't become what haunts the shadows.</p>
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_CURSED_HALFLIFE" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_VAMPIRIC_BLOOD" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_PREDATORS_CONNECTION" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_BRAND_OF_THE_HUNTER" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_MIST_WALK" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_DARK_LIFE" />
+            <div element="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_INESCAPABLE_PURSUIT" />
+        </description>
+        <setters>
+            <set name="sourceUrl">https://www.gmbinder.com/share/-M3m3W9Xk1j0V5rXniDV</set>
+        </setters>
+        <sheet display="false">
+            <description>Blood Hunters of this order consume that which consumes - they imbibe the blood of a vampire, mixing it with their own in a process that produces a cursed half-living half-undead hunter.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_CURSED_HALFLIFE" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_VAMPIRIC_BLOOD" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_PREDATORS_CONNECTION" level="7" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_BRAND_OF_THE_HUNTER" level="11" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_MIST_WALK" level="15" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_DARK_LIFE" level="15" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_INESCAPABLE_PURSUIT" level="18" />
+        </rules>
+    </element>
+    <element name="Cursed Halflife" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_CURSED_HALFLIFE">
+        <description>
+            <p>Starting when you choose this archetype at 3rd level, the curse that's been wrought upon you grants several side effects. You gain darkvision out to a range of 60 feet. If you already have darkvision its range increases by 60 feet.</p>
+            <p class='indent'>Additionally, you gain the ability to cease breathing for up to 10 minutes with no ill effects, and the ability to still your heart for up to a minute.</p>
+            <p class='indent'>If your bare skin is exposed to direct sunlight, you take 1 radiant damage for every hour you spend in direct sunlight.</p>
+        </description>
+        <sheet>
+            <description>You gain darkvision out to a range of 60 feet. If you already have darkvision its range increases by 60 feet. Additionally, you gain the ability to cease breathing for up to 10 minutes with no ill effects, and the ability to still your heart for up to a minute.If your bare skin is exposed to direct sunlight, you take 1 radiant damage for every hour you spend in direct sunlight.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    <element name="Vampiric Blood" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_VAMPIRIC_BLOOD">
+        <description>
+            <p>Upon choosing this archetype at 3rd level, you gain the ability to use a dark rite as a bonus action, awakening your vampiric blood. When you activate this rite, you lose a number of hit points equal to one roll of your crimson rite die, and assume a vampiric form for 1 minute, or until you end it as an action, controlling your blood.</p>
+            <p class='indent'>For the duration, your visage becomes pallid and vampiric, fangs lengthening and eyes turning a glowing red. You can see in dim light or darkness as if it is bright light, gain a climbing speed equal to your walking speed, and your fangs become a natural weapon, which you can use once per turn to make an unarmed strike. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, and necrotic damage equal to twice your Crimson Rite Die. You have advantage with this attack against targets you are grappling. If the target was a living creature of CR 1/4 or more that has blood, you regain hit points equal to the necrotic damage dealt up to the amount of hit points you had the end of your last turn.</p>
+            <p class='indent'>This form suffers from some aspects of a vampire's cursed nature. If you start your turn in sunlight you take 1d4 radiant damage, and if you start your turn in running water, you take 1d4 acid damage. Any magical healing you receive from non-Necromancy spells is reduced by half.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to use a dark rite as a bonus action, awakening your vampiric blood. When you activate this rite, you lose a number of hit points equal to one roll of {{crimson rite:damage die}}, and assume a vampiric form for 1 minute, or until you end it as an action, controlling your blood. For the duration, your visage becomes pallid and vampiric, fangs lengthening and eyes turning a glowing red. You can see in dim light or darkness as if it is bright light, gain a climbing speed equal to your walking speed, and your fangs become a natural weapon, which you can use once per turn to make an unarmed strike. If you hit with it, you deal piercing damage equal to 1d6 + {strength:modifier}, and necrotic damage equal to twice {{crimson rite:damage die}}. You have advantage with this attack against targets you are grappling. If the target was a living creature of CR 1/4 or more that has blood, you regain hit points equal to the necrotic damage dealt up to the amount of hit points you had the end of your last turn. If you start your turn in sunlight you take 1d4 radiant damage, and if you start your turn in running water, you take 1d4 acid damage. Any magical healing you receive from non-Necromancy spells is reduced by half.</description>
+        </sheet>
+    </element>
+    <element name="Predator's Connection" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_PREDATORS_CONNECTION">
+        <description>
+            <p>At 7th level, you gain some of a vampire's connection to wolves and bats. When you transform or at the start of your turn while transformed, you can choose to gain Blindsight 60 ft. or Pack Tactics until the end of your turn. You can alternatively use a use of this feature to cast speak with animals to communicate with a Bat or Wolf without expending a spell slot.</p>
+            <p class='indent'>You can use this feature once. Beginning at 15th level, you can use your Predator's Connection feature twice between rests. You regain all expended uses when you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description level="7" usage="1/Short/Long rest">When you transform or at the start of your turn while transformed, you can choose to gain Blindsight 60 ft. or Pack Tactics until the end of your turn. You can alternatively use a use of this feature to cast speak with animals to communicate with a Bat or Wolf without expending a spell slot.</description>
+            <description level="15" usage="2/Short/Long rest">When you transform or at the start of your turn while transformed, you can choose to gain Blindsight 60 ft. or Pack Tactics until the end of your turn. You can alternatively use a use of this feature to cast speak with animals to communicate with a Bat or Wolf without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+        </rules>
+    </element>
+    <element name="Brand of the Hunter" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_BRAND_OF_THE_HUNTER">
+        <description>
+            <p>Upon reaching 11th level, your Brand of Castigation feature now marks the creature for consumption. You gain advantage on Strength (Athletics) check to grapple that creature and whenever you deal Necrotic damage to that creature, it takes additional damage equal to your Crimson Rite Die.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on Strength (Athletics) check to grapple that creature and whenever you deal Necrotic damage to that creature, it takes additional damage equal to your {{crimson rite:damage die}}.</description>
+        </sheet>
+    </element>
+    <element name="Mist Walk" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_MIST_WALK">
+        <description>
+            <p>At 15th level, you gain the ability to cast gaseous form without expending a spell slot. If you are within mist or fog while in this form, you are invisible. If you enter direct sunlight, the spell ends.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to cast gaseous form without expending a spell slot. If you are within mist or fog while in this form, you are invisible. If you enter direct sunlight, the spell ends.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" />
+        </rules>
+    </element>
+    <element name="Dark Life" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_DARK_LIFE">
+        <description>
+            <p>Additionally at 15th, at the start of your turn while in your vampiric form or under the effect of gaseous form, you regain hit points equal to 1 + your Constitution modifier (minimum of one) if you have at least 1 hit point and no more than half of your hit points left.</p>
+        </description>
+        <sheet>
+            <description>At the start of your turn while in your vampiric form or under the effect of gaseous form, you regain hit points equal to 1 + {{constitution:modifier}} (minimum of one) if you have at least 1 hit point and no more than half of your hit points left.</description>
+        </sheet>
+    </element>
+    <element name="Inescapable Pursuit" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_INESCAPABLE_PURSUIT">
+        <description>
+            <p>At 18th level, you gain mastery of the magic of the blood within you. While in your vampiric form, you can cast misty step without expending a spell slot, as you target a spot within 5 feet of another creature.</p>
+            <p class='indent'>If you make an Strength (Athletics) check to grapple a creature while Invisible or immediately after casting misty step, you have advantage on the attack roll or ability check.</p>
+        </description>
+        <sheet>
+            <description>While in your vampiric form, you can cast misty step without expending a spell slot, as you target a spot within 5 feet of another creature. If you make an Strength (Athletics) check to grapple a creature while Invisible or immediately after casting misty step, you have advantage on the attack roll or ability check.</description>
+        </sheet>
+    </element>
+</elements>

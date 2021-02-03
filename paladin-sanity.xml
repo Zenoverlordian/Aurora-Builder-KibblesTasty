@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Oath of Sanity</name>
+        <update version="0.0.1">
+            <file name="paladin-sanity.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/paladin-sanity.xml" />
+        </update>
+    </info>
+    <element name="Oath of Sanity" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_OATH_SANITY">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>The Oath of Sanity is the oath of someone that has survived exposure to the horrors that lay beyond the veil.</p>
+            <p class="indent">While most who have glimpsed into the Far Realm suffer instant and irrevocable madness, these Paladins have glimpsed beyond and sworn to remain sane, no matter what the cost. They reject shielding their fragile mind from what they've seen in comforting shroud of madness.</p>
+            <p class="indent">An Oath of Sanity Paladin will usually seem to others as true neutral or lawful neutral following obscure codes incomprehensible to those who haven't experienced a brush with the beyond, their morality coming in blue and orange rather than black and white. Almost universally they are dedicated preventing the threats beyond from consuming the material world and shattering the fragile minds within.</p>
+            <p class="indent">These are the ones who make grim decisions for the greater good, for they know what lies beyond.</p>
+            <h5>TENETS OF SANITY</h5>
+            <p class="indent"><b><i>Order.</i></b> Never act on random or chaotic impulses. These are the cracks of madness.</p>
+            <p class="indent"><b><i>Vigilance.</i></b> Never let your attention wander, least you miss the signs madness.</p>
+            <p class="indent"><b><i>Discipline</i></b> Never indulge in a lapse of behavior, your habits keep you safe from madness.</p>
+            <p class="indent"><b><i>Solemnity</i></b> Your work is terrible. Never take pleasure in it. That leads to the comfort of madness</p>
+            <p class="indent"><b><i>Sanity</i></b> No matter what, never give into madness.</p>
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_OATH_SPELLS" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CHANNEL_DIVINITY" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_AURA_OF_BINDING" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CONSTANT_VIGILANCE" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_AWOKEN" />
+        </description>
+        <sheet display="false">
+            <description>The Oath of Sanity is the oath of someone that has survived exposure to the horrors that lay beyond the veil.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_OATH_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CHANNEL_DIVINITY" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_AURA_OF_BINDING" level="7" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CONSTANT_VIGILANCE" level="15" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_AWOKEN" level="20" />
+        </rules>
+    </element>
+    <element name="Oath Spells" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_OATH_SPELLS">
+        <description>
+            <p>You gain oath Spells at the paladin levels listed.:</p>
+            <table>
+                <thead>
+                    <tr><td>Paladin Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>detect magic, protection from good and evil</td></tr>
+                <tr><td>5th</td><td>calm emotions, see invisibility</td></tr>
+                <tr><td>9th</td><td>dispel magic, remove curse</td></tr>
+                <tr><td>13th</td><td>banishment, dimension door</td></tr>
+                <tr><td>17th</td><td>banishing smite, contact other plane</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>You gain oath Spells at the paladin levels listed</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="3" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="5" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="9" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" level="17" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" level="17" spellcasting="Paladin" prepared="true" />
+        </rules>
+    </element>
+    <element name="Channel Divinity" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CHANNEL_DIVINITY">
+        <description>
+            <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+            <p class="indent"><strong><em>Turn the Aberrant:</em></strong> As an action, you can make any aberration or undead, provided that it's within 30 feet and that can see or hear you, make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+            <p class="indent">If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.</p>
+            <p class="indent"><strong><em>Focus Mind:</em></strong> As a reaction to becoming Frightened, Charmed, or suffering a negative mental status inflicted by failing an Intelligence, Wisdom or Charisma saving throw, you may focus your mind, expending your Channel Divinity to immediately end the effect.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CHANNEL_DIVINITY_TURN_ABERRANT" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CHANNEL_DIVINITY_FOCUS_MIND" />
+        </rules>
+    </element>
+    <element name="Turn the Aberrant" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CHANNEL_DIVINITY_TURN_ABERRANT">
+        <description>
+            <p>As an action, you can make any aberration or undead, provided that it's within 30 feet and that can see or hear you, make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+            <p class="indent">If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.</p>
+        </description>
+        <sheet alt="Turn the Aberrant" action="Action" usage="Channel Divinity">
+            <description>You can make any aberration or undead, provided that it's within 30 feet and that can see or hear you, make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
+            If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.</description>
+        </sheet>
+    </element>
+    <element name="Focus Mind" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CHANNEL_DIVINITY_FOCUS_MIND">
+        <description>
+            <p>As a reaction to becoming Frightened, Charmed, or suffering a negative mental status inflicted by failing an Intelligence, Wisdom or Charisma saving throw, you may focus your mind, expending your Channel Divinity to immediately end the effect.</p>
+        </description>
+        <sheet alt="Turn the Aberrant" action="Reaction" usage="Channel Divinity">
+            <description>As a reaction to becoming Frightened, Charmed, or suffering a negative mental status inflicted by failing an Intelligence, Wisdom or Charisma saving throw, you may focus your mind to immediately end the effect.</description>
+        </sheet>
+    </element>
+    <element name="Aura of Binding" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_AURA_OF_BINDING">
+        <description>
+            <p>Beginning at 7th level, you project an grounding aura against the warping of space around you. Creatures of your choice within 10 feet attempting to teleport or cross planar boundaries must pass a Charisma saving throw against your spell save DC. On a failure, the spell slot is not wasted but the action is. At 18th level, the range of this aura increases to 30 feet.</p>
+        </description>
+        <sheet>
+            <description level="7">Creatures of your choice within 10 feet attempting to teleport or cross planar boundaries must pass a Charisma saving throw against your spell save DC. On a failure, the spell slot is not wasted but the action is.</description>
+            <description level="18">Creatures of your choice within 30 feet attempting to teleport or cross planar boundaries must pass a Charisma saving throw against your spell save DC. On a failure, the spell slot is not wasted but the action is.</description>
+        </sheet>
+    </element>
+    <element name="Constant Vigilance" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_CONSTANT_VIGILANCE">
+        <description>
+            <p>Starting at 15th level, you can no longer be surprised, and your passive perception remains the same even while unconscious so long as you have at least 1 health.</p>
+            <p class="indent">Additionally, when you roll for Initiative, if the total result of your roll is less than your passive perception, you can replace the result with your passive perception value.</p>
+        </description>
+        <sheet>
+            <description>You can no longer be surprised, and your passive perception remains the same even while unconscious so long as you have at least 1 health. Additionally, when you roll for Initiative, if the total result of your roll is less than {{perception:passive}}, you can replace the result with {{perception:passive}}.</description>
+        </sheet>
+    </element>
+    <element name="Awoken" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_OATH_SANITY_AWOKEN">
+        <description>
+            <p>At 20th level, as an action, you can fully perceive the world around you for what it is, shattering the foul magics that bind and piecing the veils that hide, unrelenting and focused, gaining the following benefits for 1 minute:</p>
+            <ul>
+                <li>You can gain truesight with a range of 120 feet.</li>
+                <li>You are immune to psychic damage.</li>
+                <li>Whenever you strike an enemy with a Divine Smite, they suffer the effects of dispel magic cast at the level of the spell slot expended.</li>
+                <li>You can use Focus Mind without expending your channel divinity during the effect of this ability.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long rest">
+            <description>You gain the following benefits for 1 minute: truesight with a range of 120 feet, immunity to psychic damage. Whenever you strike an enemy with a Divine Smite, they suffer the effects of dispel magic cast at the level of the spell slot expended. You can use Focus Mind without expending your channel divinity during the effect of this ability.</description>
+        </sheet>
+    </element>
+</elements>

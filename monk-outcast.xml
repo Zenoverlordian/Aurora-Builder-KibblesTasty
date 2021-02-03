@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Way of the Outcast</name>
+        <update version="0.0.1">
+            <file name="monk-outcast.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/monk-outcast.xml" />
+        </update>
+    </info>
+    <element name="Way of the Outcast" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_WAY_OUTCAST">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>An Outcast is a monk that has lost their Way. Trained in the basics of the style, they have abandoned the rigorous discipline and philosophy of their tradition, and is usually now enrolled only in the school of hard knocks.</p>
+            <p class="indent">Having been trained in the fundamentals of the art of ki, these monks choose as often as not to apply that art to tavern brawls. Much to the horror many more formal monks, their rough and tumble lifestyle tends to be solid source of further training.</p>
+            <p class="indent">With great power comes great responsibility? These monks are going to stick with just the great power, thank you very much. Almost always Chaotic, they can range the spectrum from Good to Evil and everything in between just as easily. A distaste for the rigorous philosophy of an order does not mean a penchant for Evil, but Evil and vice can sometimes lead a monk down this road.</p>
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_BONUS_PROFICIENCY" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_PRAGMATISM" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_SOAK_IT_UP" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_WHERE_IT_HURTS" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_LEAN_INTO_IT" />
+        </description>
+        <sheet display="false">
+            <description>An Outcast is a monk that has lost their Way. Trained in the basics of the style, they have abandoned the rigorous discipline and philosophy of their tradition, and is usually now enrolled only in the school of hard knocks.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_BONUS_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_PRAGMATISM" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_SOAK_IT_UP" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_WHERE_IT_HURTS" level="11" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_LEAN_INTO_IT" level="17" />
+        </rules>
+    </element>
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_BONUS_PROFICIENCY">
+        <description>
+            <p>At 3rd level, you gain proficiency in the Athletics skill if you don't already have it.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in the Athletics skill if you don't already have it.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        </rules>
+    </element>
+    <element name="Pragmatism" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_PRAGMATISM">
+        <description>
+            <p>At 3rd level, you embrace a more pragmatic view, gaining the following benefits:</p>
+            <ul>
+                <li>You have proficiency in improvised weapons. Improvised melee weapons now count as Monk weapons for you.</li>
+                <li>Once per turn, when you deal damage to a prone creature, you can add 1d6 + half your Monk level (rounded down) to the damage.</li>
+                <li>You gain proficiency in Light armor. If your Strength is equal to or higher than your Dexterity, you can gain the benefits of Martial Arts, Unarmored Movement and Unarmored Defense (AC = Armor's AC + Dexterity modifier + Wisdom modifier) while wearing light armor.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have proficiency in improvised weapons and improvised melee weapons now count as Monk weapons for you.
+            Once per turn, when you deal damage to a prone creature, you can add 1d6 + {{level:monk:half}} to the damage. If your Strength is equal to or higher than your Dexterity, you can gain the benefits of Martial Arts, Unarmored Movement and Unarmored Defense (AC = Armor's AC + {{dexterity:modifier}} + {{wisdom:modifier}}) while wearing light armor.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        </rules>
+    </element>
+    <element name="Soak it Up" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_SOAK_IT_UP">
+        <description>
+            <p>At 6th level, your extensive training in the art of getting hit with bar stools and broken bottles grants you increased endurance. When you dodge with Patient Defense, you gain temporary hit points equal to your Proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>When you dodge with Patient Defense, you gain {{proficiency}} temporary hit points.</description>
+        </sheet>
+    </element>
+    <element name="Where it Hurts" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_WHERE_IT_HURTS">
+        <description>
+            <p>At 11th level, when you use Stunning Strike on a critical hit or on an attack made against an enemy that was unaware of you, the target has disadvantage on their saving throw against being stunned.</p>
+        </description>
+        <sheet>
+            <description>When you use Stunning Strike on a critical hit or on an attack made against an enemy that was unaware of you, the target has disadvantage on their saving throw against being stunned.</description>
+        </sheet>
+    </element>
+    <element name="Lean Into It" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_OUTCAST_LEAN_INTO_IT">
+        <description>
+            <p>At 17th level, you have thrown your fair share of walloping hits, and know how to make them reliably. You can forgo adding your Proficiency bonus to an attack to add twice your Proficiency bonus to the damage it deals.</p>
+        </description>
+        <sheet>
+            <description>You can forgo adding your Proficiency bonus to an attack to add 2 x {{proficiency}} to the damage it deals.</description>
+        </sheet>
+    </element>
+</elements>
