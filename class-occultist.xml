@@ -1,0 +1,2349 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+    <!--VERSION 1.0-->
+
+    <element name="Occultist" type="Class" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_CLASS_OCCULTIST">
+        <description>
+    <p>Wisps of purple smoke and dancing shadows rise from the ritual as the young human woman with strange magical markings tattooed across her hands whispers words in a language long forgotten, calling forth ancient powers.</p>
+    <p class="indent">The woods creak and bend, black wings beating as raven alights on the outstretch hand of an ancient elf, her eyes as black as the raven's. Soft words are spoken, and the elf nods in agreement.</p>
+    <p class="indent">A young orc lets out a bellowing roar and flames burst into a form taller than an ogre causing her enemies to flee. She holds up her spear and the flames pour from the roaring fire spirit to it, swirling about it, causing it to roar alight with searing magical flames.</p>
+    <p class="indent">The mysterious halfling woman gives a knowing smile, her unseeing eyes focused on you. She knows what you've come for, and tosses a handful of incense into the fire; what it is she sees in there? Your fate? Your destiny? As she speaks, it is only in riddle.</p>
+    <p class="indent">Occultists are those that follow the old ways, a path of ritual and wisdom long known yet oft forgotten. Rather than force magic to obey, they bind, twist, manipulate, and compromise with it. They follow ancient agreements and techniques to produce results that few fully understand, even those that use them, but they know it will work, for it always has.</p>
+    <h4>ANCIENT TRADITIONS</h4>
+    <p>Occultists are spell casters following legacies that go far back. While they may or may not be directly tutored or influence by another member of their tradition, their path to magic involves unearthing ancient secrets, old ways, and knowledge gleaned from spirits, ghosts, and elementals.</p>
+    <p class="indent">The often personify aspects of their magic in ways that other casters find odd, coaxing and manipulating magic forces by ancient laws and bargains. Occultists tread between the arcane and the divine, not necessarily worshiping any god, but treating gods and spirits alike with cautious respect for their domains, asking for the what they take, and carefully giving thought to their actions.</p>
+    <p class="indent">Each tradition that appears in the Occultist is an ancient legacy of magic, found deep within folklore and story. Every villager could tell you stories of Occultists and their traditions, and they are often seen in this context. Though villagers and the superstitious might fear them and their magic, they may be more likely to turn to them than a Wizard, for at least an Occultist makes sense to them, even if they are scared by their powers.</p>
+    <h4>SPIRITUAL MAGIC</h4>
+    <p>A common thread of the magic wilded by the Occultist is the spiritual connection of it; the demi-divine nature of magic that taps into the weave of magic oft through the intermediaries of the power of gods, spirits, elementals, and more. An Occultist is fundamentally tied into the greater magical world, being neither a source of magic nor an academic researcher of it, but wielding it through intuition, cunning, and tradition.</p>
+    <p class="indent">Frequently an Occultist may call upon their magic through the mediums of spirits quite directly, even having names for the spirits it calls about to bring about certain magical effects; the verbal component of an Occultist spell might be the spirit they call upon to work the effect they wish, an invocation of their ancient bargain, or words in a language that binds or persuades.</p>
+    <h4>CREATING AN OCCULTIST</h4>
+    <p>When creating an Occultist, the most important decision will be what Tradition you follow. Each Tradition of an Occultist is distinct with divergent flavor and calling upon a different aspect of folklore. Do you embody the associations or defy them? What led you to this path? Did you uncover your tradition on your own or were you taught by another?</p>
+    <h5 class="caption">QUICK BUILD</h5>
+    <p>You can make an Occultist quickly by following these suggestions. First, Wisdom should be your highest ability score, followed by Constitution or Dexterity. Second, choose the hermit background. Third, choose the poison spray and produce flame cantrips, along with the 1st-level spells burning hands, cause fear, cure wounds, and tasha's hideous laughter.</p>
+    <h2>CLASS FEATURES</h2>
+    <p>As an occultist, you gain the following class features.</p>
+    <h5 class="caption">HIT POINTS</h5>
+    <ul class="unstyled">
+        <li><strong>Hit Dice:</strong> 1d6 per occultist level</li>
+        <li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+        <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per occultist level after 1st</li>
+    </ul>
+    <h5 class="caption">PROFICIENCIES</h5>
+    <ul class="unstyled mb">
+        <li><strong>Armor:</strong> None</li>
+        <li><strong>Weapons:</strong> Daggers, quarterstaffs, light crossbows</li>
+    </ul>
+    <ul class="unstyled">
+        <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+        <li><strong>Skills:</strong> Choose two from Animal Handling, Arcana, Deception, History, Investigation, Medicine, Nature, Religion, Sleight of Hand, Stealth, Survival</li>
+        <li><strong>Tools:</strong> Herbalism Kit</li>
+    </ul>
+    <h5 class="caption">EQUIPMENT</h5>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+        <li>(a) a quarterstaff or (b) a dagger</li>
+        <li>(a) a component pouch or (b) an arcane focus</li>
+        <li>(a) a scholar’s pack or (b) an explorer’s pack</li>
+        <li>A herbalism kit.</li>
+    </ul>
+        <h5 class="caption">THE OCCULTIST</h5>
+        <table class="class-features">
+            <thead>
+                <tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-5">Occult Rites</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+            </thead>
+            <tr><td> 1st</td><td class="left">Spell Casting, Occult Tradition</td><td>-</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 2nd</td><td class="left">Occult Rites</td><td>2</td><td>3</td><td>5</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 3rd</td><td class="left">Occult Tradition Feature</td><td>2</td><td>3</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>2</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 5th</td><td class="left">-</td><td>3</td><td>4</td><td>8</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 6th</td><td class="left">Occult Tradition Feature</td><td>3</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 7th</td><td class="left">-</td><td>4</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>11</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 9th</td><td class="left">-</td><td>5</td><td>4</td><td>12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>10th</td><td class="left">Traditional Expertise</td><td>5</td><td>5</td><td>13</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>11th</td><td class="left">-</td><td>5</td><td>5</td><td>14</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>12th</td><td class="left">Ability Score Improvement</td><td>6</td><td>5</td><td>15</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>13th</td><td class="left">-</td><td>6</td><td>5</td><td>16</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+            <tr><td>14th</td><td class="left">Occult Tradition Feature</td><td>6</td><td>5</td><td>17</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+            <tr><td>15th</td><td class="left">-</td><td>7</td><td>5</td><td>18</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+            <tr><td>16th</td><td class="left">Ability Score Improvement</td><td>7</td><td>5</td><td>19</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+            <tr><td>17th</td><td class="left">-</td><td>7</td><td>5</td><td>20</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>18th</td><td class="left">-</td><td>8</td><td>5</td><td>21</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>19th</td><td class="left">Ability Score Improvement</td><td>8</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>20th</td><td class="left">The Old Ways</td><td>8</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+        </table>
+            <div element="ID_KTH_OCCULTIST_CLASS_FEATURE_SPELLCASTING" />
+            <div element="ID_KTH_OCCULTIST_CLASS_FEATURE_OCCULT_TRADITION" />
+            <div element="ID_KTH_OCCULTIST_CLASS_FEATURE_OCCULT_RITES" />
+            <div element="ID_KTH_OCCULTIST_CLASS_FEATURE_ASI" />
+            <div element="ID_KTH_OCCULTIST_CLASS_FEATURE_TRADITIONAL_EXPERTISE" />
+            <div element="ID_KTH_OCCULTIST_CLASS_FEATURE_THE_OLD_WAYS" />
+        </description>
+        <setters>
+            <set name="short">A practitioner of magic, wielding it through intuition, cunning, and tradition.</set>
+            <set name="hd">d6</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_KTH_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_KTH_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_KTH_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" requirements="!ID_KTH_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_KTH_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_KTH_OCCULTIST_MULTICLASS_OCCULTIST" />
+            <select type="Proficiency" name="Skill Proficiency (Occultist)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_KTH_OCCULTIST_MULTICLASS_OCCULTIST" number="2" />
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_CLASS_FEATURE_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_CLASS_FEATURE_OCCULT_TRADITION" level="1" />
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_CLASS_FEATURE_OCCULT_RITES" level="2" />
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_CLASS_FEATURE_ASI" level="4" />
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_CLASS_FEATURE_TRADITIONAL_EXPERTISE" level="10" />
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_CLASS_FEATURE_THE_OLD_WAYS" level="20" />
+        </rules>
+        <multiclass id="ID_KTH_OCCULTIST_MULTICLASS_OCCULTIST">
+            <prerequisite>Wisdom 13</prerequisite>
+            <requirements>[wis:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Medicine, Herbalism Kit</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            </rules>
+        </multiclass>
+    </element>
+
+    <element name="Spellcasting" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_CLASS_FEATURE_SPELLCASTING">
+        <description>
+            <p>As a practioner of occult magic, you have inherited and developed techniques to manipulate reality through mediums of rituals, spirits, elements, and more. See Spells Rules for the general rules of spellcasting and the Spells Listing for the Occultist spell list.</p>
+            <h5>CANTRIPS</h5>
+            <p>At 1st level, you know three cantrips of your choice from the Occultist spell list. You learn additional Occultist cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Occultist table.</p>
+            <h5>SPELL SLOTS</h5>
+            <p>The Occultist table shows how many spell slots you have to cast your Occultist spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <p class="indent">For example, if you know the 1st-level spell witchbolt and have a 1st-level and a 2nd-level spell slot available, you can cast witchbolt using either slot.</p>
+            <h5>SPELLS KNOWN OF 1ST LEVEL AND HIGHER</h5>
+            <p>You know four 1st-level spells of your choice from the Occultist spell list.</p>
+            <p class="indent">The Spells Known column of the Occultist table shows when you learn more Occultist spells of your choice. Each of these spells must be of a level for which you have spell slots, as shown on the table. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the Occultist spells you know and replace it with another spell from the Occultist spell list, which also must be of a level for which you have spell slots.</p>
+            <h5>SPELLCASTING ABILITY</h5>
+            <p>Wisdom is your spellcasting ability for your Occultist spells. Your magic comes from a practitioners knowledge of traditional, ritual, and the way things work learned through experience, care and cunning. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Occultist spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+            </center>
+            <h5>RITUAL CASTING</h5>
+            <p>You can cast any Occultist spell you know as a ritual if that spell has the ritual tag.</p>
+            <h5>SPELLCASTING FOCUS</h5>
+            <p>You can use an occult fetish as a spellcasting focus for your Occultist spells.</p>
+        </description>
+        <sheet display="false" />
+        <spellcasting name="Occultist" ability="Wisdom" prepare="false" allowReplace="true">
+            <list>Occultist</list>
+        </spellcasting>
+        <rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="occultist:spellcasting:slots:1" value="2" level="1" />
+			<stat name="occultist:spellcasting:slots:1" value="1" level="2" />
+			<stat name="occultist:spellcasting:slots:1" value="1" level="3" />
+			<stat name="occultist:spellcasting:slots:2" value="2" level="3" />
+			<stat name="occultist:spellcasting:slots:2" value="1" level="4" />
+			<stat name="occultist:spellcasting:slots:3" value="2" level="5" />
+			<stat name="occultist:spellcasting:slots:3" value="1" level="6" />
+			<stat name="occultist:spellcasting:slots:4" value="1" level="7" />
+			<stat name="occultist:spellcasting:slots:4" value="1" level="8" />
+			<stat name="occultist:spellcasting:slots:4" value="1" level="9" />
+			<stat name="occultist:spellcasting:slots:5" value="1" level="9" />
+			<stat name="occultist:spellcasting:slots:5" value="1" level="10" />
+			<stat name="occultist:spellcasting:slots:5" value="1" level="18" />
+			<stat name="occultist:spellcasting:slots:6" value="1" level="11" />
+			<stat name="occultist:spellcasting:slots:6" value="1" level="19" />
+			<stat name="occultist:spellcasting:slots:7" value="1" level="13" />
+			<stat name="occultist:spellcasting:slots:7" value="1" level="20" />
+			<stat name="occultist:spellcasting:slots:8" value="1" level="15" />
+			<stat name="occultist:spellcasting:slots:9" value="1" level="17" />
+
+			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list),0" level="1" number="3" spellcasting="Occultist" />
+			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list),0" level="5" spellcasting="Occultist"/>
+			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list),0" level="10" spellcasting="Occultist"/>
+
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="4" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Occultist"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="12" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Occultist"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Occultist"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Occultist"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" spellcasting="Occultist"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Occultist"/>
+		</rules>
+    </element>
+
+    <element name="Occult Tradition" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_CLASS_FEATURE_OCCULT_TRADITION">
+        <description>
+            <p>Choose an occult tradition, shaping your the techniques, features, and rites available to you from the following: Oracle, Shaman, or Witch.</p>
+            <p class="indent">Your choice grants you features when you choose it at 1st level, 3rd level, 6th level, and 14th level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype" name="Occult Tradition" supports="Occult Tradition" />
+        </rules>
+    </element>
+
+    <element name="Occult Rites" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_CLASS_FEATURE_OCCULT_RITES">
+        <description>
+            <p>In as you delve your Tradition of occult magic, you find deviations and branches to explore that help you specialize and perfect your craft in the way that best suits you.</p>
+            <p class="indent">At 2nd Level, you gain two Occult Rites of your choice. Your Occult Rites options are detailed at the end of the subclass description for subclass specific Rites, and at the end of the class description for general Rites, you can select from either you subclass or class list.. When you gain certain Occultist levels, you gain additional Occult Rites of your choice.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the Occult Rites you know and replace it with another Occult Rites that you could learn at that level. A level prerequisite in a Occult Rite refers to Occultist level, not character level.</p>
+        </description>
+        <sheet>
+            <description>When you gain a level in this class, you can choose one of the Occult Rites you know and replace it with another Occult Rites that you could learn at that level.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Occult Rites (2)" supports="Occult Rite" level="2" number="2" />
+            <select type="Class Feature" name="Occult Rites (5)" supports="Occult Rite" level="5" />
+            <select type="Class Feature" name="Occult Rites (7)" supports="Occult Rite" level="7" />
+            <select type="Class Feature" name="Occult Rites (9)" supports="Occult Rite" level="9" />
+            <select type="Class Feature" name="Occult Rites (12)" supports="Occult Rite" level="12" />
+            <select type="Class Feature" name="Occult Rites (15)" supports="Occult Rite" level="15" />
+            <select type="Class Feature" name="Occult Rites (18)" supports="Occult Rite" level="18" />
+        </rules>
+    </element>
+
+    <element name="Ability Score Increase" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_CLASS_FEATURE_ASI">
+        <description>
+            <p>When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<select type="Class Feature" name="Improvement Option (Occultist 4)" supports="Improvement Option,Occultist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Occultist 8)" supports="Improvement Option,Occultist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Occultist 12)" supports="Improvement Option,Occultist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Occultist 16)" supports="Improvement Option,Occultist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Occultist 19)" supports="Improvement Option,Occultist,19" level="19" />
+		</rules>
+    </element>
+
+    <element name="Traditional Expertise" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_CLASS_FEATURE_TRADITIONAL_EXPERTISE">
+        <description>
+            <p>Starting at 10th level, your passed down knowledge of tradition gives you expertise in a skill of your tradition; choose one of your skill proficiencies form Animal Handling, Arcana, Medicine, Nature, Survival. Your Proficiency Bonus is doubled for any ability check you make that use of the chosen Proficiency. If you have proficiency in none of the selected skills, you can instead gain proficiency in one of your choice.</p>
+            <p class="indent">Additionally, when you make a Wisdom ability check, you can draw upon your Tradition and expend a 1st level spell slot to gain advantage on the check.</p>
+        </description>
+        <sheet>
+            <description>When you make a Wisdom ability check, you can draw upon your Tradition and expend a 1st level spell slot to gain advantage on the check.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Traditional Expertise" supports="ID_EXPERTISE_SKILL_ANIMAL_HANDLING|ID_EXPERTISE_SKILL_ARCANA|ID_EXPERTISE_SKILL_MEDICINE|ID_EXPERTISE_SKILL_NATURE|ID_EXPERTISE_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+
+    <element name="The Old Ways" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_CLASS_FEATURE_THE_OLD_WAYS">
+        <description>
+            <p>At 20th level, your master of ritual and tradition is extensive an unparalleled, you've unlocked ancient secrets and perfected techniques to master rituals completely. Any occultist spell you know of 3rd level or lower becomes a ritual spell for you. When you cast a spell that is not normally a ritual as a ritual, it requires additional consumed material components worth 10 gold per level of the spell.</p>
+            <p class="indent">Additionally, your mastery of rituals allows you to work them more quickly, and a spell only takes additional turns equal to the spells level to cast (for example, casting a 3rd level spell as a ritual would take fours turns to cast, casting as your action or bonus action on the fourth turn). Spells with a casting time of a reaction cannot be cast as a ritual.</p>
+        </description>
+        <sheet>
+            <description>Any occultist spell you know of 3rd level or lower becomes a ritual spell for you. When you cast a spell that is not normally a ritual as a ritual, it requires additional consumed material components worth 10 gold per level of the spell. Additionally, your mastery of rituals allows you to work them more quickly, and a spell only takes additional turns equal to the spells level to cast (for example, casting a 3rd level spell as a ritual would take fours turns to cast, casting as your action or bonus action on the fourth turn). Spells with a casting time of a reaction cannot be cast as a ritual.</description>
+        </sheet>
+    </element>
+
+    <!--ORACLE-->
+
+    <element name="Oracle" type="Archetype" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_ORACLE">
+        <supports>Occult Tradition</supports>
+        <description>
+            <p>An oracle is an occultists whose power comes to them from their connection to fate; bound and empowered oracles carry some piece of divine mystery within them, tied to an aspect of destiny and fate. As their power grows they begin to understand this mystery with revelations, unlocking its secrets and the power they contain.</p>
+            <p class="indent">An oracle typically does not directly serve a god, rather they often are people who's fate has entangled them in the affairs of the gods. Oracles have great power, but their powers are not ones that mortals were meant to have, and consequently they are frequently burdened by their powers.</p>
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_DIVINE_TOUCH" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_FATE_READING" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_ENLIGHTENED_UNDERSTANDING" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PROPHECY" />
+        </description>
+        <sheet display="false">
+            <description>An oracle is an occultists whose power comes to them from their connection to fate</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_DIVINE_TOUCH" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_FATE_READING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_ENLIGHTENED_UNDERSTANDING" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PROPHECY" level="14" />
+        </rules>
+    </element>
+    <element name="Divine Touch" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_DIVINE_TOUCH">
+        <description>
+            <p>At 1st level when you select this Tradition, you have been touched by a divine revelation that has given you a gift of insight and a dramatic flair to deliver it - you learn the cantrips guidance and thaumaturgy.</p>
+            <p class="indent">Additionally, the touch of divine revelation has opened new pathways of magic that lie beyond the mortal grasp. When your Spellcasting feature lets you learn a occultist cantrip or a occultist spell of 1st level or higher, you can choose the new spell from the cleric spell list or the occultist spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a occultist spell for you.</p>
+            <p class="indent">For some, this burden marks them more heavily. At the discretion of your DM, you can optionally select to a curse and corresponding boon from the Cursed Burden section.</p>
+            <h5>Cursed Burden</h5>
+            <p>Frequently, the burden of the divine mysteries an oracle touches are too great for their mortal body to bear, and they suffer backlash in the form of curses. These take the form of optional character flaws.</p>
+            <p class="indent">As these are a part of your power, they can only be removed by the Wish spell, by Remove Curse cast at the 9th level, or a divine being, but if removed you may also lose your associated boon.</p>
+            <p class="indent">You and your DM may opt to mix and match or to use a custom curse and boon as appropriate, these are just a template for ones that pair well.</p>
+        </description>
+        <sheet display="false" />
+        <spellcasting name="Occultist" extend="true">
+			<extend>Cleric</extend>
+		</spellcasting>
+        <rules>
+            <grant type="type" id="ID_PHB_SPELL_GUIDANCE" />
+            <grant type="type" id="ID_PHB_SPELL_THAUMATURGY" />
+            <select type="Archetype Feature" name="Cursed Burden" supports="Oracle Cursed Burden" optional="true" />
+        </rules>
+    </element>
+    <element name="Blind" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_BLIND">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>You are permanently blinded. You gain the Oracle's Sight rite.</p>
+            <div element="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT" />
+        </description>
+        <sheet>
+            <description>You are permanently blinded.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT" />
+        </rules>
+    </element>
+    <element name="Burned" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_BURNED">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>You are scarred by burns. The first die of any fire damage you take from a hostile creature is maximized. You gain the Mystery of Fire rite.</p>
+            <div element="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE" />
+        </description>
+        <sheet>
+            <description>The first die of any fire damage you take from a hostile creature is maximized.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE" />
+        </rules>
+    </element>
+    <element name="Silent" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_SILENT">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>You cannot speak above a whisper, creatures further than 10 feet from you cannot hear you. You gain the Mystery of Death rite</p>
+            <div element="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH" />
+        </description>
+        <sheet>
+            <description>You cannot speak above a whisper, creatures further than 10 feet from you cannot hear you.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH" />
+        </rules>
+    </element>
+    <element name="Frail" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_FRAIL">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>You are physical frail, reducing your Constitution and Strength ability score by 1. You gain the Mystery of Life rite.</p>
+            <div element="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE" />
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="-1" />
+            <stat name="strength" value="-1" />
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE" />
+        </rules>
+    </element>
+    <element name="Ill Omened" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_ILL_OMENED">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>You are marked by strife. You make all Persuasion checks at disadvantage. You gain the Mystery of Battle rite.</p>
+            <div element="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE" />
+        </description>
+        <sheet>
+            <description>You make all Persuasion checks at disadvantage.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE" />
+        </rules>
+    </element>
+    <element name="Foresworn" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_FORESWORN">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>You cannot reveal the nature of your divinations to others. You gain the Divine Fate rite.</p>
+            <div element="ID_KTH_OCCULTIST_RITE_DIVINE_FATE" />
+        </description>
+        <sheet>
+            <description>You cannot reveal the nature of your divinations to others.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_DIVINE_FATE" />
+        </rules>
+    </element>
+    <element name="Fate Reading" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_FATE_READING">
+        <description>
+            <p>Starting at 3rd level, your connection to the flow of fate gives you the ability to read from it, tracing outcomes and glimpsing the unknowable future. You learn the spell <em>augury</em> and can cast it at will without expending spell slot.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_AUGURY" />
+            </div>
+        </description>
+        <sheet>
+            <description>You learn the spell <em>augury</em> and can cast it at will without expending spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
+        </rules>
+    </element>
+    <element name="Enlightened Understanding" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_ENLIGHTENED_UNDERSTANDING">
+        <description>
+            <p>Starting at 6th level, you've come to unravel the mysteries of magic and fate, understanding their secrets and potential. Whenever you use a Mystery, you gain temporary hit points equal to your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description>Whenever you use a Mystery, you gain {{wisdom:modifier}} temporary hit points.</description>
+        </sheet>
+    </element>
+    <element name="Prophecy" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PROPHECY">
+        <description>
+            <p>Starting at 14th level, you can cast augury a number of times equal to your Wisdom modifier before per day before it starts having a chance to return random answers.</p>
+            <p class="indent">Additionally, when you divine the future with augury, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll (for example, an attack, a Strength (Athletics) check, or an initiative roll, etc), a d4 is reserved (example "someone will be particularly quick when rolling initiative").</p>
+            <p class="indent">If you specify a specific action and a specific person, a d6 is reserved (for example, "when the wizard Caius rolls for initiative, he will be unusually quick"). If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the DM.</p>
+            <p class="indent">A specific action or person can only have one prophesized event. If that prophesized event takes place (at the discretion of the DM it has occurred), the oracle can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, the oracle can select which of them is effected by the reserved die.</p>
+        </description>
+        <sheet>
+            <description>You can cast augury {{wisdom:modifier}} times before per day before it starts having a chance to return random answers.
+            Additionally, when you divine the future with augury, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll, a d4 is reserved. If you specify a specific action and a specific person, a d6 is reserved. If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the DM.
+            A specific action or person can only have one prophesized event. If that prophesized event takes place, you can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, you can select which of them is effected by the reserved die.</description>
+        </sheet>
+    </element>
+
+    <!--ORACLE SPECIFIC RITES-->
+
+    <element name="Divine Fate" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DIVINE_FATE">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+        <description>
+            <p>You expand your expertise of reading fate to be able to more specifically divine information from your readings, learning additional more specific spells. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>identify</td></tr>
+                <tr><td>3rd</td><td>locate object</td></tr>
+                <tr><td>5th</td><td>clairvoyance</td></tr>
+                <tr><td>7th</td><td>locate creature</td></tr>
+                <tr><td>9th</td><td>legend lore</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_IDENTIFY" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_LOCATE_OBJECT" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_CLAIRVOYANCE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_LOCATE_CREATURE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_LEGEND_LORE" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_OBJECT" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" />
+        </rules>
+    </element>
+
+    <element name="Oracle's Sight" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+        <description>
+            <p>You gain blindsight with a range of 15 feet. When affected by the Blinded condition for more than a minute the range of this sight is doubled while under that effect.</p>
+        </description>
+        <sheet>
+            <description>You gain blindsight with a range of 15 feet. When affected by the Blinded condition for more than a minute the range of this sight is doubled while under that effect.</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Sight" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DIVINE_SIGHT">
+        <supports>Occult Rite</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, [level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>If you have blindsight, you gain truesight with a range equal to your blindsight.</p>
+        </description>
+        <sheet>
+            <description>If you have blindsight, you gain truesight with a range equal to your blindsight.</description>
+        </sheet>
+    </element>
+
+    <element name="Twin Mystery" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TWIN_MySTERY">
+        <supports>Occult Rite</supports>
+        <prerequisite>12th level</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, [level:12]</requirements>
+        <description>
+            <p><em>Prerequisite: 12th level</em></p>
+            <p>When you cast a spell that invokes a mystery, you can invoke two different mysteries at the same time, as long as a spell fulfills both Mystery's requirements.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that invokes a mystery, you can invoke two different mysteries at the same time, as long as a spell fulfills both Mystery's requirements.</description>
+        </sheet>
+    </element>
+
+    <element name="Mystery of Life" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+        <description>
+            <p>Your powers are tied to the nature of life and its ever shifting balance. When you cast a spell of 1st level or higher, you can heal a creature other than yourself within 30 feet for a number of hit points up to your occultist level. Your current hit points are reduced by an amount equal to the amount you heal the target of the mystery for.</p>
+            <p class="indent">You can only use this ability on creatures that have vibrant life pulsing within them, it does not work on undead, constructs, or creatures at zero hit points.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher, you can heal a creature other than yourself within 30 feet for a number of hit points up to your occultist level. Your current hit points are reduced by an amount equal to the amount you heal the target of the mystery for. You can only use this ability on creatures that have vibrant life pulsing within them, it does not work on undead, constructs, or creatures at zero hit points.</description>
+        </sheet>
+    </element>
+
+    <element name="Revelation of Life" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_OF_LIFE">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Life</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Life</em></p>
+            <p>Your understanding of the nature of life unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>healing word</td></tr>
+                <tr><td>3rd</td><td>warding bond</td></tr>
+                <tr><td>5th</td><td>beacon of hope</td></tr>
+                <tr><td>7th</td><td>aura of life</td></tr>
+                <tr><td>9th</td><td>mass cure wounds</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_HEALING_WORD" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_WARDING_BOND" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BEACON_OF_HOPE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_AURA_OF_LIFE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_MASS_CURE_WOUNDS" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" />
+        </rules>
+    </element>
+
+    <element name="All Living Things" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ALL_LIVING_THINGS">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Life</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Life</em></p>
+            <p>When you expend a spell slot to cast a spell that restores hit points a creature, you regain hit points equal to your Wisdom modifier. If you kill a creature or are within 10 feet of a creature as it dies, you take necrotic damage equal to its CR or character level if it has no CR (minimum 1). This is not triggered if the creature an undead or construct.</p>
+        </description>
+        <sheet>
+            <description>When you expend a spell slot to cast a spell that restores hit points a creature, you regain {{wisdom:modifier}} hit points. If you kill a creature or are within 10 feet of a creature as it dies, you take necrotic damage equal to its CR or character level if it has no CR (minimum 1). This is not triggered if the creature an undead or construct.</description>
+        </sheet>
+    </element>
+
+    <element name="Mystery of Death" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+        <description>
+            <p>You delve the depths of the mystery that lies at the end of life. When you cast a spell of 1st level or higher that deals damage, you can reroll a number of the spell's damage dice equal to your Wisdom modifier. You must use the new value of the die. Dice you reroll this way are converted to necrotic damage, and your current hit points are reduced by one for each die you reroll in this manner.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher that deals damage, you can reroll {{wisdom:modifier}} of the spell's damage dice. You must use the new value of the die. Dice you reroll this way are converted to necrotic damage, and your current hit points are reduced by one for each die you reroll in this manner.</description>
+        </sheet>
+    </element>
+
+    <element name="Revelation of Death" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_OF_DEATH">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Death</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Death</em></p>
+            <p>Your understanding of the nature of death unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>false life</td></tr>
+                <tr><td>3rd</td><td>gentle repose</td></tr>
+                <tr><td>5th</td><td>wither</td></tr>
+                <tr><td>7th</td><td>blight</td></tr>
+                <tr><td>9th</td><td>killing curse</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FALSE_LIFE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_GENTLE_REPOSE" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_OCCULTIST_SPELL_WITHER" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BLIGHT" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_OCCULTIST_SPELL_KILLING_CURSE" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" />
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_WITHER" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" />
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_KILLING_CURSE" level="9" />
+        </rules>
+    </element>
+
+    <element name="Inevitable End" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_INEVITABLE_END">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Death</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Death</em></p>
+            <p>When you deal necrotic damage, you can ignore a creature's resistance to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>When you deal necrotic damage, you can ignore a creature's resistance to necrotic damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Mystery of Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+        <description>
+            <p>Within flames you have seen yourself, and you know them as they know you. When you cast a spell of 1st level or higher, you can shroud yourself in flames until the start of your next turn, giving you partial cover.</p>
+            <p class="indent">While these flames wreath you, you can add fire damage equal to your Wisdom modifier (minimum 1) to damage rolls for melee weapon attacks or to one damage roll of spells that deal fire damage (including the spell that invoked this mystery if applicable).</p>
+            <p class="indent">Your current hit points are reduced by 1d4 at the end of your turn by the flames.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher, you can shroud yourself in flames until the start of your next turn, giving you partial cover. While these flames wreath you, you can add {{wisdom:modifier}} fire damage (minimum 1) to damage rolls for melee weapon attacks or to one damage roll of spells that deal fire damage (including the spell that invoked this mystery if applicable). Your current hit points are reduced by 1d4 at the end of your turn by the flames.</description>
+        </sheet>
+    </element>
+
+    <element name="Revelation of Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_OF_FIRE">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Fire</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Fire</em></p>
+            <p>Your understanding of the nature of fire unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>burning hands</td></tr>
+                <tr><td>3rd</td><td>continual flame</td></tr>
+                <tr><td>5th</td><td>fireball</td></tr>
+                <tr><td>7th</td><td>fire shield</td></tr>
+                <tr><td>9th</td><td>immolation</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BURNING_HANDS" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_CONTINUAL_FLAME" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FIREBALL" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FIRE_SHIELD" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_IMMOLATION" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTINUAL_FLAME" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" />
+            <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" />
+        </rules>
+    </element>
+
+    <element name="Voracious Flames" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_VORACIOUS_FLAMES">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Fire</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Fire</em></p>
+            <p>The flames that wreath when you invoke the Mystery of Fire you burn more voraciously. Once per turn, if a creature ends their turn within 5 feet of you or strikes you with a melee attack while within 5 feet of you, you can choose to deal 1d6 fire damage to that creature while Mystery of Fire is active.</p>
+        </description>
+        <sheet>
+            <description usage="1/Turn">The flames that wreath when you invoke the Mystery of Fire you burn more voraciously. Once per turn, if a creature ends their turn within 5 feet of you or strikes you with a melee attack while within 5 feet of you, you can choose to deal 1d6 fire damage to that creature while Mystery of Fire is active.</description>
+        </sheet>
+    </element>
+
+    <element name="Mystery of Battle" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+        <description>
+            <p>Within war and conflict you see the true essence of perfect conflict. Once per turn on your turn, when you cast a spell a spell of 1st level or higher, you become attuned to the flow of battle and can make a single melee weapon attack as part of the same action.</p>
+        </description>
+        <sheet>
+            <description usage="1/Round">Once per turn on your turn, when you cast a spell a spell of 1st level or higher, you become attuned to the flow of battle and can make a single melee weapon attack as part of the same action.</description>
+        </sheet>
+    </element>
+
+    <element name="Revelation of Battle" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_OF_BATTLE">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Battle</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Battle</em></p>
+            <p>Your understanding of the nature of battle unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>thunderous smite</td></tr>
+                <tr><td>3rd</td><td>branding smite</td></tr>
+                <tr><td>5th</td><td>blinding smite</td></tr>
+                <tr><td>7th</td><td>staggering smite</td></tr>
+                <tr><td>9th</td><td>banishing smite</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_THUNDEROUS_SMITE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BRANDING_SMITE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BLINDING_SMITE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_STAGGERING_SMITE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BANISHING_SMITE" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDEROUS_SMITE" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDING_SMITE" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_STAGGERING_SMITE" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" level="9" />
+        </rules>
+    </element>
+
+    <element name="Truth of Strife" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TRUTH_OF_STRIFE">
+        <supports>Occult Rite</supports>
+        <prerequisite>5th level, Mystery of Battle</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE, [level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level, Mystery of Battle</em></p>
+            <p>Your understanding of battle reveals that it comes easily. You can trigger the Mystery of Battle when casting a cantrip as an action.</p>
+        </description>
+        <sheet>
+            <description>You can trigger Mystery of Battle when casting a cantrip as an action.</description>
+        </sheet>
+    </element>
+
+    <!--OCCULT RITES-->
+
+    <element name="Alchemical Rites" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ALCHEMICAL_RITES">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You gain proficiency with alchemy tools. During a long rest, you can use them to concoct an improvised potion of healing spending 1 hour of the long rest to tend to it's simmering. Due to it's improvised nature, it expires in 24 hours, and has no value in gold pieces.</p>
+            <p class="indent">During this process, you can expend a 5th level spell to make it a greater healing potion. The expended spell slot is regained when the long rest is completed as normal.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long rest">During a long rest, you can use alchemist's tools to concoct an improvised potion of healing spending 1 hour of the long rest to tend to it's simmering. Due to it's improvised nature, it expires in 24 hours, and has no value in gold pieces. During this process, you can expend a 5th level spell to make it a greater healing potion. The expended spell slot is regained when the long rest is completed as normal.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+        </rules>
+    </element>
+
+    <element name="Blood Rituals" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_BLOOD_RITUALS">
+        <supports>Occult Rite</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>Whenever you cast a ritual spell that requires a material component, you can instead use blood.</p>
+            <p class="indent">Willing living creatures within 10 feet of you can expend hit dice, rolling them and taking necrotic damage equal to the value rolled to fuel the ritual instead of a material component, with each 10 hit points sacrificed in this manner able to replace up to 100 gp of material components (for example, to replace a diamond worth 500 gold, 50 hit points would have to be expended in this manner).</p>
+            <p class="indent">Creatures that lose hit points in this way cannot regain those hit points until they complete a long rest.</p>
+        </description>
+        <sheet>
+            <description>Whenever you cast a ritual spell that requires a material component, you can instead use blood. Willing living creatures within 10 feet of you can expend hit dice, rolling them and taking necrotic damage equal to the value rolled to fuel the ritual instead of a material component, with each 10 hit points sacrificed in this manner able to replace up to 100 gp of material components. Creatures that lose hit points in this way cannot regain those hit points until they complete a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Blood Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_BLOOD_MAGIC">
+        <supports>Occult Rite</supports>
+        <prerequisite>Blood Rituals</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_BLOOD_RITUALS</requirements>
+        <description>
+            <p><em>Prerequisite: Blood Rituals</em></p>
+            <p>You can sacrifice the blood of living creatures to power spells. When you cast a spell, instead of expending a spell slot, you can sacrifice blood to power the spell, sacrificing one hit die per level of spell you cast, rolling them and taking damage equal to the number rolled. Willing creatures within 10 feet can use their reaction contribute blood to the spell, sacrificing hit dice by rolling them and taking necrotic damage equal to the number rolled. All sacrificed hit dice are added together to the level of the spell you can cast.</p>
+            <p class="indent">Creatures that lose hit points in this way cannot regain those hit points until they complete a long rest.</p>
+            <p class="indent">You can cast a total number of spell levels in this manner equal to your Occultist level. You regain all levels of usage of this rite when you complete a long rest. Some spells (marked as blood magic) can only be cast via blood magic using this rite.</p>
+        </description>
+        <sheet>
+            <description usage="{{level:occultist}}/Long rest">When you cast a spell, instead of expending a spell slot, you can sacrifice blood to power the spell, sacrificing one hit die per level of spell you cast, rolling them and taking damage equal to the number rolled. Willing creatures within 10 feet can use their reaction contribute blood to the spell, sacrificing hit dice by rolling them and taking necrotic damage equal to the number rolled. All sacrificed hit dice are added together to the level of the spell you can cast. Creatures that lose hit points in this way cannot regain those hit points until they complete a long rest. Blood Magic spells can only be cast via using this rite.</description>
+        </sheet>
+    </element>
+
+    <element name="Corrupt Item" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_CORRUPT_ITEM">
+        <supports>Occult Rite</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>You use a dark and secret rite to corrupt a non-magical item causing it to become a cursed magic item. While any creature other than you is in possession of this item, they are under the effect of <em>bane</em>. Select one of the following for the items magical property (the item must be of a type of item that could be the magical item selected): bag of tricks, brooch of shielding, goggles of night, lantern of revealing, or staff of the python (you can ignore attunement restrictions of this item).</p>
+            <p class="indent">When you change rites, you can reselect this rite to destroy the item and create a new item.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BANE" />
+            </div>
+        </description>
+        <sheet>
+            <description>While any creature other than you is in possession of the item granted by this feature, they are under the effects of bane. You may ignore attunement restrictions on the item. You can reselect this rite to choose a new item.</description>
+        </sheet>
+    </element>
+
+    <element name="Commune Beyond Death" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_COMMUNE_BEYOND_DEATH">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You learn the <em>speak with dead</em> spell, and it's a occultist spell for you, but does not count against your spells known. You can cast it without expending a spell slot. Once you cast it this way, you must finish a short or long rest before you can cast it this way again.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Short/Long rest">You can cast speak with dead without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+        </rules>
+    </element>
+
+    <element name="Emblazoned Fetish" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_EMBLAZONED_FETISH">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You emblazon a mystical mark on yourself, via a tattoo, scar, or similar permanent mark. You can use this as your spell casting focus for casting spells. While using this mark to cast spells, you do not need a free hand to cast spells that have a Material component that uses your Occult Fetish.</p>
+        </description>
+        <sheet>
+            <description>You do not need a free hand to cast spells that have a Material component that uses your Occult Fetish.</description>
+        </sheet>
+    </element>
+
+    <element name="Lost Ritual" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_LOST_RITUAL">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You learn of a ritual lost to time. Select on occultist spell you know of 5th level or lower. This spell becomes a ritual spell for you. You can cast this spell as a ritual once, and must complete a short or long rest before casting it as a ritual again.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short/Long rest">Select on occultist spell you know of 5th level or lower. This spell becomes a ritual spell for you. You can cast this spell as a ritual once, and must complete a short or long rest before casting it as a ritual again.</description>
+        </sheet>
+    </element>
+
+    <element name="Occult Haste" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_OCCULT_HASTE">
+        <supports>Occult Rite</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>You learn the spell haste. It is an occultist spell for you.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_HASTE" />
+            </div>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" />
+        </rules>
+    </element>
+
+    <element name="Markings of Protection" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MARKINGS_OF_PROTECTION">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You mark yourself with magical symbols and patterns, protecting you from harm. You are under the effect of the <em>mage armor</em> spell.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_MAGE_ARMOR" />
+            </div>
+        </description>
+        <sheet>
+            <description>You are under the effect of the <em>mage armor</em> spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" />
+        </rules>
+    </element>
+
+    <element name="Rite of Immortality" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_OF_IMMORTALITY">
+        <supports>Occult Rite</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>You continue to age, but you will no longer die of old age.</p>
+        </description>
+        <sheet>
+            <description>You continue to age, but you will no longer die of old age.</description>
+        </sheet>
+    </element>
+
+    <element name="Rite of Youth" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_OF_YOUTH">
+        <supports>Occult Rite</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>You cease to visually age, and can even choose to become more youthful in appearance, though the natural life span of your race remains your natural lifespan.</p>
+        </description>
+        <sheet>
+            <description>You cease to visually age, and can even choose to become more youthful in appearance, though the natural life span of your race remains your natural lifespan.</description>
+        </sheet>
+    </element>
+
+    <element name="Root of Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ROOT_OF_MAGIC">
+        <supports>Occult Rite</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>You learn 10 cantrips from any class list of your choice. They are occultist spells for you.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Root of Magic" supports="0" number="10" />
+        </rules>
+    </element>
+
+    <element name="Specialized Poisons" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SPECIALIZED_POISONS">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>When you deal poison damage with an occultist spell or created poison, you can (but don't have to) specify a creature type (such as beast or monstrosity) it is created to effect. The poison damage from that spell or poison bypasses any resistance or immunity to poison damage a creature of that type has. All other creature types beside the specified type have resistance to damage by that spell effect or poison.</p>
+        </description>
+        <sheet>
+            <description>When you deal poison damage with an occultist spell or created poison, you may specify a creature type (such as beast or monstrosity) it is created to effect. The poison damage from that spell or poison bypasses any resistance or immunity to poison damage a creature of that type has. All other creature types beside the specified type have resistance to damage by that spell effect or poison.</description>
+        </sheet>
+    </element>
+
+    <element name="Soulburn" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SOULBURN">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You can make your powers sear the very soul of the creature they strike. When you deal fire or lightning damage, you can choose to make it deal necrotic damage instead.</p>
+        </description>
+        <sheet>
+            <description>When you deal fire or lightning damage, you can choose to make it deal necrotic damage instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Vestaments of War (1)" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_VESTAMENTS_OF_WAR">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You gain proficiency in light armor.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        </rules>
+    </element>
+
+    <element name="Vestaments of War (2)" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_VESTAMENTS_OF_WAR2">
+        <supports>Occult Rite</supports>
+        <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
+        <description>
+            <p>You gain proficiency in medium armor and shields.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+        </rules>
+    </element>
+
+    <!--SPELLS-->
+
+    <element name="Alacrity" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_ALACRITY">
+        <supports>Bard, Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>Until the spell ends, your speed is doubled, you gain a +2 bonus to AC, you have advantage on Dexterity saving throws, and you gain an additional action. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
+            <p class="indent">If you are under the effect of haste, you gain no benefit from this spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">the hand of a broken clock</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Animate Object" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_ANIMATE_OBJECT">
+        <supports>Bard, Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You bring a small or smaller object to life. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. The object has the following stats: HP: 20, AC: 18, Str: 4, Dex: 18. The object has an attack modifier equal to your spell attack modifier. If the object is a weapon, it deals damage equal to the weapon's damage dice + your Wisdom modifier on hit dealing that weapons damage type, otherwise it deals 1d4 + your Wisdom modifier bludgeoning damage on hit.</p>
+            <p class="indent">As a bonus action, you can mentally command the animated object as long as it is within 60 feet of you. You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p>
+            <p class="indent">If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Animate Shadow" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_ANIMATE_SHADOW">
+        <supports>Occultist</supports>
+        <description>
+            <p>Targeting a creature you can see within range, you bring it's shadow to life under your control. If the creature has a CR of more than 3 or the creature has no shadow (either from the nature of the creature or from the lack of a light source to cast one) the spell fails.</p>
+            <p class="indent">Otherwise a copy of the creature is created using its game statistics is created adjacent to the creature (on the side away from the brightest light near it). The shadow has no legendary actions, legendary resistance, and cannot cast spells. The shadow creature has hit points equal to half the target's hit points, and looks like mirrored version of the creature it was summoned from formed from inky black smoke. The creature is resistant to bludgeoning, piercing, and slashing damage from non-magical sources while in darkness. The creature is vulnerable to all damage while in bright light, and always vulnerable to fire, lightning, and radiant damage. If the shadow is killed, the target creature it was summoned from casts no shadows for the next 8 hours.</p>
+            <p class="indent">The shadow acts immediately after the creature's turn, and without further direction it attempts to follow and takes the attack action against it was summoned from. As a reaction to the shadow starting it's turn, the caster can exert control over it and cause it to move and take its action as the caster directs.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a 5th- or 6th-level spell slot, the maximum CR of the target increases to CR 4. When you cast it using a 7th- or 8th-level spell slot, the maximum CR of the target increases to CR 5. When you cast it using a spell slot of 9th level or higher, the maximum CR of the target increases to CR 6.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a smoke stained mirror</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Baba's Walking Hut" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_BABAS_WALKING_HUT">
+        <supports>Occultist</supports>
+        <description>
+            <p>You touch a hut, cabin, or other building no more than 15 feet by 15 feet by 10 feet. On completion of the spell, the building grows legs large enough to support it, as well as the structural integrity needed stand and move, and becomes a gargantuan creature. It has 250 hit points, an AC of 12, and a walking speed of 20 feet. If it drops to 0 hit points, the spell ends.</p>
+            <p class="indent">On your turn, you can direct it to move (no action required) and it will continue to move as directed until you direct it to stop or reaches its destination. It can take no actions, but if it walks over a large or smaller creature, you can direct it to attempt to step on that creature, and that creature must succeed a Dexterity saving throw, or take 2d10 bludgeoning damage and be knocked prone.</p>
+            <p class="indent">If you cast this spell on the same building every day for a year, the spell lasts until dispelled.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Transmutation</set>
+            <set name="time">10 minutes</set>
+            <set name="range">Touch</set>
+            <set name="duration">24 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a chicken leg</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Befuddling Curse" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_BEFUDDLING_CURSE">
+        <supports>Occultist</supports>
+        <description>
+            <p>You befuddle a creature's mind, swapping the position of two things it can see that are of the same size and category (for example, two medium creatures or two gargantuan buildings). The target creature must make a Wisdom saving throw. On failure, it is unaware the two things have been swapped.</p>
+            <p class="indent">Each time the creature interacts with, attacks, or is attacked by a swapped targets, it can repeat its saving throw against the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature (such as blood, hair, or scales) which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Binding Curse" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_BINDING_CURSE">
+        <supports>Occultist</supports>
+        <description>
+            <p>You bind a creature to a point within 5 feet of it, causing a glowing chains of light to connect it to that point. For the duration of the spell, if the creature attempts to move away from that point, the must make a Wisdom saving throw, or be unable to move more than 5 feet away from from that point until the start of their next turn.</p>
+            <p class="indent">If a creature starts its turn more than 10 feet from the binding point, they must make a Strength saving throw are dragged 5 feet toward the binding point.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature (such as blood, hair, or scales) which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Boil Blood" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_BOIL_BLOOD">
+        <supports>Occultist</supports>
+        <description>
+            <p>Targeting a creature that has taken slashing or piercing damage in the last minute, make it's blood heat and boil. The target creature must make a Constitution saving throw. On failure, it's blood begins to heat. At the start of it's turn while effected, it takes 3d4 fire damage and is crippled with agony, all terrain is difficult terrain for it.</p>
+            <p class="indent">At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the target.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Burn" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_BURN">
+        <supports>Druid, Occultist, Sorcerer</supports>
+        <description>
+            <p>You ignite a brilliant flame around your hand that sears anything you touch. Make a melee spell attack against the target. You have advantage if the target creature type is plant, or if it has a vulnerability to fire damage. On hit, the target takes 1d12 fire damage.</p>
+            <p class="indent">The spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Curse of Impotence" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_CURSE_OF_IMPOTENCE">
+        <supports>Occultist</supports>
+        <description>
+            <p>You curse a target creature, causing an overwhelming sense of powerlessness to wash over it. Any time the target creature attempts to attack, cast a spell that deals damage, or use an action that deals damage, it must make a Wisdom saving throw. On failure, they complete their action, but their action does no damage to any target.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature (such as blood, hair, or scales) which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Crippling Agony" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_CRIPPLING_AGONY">
+        <supports>Occultist</supports>
+        <description>
+            <p>You can inflict crippling agony on a foe. Choose one creature that you can see within range to make a Constitution saving throw. If the target fails, it becomes crippled with horrific pain. Whenever the creation moves more than half of it's movement speed or takes an action, the crippling pain causes it to take 1d6 necrotic damage.</p>
+            <p class="indent">It can repeat the saving throw at the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a joint bone</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Cruel Puppetry" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_CRUEL_PUPPETRY">
+        <supports>Occultist</supports>
+        <description>
+            <p>You attempt to bind a creatures soul to a doll, linking the creature to the doll in a sympathetic link. The target must make a Charisma saving throw. On failure, the creature becomes bound to the doll. On a successful save, the creature is not bound and the spell ends.</p>
+            <p class="indent">As part of casting the spell when the creature fails the save, and on subsequent turns using your action until the spell ends, you can perform one of the following actions:</p>
+            <ul>
+                <li>Hold the doll still, causing the creature to be Restrained until start of your next turn.</li>
+                <li>Force the doll to move, causing the creature to move 15 feet in a direction of your choice that it can move.</li>
+                <li>Smash the doll, causing it take 4d6 bludgeoning damage.</li>
+                <li>Rip the doll in half, ending the spell, destroying the doll, and dealing 4d12 necrotic damage.</li>
+            </ul>
+            <p class="indent">Each time after the first you use an action to manipulate the doll, after the effect takes place, the creature can repeat the Charisma with disadvantage, ending the effect on a successful save.</p>
+            <p class="indent">Once a creature has been targeted by this spell, they cannot be targeted again for 24 hours.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When cast with a 5th level spell slot or above, the range of the spell becomes unlimited, as long as the target is on the same plane as the caster.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small humanoid doll worth at least 5 gp and something from the target creature (such as blood, hair, or scales) both of which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
+
+    <element name="Decaying Touch" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_DECAYING_TOUCH">
+        <supports>Druid, Occultist, Sorcerer</supports>
+        <description>
+            <p>You wreath your hand in necrotic decay that causes anything you touch to wither and die. Make a melee spell attack against the target. On hit, the targets takes 1d6 necrotic damage is starts to flake and decay. The first time they take damage from another source before the start of your next turn, they take an additional 1d6 necrotic damage. Targets immune to diseases are immune to this effect.</p>
+            <p class="indent">The both the initial and secondary damage of the spell increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">powdered remains of a dead animal</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Deglove Creature" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_DEGLOVE_CREATURE">
+        <supports>Occultist</supports>
+        <description>
+            <p>You point at a creature within range, and attempt to make its skeleton rip free of its body. The creature must make a Constitution saving throw. The target takes 7d10 + 7 necrotic damage on a failed save, or half as much damage on a successful one.</p>
+            <p class="indent">If this damage kills the target creature, its flesh sloughs of its skeleton, collapsing a pile, and the skeleton becomes a Skeleton (Basic Rules, pg. 152), hostile to all living creatures that attacks the closest target.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a finger bone</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Electrify" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_ELECTRIFY">
+        <supports>Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You channel lightning into your hands. After casting this spell, if you make a successful melee spell attack, unarmed strike or a melee weapon attack with a weapon made of a conductive material (such as metal), the target takes 1d10 lightning damage and must make a Constitution saving throw. On a failed save, the target becomes stunned until the start of their next turn. The spell ends after dealing damage, or at the start of your next turn, whichever occurs first.</p>
+            <p class="indent">For the duration of the spell, you can cast the spell shocking grasp.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pair of singed gloves</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Form of Familiar" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_FORM_OF_FAMILIAR">
+        <supports>Occultist, Wizard</supports>
+        <description>
+            <p>You assume the form of the familiar that provided the material component to the spell. The transformation lasts for the duration, or until you drop to 0 hit points or die. Your game Statistics are replaced by the Statistics of the chosen creature, though you retain your Alignment and Intelligence, Wisdom, and Charisma scores.</p>
+            <p class="indent">You assume the Hit Points and Hit Dice of the new form. When you revert to your normal, you return to the number of Hit Points you had before you transformed. If you revert as a result of Dropping to 0 Hit Points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 Hit Points, you aren't knocked Unconscious. You can use an action to revert to your normal form at any time.</p>
+            <p class="indent">You are limited in the actions you can perform by the nature of your new form, and you can't speak, cast spells, or take any other action that requires hands or speech. Your gear melds into the new form. You cannot activate, use, wield, or otherwise benefit from any of your equipment.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 minute</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of fur, feather, or scale from your familiar, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Fists of Fire" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_FISTS_OF_FIRE">
+        <supports>Druid, Occultist, Sorcerer</supports>
+        <description>
+            <p>You cause your fists to erupt in flames. For the duration, your fists become a set of simple natural weapons that deal 1d6 fire damage. You are proficient in these weapons, and they have the Light property.</p>
+            <p class="indent">For the duration, any flammable object you attempt to hold catches fire. If you end your turn grappling another creature with your hands, it takes 1d4 fire damage.</p>
+            <p class="indent">You can end the spell early (no action required).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Freeze" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_FREEZE">
+        <supports>Druid, Occultist, Sorcerer</supports>
+        <description>
+            <p>You instill a deadly chill into your hand. Make a melee spell attack against the target. On hit, the target takes 1d8 cold damage, and the target's movement speed is reduced by 10 feet until the end of their turn.</p>
+            <p class="indent">The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Grip of the Dead" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_GRIP_OF_THE_DEAD">
+        <supports>Occultist</supports>
+        <description>
+            <p>You channel unholy strength into you hand, and reach out to grab a creature. The creature must make a Strength saving throw or become restrained by your deathly iron grasp. As an action on its turn, the creature can attempt to escape using a Strength (Athletics) or Dexterity (Acrobatics) check against your Spell Save DC.</p>
+            <p class="indent">At the start of the creatures turn while you maintain the grip and the spell, it takes 1d8 necrotic damage as you drain the life from it, and regain hit points equal to half the damage dealt.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancer</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Ice Weapon" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_ICE_WEAPON">
+        <supports>Druid, Occultist</supports>
+        <description>
+            <p>You conjure a weapon formed from magical ice from the air. You have proficiency with this weapon. When you form it and as a bonus action while wielding it, you can morph the weapon into different forms that take on the following properties. If you lose or discard the weapon, you can reform it in your hand as a bonus action.</p>
+            <table>
+                <thead>
+                    <tr><td>Weapon</td><td>Damage</td><td>Properties</td></tr>
+                </thead>
+                <tr><td>Ice Spear</td><td>1d6</td><td>Thrown (30/90)</td></tr>
+                <tr><td>Ice Sword</td><td>1d6</td><td>Versatile (1d8)</td></tr>
+                <tr><td>Ice Lance</td><td>1d8</td><td>Two-Handed, Reach</td></tr>
+                <tr><td>Ice Hammer</td><td>1d10</td><td>Two-Handed, Heavy</td></tr>
+                <tr><td>Ice Dagger</td><td>1d4</td><td>Finesse, Thrown (30/90)</td></tr>
+            </table>
+            <p class="indent">Regardless of its form, the weapon deals cold damage. You can end the spell early, letting the weapon melt to a harmless splash of water (no action required). You can have up to three ice weapons formed from this spell at a time. After forming a fourth, the first created one melts away.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of water that was once snow</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Induce Headache" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_INDUCE_HEADACHE">
+        <supports>Bard, Occultist, Wizard</supports>
+        <description>
+            <p>Targeting a creature with 6 or more intelligence, you inflict an instantaneous headache on it. The target takes 1 psychic damage at the start of its turn, and has disadvantage on Constitution saving throws to maintain Concentration or Intelligence ability checks.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a bad pun written on a scrap of parchment</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Killing Curse" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_KILLING_CURSE">
+        <supports>Druid, Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>You curse a target to die. The targets current and maximum hit points is reduced by 3d10 + 10. If this causes a creatures to have zero hit points, the creature dies.</p>
+            <p class="indent">For the duration of the spell, the target cannot regain hit points unless from a magical effect cast by a spell slot of higher level than this spell slot this curse was cast with, and any death saving throw they roll is automatically considered a 1.</p>
+            <p class="indent">At the start of a creatures turn while they are under the effect of this spell, they make a Charsima saving throw. On failure, their current and maximum hit points is reduced by 1d10 + 10. On a successful save, the spell ends. A creature's maximum hit points are restored when it takes a long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature (such as blood, hair, or scales) which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Nauseating Poison" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_NAUSEATING_POISON">
+        <supports>Druid, Occultist, Warlock</supports>
+        <description>
+            <p>You shroud your hand, a weapon you are holding, or a natural weapon in dark ichorous miasma. After casting this spell, if you make a successful melee spell attack, unarmed strike or a melee weapon attack, the target takes an additional 1d8 poison damage and must make a Constitution saving throw. On a failed save, the target becomes poisoned until the end of your next turn.</p>
+            <p class="indent">The spell ends after dealing damage, or at the start of your next turn, whichever occurs first.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of rotten meat</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Rain of Spiders" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_RAIN_OF_SPIDERS">
+        <supports>Druid, Occultist, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>A vertical column of spiders begins to rain down in 20 foot radius, 40 foot high cylinder, centered on a location you specify. A Swarm of Spiders (Monster Manual, pg 334) descends onto each creature within the cylinder when the spell is cast.</p>
+            <p class="indent">This swarm is considered to be climbing on the target creature and moves with it, even if they leave the affected area, and takes its turn immediately after that creature's turn. A creature can make use its action to attempt to get it off, making a Strength (Athletics) or Dexterity (Acrobatics) check against the spell save DC of the caster.</p>
+            <p class="indent">A swarm will attack the creature it fell on if it can, or move to chase it if it has been knocked off of it. Any spiders that remain when the spell ends disappear.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Rotting Curse" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_ROTTING_CURSE">
+        <supports>Occultist</supports>
+        <description>
+            <p>You inflicting a rotting decay on a creature, causing it to to begin to rot. For the duration of the spell, every time the creature takes damage, it takes an additional 1d4 necrotic damage, and the effect of all healing on the creature is reduced by half.</p>
+            <p class="indent">The target creature has disadvantage on any Charisma checks for social interaction during the effect of the spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from the target creature (such as blood, hair, or scales) which the spell consumes</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Spiritual Consultation" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_SPIRITUAL_CONSULTATION">
+        <supports>Occultist</supports>
+        <description>
+            <p>You call forth a spirit that is proficient in a skill from Arcana, Animal Handling, History, Investigation, Medicine, Nature, Perception, Religion, or Survival. The spirit is ethereal and ephemeral and cannot interact with physical objects, but can provide guidance on matters relating to the skill selected when you summon it.</p>
+            <p class="indent">You can treat any check you make in the skill as if you have proficiency with it so long as the spirit can communicate with you. Alternatively, if the ability check is an Intelligence or Wisdom check you can have the spirit make the check, and it has a +8 modifier for the skill was summoned for.</p>
+            <p class="indent">The spirit will follow you and cannot stray more than 5 feet from you. You can choose to release it early, dismissing it back from whence it came.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 minute</set>
+            <set name="range">Self</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">1 gp worth of incense, which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Swapping Curse" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_SWAPPING_CURSE">
+        <supports>Occultist</supports>
+        <description>
+            <p>You cast a curse targeting two individuals. Both targets must make a Charisma saving throw (which they can choose to fail). If both targets fail their saving throws, for the duration of the spell their souls are swapped. A soul controls the body it inhabits. It gains any ability score or action the body had (besides legendary actions or legendary resistance), but retains its own spell casting (if it has the spellcasting, innate or otherwise), and has disadvantage on all attack rolls and strength, dexterity, and constitution saving throws for 1d4 turns after swapping bodies.</p>
+            <p class="indent">At the end of a swapped creatures turn, it can choose to repeat the saving throw, ending the effect on a successful save. It its CR (or character level if it has no CR) is higher than the body of the creature it is, it has advantage on the save.</p>
+            <p class="indent">If a creature dies while while its soul is swapped, the souls return to their original bodies. If a soul was in a dying creature that returns to a living body, that creature takes 5d10 necrotic damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">something from each creature (such blood, hair, or scales) the spell is targeting, which the spell consumes.</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Twisting Eruption" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_TWISTING_ERUPTION">
+        <supports>Occultist</supports>
+        <description>
+            <p>You target a point and call forth tendrils, twisted vines, and gnarled roots of dark energy that erupt from the ground in a 60 foot radius. All creatures of your choice must make a Dexterity saving throw or be restrained as the shadowy plant tendrils grasp and drain the life from it.</p>
+            <p class="indent">At start of a creature's turn, if it is restrained by the spell, it takes 2d10 bludgeoning damage, and 2d10 necrotic damage. Each time a creature takes necrotic damage from this spell, the caster regains 1d4 hit points.</p>
+            <p class="indent">A creature restrained by the tendrils can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself. A tendril can be destroyed, freeing a creature from its grasp. They have an AC of 10, 20 hit point, and are immune to all damage besides radiant and fire. Spells that deal radiant or fire damage to creatures in an area of effect also affect tendrils in that area.</p>
+            <p class="indent">Creatures that end their turn within the radius while not restrained must make a Dexterity saving throw or become restrained by the tendrils.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">7</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a handful of dead plants</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Wither" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_WITHER">
+        <supports>Occultist</supports>
+        <description>
+            <p>Dark energy tears the moisture from a body, sapping of life and vitality. The target must make a Constituion saving throw. The target takes 4d10 necrotic damage on a failed save and becomes withered until the start of your next turn, or half as much on a successful one and does not become withered. A withered creature gains vulnerability to fire damage if they are not resistance to fire damage, or loses their resistance to fire if they were resistant to fire.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of powdered bone and sand</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Manipulate Fate" type="Spell" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_SPELL_MANIPULATE_FATE">
+        <supports>Occultist, Wizard</supports>
+        <description>
+            <p>You reach out and grasp the imperceptible threads of fate, subtly manipulating them. Whenever a creature within 60 feet of you makes an attack roll, saving throw, or ability check, you can use your reaction to tweak their fate, altering the value of the roll. You can choose to manipulate fate after the die is rolled, but before the outcome is determined.</p>
+            <p class="indent">You can alter the roll of the die to an adjacent number to the number rolled (outcomes listed on the table below).</p>
+            <table>
+                <thead>
+                    <tr><td>d20</td><td>Tweaked Fates</td></tr>
+                </thead>
+                <tr><td>1</td><td>7, 13, or 19</td></tr>
+                <tr><td>2</td><td>12, 18, or 20</td></tr>
+                <tr><td>3</td><td>17, 16, or 19</td></tr>
+                <tr><td>4</td><td>11, 14, or 18</td></tr>
+                <tr><td>5</td><td>13, 15, or 18</td></tr>
+                <tr><td>6</td><td>9, 14, or 16</td></tr>
+                <tr><td>7</td><td>1, 15, or 17</td></tr>
+                <tr><td>8</td><td>10, 16, or 20</td></tr>
+                <tr><td>9</td><td>6, 11, or 19</td></tr>
+                <tr><td>10</td><td>8, 12, or 17</td></tr>
+                <tr><td>11</td><td>4, 9, or 13</td></tr>
+                <tr><td>12</td><td>2, 10, or 15</td></tr>
+                <tr><td>13</td><td>1, 5, or 11</td></tr>
+                <tr><td>14</td><td>4, 6, or 20</td></tr>
+                <tr><td>15</td><td>5, 7, 12</td></tr>
+                <tr><td>16</td><td>3, 6, or 8</td></tr>
+                <tr><td>17</td><td>3, 7, or 10</td></tr>
+                <tr><td>18</td><td>2, 4, or 5</td></tr>
+                <tr><td>19</td><td>1, 3, or 9</td></tr>
+                <tr><td>20</td><td>2, 8, or 14</td></tr>
+            </table>
+            <p class="indent">When you alter a roll, you can choose to cast aside subtlty and yank the thread of fate, and select any value of the d20 as the outcome of the result, but the backlash causes you to take a number d6 equal to the difference in the value selected from the value rolled in necrotic damage. The spell immediately ends after the result is changed in this more drastic way.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a spool of silk thread</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+        <!--CANTRIPS-->
+    
+    <append id="ID_PHB_SPELL_ACID_SPLASH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CHILL_TOUCH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_CREATE_BONFIRE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DANCING_LIGHTS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DRUIDCRAFT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_FROSTBITE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_GUIDANCE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_GUST">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_INFESTATION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_LIGHT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_SCAG_SPELL_LIGHTNING_LURE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_MAGIC_STONE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MENDING">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MESSAGE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MINOR_ILLUSION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_MOLD_EARTH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_POISON_SPRAY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_PRIMAL_SAVAGERY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_PRODUCE_FLAME">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_SHAPE_WATER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_THORN_WHIP">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--1ST LEVEL-->
+
+    <append id="ID_XGTE_SPELL_ABSORB_ELEMENTS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BANE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BEAST_BOND">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BURNING_HANDS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CAUSE_FEAR">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_CEREMONY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_COMPREHEND_LANGUAGES">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CURE_WOUNDS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DETECT_MAGIC">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DISGUISE_SELF">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DISSONANT_WHISPERS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ENTANGLE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FOG_CLOUD">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_HAIL_OF_THORNS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_ICE_KNIFE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_IDENTIFY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ILLUSORY_SCRIPT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_INFLICT_WOUNDS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_RAY_OF_SICKNESS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_UNSEEN_SERVANT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WITCH_BOLT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FEATHER_FALL">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--2ND LEVEL-->
+
+    <append id="ID_XGTE_SPELL_ALTER_SELF">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ANIMAL_MESSENGER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_AUGURY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BARKSKIN">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BLINDNESS_DEAFNESS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CALM_EMOTIONS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_DARKNESS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DARKVISION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DETECT_THOUGHTS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ENLARGE_REDUCE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_GENTLE_REPOSE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_HEALING_SPIRIT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_HEAT_METAL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_HOLD_PERSON">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_INVISIBILITY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_LESSER_RESTORATION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_LOCATE_OBJECT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MELFS_ACID_ARROW">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MIRROR_IMAGE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MISTY_STEP">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SCORCHING_RAY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SEE_INVISIBILITY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_SHADOW_BLADE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SILENCE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SPIDER_CLIMB">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SPIKE_GROWTH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SUGGESTION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WEB">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--3RD LEVEL-->
+
+    <append id="ID_XGTE_SPELL_ANIMATE_DEAD">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BESTOW_CURSE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BLINK">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_CATNAP">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CLAIRVOYANCE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_COUNTERSPELL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_DISPEL_MAGIC">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FEAR">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FLY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_GASEOUS_FORM">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_HYPNOTIC_PATTERN">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_LIFE_TRANSFERENCE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_NONDETECTION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_PLANT_GROWTH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_REMOVE_CURSE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_SENDING">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SLEET_STORM">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SLOW">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SPIRIT_GUARDIANS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_WALL_OF_WATER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WATER_BREATHING">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WATER_WALK">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WIND_WALL">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--4TH LEVEL-->
+
+    <append id="ID_PHB_SPELL_ARCANE_EYE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BANISHMENT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_BLIGHT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_CHARM_MONSTER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_COMPULSION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CONFUSION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_CONJURE_MINOR_ELEMENTALS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CONJURE_WOODLAND_BEINGS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CONTROL_WATER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DIVINATION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_ELEMENTAL_BANE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_GIANT_INSECT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_GREATER_INVISIBILITY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ICE_STORM">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_LEOMUNDS_SECRET_CHEST">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_LOCATE_CREATURE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_POLYMORPH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_SHADOW_OF_MOIL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_VITRIOLIC_SPHERE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WALL_OF_FIRE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_WATERY_SPHERE">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--5TH LEVEL-->
+
+    <append id="ID_PHB_SPELL_ANIMATE_OBJECTS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_AWAKEN">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CLOUDKILL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_COMMUNE_WITH_NATURE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CONJURE_ELEMENTAL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CONTACT_OTHER_PLANE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_CONTAGION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_DANSE_MACABRE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DOMINATE_PERSON">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DREAM">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_ENERVATION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_GEAS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_GREATER_RESTORATION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_HOLD_MONSTER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_INSECT_PLAGUE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MASS_CURE_WOUNDS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MISLEAD">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MODIFY_MEMORY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_NEGATIVE_ENERGY_FLOOD">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_REINCARNATE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SCRYING">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SEEMING">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_SKILL_EMPOWERMENT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_TRANSMUTE_ROCK">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WALL_OF_STONE">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--6TH LEVEL-->
+
+    <append id="ID_XGTE_SPELL_BONES_OF_THE_EARTH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CONJURE_FEY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CONTINGENCY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_CREATE_HOMUNCULUS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_EYEBITE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FIND_THE_PATH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FLESH_TO_STONE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FORBIDDANCE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_HARM">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_HEAL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MAGIC_JAR">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MASS_SUGGESTION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_MENTAL_PRISON">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MOVE_EARTH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_OTILUKES_FREEZING_SPHERE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_PRIMORDIAL_WARD">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_SOUL_CAGE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SUNBEAM">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_TRUE_SEEING">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WALL_OF_ICE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WALL_OF_THORNS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WIND_WALK">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--7TH LEVEL-->
+
+    <append id="ID_PHB_SPELL_FINGER_OF_DEATH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FIRE_STORM">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MIRAGE_ARCANE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_PLANE_SHIFT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_POWER_WORD_PAIN">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_PRISMATIC_SPRAY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_PROJECT_IMAGE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_REGENERATE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_RESURRECTION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SEQUESTER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_TELEPORT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_WHIRLWIND">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--8TH LEVEL-->
+
+    <append id="ID_XGTE_SPELL_ABI_DALZIMS_HORRID_WILTING">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ANIMAL_SHAPES">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_ANTIPATHY_SYMPATHY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CLONE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_CONTROL_WEATHER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DEMIPLANE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_DOMINATE_MONSTER">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_EARTHQUAKE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FEEBLEMIND">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_INCENDIARY_CLOUD">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_MADDENING_DARKNESS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MAZE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_MIND_BLANK">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_POWER_WORD_STUN">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_TSUNAMI">
+		<supports>Occultist</supports>
+	</append>
+
+        <!--9th level-->
+
+    <append id="ID_PHB_SPELL_ASTRAL_PROJECTION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_FORESIGHT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_IMPRISONMENT">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_INVULNERABILITY">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_POWER_WORD_HEAL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_POWER_WORD_KILL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_XGTE_SPELL_PSYCHIC_SCREAM">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_TRUE_POLYMORPH">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_TRUE_RESURRECTION">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_SHAPECHANGE">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_PHB_SPELL_WEIRD">
+		<supports>Occultist</supports>
+	</append>
+</elements>

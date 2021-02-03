@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+   
+    <!--SPELLWEAVER-->
+
+    <element name="Spellweaver" type="Archetype" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_SPELLWEAVER">
+        <supports>Warlords Presence</supports>
+        <description>
+            <p>A Spellweaver is a magically adapt individual who holds great mechnical knowledge of magic and its tactical applications, but frequently lacks - or at least doesn't focus on - the raw power arcane power that a Wizard or Sorcerer might. A deft touch to manipulate magic, pulling and warping the spells of others, shrouding their allies with abjuration and illusion, their touch is subtle and effective.</p>
+            <p class="indent">A careless observe may take their efforts as less, but a wise one realizes the danger of their manipulations can far outweigh a flashy fireball when it comes to shifting the tides of war.</p>
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_PROFICIENCY" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_ENCHANTERS_SHROUD" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SPELL_MANIPULATION" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SHIELD_AND_SHROUDING" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_CONTESTED_MAGIC" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_MIRROR_ALLY" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_INDEPENDENT_ARCANA" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_MIRROR_ARMY" />
+        </description>
+        <sheet display="false">
+            <description>A deft touch to manipulate magic, pulling and warping the spells of others, shrouding their allies with abjuration and illusion, their touch is subtle and effective.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_ENCHANTERS_SHROUD" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SPELL_MANIPULATION" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SHIELD_AND_SHROUDING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_CONTESTED_MAGIC" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_MIRROR_ALLY" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_INDEPENDENT_ARCANA" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_MIRROR_ARMY" level="18" />
+        </rules>
+    </element>
+    <element name="Arcane Proficiency" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_PROFICIENCY">
+        <description>
+            <p>Starting at 1st level when you take this Presence, you gain proficiency in the arcana skill, and learn two cantrips of your choice from the Wizard or Bard spell list from the abjuration, enchantment, or illusion schools. These are Warlord spells for you.</p>
+            <h5>SPELLCASTING ABILITY</h5>
+            <p>Intelligence is your spellcasting ability for your spells, since you learn your spells. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+        </description>
+        <sheet display="false" />
+        <spellcasting name="Spellweaver Warlord" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>(Wizard||Bard),(Abjuration||Enchantment||Illusion)</list>
+		</spellcasting>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+            <select type="Spell" name="Arcane Proficiency" supports="(Wizard||Bard),(Abjuration||Enchantment||Illusion),0" number="2" />
+        </rules>
+    </element>
+    <element name="Enchanter's Shroud" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_ENCHANTERS_SHROUD">
+        <description>
+            <p>Additionally at 1st level, when you roll initiative you wrap an allied creature in an arcane enchantment, making the target creature invisible for a number of rounds equal to your Intelligence modifier, or until the target creature attacks, makes a damage roll, or forces someone to make a saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you roll initiative you wrap an allied creature in an arcane enchantment, making the target creature invisible for {{intelligence:modifier}} rounds, or until the target creature attacks, makes a damage roll, or forces someone to make a saving throw.</description>
+        </sheet>
+    </element>
+    <element name="Spell Manipulation" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SPELL_MANIPULATION">
+        <description>
+            <p>Starting at 3rd level, you gain the ability to use your magic to subtly influence the battlefield, tweaking and modifying spells and attacks with your magic. You learn three of the following options, gaining an additional option at 6th and 14th level.</p>
+            <h5>ARCANE SURGE</h5>
+            <p>As a reaction to an ally casting a spell, you can expend one leadership die adding it to or subtracting it from one attack roll or damage roll of that spell.</p>
+            <h5>ILLUSORY DISTRACTION</h5>
+            <p>As a reaction to a creature being the target of an attack, you can expend one Leadership Die to cause an illusory distraction. Roll the leadership die and subtract it from the attack roll.</p>
+            <h5>PULL SPELL</h5>
+            <p>As a reaction to a spell targeting an ally within 30 feet or a radius that includes you, you can make the spell target you. For a radius this places the center of the radius on you.</p>
+            <h5>REDIRECTION</h5>
+            <p>You can redirect a ranged weapon or spell attack that has missed its target. As a reaction to a missed attack you can expend one Leadership Die to reroll the attack against another creature within 30 feet of the target, in the case of a leveled spell, redirecting the spell in this fashion requires a number of Leadership Dice equal to the spell's level.</p>
+            <h5>TWEAK AREA</h5>
+            <p>As reaction to an allies casting a spell with an area of effect, you can expend warp the shape of their spell. You can exclude a creature within the effect or include a creature not in the effect but adjacent to the spell from being affected by the spell, spending one leadership die for each creature excluded or included.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Spell Manipulation (3)" supports="Spell Manipulation" number="3" />
+            <select type="Archetype Feature" name="Spell Manipulation (6)" supports="Spell Manipulation" level="6" />
+            <select type="Archetype Feature" name="Spell Manipulation (14)" supports="Spell Manipulation" level="14" />
+        </rules>
+    </element>
+    <element name="Arcane Surge" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SPELL_MANIPULATION_SURGE">
+        <supports>Spell Manipulation</supports>
+        <description>
+            <p>As a reaction to an ally casting a spell, you can expend one leadership die adding it to or subtracting it from one attack roll or damage roll of that spell.</p>
+        </description>
+        <sheet>
+            <description action="Reaction" usage="Leadership Dice">As a reaction to an ally casting a spell, you can expend one leadership die adding it to or subtracting it from one attack roll or damage roll of that spell.</description>
+        </sheet>
+    </element>
+    <element name="Illusory Distraction" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SPELL_MANIPULATION_ILLUSORY">
+        <supports>Spell Manipulation</supports>
+        <description>
+            <p>As a reaction to a creature being the target of an attack, you can expend one Leadership Die to cause an illusory distraction. Roll the leadership die and subtract it from the attack roll.</p>
+        </description>
+        <sheet>
+            <description action="Reaction" usage="Leadership Dice">As a reaction to a creature being the target of an attack, you can expend one Leadership Die to cause an illusory distraction. Roll the leadership die and subtract it from the attack roll.</description>
+        </sheet>
+    </element>
+    <element name="Pull Spell" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SPELL_MANIPULATION_PULL">
+        <supports>Spell Manipulation</supports>
+        <description>
+            <p>As a reaction to a spell targeting an ally within 30 feet or a radius that includes you, you can make the spell target you. For a radius this places the center of the radius on you.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">As a reaction to a spell targeting an ally within 30 feet or a radius that includes you, you can make the spell target you. For a radius this places the center of the radius on you.</description>
+        </sheet>
+    </element>
+    <element name="Redirection" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SPELL_MANIPULATION_REDIRECT">
+        <supports>Spell Manipulation</supports>
+        <description>
+            <p>You can redirect a ranged weapon or spell attack that has missed its target. As a reaction to a missed attack you can expend one Leadership Die to reroll the attack against another creature within 30 feet of the target, in the case of a leveled spell, redirecting the spell in this fashion requires a number of Leadership Dice equal to the spell's level.</p>
+        </description>
+        <sheet>
+            <description usage="Leadership Dice" action="Reaction">As a reaction to a missed attack you can expend one Leadership Die to reroll the attack against another creature within 30 feet of the target, in the case of a leveled spell, redirecting the spell in this fashion requires a number of Leadership Dice equal to the spell's level.</description>
+        </sheet>
+    </element>
+    <element name="Tweak Area" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SPELL_MANIPULATION_TWEAK">
+        <supports>Spell Manipulation</supports>
+        <description>
+            <p>As reaction to an allies casting a spell with an area of effect, you can expend Leadership Dice to warp the shape of their spell. You can exclude a creature within the effect or include a creature not in the effect but adjacent to the spell from being affected by the spell, spending one leadership die for each creature excluded or included.</p>
+        </description>
+        <sheet>
+            <description action="Reaction" usage="Leadership Dice">As reaction to an allies casting a spell with an area of effect, you can expend Leadership Dice to warp the shape of their spell. You can exclude a creature within the effect or include a creature not in the effect but adjacent to the spell from being affected by the spell, spending one leadership die for each creature excluded or included.</description>
+        </sheet>
+    </element>
+    <element name="Shield and Shrouding" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_SHIELD_AND_SHROUDING">
+        <description>
+            <p>Additionally at 3rd level, your proficiency with magic gives the ability to cast magic of limited scope to shroud and protect your allies. You know two 1st-level wizard spells of your choice, which must be from the abjuration or illusion schools on the Wizard spell list. These are Warlord spells for you. You can cast these spell by expending leadership dice equal to the level of the spell.</p>
+        </description>
+        <sheet>
+            <description usage="Leadership Dice">You know two 1st-level wizard spells of your choice. You can cast these spell by expending leadership dice equal to the level of the spell.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Shield and Shrouding" supports="Wizard, 1, (Abjuration||Illusion)" />
+        </rules>
+    </element>
+    <element name="Contested Magic" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_CONTESTED_MAGIC">
+        <description>
+            <p>Starting at 7th level, you can use your Spell Manipulation effects that only work on allied spells on all spells. When you use them on a non-allied spell, they cost an extra Leadership Die.</p>
+        </description>
+        <sheet>
+            <description>You can use your Spell Manipulation effects that only work on allied spells on all spells. When you use them on a non-allied spell, they cost an extra Leadership Die.</description>
+        </sheet>
+    </element>
+    <element name="Mirror Ally" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_MIRROR_ALLY">
+        <description>
+            <p>Starting 11th, once per turn when you grant an attack with Battlefield Presence, you can summon an illusory copy of the allied creature that works as a single copy of mirror image. This illusory copy lasts until the start of your next turn, until it is destroyed by an attack, or until the copied creature makes an attack. If the copied creature deals damage, the illusory version deals 1d6 force damage imitating the attack.</p>
+            <p class="indent">When you create an illusory copy, you can expend a leadership die to make it not disappear until it is destroyed or the start of your next turn (continuing to do damage on additional mirrored attacks).</p>
+        </description>
+        <sheet>
+            <description>Once per turn when you grant an attack with Battlefield Presence, you can summon an illusory copy of the allied creature that works as a single copy of mirror image. This illusory copy lasts until the start of your next turn, until it is destroyed by an attack, or until the copied creature makes an attack. If the copied creature deals damage, the illusory version deals 1d6 force damage imitating the attack.
+            When you create an illusory copy, you can expend a leadership die to make it not disappear until it is destroyed or the start of your next turn (continuing to do damage on additional mirrored attacks).</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
+        </rules>
+    </element>
+    <element name="Independent Arcana" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_INDEPENDENT_ARCANA">
+        <description>
+            <p>Starting 15th level, you can select three addition spells of your choice of 3rd-level or lower, which must be from the abjuration or illusion schools on the Wizard spell list. These are Warlord spells for you. You can cast these spells by expending leadership dice equal to the level of the spell.</p>
+            <p class="indent">When you cast a spell with a range of self, you can target an ally within 30 feet with that spell instead.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell with a range of self, you can target an ally within 30 feet with that spell instead.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Independent Arcana" supports="Wizard, (Abjuration||Illusion),(1||2||3)" />
+        </rules>
+    </element>
+    <element name="Mirror Army" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_SPELLWEAVER_MIRROR_ARMY">
+        <description>
+            <p>Starting 18th level, as an action you can apply Mirror Allied to creatures up to Intelligence modifier within 60 feet.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Long rest">As an action you can apply Mirror Allied to up to {{intelligence:modifier}} creatures within 60 feet.</description>
+        </sheet>
+    </element>
+
+
+    <p></p>
+    <p class="indent"></p>
+    
+
+    <!--Source-->
+
+    <element name="KibblesTasty's Warlord" type="Source" source="KibblesTasty's Warlord" id="ID_KTH_SOURCE_KibblesTastyS_Warlord">
+        <description>
+            <![CDATA[<p>Take to the field and crush your foes. Change the odds as a Tactician, or defy them as a Paragon. Ply your cunning as Packleader, or show your courage as a Chieftain. Make your companions look competent. They’ll thank you later.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTHWarlord</set>
+            <set name="url">https://www.gmbinder.com/share/-LW4agTNJcbwe6kSv4H2</set>
+            <set name="image">https://www.gmbinder.com/images/uIDE3wS.png</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
+</elements>

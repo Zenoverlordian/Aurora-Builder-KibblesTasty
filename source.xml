@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>KibblesTasty Source</name>
+        <update version="0.0.1">
+            <file name="source.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/source.xml" />
+        </update>
+    </info>
+    <element name="KibblesTasty's Subclasses" type="Source" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_SOURCE_KIBBLESTASTYS_SUBCLASSES">
+        <description>
+            <![CDATA[<p>KibblesTasty's homebrewed subclasses kept updated.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTHSub</set>
+            <set name="url"></set>
+            <set name="image">https://pbs.twimg.com/profile_banners/1075167519919493120/1600760061/1500x500</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
+    <element name="KibblesTasty Artificer" type="Source" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_SOURCE_ARTIFICER">
+        <description>
+            <![CDATA[<p>Forge armor, wield cannons, enchant swords, infuse potions... the power to innovate is in your hands! Magic item retrofitting, balance tweaks, streamlined mutations, and more!</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTHArt</set>
+            <set name="url">https://www.gmbinder.com/share/-LAEn6ZdC6lYUKhQ67Qk</set>
+            <set name="image">https://i.pinimg.com/736x/23/dc/9b/23dc9bd5c737fea75fb8ca20b9222957.jpg</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
+    <element name="KibblesTasty Psion" type="Source" source="KibblesTasty Psion" id="ID_KTH_PSION_SOURCE_KIBBLESTASTY_PSION">
+        <description>
+            <![CDATA[<p>Read minds, manifest astral constructs, fling greatswords, enhance your allies and more!</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTH</set>
+            <set name="url">https://www.gmbinder.com/share/-LZSNMgmChWNGW979hrj</set>
+            <set name="image">https://i.imgur.com/mPLafBO.jpg</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
+    <element name="KibblesTasty's Warlord" type="Source" source="KibblesTasty's Warlord" id="ID_KTH_SOURCE_KibblesTastyS_Warlord">
+        <description>
+            <![CDATA[<p>Take to the field and crush your foes. Change the odds as a Tactician, or defy them as a Paragon. Ply your cunning as Packleader, or show your courage as a Chieftain. Make your companions look competent. They’ll thank you later.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTHWarlord</set>
+            <set name="url">https://www.gmbinder.com/share/-LW4agTNJcbwe6kSv4H2</set>
+            <set name="image">https://www.gmbinder.com/images/uIDE3wS.png</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
+    <element name="KibblesTasty Occultist" type="Source" source="KibblesTasty Occultist" id="ID_KIBBLESTASTY_SOURCE_OCCULTIST">
+        <description>
+            <![CDATA[<p>Witches. Shamans. Oracles. The lost traditions are out there… and they are here. Explore Occult Rites and master your ancient Tradition. Wield new spells! Curse your foes or bind spirits to your call. Dark secrets await.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTHOcc</set>
+            <set name="url">https://www.gmbinder.com/share/-M-WtrKeZNFdEXq0MKXw</set>
+            <set name="image">https://i.redd.it/iz4r201q7ik51.png</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
+</elements>

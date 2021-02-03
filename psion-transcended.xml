@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Version 1.4-->
+<elements>
+    <element name="Transcended Mind" type="Archetype" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_TRANSCENDED">
+        <supports>Psionic Archetype</supports>
+        <description>
+            <p>A Transcended Psion is most often one that has found their path to psionic powers through a mental epiphany, realizing the place of their mind within the multiverse and how it ties to everything else, seeing the keys and levers to the world laid out before them in their mind's eye.</p>
+            <p class="indent">Most often achieved either intentionally or accidentally through meditation and ritual, this can sometimes even be a passed on technique to reliably transcend the strictly material concerns, and explore the more cognitive realm and powers within.</p>
+            <p class="indent">Transcended Psions tend to have the best grasp on their powers in control and principle, having come to understand the greater cosmos, but lack the reckless abandon some other Psions may have. Unfortunately less transcendent minds frequently cannot understand the greater truths they have learned and may view a Transcended Psion as a bit... peculiar.</p>
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_ENLIGHTENED" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_STATE_OF_MIND" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_BALANCE_OF_POWER" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_PERFECTED_ENHANCEMENT" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_MENTAL_CONTROL" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_MIND_OVER_MATTER" />
+        </description>
+        <sheet display="false">
+            <description>A Transcended Psion is most often one that has found their path to psionic powers through a mental epiphany, realizing the place of their mind within the multiverse and how it ties to everything else.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_ENLIGHTENED" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_STATE_OF_MIND" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_BALANCE_OF_POWER" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_PERFECTED_ENHANCEMENT" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_MENTAL_CONTROL" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_MIND_OVER_MATTER" level="14" />
+        </rules>
+    </element>
+    <element name="Enlightened" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_ENLIGHTENED">
+        <description>
+            <p>At 1st level when you select this archetype, you gain the ability to empower your body with the power of your mind, granting you the psionic discipline of Enhancement.</p>
+        </description>
+        <sheet display="false">
+            <description>You gain the psionic discipline of Enhancement.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT" />
+        </rules>
+    </element>
+    <element name="State of Mind" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_STATE_OF_MIND">
+        <description>
+            <p>Additionally at 1st level, you can ignore the effects of extreme heat or cold, hold your breath twice as long as normal, and can go twice as long without eating or sleeping before suffering exhaustion.</p>
+        </description>
+        <sheet>
+            <description>You can ignore the effects of extreme heat or cold, hold your breath twice as long as normal, and can go twice as long without eating or sleeping before suffering exhaustion.</description>
+        </sheet>
+    </element>
+    <element name="Balance of Power" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_BALANCE_OF_POWER">
+        <description>
+            <p>Starting at 3rd level, when you use a psionic ability (power or spell) to restore hit points or grant temporary hit points, you can add the hit points granted to a stored pool. The maximum value of the pool is your psion level, and any points beyond the maximum are lost. The next time you make a damage roll, you can expend the pool to add damage equal to the stored value to one target affected by the damage roll. This stored damage is lost if not spent within 1 minute.</p>
+        </description>
+        <sheet>
+            <description>When you use a psionic ability (power or spell) to restore hit points or grant temporary hit points, you can add the hit points granted to a stored pool. The maximum value of the pool is {{level:psion}}, and any points beyond the maximum are lost. The next time you make a damage roll, you can expend the pool to add damage equal to the stored value to one target affected by the damage roll. This stored damage is lost if not spent within 1 minute.</description>
+        </sheet>
+    </element>
+    <element name="Perfect Enhancement" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_PERFECTED_ENHANCEMENT">
+        <description>
+            <p>Starting at 6th level, when you grant temporary hit points with a psionic power you can add your proficiency bonus to the temporary hit points gained by one creature.</p>
+        </description>
+        <sheet>
+            <description>When you grant temporary hit points with a psionic power you can add {{proficiency}} to the temporary hit points gained by one creature.</description>
+        </sheet>
+    </element>
+    <element name="Mental Control" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_MENTAL_CONTROL">
+        <description>
+            <p>Starting at 10th level, when you have to make a Constitution saving throw to avoid losing concentration on an effect from a psionic discipline, you can add your Intelligence modifier to the saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you have to make a Constitution saving throw to avoid losing concentration on an effect from a psionic discipline, you can add {{intelligence:modifier}} to the saving throw.</description>
+        </sheet>
+    </element>
+    <element name="Mind Over Matter" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_TRANSCENDED_MIND_OVER_MATTER">
+        <description>
+            <p>Starting at 14th level, when you roll a Strength, Dexterity, or Constitution saving throw, you can expend 2 Psi Points to roll an Intelligence saving throw instead.</p>
+            <p class="indent">Additionally, when you roll a Death Saving throw, you can expend 4 Psi Points to roll a 20.</p>
+        </description>
+        <sheet>
+            <description usage="Psi">When you roll a Strength, Dexterity, or Constitution saving throw, you can expend 2 Psi Points to roll an Intelligence saving throw instead. Additionally, when you roll a Death Saving throw, you can expend 4 Psi Points to roll a 20.</description>
+        </sheet>
+    </element>
+</elements>

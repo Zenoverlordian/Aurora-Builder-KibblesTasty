@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Version 1.4-->
+<elements>
+    <element name="Unleashed Mind" type="Archetype" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_UNLEASHED">
+        <supports>Psionic Archetype</supports>
+        <description>
+            <p>An Unleashed Mind's power is most often an innate force they struggle to understand or control, a reflection of their state of mind and mood projected onto the world around them, often to devastating results. The life of an Unleashed Psion is frequently their journey to control their unruly powers... or one of embracing the destructive powers they grant fully.</p>
+            <p class="indent">What the wellspring of their innate power is varies - they could be a psionic race, born under the influence of distant twisted powers, warped by fey blood, or a herald of something more sinister brushing against the material world. Sometimes their power will show itself in simple applications, but most often their power becomes known and feared when their temper flares.</p>
+            <p class="indent">Their alignment frequently depends on the approach to their powers they have taken, an Unleashed Psion who emphasizes control and restraint, keeping their emotions from running wild and their powers from running rampant will most often be lawful, following strict personal codes. On the other hand, an Unleashed Psion who lets their power run rampant will almost always be chaotic in nature, acting on impulse... with great emphasis.</p>
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNSHACKLED_POWER" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_OVERWHELMING_POWER" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_RAMPAGING_POWER" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_EMPOWERED_PSIONICS" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNCONTROLLABLE_MIND" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNSTOPPABLE_RAMPAGE" />
+        </description>
+        <sheet display="false">
+            <description>An Unleashed Mind's power is most often an innate force they struggle to understand or control, a reflection of their state of mind and mood projected onto the world around them, often to devastating results.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNSHACKLED_POWER" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_OVERWHELMING_POWER" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_RAMPAGING_POWER" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_EMPOWERED_PSIONICS" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNCONTROLLABLE_MIND" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNSTOPPABLE_RAMPAGE" level="14" />
+        </rules>
+    </element>
+    <element name="Unshackled Power" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNSHACKLED_POWER">
+        <description>
+            <p>At 1st level when you select this archetype, you gain the ability to unleash your mind to physically interact with the world around you, granting you the psionic discipline Telekinesis.</p>
+        </description>
+        <sheet  display="false">
+            <description>You gain the psionic discipline Telekinesis.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS" />
+        </rules>
+    </element>
+    <element name="Overwhelming Power" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_OVERWHELMING_POWER">
+        <description>
+            <p>Additionally at 1st level, you gain the ability to cast thaumaturgy with your psionic powers. When you cast in this way, you have additional options:</p>
+            <ul>
+                <li>You cause up to 10 pounds of loose objects within 10 feet of you to start floating for 1 minute.</li>
+                <li>You can force all targets within 5 feet to make a Strength saving throw, or be pushed by 5 feet away from you.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain the ability to cast thaumaturgy with your psionic powers. When you cast in this way, you have additional options: you cause up to 10 pounds of loose objects within 10 feet of you to start floating for 1 minute; you can force all targets within 5 feet to make a Strength saving throw, or be pushed by 5 feet away from you.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+        </rules>
+    </element>
+    <element name="Rampaging Power" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_RAMPAGING_POWER">
+        <description>
+            <p>Starting at 3rd level, you gain a d4 rampage die. Once per turn during your turn when making a damage roll, you can add this rampage die to the damage roll. If you dealt damage during your last turn, your rampage die becomes a d6, increasing with each subsequent turn you deal damage by one step, up to a d12; if you did not deal damage during your last turn or become incapacitated, it becomes a d4 once more. If you maintain a continuous d12 rampage die for more than one minute, you gain a level of exhaustion.</p>
+        </description>
+        <sheet>
+            <description>You gain a d4 rampage die. Once per turn during your turn when making a damage roll, you can add this rampage die to the damage roll. If you dealt damage during your last turn, your rampage die becomes a d6, increasing with each subsequent turn you deal damage by one step, up to a d12; if you did not deal damage during your last turn or become incapacitated, it becomes a d4 once more. If you maintain a continuous d12 rampage die for more than one minute, you gain a level of exhaustion.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Psionics" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_EMPOWERED_PSIONICS">
+        <description>
+            <p>Starting at 6th level, when you deal damage with a Psionic Discipline power you can add your Intelligence modifier to the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>When you deal damage with a Psionic Discipline power you can add {{intelligence:modifier}} to the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Uncontrollable Mind" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNCONTROLLABLE_MIND">
+        <description>
+            <p>Starting at 10th level, the strength of your rampaging mind is such that others' attempts to control it are futile. You gain immunity to charm, fear, and effects that would control your mind while your rampage die is a d8 or more.</p>
+        </description>
+        <sheet>
+            <description>You gain immunity to charm, fear, and effects that would control your mind while your rampage die is a d8 or more.</description>
+        </sheet>
+    </element>
+    <element name="Unstoppable Rampage" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_UNSTOPPABLE_RAMPAGE">
+        <description>
+            <p>Starting at 14th level, when an attack reduces you to zero hit points, you can roll your rampage die. If your roll + your Constitution modifier is higher than the excess damage you took, you are instead reduced to one hit point. You can expend 2 psi points to roll an additional rampage die, adding it to the result.</p>
+        </description>
+        <sheet>
+            <description usage="Psi">When an attack reduces you to zero hit points, you can roll your rampage die. If your roll + {{constitution:modifier}} is higher than the excess damage you took, you are instead reduced to one hit point. You can expend 2 psi points to roll an additional rampage die, adding it to the result.</description>
+        </sheet>
+    </element>
+</elements>

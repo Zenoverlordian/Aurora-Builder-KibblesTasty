@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    
+    <element name="Shaman" type="Archetype" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN">
+        <supports>Occult Tradition</supports>
+        <description>
+            <p>A shaman is an occultist that walks the paths of the spirits, binding them to their cause to empower themselves or bring havoc to their foes. Tough and powerful, they are most often found in the thick of the fight, wreathed in their primal power.</p>
+            <p class="indent">A shaman may view themselves as in service to their spirits or as served by the spirits; the what and the how of their contract can vary wildly, as can the source of their spirits, be it pulling from an ancestral or primal powers.</p>
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_SPIRITUAL_WARRIOR" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CALL_SPIRIT" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EMPOWERED_SPIRITS" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EXTRA_ATTACK" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_SPIRITUAL_EMPOWERMENT" />
+        </description>
+        <sheet display="false">
+            <description>A shaman is an occultist that walks the paths of the spirits</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_SPIRITUAL_WARRIOR" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CALL_SPIRIT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EMPOWERED_SPIRITS" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EXTRA_ATTACK" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_SPIRITUAL_EMPOWERMENT" level="14" />
+        </rules>
+    </element>
+    <element name="Spiritual Warrior" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_SPIRITUAL_WARRIOR">
+        <description>
+            <p>When you select this subclass, you gain proficiency in simple weapons, light armor, medium armor and shields. Additionally, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <stat name="hp" value="level:occultist" />
+        </rules>
+    </element>
+    <element name="Call Spirit" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CALL_SPIRIT">
+        <description>
+            <p>Starting at 1st level, as a bonus action you can call a spirit to your side. This can be a primal spirit of fire, cold, or lightning, or an ancestral spirit with radiant or necrotic power. This bond lasts for 10 minutes once formed. You can release a spirit early as an action, and it is immediately released if you call another spirit.</p>
+            <p class="indent">While a spirit is bonded to you it strengthens your melee weapon attacks, causing them to deal an additional 1d4 damage of the spirit's type.</p>
+            <p class="indent">As a bonus action while it is bonded, you can manifest the spirit within 30 feet of you. The spirit is medium sized but spectral in nature while manifested. While the spirit is manifested, whenever you take the attack action you may replace any number of attacks you could normally take with melee spell attacks from your bonded spirit. Melee spell attacks done by the spirit deal 1d4 + your Wisdom modifier damage of the same spirit's type on a hit. As a bonus action you can move it up to 30 feet in any direction or recall it to yourself, ending its manifestation.</p>
+            <p class="indent">A manifested spirit cannot move more than 60 feet from you, and is recalled to you if you move more than 60 feet from it.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action you can call a spirit to your side. This can be a primal spirit of fire, cold, or lightning, or an ancestral spirit with radiant or necrotic power. This bond lasts for 10 minutes once formed. You can release a spirit early as an action, and it is immediately released if you call another spirit. While a spirit is bonded to you it strengthens your melee weapon attacks, causing them to deal an additional 1d4 damage of the spirit's type.
+            As a bonus action while it is bonded, you can manifest the spirit within 30 feet of you. The spirit is medium sized but spectral in nature while manifested. While the spirit is manifested, whenever you take the attack action you may replace any number of attacks you could normally take with melee spell attacks from your bonded spirit. Melee spell attacks done by the spirit deal 1d4 + your Wisdom modifier damage of the same spirit's type on a hit. As a bonus action you can move it up to 30 feet in any direction or recall it to yourself, ending its manifestation. A manifested spirit cannot move more than 60 feet from you, and is recalled to you if you move more than 60 feet from it.</description>
+        </sheet>
+    </element>
+    <element name="Empowered Spirits" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EMPOWERED_SPIRITS">
+        <description>
+            <p>Starting at 3rd level, when you call a spirit, you expend a spell slot of 1st level or higher to empowered that spirit. An empowered spirit adds additional damage to your weapon and deals additional manifested damage. While the spirit is called and not manifested you gain temporary hit points equal to the level of the spell slot spent to empower at the start of each of your turns.</p>
+            <table>
+                <thead>
+                    <tr><td>Spell Slot</td><td>Weapon Damage</td><td>Manifested Damage</td><td>Temporary Hit Points</td></tr>
+                </thead>
+                <tr><td>1st</td><td>1d6</td><td>2d4</td><td>1</td></tr>
+                <tr><td>2nd</td><td>1d8</td><td>2d6</td><td>2</td></tr>
+                <tr><td>3rd</td><td>1d10</td><td>2d6</td><td>3</td></tr>
+                <tr><td>4th</td><td>1d12</td><td>2d8</td><td>4</td></tr>
+                <tr><td>5th</td><td>1d12</td><td>2d8</td><td>5</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>When you call a spirit, you can expend a spell slot of 1st level or higher to empowered that spirit. An empowered spirit adds additional damage to your weapon and deals additional manifested damage. While the spirit is called and not manifested you gain temporary hit points equal to the level of the spell slot spent to empower at the start of each of your turns.</description>
+        </sheet>
+    </element>
+    <element name="name" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. If you have a manifested spirit, you can replace one or both attacks with the special attack with it.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn. If you have a manifested spirit, you can replace one or both attacks with the special attack with it.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+        </rules>
+    </element>
+    <element name="Spiritual Empowerment" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_SPIRITUAL_EMPOWERMENT">
+        <description>
+            <p>Starting at 14th level, when you cast a spell of 1st level or higher, you can make a single weapon attack as a bonus action. If you have a manifested spirit, you can attack with it in place of making a weapon attack.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher, you can make a single weapon attack as a bonus action. If you have a manifested spirit, you can attack with it in place of making a weapon attack.</description>
+        </sheet>
+    </element>
+    
+    <!--SHAMAN RITES-->
+
+    <element name="Avatar of the Elements" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_AVATAR_OF_THE_ELEMENTS">
+        <supports>Occult Rite</supports>
+        <prerequisite>11th level</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:11]</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>You learn the investiture of flame, investiture of ice, and investiture of stone spells. These are Occultist spells for you. When you cast one of these spells, you can choose to shorten the duration of the spell to to 1 minute. When you do so, these spells do not require concentration.</p>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_INVESTITURE_OF_FLAME" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_INVESTITURE_OF_ICE" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_INVESTITURE_OF_STONE" />
+            </div>
+        </description>
+        <sheet>
+            <description>When you cast investiture of flame, investiture of ice, or investiture of stone, you can choose to shorten the duration of the spell to to 1 minute. When you do so, these spells do not require concentration.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_FLAME" />
+            <grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_STONE" />
+            <grant type="Spell" id="ID_XGTE_SPELL_INVESTITURE_OF_ICE" />
+        </rules>
+    </element>
+
+    <element name="Detonate Spirit" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DETONATE_SPIRIT">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>As an action while you have a manifested spirit, you can cause it to erupt in a massive burst of power. All creatures within 10 feet of it must make a Dexterity saving throw. A target takes damage equal to twice the manifested damage of spirit on a failed save. If the spirit was empowered with a spell slot, a target takes half as much damage on a successful one.</p>
+            <p class="indent">The spirit is immediately released and disappears.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action while you have a manifested spirit, you can cause it to erupt in a massive burst of power. All creatures within 10 feet of it must make a Dexterity saving throw. A target takes damage equal to twice the manifested damage of spirit on a failed save. If the spirit was empowered with a spell slot, a target takes half as much damage on a successful one. The spirit is immediately released and disappears.</description>
+        </sheet>
+    </element>
+
+    <element name="Dance of the Spirits" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DANCE_OF_THE_SPIRITS">
+        <supports>Occult Rite</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:5], (ID_PHB_SPELL_SPIRIT_GUARDIANS|ID_XGTE_SPELL_HEALING_SPIRIT)</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>When you cast spirit guardians, you can choose what damage type it does from any of Fire, Cold, Lightning, Radiant or Necrotic, regardless of your alignment.</p>
+            <p class="indent">Additionally, you have advantage on Constitution saves to maintain concentration on spirit guardians and healing spirit.</p>
+        </description>
+        <sheet>
+            <description>When you cast spirit guardians, you can choose what damage type it does from any of Fire, Cold, Lightning, Radiant or Necrotic, regardless of your alignment. Additionally, you have advantage on Constitution saves to maintain concentration on spirit guardians and healing spirit.</description>
+        </sheet>
+    </element>
+
+    <element name="Energized Weapon" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ENERGIZED_WEAPON">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You gain the ability to infuse your weapon with the power granted to you by the spirits. While you have an empowered spirit bonded, you can pour all of it's energy into your weapon (recalling it if it is manifested). The next attack with that weapon adds twice the additional damage from the spirit, but the bond immediately expires.</p>
+        </description>
+        <sheet>
+            <description>While you have an empowered spirit bonded, you can pour all of it's energy into your weapon (recalling it if it is manifested). The next attack with that weapon adds twice the additional damage from the spirit, but the bond immediately expires.</description>
+        </sheet>
+    </element>
+
+    <element name="Fury of the Flames" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_FURY_OF_THE_FLAMES">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You learn the fists of fire spell. When you cast this spell, the damage of your fists as natural weapons becomes 1d8 instead of 1d6.</p>
+            <div class="reference">
+                <div element="ID_KTH_OCCULTIST_SPELL_FISTS_OF_FIRE" />
+            </div>
+        </description>
+        <sheet>
+            <description>When you cast fists of fire, the damage of your fists as natural weapons becomes 1d8 instead of 1d6.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_FISTS_OF_FIRE" />            
+        </rules>
+    </element>
+
+    <element name="Guidance of the Spirits" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_GUIDANCE_OF_THE_SPIRITS">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>When you expend a spell slot to empower a spirit with your Call Spirit feature, you can select a number of skills equal to the spell slot expended that the spirit is proficient in. While it is not manifested, you gain proficiency with these skills. If you expend a spell slot of 5th level or higher, you can exchange three of the skills the spirit gaining expertise in one skill.</p>
+        </description>
+        <sheet>
+            <description>When you expend a spell slot to empower a spirit with your Call Spirit feature, you can select a number of skills equal to the spell slot expended that the spirit is proficient in. While it is not manifested, you gain proficiency with these skills. If you expend a spell slot of 5th level or higher, you can exchange three of the skills the spirit gaining expertise in one skill.</description>
+        </sheet>
+    </element>
+
+    <element name="Piercing Cold" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PIERCING_COLD">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You learn the ice weapon spell. When you cast this spell, the size of the damage die of any weapon it creates is increased by d2 (for example, from a d6 to a d8).</p>
+            <div class="reference">
+                <div element="ID_KTH_OCCULTIST_SPELL_ICE_WEAPON" />
+            </div>
+        </description>
+        <sheet>
+            <description>When you cast ice weapon, the size of the damage die of any weapon it creates is increased by d2.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_ICE_WEAPON" />            
+        </rules>
+    </element>
+
+    <element name="Mistwalker" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MISTWALKER">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You can see through heavy obscurement when the obscurement is caused by fog, mist, or smoke, natural or otherwise. While you are shrouded by fog, mist, or smoke, you have half cover.</p>
+        </description>
+        <sheet>
+            <description>You can see through heavy obscurement when the obscurement is caused by fog, mist, or smoke, natural or otherwise. While you are shrouded by fog, mist, or smoke, you have half cover.</description>
+        </sheet>
+    </element>
+
+    <element name="Primal Earth" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRIMAL_EARTH">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You harness the primal elemental powers of the earth and stone to your call, you learn the following spells at the following list, but they do not count against your spells known. These are Occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>earth tremor</td></tr>
+                <tr><td>3rd</td><td>earthbind</td></tr>
+                <tr><td>5th</td><td>erupting earth</td></tr>
+                <tr><td>7th</td><td>orbital stones</td></tr>
+                <tr><td>9th</td><td>wall of stone</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_EARTH_TREMOR" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_EARTHBIND" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_ERUPTING_EARTH" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_WALL_OF_STONE" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="1" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="5" />
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" />
+        </rules>
+    </element>
+
+    <element name="Primal Ice" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRIMAL_ICE">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You harness the primal elemental powers of ice to your call, you learn the following spells at the following list, but they do not count against your spells known. These are Occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>ice knife</td></tr>
+                <tr><td>3rd</td><td>snowball storm</td></tr>
+                <tr><td>5th</td><td>sleet storm</td></tr>
+                <tr><td>7th</td><td>ice storm</td></tr>
+                <tr><td>9th</td><td>cone of cold</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_ICE_KNIFE" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SLEET_STORM" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_ICE_STORM" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_CONE_OF_COLD" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="1" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" />
+        </rules>
+    </element>
+
+    <element name="Primal Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRIMAL_FIRE">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You harness the primal elemental powers of fire to your call, you learn the following spells at the following list, but they do not count against your spells known. These are Occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>burning hands</td></tr>
+                <tr><td>3rd</td><td>pyrotechnics</td></tr>
+                <tr><td>5th</td><td>fireball</td></tr>
+                <tr><td>7th</td><td>wall of fire</td></tr>
+                <tr><td>9th</td><td>immolation</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BURNING_HANDS" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_PYROTECHNICS" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FIREBALL" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_WALL_OF_FIRE" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_IMMOLATION" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" />
+            <grant type="Spell" id="ID_XGTE_SPELL_PYROTECHNICS" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" />
+            <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" />
+        </rules>
+    </element>
+
+    <element name="Primal Storms" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRIMAL_STORMS">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You harness the primal elemental powers of storms and lightning to your call, you learn the following spells at the following list. This are Occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>thunderwave</td></tr>
+                <tr><td>3rd</td><td>gust of wind</td></tr>
+                <tr><td>5th</td><td>lightning bolt</td></tr>
+                <tr><td>7th</td><td>storm sphere</td></tr>
+                <tr><td>9th</td><td>control winds</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_THUNDERWAVE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_GUST_OF_WIND" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_LIGHTNING_BOLT" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_STORM_SPHERE" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_CONTROL_WINDS" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="7" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" />
+        </rules>
+    </element>
+
+    <element name="Radiate Power" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_RADIATE_POWER">
+        <supports>Occult Rite</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>While you have a spirit bonded to you, as a bonus action you can cause it to emanate power, causing all creatures within 5 feet of you (or it if it is manifested at another location) to make a Wisdom saving throw against your spell save DC, or take damage equal to its manifested damage.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">While you have a spirit bonded to you, as a bonus action you can cause it to emanate power, causing all creatures within 5 feet of you (or it if it is manifested at another location) to make a Wisdom saving throw against your spell save DC, or take damage equal to its manifested damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Shaman's Touch" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SHAMANS_TOUCH">
+        <supports>Occult Rite</supports>
+        <prerequisite>7th level</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:7]</requirements>
+        <description>
+            <p><em>Prerequisite: 7th level</em></p>
+            <p>When you take the attack action, you can replace one attack with a cantrip with a range of touch.</p>
+        </description>
+        <sheet>
+            <description>When you take the attack action, you can replace one attack with a cantrip with a range of touch.</description>
+        </sheet>
+    </element>
+
+    <element name="Warding Power" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_WARDING_POWER">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <description>
+            <p>You learn the spell shield, and it becomes an Occultist spell for you.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SHIELD" />
+            </div>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD" />
+        </rules>
+    </element>
+    
+
+    <p class="indent"></p>
+
+</elements>

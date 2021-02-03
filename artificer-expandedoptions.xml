@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <!--UPDATE 2.0.3-->
+    
+    <!--SPELLS-->
+
+    <element name="Dampen Magic" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_SPELL_DAMPEN_MAGIC">
+        <supports>KTHArtificer, Wizard</supports>
+        <description>
+            <p>You touch a magical item or creature, and dampen its magic.</p>
+            <p class="indent">If you touched a magical item, make a Spellcasting ability check with a DC equal to 8 + 2 for an common item, +4 for an uncommon item, +6 for a rare item, +8 for a very rare item, +10 for a legendary item, and +12 for an artifact. On a successful check, the item becomes nonmagical for the duration. All divination spells targeting it return that it is a mundane time. At the end of the duration, it becomes a magical item once more.</p>
+            <p class="indent">If you touched a creature, it makes a Charisma saving throw, which it may chose to fail. On failure, it has disadvantage on any spell attack rolls and any creature making a save against its spells has advantage, but it has advantage on any saving throws against magic. It can repeat its saving throw at the end of its turns if it wishes to end the effect.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration, up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Repelling Field" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_SPELL_REPELLING_FIELD">
+        <supports>KTHArtificer, Wizard</supports>
+        <description>
+            <p>You target a creature or object within range, creating a 20 foot radius sphere of repelling force. This force is not strong enough to effect creatures moving, but deflects projectiles. All creatures in within this sphere are considered to have half cover against ranged weapon attacks, or three quarters cover if they already have half cover.</p>
+            <p class="indent">Alternatively when you cast it, you can target a creature reversing this effect. The target creature must make a Charisma saving throw. On failure, all projectiles attacks against that target are made with advantage for the duration of the spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Weapon of Throwing" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_SPELL_WEAPON_OF_THROWING">
+        <supports>KTHArtificer</supports>
+        <description>
+            <p>You touch a weapon granting it the throwing 20/60 property. If it already has the thrown property, it's range increases by 10/30. It also gains the "returning" property. After being thrown it automatically reappears in the throwers hand.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">A magic item that casts a spell</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Runic Bindings" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_SPELL_RUNIC_BINDINGS">
+        <supports>KTHArtificer, Wizard</supports>
+        <description>
+            <p>You trace a magical rune on a target creature. Choose one the following runic marks:</p>
+            <ul>
+                <li><strong>Sealing Rune:</strong> For the duration of the rune, the target must make a Charisma saving throw with disadvantage any time they try to cast a spell. On failure, the spell slot is used, but does not cast.</li>
+                <li>Tracking Rune:<strong></strong> You know the exact location of the creature for the duration. If they are on another plane, you know what plane they are on.</li>
+                <li><strong>Restraining Rune:</strong> For the duration of the rune, the target must make a Charisma saving throw at the start of each of its turns or be restrained when attempting to do anything besides things you directly ordered the creature to do (no action required).</li>
+            </ul>
+            <p class="indent">You can end the spell early by erasing the rune with an action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Abjuration</set>
+            <set name="time">1 minute</set>
+            <set name="range">Touch</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Orbital Stones" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES">
+        <supports>Druid, Sorcerer, Warlock</supports>
+        <description>
+            <p>You lift three small to medium rocks or similar objects from within 10 feet of you, causing them defy gravity and slowly circle you. While all three are in orbit around you, you have total cover against ranged attacks. While two are in orbit, you have three quarters cover, and while only one remains, you have half cover. The spell ends when none of them are orbiting you.</p>
+            <p class="indent">As a bonus action while at least one object remains in orbit, you can magically fling it at target within 60 feet. Make a ranged spell attack roll. On hit, the target takes 2d12 bludgeoning damage and is knocked backward 5 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent"></set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <!--THUNDERSMITH UPGRADES-->
+
+    <element name="Lightning Arcs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_ARCS">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>11th level</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:11]</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>Once per turn, when you deal Lightning damage with your Stormforged weapon, you can arc the lightning to strike another target within 5 feet. For each die of lightning damage you dealt to the first target, deal 1d4 lightning damage to the second target.</p>
+        </description>
+        <sheet>
+            <description usage="1/Turn">When you deal Lightning damage with your Stormforged weapon, you can arc the lightning to strike another target within 5 feet. For each die of lightning damage you dealt to the first target, deal 1d4 lightning damage to the second target.</description>
+        </sheet>
+    </element>
+
+    <element name="Static Aura" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_STATIC_AURA">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level, Thunder Cannon</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:9], ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level, Thunder Cannon</em></p>
+            <p>Your Thunder Cannon emits such a powerful charged aura after being fired, creatures within 5 feet must make a Dexterity saving throw. On failure they take 1d8 lightning damage and have disadvantage on their next attack made before the end of their turn.</p>
+        </description>
+        <sheet>
+            <description>Your Thunder Cannon emits such a powerful charged aura after being fired, creatures within 5 feet must make a Dexterity saving throw. On failure they take 1d8 lightning damage and have disadvantage on their next attack made before the end of their turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Railgun" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_RAILGUN">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>19th level, Thunder Cannon</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:19], ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON</requirements>
+        <description>
+            <p><em>Prerequisite: 19th level, Thunder Cannon</em></p>
+            <p>You upgrade the penetration power of your Thunder Cannon. Your Thunder Cannon gains the Siege weapon property, dealing double damage to structures. Additionally, targets can no longer gain the benefits of cover from wooden cover less than 2 feet thick or stone cover less than 1 foot thick, and such cover is destroyed when it would otherwise impede your Thunder Cannon's attack.</p>
+            <p class="indent">If a second target is directly behind a target you attack and within 5 feet, make a second attack roll with disadvantage. If the second attack roll hits, roll Thunder Cannon weapon damage against the second target as well (but no Thundermonger damage is applied to it).</p>
+            <p class="indent">The range of your Thunder Cannon increases by 20/60 feet.</p>
+        </description>
+        <sheet>
+            <description>Your Thunder Cannon gains the Siege weapon property, dealing double damage to structures. Additionally, targets can no longer gain the benefits of cover from wooden cover less than 2 feet thick or stone cover less than 1 foot thick, and such cover is destroyed when it would otherwise impede your Thunder Cannon's attack. If a second target is directly behind a target you attack and within 5 feet, make a second attack roll with disadvantage. If the second attack roll hits, roll Thunder Cannon weapon damage against the second target as well (but no Thundermonger damage is applied to it). The range of your Thunder Cannon increases by 20/60 feet.</description>
+        </sheet>
+    </element>
+
+    <element name="Lightning Saber" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_SABER">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>19th level, Charged Blade</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:19], ID_KTH_ARTIFICER_WEAPON_CHARGED_BLADE</requirements>
+        <description>
+            <p><em>Prerequisite: 19th level, Charged Blade</em></p>
+            <p>You amplify lightning coursing through your weapon until it becomes a brilliant rod of near pure power. Your weapon casts bright light in a color of your choice for 30 feet, and dim light for additional 30 feet.</p>
+            <p class="indent">If you target is wearing non-magical armor or natural armor, your attacks treat their armor class as 10 + their dexterity modifier; only magical effects can add additional AC to the target's defenses.</p>
+        </description>
+        <sheet>
+            <description>Your weapon casts bright light in a color of your choice for 30 feet, and dim light for additional 30 feet. If you target is wearing non-magical armor or natural armor, your attacks treat their armor class as 10 + their dexterity modifier; only magical effects can add additional AC to the target's defenses.</description>
+        </sheet>
+    </element>
+
+    <!--GADGETSMITH UPGRADES-->
+
+    <element name="Antimagical Shackle" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_ANTIMAGICAL_SHACKLE">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>You create an antimagical shackle. When you are adjacent to a creature, as an action you can attempt to shackle them to yourself or a nearby object using these shackles. The you make a Dexterity (Sleight of Hand) check contested by a Strength (Athletics) or Dexterity (Acrobatics) check. On failure, they are shackled to the creature or object you attempted to shackle them to, and can move only by moving it if they are able to.</p>
+            <p class="indent">Additionally, while shackled by these shackles, they cannot teleport, planeshift, polymorph, shapechange, dematerialize, or turn into an amorphous form. As an action they can make a Strength saving throw against your spell save DC to break the shackles once shackled, otherwise these shackles last until you remove them.</p>
+            <p class="indent">This shackles have no effect on creatures immune to being grappled or restrained.</p>
+        </description>
+        <sheet>
+            <description>When you are adjacent to a creature, as an action you can attempt to shackle them to yourself or a nearby object using these shackles. The you make a Dexterity (Sleight of Hand) check contested by a Strength (Athletics) or Dexterity (Acrobatics) check. On failure, they are shackled to the creature or object you attempted to shackle them to, and can move only by moving it if they are able to.
+            Additionally, while shackled by these shackles, they cannot teleport, planeshift, polymorph, shapechange, dematerialize, or turn into an amorphous form. As an action they can make a Strength saving throw against your spell save DC to break the shackles once shackled, otherwise these shackles last until you remove them.
+            This shackles have no effect on creatures immune to being grappled or restrained.</description>
+        </sheet>
+    </element>
+
+    <element name="Conductive Lightning" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_CONDUCTIVE_LIGHTNING">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Lightning Baton</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_LIGHTNING_BATON</requirements>
+        <description>
+            <p><em>Prerequisite: Lightning Baton</em></p>
+            <p>If you make an attack against a target wearing metal armor or wielding metal weapons, the target takes the lightning damage from your baton attack regardless if you hit or miss, and your Lightning Baton gains a special attack. If you are under the effect of <em>lightning charged</em>, missed attacks that deal lightning damage also generate an arc of lightning from the spell.</p>
+            <p class="indent"><em>Special:</em> If your opponent is wielding a metal weapon, you can deliver a extra powerful shock through to attempt to make them drop the weapon. As an attack, instead of making an attack roll, the target makes a Constitution saving throw, taking 2d4 + your intelligence modifier lightning damage and dropping their weapon on a failed save. When you make this special attack, your Lightning Baton becomes a Club until the end of your next turn.</p>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_SPELL_LIGHTNING_CHARGED" />
+            </div>
+        </description>
+        <sheet>
+            <description>If you make an attack against a target wearing metal armor or wielding metal weapons, the target takes the lightning damage from your baton attack regardless if you hit or miss, and your Lightning Baton gains a special attack. If you are under the effect of <em>lightning charged</em>, missed attacks that deal lightning damage also generate an arc of lightning from the spell.
+            <em>Special:</em> If your opponent is wielding a metal weapon, you can deliver a extra powerful shock through to attempt to make them drop the weapon. As an attack, instead of making an attack roll, the target makes a Constitution saving throw, taking 2d4 + {{intelligence:modifier}} lightning damage and dropping their weapon on a failed save. When you make this special attack, your Lightning Baton becomes a Club until the end of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Death Ray" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_DEATH_RAY">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>17th level</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:17]</requirements>
+        <description>
+            <p><em>Prerequisite: 17th level</em></p>
+            <p>You build a death ray, as Artificers do. As an action, you can cast <em>finger of death</em> without expending a spell slot. Once you use this gadget, you cannot use it again until you complete a long rest.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FINGER_OF_DEATH" />
+            </div>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Long rest">You can cast <em>finger of death</em> without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FINGER_OF_DEATH" />
+        </rules>
+    </element>
+
+    <element name="Flames and Fury" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_FLAMES_AND_FURY">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Fire Spitter</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FIRE_SPITTER</requirements>
+        <description>
+            <p><em>Prerequisite: Fire Spitter</em></p>
+            <p>Sometimes the world needs more fire, and you've developed ways to accommodate the world on that need. Tinkering with things of a more violtile nature has given you insight into more ways to burn and explode things with your spell slots at the following levels:</p>
+            <table>
+                <thead>
+                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>burning hands, hellish rebuke</td></tr>
+                <tr><td>5th</td><td>Aganazzar's scorcher, pyrotechnics</td></tr>
+                <tr><td>9th</td><td>fireball</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BURNING_HANDS" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_HELLISH_REBUKE" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_PYROTECHNICS" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FIREBALL" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain additional spells at certain levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" level="5" />
+            <grant type="Spell" id="ID_XGTE_SPELL_PYROTECHNICS" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" />
+        </rules>
+    </element>
+
+    <element name="Multipurpose Investigation Tool" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_MULTIPURPOSE_INVESTIGATION_TOOL">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_MULTIPURPOSE_INVESTIGATION_TOOL</requirements>
+        <description>
+            <p>You build a tool with a suite of gizmos and widgets for optimal examination. While using this device, you gain proficiency in Intelligence (Investigation) checks. If you already have proficiency in Intelligence (Investigation) you can add twice your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>While using this device, you gain proficiency in Intelligence (Investigation) checks. If you already have proficiency in Intelligence (Investigation) you can add twice your proficiency bonus.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+        </rules>
+    </element>
+    <element name="Multipurpose Investigation Tool" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_MULTIPURPOSE_INVESTIGATION_TOOL">
+        <supports>Cross Disciplinary Knowledge</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_MULTIPURPOSE_INVESTIGATION_TOOL, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
+        <description>
+            <p>You build a tool with a suite of gizmos and widgets for optimal examination. While using this device, you gain proficiency in Intelligence (Investigation) checks. If you already have proficiency in Intelligence (Investigation) you can add twice your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>While using this device, you gain proficiency in Intelligence (Investigation) checks. If you already have proficiency in Intelligence (Investigation) you can add twice your proficiency bonus.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+        </rules>
+    </element>
+
+    <element name="Spring Action Dagger" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SPRING_ACTION_DAGGER">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SPRING_ACTION_DAGGER</requirements>
+        <description>
+            <p>You create a dagger capable of being deployed with sudden and brutal efficiency. You have proficiency in this weapon, and it has the Finesse, Light, and Thrown (30/90) properties. It deals 1d4 piercing damage. This weapon can be concealed as something else; a creature searching you will only determine it a weapon by making an Intelligence (Investigation) check with a DC equal to your Spell Save modifier.</p>
+            <p class="indent">Special: The first time you attack a creature with this dagger, you have advantage on the attack roll. When thrown, it's damage die becomes a d8.</p>
+            <p class="indent">Once thrown, another dagger can be equipped as your Spring Action Dagger as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You create a dagger capable of being deployed with sudden and brutal efficiency. You have proficiency in this weapon, and it has the Finesse, Light, and Thrown (30/90) properties. It deals 1d4 piercing damage. This weapon can be concealed as something else; a creature searching you will only determine it a weapon by making an Intelligence (Investigation) check with a DC equal to your Spell Save modifier.
+            Special: The first time you attack a creature with this dagger, you have advantage on the attack roll. When thrown, it's damage die becomes a d8.
+            Once thrown, another dagger can be equipped as your Spring Action Dagger as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Spring Action Dagger" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SPRING_ACTION_DAGGER">
+        <supports>Cross Disciplinary Knowledge</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SPRING_ACTION_DAGGER, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
+        <description>
+            <p>You create a dagger capable of being deployed with sudden and brutal efficiency. You have proficiency in this weapon, and it has the Finesse, Light, and Thrown (30/90) properties. It deals 1d4 piercing damage. This weapon can be concealed as something else; a creature searching you will only determine it a weapon by making an Intelligence (Investigation) check with a DC equal to your Spell Save modifier.</p>
+            <p class="indent">Special: The first time you attack a creature with this dagger, you have advantage on the attack roll. When thrown, it's damage die becomes a d8.</p>
+            <p class="indent">Once thrown, another dagger can be equipped as your Spring Action Dagger as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You create a dagger capable of being deployed with sudden and brutal efficiency. You have proficiency in this weapon, and it has the Finesse, Light, and Thrown (30/90) properties. It deals 1d4 piercing damage. This weapon can be concealed as something else; a creature searching you will only determine it a weapon by making an Intelligence (Investigation) check with a DC equal to your Spell Save modifier.
+            Special: The first time you attack a creature with this dagger, you have advantage on the attack roll. When thrown, it's damage die becomes a d8.
+            Once thrown, another dagger can be equipped as your Spring Action Dagger as a bonus action.</description>
+        </sheet>
+    </element>
+
+    <element name="Steelweave Nets" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_STEELWEAVE_NETS">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_STEELWEAVE_NETS</requirements>
+        <description>
+            <p>You thread your nets with metal reinforcement, making them tougher and more conductive. The net gains an AC of 15 and resistance to slashing damage. Whenever a creature restrained by the net takes Lightning damage, it takes an additional 1d6 lightning damage.</p>
+            <p class="indent">When a net is turned into a Steelweave Net, only you have proficiency with it. You can have a number of them equal to your Intelligence modifier, replenishing your supply over the course of a long rest by forging normal nets into Steelweave Nets.</p>
+        </description>
+        <sheet>
+            <description usage="{{intelligence:modifier}}/Long rest">Your nets gain an AC of 15 and resistance to slashing damage. Whenever a creature restrained by the net takes Lightning damage, it takes an additional 1d6 lightning damage.
+            When a net is turned into a Steelweave Net, only you have proficiency with it. You can have {{intelligence:modifier}} nets, replenishing your supply over the course of a long rest by forging normal nets into Steelweave Nets.</description>
+        </sheet>
+    </element>
+    <element name="Steelweave Nets" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_STEELWEAVE_NETS">
+        <supports>Cross Disciplinary Knowledge</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_STEELWEAVE_NETS, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
+        <description>
+            <p>You thread your nets with metal reinforcement, making them tougher and more conductive. The net gains an AC of 15 and resistance to slashing damage. Whenever a creature restrained by the net takes Lightning damage, it takes an additional 1d6 lightning damage.</p>
+            <p class="indent">When a net is turned into a Steelweave Net, only you have proficiency with it. You can have a number of them equal to your Intelligence modifier, replenishing your supply over the course of a long rest by forging normal nets into Steelweave Nets.</p>
+        </description>
+        <sheet>
+            <description usage="{{intelligence:modifier}}/Long rest">Your nets gain an AC of 15 and resistance to slashing damage. Whenever a creature restrained by the net takes Lightning damage, it takes an additional 1d6 lightning damage.
+            When a net is turned into a Steelweave Net, only you have proficiency with it. You can have {{intelligence:modifier}} nets, replenishing your supply over the course of a long rest by forging normal nets into Steelweave Nets.</description>
+        </sheet>
+    </element>
+
+    <element name="Trick Shots" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_TRICK_SHOTS">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_TRICK_SHOTS</requirements>
+        <description>
+            <p>At the end of a short or long rest, you can add one of the following effects to a piece of ammunition or thrown weapon, turning it into a trick shot.</p>
+            <ul>
+                <li><strong>Special Tip: </strong>You can select a different damage type for the attack from bludgeoning, piercing, slashing, acid, cold, fire, or lightning.</li>
+                <li><strong>Bouncing: </strong>You can attack a target out of line of sight of with it if you know their location by bouncing it off a surface. They have the benefit of half cover instead of full cover.</li>
+                <li><strong>Ricochet: </strong>If you hit an attack roll with it, you can make another attack roll against another target within 10 feet of the first as part of the same attack.</li>
+                <li><strong>Smoke Shot: </strong>You can use the arrow to deploy your smoke bomb feature on impact at a point or target.</li>
+                <li><strong>Arcane Trick: </strong>You can imbue a cantrip or 1st level spell you know into the arrow, casting it on impact where the arrow lands. If the spell has a target, the target of the attack is the target. If it has an area of effect, that is centered on the arrow.</li>
+            </ul>
+            <p class="indent">You can only have one modified shot at a time, and it is expended on use.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long rest">A piece of ammunition or thrown weapon gets one of the following traits:
+            <strong>Special Tip: </strong>You can select a different damage type for the attack from bludgeoning, piercing, slashing, acid, cold, fire, or lightning.
+            <strong>Bouncing: </strong>You can attack a target out of line of sight of with it if you know their location by bouncing it off a surface. They have the benefit of half cover instead of full cover.
+            <strong>Ricochet: </strong>If you hit an attack roll with it, you can make another attack roll against another target within 10 feet of the first as part of the same attack.
+            <strong>Smoke Shot: </strong>You can use the arrow to deploy your smoke bomb feature on impact at a point or target.
+            <strong>Arcane Trick: </strong>You can imbue a cantrip or 1st level spell you know into the arrow, casting it on impact where the arrow lands. If the spell has a target, the target of the attack is the target. If it has an area of effect, that is centered on the arrow.</description>
+        </sheet>
+    </element>
+    <element name="Trick Shots" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_TRICK_SHOTS">
+        <supports>Cross Disciplinary Knowledge</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_TRICK_SHOTS, !ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
+        <description>
+            <p>At the end of a short or long rest, you can add one of the following effects to a piece of ammunition or thrown weapon, turning it into a trick shot.</p>
+            <ul>
+                <li><strong>Special Tip: </strong>You can select a different damage type for the attack from bludgeoning, piercing, slashing, acid, cold, fire, or lightning.</li>
+                <li><strong>Bouncing: </strong>You can attack a target out of line of sight of with it if you know their location by bouncing it off a surface. They have the benefit of half cover instead of full cover.</li>
+                <li><strong>Ricochet: </strong>If you hit an attack roll with it, you can make another attack roll against another target within 10 feet of the first as part of the same attack.</li>
+                <li><strong>Arcane Trick: </strong>You can imbue a cantrip or 1st level spell you know into the arrow, casting it on impact where the arrow lands. If the spell has a target, the target of the attack is the target. If it has an area of effect, that is centered on the arrow.</li>
+            </ul>
+            <p class="indent">You can only have one modified shot at a time, and it is expended on use.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long rest">A piece of ammunition or thrown weapon gets one of the following traits:
+            <strong>Special Tip: </strong>You can select a different damage type for the attack from bludgeoning, piercing, slashing, acid, cold, fire, or lightning.
+            <strong>Bouncing: </strong>You can attack a target out of line of sight of with it if you know their location by bouncing it off a surface. They have the benefit of half cover instead of full cover.
+            <strong>Ricochet: </strong>If you hit an attack roll with it, you can make another attack roll against another target within 10 feet of the first as part of the same attack.
+            <strong>Arcane Trick: </strong>You can imbue a cantrip or 1st level spell you know into the arrow, casting it on impact where the arrow lands. If the spell has a target, the target of the attack is the target. If it has an area of effect, that is centered on the arrow.</description>
+        </sheet>
+    </element>
+
+    <element name="Transmogrifier" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_TRANSMOGRIFIER">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9]</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level</em></p>
+            <p>You build a device to channel the power of transmution able to cast <em>polymorph</em> without expending a spell slot... unfortunately without great precision. Roll a d8 to determine what beast the spell will transform the target into and a d4 to select an additional effect, and then pick a target for the spell. If you do not pick a target, you will be the target.</p>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Beast</td></tr>
+                </thead>
+                <tr><td>1</td><td>Frog (MM p.318)</td></tr>
+                <tr><td>2</td><td>Cat (MM p.322)</td></tr>
+                <tr><td>3</td><td>Ape (MM p.317)</td></tr>
+                <tr><td>4</td><td>Brown Bear (MM p.319)</td></tr>
+                <tr><td>5</td><td>Giant Constrictor Snake (MM p.324)</td></tr>
+                <tr><td>6</td><td>Elephant (MM p.322)</td></tr>
+                <tr><td>7</td><td>Mammoth (MM p.332)</td></tr>
+                <tr><td>8</td><td>Tyrannosaurus Rex (MM p.80)</td></tr>
+            </table>
+            <table>
+                <thead>
+                    <tr><td>d4</td><td>Additional Effects</td></tr>
+                </thead>
+                <tr><td>1</td><td>The creature is one size smaller. Deals half damage.</td></tr>
+                <tr><td>2</td><td>The creature is missing a leg. Halved movement speed.</td></tr>
+                <tr><td>3</td><td>The creature has an extra head. Makes 1 extra attack.</td></tr>
+                <tr><td>4</td><td>The creature is one size larger. Deals +1d4 damage.</td></tr>
+            </table>
+            <p class="indent">Once you use it, the Transmogrifier cannot be used again until you complete a long rest.</p>
+        </description>
+        <div class="reference">
+            <div element="ID_PHB_SPELL_POLYMORPH" />
+        </div>
+        <sheet>
+            <description usage="1/Long rest">You are able to cast <em>polymorph</em> without expending a spell slot... unfortunately without great precision. Roll a d8 to determine what beast the spell will transform the target into and a d4 to select an additional effect, and then pick a target for the spell. If you do not pick a target, you will be the target.</description>
+        </sheet>
+    </element>
+
+    <element name="Wild Detonation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_WILD_DETONATION">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level, Fire Spitter or Flashbang</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9], (ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FIRE_SPITTER|ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FLASHBANG)</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level, Fire Spitter or Flashbang</em></p>
+            <p>Now when you use your Fire Spitter, you can double the dimensions and damage of the spell effect. Additionally, creatures that fail the saving against your Flashbang by 5 or more are stunned as well as blinded until the end of their next turn.</p>
+        </description>
+        <sheet>
+            <description>Now when you use your Fire Spitter, you can double the dimensions and damage of the spell effect. Additionally, creatures that fail the saving against your Flashbang by 5 or more are stunned as well as blinded until the end of their next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Violent Momentum" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_VIOLENT_MOMENTUM">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>11th level, Impact Gauntlet</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level, Impact Gauntlet</em></p>
+            <p>Once per turn, when you move 10 feet or more toward a target before attacking them with your Impact Gauntlet, you can use the special attack of your Impact Gauntlet without forgoing your hit bonus.</p>
+            </description>
+        <sheet>
+            <description usage="1/Turn">When you move 10 feet or more toward a target before attacking them with your Impact Gauntlet, you can use the special attack of your Impact Gauntlet without forgoing your hit bonus.</description>
+        </sheet>
+    </element>
+
+    <!--INFUSIONSMITH UPGRADES-->
+
+    <element name="Enchanted Garments" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ENCHANTED_GARMENTS">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <description>
+            <p>You enchant your clothes, granting you several benefits over mundane not-enchanted clothes:</p>
+            <ul>
+                <li>You can cast <em>prestidigitation</em> targeting only your own clothes.</li>
+                <li>You cause them to change style or color as an action, keeping the new style or color until your take them off or enchant a new set.</li>
+                <li>They do not get wet unless you will them to, keeping you dry.</li>
+                <li>You can ignore the environmental effects of extreme heat or cold.</li>
+            </ul>
+            <div class="reference">
+				<div element="ID_PHB_SPELL_PRESTIDIGITATION" />
+			</div>
+        </description>
+        <sheet>
+            <description>You enchant your clothes, granting you several benefits over mundane not-enchanted clothes:
+            You can cast <em>prestidigitation</em> targeting only your own clothes.
+            You cause them to change style or color as an action, keeping the new style or color until your take them off or enchant a new set.
+            They do not get wet unless you will them to, keeping you dry.
+            You can ignore the environmental effects of extreme heat or cold.</description>
+        </sheet>
+    </element>
+
+    <element name="Investiture of Soul" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_INVESTITURE_OF_SOUL">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>19th level</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:19]</requirements>
+        <description>
+            <p><em>Prerequisite: 19th level</em></p>
+            <p>When you cast <em>animate object</em> spell, you can expend a hit die. If you do it no longer requires concentration, and lasts until the objects created are destroyed or you complete a long rest. If you cast animate objects again while you still have animated objects active, the previous spell immediately ends.</p>
+            <div class="reference">
+				<div element="ID_PHB_SPELL_ANIMATE_OBJECTS" />
+			</div>
+        </description>
+        <sheet>
+            <description>When you cast <em>animate object</em> spell, you can expend a hit die. If you do it no longer requires concentration, and lasts until the objects created are destroyed or you complete a long rest. If you cast animate objects again while you still have animated objects active, the previous spell immediately ends.</description>
+        </sheet>
+    </element>
+
+    <element name="Loyal Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_LOYAL_WEAPON">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <description>
+            <p>You can cast the <em>weapon of throwing</em> spell as a first level spell without expending a spell slot, but if you cast it on a second weapon with this feature, the spell immediately fades from any previous use of this feature.</p>
+            <div class="reference">
+				<div element="ID_KTH_ARTIFICER_SPELL_WEAPON_OF_THROWING" />
+			</div>
+        </description>
+        <sheet>
+            <description>You can cast the <em>weapon of throwing</em> spell as a first level spell without expending a spell slot, but if you cast it on a second weapon with this feature, the spell immediately fades from any previous use of this feature.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_WEAPON_OF_THROWING" />
+        </rules>
+    </element>
+
+    <element name="Spinning Blades" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_SPINNING_BLADES">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <description>
+            <p>As an action, instead of attacking with your Animated Weapons, you cause them to whirl through the air in place. This has the effect of <em>cloud of daggers</em>, but does not require concentration and ends at the start of your next turn. For each animated weapon you have you can pick a different 5 foot cube, or send them to the same spot. For each weapon sent the same spot, the spell level of the effect is increased by one.</p>
+            <div class="reference">
+				<div element="ID_PHB_SPELL_CLOUD_OF_DAGGERS" />
+			</div>
+        </description>
+        <sheet>
+            <description>As an action, instead of attacking with your Animated Weapons, you cause them to whirl through the air in place. This has the effect of <em>cloud of daggers</em>, but does not require concentration and ends at the start of your next turn. For each animated weapon you have you can pick a different 5 foot cube, or send them to the same spot. For each weapon sent the same spot, the spell level of the effect is increased by one.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CLOUD_OF_DAGGERS" />
+        </rules>
+    </element>
+
+    <element name="Translocation Binding" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_TRANSLOCATION_BINDING">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>As a bonus action while attacking with an Animated Weapon or a weapon under the effect of <em>weapon of throwing</em>, you can expend a first level spell slot and teleport to it before it returns to you. You can invoke this even if the attack misses the target.</p>
+            <div class="reference">
+				<div element="ID_KTH_ARTIFICER_SPELL_WEAPON_OF_THROWING" />
+			</div>
+        </description>
+        <sheet>
+            <description action="Bonus Action">As a bonus action while attacking with an Animated Weapon or a weapon under the effect of <em>weapon of throwing</em>, you can expend a first level spell slot and teleport to it before it returns to you. You can invoke this even if the attack misses the target.</description>
+        </sheet>
+    </element>
+
+    <!--POTIONSMITH UPGRADES-->
+
+    <element name="Collateral Damage" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_COLLATERAL_DAMAGE">
+        <prerequisite>Explosive Reaction</prerequisite>
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH, ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_EXPLOSIVE_REACTION</requirements>
+        <description>
+            <p><em>Prerequisite: Explosive Reaction</em></p>
+            <p>Your explosive reaction now deals half damage to creatures that pass the saving throw against it.</p>
+        </description>
+        <sheet>
+            <description>Your explosive reaction now deals half damage to creatures that pass the saving throw against it.</description>
+        </sheet>
+    </element>
+
+    <element name="Carrier Familiar" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_CARRIER_FAMILIAR">
+        <prerequisite>9th level, Homunculus Familiar</prerequisite>
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH, [level:9], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_HOMUNCULUS_FAMILIAR</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level, Homunculus Familiar</em></p>
+            <p>You utilize your Familiar to deliver your instant reactions. As an action, you can hand off a semi-stablized instant reaction to your familiar. Until the end of your familiar's next turn, it can use your Instant Reaction as it's action, targeting a point within 10 feet of it or dropping it up to 20 feet before it takes effect.</p>
+            <p class="indent">You take this chance to improve your familiar's delivery capabilities, granting it the Flyby feature of an Owl if does not have the feature, and 5 feet of increased movement speed to its fastest movement speed if it already does.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can hand off a semi-stablized instant reaction to your familiar. Until the end of your familiar's next turn, it can use your Instant Reaction as it's action, targeting a point within 10 feet of it or dropping it up to 20 feet before it takes effect. Additionally, you take this chance to improve your familiar's delivery capabilities, granting it the Flyby feature of an Owl if does not have the feature, and 5 feet of increased movement speed to its fastest movement speed if it already does.</description>
+        </sheet>
+    </element>
+    
+    <element name="Dragon Draught" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_INSTANT_RXN_DRAGON_DRAUGHT">
+        <description>
+            <p>As an action you quaff a vial of highly reactive liquid, allow you to immediately belch a blast of devastating elemental energy. You can select between cold, fire, acid, or lightning. Cold and fire effect a 10 foot cone. Lightning and Acid effect at 15 foot line. Creatures in that area have to make a Dexterity saving throw against your Spell Save DC, or take 1d8 damage of the elemental type chosen.</p>
+            <p class="indent">The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Instant Reaction</set>
+            <set name="time"></set>
+            <set name="range"></set>
+            <set name="duration"></set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">Alchemical Reagents Pouch</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Extra Zest" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_EXTRA_ZEST">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <description>
+            <p>You've mastered a twist for infusion. Whenever a consumed potion restores health, it restores an additional 1d4 hit points per level of the spell slot used to infuse it. Whenever a thrown potion deals damage, it deals an additional 1d4 damage of its primary damage type to creatures effected by it.</p>
+        </description>
+        <sheet>
+            <description>Whenever a consumed potion restores health, it restores an additional 1d4 hit points per level of the spell slot used to infuse it. Whenever a thrown potion deals damage, it deals an additional 1d4 damage of its primary damage type to creatures effected by it.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaming Grease" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_FLAMING_GREASE">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <description>
+            <p>You tweak your grease formula to be flammable, as grease should be. When you cast <em>grease</em> or use it to make an Alchemical Infusion, the effect becomes flammable. If the area of effect is hit with 1 or more point of fire damage, the all creatures in the area of effect take 2d4 fire damage. The grease burns for 2 turns after being set on fire.</p>
+            <p class="indent">Additionally, you can use the <em>grease</em> spell or Alchemical Infusion to coat a weapon; when ignited, that weapon deals 2d4 additional fire damage until the grease burns away (2 turns).</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_GREASE" />
+            </div>
+        </description>
+        <sheet>
+            <description>When you cast <em>grease</em> or use it to make an Alchemical Infusion, the effect becomes flammable. If the area of effect is hit with 1 or more point of fire damage, the all creatures in the area of effect take 2d4 fire damage. The grease burns for 2 turns after being set on fire. Additionally, you can use the <em>grease</em> spell or Alchemical Infusion to coat a weapon; when ignited, that weapon deals 2d4 additional fire damage until the grease burns away (2 turns).</description>
+        </sheet>
+    </element>
+
+    <element name="Mutation Mixture" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_MUTATION_MIXTURE">
+        <prerequisite>13th level</prerequisite>
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH, [level:13]</requirements>
+        <description>
+            <p><em>Prerequisite: 13th level</em></p>
+            <p>You concoct an infused potion that warps your body, rapidly and temporary mutating it in extreme ways. You gain the <em>polymorph</em> spell as an option for Alchemical Infusion, and when when you consume this Infused Potion, the duration of the potion is one hour, though it can be ended early with an action.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_POLYMORPH" />
+            </div>
+        </description>
+        <sheet>
+            <description>You gain the <em>polymorph</em> spell as an option for Alchemical Infusion, and when when you consume this Infused Potion, the duration of the potion is one hour, though it can be ended early with an action.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GREASE" />
+        </rules>
+    </element>
+
+    <element name="Napalm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_NAPALM">
+        <prerequisite>Alchemical Fire</prerequisite>
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH, ID_KTH_ARTIFICER_INSTANT_RXN_ALCHEMICAL_FIRE</requirements>
+        <description>
+            <p><em>Prerequisite: Alchemical Fire</em></p>
+            <p>Targets that fail their saving throw against your Alchemical Fire Instant Reaction take an additional 1d4 damage at the start of their turns for one minute. They can end the effect early with an action to put it out, or spend all of their movement to fall prone and roll, ending the effect.</p>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_INSTANT_RXN_ALCHEMICAL_FIRE" />
+            </div>
+        </description>
+        <sheet>
+            <description>Targets that fail their saving throw against your Alchemical Fire Instant Reaction take an additional 1d4 damage at the start of their turns for one minute. They can end the effect early with an action to put it out, or spend all of their movement to fall prone and roll, ending the effect.</description>
+        </sheet>
+    </element>
+
+    <element name="Stabilizing Agent" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_STABILIZING_AGENT">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <description>
+            <p>You introduce a new compound to your instant reactions that temporary stablizes them. When you use an Instant reaction, you can give it a timer of 0 to 3 rounds. The instant reaction is treated a small clump of components until that point; if undisturbed (it can be moved or thrown, but any creature that touches it can intentionally deactivate it if they know what it is), it will trigger the effect of the instant reaction where it is when the number of specified rounds have passed.</p>
+            <p class="indent">If set to 0 rounds, it will trigger the effect at the end of your turn.</p>
+        </description>
+        <sheet>
+            <description>When you use an Instant reaction, you can give it a timer of 0 to 3 rounds. The instant reaction is treated a small clump of components until that point; if undisturbed (it can be moved or thrown, but any creature that touches it can intentionally deactivate it if they know what it is), it will trigger the effect of the instant reaction where it is when the number of specified rounds have passed. If set to 0 rounds, it will trigger the effect at the end of your turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Goodlent Pellets" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_GOODLENT_PELLETS">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <description>
+            <p>You devise a nutritionally complete and revitalizing compound. You can use your alchemy to expend a first level spell slot to cast goodberry, but any berries generated taste distinctly bland.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_GOODBERRY" />
+            </div>
+        </description>
+        <sheet>
+            <description>You can use your alchemy to expend a first level spell slot to cast goodberry, but any berries generated taste distinctly bland.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" />
+        </rules>
+    </element>
+
+    <!--WARSMITH UPGRADES-->
+
+    <element name="Assume Control" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ASSUME_CONTROL">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level, Emergency Protocol</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:9], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EMERGENCY_PROTOCOL</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level, Emergency Protocol</em></p>
+            <p>You expanded the control available to your armor's sentience. You can set conditions when your armor will take control of your movement and actions. It can act following these directions after the triggering event occurs for a number of rounds equal to your Intelligence modifier. While acting in this mode, it can take any action you could take, but can only cast spells granted by Upgrades. It uses your ability scores.</p>
+            <p class="indent">The triggering event can by a preset condition, a verbal command, or a specified time. Your armor is immune to the charmed, blinded and frightened conditions, and does not suffer from exhaustion, ignoring these effects if you are under them.</p>
+            <p class="indent">If you have Warplate, it can control your warplate even if you are not wearing it for these turns, gaining it's own movement of 20 feet and actions for the duration.</p>
+            <p class="indent">Once these are expended, it cannot control your armor until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long rest">You can set conditions when your armor will take control of your movement and actions. It can act following these directions after the triggering event occurs for {{intelligence:modifier}} rounds. While acting in this mode, it can take any action you could take, but can only cast spells granted by Upgrades. It uses your ability scores.
+            The triggering event can by a preset condition, a verbal command, or a specified time. Your armor is immune to the charmed, blinded and frightened conditions, and does not suffer from exhaustion, ignoring these effects if you are under them. If you have Warplate, it can control your warplate even if you are not wearing it for these turns, gaining it's own movement of 20 feet and actions for the duration.</description>
+        </sheet>
+    </element>
+
+    <element name="Barrier Capacitor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_BARRIER_CAPACITOR">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>11th level, Incompatible with other Capacitors</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], ![has capacitor:1]</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level, Incompatible with other Capacitors</em></p>
+            <p>You can store up arcane energy, discharging it in the form of a protective barrier. As an action you can cast <em>wall of force</em> without expending a spell slot or charges. You can use an action to reorient or move the wall up to your movement speed, but the movement is not strong enough to cause any damage.</p>
+            <p class="indent">If a creature would be moved by the barrier it can make a Strength check against a Spellcasting ability check, stopping the wall on a successful check.</p>
+            <p class="indent">Once you use this upgrade, you cannot use it again until you complete a long rest.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_WALL_OF_FORCE" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Long rest">As an action you can cast wall of force without expending a spell slot or charges. You can use an action to reorient or move the wall up to your movement speed, but the movement is not strong enough to cause any damage. If a creature would be moved by the barrier it can make a Strength check against a Spellcasting ability check, stopping the wall on a successful check.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" />
+            <stat name="has capacitor" value="1" />
+        </rules>
+    </element>
+
+    <element name="Contingent Response" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_CONTINGENT_RESPONSE">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Sentient Armor</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <description>
+            <p><em>Prerequisite: Sentient Armor</em></p>
+            <p>Choose a spell of 1st level spell that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell, expending a spell slot, but the spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs.</p>
+            <p class="indent">The spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then contingency ends.</p>
+            <p class="indent">You can only have one spell prepared to go off in this way. Preparing a new one immediately ends the effect of the last one.</p>
+        </description>
+        <sheet>
+            <description>Choose a spell of 1st level spell that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell, expending a spell slot, but the spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. The spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to, and then contingency ends. You can only have one spell prepared to go off in this way. Preparing a new one immediately ends the effect of the last one.</description>
+        </sheet>
+    </element>
+
+    <element name="Extendable Arm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EXTENDABLE_ARM">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Integrated Armor</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <description>
+            <p><em>Prerequisite: Integrated Armor</em></p>
+            <p>As a bonus action, you can extend your arms reach until the end of your turn. Your melee weapon attacks gain the reach property until the end of your turn.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">Your melee weapon attacks gain the reach property until the end of your turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Hyperspace Arsenal" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_HYPERSPACE_ARSENAL">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>19th level, Recall</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RECALL, [level:19]</requirements>
+        <description>
+            <p><em>Prerequisite: 19th level, Recall</em></p>
+            <p>You expand the pocket dimension to store multiple sets of Wargear, as well as up to 100 lbs of weapons or items. As a bonus action, you can conjure and equip any weapon or item stored in the pocket dimension. Additionally, you can swap out your attuned Wargear for another set of Wargear with this upgrade in the pocket dimension during this bonus action, instantly unattuning to the set you were wearing and attuning to the new set. Once you swap your Wargear using this feature, you cannot do so again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="1/Short/Long rest">You expand the pocket dimension to store multiple sets of Wargear, as well as up to 100 lbs of weapons or items. As a bonus action, you can conjure and equip any weapon or item stored in the pocket dimension. Additionally, you can swap out your attuned Wargear for another set of Wargear with this upgrade in the pocket dimension during this bonus action, instantly unattuning to the set you were wearing and attuning to the new set. Once you swap your Wargear using this feature, you cannot do so again until you complete a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Powered Nervous System" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWERED_NERVOUS_SYSTEM">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Integrated Armor, Resistance: Lightning</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR, ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING</requirements>
+        <description>
+            <p><em>Prerequisite: Integrated Armor, Resistance: Lightning</em></p>
+            <p>Once per turn when you take or deal lightning damage, you gain a d4. You can add this d4 to your next attack roll or saving throw before the end of your next turn. You can only have one d4 from this ability at a time. If you gain another d4 while you already have one, you immediately roll it and gain temporary hit points equal to the amount rolled.</p>
+        </description>
+        <sheet>
+            <description>Once per turn when you take or deal lightning damage, you gain a d4. You can add this d4 to your next attack roll or saving throw before the end of your next turn. You can only have one d4 from this ability at a time. If you gain another d4 while you already have one, you immediately roll it and gain temporary hit points equal to the amount rolled.</description>
+        </sheet>
+    </element>
+
+    <element name="Iron Constitution" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_CONSTITUTION">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Integrated Armor</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <description>
+            <p><em>Prerequisite: Integrated Armor</em></p>
+            <p>You gain resistance to poison damage and advantage on saves against the poisoned condition.</p>
+        </description>
+        <sheet>
+            <description>You gain resistance to poison damage and advantage on saves against the poisoned condition.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+
+    <element name="Mechanical Overdrive" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_CONSTITUTION">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Integrated Armor</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <description>
+            <p><em>Prerequisite: Integrated Armor</em></p>
+            <p>You overlord your integrated armor, driving you superhuman speeds. You can use this upgrade to cast <em>haste</em> targeting yourself. When you cast haste in this way, you have advantage on concentration checks to maintain it, but at the end of each of your turns take 1d4 fire damage that cannot be resisted from overheating.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_HASTE" />
+            </div>
+        </description>
+        <sheet>
+            <description>You can use this upgrade to cast <em>haste</em> targeting yourself. When you cast haste in this way, you have advantage on concentration checks to maintain it, but at the end of each of your turns take 1d4 fire damage that cannot be resisted from overheating.</description>
+            <rules>
+                <grant type="Spell" id="ID_PHB_SPELL_HASTE" />
+            </rules>
+        </sheet>
+    </element>
+
+    <element name="Searing Shell" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SEARING_SHELL">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Resistance: Fire</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE</requirements>
+        <description>
+            <p><em>Prerequisite: Resistance: Fire</em></p>
+            <p>As a bonus action, you can heat your armor to searing temperatures. Anything grappling, restraining, or otherwise holding onto you within 5 feet takes Fire damage equal to your Intelligence modifier. You can end this at the start of your turn (no action required). Whenever you end your turn with this active, you take 1 fire damage that cannot be resisted.</p>
+            <p class="indent">You can fully ignite your armor and cast <em>fire shield</em> without consuming a spell slot. When cast with this upgrade, you can only select the fire damage option. Once you cast it in this way, you cannot cast it again until you complete a long rest.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FIRE_SHIELD" />
+            </div>
+        </description>
+        <sheet>
+            <description action="Bonus Action">As a bonus action, you can heat your armor to searing temperatures. Anything grappling, restraining, or otherwise holding onto you within 5 feet takes Fire damage equal to your Intelligence modifier. You can end this at the start of your turn (no action required). Whenever you end your turn with this active, you take 1 fire damage that cannot be resisted.
+            You can fully ignite your armor and cast fire shield without consuming a spell slot. When cast with this upgrade, you can only select the fire damage option. Once you cast it in this way, you cannot cast it again until you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" />
+        </rules>
+    </element>
+
+    <element name="Vice Grip" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_VICE_GRIP">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH</requirements>
+        <description>
+            <p>You upgrade the arm that your warplate gauntlet is installed with crushing power. If a creature ends turn while grappled by your Warplate Gauntlet, it takes damage equal to your Strength modifier.</p>
+        </description>
+        <sheet>
+            <description>If a creature ends turn while grappled by your Warplate Gauntlet, it takes {{strength:modifier}} damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Adaptable Armor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ADAPTABLE_ARMOR">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH</requirements>
+        <description>
+            <p>You integrate deployable hooks and fins into your armor, augmenting its mobility. While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+            <p class="indent">Additionally, you gain a swim speed equal to your walking speed.</p>
+        </description>
+        <sheet>
+            <description>While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. Additionally, you gain a swim speed equal to your walking speed.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="speed" bonus="base" />
+            <stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Earth Projector" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EARTH_PROJECTOR">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH</requirements>
+        <description>
+            <p>You gain the ability of elemental control of earth. While wearing your Warplate Gauntlet, you can cast <em>magic stone</em>, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
+            <table>
+                <thead>
+                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>earth tremor</td></tr>
+                <tr><td>5th</td><td>earthbind</td></tr>
+                <tr><td>9th</td><td>erupting earth</td></tr>
+                <tr><td>13th</td><td>orbital stones</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_MAGIC_STONE" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_EARTH_TREMOR" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_EARTHBIND" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_ERUPTING_EARTH" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES" />
+            </div>
+        </description>
+        <sheet>
+            <description>While wearing your Warplate Gauntlet, you can cast <em>magic stone</em>, and gain access to additional spells at later levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_MAGIC_STONE" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="5" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="9" />
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES" level="13" />
+        </rules>
+    </element>
+
+    <element name="Water Projector" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_WATER_PROJECTOR">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH</requirements>
+        <description>
+            <p>You gain the ability to elemental control of water. While wearing your Warplate Gauntlet, you can cast <em>ray of frost</em>, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
+            <table>
+                <thead>
+                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>ice knife</td></tr>
+                <tr><td>5th</td><td>Snilloc's snowball storm</td></tr>
+                <tr><td>9th</td><td>tidal wave</td></tr>
+                <tr><td>13th</td><td>watery sphere</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_RAY_OF_FROST" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_ICE_KNIFE" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_TIDAL_WAVE" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_WATERY_SPHERE" />
+            </div>
+        </description>
+        <sheet>
+            <description>While wearing your Warplate Gauntlet, you can cast ray of frost, and gain access to additional spells at later levels.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="3" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="5" />
+            <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="9" />
+            <grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" level="13" />
+        </rules>
+    </element>
+
+    <element name="Wiseware" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_WISEWARE">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Arcaneware</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANEWEAR</requirements>
+        <description>
+            <p><em>Prerequisite: Arcaneware</em></p>
+            <p>Your armor's artificial proficiency has acquired worldly wisdom. You can gain the effect of <em>guidance</em> when making a Wisdom ability check in addition to Intelligence ability checks.</p>
+        </description>
+        <sheet>
+            <description>Your armor's artificial proficiency has acquired worldly wisdom. You can gain the effect of <em>guidance</em> when making a Wisdom ability check in addition to Intelligence ability checks.</description>
+        </sheet>
+    </element>
+
+    <element name="Piloted Golem" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level, Warplate, Incompatible with Collapsible</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:9], ID_KTH_ARTIFICER_ARMOR_WARPLATE, !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_COLLAPSIBLE</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level, Warplate, Incompatible with Collapsible</em></p>
+            <p>You enlarge your Warplate, turning it into a piloted mechanical golem. Your size category when wearing the armor increases by one.</p>
+            <p class="indent">You have advantage on Strength saving throws and Strength checks against creatures the same size as you or smaller than you.</p>
+        </description>
+        <sheet>
+            <description>You enlarge your Warplate, turning it into a piloted mechanical golem. Your size category when wearing the armor increases by one. You have advantage on Strength saving throws and Strength checks against creatures the same size as you or smaller than you.</description>
+        </sheet>
+    </element>
+
+    <element name="Ablative Armor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ABLATIVE_ARMOR">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Piloted Golem</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM</requirements>
+        <description>
+            <p><em>Prerequisite: Piloted Golem</em></p>
+            <p>You leverage your Warplate's increased size to load it up with some redundant layers of armor to protect you. At the end of a short or long rest, you gain temporary hit points equal to your Intelligence modifier + Artificer level.</p>
+        </description>
+        <sheet>
+            <description>At the end of a short or long rest, you gain {{ablative armor:val}} temporary hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="ablative armor:val" value="intelligence:modifier" />
+            <stat name="ablative armor:val" value="level:artificer" />
+        </rules>
+    </element>
+
+    <element name="Self-Repair Matrix" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SELF_REPAIR_MATRIX">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Ablative Armor</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ABLATIVE_ARMOR</requirements>
+        <description>
+            <p><em>Prerequisite: Ablative Armor</em></p>
+            <p>At the start of each turn, if you have no temporary hit points, you gain temporary hit points equal your proficiency modifier.</p>
+        </description>
+        <sheet>
+            <description>At the start of each turn, if you have no temporary hit points, you gain {{proficiency}} temporary hit points.</description>
+        </sheet>
+    </element>
+
+    <element name="Shield Arm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SHIELD_ARM">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Piloted Golem</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM</requirements>
+        <description>
+            <p><em>Prerequisite: Piloted Golem</em></p>
+            <p>You integrate a shield into one of your armor's arms. You have proficiency with that shield, and can deploy it as a bonus action. It requires the use of that arm while deployed. When shove a medium or smaller creature, you can shove it by slaming it with the attached shield causing it to take damage equal to your Strength modifier.</p>
+        </description>
+        <sheet>
+            <description>You integrate a shield into one of your armor's arms. You have proficiency with that shield, and can deploy it as a bonus action. It requires the use of that arm while deployed. When shove a medium or smaller creature, you can shove it by slaming it with the attached shield causing it to take {{strength:modifier}} damage.</description>
+        </sheet>
+    </element>
+
+    <!--FLESHSMITH UPGRADES-->
+
+    <element name="Perfection of Technique" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_TECHNIQUE">
+        <supports>Thesis of Flesh</supports>
+        <description>
+            <p>Others may call themselves flesh smiths or flesh crafters, but you are a flesh artist. Flaying, dicing, deboning, you've mastered it all. When you select this thesis option, you gain proficiency with martial weapons and gain the <strong>Flaying Hook</strong> upgrade, and it does not count against your upgrade total. You can integrate your Flaying Hook into another weapon, attaching it's heavy chain to the hilt of your weapon, allowing you to attack with either weapon, and being considered to be carrying both when carrying one. Any magical bonus to attack and damage rolls the attached weapon has are also applied to the Flaying Hook (if higher).</p>
+            <p class="indent">When you using your Flaying Hook to pull a target or pull yourself toward a target, you use your bonus action to make a single weapon attack against it. You can do this a number of times equal to your Artificer level and you regain all uses at the end of a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action" usage="{{level:artificer}}/Long rest">You gain proficiency with martial weapons and gain the <strong>Flaying Hook</strong> upgrade, and it does not count against your upgrade total. You can integrate your Flaying Hook into another weapon, attaching it's heavy chain to the hilt of your weapon, allowing you to attack with either weapon, and being considered to be carrying both when carrying one. Any magical bonus to attack and damage rolls the attached weapon has are also applied to the Flaying Hook (if higher).
+            When you using your Flaying Hook to pull a target or pull yourself toward a target, you use your bonus action to make a single weapon attack against it. You can do this {{level:artificer}} times and you regain all uses at the end of a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK" />
+        </rules>
+    </element>
+
+    <element name="Bathed in Blood" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BATHED_IN_BLOOD">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>11th level, Flaying Hook</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK, [level:11]</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level, Flaying Hook</em></p>
+            <p>You can determine when a creature you can see within 30 feet is bloodied just be looking at it. Once per turn, when you deal damage to a bloodied creature with your Flaying Hook (including any weapon it is integrated to) or Butcher's Knack, that creature takes an additional 1d12 damage.</p>
+        </description>
+        <sheet>
+            <description>You can determine when a creature you can see within 30 feet is bloodied just be looking at it. Once per turn, when you deal damage to a bloodied creature with your Flaying Hook (including any weapon it is integrated to) or Butcher's Knack, that creature takes an additional 1d12 damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Butcher's Knack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BUTCHERS_KNACK">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Perfection of Technique</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_TECHNIQUE</requirements>
+        <description>
+            <p><em>Prerequisite: Perfection of Technique</em></p>
+            <p>Your skill with butchering allows you inflict brutal ones. Once per turn when you deal piercing or slashing damage to a creature that is not a construct or undead, you can inflict a rending wound on it. Any movement speed the target has is reduced by 5 feet.</p>
+            <p class="indent">At the end of that creatures next turn, it makes a Constitution saving throw against your spell save DC, taking 1d8 slashing damage on failure. It has disadvantage on the saving throw if it used its movement during its turn. This damage is doubled if the it was inflicted by a critical hit.</p>
+        </description>
+        <sheet>
+            <description usage="1/Turn">Once per turn when you deal piercing or slashing damage to a creature that is not a construct or undead, you can inflict a rending wound on it. Any movement speed the target has is reduced by 5 feet. At the end of that creatures next turn, it makes a Constitution saving throw against your spell save DC, taking 1d8 slashing damage on failure. It has disadvantage on the saving throw if it used its movement during its turn. This damage is doubled if the it was inflicted by a critical hit.</description>
+        </sheet>
+    </element>
+
+    <element name="Death Flail" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DEATH_FLAIL">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Perfection of Technique</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_TECHNIQUE</requirements>
+        <description>
+            <p><em>Prerequisite: Perfection of Technique</em></p>
+            <p>Rather than cast out the Flaying Hook, you master the art of spinning your attacked martial weapon by the chain in windmill of death. Your weapon gains the Reach property when used in this way.</p>
+            <p class="indent">Additionally, instead of attacking at target with it normally, as an action, you can spin the weapon wildly in giant deadly sweeps. Creatures within 10 feet (select four if there are more than four) must make a Dexterity saving throw against a DC of 8 + your Strength modifier + your proficiency bonus. On failure they take damage equal to your weapon damage dice + your Strength modifier of your weapons damage type.</p>
+            <p class="indent">If you have the Spiked Chain upgrade and hit one or more targets, you can select one of them to be effected by the special property of Spiked Chain.</p>
+        </description>
+        <sheet>
+            <description>Your weapon gains the Reach property when used in this way. Additionally, instead of attacking at target with it normally, as an action, you can spin the weapon wildly in giant deadly sweeps. Up to 4 creatures within 10 feet must make a Dexterity saving throw against a DC of {{deathflail:save}}. On failure they take damage equal to your weapon damage dice + {{strength:modifier}} of your weapons damage type. If you have the Spiked Chain upgrade and hit one or more targets, you can select one of them to be effected by the special property of Spiked Chain.</description>
+        </sheet>
+        <rules>
+            <stat name="deathflail:save" value="8" />
+            <stat name="deathflail:save" value="strength:modifier" />
+            <stat name="deathflail:save" value="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Flaying Hook" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
+        <description>
+            <p>A metal hook attached to a chain. You a proficient with this weapon, and it has the Special property. It deals 1d6 piercing damage.</p>
+            <p class="indent">Special: This weapon has a range of 20 feet. When you hit at a target that is more than 5 feet away from you, if the target is medium or smaller, you can make a Strength (Athletics) check contested by its Strength(Athletics) to pull the target toward you. On a successful check, a smaller or smaller target is pulled to you, and a medium target is pulled half the distance (rounding up) toward you. The creature takes 1 additional damage for each 5 feet it is pulled.</p>
+            <p class="indent">If the creature is medium or larger, when hit a target more than 5 feet away from you you can pull yourself up to 10 feet toward the target.</p>
+        </description>
+        <sheet>
+            <description>A metal hook attached to a chain. You a proficient with this weapon, and it has the Special property. It deals 1d6 piercing damage.
+            Special: This weapon has a range of 20 feet. When you hit at a target that is more than 5 feet away from you, if the target is medium or smaller, you can make a Strength (Athletics) check contested by its Strength (Athletics) to pull the target toward you. On a successful check, a smaller or smaller target is pulled to you, and a medium target is pulled half the distance (rounding up) toward you. The creature takes 1 additional damage for each 5 feet it is pulled. If the creature is medium or larger, when hit a target more than 5 feet away from you you can pull yourself up to 10 feet toward the target.</description>
+        </sheet>
+    </element>
+
+    <element name="Spiked Chain" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SPIKED_CHAIN">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Flaying Hook</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK</requirements>
+        <description>
+            <p><em>Prerequisite: Flaying Hook</em></p>
+            <p>You lace the chain of your Flaying Hook with spikes. When you attack a creature within 5 with your Flaying Hook, you can opt to make a Spiked Chain attack. This attack deals 2d4 piercing damage on hit, and has the Special property.</p>
+            <p class="indent">Special: When you hit a creature with this weapon, that target loses 10 feet of movement (hindered by the chain) and takes 1d4 damage each time they move 5 feet, up to 2d4 damage (for 10 feet of movement). You cannot use your weapon against another creature until the start of your next turn, but have advantage on attacks of opportunity against the that target. If it does not move before the start of your next turn, you reel your chain back in, dealing 1d4 slashing damage to that target.</p>
+        </description>
+        <sheet>
+            <description>When you attack a creature within 5 with your Flaying Hook, you can opt to make a Spiked Chain attack. This attack deals 2d4 piercing damage on hit, and has the Special property.
+            Special: When you hit a creature with this weapon, that target loses 10 feet of movement (hindered by the chain) and takes 1d4 damage each time they move 5 feet, up to 2d4 damage (for 10 feet of movement). You cannot use your weapon against another creature until the start of your next turn, but have advantage on attacks of opportunity against the that target. If it does not move before the start of your next turn, you reel your chain back in, dealing 1d4 slashing damage to that target.</description>
+        </sheet>
+    </element>
+
+    <element name="Acid Gland" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_ACID_GLAND">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>Realizing that putting something that oozes acid inside yourself could not possible go wrong, you do just that. You gain a pool of d4s equal to your Constitution modifier. As a bonus action, you can expend an amount of these d4s, adding them to the next damage roll you make with a natural weapon before the end of your turn. The pool of d4s recharge at the end of a short or long rest.</p>
+            <p class="indent">Additionally, you learn the <em>acid splash</em> cantrip. When casting it using this upgrade, it does not require verbal or somatic components and you can use your Constitution as your spell casting modifier for it instead of your Intelligence modifier. </p>
+            <p class="indent">You can expend the d4s granted by Acid Gland on the damage roll of acid splash, following the same restrictions as natural weapons.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_ACID_SPLASH" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="{{constitution:modifier}}/Short/Long rest" action="Bonus Action">You gain a pool of {{constitution:modifier}} d4s. As a bonus action, you can expend an amount of these d4s, adding them to the next damage roll you make with a natural weapon before the end of your turn. The pool of d4s recharge at the end of a short or long rest. Additionally, you learn the <em>acid splash</em> cantrip. When casting it using this upgrade, it does not require verbal or somatic components and you can use your Constitution as your spell casting modifier for it instead of your Intelligence modifier. You can expend the d4s granted by Acid Gland on the damage roll of acid splash, following the same restrictions as natural weapons.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" />
+        </rules>
+    </element>
+
+    <element name="Amalgamated Form" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_AMALGAMATED_FORM">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:9]</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level</em></p>
+            <p>You modify yourself to gain a racial ability of another race. This can be used to gain one physical trait of a playable race, both in form and function. For example, adding the lower body of centaur may give you their movement, hooves, and poor climbing ability.</p>
+            <p class="indent">This can include physiology and physical traits, including natural weapons, movement speed, physical senses, or special properties relating to physical features. Select a trait from the following table:</p>
+            <table>
+                <thead>
+                    <tr><td>Race/Part</td><td>Features Gained</td></tr>
+                </thead>
+                <tr><td>Centaur Lower Body</td><td>Gain 40 ft. speed, Hooves and Equine Build</td></tr>
+                <tr><td>Minotaur Horns</td><td>Gain Horns, Goring Rush, Hammering Horns</td></tr>
+                <tr><td>Tortle Shell</td><td>Natural Armor, Shell Defense</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You modify yourself to gain a racial ability of another race.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Amalgamated Form" supports="Amalgamated Form" />
+        </rules>
+    </element>
+
+    <element name="Centaur Lower Body" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_AMALGAMATED_FORM_CENTAUR">
+        <supports>Amalgamated Form</supports>
+        <description>
+            <p>Gain 40 ft. speed, Hooves and Equine Build</p>
+        </description>
+        <sheet>
+            <description>You gain the lower body of a centaur.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_WOTC_GGTR_RACIAL_TRAIT_CENTAUR_EQUINE_BUILD" />
+            <grant type="Racial Trait" id="ID_WOTC_GGTR_RACIAL_TRAIT_CENTAUR_HOOVES" />
+            <stat name="speed" value="40" bonus="base" />
+        </rules>
+    </element>
+    <element name="Minotaur Horns" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_AMALGAMATED_FORM_MINOTAUR">
+        <supports>Amalgamated Form</supports>
+        <description>
+            <p>Gain Horns, Goring Rush, Hammering Horns</p>
+        </description>
+        <sheet>
+            <description>You gain the horns of a minotaur.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_WOTC_GGTR_RACIAL_TRAIT_MINOTAUR_HORNS" />
+			<grant type="Racial Trait" id="ID_WOTC_GGTR_RACIAL_TRAIT_MINOTAUR_GORING_RUSH" />
+			<grant type="Racial Trait" id="ID_WOTC_GGTR_RACIAL_TRAIT_MINOTAUR_HAMMERING_HORNS" />
+        </rules>
+    </element>
+    <element name="Tortle Shell" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_AMALGAMATED_FORM_TORTLE">
+        <supports>Amalgamated Form</supports>
+        <description>
+            <p>Natural Armor, Shell Defense</p>
+        </description>
+        <sheet>
+            <description>You gain the shell of a tortle.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_WOTC_TOA_RACIAL_TRAIT_TORTLE_NATURAL_ARMOR" />
+            <grant type="Racial Trait" id="ID_WOTC_TOA_RACIAL_TRAIT_TORTLE_SHELL_DEFENSE" />
+        </rules>
+    </element>
+
+    <element name="Brimstone Bladder" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BRIMSTONE_BLADDER">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>Why should dragons have all the fun? You can now exhale fire. You gain a pool of d12s equal to your Artificer level. As an action, you can exhale a cone of fire, expending d12s from this pool equal to your Proficiency modifier. Creatures in a 30 foot cone make a Dexterity saving throw, taking Fire damage equal to the d12s expended on a failure, and half as much damage on a successful saving throw. You recover all d12s on a long rest.</p>
+            <p class="indent">You gain resistance to fire damage.</p>
+        </description>
+        <sheet>
+            <description usage="{{level:artificer}}/Long rest" action="Action">You gain a pool of {{level:artificer}} d12s. As an action, you can exhale a cone of fire, expending up to {{proficiency}} d12s from this pool. Creatures in a 30 foot cone make a Dexterity saving throw, taking Fire damage equal to the d12s expended on a failure, and half as much damage on a successful saving throw. You recover all d12s on a long rest. You gain resistance to fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+
+    <element name="Devouring Maw" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DEVOURING_MAW">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>9th level</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:9]</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level</em></p>
+            <p>Due to the inefficiency of having only one intake port, you build an additional one, properly equipped with razor sharp fangs and a special property. This maw becomes a natural weapon that deals 1d10 piecing damage.</p>
+            <p class="indent">If you hit with an attack with this maw, you can chose to make a Grapple check against the target as a bonus action. Targets grappled by this maw take 1d4 piercing and 1d4 acid damage at the start of their turn.</p>
+            <p class="indent">Attacks with this Maw are made with advantage against targets it is Grappling, but it cannot attack other creatures while grappling a creature.</p>
+            <p class="indent">You can take apply a Fleshcrafted Enhancement to this Maw instead of Extra Fangs when taking that upgrades; this Maw can have a different upgrade than your Extra Fangs if you have both.</p>
+        </description>
+        <sheet>
+            <description>You build a second mouth. This maw becomes a natural weapon that deals 1d10 piecing damage. If you hit with an attack with this maw, you can chose to make a Grapple check against the target as a bonus action. Targets grappled by this maw take 1d4 piercing and 1d4 acid damage at the start of their turn. Attacks with this Maw are made with advantage against targets it is Grappling, but it cannot attack other creatures while grappling a creature. You can take apply a Fleshcrafted Enhancement to this Maw instead of Extra Fangs when taking that upgrades; this Maw can have a different upgrade than your Extra Fangs if you have both.</description>
+        </sheet>
+    </element>
+
+    <element name="Soul Eater" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SOUL_EATER">
+        <supports>Specialization Upgrade</supports>
+        <prerequisite>Extra Fangs or Devouring Maw</prerequisite>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, (ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DEVOURING_MAW|ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS)</requirements>
+        <description>
+            <p><em>Prerequisite: Extra Fangs or Devouring Maw</em></p>
+            <p>When you kill a creature with a CR of 1/4 or higher with your Extra Fangs or Devouring Maw, it consumes part of the soul of the creature, nourishing you with its essence. You regain an expanded spell slot equal to half the creatures CR (minimum first level spell slot).</p>
+            <p class="indent">Once you've benefited from this nourishment, you must take a short or long rest before you can benefit from it again. If you have no spell slots remaining, you can benefit from this nourishment again even without resting.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short/Long rest">When you kill a creature with a CR of 1/4 or higher with your Extra Fangs or Devouring Maw, you regain an expanded spell slot equal to half the creatures CR (minimum first level spell slot). Once you've benefited from this nourishment, you must take a short or long rest before you can benefit from it again. If you have no spell slots remaining, you can benefit from this nourishment again even without resting.</description>
+        </sheet>
+    </element>
+
+    <element name="Extra Quills" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_EXTRA_QUILLS">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
+        <description>
+            <p>Do you know what monsters never eat? Hedgehogs. You become more like a hedgehog. When you are attacked by a melee attack or are the target of a grapple attempt, you can use your reaction to deal 1d6 piercing damage to the attacking creature. You can do this a number of times equal to your Constitution modifier, and regrow all expended quills (regaining all uses of the ability) after you complete a long rest.</p>
+            <p class="indent">Alternatively, you as sometimes the best defense is a good offense, you can expend a use of quills as a ranged weapon attack with a range of 20/60, dealing 1d8 piercing damage on hit.</p>
+        </description>
+        <sheet>
+            <description usage="{{constitution:modifier}}/Long rest" action="Reaction">When you are attacked by a melee attack or are the target of a grapple attempt, you can use your reaction to deal 1d6 piercing damage to the attacking creature. You can do this {{constitution:modifier}} times, regaining all uses of the ability after you complete a long rest.
+            Alternatively, you as sometimes the best defense is a good offense, you can expend a use of quills as a ranged weapon attack with a range of 20/60, dealing 1d8 piercing damage on hit.</description>
+        </sheet>
+    </element>
+
+    <element name="Dogmatic Persistence" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DOGMATIC_PERSISTENCE">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
+        <description>
+            <p>Your idealogical conviction in your Thesis is such that you gain an additional 2 uses of it (for Perfection of Form) or an addition two d8s (for Perfection of Mind).</p>
+        </description>
+        <sheet>
+            <description>You gain an additional 2 uses of your Thesis (for Perfection of Form) or an addition two d8s (for Perfection of Mind).</description>
+        </sheet>
+    </element>
+
+    <element name="Prehensile Feet" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_PREHENSILE_FEET">
+        <supports>Specialization Upgrade</supports>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
+        <description>
+            <p>You tinker with your appendages, improving their flexibility and configuration. You gain a climbing speed equal to your walking speed. If you are prone or otherwise supported without your feet, your foot can count as a free hand for the purposes of grappling.</p>
+        </description>
+        <sheet>
+            <description>You gain a climbing speed equal to your walking speed. If you are prone or otherwise supported without your feet, your foot can count as a free hand for the purposes of grappling.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="speed" bonus="base" />
+        </rules>
+    </element>
+
+</elements>
