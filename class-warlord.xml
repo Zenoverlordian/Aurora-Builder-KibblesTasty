@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <!--VERSION 1.4-->
+    <!--VERSION 1.4.1-->
     <element name="Warlord" type="Class" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_WARLORD">
         <description>
     <p>Two vast armies stand across the field of death, fear gripping the heart of every soldier. From their ranks, the banner is carried forth - a shining beacon without fear. Before they even know it, their feet pound across the ground, their fear left behind as they follow their symbol of hope to victory.</p>
@@ -35,7 +35,7 @@
     </ul>
     <ul class="unstyled">
         <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
-        <li><strong>Skills:</strong> Choose two from Athletics, Deception, History, Insight, Investigation, Medicine, Performance, Persuasion, or Intimidation.</li>
+        <li><strong>Skills:</strong> Choose three from Athletics, Deception, History, Insight, Investigation, Medicine, Performance, Persuasion, or Intimidation.</li>
     </ul>
     <h5 class="caption">EQUIPMENT</h5>
     <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
@@ -51,9 +51,9 @@
                 <tr><td class="col-5">Level</td><td class="col-10">Proficiency Bonus</td><td class="col-10">Leadership Die</td><td class="col-10">Leadership Dice</td><td class="col-60 left">Features</td></tr>
             </thead>
             <tr><td> 1st</td><td>+2</td><td>-</td><td>-</td><td class="left">Warlord Specialization, Battlefield Presence</td></tr>
-            <tr><td> 2nd</td><td>+2</td><td>d4</td><td>2</td><td class="left">Leadership Dice</td></tr>
-            <tr><td> 3rd</td><td>+2</td><td>d4</td><td>3</td><td class="left">Warlord Specialization Feature, Warlord's Expertise</td></tr>
-            <tr><td> 4th</td><td>+2</td><td>d4</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+            <tr><td> 2nd</td><td>+2</td><td>d6</td><td>2</td><td class="left">Leadership Dice</td></tr>
+            <tr><td> 3rd</td><td>+2</td><td>d6</td><td>3</td><td class="left">Warlord Specialization Feature, Warlord's Expertise</td></tr>
+            <tr><td> 4th</td><td>+2</td><td>d6</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
             <tr><td> 5th</td><td>+3</td><td>d6</td><td>5</td><td class="left">Extra Attack</td></tr>
             <tr><td> 6th</td><td>+3</td><td>d6</td><td>6</td><td class="left">Prepare for Battle</td></tr>
             <tr><td> 7th</td><td>+3</td><td>d6</td><td>7</td><td class="left">Warlord Specialization Feature</td></tr>
@@ -94,7 +94,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
-            <select type="Proficiency" name="Skill Proficiency, Warlord" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INTIMIDATION" number="2" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
+            <select type="Proficiency" name="Skill Proficiency, Warlord" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INTIMIDATION" number="3" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_WARLORD_SPECIALIZATION" level="1" />
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_BATTLEFIELD_PRESENCE" level="1" />
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE" level="2" />
@@ -147,9 +147,9 @@
             <h5>Rallying Mark</h5>
             <p>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) rally your allies to attack a hostile creature within 60 feet of you.</p>
             <p class="indent">The next time damage is rolled against that target by an allied creature before the start of your next turn, they can add the Leadership Dice to the damage roll, and the attacking creature regains hit points equal to amount rolled on the Leadership Dice.</p>
-            <h5>Overwhelming Mark</h5>
-            <p>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to create openings against a hostile creature within 60 feet of you.</p>
-            <p class="indent">The next time that creature is hit by an attack by an allied creature before the start of your next turn, the opening is exploited, and the creature is staggered until the end of its next turn. A staggered creature's movement speed is halved, it cannot take reactions, and it has disadvantage on Constitution saving throws to maintain concentration on a spell; if you spend two or more Leadership Dice, it also has disadvantage on Dexterity saving throws while staggered, and if you spend three or more Leadership Dice it also makes one fewer attacks when using its action to take the attack or multiattack action (minimum one) while staggered.</p>
+            <h5>Urgent Orders</h5>
+            <p>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action.</p>
+            <p class="indent">Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to 30 feet without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</p>
             <p class="indent">Each time the staggered creature takes damage (including the staggering hit), up to a number of times equal to the Leadership Dice spent, it takes additional damage equal to a Leadership Die.</p>
             <h5>Helpful Word</h5>
             <p>You can spend a Leadership Die to take the Help action as a bonus action on your turn. When you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you, if the target can see or hear you</p>  
@@ -165,8 +165,7 @@
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_OVERWHELM" />
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_HELPFUL" />
             <stat name="leadership:num" value="level:warlord" />
-            <stat name="leadership:size" value="4" level="2" />
-            <stat name="leadership:size" value="2" level="5" />
+            <stat name="leadership:size" value="6" level="2" />
             <stat name="leadership:size" value="2" level="11" />
             <stat name="leadership:size" value="2" level="17" />
         </rules>
@@ -180,15 +179,13 @@
             <description action="Bonus Action" usage="Leadership Dice">You can expend a number of Leadership Dice (up to your per turn limit) rally your allies to attack a hostile creature within 60 feet of you. The next time damage is rolled against that target by an allied creature before the start of your next turn, they can add the Leadership Dice to the damage roll, and the attacking creature regains hit points equal to amount rolled on the Leadership Dice.</description>
         </sheet>
     </element>
-    <element name="Overwhelming Mark" type="Class Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_OVERWHELM">
+    <element name="Urgent Orders" type="Class Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_OVERWHELM">
         <description>
-            <p>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to create openings against a hostile creature within 60 feet of you.</p>
-            <p class="indent">The next time that creature is hit by an attack by an allied creature before the start of your next turn, the opening is exploited, and the creature is staggered until the end of its next turn. A staggered creature's movement speed is halved, it cannot take reactions, and it has disadvantage on Constitution saving throws to maintain concentration on a spell; if you spend two or more Leadership Dice, it also has disadvantage on Dexterity saving throws while staggered, and if you spend three or more Leadership Dice it also makes one fewer attacks when using its action to take the attack or multiattack action (minimum one) while staggered.</p>
-            <p class="indent">Each time the staggered creature takes damage (including the staggering hit), up to a number of times equal to the Leadership Dice spent, it takes additional damage equal to a Leadership Die.</p>
+            <p>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action.</p>
+            <p class="indent">Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to 30 feet without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</p>
         </description>
         <sheet>
-            <description action="Bonus Action" usage="Leadership Dice">You can expend a number of Leadership Dice (up to your per turn limit) to create openings against a hostile creature within 60 feet of you. The next time that creature is hit by an attack by an allied creature before the start of your next turn, the creature is staggered until the end of its next turn. A staggered creature's movement speed is halved, it cannot take reactions, and it has disadvantage on Constitution saving throws to maintain concentration on a spell; if you spend two or more Leadership Dice, it also has disadvantage on Dexterity saving throws while staggered, and if you spend three or more Leadership Dice it also makes one fewer attacks when using its action to take the attack or multiattack action (minimum one) while staggered.
-            Each time the staggered creature takes damage (including the staggering hit), up to a number of times equal to the Leadership Dice spent, it takes additional damage equal to a Leadership Die.</description>
+            <description action="Bonus Action" usage="Leadership Dice">You can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action. Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to 30 feet without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</description>
         </sheet>
     </element>
     <element name="Helpful Word" type="Class Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_HELPFUL">
@@ -269,8 +266,8 @@
             <p>Starting at 9th level, you can use your reaction to further exploit opportunities:</p>
             <ul>
                 <li>When a creature gains hit points from Rallying Mark, you can expend a Leadership die to cause another creature within 30 feet to regain the same number of hit points.</li>
-                <li>When a staggered creature is hit, you can expend a leadership die to force it to make a Constitution saving throw with a DC equal to half the damage taken or become stunned while staggered.</li>
-                <li>When a creature benefits from your Help action, you can use your reaction to expend a Leadership Die and add it to their roll.</li>
+                <li>When you use Urgent Orders, you can target a number of creatures equal to the Leadership Dice spent, dividing the temporary hit points equally among them.</li>
+                <li>When a creature benefits from your Help action, you can use your reaction to expend a Leadership Die and add it to their roll. You can use this ability after the original roll, but before the outcome is revealed.</li>
             </ul>
         </description>
         <sheet>
@@ -305,10 +302,10 @@
     </element>
     <element name="Tireless Leader" type="Class Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_FEATURE_TIRELESS_LEADER">
         <description>
-            <p>Starting at 20th level, you can roll d4s and use them instead of expending Leadership Dice for Rallying Mark, Overwhelming Mark, Helpful Word, or Prepare for Battle.</p>
+            <p>Starting at 20th level, you can roll d4s and use them instead of expending Leadership Dice for Rallying Mark, Urgent Orders, Helpful Word, or Prepare for Battle.</p>
         </description>
         <sheet>
-            <description>You can roll d4s and use them instead of expending Leadership Dice for Rallying Mark, Overwhelming Mark, Helpful Word, or Prepare for Battle.</description>
+            <description>You can roll d4s and use them instead of expending Leadership Dice for Rallying Mark, Urgent Orders, Helpful Word, or Prepare for Battle.</description>
         </sheet>
     </element>
 
@@ -400,10 +397,10 @@
     <element name="Booming Shout" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_CHIEFTAIN_BOOMING_SHOUT">
         <description>
             <p>Starting at 15th level, when you unleash your Warcry you can attempt to frighten enemies. Any number of creatures within range of your Warcry must make a Wisdom saving throw (DC of {{8 + Charisma modifier + your proficiency bonus}}) or become frightened of you until the end of their turn. Once you have used Booming Shout, you cannot use it in this way again until you complete a short or long rest.</p>
-            <p class="indent">Additionally, the range of your Rallying Mark, Overwhelming Mark, Helpful Word, and Warcry is doubled.</p>
+            <p class="indent">Additionally, the range of your Rallying Mark, Urgent Orders, Helpful Word, and Warcry is doubled.</p>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">when you unleash your Warcry you can attempt to frighten enemies. Any number of creatures within range of your Warcry must make a Wisdom saving throw (DC of {{booming shout:dc}}) or become frightened of you until the end of their turn. Once you have used Booming Shout, you cannot use it in this way again until you complete a short or long rest. Additionally, the range of your Rallying Mark, Overwhelming Mark, Helpful Word, and Warcry is doubled.</description>
+            <description usage="1/Short/Long rest">when you unleash your Warcry you can attempt to frighten enemies. Any number of creatures within range of your Warcry must make a Wisdom saving throw (DC of {{booming shout:dc}}) or become frightened of you until the end of their turn. Once you have used Booming Shout, you cannot use it in this way again until you complete a short or long rest. Additionally, the range of your Rallying Mark, Urgent Orders, Helpful Word, and Warcry is doubled.</description>
         </sheet>
         <rules>
             <stat name="booming shout:dc" value="8" />
@@ -529,12 +526,13 @@
             <p class="indent">An adventurer on this path is not inherently of noble background, though many often are. A noble reared on the laws of the land is usually lawful, but extraordinary circumstances may have brought about a rebellious streak in one that now seeks to overthrow unfit rulers (or rulers that aren't them, anyway).</p>
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DESTINED_LEADER" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CALL_TO_ARMS" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRING_LEADER" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_STRIKE_THEM_DOWN" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DIVINE_RIGHT" />
-            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_COMMANDING_VOICE" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_STRIKE" />
-            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_REDOUBLED_EFFORTS" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRED_ZEAL" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHOSEN_COMPANIONS" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_UNTOUCHABLE_PRESENCE" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_GRAND_DECREE" />
         </description>
         <sheet display="false">
@@ -543,12 +541,13 @@
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DESTINED_LEADER" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CALL_TO_ARMS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRING_LEADER" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_STRIKE_THEM_DOWN" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DIVINE_RIGHT" level="7" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_COMMANDING_VOICE" level="7" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_STRIKE" level="11" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_REDOUBLED_EFFORTS" level="11" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHOSEN_COMPANIONS" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DIVINE_RIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_STRIKE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRED_ZEAL" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_UNTOUCHABLE_PRESENCE" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHOSEN_COMPANIONS" level="7" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_GRAND_DECREE" level="18" />
         </rules>
     </element>
@@ -572,64 +571,59 @@
             <description>When you roll initiative you can call out to friendly creatures within 60 feet of you, providing them with a surge of inspiration, they can add {{charisma:modifier}} to their first attack roll made before the end of their turn.</description>
         </sheet>
     </element>
-    <element name="Strike Them Down!" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_STRIKE_THEM_DOWN">
+    <element name="Inspiring Leader" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRING_LEADER">
         <description>
-            <p>Starting at 3rd level, whenever a creature is hit while under the effect of your Rallying Mark or Overwhelming Mark, they take additional damage equal to your Charisma modifier. Whenever you use Helpful Word, the friendly creature you helped gains temporary hit points equal to your Charisma modifier.</p>
-            <p class="indent">Additionally, a creature with a CR of less than half your Warlord level (or with fewer class levels than you have Warlord levels if the creature does not have a CR) can choose to use your proficiency bonus + Charisma Modifier for their attack roll modifier on any Attack granted by Battlefield Presence.</p>
+            <p>Additionally at 1st level, a creature with a CR of less than half your Warlord level (or with fewer class levels than you have Warlord levels if the creature does not have a CR) can choose to use your proficiency bonus + Charisma Modifier for their attack roll modifier on any Attack granted by Battlefield Presence.</p>
         </description>
         <sheet>
-            <description>Whenever a creature is hit while under the effect of your Rallying Mark or Overwhelming Mark, they take an additional {{charisma:modifier}} damage. Whenever you use Helpful Word, the friendly creature you helped gains {{charisma:modifier}} temporary hit points.
-            Additionally, a creature with a CR of less than half your Warlord level (or with fewer class levels than you have Warlord levels if the creature does not have a CR) can choose to use {{proficiency}} + {{charisma:modifier}} for their attack roll modifier on any Attack granted by Battlefield Presence.</description>
+            <description>A creature with a CR of less than {{level:warlord:half}} (or with fewer class levels than {{level:warlord:half}} if the creature does not have a CR) can choose to use {{inspiring:leader}} for their attack roll modifier on any Attack granted by Battlefield Presence.</description>
         </sheet>
+        <rules>
+            <stat name="inspiring:leader" value="proficiency" />
+            <stat name="inspiring:leader" value="charisma:modifier" />
+        </rules>
     </element>
     <element name="Divine Right" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DIVINE_RIGHT">
         <description>
-            <p>Starting at 7th level, you can add your Charisma modifier (maximum 2) to your AC so long as you not wearing heavy armor or using a shield.</p>
+            <p>Starting at 3rd level, you can an expend Leadership Dice to cast *command*. The level of the spell is equal to the Leadership Dice spent.</p>
+            <p class="indent">The spell save DC for these spells are 8 + your Charisma modifier + your Proficiency bonus.</p>
+            <p class="indent">You can also add your Charisma (maximum 2) to your AC so long as you are not wearing heavy armor or using a shield.</p>
         </description>
-        <sheet display="false" />
+        <sheet>
+            <description>You can an expend Leadership Dice to cast *command*. The level of the spell is equal to the Leadership Dice spent (DC {{divine right:dc}}).</description>
+        </sheet>
         <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+            <stat name="divine right:dc" value="8" />
+            <stat name="divine right:dc" value="proficiency" />
+            <stat name="divine right:dc" value="charisma:modifier" />
             <stat name="ac:divine right" value="1" requirements="[charisma:modifier:1]" />
             <stat name="ac:divine right" value="1" requirements="[charisma:modifier:2]" />
             <stat name="ac:misc" value="ac:divine right" equipped="![armor:heavy],[shield:none]" />
         </rules>
     </element>
-    <element name="Commanding Voice" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_COMMANDING_VOICE">
+    <element name="Imperative Order" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_STRIKE">
         <description>
-            <p>Additionally at 7th level, you can an expend Leadership Dice to cast <em>command.</em> The level of the spell is equal to the number of Leadership Dice spent.</p>
-            <p class="indent">The spell Save DC for these spells is 8 + your Proficiency modifier + your Charisma Modifier.</p>
-            <div class="reference">
-                <div element="ID_PHB_SPELL_COMMAND" />
-            </div>
+            <p>Starting at 7th level, when you spend 2 or more Leadership Dice on target with Urgent Orders, you can allow the target to make a single weapon attack with their reaction instead of moving. If you spend 3 or more Leadership Dice, they can both move and make a single weapon attack with their reaction.</p>
         </description>
         <sheet>
-            <description usage="Leadership Dice">You can an expend Leadership Dice to cast command. The level of the spell is equal to the number of Leadership Dice spent. The spell Save DC for these spells is {{command save:val}}.</description>
+            <description>When you spend 2 or more Leadership Dice on target with Urgent Orders, you can allow the target to make a single weapon attack with their reaction instead of moving. If you spend 3 or more Leadership Dice, they can both move and make a single weapon attack with their reaction.</description>
+        </sheet>
+    </element>
+    <element name="Inspired Zeal" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRED_ZEAL">
+        <description>
+            <p>Starting at 11th level, you are always under the effect of crusader's mantle. This effect does not require concentration, and returns at the start of your next turn if removed, dispelled, or suppressed.</p>
+        </description>
+        <sheet>
+            <description>You are always under the effect of crusader's mantle. This effect does not require concentration, and returns at the start of your next turn if removed, dispelled, or suppressed.</description>
         </sheet>
         <rules>
-            <stat name="command save:val" value="8" />
-            <stat name="command save:val" value="proficiency" />
-            <stat name="command save:val" value="charisma:modifier" />
-            <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
+            <grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" />
         </rules>
     </element>
-    <element name="Imperative Strike" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_STRIKE">
+    <element name="Words of Conviction" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHOSEN_COMPANIONS">
         <description>
-            <p>Starting at 11th level, when you use your Battlefield Presence, the target creature can use their reaction to make the additional weapon attack granted immediately.</p>
-        </description>
-        <sheet>
-            <description>when you use your Battlefield Presence, the target creature can use their reaction to make the additional weapon attack granted immediately.</description>
-        </sheet>
-    </element>
-    <element name="Redoubled Efforts" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_REDOUBLED_EFFORTS">
-        <description>
-            <p>Additionally at 11th level, attacks made by friendly creatures within 20 feet of you or that you have granted an attack with battlefield presence since start of your last turn deal an additional 1d4 damage.</p>
-        </description>
-        <sheet>
-            <description>Attacks made by friendly creatures within 20 feet of you or that you have granted an attack with battlefield presence since start of your last turn deal an additional 1d4 damage.</description>
-        </sheet>
-    </element>
-    <element name="Chosen Companions" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHOSEN_COMPANIONS">
-        <description>
-            <p>Starting at 15th level, you can use Leadership Dice to cast <em>bless</em> or <em>heroism</em> without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</p>
+            <p>Starting at 7th level, you can use Leadership Dice to cast <em>bless</em> or <em>heroism</em> without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</p>
         </description>
         <sheet>
             <description usage="Leadership Dice">You can use Leadership Dice to cast <em>bless</em> or <em>heroism</em> without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</description>
@@ -637,6 +631,21 @@
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_BLESS" />
             <grant type="Spell" id="ID_PHB_SPELL_HEROISM" />
+        </rules>
+    </element>
+    <element name="Untouchable Presence" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_UNTOUCHABLE_PRESENCE">
+        <description>
+            <p>Starting at 15th level, you are under the effect of sanctuary. This effect ends as normal if you take an action that would break it, but returns at the start of your next turn.</p>
+            <p class="indent">The spell save DC for this spell is 8 + your Charisma modifier + your Proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>You are under the effect of sanctuary (DC {{natures gift:dc}}). This effect ends as normal if you take an action that would break it, but returns at the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" />
+            <stat name="natures gift:dc" value="8" />
+            <stat name="natures gift:dc" value="proficiency" />
+            <stat name="natures gift:dc" value="charisma:modifier" />
         </rules>
     </element>
     <element name="Grand Decree" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_GRAND_DECREE">
@@ -661,6 +670,7 @@
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_CONCEALED_APPROACH" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_NATURES_GIFT" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_SHROUD_OF_NATURE" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_TRACKLESS_TRAILS" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_FLEETING_STRIKES" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_GHOSTS_OF_THE_WILD" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_WARLORD_OF_THE_WILDS" />
@@ -673,6 +683,7 @@
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_CONCEALED_APPROACH" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_NATURES_GIFT" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_SHROUD_OF_NATURE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_TRACKLESS_TRAILS" level="7" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_FLEETING_STRIKES" level="11" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_GHOSTS_OF_THE_WILD" level="15" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_WARLORD_OF_THE_WILDS" level="18" />
@@ -720,28 +731,39 @@
     </element>
     <element name="Shroud of Nature" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_SHROUD_OF_NATURE">
         <description>
-            <p>Starting at 7th level, you and your allies can fade away behind natural shrouds. Whenever you cast a spell the results in you or an friendly creature becoming obscured (such as being within the radius of a fog cloud or behind earth moved by mold earth), the obscured creature can use their reaction to take the Hide Action with advantage.</p>
+            <p>Starting at 7th level, you and your allies can fade away behind natural shrouds. Whenever you cast a spell the results in you or an friendly creature becoming obscured (such as being within the radius of a fog cloud or behind earth moved by mold earth), the obscured creature can use their reaction to take the Hide Action.</p>
         </description>
         <sheet>
-            <description>Whenever you cast a spell the results in you or an friendly creature becoming obscured (such as being within the radius of a fog cloud or behind earth moved by mold earth), the obscured creature can use their reaction to take the Hide Action with advantage.</description>
+            <description>Whenever you cast a spell the results in you or an friendly creature becoming obscured (such as being within the radius of a fog cloud or behind earth moved by mold earth), the obscured creature can use their reaction to take the Hide Action.</description>
         </sheet>
+    </element>
+    <element name="Trackless Trails" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_TRACKLESS_TRAILS">
+        <description>
+            <p>Additionally at 7th level, you can spend 2 Leadership Dice to cast *pass without a trace* without providing material components. </p>
+        </description>
+        <sheet>
+            <description usage="Leadership Dice">You can spend 2 Leadership Dice to cast *pass without a trace* without providing material components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" />
+        </rules>
     </element>
     <element name="Fleeting Strikers" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_FLEETING_STRIKES">
         <description>
-            <p>Starting at 11th level, if you are not in the same spot you were at the end of your last turn, the first attack you make during your turn deals an additional 1d10 damage.</p>
+            <p>Starting at 11th level, if you are not in the same spot you were at the end of your last turn or are obscured from your target, the first attack you make during your turn deals an additional 1d10 damage.</p>
             <p class="indent">Additionally, a creature that you grant an Attack with Battlefield Presence can take the Dash action instead of making the attack you granted.</p>
         </description>
         <sheet>
-            <description>If you are not in the same spot you were at the end of your last turn, the first attack you make during your turn deals an additional 1d10 damage. Additionally, a creature that you grant an Attack with Battlefield Presence can take the Dash action instead of making the attack you granted.</description>
+            <description>If you are not in the same spot you were at the end of your last turn or are obscured from your target, the first attack you make during your turn deals an additional 1d10 damage. Additionally, a creature that you grant an Attack with Battlefield Presence can take the Dash action instead of making the attack you granted.</description>
         </sheet>
     </element>
     <element name="Ghosts of the Wild" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PACKLEADER_GHOSTS_OF_THE_WILD">
         <description>
-            <p>Starting at 15th level, you can spend 2 Leadership Dice to cast pass without a trace without providing material components. While under the effect of pass without a trace, you can expend a Leadership Die to take the Hide action at the end of your turn without expending an action.</p>
-            <p class="indent">If you use Battlefield Presence to grant an attack to a creature, you can expend one Leadership Die to shroud by shadows or natural phenomena, granting them advantage on the first attack they make before the start of your next turn. If they are under the effect of pass without a trace, you can do this without expending a Leadership Die.</p>
+            <p>Starting at 15th level, while under the effect of *pass without a trace*, you can expend a Leadership Die to take the Hide action at the end of your turn without expending an action.</p>
+            <p class="indent">If you use Battlefield Presence to grant an attack to a creature, you can expend one Leadership Die to shroud by shadows or natural phenomena, granting them advantage on the first attack they make before the start of your next turn. If they are under the effect of *pass without a trace*, you can do this without expending a Leadership Die.</p>
         </description>
         <sheet>
-            <description usage="Leadership Dice">You can spend 2 Leadership Dice to cast pass without a trace without providing material components. While under the effect of pass without a trace, you can expend a Leadership Die to take the Hide action at the end of your turn without expending an action. If you use Battlefield Presence to grant an attack to a creature, you can expend one Leadership Die to shroud by shadows or natural phenomena, granting them advantage on the first attack they make before the start of your next turn. If they are under the effect of pass without a trace, you can do this without expending a Leadership Die.</description>
+            <description usage="Leadership Dice">While under the effect of *pass without a trace*, you can expend a Leadership Die to take the Hide action at the end of your turn without expending an action. If you use Battlefield Presence to grant an attack to a creature, you can expend one Leadership Die to shroud by shadows or natural phenomena, granting them advantage on the first attack they make before the start of your next turn. If they are under the effect of *pass without a trace*, you can do this without expending a Leadership Die.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" />
@@ -805,11 +827,15 @@
     </element>
     <element name="Lead the Charge" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PARAGON_LEAD_THE_CHARGE">
         <description>
-            <p>Starting at 1st level, you can give yourself a bonus to your initiative rolls equal to your Charisma modifier. Additionally, when you roll initiative you gain temporary hit points equal to twice your Charisma modifier (minimum 2).</p>
+            <p>Starting at 1st level, you can give yourself a bonus to your initiative rolls equal to your Charisma modifier. Additionally, when you roll initiative you gain temporary hit points equal to your Charisma modifier plus your proficiency bonus.</p>
         </description>
         <sheet>
-            <description>You can give yourself a bonus of {{charisma:modifier}} to your initiative rolls. Additionally, when you roll initiative, you gain {{charisma:modifier}} temporary hit points (minimum 2).</description>
+            <description>You can give yourself a bonus of {{charisma:modifier}} to your initiative rolls. Additionally, when you roll initiative, you gain {{lead charge:hp}} temporary hit points.</description>
         </sheet>
+        <rules>
+            <stat name="lead charge:hp" value="proficiency" />
+            <stat name="lead charge:hp" value="charisma:modifier" />
+        </rules>
     </element>
     <element name="Fighting Style" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PARAGON_FIGHTING_STYLE">
         <description>
@@ -828,11 +854,11 @@
     </element>
     <element name="Heroic Strike" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PARAGON_HEROIC_STRIKE">
         <description>
-            <p>Additionally at 3rd level, when you take the Attack action, once per turn you can expend a Leadership Dice (up to your per turn limit) to apply Rallying Mark or Overwhelming Mark as part of a melee weapon attack.</p>
+            <p>Additionally at 3rd level, when you take the Attack action, once per turn you can expend a Leadership Dice (up to your per turn limit) to apply Rallying Mark or Urgent Orders as part of a melee weapon attack.</p>
             <p class="indent">Whenever you expend Leadership Dice as part of making an attack, you can add the expended Leadership Dice to the damage roll of the attack.</p>
         </description>
         <sheet>
-            <description usage="Leadership Dice">When you take the Attack action, once per turn you can expend a Leadership Dice (up to your per turn limit) to apply Rallying Mark or Overwhelming Mark as part of a melee weapon attack. Whenever you expend Leadership Dice as part of making an attack, you can add the expended Leadership Dice to the damage roll of the attack.</description>
+            <description usage="Leadership Dice">When you take the Attack action, once per turn you can expend a Leadership Dice (up to your per turn limit) to apply Rallying Mark or Urgent Orders as part of a melee weapon attack. Whenever you expend Leadership Dice as part of making an attack, you can add the expended Leadership Dice to the damage roll of the attack.</description>
         </sheet>
     </element>
     <element name="Stand Defiant" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_PARAGON_STAND_DEFIANT">
@@ -882,9 +908,11 @@
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_CUNNING" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_BATTLE_PREPARATION" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_INSIGHT" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_FLEXIBILITY" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_INSCRUTABLE_MIND" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_STRIKE" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_CONTROL_THE_FIELD" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_ADVANCED_ORDERS" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_UNSTOPPABLE_SCHEMES" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_MULTILAYERED_TACTICS" />
         </description>
@@ -895,9 +923,11 @@
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_CUNNING" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_BATTLE_PREPARATION" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_INSIGHT" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_FLEXIBILITY" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_INSCRUTABLE_MIND" level="7" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_STRIKE" level="11" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_CONTROL_THE_FIELD" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_ADVANCED_ORDERS" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_CONTROL_THE_FIELD" level="7" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_UNSTOPPABLE_SCHEMES" level="18" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_MULTILAYERED_TACTICS" level="18" />
         </rules>
@@ -914,7 +944,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
         </rules>
     </element>
-    <element name="Battle Preparation" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_BATTLE_PREPARATION">
+    <element name="Battle Plans" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_BATTLE_PREPARATION">
         <description>
             <p>Starting at 1st level, you can give yourself a bonus to your initiative rolls equal to your Intelligence modifier. Additionally, you can exchange your total on this roll with a willing friendly creature within 60 feet.</p>
         </description>
@@ -942,6 +972,14 @@
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_INSIGHT_OUTWIT" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_INSIGHT_EXPOSE" />
         </rules>
+    </element>
+    <element name="Tactical Flexibility" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_FLEXIBILITY">
+        <description>
+            <p>Additionally at 3rd level, you gain the ability to use Tactical Insight, Rallying Mark, Helpful Word, and Urgent Orders as an action or a bonus action on your turn.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">You gain the ability to use Tactical Insight, Rallying Mark, Helpful Word, and Urgent Orders as an action or a bonus action on your turn.</description>
+        </sheet>
     </element>
     <element name="Determine Attack" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_TACTICAL_INSIGHT_DETERMINE">
         <description>
@@ -997,7 +1035,7 @@
     </element>
     <element name="Control the Field" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_CONTROL_THE_FIELD">
         <description>
-            <p>Starting at 15th level, when you take the Shift the Field action, it gains the following properties:</p>
+            <p>Starting at 7th level, when you take the Shift the Field or Urgent Orders action, it gains the following properties:</p>
             <ul>
                 <li><strong>Deceptive Movement: </strong>You can attempt to move creatures that are not allies up to 5 feet (or half their movement speed, whichever is less). The creature must make an Intelligence Saving Throw with a DC of 8 + your Proficiency Modifier + your Intelligence modifier, or feel compelled to move to the new position immediately.</li>
                 <li><strong>Flanking Maneuvers: </strong>If two allies you move are on opposite sides of an creatures after the movement you grant, the first one to attack that enemy has advantage on their first attack if they attack before the creature moves.</li>
@@ -1015,6 +1053,14 @@
             <stat name="control the field:dc" value="proficiency" />
             <stat name="control the field:dc" value="intelligence:modifier" />
         </rules>
+    </element>
+    <element name="Advanced Orders" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_ADVANCED_ORDERS">
+        <description>
+            <p>Additionally at 15th level, when you expend a Leadership Die on Urgent Orders, you can allow the creature to take one the Use an Object, Search, Hide, or Dodge actions as their reaction instead of moving.</p>
+        </description>
+        <sheet>
+            <description>When you expend a Leadership Die on Urgent Orders, you can allow the creature to take one the Use an Object, Search, Hide, or Dodge actions as their reaction instead of moving.</description>
+        </sheet>
     </element>
     <element name="Unstoppable Schemes" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_TACTICIAN_UNSTOPPABLE_SCHEMES">
         <description>
