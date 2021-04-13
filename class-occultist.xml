@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 
-    <!--VERSION 1.0-->
+    <!--VERSION 1.1-->
 
     <element name="Occultist" type="Class" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_CLASS_OCCULTIST">
         <description>
@@ -265,161 +265,26 @@
             <p>An oracle is an occultists whose power comes to them from their connection to fate; bound and empowered oracles carry some piece of divine mystery within them, tied to an aspect of destiny and fate. As their power grows they begin to understand this mystery with revelations, unlocking its secrets and the power they contain.</p>
             <p class="indent">An oracle typically does not directly serve a god, rather they often are people who's fate has entangled them in the affairs of the gods. Oracles have great power, but their powers are not ones that mortals were meant to have, and consequently they are frequently burdened by their powers.</p>
             <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_DIVINE_TOUCH" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_UNVEILED" />
             <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_FATE_READING" />
             <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_ENLIGHTENED_UNDERSTANDING" />
-            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PROPHECY" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MASTER_OF_PROPHECY" />
         </description>
         <sheet display="false">
             <description>An oracle is an occultists whose power comes to them from their connection to fate</description>
         </sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_DIVINE_TOUCH" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_UNVEILED" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_FATE_READING" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_ENLIGHTENED_UNDERSTANDING" level="6" />
-            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PROPHECY" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MASTER_OF_PROPHECY" level="14" />
         </rules>
     </element>
     <element name="Divine Touch" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_DIVINE_TOUCH">
         <description>
             <p>At 1st level when you select this Tradition, you have been touched by a divine revelation that has given you a gift of insight and a dramatic flair to deliver it - you learn the cantrips guidance and thaumaturgy.</p>
-            <p class="indent">Additionally, the touch of divine revelation has opened new pathways of magic that lie beyond the mortal grasp. When your Spellcasting feature lets you learn a occultist cantrip or a occultist spell of 1st level or higher, you can choose the new spell from the cleric spell list or the occultist spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a occultist spell for you.</p>
-            <p class="indent">For some, this burden marks them more heavily. At the discretion of your DM, you can optionally select to a curse and corresponding boon from the Cursed Burden section.</p>
-            <h5>Cursed Burden</h5>
-            <p>Frequently, the burden of the divine mysteries an oracle touches are too great for their mortal body to bear, and they suffer backlash in the form of curses. These take the form of optional character flaws.</p>
-            <p class="indent">As these are a part of your power, they can only be removed by the Wish spell, by Remove Curse cast at the 9th level, or a divine being, but if removed you may also lose your associated boon.</p>
-            <p class="indent">You and your DM may opt to mix and match or to use a custom curse and boon as appropriate, these are just a template for ones that pair well.</p>
-        </description>
-        <sheet display="false" />
-        <spellcasting name="Occultist" extend="true">
-			<extend>Cleric</extend>
-		</spellcasting>
-        <rules>
-            <grant type="type" id="ID_PHB_SPELL_GUIDANCE" />
-            <grant type="type" id="ID_PHB_SPELL_THAUMATURGY" />
-            <select type="Archetype Feature" name="Cursed Burden" supports="Oracle Cursed Burden" optional="true" />
-        </rules>
-    </element>
-    <element name="Blind" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_BLIND">
-        <supports>Oracle Cursed Burden</supports>
-        <description>
-            <p>You are permanently blinded. You gain the Oracle's Sight rite.</p>
-            <div element="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT" />
-        </description>
-        <sheet>
-            <description>You are permanently blinded.</description>
-        </sheet>
-        <rules>
-            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT" />
-        </rules>
-    </element>
-    <element name="Burned" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_BURNED">
-        <supports>Oracle Cursed Burden</supports>
-        <description>
-            <p>You are scarred by burns. The first die of any fire damage you take from a hostile creature is maximized. You gain the Mystery of Fire rite.</p>
-            <div element="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE" />
-        </description>
-        <sheet>
-            <description>The first die of any fire damage you take from a hostile creature is maximized.</description>
-        </sheet>
-        <rules>
-            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE" />
-        </rules>
-    </element>
-    <element name="Silent" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_SILENT">
-        <supports>Oracle Cursed Burden</supports>
-        <description>
-            <p>You cannot speak above a whisper, creatures further than 10 feet from you cannot hear you. You gain the Mystery of Death rite</p>
-            <div element="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH" />
-        </description>
-        <sheet>
-            <description>You cannot speak above a whisper, creatures further than 10 feet from you cannot hear you.</description>
-        </sheet>
-        <rules>
-            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH" />
-        </rules>
-    </element>
-    <element name="Frail" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_FRAIL">
-        <supports>Oracle Cursed Burden</supports>
-        <description>
-            <p>You are physical frail, reducing your Constitution and Strength ability score by 1. You gain the Mystery of Life rite.</p>
-            <div element="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE" />
-        </description>
-        <sheet display="false" />
-        <rules>
-            <stat name="constitution" value="-1" />
-            <stat name="strength" value="-1" />
-            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE" />
-        </rules>
-    </element>
-    <element name="Ill Omened" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_ILL_OMENED">
-        <supports>Oracle Cursed Burden</supports>
-        <description>
-            <p>You are marked by strife. You make all Persuasion checks at disadvantage. You gain the Mystery of Battle rite.</p>
-            <div element="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE" />
-        </description>
-        <sheet>
-            <description>You make all Persuasion checks at disadvantage.</description>
-        </sheet>
-        <rules>
-            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE" />
-        </rules>
-    </element>
-    <element name="Foresworn" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_FORESWORN">
-        <supports>Oracle Cursed Burden</supports>
-        <description>
-            <p>You cannot reveal the nature of your divinations to others. You gain the Divine Fate rite.</p>
-            <div element="ID_KTH_OCCULTIST_RITE_DIVINE_FATE" />
-        </description>
-        <sheet>
-            <description>You cannot reveal the nature of your divinations to others.</description>
-        </sheet>
-        <rules>
-            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_DIVINE_FATE" />
-        </rules>
-    </element>
-    <element name="Fate Reading" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_FATE_READING">
-        <description>
-            <p>Starting at 3rd level, your connection to the flow of fate gives you the ability to read from it, tracing outcomes and glimpsing the unknowable future. You learn the spell <em>augury</em> and can cast it at will without expending spell slot.</p>
-            <div class="reference">
-                <div element="ID_PHB_SPELL_AUGURY" />
-            </div>
-        </description>
-        <sheet>
-            <description>You learn the spell <em>augury</em> and can cast it at will without expending spell slot.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
-        </rules>
-    </element>
-    <element name="Enlightened Understanding" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_ENLIGHTENED_UNDERSTANDING">
-        <description>
-            <p>Starting at 6th level, you've come to unravel the mysteries of magic and fate, understanding their secrets and potential. Whenever you use a Mystery, you gain temporary hit points equal to your Wisdom modifier.</p>
-        </description>
-        <sheet>
-            <description>Whenever you use a Mystery, you gain {{wisdom:modifier}} temporary hit points.</description>
-        </sheet>
-    </element>
-    <element name="Prophecy" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PROPHECY">
-        <description>
-            <p>Starting at 14th level, you can cast augury a number of times equal to your Wisdom modifier before per day before it starts having a chance to return random answers.</p>
-            <p class="indent">Additionally, when you divine the future with augury, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll (for example, an attack, a Strength (Athletics) check, or an initiative roll, etc), a d4 is reserved (example "someone will be particularly quick when rolling initiative").</p>
-            <p class="indent">If you specify a specific action and a specific person, a d6 is reserved (for example, "when the wizard Caius rolls for initiative, he will be unusually quick"). If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the DM.</p>
-            <p class="indent">A specific action or person can only have one prophesized event. If that prophesized event takes place (at the discretion of the DM it has occurred), the oracle can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, the oracle can select which of them is effected by the reserved die.</p>
-        </description>
-        <sheet>
-            <description>You can cast augury {{wisdom:modifier}} times before per day before it starts having a chance to return random answers.
-            Additionally, when you divine the future with augury, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll, a d4 is reserved. If you specify a specific action and a specific person, a d6 is reserved. If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the DM.
-            A specific action or person can only have one prophesized event. If that prophesized event takes place, you can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, you can select which of them is effected by the reserved die.</description>
-        </sheet>
-    </element>
-
-    <!--ORACLE SPECIFIC RITES-->
-
-    <element name="Divine Fate" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DIVINE_FATE">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
-        <description>
-            <p>You expand your expertise of reading fate to be able to more specifically divine information from your readings, learning additional more specific spells. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <p class="indent">You learn the following spells at the following levels. These are occultist spells for you.</p>
             <table>
                 <thead>
                     <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
@@ -430,6 +295,12 @@
                 <tr><td>7th</td><td>locate creature</td></tr>
                 <tr><td>9th</td><td>legend lore</td></tr>
             </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_GUIDANCE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_THAUMATURGY" />
+            </div>
             <div class="reference">
                 <div element="ID_PHB_SPELL_IDENTIFY" />
             </div>
@@ -447,141 +318,115 @@
             </div>
         </description>
         <sheet>
-            <description>You gain additional spells at certain levels.</description>
+            <description>You gain additional spells from this tradition.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" />
-            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_OBJECT" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" />
-            <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" />
+            <grant type="type" id="ID_PHB_SPELL_GUIDANCE" level="1" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_THAUMATURGY" level="1" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_LOCATE_OBJECT" level="3" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Occultist" />
+            <select type="Archetype Feature" name="Cursed Burden" supports="Oracle Cursed Burden" optional="true" />
+        </rules>
+    </element>
+    <element name="Mystery Unveiled" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_UNVEILED">
+        <description>
+            <p>Additionally at 1st level, the touch of the divine inside of you has opened up new pathways of magic and understanding that most cannot comprehend - a connection to magic. Select one of the following options Mystery of Life, Mystery of Fire, Mystery of Death, Mystery of Souls, or Mystery of War.</p>
+            <p class="indent">Some oracles are burdened with too much power for their mortal body. Optionally you can select to be one of these by selecting the "Oracle's Curse" feature, gaining an additional divine boon and curse.</p>
+            <p class="indent">You can can select an additional Mystery at 5th (two Mysteries) and again at 11th level (three Mysteries).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Mystery Unveiled (1)" supports="Kibbles Oracle Mystery" level="1" />
+            <select type="Archetype Feature" name="Mystery Unveiled (5)" supports="Kibbles Oracle Mystery" level="5" />
+            <select type="Archetype Feature" name="Mystery Unveiled (11)" supports="Kibbles Oracle Mystery" level="11" />
+        </rules>
+    </element>
+    <element name="Fate Reading" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_FATE_READING">
+        <description>
+            <p>Starting at 3rd level, your connection to the flow of fate gives you the ability to read from it, tracing outcomes and glimpsing the unknowable future. When you are hit by an attack, you can use your reaction to add your Wisdom modifier to your AC until the start of your next turn (including against the triggering attack). You can do this a number of times equal to your proficienecy bonus, regaining all uses on a long rest.</p>
+            <p class="indent">Additionally, you learn the spell augury and can cast it at will without expending spell slot.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_AUGURY" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="{{proficiency}}/Long Rest" action="Reaction">When you are hit by an attack, you can use your reaction to add {{wisdom:modifier}} to your AC until the start of your next turn (including against the triggering attack). You can do this {{proficiency}} times, regaining all uses on a long rest. Additionally, you learn the spell augury and can cast it at will without expending spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Occultist" />
+        </rules>
+    </element>
+    <element name="Enlightened Understanding" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_ENLIGHTENED_UNDERSTANDING">
+        <description>
+            <p>Starting at 6th level, whenever you activate a Revelation, you gain temporary hit points equal to your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description>Whenever you activate a Revelation, you may gain {{wisdom:modifier}} temporary hit points.</description>
+        </sheet>
+    </element>
+    <element name="Master of Prophecy" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MASTER_OF_PROPHECY">
+        <description>
+            <p>Starting at 14th level, you can cast augury a number of times equal to your Wisdom modifier before per day before it starts having a chance to return random answers.</p>
+            <p class="indent">Additionally, when you divine the future with augury, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll (for example, an attack, a Strength (Athletics) check, or an initiative roll, etc), a d4 is reserved (example "someone will be particularly quick when rolling initiative").</p>
+            <p class="indent">If you specify a specific action and a specific person, a d6 is reserved (for example, "when the wizard Caius rolls for initiative, he will be unusually quick"). If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the DM.</p>
+            <p class="indent">A specific action or person can only have one prophesized event. If that prophesized event takes place (at the discretion of the DM it has occurred), the oracle can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, the oracle can select which of them is effected by the reserved die.</p>
+        </description>
+        <sheet>
+            <description>You can cast augury {{wisdom:modifier}} times per day before it starts having a chance to return random answers. Additionally, when you divine the future with augury, you can issue a cryptic prophecy, with three specific points for rolls that may occur within the next 30 minutes. For each specific point you prophesize, if you specify only the type of roll, a d4 is reserved. If you specify a specific action and a specific person, a d6 is reserved. If you give it a specific unlikely condition, a d8 can be reserved at the discretion of the DM. A specific action or person can only have one prophesized event. If that prophesized event takes place (at the discretion of the DM it has occurred), the oracle can spend the reserved die and add it to the roll; if multiple events trigger the prophecy, the oracle can select which of them is effected by the reserved die.</description>
+        </sheet>
+    </element>
+
+    <!--CURSED BURDENS-->
+    
+    <element name="Blind" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_BLIND">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>You are permanently blinded. You gain the Oracle's Sight rite.</p>
+            <div element="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT" />
+        </description>
+        <sheet>
+            <description>You are permanently blinded.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT" />
         </rules>
     </element>
 
-    <element name="Oracle's Sight" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+    <element name="Burned" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_BURNED">
+        <supports>Oracle Cursed Burden</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_FIRE</requirements>
+        <prerequisite>Mystery of Fire</prerequisite>
         <description>
-            <p>You gain blindsight with a range of 15 feet. When affected by the Blinded condition for more than a minute the range of this sight is doubled while under that effect.</p>
+            <p><em>Prerequisite: Mystery of Fire</em></p>
+            <p>Your hands are scarred by terribly burns. You have disadvantage with weapon attacks and slight of hand checks. You gain the Revelation of Fire rite.</p>
+            <div element="ID_KTH_OCCULTIST_RITE_REVELATION_FIRE" />
         </description>
         <sheet>
-            <description>You gain blindsight with a range of 15 feet. When affected by the Blinded condition for more than a minute the range of this sight is doubled while under that effect.</description>
-        </sheet>
-    </element>
-
-    <element name="Divine Sight" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DIVINE_SIGHT">
-        <supports>Occult Rite</supports>
-        <prerequisite>15th level</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, [level:15]</requirements>
-        <description>
-            <p><em>Prerequisite: 15th level</em></p>
-            <p>If you have blindsight, you gain truesight with a range equal to your blindsight.</p>
-        </description>
-        <sheet>
-            <description>If you have blindsight, you gain truesight with a range equal to your blindsight.</description>
-        </sheet>
-    </element>
-
-    <element name="Twin Mystery" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TWIN_MySTERY">
-        <supports>Occult Rite</supports>
-        <prerequisite>12th level</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, [level:12]</requirements>
-        <description>
-            <p><em>Prerequisite: 12th level</em></p>
-            <p>When you cast a spell that invokes a mystery, you can invoke two different mysteries at the same time, as long as a spell fulfills both Mystery's requirements.</p>
-        </description>
-        <sheet>
-            <description>When you cast a spell that invokes a mystery, you can invoke two different mysteries at the same time, as long as a spell fulfills both Mystery's requirements.</description>
-        </sheet>
-    </element>
-
-    <element name="Mystery of Life" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
-        <description>
-            <p>Your powers are tied to the nature of life and its ever shifting balance. When you cast a spell of 1st level or higher, you can heal a creature other than yourself within 30 feet for a number of hit points up to your occultist level. Your current hit points are reduced by an amount equal to the amount you heal the target of the mystery for.</p>
-            <p class="indent">You can only use this ability on creatures that have vibrant life pulsing within them, it does not work on undead, constructs, or creatures at zero hit points.</p>
-        </description>
-        <sheet>
-            <description>When you cast a spell of 1st level or higher, you can heal a creature other than yourself within 30 feet for a number of hit points up to your occultist level. Your current hit points are reduced by an amount equal to the amount you heal the target of the mystery for. You can only use this ability on creatures that have vibrant life pulsing within them, it does not work on undead, constructs, or creatures at zero hit points.</description>
-        </sheet>
-    </element>
-
-    <element name="Revelation of Life" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_OF_LIFE">
-        <supports>Occult Rite</supports>
-        <prerequisite>Mystery of Life</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE</requirements>
-        <description>
-            <p><em>Prerequisite: Mystery of Life</em></p>
-            <p>Your understanding of the nature of life unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
-            <table>
-                <thead>
-                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
-                </thead>
-                <tr><td>1st</td><td>healing word</td></tr>
-                <tr><td>3rd</td><td>warding bond</td></tr>
-                <tr><td>5th</td><td>beacon of hope</td></tr>
-                <tr><td>7th</td><td>aura of life</td></tr>
-                <tr><td>9th</td><td>mass cure wounds</td></tr>
-            </table>
-            <div class="reference">
-                <div element="ID_PHB_SPELL_HEALING_WORD" />
-            </div>
-            <div class="reference">
-                <div element="ID_PHB_SPELL_WARDING_BOND" />
-            </div>
-            <div class="reference">
-                <div element="ID_PHB_SPELL_BEACON_OF_HOPE" />
-            </div>
-            <div class="reference">
-                <div element="ID_PHB_SPELL_AURA_OF_LIFE" />
-            </div>
-            <div class="reference">
-                <div element="ID_PHB_SPELL_MASS_CURE_WOUNDS" />
-            </div>
-        </description>
-        <sheet>
-            <description>You gain additional spells at certain levels.</description>
+            <description>You have disadvantage with weapon attacks and slight of hand checks.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="1" />
-            <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" />
-            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" />
+            <grant type="Class Feature" id="ID_KTH_OCCULTIST_RITE_REVELATION_FIRE" />
         </rules>
     </element>
 
-    <element name="All Living Things" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ALL_LIVING_THINGS">
-        <supports>Occult Rite</supports>
-        <prerequisite>Mystery of Life</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_LIFE</requirements>
+    <element name="Foresworn" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_FORESWORN">
+        <supports>Oracle Cursed Burden</supports>
         <description>
-            <p><em>Prerequisite: Mystery of Life</em></p>
-            <p>When you expend a spell slot to cast a spell that restores hit points a creature, you regain hit points equal to your Wisdom modifier. If you kill a creature or are within 10 feet of a creature as it dies, you take necrotic damage equal to its CR or character level if it has no CR (minimum 1). This is not triggered if the creature an undead or construct.</p>
+            <p>Visions of the future come easily to you. The casting time of Divination spells that take 1 minute is reduced to 1 action for you. You cannot reveal the results of your divinations to others.</p>
         </description>
         <sheet>
-            <description>When you expend a spell slot to cast a spell that restores hit points a creature, you regain {{wisdom:modifier}} hit points. If you kill a creature or are within 10 feet of a creature as it dies, you take necrotic damage equal to its CR or character level if it has no CR (minimum 1). This is not triggered if the creature an undead or construct.</description>
+            <description>The casting time of Divination spells that take 1 minute is reduced to 1 action for you. You cannot reveal the results of your divinations to others.</description>
         </sheet>
     </element>
 
-    <element name="Mystery of Death" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
-        <description>
-            <p>You delve the depths of the mystery that lies at the end of life. When you cast a spell of 1st level or higher that deals damage, you can reroll a number of the spell's damage dice equal to your Wisdom modifier. You must use the new value of the die. Dice you reroll this way are converted to necrotic damage, and your current hit points are reduced by one for each die you reroll in this manner.</p>
-        </description>
-        <sheet>
-            <description>When you cast a spell of 1st level or higher that deals damage, you can reroll {{wisdom:modifier}} of the spell's damage dice. You must use the new value of the die. Dice you reroll this way are converted to necrotic damage, and your current hit points are reduced by one for each die you reroll in this manner.</description>
-        </sheet>
-    </element>
+    <!--MYSTERIES-->
 
-    <element name="Revelation of Death" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_OF_DEATH">
-        <supports>Occult Rite</supports>
-        <prerequisite>Mystery of Death</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH</requirements>
+    <element name="Mystery of Death" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_DEATH">
+        <supports>Kibbles Oracle Mystery</supports>
         <description>
-            <p><em>Prerequisite: Mystery of Death</em></p>
             <p>Your understanding of the nature of death unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
             <table>
                 <thead>
@@ -610,49 +455,60 @@
             </div>
         </description>
         <sheet>
-            <description>You gain additional spells at certain levels.</description>
+            <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" />
-            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" />
-            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_WITHER" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" />
-            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_KILLING_CURSE" level="9" />
+            <grant type="type" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Occultist" />
+            <grant type="type" id="ID_KTH_OCCULTIST_SPELL_WITHER" level="5" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Occultist" />
+            <grant type="type" id="ID_KTH_OCCULTIST_SPELL_KILLING_CURSE" level="9" spellcasting="Occultist" />
         </rules>
     </element>
-
-    <element name="Inevitable End" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_INEVITABLE_END">
-        <supports>Occult Rite</supports>
-        <prerequisite>Mystery of Death</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_DEATH</requirements>
+    <element name="Mystery of Life" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_LIFE">
+        <supports>Kibbles Oracle Mystery</supports>
         <description>
-            <p><em>Prerequisite: Mystery of Death</em></p>
-            <p>When you deal necrotic damage, you can ignore a creature's resistance to necrotic damage.</p>
+            <p>Your understanding of the nature of life unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>healing word</td></tr>
+                <tr><td>3rd</td><td>warding bond</td></tr>
+                <tr><td>5th</td><td>mass healing word</td></tr>
+                <tr><td>7th</td><td>aura of life</td></tr>
+                <tr><td>9th</td><td>mass cure wounds</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_HEALING_WORD" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_WARDING_BOND" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_MASS_HEALING_WORD" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_AURA_OF_LIFE" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_MASS_CURE_WOUNDS" />
+            </div>
         </description>
         <sheet>
-            <description>When you deal necrotic damage, you can ignore a creature's resistance to necrotic damage.</description>
+            <description>You learn additional spells.</description>
         </sheet>
+        <rules>
+            <grant type="type" id="ID_PHB_SPELL_HEALING_WORD" level="1" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Occultist" />
+        </rules>
     </element>
-
-    <element name="Mystery of Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+    <element name="Mystery of Fire" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_FIRE">
+        <supports>Kibbles Oracle Mystery</supports>
         <description>
-            <p>Within flames you have seen yourself, and you know them as they know you. When you cast a spell of 1st level or higher, you can shroud yourself in flames until the start of your next turn, giving you partial cover.</p>
-            <p class="indent">While these flames wreath you, you can add fire damage equal to your Wisdom modifier (minimum 1) to damage rolls for melee weapon attacks or to one damage roll of spells that deal fire damage (including the spell that invoked this mystery if applicable).</p>
-            <p class="indent">Your current hit points are reduced by 1d4 at the end of your turn by the flames.</p>
-        </description>
-        <sheet>
-            <description>When you cast a spell of 1st level or higher, you can shroud yourself in flames until the start of your next turn, giving you partial cover. While these flames wreath you, you can add {{wisdom:modifier}} fire damage (minimum 1) to damage rolls for melee weapon attacks or to one damage roll of spells that deal fire damage (including the spell that invoked this mystery if applicable). Your current hit points are reduced by 1d4 at the end of your turn by the flames.</description>
-        </sheet>
-    </element>
-
-    <element name="Revelation of Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_OF_FIRE">
-        <supports>Occult Rite</supports>
-        <prerequisite>Mystery of Fire</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE</requirements>
-        <description>
-            <p><em>Prerequisite: Mystery of Fire</em></p>
             <p>Your understanding of the nature of fire unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
             <table>
                 <thead>
@@ -681,48 +537,20 @@
             </div>
         </description>
         <sheet>
-            <description>You gain additional spells at certain levels.</description>
+            <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" />
-            <grant type="Spell" id="ID_PHB_SPELL_CONTINUAL_FLAME" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" />
-            <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" />
+            <grant type="type" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_CONTINUAL_FLAME" level="3" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Occultist" />
+            <grant type="type" id="ID_XGTE_SPELL_IMMOLATION" level="9" spellcasting="Occultist" />
         </rules>
     </element>
-
-    <element name="Voracious Flames" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_VORACIOUS_FLAMES">
-        <supports>Occult Rite</supports>
-        <prerequisite>Mystery of Fire</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_FIRE</requirements>
+    <element name="Mystery of War" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_WAR">
+        <supports>Kibbles Oracle Mystery</supports>
         <description>
-            <p><em>Prerequisite: Mystery of Fire</em></p>
-            <p>The flames that wreath when you invoke the Mystery of Fire you burn more voraciously. Once per turn, if a creature ends their turn within 5 feet of you or strikes you with a melee attack while within 5 feet of you, you can choose to deal 1d6 fire damage to that creature while Mystery of Fire is active.</p>
-        </description>
-        <sheet>
-            <description usage="1/Turn">The flames that wreath when you invoke the Mystery of Fire you burn more voraciously. Once per turn, if a creature ends their turn within 5 feet of you or strikes you with a melee attack while within 5 feet of you, you can choose to deal 1d6 fire damage to that creature while Mystery of Fire is active.</description>
-        </sheet>
-    </element>
-
-    <element name="Mystery of Battle" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
-        <description>
-            <p>Within war and conflict you see the true essence of perfect conflict. Once per turn on your turn, when you cast a spell a spell of 1st level or higher, you become attuned to the flow of battle and can make a single melee weapon attack as part of the same action.</p>
-        </description>
-        <sheet>
-            <description usage="1/Round">Once per turn on your turn, when you cast a spell a spell of 1st level or higher, you become attuned to the flow of battle and can make a single melee weapon attack as part of the same action.</description>
-        </sheet>
-    </element>
-
-    <element name="Revelation of Battle" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_OF_BATTLE">
-        <supports>Occult Rite</supports>
-        <prerequisite>Mystery of Battle</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE</requirements>
-        <description>
-            <p><em>Prerequisite: Mystery of Battle</em></p>
-            <p>Your understanding of the nature of battle unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <p>Your understanding of the nature of war unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
             <table>
                 <thead>
                     <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
@@ -750,27 +578,260 @@
             </div>
         </description>
         <sheet>
-            <description>You gain additional spells at certain levels.</description>
+            <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_THUNDEROUS_SMITE" level="1" />
-            <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_BLINDING_SMITE" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_STAGGERING_SMITE" level="7" />
-            <grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" level="9" />
+            <grant type="type" id="ID_PHB_SPELL_THUNDEROUS_SMITE" level="1" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_BRANDING_SMITE" level="3" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_BLINDING_SMITE" level="5" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_STAGGERING_SMITE" level="7" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_BANISHING_SMITE" level="9" spellcasting="Occultist" />
+        </rules>
+    </element>
+    <element name="Mystery of Souls" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_SOULS">
+        <supports>Kibbles Oracle Mystery</supports>
+        <description>
+            <p>Your understanding of the nature of souls unlocks its secrets for you. You learn the following spells at the following levels. These are occultist spells for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Occultist Level</td><td>Spells Learned</td></tr>
+                </thead>
+                <tr><td>1st</td><td>unseen servent</td></tr>
+                <tr><td>3rd</td><td>healing spirit</td></tr>
+                <tr><td>5th</td><td>spirit guardians</td></tr>
+                <tr><td>7th</td><td>guardian of faith</td></tr>
+                <tr><td>9th</td><td>raise dead</td></tr>
+            </table>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_UNSEEN_SERVANT" />
+            </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_HEALING_SPIRIT" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SPIRIT_GUARDIANS" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_GUARDIAN_OF_FAITH" />
+            </div>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_RAISE_DEAD" />
+            </div>
+        </description>
+        <sheet>
+            <description>You learn additional spells.</description>
+        </sheet>
+        <rules>
+            <grant type="type" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="1" spellcasting="Occultist" />
+            <grant type="type" id="ID_XGTE_SPELL_HEALING_SPIRIT" level="3" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Occultist" />
+            <grant type="type" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Occultist" />
         </rules>
     </element>
 
-    <element name="Truth of Strife" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TRUTH_OF_STRIFE">
+    <!--ORACLE SPECIFIC RITES-->
+
+    <element name="Death Watcher" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DEATH_WATCHER">
         <supports>Occult Rite</supports>
-        <prerequisite>5th level, Mystery of Battle</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_MYSTERY_OF_BATTLE, [level:5]</requirements>
+        <prerequisite>12th level Occultist</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, [level:occultist:12]</requirements>
         <description>
-            <p><em>Prerequisite: 5th level, Mystery of Battle</em></p>
-            <p>Your understanding of battle reveals that it comes easily. You can trigger the Mystery of Battle when casting a cantrip as an action.</p>
+            <p><em>Prerequisite: 12th level Occultist</em></p>
+            <p>You can see the lines of fate, and detect when one of them is about to snap. When an ally would drop to 0 hit points as a result of taking damage, you can manipulate their fate with a cryptic warning. Target instead drops to 1 hit point, and the spell ends.</p>
+            <p class="indent">Once you use this ability, you cannot use it again until you complete a long rest.</p>
         </description>
         <sheet>
-            <description>You can trigger Mystery of Battle when casting a cantrip as an action.</description>
+            <description usage="1/Long Rest">When an ally would drop to 0 hit points as a result of taking damage, you can manipulate their fate with a cryptic warning. Target instead drops to 1 hit point, and the spell ends.</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Miracle" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DIVINE_MIRACLE">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+        <description>
+            <p>You learn one cleric spell of your choice. The spell must be of a level you can learn, and becomes an Occultist spell for you. The spell does not count against your spells known.</p>
+        </description>
+        <sheet>
+            <description>You learn one cleric spell of your choice. The spell must be of a level you can learn, and becomes an Occultist spell for you. The spell does not count against your spells known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Divine Miracle" supports="Cleric" spellcasting="Occultist" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Divine Sight" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DIVINE_SIGHT">
+        <supports>Occult Rite</supports>
+        <prerequisite>15th level Occultist</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, [level:occultist:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level Occultist</em></p>
+            <p>If you have blindsight, you gain truesight with a range equal to your blindsight.</p>
+        </description>
+        <sheet>
+            <description>If you have blindsight, you gain truesight with a range equal to your blindsight.</description>
+        </sheet>
+    </element>
+
+    <element name="Oracle's Sight" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ORACLES_SIGHT">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE</requirements>
+        <description>
+            <p>You gain blindsight with a range of 15 feet. When affected by the Blinded condition for more than a minute the range of this sight is doubled while under that effect.</p>
+        </description>
+        <sheet>
+            <description>You gain blindsight with a range of 15 feet. When affected by the Blinded condition for more than a minute the range of this sight is doubled while under that effect.</description>
+        </sheet>
+    </element>
+
+    <element name="Revelation of Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_FIRE">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Fire</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_FIRE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Fire</em></p>
+            <p>When you cast a spell of 1st level or higher, you can shroud yourself in flames until the start of your next turn, giving you partial cover.</p>
+            <p class="indent">At the end of your turn, you and all creatures within 5 feet of you take 1d6 fire damage. Any creature that strikes you with a melee attack while within 5 feet of you takes an additional 1d6 fire damage.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher, you can shroud yourself in flames until the start of your next turn, giving you partial cover. At the end of your turn, you and all creatures within 5 feet of you take 1d6 fire damage. Any creature that strikes you with a melee attack while within 5 feet of you takes an additional 1d6 fire damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Revelation of Life" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_LIFE">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Life</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_LIFE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Life</em></p>
+            <p>Your powers are tied to the nature of life and its ever shifting balance. When you cast a spell of 1st level or higher, you can heal a creature other than yourself within 30 feet for a number of hit points equal to your Occultist level. Your current hit points are reduced by half as many hit points as you restore with this feature.</p>
+            <p class="indent">You can only use this ability on creatures that have vibrant life pulsing within them, it does not work on undead, constructs, or creatures at zero hit points.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher, you can heal a creature other than yourself within 30 feet for {{level:occultist}} hit points. Your current hit points are reduced by half as many hit points as you restore with this feature. This power does not work on undead, constructs, or creatures at zero hit points.</description>
+        </sheet>
+    </element>
+
+    <element name="Revelation of Souls" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_SOULS">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Souls</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_SOULS</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Souls</em></p>
+            <p>The souls of the departed are all around. When you cast a spell of 1st level or higher, you can conjure a benevolent soul or a tormented soul to empty space you can see with 30 feet. The first creature other than you that enters the space of a benevolent soul is healed for a number of hit points equal to the level of the spell. The first creature other than you to enter the space of a tormented soul takes necrotic damage equal to the level of the spell.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher, you can conjure a benevolent soul or a tormented soul to empty space you can see with 30 feet. The first creature other than you that enters the space of a benevolent soul is healed for a number of hit points equal to the level of the spell. The first creature other than you to enter the space of a tormented soul takes necrotic damage equal to the level of the spell.</description>
+        </sheet>
+    </element>
+
+    <element name="Revelation of War" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_REVELATION_WAR">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of War</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_WAR</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of War</em></p>
+            <p>Within war and conflict you see the true essence of perfect conflict. Once per turn on your turn, when you cast a spell of 1st level or higher, can make a single melee weapon attack as part of the same action.</p>
+        </description>
+        <sheet>
+            <description>Once per turn on your turn, when you cast a spell of 1st level or higher, can make a single melee weapon attack as part of the same action.</description>
+        </sheet>
+    </element>
+
+    <element name="Touch of Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TOUCH_FIRE">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Fire</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_FIRE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Fire</em></p>
+            <p>You learn the cantrip burn. Additionally, as a bonus action you can take 1 fire damage and can cause a weapon you are carrying to burst into flames for 1 minute or until you let go of it. For the duration, it sheds bright light for 10 feet and dim light for an additional 10 feet. Attacks made with the weapon while it burns deal an additional 1d6 fire damage.</p>
+            <div class="reference">
+                <div element="ID_KTH_OCCULTIST_SPELL_BURN" />
+            </div>
+        </description>
+        <sheet>
+            <description action="Bonus Action">As a bonus action you can take 1 fire damage and can cause a weapon you are carrying to burst into flames for 1 minute or until you let go of it. For the duration, it sheds bright light for 10 feet and dim light for an additional 10 feet. Attacks made with the weapon while it burns deal an additional 1d6 fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_BURN" spellcasting="Occultist" />
+        </rules>
+    </element>
+
+    <element name="Truth of Death" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TRUTH_DEATH">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Death</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_DEATH</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Death</em></p>
+            <p>All things must end. Necrotic damage dealt by your spells and effects ignores resistance to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>Necrotic damage dealt by your spells and effects ignores resistance to necrotic damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Truth of Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TRUTH_FIRE">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Fire</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_FIRE</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Fire</em></p>
+            <p>Everything burns. When roll fire damage, you can reroll any number of fire damage dice. You must use the new rolls. If you reroll all the dice of the damage roll, the damage bypasses any fire resistance a target has. You take 1 fire damage for each die rerolled, this damage cannot be resisted.</p>
+        </description>
+        <sheet>
+            <description>When roll fire damage, you can reroll any number of fire damage dice. You must use the new rolls. If you reroll all the dice of the damage roll, the damage bypasses any fire resistance a target has. You take 1 fire damage for each die rerolled, this damage cannot be resisted.</description>
+        </sheet>
+    </element>
+
+    <element name="Truth of War" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TRUTH_WAR">
+        <supports>Occult Rite</supports>
+        <prerequisite>Revelation of War, 5th level Occultist</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_RITE_REVELATION_WAR, [level:occultist:5]</requirements>
+        <description>
+            <p><em>Prerequisite: Revelation of War, 5th level Occultist</em></p>
+            <p>Your understanding of war reveals that it comes easily. You can trigger the Revelation of Battle when cast a cantrip that has a casting time of one action.</p>
+        </description>
+        <sheet>
+            <description>You can trigger the Revelation of Battle when cast a cantrip that has a casting time of one action.</description>
+        </sheet>
+    </element>
+
+    <element name="Truth of Souls" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TRUTH_SOULS">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of Souls</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_SOULS</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of Souls</em></p>
+            <p>You have advantage on Constitution saving throws to maintain concentration on spells granted by the Mystery of Souls.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Constitution saving throws to maintain concentration on spells granted by the Mystery of Souls.</description>
+        </sheet>
+    </element>
+
+    <element name="Twin Revelation" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_TWIN_REVELATION">
+        <supports>Occult Rite</supports>
+        <prerequisite>12th level Occultist</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, [level:occultist:12]</requirements>
+        <description>
+            <p><em>Prerequisite: 12th level Occultist</em></p>
+            <p>When you cast a spell that invokes a Revelation, you can invoke two different Revelation at the same time, as long as a spell fulfills both Revelation's requirements.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that invokes a Revelation, you can invoke two different Revelation at the same time, as long as a spell fulfills both Revelation's requirements.</description>
+        </sheet>
+    </element>
+
+    <element name="Understanding of War" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_UNDERSTANDING_WAR">
+        <supports>Occult Rite</supports>
+        <prerequisite>Mystery of War</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_ORACLE, ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_WAR</requirements>
+        <description>
+            <p><em>Prerequisite: Mystery of War</em></p>
+            <p>When you make a weapon attack, you can use your Wisdom modifier, instead of Strength or Dexterity, for the attack and damage rolls.</p>
+        </description>
+        <sheet>
+            <description>When you make a weapon attack, you can use your Wisdom modifier, instead of Strength or Dexterity, for the attack and damage rolls.</description>
         </sheet>
     </element>
 
@@ -853,14 +914,47 @@
         </rules>
     </element>
 
-    <element name="Emblazoned Fetish" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_EMBLAZONED_FETISH">
+    <element name="Emblazoned Focus" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_EMBLAZONED_FOCUS">
         <supports>Occult Rite</supports>
         <description>
-            <p>You emblazon a mystical mark on yourself, via a tattoo, scar, or similar permanent mark. You can use this as your spell casting focus for casting spells. While using this mark to cast spells, you do not need a free hand to cast spells that have a Material component that uses your Occult Fetish.</p>
+            <p>You emblazon a mystical mark on yourself, via a tattoo, scar, or similar permanent mark. You can use this as your spell casting focus for casting spells. You no longer need a free hand to cast spells with somatic or material components, as you can channel your magic through this mark though it glows visible when you do so. To work in this manner, the mark must remain uncovered (casting in this way does not remove the signs of casting a spell, merely means you do not need a free hand).</p>
         </description>
         <sheet>
-            <description>You do not need a free hand to cast spells that have a Material component that uses your Occult Fetish.</description>
+            <description>You no longer need a free hand to cast spells with somatic or material components, through this mark glows visible when you do so. To work in this manner, the mark must remain uncovered.</description>
         </sheet>
+    </element>
+
+    <element name="Expert of Tradition" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_EXPERT_OF_TRADITION">
+        <supports>Occult Rite</supports>
+        <prerequisite>10th level</prerequisite>
+        <requirements>[level:10]</requirements>
+        <description>
+            <p><em>Prerequisite: 10th level</em></p>
+            <p>You can select an additional skill you are proficiency in from Traditional Expertise. Your Proficiency Bonus is doubled for any ability check you make that use of the chosen Proficiency. If you have proficiency in none of the selected skills, you can instead gain proficiency in one of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Traditional Expertise" supports="ID_EXPERTISE_SKILL_ANIMAL_HANDLING|ID_EXPERTISE_SKILL_ARCANA|ID_EXPERTISE_SKILL_MEDICINE|ID_EXPERTISE_SKILL_NATURE|ID_EXPERTISE_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+
+    <element name="Forbidden Rites" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_FORBIDDEN_RITES">
+        <supports>Occult Rite</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>You learn the spell animate dead. It is an occultist spell for you. You cannot turn this spell into a ritual with Lost Ritual.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_ANIMATE_DEAD" />
+            </div>
+        </description>
+        <sheet>
+            <description>You cannot turn the animate dead spell into a ritual with Lost Ritual.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_DEAD" spellcasting="Occultist" prepared="true" />
+        </rules>
     </element>
 
     <element name="Lost Ritual" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_LOST_RITUAL">
@@ -946,6 +1040,24 @@
         </rules>
     </element>
 
+    <element name="Spatial Storage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SPATIAL_STORAGE">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You can convert a pocket, ring, hat, or bag into a spatial storage device, capable of carrying up to 5 x your Occultist level lbs, with 0.5 cubic foot of storage space x your Occulist level. For example, a level 5 occultist can store things that would fit in a 2.5 cubic area weighting up to 25 lbs in the storage. As action, you can send an item you are holding into the storage or retrieve an item from storage to your hand.</p>
+            <p class="indent">If lost, you can recreate it over a short rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">You can convert a pocket, ring, hat, or bag into a spatial storage device, capable of carrying up to {{spatial storage:weight}} lbs, with {{level:occultist:half}} cubic feet of storage space. As action, you can send an item you are holding into the storage or retrieve an item from storage to your hand. If lost, you can recreate it over a short rest.</description>
+        </sheet>
+        <rules>
+            <stat name="spatial storage:weight" value="level:occultist" />
+            <stat name="spatial storage:weight" value="level:occultist" />
+            <stat name="spatial storage:weight" value="level:occultist" />
+            <stat name="spatial storage:weight" value="level:occultist" />
+            <stat name="spatial storage:weight" value="level:occultist" />
+        </rules>
+    </element>
+
     <element name="Specialized Poisons" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SPECIALIZED_POISONS">
         <supports>Occult Rite</supports>
         <description>
@@ -966,27 +1078,33 @@
         </sheet>
     </element>
 
-    <element name="Vestaments of War (1)" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_VESTAMENTS_OF_WAR">
+    <element name="Vestaments of War" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_VESTAMENTS_OF_WAR">
         <supports>Occult Rite</supports>
         <description>
-            <p>You gain proficiency in light armor.</p>
+            <p>You gain proficiency with light armor, medium armor, and shields.</p>
         </description>
         <sheet display="false" />
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
         </rules>
     </element>
 
-    <element name="Vestaments of War (2)" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_VESTAMENTS_OF_WAR2">
-        <supports>Occult Rite</supports>
-        <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
+    <!--FEATS-->
+
+    <element name="Occult Specialist" type="Feat" source="KibblesTasty Occultist" id="ID_author_source_FEAT_OCCULT_SPECIALIST">
+        <prerequisite>Occultist</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_CLASS_OCCULTIST</requirements>
         <description>
-            <p>You gain proficiency in medium armor and shields.</p>
+            <p><em>Prerequisite: Occultist</em></p>
+            <p>You delve deeper into your tradition perfecting a new rite. You can select an Occult Rite from the Occultist class Occult Rite list. You cannot select a rite you already know, or one that requires a level restriction, even if you are already of that level. You can only select one from a subclass list if you are have at least one level in that subclass.</p>
         </description>
-        <sheet display="false" />
+        <sheet>
+            <description>You can select an Occult Rite from the Occultist class Occult Rite list.</description>
+        </sheet>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <select type="Class Feature" name="Occult Specialist" supports="Occult Rite" />
         </rules>
     </element>
 
@@ -1923,15 +2041,15 @@
     <append id="ID_PHB_SPELL_SUGGESTION">
 		<supports>Occultist</supports>
 	</append>
+    <append id="ID_WOTC_TCOE_SPELL_SUMMON_BEAST">
+		<supports>Occultist</supports>
+	</append>
     <append id="ID_PHB_SPELL_WEB">
 		<supports>Occultist</supports>
 	</append>
 
         <!--3RD LEVEL-->
 
-    <append id="ID_XGTE_SPELL_ANIMATE_DEAD">
-		<supports>Occultist</supports>
-	</append>
     <append id="ID_PHB_SPELL_BESTOW_CURSE">
 		<supports>Occultist</supports>
 	</append>
@@ -1987,6 +2105,9 @@
 		<supports>Occultist</supports>
 	</append>
     <append id="ID_PHB_SPELL_SPIRIT_GUARDIANS">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_WOTC_TCOE_SPELL_SUMMON_UNDEAD">
 		<supports>Occultist</supports>
 	</append>
     <append id="ID_PHB_SPELL_VAMPIRIC_TOUCH">
@@ -2065,6 +2186,9 @@
 		<supports>Occultist</supports>
 	</append>
     <append id="ID_XGTE_SPELL_SHADOW_OF_MOIL">
+		<supports>Occultist</supports>
+	</append>
+    <append id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL">
 		<supports>Occultist</supports>
 	</append>
     <append id="ID_XGTE_SPELL_VITRIOLIC_SPHERE">

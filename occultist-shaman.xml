@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     
+    <!--VERSION 1.1-->
+
     <element name="Shaman" type="Archetype" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN">
         <supports>Occult Tradition</supports>
         <description>
@@ -115,18 +117,6 @@
         </rules>
     </element>
 
-    <element name="Detonate Spirit" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DETONATE_SPIRIT">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
-        <description>
-            <p>As an action while you have a manifested spirit, you can cause it to erupt in a massive burst of power. All creatures within 10 feet of it must make a Dexterity saving throw. A target takes damage equal to twice the manifested damage of spirit on a failed save. If the spirit was empowered with a spell slot, a target takes half as much damage on a successful one.</p>
-            <p class="indent">The spirit is immediately released and disappears.</p>
-        </description>
-        <sheet>
-            <description action="Action">As an action while you have a manifested spirit, you can cause it to erupt in a massive burst of power. All creatures within 10 feet of it must make a Dexterity saving throw. A target takes damage equal to twice the manifested damage of spirit on a failed save. If the spirit was empowered with a spell slot, a target takes half as much damage on a successful one. The spirit is immediately released and disappears.</description>
-        </sheet>
-    </element>
-
     <element name="Dance of the Spirits" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DANCE_OF_THE_SPIRITS">
         <supports>Occult Rite</supports>
         <prerequisite>5th level</prerequisite>
@@ -141,6 +131,19 @@
         </sheet>
     </element>
 
+    <element name="Elemental Weapons" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ELEMENTAL_WEAPONS">
+        <supports>Occult Rite</supports>
+        <prerequisite>fists of fire or ice weapon cantrip</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, (ID_KTH_OCCULTIST_SPELL_FISTS_OF_FIRE|ID_KTH_OCCULTIST_SPELL_ICE_WEAPON)</requirements>
+        <description>
+            <p><em>Prerequisite: fists of fire or ice weapon cantrip</em></p>
+            <p>When you create a weapon with fists of fire or ice weapon the damage die of the weapon is increased by one size (for example, from a d6 to a d8).</p>
+        </description>
+        <sheet>
+            <description>When you create a weapon with fists of fire or ice weapon the damage die of the weapon is increased by one size (for example, from a d6 to a d8).</description>
+        </sheet>
+    </element>
+
     <element name="Energized Weapon" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ENERGIZED_WEAPON">
         <supports>Occult Rite</supports>
         <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
@@ -150,23 +153,6 @@
         <sheet>
             <description>While you have an empowered spirit bonded, you can pour all of it's energy into your weapon (recalling it if it is manifested). The next attack with that weapon adds twice the additional damage from the spirit, but the bond immediately expires.</description>
         </sheet>
-    </element>
-
-    <element name="Fury of the Flames" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_FURY_OF_THE_FLAMES">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
-        <description>
-            <p>You learn the fists of fire spell. When you cast this spell, the damage of your fists as natural weapons becomes 1d8 instead of 1d6.</p>
-            <div class="reference">
-                <div element="ID_KTH_OCCULTIST_SPELL_FISTS_OF_FIRE" />
-            </div>
-        </description>
-        <sheet>
-            <description>When you cast fists of fire, the damage of your fists as natural weapons becomes 1d8 instead of 1d6.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_FISTS_OF_FIRE" />            
-        </rules>
     </element>
 
     <element name="Guidance of the Spirits" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_GUIDANCE_OF_THE_SPIRITS">
@@ -180,23 +166,6 @@
         </sheet>
     </element>
 
-    <element name="Piercing Cold" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PIERCING_COLD">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
-        <description>
-            <p>You learn the ice weapon spell. When you cast this spell, the size of the damage die of any weapon it creates is increased by d2 (for example, from a d6 to a d8).</p>
-            <div class="reference">
-                <div element="ID_KTH_OCCULTIST_SPELL_ICE_WEAPON" />
-            </div>
-        </description>
-        <sheet>
-            <description>When you cast ice weapon, the size of the damage die of any weapon it creates is increased by d2.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_ICE_WEAPON" />            
-        </rules>
-    </element>
-
     <element name="Mistwalker" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MISTWALKER">
         <supports>Occult Rite</supports>
         <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
@@ -205,6 +174,19 @@
         </description>
         <sheet>
             <description>You can see through heavy obscurement when the obscurement is caused by fog, mist, or smoke, natural or otherwise. While you are shrouded by fog, mist, or smoke, you have half cover.</description>
+        </sheet>
+    </element>
+
+    <element name="Enhanced Bond" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ENHANCED_BOND">
+        <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:occultist:7]</requirements>
+        <prerequisite>7th level</prerequisite>
+        <description>
+            <p><em>Prerequisite: 7th level</em></p>
+            <p>When you are empowered by a spirit called by a 1st level spell slot or higher, you can add the level of the spell slot spent to your Strength, Dexterity, and Constitution saving throws.</p>
+        </description>
+        <sheet>
+            <description>When you are empowered by a spirit called by a 1st level spell slot or higher, you can add the level of the spell slot spent to your Strength, Dexterity, and Constitution saving throws.</description>
         </sheet>
     </element>
 
@@ -391,6 +373,19 @@
         <sheet>
             <description action="Bonus Action">While you have a spirit bonded to you, as a bonus action you can cause it to emanate power, causing all creatures within 5 feet of you (or it if it is manifested at another location) to make a Wisdom saving throw against your spell save DC, or take damage equal to its manifested damage.</description>
         </sheet>
+    </element>
+
+    <element name="Rite of Prowess" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_RITE_OF_PROWESS">
+        <supports>Occult Rite</supports>
+        <description>
+            <p>You can select one fighting style from Dueling, Two-Weaponing Fighting, or Great Weapon Fighting.</p>
+        </description>
+        <sheet>
+            <sheet display="false" />
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Rite of Prowess" supports="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING|ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING" />
+        </rules>
     </element>
 
     <element name="Shaman's Touch" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SHAMANS_TOUCH">
