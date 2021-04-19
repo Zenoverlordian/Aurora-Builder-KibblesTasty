@@ -178,8 +178,150 @@
         </sheet>
     </element>
 
+    <!--GIFTED-->
 
-    <p></p>
+    <element name="Gifted" type="Archetype" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_GIFTED">
+        <supports>Warlords Presence</supports>
+        <description>
+            <p>A Gifted is a unique Warlord who's presence stems from their 'gift' of Psionic powers. Like any Psion, the root of their power may vary, and it can come in several different expressions, but in all cases they leverage the unique gifts to wield an mysterious and effective presence that aids their allies immeasurable.</p>
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_THE_GIFT" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PSIONIC_DISCIPLINE" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PSIONIC_BATTLEFIELD_PRESENCE" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_GIFTED_LEADER" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_BATTLE_MIND" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PERFECT_CONVERGENCE" />
+        </description>
+        <sheet display="false">
+            <description>A Gifted is a unique Warlord who's presence stems from their 'gift' of Psionic powers.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_THE_GIFT" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PSIONIC_DISCIPLINE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PSIONIC_BATTLEFIELD_PRESENCE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_GIFTED_LEADER" level="11" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_BATTLE_MIND" level="15" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PERFECT_CONVERGENCE" level="18" />
+        </rules>
+    </element>
+    <element name="The Gift" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_THE_GIFT">
+        <description>
+            <p>Starting at 1st level when you take this Presence, you must first select your psionic gift from the following options. Your gift will impact several of your features.</p>
+            <p class="indent"><strong><em>Enhnacement</em></strong> You can bring out the inner strengh of yourself and others. You gain proficiency in Athletics and gain access to the Enhancing Skill psionic power.</p>
+            <p class="indent"><strong><em>Precongnition</em></strong> You can see flashes of the future. You gain proficiency in Perception and gain access to the Prescience psionic power.</p>
+            <p class="indent"><strong><em>Telepathy</em></strong> Other minds are an open book to you. You gain proficiency in Insight skill and gain access to the Telepathic Communication psionic power.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="The Gift" supports="Warlord The Gift" />
+        </rules>
+    </element>
+    <element name="Enhancement" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_THE_GIFT_ENHANCE">
+        <supports>Warlord The Gift</supports>
+        <description>
+            <p>You can bring out the inner strengh of yourself and others. You gain proficiency in Athletics and gain access to the Enhancing Skill psionic power.</p>
+        </description>
+        <sheet>
+            <description level="1">You gain access to the Enhancing Surge psionic power.</description>
+            <description level="15" usage="1/Long Rest">When an ally within 60 feet fails a Strength or Constitution Saving throw, you can allow them to pass instead. If you are rolling a Saving Throw against the same effect you cause an ally to pass their save for, you gain advantage on your Saving Throw.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SURGE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT" level="3" />
+        </rules>
+    </element>
+    <element name="Precognition" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_THE_GIFT_PRECOG">
+        <supports>Warlord The Gift</supports>
+        <description>
+            <p>You can see flashes of the future. You gain proficiency in Perception and gain access to the Prescience psionic power.</p>
+        </description>
+        <sheet>
+            <description level="1">You gain access to the Prescience psionic power.</description>
+            <description level="15" usage="1/Long Rest">When an ally within 60 feet fails a Dexterity or Charisma saving throw, you can allow them to pass instead. If you are rolling a Saving Throw against the same effect you cause an ally to pass their save for, you gain advantage on your Saving Throw.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_SEEING" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION" level="3" />
+        </rules>
+    </element>
+    <element name="Telepathy" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_THE_GIFT_TELEPATH">
+        <supports>Warlord The Gift</supports>
+        <description>
+            <p>Other minds are an open book to you. You gain proficiency in Insight skill and gain access to the Telepathic Communication psionic power.</p>
+        </description>
+        <sheet>
+            <description level="1">You gain access to the Telepathic Communication psionic power.</description>
+            <description level="15" usage="1/Long Rest">When an ally within 60 feet fails a Wisdom or Intelligence saving throw, you can allow them to pass instead. If you are rolling a Saving Throw against the same effect you cause an ally to pass their save for, you gain advantage on your Saving Throw.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY_TELEPATHIC_INTRUSION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY" level="3" />
+        </rules>
+    </element>
+    <element name="Psionic Discipline" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PSIONIC_DISCIPLINE">
+        <description>
+            <p>Starting at 3rd, your gift evolves to a full expression of your powers. You gain the access to the full Discipline (including alternate effect spells) associated with your Gift (Enhancement, Precognition, or Telepathy).</p>
+            <p class="indent">You can use Leadership Dice as Psi Points, with a limit of 1 Leadership Die. This limit increases to 2 Leadership Dice at level 5, 3 Leadership Dice at level 9, 4 Leadership Dice at level 14, and 5 Leadership Dice at level 17.</p>
+            <p class="indent">Your Psionic Ability modifier is Intelligence.</p>
+            <center>
+                <p><strong>Psionic save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Psionic attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+        </description>
+        <sheet>
+            <description level="3">You can use Leadership Dice as Psi Points, with a limit of 1 Leadership Dice (DC {{psiwar:dc}}).</description>
+            <description level="5">You can use Leadership Dice as Psi Points, with a limit of 2 Leadership Dice (DC {{psiwar:dc}}).</description>
+            <description level="9">You can use Leadership Dice as Psi Points, with a limit of 3 Leadership Dice (DC {{psiwar:dc}}).</description>
+            <description level="14">You can use Leadership Dice as Psi Points, with a limit of 4 Leadership Dice (DC {{psiwar:dc}}).</description>
+            <description level="17">You can use Leadership Dice as Psi Points, with a limit of 5 Leadership Dice (DC {{psiwar:dc}}).</description>
+        </sheet>
+        <rules>
+            <stat name="psi:points" value="leadership:num" bonus="base" />
+            <stat name="psiwar:dc" value="8" />
+			<stat name="psiwar:dc" value="proficiency" />
+			<stat name="psiwar:dc" value="intelligence:modifier" />
+        </rules>
+    </element>
+    <element name="Psionic Battlefield Presence" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PSIONIC_BATTLEFIELD_PRESENCE">
+        <description>
+            <p>Starting at 7th level, when you use your action on a Psionic Disicpline Power, you can grant one attack from Battlefield Presence as part of the same action.</p>
+        </description>
+        <sheet>
+            <description>When you use your action on a Psionic Disicpline Power, you can grant one attack from Battlefield Presence as part of the same action.</description>
+        </sheet>
+    </element>
+    <element name="Gifted Leader" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_GIFTED_LEADER">
+        <description>
+            <p>Starting at 11th level, your gift and talent as a leader work in perfect harmony, each emphasizing the other. When you spend one or more Leadership Dice on a psionic discipline power, you gain one special Leadership Die that you can only spend on Rallying Mark, Overwhelming Mark, or Helpful Word. This die expires if unspent at the end of your next turn; you can only have one of these special Leadership Dice at a time.</p>
+            <p class="indent">Additionally, when you spend a Leadership Die on the power of Psionic Discipline, the first die you spend counts as twp Psi Points for the purposes of the Power.</p>
+        </description>
+        <sheet>
+            <description level="11">When you spend one or more Leadership Dice on a psionic discipline power, you gain one special Leadership Die that you can only spend on Rallying Mark, Overwhelming Mark, or Helpful Word. This die expires if unspent at the end of your next turn; you can only have one of these special Leadership Dice at a time. Additionally, when you spend a Leadership Die on the power of Psionic Discipline, the first die you spend counts as two Psi Points for the purposes of the Power.</description>
+            <description level="18">When you spend one or more Leadership Dice on a psionic discipline power, you gain one special Leadership Die that you can only spend on Rallying Mark, Overwhelming Mark, or Helpful Word. This die expires if unspent at the end of your next turn; you can only have one of these special Leadership Dice at a time. Additionally, when you spend a Leadership Die on the power of Psionic Discipline, the first die you spend counts as three Psi Points for the purposes of the Power.</description>
+        </sheet>
+    </element>
+    <element name="Battle Mind" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_BATTLE_MIND">
+        <description>
+            <p>Starting at 15th level, the battle around you becomes part of you, and you become part of it, connected by your Psionic power. You gain one of the following benefits based on your gift.</p>
+            <p class="indent"><strong><em>Enhnacement</em></strong> You can feel the strengthen within your allies, and bolster it when it fails. When an ally within 60 feet fails a Strength or Constitution Saving throw, you can allow them to pass instead.</p>
+            <p class="indent"><strong><em>Precongnition</em></strong> Your foresee what will misfortunate will befall your allies before it happens. When an ally within 60 feet fails a Dexterity or Charisma saving throw, you can allow them to pass instead.</p>
+            <p class="indent"><strong><em>Telepathy</em></strong> You are with your allies in their mind, giving them a second chance. When an ally within 60 feet fails a Wisdom or Intelligence saving throw, you can allow them to pass instead.</p>
+            <p>If you are rolling a Saving Throw against the same effect you cause an ally to pass their save for, you gain advantage on your Saving Throw. Once you use the power granted by this feature, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Perfect Convergence" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_GIFTED_PERFECT_CONVERGENCE">
+        <description>
+            <p>Starting at 18th level, you can use your powers in perfect synchronization with the influence of your presence. You can use Battlefield Presence to grant one attack even when casting a spell from the Alternate Effects of your Psionic Discipline.</p>
+            <p class="indent">Additionally, when you spend a Leadership Die on the power of Psionic Discipline, the first die you spend counts as three Psi Points for the purposes of the Power.</p>
+        </description>
+        <sheet>
+            <description>You can use Battlefield Presence to grant one attack even when casting a spell from the Alternate Effects of your Psionic Discipline.</description>
+        </sheet>
+    </element>
+
     <p class="indent"></p>
     
 

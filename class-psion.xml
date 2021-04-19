@@ -140,7 +140,7 @@
             <description usage="{{psi:points}}/Short/Long rest">You have {{psi:points}} Psi Points and your Psi DC is {{psi:dc}}. You can spend up to {{level:psion:half:up}} Psi Points at a time.</description>
         </sheet>
         <rules>
-            <stat name="psi:points" value="level:psion" />
+            <stat name="psi:points" value="level:psion" bonus="base" />
             <stat name="psi:dc" value="8" />
 			<stat name="psi:dc" value="proficiency" />
 			<stat name="psi:dc" value="intelligence:modifier" />
@@ -1121,7 +1121,7 @@
         <description>
             <p>You gain the ability to impart part of your mind into crystal. You can expend 2 psi points to cast the <em>find familiar</em> spell but your familiar takes on the statics of a psi crystal and the material component required is a crystal worth 10 gp instead of the normal material components. The Psi Crystal gains your mental stats. You can use Psionic Disciplines without a range of Self through your Psi Crystal is if you were standing in its location. If the psi crystal is destroyed, you gain its memories as your own. While you have a Psi Crystal active, as a bonus action, you can deactivate it to regain 2 expended psi points.</p>
             <div class="reference">
-				<div element="ID_KIBBLESTASTY_PSION_COMPANION_PSI_CRYSTAL" />
+				<div element="ID_KIBBLESTASTY_PSION_TALENT_PSI_CRYSTAL_BLOCK" />
 			</div>
             <p>When you summon a Psi crystal, you can store a fragment of your personality, that you can then release by shattering the crystal. Select one of the following when summoning a psi crystal.</p>
             <p><strong>Courage.</strong> When you make a saving throw against the Frightened condition, you can use your reaction to shatter the crystal to gain advantage on the save.</p>
@@ -1130,32 +1130,30 @@
             <p><strong>Sympathy.</strong> When your Psi crystal is within 30 feet of you and another creature, if that creature takes damage, you can use your reaction to shatter the crystal releasing that emotion and granting the creature resistance to that damage and take an equal amount of damage to the damage it takes.</p>
         </description>
         <sheet>
-            <description usage="Psi">You can expend 2 psi points to cast the <em>find familiar</em> spell but your familiar takes on the statics of a psi crystal and the material component required is a crystal worth 10 gp instead of the normal material components. The Psi Crystal gains your mental stats. You can use Psionic Disciplines without a range of Self through your Psi Crystal is if you were standing in its location. If the psi crystal is destroyed, you gain its memories as your own. While you have a Psi Crystal active, as a bonus action, you can deactivate it to regain 2 expended psi points.</description>
+            <description usage="Psi">You can expend 2 psi points to cast the <em>find familiar</em> spell but your familiar takes on the statics of a psi crystal and the material component required is a crystal worth 10 gp instead of the normal material components. The Psi Crystal gains your mental stats. You can use Psionic Disciplines without a range of Self through your Psi Crystal is if you were standing in its location. If the psi crystal is destroyed, you gain its memories as your own. While you have a Psi Crystal active, as a bonus action, you can deactivate it to regain 2 expended psi points. When you summon a Psi crystal, you can store a fragment of your personality, that you can then release by shattering the crystal.</description>
         </sheet>
     </element>
-    <element name="Psi Crystal" type="Companion" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_COMPANION_PSI_CRYSTAL">
-		<description />
-		<setters>
-			<set name="strength">1</set>
-			<set name="dexterity">10</set>
-			<set name="constitution">10</set>
-			<set name="intelligence">10</set>
-			<set name="wisdom">10</set>
-			<set name="charisma">10</set>
-			<set name="ac">20</set>
-			<set name="hp">2 (1d4)</set>
-			<set name="speed">fly(hover) 20 ft.</set>
-			<set name="languages">understands the languages of its creator but can't speak</set>
-			<set name="type">Construct</set>
-            <set name="skills">Perception +4</set>
-            <set name="damage vulnerabilities">bludgeoning</set>
-            <set name="damage resistances">piercing, slashing</set>
-            <set name="condition immunities">blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned</set>
-			<set name="size">Tiny</set>
-            <set name="senses">blindsight 60 ft. (blind beyond this radius), passive Perception 14</set>
-			<set name="alignment">unaligned</set>
-			<set name="challenge">1/2</set>
-		</setters>
+    <element name="Psi Crystal" type="Information" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_PSI_CRYSTAL_BLOCK">
+		<description>
+			<p><em>Tiny construct, unaligned</em></p>
+			<ul class="unstyled mb">
+			<li><strong>Armor Class</strong> 20</li>
+			<li><strong>Hit Points</strong> 2 (1d4)</li>
+			<li><strong>Speed</strong> fly (hover) 20 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>1 (-5)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Skills</strong> Perception +4</li>
+                <li><strong>Damage Vulnerabilities</strong> bludgeoning</li>
+                <li><strong>Damage Resistances</strong> piercing, slashing</li>
+                <li><strong>Condition Immunities</strong> blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned</li>
+				<li><strong>Senses</strong> blindsight 60 ft. (blind beyond this radius), passive Perception 14</li>
+				<li><strong>Languages</strong> understands the languages of its creator but can't speak</li>
+			</ul>
+		</description>
 	</element>
     <element name="Potent Psionics" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_POTENT_PSIONICS">
         <supports>Psionic Talent</supports>
@@ -1260,7 +1258,7 @@
     <element name="Telekinetic Weapons" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_TELEKINETIC_WEAPONS">
         <supports>Psionic Talent</supports>
         <prerequisite>Telekinesis Discipline</prerequisite>
-        <requirements>ID_KIBBLESTASTY_PSION_POWER_TELEKINETIC_WEAPONS</requirements>
+        <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS</requirements>
         <description>
             <p><em>Prerequisite: Telekinesis Discipline</em></p>
             <p>You gain the Telekinetic Weapon psionic power as part of your Telekinetic Discipline (in addition to your other psionic powers), giving the ability to fling weapons as per the power.</p>
@@ -1589,6 +1587,90 @@
     <append id="ID_PHB_SPELL_TIME_STOP">
 		<supports>Psion_KTH</supports>
 	</append>
+
+    <!--FEATS-->
+
+    <element name="Psionic Mind" type="Feat" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_FEAT_PSIONIC_MIND">
+        <requirements>[psi:points:1]|ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_SOUL_KNIFE_PSIONIC_KI</requirements>
+        <prerequisite>The ability to use at least one Psionic Discipline</prerequisite>
+        <description>
+            <p><em>Prerequisite: The ability to use at least one Psionic Discipline</em></p>
+            <p>You tap deeper into your psionic potential drawing out a new talent. You can select a psionic talent from the Psion class psionic talent list. You cannot select a talent you already know, or one that requires a level restriction, even if you are already of that level.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Psionic Mind" supports="Psionic Talent" />
+        </rules>
+    </element>
+
+    <element name="Psionic Adept" type="Feat" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_FEAT_PSIONIC_ADEPT">
+        <description>
+            <p>You develop a minor grasp of psionic power, either uncovering an innate potential within yourself, through contact with a psionic source, or through training. You gain one of the psionic disciplines of the Psion class, gaining the attached psionic feature and psionic power, but you do not gain use of any associated spells when gain a Discipline from this feat.</p>
+            <p class="indent">You gain 1 psi point that you can use to empower the Discipline. You regain use of this Psi Point when you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest">You gain one of the psionic disciplines of the Psion class, gaining the attached psionic feature and psionic power, but you do not gain use of any associated spells when gain a Discipline from this feat. You gain 1 psi point that you can use to empower the Discipline. You regain use of this Psi Point when you complete a short or long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Psionic Adept" supports="Psionic Discipline" />
+            <stat name="psi:points" value="1" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Inner Power" type="Feat" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_FEAT_INNER_POWER">
+        <requirements>[psi:points:1]|[ki:points:1]</requirements>
+        <prerequisite>At least 1 psi or ki point</prerequisite>
+        <description>
+            <p><em>Prerequisite: At least 1 psi or ki point</em></p>
+            <p>Your body is powered by the inner powers that course through it. Your maximum psi or ki points (if you have both, your choice of which) increases by one.</p>
+            <p class="indent">At the end of your turn after expending one or more psi or ki points during your turn (not counting temporary or free points, such as those from Psionic Mastery), you heal for a number of hit points equal to the psi or ki points spent.</p>
+        </description>
+        <sheet>
+            <description>At the end of your turn after expending one or more psi or ki points during your turn (not counting temporary or free points, such as those from Psionic Mastery), you heal for a number of hit points equal to the psi or ki points spent.</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Inner Power" supports="Psionic Inner Power" />
+        </rules>
+    </element>
+    <element name="Inner Power (Psi)" type="Feat Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_FEAT_INNER_POWER_PSI">
+        <supports>Psionic Inner Power</supports>
+        <requirements>[psi:points:1]</requirements>
+        <description>
+            <p>Your maximum psi points increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="psi:points" value="1" />
+        </rules>
+    </element>
+    <element name="Inner Power (Ki)" type="Feat Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_FEAT_INNER_POWER_KI">
+        <requirements>[ki:points:1]</requirements>
+        <supports>Psionic Inner Power</supports>
+        <description>
+            <p>Your maximum ki points increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="ki:points" value="1" />
+        </rules>
+    </element>
+
+    <element name="War Psion" type="Feat" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_FEAT_WAR_PSION">
+        <requirements>[psi:points:1]|ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_WAY_SOUL_KNIFE_PSIONIC_KI</requirements>
+        <prerequisite>The ability to use at least one Psionic Discipline</prerequisite>
+        <description>
+            <p><em>Prerequisite: The ability to use at least one Psionic Discipline</em></p>
+            <p>You have utilizing psionics in the midst of combat, learning techniques that grant you the following benefits:</p>
+            <ul>
+                <li>You have advantage on Constitution saving throws that you make to maintain your concentration on a psionic ability when you take damage.</li>
+                <li>You can perform the somatic components of psionic abilities even when you have weapons or a shield in one or both hands.</li>
+                <li>When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to use a psionic discipline power or spell targeting the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have advantage on Constitution saving throws that you make to maintain your concentration on a psionic ability when you take damage. You can perform the somatic components of psionic abilities even when you have weapons or a shield in one or both hands. When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to use a psionic discipline power or spell targeting the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature.</description>
+        </sheet>
+    </element>
 
     <!--SOURCE-->
 
