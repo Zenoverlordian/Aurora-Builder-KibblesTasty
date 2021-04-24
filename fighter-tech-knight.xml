@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <!--VERSION 1.1-->
+	<element name="Tech Knight" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_TECH_KNIGHT">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>A Tech Knight believes that it is neither brains nor brawn that determine the best fighter, but the combination thereof. Why limit yourself to what nature has provided you when you can supplement your combat superiority in unique and inventive ways that give you the edge?</p>
+            <p class="indent">You build and innovate on the cutting edge... and use that edge to hew through your foes. There are few things more dangerous than weaponized creativity in the hands of someone that knows how to use it.</p>
+            <p class="indent">A Tech Knight could be called an inventor that opened the door of innovation, found the deadliest thing they could invent, and closed it once more, but that wouldn't be accurate - they innovate continuously, improving their art, just with a highly specialized focus.</p>
+            <p class="indent">Some perhaps adventure and fight to test their weapons, others perhaps turned to innovation to overcome some obstacle or seek the change the world, and others still care little for the science and engineering of the weapon, and merely cobbled together something to annihilate their foes.</p>
+			<div element="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_BRUTAL_INVENTION" />
+			<div element="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_TINKERS_PROFICIENCY" />
+			<div element="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_OPTIONS" />
+			<div element="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CHAINS_OF_WAR" />
+			<div element="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_REACTIVE_ARMOR" />
+			<div element="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_ARMS_RACE" />
+		</description>
+		<sheet display="false">
+			<description>A Tech Knight could be called an inventor that opened the door of innovation, found the deadliest thing they could invent, and closed it once more, but that wouldn't be accurate - they innovate continuously, improving their art, just with a highly specialized focus.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_BRUTAL_INVENTION" level="3" />
+			<grant type="Archetype Feature" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_TINKERS_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_OPTIONS" level="7" />
+			<grant type="Archetype Feature" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CHAINS_OF_WAR" level="10" />
+			<grant type="Archetype Feature" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_REACTIVE_ARMOR" level="15" />
+			<grant type="Archetype Feature" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_ARMS_RACE" level="18" />
+		</rules>
+	</element>
+    <element name="Brutal Invention" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_BRUTAL_INVENTION">
+        <description>
+            <p>When you choose this archetype at 3rd level, you start to build tools to help you dominate the battlefield in unique ways. You can build one weapon. Select one weapon from the below list:</p>
+            <table>
+                <thead>
+                    <tr><td>Weapon</td><td>Damage</td><td>Properties</td></tr>
+                </thead>
+                <tr><td>Chainblade</td><td>2d4 slashing</td><td>Versatile (3d4), Special</td></tr>
+                <tr><td>Ramming Gauntlet</td><td>1d6 bludgeoning</td><td>Light, Special</td></tr>
+                <tr><td>Repeating Hand Crossbow</td><td>1d6 piercing</td><td>Ammunition (30/120), Light, Special</td></tr>
+                <tr><td>Ricocheting Weapon</td><td>1d8 bludgeoning</td><td>Finesse, Thrown (30/90), Special</td></tr>
+                <tr><td>Transforming Weapon</td><td>2d6/1d8</td><td>Two-Handed, Heavy, Special</td></tr>
+            </table>
+            <p class="indent">You make the weapon you select and gain proficiency with it. When selecting a Ramming Gauntlet, you can make a matched set of them. Only you have proficiency with this weapon.</p>
+            <h5>SPECIAL PROPERTIES</h5>
+            <p class="indent"><strong><em>Chainblade.</em></strong> When you roll damage dice for this weapon, you can reroll as many damage dice as you would like once per attack, but you must use the new roll any dice rolled. After hitting an attack with this weapon as part of the Attack action, if you have additional attacks you can make as part of the action, you can forgo them to deal an additional 3d4 slashing damage per attack forgone.</p>
+            <p class="indent"><strong><em>Ramming Gauntlet.</em></strong> When you make an attack roll, you can choose to forgo adding your Proficiency bonus to the attack roll. If the attack hits, you can add double your Proficiency bonus to the damage roll.</p>
+            <p class="indent"><strong><em>Repeating Hand Crossbow.</em></strong> This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</p>
+            <p class="indent"><strong><em>Ricocheting Weapon.</em></strong> When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for targets hit after the first. This weapon returns to your hand after you make an attack with it using the Thrown property.</p>
+            <p class="indent"><strong><em>Transforming Weapon.</em></strong> As a bonus action, you can convert this from a 2d6 melee weapon to a 1d8 ranged weapon with the Ammunition (100/400) property. When you convert the weapon, it becomes overcharged with power, and the next time you roll damage with it before the end of your turn you deal an additional 1d6 lightning damage. Select the damage type when creating this weapon from bludgeoning, piercing, slashing, or lightning damage. You can select a different damage type for the melee and ranged forms.</p>
+            <h5>REV UP</h5>
+            <p>When hit an attack with your Brutal Invention, you can overcharge with an effect based on your Brutal Invention selection, granting it an additional benefit:</p>
+            <ul>
+                <li><strong><em>Reckless Power (Chainblade):</em></strong> The weapon's damage dice become d6's for that attack (including the special property if activated).</li>
+                <li><strong><em>Excessive Force (Ramming Gauntlet):</em></strong> The target is knocked 10 feet backwards.</li>
+                <li><strong><em>Full Auto (Repeating Hand Crossbow):</em></strong> You immediately make single additional attack as part of the same action, rolling three d20s for the attack roll and taking the lowest.</li>
+                <li><strong><em>Overcharge (Transforming Weapon):</em></strong> You deal an additional 1d6 lightning damage.</li>
+                <li><strong><em>Hypervolicty (Ricocheting Weapon):</em></strong> The weapon bounces to an additional target.</li>
+            </ul>
+            <p class="indent">You can use this ability a number of times equal to your Intelligence modifier, regaining all uses on a short or long rest.</p>
+            <h5>WEAPON IMPROVEMENT</h5>
+            <p>Additionally, over the course of a long rest, you can destroy a +1/+2/+3 magic weapon to transfer the bonus to attack and damage rolls to your Brutal Invention weapon. At the DMs discretion, other properties can be transferred (it is recommended that most cannot, but a final decision is up to the DM).</p>
+        </description>
+        <sheet>
+            <description>Over the course of a long rest, you can destroy a +1/+2/+3 magic weapon to transfer the bonus to attack and damage rolls to your Brutal Invention weapon. At the DMs discretion, other properties can be transferred (it is recommended that most cannot, but a final decision is up to the DM).</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Brutal Invention" supports="Tech Knight Brutal Invention" />
+        </rules>
+    </element>
+    <element name="Tinkers Proficiency" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_TINKERS_PROFICIENCY">
+        <description>
+            <p>Additionally at 3rd level, you gain proficiency with Tinker's Tools. If you already have proficiency in Tinker's tools, you can select another artisan tool to gain proficiency in.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Tinker's Proficiency" supports="Tool" default="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Contingent Options" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_OPTIONS">
+        <description>
+            <p>At 7th level, you extend your innovation of the art of war to give yourself a unique advantage from your gear. For any option that has a spell save DC, your save is 8 + your Intelligence modifier + your proficiency bonus. Select one of the following options:</p>
+            <ul>
+                <li><strong><em>Charged Armor.</em></strong> As a bonus action, you can juice your armor with power with the effect of lightning charged.</li>
+                <li><strong><em>Rocket Boots.</em></strong> As a bonus action you can activate these do give yourself a jumping distance equal to your movement speed until the end of the turn. You take no fall damage from this movement, but creatures of your choice within 5 feet of where you land take 2d4 fire damage. Alternatively, you can use this to cast feather fall targeting only yourself.</li>
+                <li><strong><em>Belt.</em></strong> You can use this to cast enlarge/reduce without expend a spell slot.</li>
+                <li><strong><em>Flame Thrower.</em></strong> As an action or in place of an attack as part of the Attack action, you can use this to cast burning hands as a 2nd level spell without expending a spell slot.</li>
+                <li><strong><em>Force Shield.</em></strong> You can deploy a temporary field field, with the effect of casting shield.</li>
+                <li><strong><em>Thunder Grenade.</em></strong> As an action or in place of an attack as part of the Attack action, you can use this to cast shatter without expending a spell slot.</li>
+            </ul>
+            <p class="indent">You can use the selected item once, after which you must complete a short or long rest before you can use it again.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Contingent Options" supports="Tech Knight Contingent" />
+        </rules>
+    </element>
+    <element name="Chains of War" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CHAINS_OF_WAR">
+        <description>
+            <p>Starting at 10th level, you gain one of the following options:</p>
+            <ul>
+                <li><strong><em>Returning Chain.</em></strong> When you throw the weapon at a target 30 or less feet away, you can return the weapon to your hand. If the weapon doesn't have the thrown property, it gains the Thrown (10/30 property).</li>
+                <li><strong><em>Grappling Hook.</em></strong> As an action or in place of an attack as part of the Attack action, you may target a surface, object or creature within 20 feet. If the target is Small or Smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it. Alternatively, if the target is Medium or larger, you can choose to be pulled to it, however, this does not grapple it. Attacks of opportunity generated by this movement have disadvantage.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Chains of War" supports="Tech Knight Chains" />
+        </rules>
+    </element>
+
+    <element name="Returning Chain" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CHAINS_OF_WAR_RETURNING">
+        <supports>Tech Knight Chains</supports>
+        <description>
+            <p>When you throw the weapon at a target 30 or less feet away, you can return the weapon to your hand. If the weapon doesn't have the thrown property, it gains the Thrown (10/30 property).</p>
+        </description>
+        <sheet>
+            <description>When you throw the weapon at a target 30 or less feet away, you can return the weapon to your hand. If the weapon doesn't have the thrown property, it gains the Thrown (10/30 property).</description>
+        </sheet>
+    </element>
+    <element name="Grappling Hook" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CHAINS_OF_WAR_GRAPPLING">
+        <supports>Tech Knight Chains</supports>
+        <description>
+            <p>As an action or in place of an attack as part of the Attack action, you may target a surface, object or creature within 20 feet. If the target is Small or Smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it. Alternatively, if the target is Medium or larger, you can choose to be pulled to it, however, this does not grapple it. Attacks of opportunity generated by this movement have disadvantage.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action or in place of an attack as part of the Attack action, you may target a surface, object or creature within 20 feet. If the target is Small or Smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it. Alternatively, if the target is Medium or larger, you can choose to be pulled to it, however, this does not grapple it. Attacks of opportunity generated by this movement have disadvantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Reactive Armor" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_REACTIVE_ARMOR">
+        <description>
+            <p>Starting 15th level, you can tune your armor during a long rest to grant specialized defense. At the end of a long rest, select one damage type and gain resistance to that damage type until the end of your next long rest.</p>
+        </description>
+        <sheet>
+            <description>At the end of a long rest, select one damage type and gain resistance to that damage type until the end of your next long rest.</description>
+        </sheet>
+    </element>
+    <element name="Arms Race" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_ARMS_RACE">
+        <description>
+            <p>Starting at 18th level, you can select two additional options from any of Brutal Invention, Contingent Options, and Chains of War (two options total, selected from any of those features).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Arms Race" supports="Tech Knight Chains || Tech Knight Contingent || Tech Knight Brutal Invention" number="2" />
+        </rules>
+    </element>
+
+    <!--BRUTAL INVENTION-->
+
+    <element name="Reckless Power (Chain Blade)" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_BRUTAL_INVENTION_CHAINBLADE">
+        <supports>Tech Knight Brutal Invention</supports>
+        <description>
+            <p>On hit, the weapon's damage dice become d6's for that attack (including the special property if activated).</p>
+        </description>
+        <sheet>
+            <description usage="{{intelligence:modifier}}/Short Rest">On hit, the weapon's damage dice become d6's for that attack (including the special property if activated).</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_CHAIN_BLADE" />
+        </rules>
+    </element>
+    <element name="Chain Blade" type="Weapon" source="KibblesTasty's Subclasses" id="ID_KTH_TECH_KNIGHT_ITEM_CHAIN_BLADE">
+        <supports>ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_KTH_WEAPON_PROPERTY_SPECIAL_CHAIN_BLADE, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+        <description>
+            <p></p>
+            <div element="ID_KTH_WEAPON_PROPERTY_SPECIAL_CHAIN_BLADE" />
+        </description>
+        <sheet>
+            <description>When you roll damage dice for this weapon, you can reroll as many damage dice as you would like once per attack, but you must use the new roll any dice rolled. After hitting an attack with this weapon as part of the Attack action, if you have additional attacks you can make as part of the action, you can forgo them to deal an additional 3d4 slashing damage per attack forgone.</description>
+        </sheet>
+        <setters>
+            <set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">2d4</set>
+            <set name="versatile">3d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_CHAIN_BLADE</set>
+        </setters>
+    </element>
+    <element name="Special (Chain Blade)" type="Weapon Property" source="KibblesTasty's Subclasses" id="ID_KTH_WEAPON_PROPERTY_SPECIAL_CHAIN_BLADE">
+        <description>
+            <p>When you roll damage dice for this weapon, you can reroll as many damage dice as you would like once per attack, but you must use the new roll any dice rolled. After hitting an attack with this weapon as part of the Attack action, if you have additional attacks you can make as part of the action, you can forgo them to deal an additional 3d4 slashing damage per attack forgone.</p>
+        </description>
+        <sheet>
+            <description>When you roll damage dice for this weapon, you can reroll as many damage dice as you would like once per attack, but you must use the new roll any dice rolled. After hitting an attack with this weapon as part of the Attack action, if you have additional attacks you can make as part of the action, you can forgo them to deal an additional 3d4 slashing damage per attack forgone.</description>
+        </sheet>
+    </element>
+    <element name="Weapon Proficiency (Chain Blade)" type="Proficiency" source="KibblesTasty's Subclasses" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_CHAIN_BLADE">
+    </element>
+
+
+    <element name="Excessive Force (Ramming Gauntlet)" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_BRUTAL_INVENTION_RAMMING_GAUNTLET">
+        <supports>Tech Knight Brutal Invention</supports>
+        <description>
+            <p>On hit, the target is knocked 10 feet backwards.</p>
+        </description>
+        <sheet>
+            <description usage="{{intelligence:modifier}}/Short Rest">On hit, the target is knocked 10 feet backwards.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_RAMMING_GAUNTLET" />
+        </rules>
+    </element>
+    <element name="Ramming Gauntlet" type="Weapon" source="KibblesTasty's Subclasses" id="ID_KTH_TECH_KNIGHT_ITEM_RAMMING_GAUNTLET">
+        <supports>ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_KTH_WEAPON_PROPERTY_SPECIAL_RAMMING_GAUNTLET</supports>
+        <description>
+            <p></p>
+            <div element="ID_KTH_WEAPON_PROPERTY_SPECIAL_RAMMING_GAUNTLET" />
+        </description>
+        <sheet>
+            <description>When you make an attack roll, you can choose to forgo adding your Proficiency bonus to the attack roll. If the attack hits, you can add double your Proficiency bonus to the damage roll.</description>
+        </sheet>
+        <setters>
+            <set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_RAMMING_GAUNTLET</set>
+        </setters>
+    </element>
+    <element name="Special (Ramming Gauntlet)" type="Weapon Property" source="KibblesTasty's Subclasses" id="ID_KTH_WEAPON_PROPERTY_SPECIAL_RAMMING_GAUNTLET">
+        <description>
+            <p>When you make an attack roll, you can choose to forgo adding your Proficiency bonus to the attack roll. If the attack hits, you can add double your Proficiency bonus to the damage roll.</p>
+        </description>
+        <sheet>
+            <description>When you make an attack roll, you can choose to forgo adding your Proficiency bonus to the attack roll. If the attack hits, you can add double your Proficiency bonus to the damage roll.</description>
+        </sheet>
+    </element>
+    <element name="Weapon Proficiency (Ramming Gauntlet)" type="Proficiency" source="KibblesTasty's Subclasses" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_RAMMING_GAUNTLET">
+    </element>
+
+
+    <element name="Full Auto (Repeating Hand Crossbow)" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_BRUTAL_INVENTION_REPEATING_HAND_CROSSBOW">
+        <supports>Tech Knight Brutal Invention</supports>
+        <description>
+            <p>On hit, you immediately make single additional attack as part of the same action, rolling three d20s for the attack roll and taking the lowest.</p>
+        </description>
+        <sheet>
+            <description usage="{{intelligence:modifier}}/Short Rest">On hit, you immediately make single additional attack as part of the same action, rolling three d20s for the attack roll and taking the lowest.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_REPEATING_HAND_CROSSBOW_TECH" />
+        </rules>
+    </element>
+    <element name="Repeating Hand Crossbow" type="Weapon" source="KibblesTasty's Subclasses" id="ID_KTH_TECH_KNIGHT_ITEM_REPEATING_HAND_CROSSBOW_KHT">
+        <supports>ID_KTH_WEAPON_PROPERTY_SPECIAL_REPEATING_HAND_CROSSBOW_TECH, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <description>
+            <p></p>
+            <div element="ID_KTH_WEAPON_PROPERTY_SPECIAL_REPEATING_HAND_CROSSBOW_TECH" />
+        </description>
+        <sheet>
+            <description>This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</description>
+        </sheet>
+        <setters>
+            <set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">0 lb.</set>
+            <set name="range">30/120</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_REPEATING_HAND_CROSSBOW_TECH</set>
+        </setters>
+    </element>
+    <element name="Special (Repeating Hand Crossbow)" type="Weapon Property" source="KibblesTasty's Subclasses" id="ID_KTH_WEAPON_PROPERTY_SPECIAL_REPEATING_HAND_CROSSBOW_TECH">
+        <description>
+            <p>This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</p>
+        </description>
+        <sheet>
+            <description>This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</description>
+        </sheet>
+    </element>
+    <element name="Weapon Proficiency (Repeating Hand Crossbow)" type="Proficiency" source="KibblesTasty's Subclasses" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_REPEATING_HAND_CROSSBOW_TECH">
+    </element>
+
+
+    <element name="Overcharge (Transforming Weapon)" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_BRUTAL_INVENTION_TRANSFORMING_WEAPON">
+        <supports>Tech Knight Brutal Invention</supports>
+        <description>
+            <p>On hit, you deal an additional 1d6 lightning damage.</p>
+        </description>
+        <sheet>
+            <description usage="{{intelligence:modifier}}/Short Rest">On hit, you deal an additional 1d6 lightning damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_TRANSFORMING_WEAPON" />
+        </rules>
+    </element>
+    <element name="Transforming Weapon" type="Weapon" source="KibblesTasty's Subclasses" id="ID_KTH_TECH_KNIGHT_ITEM_TRANSFORMING_WEAPON">
+        <supports>ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_KTH_WEAPON_PROPERTY_SPECIAL_TRANSFORMING_WEAPON</supports>
+        <description>
+            <p></p>
+            <div element="ID_KTH_WEAPON_PROPERTY_SPECIAL_TRANSFORMING_WEAPON" />
+        </description>
+        <sheet>
+            <description>As a bonus action, you can convert this from a 2d6 melee weapon to a 1d8 ranged weapon with the Ammunition (100/400) property. When you convert the weapon, it becomes overcharged with power, and the next time you roll damage with it before the end of your turn you deal an additional 1d6 lightning damage. Select the damage type when creating this weapon from bludgeoning, piercing, slashing, or lightning damage. You can select a different damage type for the melee and ranged forms.</description>
+        </sheet>
+        <setters>
+            <set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">0 lb.</set>
+			<set name="slot">twohand</set>
+            <set name="range">100/400</set>
+			<set name="damage">2d6/1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_TRANSFORMING_WEAPON</set>
+        </setters>
+    </element>
+    <element name="Special (Transforming Weapon)" type="Weapon Property" source="KibblesTasty's Subclasses" id="ID_KTH_WEAPON_PROPERTY_SPECIAL_TRANSFORMING_WEAPON">
+        <description>
+            <p>As a bonus action, you can convert this from a 2d6 melee weapon to a 1d8 ranged weapon with the Ammunition (100/400) property. When you convert the weapon, it becomes overcharged with power, and the next time you roll damage with it before the end of your turn you deal an additional 1d6 lightning damage. Select the damage type when creating this weapon from bludgeoning, piercing, slashing, or lightning damage. You can select a different damage type for the melee and ranged forms.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can convert this from a 2d6 melee weapon to a 1d8 ranged weapon with the Ammunition (100/400) property. When you convert the weapon, it becomes overcharged with power, and the next time you roll damage with it before the end of your turn you deal an additional 1d6 lightning damage. Select the damage type when creating this weapon from bludgeoning, piercing, slashing, or lightning damage. You can select a different damage type for the melee and ranged forms.</description>
+        </sheet>
+    </element>
+    <element name="Weapon Proficiency (Transforming Weapon)" type="Proficiency" source="KibblesTasty's Subclasses" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_TRANSFORMING_WEAPON">
+    </element>
+
+
+    <element name="Hypervolicty (Ricocheting Weapon):" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_BRUTAL_INVENTION_RICOCHETING_WEAPON">
+        <supports>Tech Knight Brutal Invention</supports>
+        <description>
+            <p>On hit, the weapon bounces to an additional target.</p>
+        </description>
+        <sheet>
+            <description usage="{{intelligence:modifier}}/Short Rest">On hit, the weapon bounces to an additional target.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_RICOCHETING_WEAPON" />
+        </rules>
+    </element>
+    <element name="Ricocheting Weapon" type="Weapon" source="KibblesTasty's Subclasses" id="ID_KTH_TECH_KNIGHT_ITEM_RICOCHETING_WEAPON">
+        <supports>ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_KTH_WEAPON_PROPERTY_SPECIAL_RICOCHETING_WEAPON</supports>
+        <description>
+            <p></p>
+            <div element="ID_KTH_WEAPON_PROPERTY_SPECIAL_RICOCHETING_WEAPON" />
+        </description>
+        <sheet>
+            <description>When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for targets hit after the first. This weapon returns to your hand after you make an attack with it using the Thrown property.</description>
+        </sheet>
+        <setters>
+            <set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">0 lb.</set>
+            <set name="range">30/90</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_RICOCHETING_WEAPON</set>
+        </setters>
+    </element>
+    <element name="Special (Ricocheting Weapon)" type="Weapon Property" source="KibblesTasty's Subclasses" id="ID_KTH_WEAPON_PROPERTY_SPECIAL_RICOCHETING_WEAPON">
+        <description>
+            <p>When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for targets hit after the first. This weapon returns to your hand after you make an attack with it using the Thrown property.</p>
+        </description>
+        <sheet>
+            <description>When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for targets hit after the first. This weapon returns to your hand after you make an attack with it using the Thrown property.</description>
+        </sheet>
+    </element>
+    <element name="Weapon Proficiency (Ricocheting Weapon)" type="Proficiency" source="KibblesTasty's Subclasses" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_RICOCHETING_WEAPON">
+    </element>
+
+    <!--CONTINGENT OPTIONS-->
+
+    <element name="Charged Armor" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_CHARGED_ARMOR">
+        <supports>Tech Knight Contingent</supports>
+        <description>
+            <p>As a bonus action, you can juice your armor with power with the effect of lightning charged.</p>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_SPELL_LIGHTNING_CHARGED" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Bonus Action">As a bonus action, you can juice your armor with power with the effect of lightning charged.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_LIGHTNING_CHARGED" />
+        </rules>
+    </element>
+    <element name="Rocket Boots" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_ROCKET_BOOTS">
+        <supports>Tech Knight Contingent</supports>
+        <description>
+            <p>As a bonus action you can activate these do give yourself a jumping distance equal to your movement speed until the end of the turn. You take no fall damage from this movement, but creatures of your choice within 5 feet of where you land take 2d4 fire damage. Alternatively, you can use this to cast feather fall targeting only yourself.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FEATHER_FALL" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Bonus Action">As a bonus action you can activate these do give yourself a jumping distance of {{speed}} until the end of the turn. You take no fall damage from this movement, but creatures of your choice within 5 feet of where you land take 2d4 fire damage. Alternatively, you can use this to cast feather fall targeting only yourself.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+        </rules>
+    </element>
+    <element name="Belt" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_BELT">
+        <supports>Tech Knight Contingent</supports>
+        <description>
+            <p>You can use this to cast enlarge/reduce without expend a spell slot.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_ENLARGE_REDUCE" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest">You can use this to cast enlarge/reduce without expend a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+        </rules>
+    </element>
+    <element name="Flame Thrower" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_FLAME_THROWER">
+        <supports>Tech Knight Contingent</supports>
+        <description>
+            <p>As an action or in place of an attack as part of the Attack action, you can use this to cast burning hands as a 2nd level spell without expending a spell slot.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_BURNING_HANDS" />
+            </div>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Short Rest">As an action or in place of an attack as part of the Attack action, you can use this to cast burning hands as a 2nd level spell without expending a spell slot (DC {{tech burn:dc}}).</description>
+        </sheet>
+        <rules>
+            <stat name="tech burn:dc" value="8" />
+            <stat name="tech burn:dc" value="proficiency" />
+            <stat name="tech burn:dc" value="intelligence:modifier" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
+        </rules>
+    </element>
+    <element name="Force Shield" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_FORCE_SHIELD">
+        <supports>Tech Knight Contingent</supports>
+        <description>
+            <p>You can deploy a temporary field field, with the effect of casting shield.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SHIELD" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest">You can deploy a temporary field field, with the effect of casting shield.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_SHIELD" />
+        </rules>
+    </element>
+    <element name="Thunder Grenade" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KTH_ARCHETYPE_FEATURE_TECH_KNIGHT_CONTINGENT_THUNDER_GRENADE">
+        <supports>Tech Knight Contingent</supports>
+        <description>
+            <p>As an action or in place of an attack as part of the Attack action, you can use this to cast shatter without expending a spell slot.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SHATTER" />
+            </div>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Action">As an action or in place of an attack as part of the Attack action, you can use this to cast shatter without expending a spell slot (DC {{tech shatter:dc}}).</description>
+        </sheet>
+        <rules>
+            <stat name="tech shatter:dc" value="8" />
+            <stat name="tech shatter:dc" value="proficiency" />
+            <stat name="tech shatter:dc" value="intelligence:modifier" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" />
+        </rules>
+    </element>
+
+    <p class="indent"></p>
+	
+</elements>

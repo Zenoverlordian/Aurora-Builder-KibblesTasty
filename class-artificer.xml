@@ -486,8 +486,8 @@
     <!--GADGETSMITH UPGRADES-->
 
     <element name="Airburst Mine" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_AIRBURST_MINE">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_AIRBURST_MINE</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_AIRBURST_MINE</requirements>
         <description>
             <p>You create a mechanical device capable of producing a devastating blast. You can use this device to cast shatter or thunderburst mine without expending a spell slot. Once used, the gadget cannot be used again until you complete a short or long rest.</p>
             <div class="reference">
@@ -527,8 +527,8 @@
     </element>
 
     <element name="Richocheting Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_RICOCHETING_WEAPON">
-        <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_RICOCHETING_WEAPON</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith Weapon, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_RICOCHETING_WEAPON</requirements>
         <description>
             <p>You create a ranged weapon enchanted or engineered to ricochet of its targets and return to your hand. You have proficiency in this weapon, and it has the Finesse, Thrown (30/90), and Special properties, and deals 1d8 bludgeoning, piercing or slashing damage (chosen at the time you select this upgrade). You can Arcane Retrofit this weapon.</p>
             <p class="indent">Special: When this weapon is thrown you can target two creatures within 10 feet of each other, making a separate attack roll against each target; the damage dealt is halved for each target hit after the first.</p>
@@ -556,8 +556,8 @@
     </element>
 
     <element name="Belt of Adjusting Size" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_BELT_SIZE">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_BELT_SIZE</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_BELT_SIZE</requirements>
         <description>
             <p>You create a belt with a creature size dial on it. While you are wearing this belt, you can use an action to cast <em>Enlarge/Reduce</em> on yourself without expending a spell slot. Once you use this gadget, you cannot use it again until you complete a short or long rest.</p>
             <div class="reference">
@@ -589,8 +589,8 @@
     </element>
 
     <element name="Element Eater" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_ELEMENT_EATER">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_ELEMENT_EATER</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_ELEMENT_EATER</requirements>
         <description>
             <p>You create a device capable of absorbing incoming elemental damage. You can activate this device and cast absorb elements without expending a spell slot, but the gadget cannot be used again until you complete a short or long rest.</p>
             <div class="reference">
@@ -622,8 +622,8 @@
     </element>
 
     <element name="Enhanced Grappling Hook" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_ENH_GRAPPLING_HOOK">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p>You enhance your grappling hook, increasing its range to 30 feet. Additionally, the enhanced power of the grappling hook means that when pulling yourself to a large or larger creature or object, you can drag one medium or smaller willing or grappled creature within 5 feet of you with you.</p>
         </description>
@@ -633,8 +633,8 @@
     </element>
 
     <element name="Fire Spitter" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FIRE_SPITTER">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_FIRE_SPITTER</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_FIRE_SPITTER</requirements>
         <description>
             <p>You create a gadget that creates a quick blast of fire. As an action, you can cast Aganazzar's Scorcher with this gadget without expending a spell slot, but the gadget cannot be used again until you complete a short or long rest.</p>
             <div class="reference">
@@ -666,8 +666,8 @@
     </element>
 
     <element name="Flashbang" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FLASHBANG">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_FLASHBANG</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_FLASHBANG</requirements>
         <description>
             <p>You create a high luminary discharge device. As an action, you can target a point within 30 feet. Any creature within 20 feet of the targeted point must make a Dexterity saving throw or be blinded until the end of its next turn. Once you use this gadget, you cannot use it again until you complete a short or long rest.</p>
         </description>
@@ -687,8 +687,8 @@
     </element>
 
     <element name="Gravity Switch" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_GRAVITY_SWITCH">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_GRAVITY_SWITCH</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_GRAVITY_SWITCH</requirements>
         <description>
             <p>You build a switch that turns off gravity. You can use it to cast fall without expending a spell slot. Once you use this gadget, you cannot use it again until you complete a short or long rest.</p>
             <div class="reference">
@@ -720,8 +720,8 @@
     </element>
 
     <element name="Gliding Cloak" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_GILDING_CLOAK">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_GILDING_CLOAK</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_GILDING_CLOAK</requirements>
         <description>
             <p>You make a cloak that allows you to glide when falling. When you fall more than 10 feet and aren't incapacitated, can spread this cloak to reduce your falling speed to 30 feet a round take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</p>
         </description>
@@ -741,8 +741,8 @@
     </element>
 
     <element name="Impact Gauntlet" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET">
-        <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_IMPACT_GAUNTLET</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith Weapon, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_IMPACT_GAUNTLET</requirements>
         <description>
             <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d6 bludgeoning damage.</p>
             <p class="indent">Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</p>
@@ -756,7 +756,7 @@
     </element>
     <element name="Impact Gauntlet 2" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET_2">
         <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, (ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET||ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_IMPACT_GAUNTLET)</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH), (ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET||ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_IMPACT_GAUNTLET)</requirements>
         <description>
             <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d6 bludgeoning damage.</p>
             <p class="indent">Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</p>
@@ -782,7 +782,7 @@
     </element>
 
     <element name="Jumper Cable" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_JUMPER_CABLE">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
         <prerequisite>Shock Generator</prerequisite>
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SHOCK_GENERATOR</requirements>
         <description>
@@ -796,8 +796,8 @@
     </element>
 
     <element name="Lightning Baton" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_LIGHTNING_BATON">
-        <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_LIGHTNING_BATON</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith Weapon, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_LIGHTNING_BATON</requirements>
         <description>
             <p>You create a baton that channels lightning, creating a magic weapon. You have proficiency in this weapon.</p>
             <p class="indent">It has the Finesse and Light properties. It deals 1d4 bludgeoning damage and 1d4 lightning damage on hit. On an attack roll of 20 with this weapon, the target must succeed a Constitution saving throw against your Spell Save DC or become stunned until the start of your next turn.</p>
@@ -835,8 +835,8 @@
     </element>
 
     <element name="Mechanical Arm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_MECHANICAL_ARM">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_MECHANICAL_ARM</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_MECHANICAL_ARM</requirements>
         <description>
             <p>You create a mechanical arm, giving an extra hand. This mechanical arm only functions while it is mounted on gear you are wearing, but can be operated mentally without the need for you hands. This mechanical arm can serve any function a normal hand could, such as holding things, making attacks, interacting with the environment, etc, but does not give you additional actions.</p>
         </description>
@@ -856,8 +856,8 @@
     </element>
 
     <element name="Mechanical Familiar" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_MECHANICAL_FAMILIAR">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_MECHANICAL_FAMILIAR</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_MECHANICAL_FAMILIAR</requirements>
         <description>
             <p>You can create the blueprint for a small mechanical creature. At the end of a long rest, you can choose to create a mechanical familiar based on it, and cast find familiar without expending a spell slot. The familiar's type is Construct. This construct stays active until you deactivate it or it is destroyed. In either case, you can choose to reactivate it at the end of a long rest.</p>
             <div class="reference">
@@ -889,8 +889,8 @@
     </element>
 
     <element name="Jumping Boots" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_JUMPING_BOOTS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_JUMPING_BOOTS</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_JUMPING_BOOTS</requirements>
         <description>
             <p>You modify your boots with arcane boosters. While wearing these boots, you are under the effects of the jump spell.</p>
             <div class="reference">
@@ -922,8 +922,8 @@
     </element>
 
     <element name="Net Launcher" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_NET_LAUNCHER">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_NET_LAUNCHER</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_NET_LAUNCHER</requirements>
         <description>
             <p>You build a device capable of delivering nets to their targets more effectively. While you have this upgrade, nets have a range of 20/60 for you.</p>
         </description>
@@ -943,8 +943,8 @@
     </element>
 
     <element name="Repeating Hand Crossbow" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_REPEATING_HAND_CROSSBOW">
-        <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_REPEATING_HAND_CROSSBOW</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith Weapon, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_REPEATING_HAND_CROSSBOW</requirements>
         <description>
             <p>You build an improved hand crossbow. You have proficiency in this weapon, and it has the Ammunition (range 30/120), Light, and Special properties and deals 1d6 piercing damage.</p>
             <p class="indent">Special: This weapon does not require a free-hand to load, as it has a built-in loader. Once per turn, if you make an attack with this weapon as part of the Attack action, if you do not have disadvantage on that attack, you can give yourself disadvantage to make a single additional weapon attack with this weapon as a bonus action (also at disadvantage).</p>
@@ -968,8 +968,8 @@
     </element>
 
     <element name="Shock Generator" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SHOCK_GENERATOR">
-        <supports>Specialization Upgrade, Gadgetsmith Weapon</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SHOCK_GENERATOR</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith Weapon, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SHOCK_GENERATOR</requirements>
         <description>
             <p>You create a device capable of generating potent shocks. You can use this to cast shocking grasp. When you cast shocking grasp with this feature, you can use either your Dexterity or Intelligence modifier for the melee spell attack roll.</p>
             <div class="reference">
@@ -1001,7 +1001,7 @@
     </element>
 
     <element name="Shocking Hook" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SHOCKING_HOOK">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
         <prerequisite>Shock Generator</prerequisite>
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SHOCK_GENERATOR</requirements>
         <description>
@@ -1017,8 +1017,8 @@
     </element>
 
     <element name="Sight Lenses" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SIGHT_LENSES">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SIGHT_LENSES</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SIGHT_LENSES</requirements>
         <description>
             <p>You create a set of lenses you can integrate into a set of goggles, glasses, or other vision assistance that allow you to see through obscurement. You can see through fog, mist, smoke, clouds, and non-magical darkness as normal sight up to 15 feet.</p>
         </description>
@@ -1038,8 +1038,8 @@
     </element>
 
     <element name="Smoke Cloak" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SMOKE_CLOAK">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SMOKE_CLOAK</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SMOKE_CLOAK</requirements>
         <description>
             <p>You create a cloak that causes you to blend in with smoke. When you start your turn lightly or heavily obscured by smoke, you are invisible until your turn ends, you cast a spell, make an attack, or damage an enemy.</p>
         </description>
@@ -1059,8 +1059,8 @@
     </element>
 
     <element name="Striding Boots" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_STRIDING_BOOTS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_STRIDING_BOOTS</requirements>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER), !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_STRIDING_BOOTS</requirements>
         <description>
             <p>You modify your boots with amplified striding speed. While wearing these boots, you are under the effects of the longstrider spell.</p>
             <div class="reference">
@@ -1094,9 +1094,9 @@
         <!--5th Level Upgrades-->
 
     <element name="Crossbow Spider" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_CROSSBOW_SPIDER">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5]</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5])||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You modify a crossbow to be able to aim and fire on its own. As an action, you can deploy a tiny construct. Once deployed, the tiny construct can be fired as a bonus action making an attack from where it is deployed with a range of 30/120 feet. You make a ranged spell attack, and if the attack hits it deals 1d6 + your Intelligence modifier piercing damage. The construct becomes inactive after 1 minute has passed, or after it has fired 10 times.</p>
@@ -1134,9 +1134,9 @@
 	</element>
     
     <element name="Binding Rope" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_BINDING_ROPE">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5]</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5])||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You create a rope that is capable of animating and binding a target. As an action, choose a target creature within 30 feet. The target must make a Dexterity saving throw against your Spell Save DC or become restrained until the end of your next turn. If you are currently grappling the target, it makes the Dexterity saving throw with disadvantage. The rope can only restrain one target at a time.</p>
@@ -1147,7 +1147,7 @@
     </element>
 
     <element name="Explosive Gauntlet" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_EXPLOSIVE_GAUNTLET">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
         <prerequisite>5th level, Impact Gauntlets</prerequisite>
         <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5], (ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET||ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_IMPACT_GAUNTLET)</requirements>
         <description>
@@ -1161,9 +1161,9 @@
     </element>
 
     <element name="Smoky Images" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SMOKY_IMAGES">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5]</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5])||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>When you use a Smoke Bomb, you can use a bonus action to cast mirror image without expending a spell slot. Once you do this, you cannot do this again until you complete a short or long rest.</p>
@@ -1180,9 +1180,9 @@
     </element>
 
     <element name="Vanishing Trick" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_VANISHING_TRICK">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgeteer Deadly Surprise</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5]</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5])||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>When you use a Smoke Bomb you can cast misty step without expending a spell slot. Once you do this, you cannot do this again until you complete a short or long rest.</p>
@@ -1203,7 +1203,7 @@
     <element name="Arcane Nullifier" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_ARCANE_NULLIFIER">
         <supports>Specialization Upgrade</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9]</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9])||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You make a device that nullifies the arcane through means you assure everyone else you understand. As an action, you can use this device to cast dispel magic without expending a spell slot.</p>
@@ -1223,7 +1223,7 @@
     <element name="Phase Trinket" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_PHASE_TRINKET">
         <supports>Specialization Upgrade</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9]</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9])||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You create a magical stopwatch that manipulates ethereal magic. As an action, you can cast blink or dimension door using the Stopwatch without expending a spell slot.</p>
@@ -1247,7 +1247,7 @@
     <element name="Stinking Gas" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_STINKING_GAS">
         <supports>Specialization Upgrade</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9]</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9])||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You make a more potent compound for your Smoke Bomb. When you use a Smoke Bomb, you can choose to cast stinking cloud rather than fog cloud, following the same rules. You cannot cast stinking cloud in this way again until you complete a short or long rest.</p>
@@ -1266,7 +1266,7 @@
     <element name="Stopwatch Trinket" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_STOPWATCH_TRINKET">
         <supports>Specialization Upgrade</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9]</requirements>
+        <requirements>(ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9])||ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You create a magical stopwatch that manipulates time magic. As an action, you can cast haste or slow using the stopwatch without expending a Spell Slot.</p>

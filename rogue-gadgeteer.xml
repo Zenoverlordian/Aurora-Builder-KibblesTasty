@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Gadgeteer" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Swinging from a grappling hook before dropping a smoke bomb, rigging a stubborn lock to blow, or rejiggering traps to spring on those that set them, the Gadgeteer lives by fast paced innovation and thinking outside the box on the fly... sometimes literally.</p>
+            <p class="indent">Specializing tools that let themselves in and out of trouble, they don't fight fair, relying on things that go "boom", "zap" or "whirr". They live on the edge of their own explosions, though often rewriting the story in later retellings that they doffed their darkened goggles as they walked away slowly, omitting the singed seat of their trousers and yelping.</p>
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_DC" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_TINKERS_KNACK" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_GRAPPING_HOOK" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_PYROTECHNIC_GADGETS" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_CLEVER_INVENTIONS" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_AMONG_THE_BLASTS" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_DEADLY_SURPRISE" />
+            <div element="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_ULTIMATE_IMPROVISATION" />
+        </description>
+        <sheet display="false">
+            <description>Swinging from a grappling hook before dropping a smoke bomb, rigging a stubborn lock to blow, or rejiggering traps to spring on those that set them, the Gadgeteer lives by fast paced innovation and thinking outside the box on the fly... sometimes literally.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_DC" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_TINKERS_KNACK" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_GRAPPING_HOOK" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_PYROTECHNIC_GADGETS" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_CLEVER_INVENTIONS" level="9" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_AMONG_THE_BLASTS" level="9" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_DEADLY_SURPRISE" level="13" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_ULTIMATE_IMPROVISATION" level="17" />
+        </rules>
+    </element>
+    <element name="Gadgeteer DC" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_DC">
+        <description>
+            <p>Your gadgets are a combination of innovative mechanical parts and magic. You use your Intelligence for gadget based effects when they refer to a spell attack roll or spell save DC.</p>
+            <center>
+                <p><strong>Gadget save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Gadget attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+        </description>
+        <sheet>
+            <description>Your Gadget DC is {{gadget:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="gadget:dc" value="8" />
+            <stat name="gadget:dc" value="proficiency" />
+            <stat name="gadget:dc" value="intelligence:modifier" />
+        </rules>
+    </element>
+    <element name="Tinker's Knack" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_TINKERS_KNACK">
+        <description>
+            <p>When you choose this presence archetype at 3rd level, you gain proficiency with tinker's tools. If you already have proficiency with tinker's tools, you gain expertise with tinker's tools (if you already have expertise with tinker's tools, select another tool of your choice).</p>
+        </description>
+        <sheet>
+            <description>You add twice your proficiency with tinker's tools.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+        </rules>
+    </element>
+    <element name="Grappling Hook" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_GRAPPING_HOOK">
+        <description>
+            <p>Starting at 3rd level, you've mastered both the creation and use of your most important gadget, the grappling hook. As an action or with the bonus action granted by your Cunning Action, you may target a surface, object or creature within 20 feet. If the target is Small or Smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it (automatically succeeding against objects that are not being worn or carried unless the DM sets a difficulty for a particularly complicated scenario).</p>
+            <p class="indent">Alternatively, if the target is Medium or larger, you can choose to be pulled to it. This automatically succeeds, but this does not grapple it, though if it is a surface or large object, you can choose to hold onto at the point you grappled if there is something to grab onto. Attacks of opportunity generated by this movement have disadvantage.</p>
+        </description>
+        <sheet>
+            <description>As an action or with the bonus action granted by your Cunning Action, you may target a surface, object or creature within 20 feet. If the target is Small or Smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it (automatically succeeding against objects that are not being worn or carried unless the DM sets a difficulty for a particularly complicated scenario). Alternatively, if the target is Medium or larger, you can choose to be pulled to it. This automatically succeeds, but this does not grapple it, though if it is a surface or large object, you can choose to hold onto at the point you grappled if there is something to grab onto. Attacks of opportunity generated by this movement have disadvantage.</description>
+        </sheet>
+    </element>
+    <element name="Pyrotechnic Gadgets" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_PYROTECHNIC_GADGETS">
+        <description>
+            <p>Additionally at 3rd level, you gain access to an important arsenal of things that explode. Forgoing some subtlety for firepower, you gain the following options:</p>
+            <p class="indent"><strong><em>Smoke Bomb.</em></strong> As an action, you can use this to cast fog cloud centered on yourself without expending a spell slot. It lasts a number of rounds equal to your Intelligence modifier and does not require concentration. When you cast fog cloud In this way, you can set the radius at 5, 10, 15, or 20 feet.</p>
+            <p class="indent"><strong><em>Explosive Surprise.</em></strong> As an action you can toss explosives at a point within 30 feet. Creatures within 5 feet of the target point must make a Dexterity saving throw against your Gadget DC or take damage equal to your Sneak Attack damage. If you are hidden from a creature, it makes the Dexterity saving throw with disadvantage. This counts as dealing Sneak Attack damage.</p>
+            <p class="indent"><strong><em>Shaped Charge.</em></strong> As an action, you can place a charge on an object, building or surface within 5 feet. At the start of your next turn, the charge detonates, dealing damage equal to your sneak attack to the object, build or surface it was placed on, and half as much damage to any creature within 5 feet of it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Pyrotechnic Gadget" supports="Gadgeteer Pyrotechnic" number="3" />
+        </rules>
+    </element>
+    <element name="Smoke Bomb" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_PYROTECHNIC_GADGETS_SMOKE_BOMB">
+        <supports>Gadgeteer Pyrotechnic</supports>
+        <description>
+            <p>As an action, you can use this to cast fog cloud centered on yourself without expending a spell slot. It lasts a number of rounds equal to your Intelligence modifier and does not require concentration. When you cast fog cloud In this way, you can set the radius at 5, 10, 15, or 20 feet.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FOG_CLOUD" />
+            </div>
+        </description>
+        <sheet>
+            <description action="Action">As an action, you can use this to cast fog cloud centered on yourself without expending a spell slot. It lasts {{intelligence:modifier}} rounds and does not require concentration. When you cast fog cloud In this way, you can set the radius at 5, 10, 15, or 20 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" />
+        </rules>
+    </element>
+    <element name="Explosive Surprise" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_PYROTECHNIC_GADGETS_EXPLOSIVE_SURPRISE">
+        <supports>Gadgeteer Pyrotechnic</supports>
+        <description>
+            <p>As an action you can toss explosives at a point within 30 feet. Creatures within 5 feet of the target point must make a Dexterity saving throw against your Gadget DC or take damage equal to your Sneak Attack damage. If you are hidden from a creature, it makes the Dexterity saving throw with disadvantage. This counts as dealing Sneak Attack damage.</p>
+        </description>
+        <sheet>
+            <description action="Action" level="1">As an action you can toss explosives at a point within 30 feet. Creatures within 5 feet of the target point must make a Dexterity saving throw or take {{sneak-attack:count}}d6 damage. If you are hidden from a creature, it makes the Dexterity saving throw with disadvantage. This counts as dealing Sneak Attack damage.</description>
+            <description action="Action" level="13">As an action you can toss explosives at a point within 30 feet. Creatures within 10 feet of the target point must make a Dexterity saving throw or take {{sneak-attack:count}}d6 damage. If you are hidden from a creature, it makes the Dexterity saving throw with disadvantage. This counts as dealing Sneak Attack damage.</description>
+        </sheet>
+    </element>
+    <element name="Shaped Charge" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_PYROTECHNIC_GADGETS_SHAPED_CHARGE">
+        <supports>Gadgeteer Pyrotechnic</supports>
+        <description>
+            <p>As an action, you can place a charge on an object, building or surface within 5 feet. At the start of your next turn, the charge detonates, dealing damage equal to your sneak attack to the object, build or surface it was placed on, and half as much damage to any creature within 5 feet of it.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action, you can place a charge on an object, building or surface within 5 feet. At the start of your next turn, the charge detonates, dealing {{sneak-attack:count}}d6 damage to the object, build or surface it was placed on, and half as much damage to any creature within 5 feet of it.</description>
+        </sheet>
+    </element>
+    <element name="Clever Inventor" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_CLEVER_INVENTIONS">
+        <description>
+            <p>Starting at 9th level, you expand your selection. Select two of the following options:</p>
+            <p class="indent"><strong><em>Gliding Cloak.</em></strong> You make a cloak that allows you to glide when falling. When you fall more than 10 feet and aren't incapacitated, can spread this cloak to reduce your falling speed to 30 feet a round and take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</p>
+            <p class="indent"><strong><em>Mechanical Arm.</em></strong> You create a mechanical arm, giving you an extra hand. This mechanical arm only functions while it is mounted on gear you are wearing, but can be operated mentally without the need for your hands. This mechanical arm can serve any function a normal hand could, such as holding things, making attacks, interacting with the environment, etc, but does not give you any additional actions.</p>
+            <p class="indent"><strong><em>Mechanical Familiar.</em></strong> You can create the blueprint for a small mechanical creature. At the end of a long rest, you can choose to create a mechanical familiar based on it, and cast find familiar spell without expending a spell slot. The familiar's type is Construct. This construct stays active until you deactivate it or it is destroyed. In either case, you can choose to reactivate it at the end of a long rest.</p>
+            <p class="indent"><strong><em>Sight Lenses.</em></strong> You create a set of lenses you can integrate into a set of goggles, glasses, or other vision assistance that allow you to see through darkness and obscurement. You can see through fog, mist, smoke, clouds, and non-magical darkness as normal sight up to 15 feet.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Clever Inventor" supports="Clever Inventor Gadgeteer" number="2" />
+        </rules>
+    </element>
+    <element name="Among the Blasts" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_AMONG_THE_BLASTS">
+        <description>
+            <p>Additionally at 9th level, when you successfully avoid damage from an area of effect with your Evasion feature (including from your own effects), you can use your reaction up to your movement speed to the edge of the effect. This movement does not provoke attacks of opportunity.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">When you successfully avoid damage from an area of effect with your Evasion feature (including from your own effects), you can use your reaction up to your movement speed to the edge of the effect. This movement does not provoke attacks of opportunity.</description>
+        </sheet>
+    </element>
+    <element name="Deadly Surprise" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_DEADLY_SURPRISE">
+        <description>
+            <p>Starting at 13th level, your technical expertise expands. The radius of your explosive surprise becomes 10 feet, and you can select one additional option from Clever Inventions.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Deadly Surprise" supports="Gadgeteer Deadly Surprise" />
+        </rules>
+    </element>
+    <element name="Ultimate Improvisation" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_ULTIMATE_IMPROVISATION">
+        <description>
+            <p>Starting at 17th level, you can solve a wide array of problems with your Gadgets at a moment's notice. Over the course of 1 minute you can construct a gadget capable of casting any spell of 4th level or lower on the Wizard or Inventor list. This gadget lasts until used, or you construct another gadget (dissembling it in the process).</p>
+            <p class="indent">You can do this a number of times equal to your Intelligence modifier before you must complete a long rest to create additional improvised gadgets with the feature.</p>
+        </description>
+        <sheet>
+            <description usage="{{intelligence:modifier}}/Long Rest">Over the course of 1 minute you can construct a gadget capable of casting any spell of 4th level or lower on the Wizard or Inventor list. This gadget lasts until used, or you construct another gadget (dissembling it in the process).</description>
+        </sheet>
+    </element>
+
+    <!--CLEVER INVENTOR-->
+
+    <element name="Gliding Cloak" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_INVENOTR_GLIDING_CLOAK">
+        <supports>Clever Inventor Gadgeteer</supports>
+        <description>
+            <p>You make a cloak that allows you to glide when falling. When you fall more than 10 feet and aren't incapacitated, can spread this cloak to reduce your falling speed to 30 feet a round and take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</p>
+        </description>
+        <sheet>
+            <description>When you fall more than 10 feet and aren't incapacitated, can spread this cloak to reduce your falling speed to 30 feet a round and take no falling damage. While falling in this manner toward the ground under normal gravity, you can move horizontally 2 feet for every 1 foot you descend.</description>
+        </sheet>
+    </element>
+    <element name="Mechanical Arm" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_INVENOTR_MECH_ARM">
+        <supports>Clever Inventor Gadgeteer</supports>
+        <description>
+            <p>You create a mechanical arm, giving you an extra hand. This mechanical arm only functions while it is mounted on gear you are wearing, but can be operated mentally without the need for your hands. This mechanical arm can serve any function a normal hand could, such as holding things, making attacks, interacting with the environment, etc, but does not give you any additional actions.</p>
+        </description>
+        <sheet>
+            <description>You create a mechanical arm, giving you an extra hand. This mechanical arm only functions while it is mounted on gear you are wearing, but can be operated mentally without the need for your hands. This mechanical arm can serve any function a normal hand could, such as holding things, making attacks, interacting with the environment, etc, but does not give you any additional actions.</description>
+        </sheet>
+    </element>
+    <element name="Mechanical Familiar" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_INVENOTR_MECH_FAMILIAR">
+        <supports>Clever Inventor Gadgeteer</supports>
+        <description>
+            <p>You can create the blueprint for a small mechanical creature. At the end of a long rest, you can choose to create a mechanical familiar based on it, and cast find familiar spell without expending a spell slot. The familiar's type is Construct. This construct stays active until you deactivate it or it is destroyed. In either case, you can choose to reactivate it at the end of a long rest.</p>
+        </description>
+        <sheet>
+            <description>At the end of a long rest, you can choose to create a mechanical familiar based on it, and cast find familiar spell without expending a spell slot. The familiar's type is Construct. This construct stays active until you deactivate it or it is destroyed. In either case, you can choose to reactivate it at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Sight Lenses" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_GADGETEER_INVENOTR_SIGHT_LENSES">
+        <supports>Clever Inventor Gadgeteer</supports>
+        <description>
+            <p>You create a set of lenses you can integrate into a set of goggles, glasses, or other vision assistance that allow you to see through darkness and obscurement. You can see through fog, mist, smoke, clouds, and non-magical darkness as normal sight up to 15 feet.</p>
+        </description>
+        <sheet>
+            <description>You create a set of lenses you can integrate into a set of goggles, glasses, or other vision assistance that allow you to see through darkness and obscurement. You can see through fog, mist, smoke, clouds, and non-magical darkness as normal sight up to 15 feet.</description>
+        </sheet>
+    </element>
+
+</elements>
