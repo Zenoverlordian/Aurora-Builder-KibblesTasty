@@ -1740,6 +1740,18 @@
         </sheet>
     </element>
     
+    <element name="Dragon Draught" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_DRAGON_DRAUGHT">
+        <supports>Specialization Upgrade, Instant RXN</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <description>
+            <p>As an action you quaff a vial of highly reactive liquid, allow you to immediately belch a blast of devastating elemental energy. You can select between cold, fire, acid, or lightning. Cold and fire effect a 10 foot cone. Lightning and Acid effect at 15 foot line. Creatures in that area have to make a Dexterity saving throw against your Spell Save DC, or take 1d8 damage of the elemental type chosen.</p>
+            <p class="indent">The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_KTH_ARTIFICER_INSTANT_RXN_DRAGON_DRAUGHT" />
+        </rules>
+    </element>
     <element name="Dragon Draught" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_INSTANT_RXN_DRAGON_DRAUGHT">
         <description>
             <p>As an action you quaff a vial of highly reactive liquid, allow you to immediately belch a blast of devastating elemental energy. You can select between cold, fire, acid, or lightning. Cold and fire effect a 10 foot cone. Lightning and Acid effect at 15 foot line. Creatures in that area have to make a Dexterity saving throw against your Spell Save DC, or take 1d8 damage of the elemental type chosen.</p>
