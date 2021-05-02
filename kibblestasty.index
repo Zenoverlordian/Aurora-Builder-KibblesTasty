@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>KibblesTasty</name>
+		<description>The content from KibblesTasty on reddit.</description>
+		<author url="https://www.reddit.com/user/KibblesTasty">KibblesTasty</author>
+		<update version="0.0.7">
+			<file name="kibblestasty.index" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/kibblestasty.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/source.xml" />
+    
+		<!-- artificer -->
+		<file name="class-artificer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-artificer.xml" />
+    
+    <!-- psion -->
+		<file name="class-warlock.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-SwEcky/main/class-warlock.xml" />
+    
+    <!-- occultist -->
+		<file name="class-occultist.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-occultist.xml" />
+    
+	</files>
+</index>
