@@ -1883,8 +1883,8 @@
             <p class="indent">In non-combat situations in which you are not wearing your armor, it can exert a lesser control of the armor to move it about and perform simple tasks. During this time it has the statistics of an unseen servant, though it looks like your suit of armor. It's ability to do this is not limited, but it takes 1 minute to assume this kind of control of your armor, and it can only do so while you are not wearing it.</p>
         </description>
         <sheet>
-            <description requirements="!ID_KTH_ARTIFICER_ARMOR_WARPLATE">You can set additional conditions when your armor will take control of your movement and actions, and can maintain this control of up to a 1 minute. While acting in this mode, it can take any action you could take (including attacking), but can only cast spells granted by Upgrades. It uses your ability scores. The triggering event can by a preset condition, a verbal command, or a specified time. Your armor is immune to the charmed, blinded, frightened, paralyzed, and poisoned conditions, and does not suffer from exhaustion, ignoring these effects if you are under them. This counts as a use of your Emergency Protocol, and it cannot control the armor again (in either way) until you complete a short or long rest. In non-combat situations in which you are not wearing your armor, it can exert a lesser control of the armor to move it about and perform simple tasks. During this time it has the statistics of an unseen servant, though it looks like your suit of armor. It's ability to do this is not limited, but it takes 1 minute to assume this kind of control of your armor, and it can only do so while you are not wearing it.</description>
-            <description requirements="ID_KTH_ARTIFICER_ARMOR_WARPLATE">You can set additional conditions when your armor will take control of your movement and actions, and can maintain this control of up to a 1 minute. While acting in this mode, it can take any action you could take (including attacking), but can only cast spells granted by Upgrades. It uses your ability scores. The triggering event can by a preset condition, a verbal command, or a specified time. Your armor is immune to the charmed, blinded, frightened, paralyzed, and poisoned conditions, and does not suffer from exhaustion, ignoring these effects if you are under them. This counts as a use of your Emergency Protocol, and it cannot control the armor again (in either way) until you complete a short or long rest. In non-combat situations in which you are not wearing your armor, it can exert a lesser control of the armor to move it about and perform simple tasks. During this time it has the statistics of an unseen servant, though it looks like your suit of armor. It's ability to do this is not limited, but it takes 1 minute to assume this kind of control of your armor, and it can only do so while you are not wearing it.
+            <description requirements="![warsmith:warplate:1]">You can set additional conditions when your armor will take control of your movement and actions, and can maintain this control of up to a 1 minute. While acting in this mode, it can take any action you could take (including attacking), but can only cast spells granted by Upgrades. It uses your ability scores. The triggering event can by a preset condition, a verbal command, or a specified time. Your armor is immune to the charmed, blinded, frightened, paralyzed, and poisoned conditions, and does not suffer from exhaustion, ignoring these effects if you are under them. This counts as a use of your Emergency Protocol, and it cannot control the armor again (in either way) until you complete a short or long rest. In non-combat situations in which you are not wearing your armor, it can exert a lesser control of the armor to move it about and perform simple tasks. During this time it has the statistics of an unseen servant, though it looks like your suit of armor. It's ability to do this is not limited, but it takes 1 minute to assume this kind of control of your armor, and it can only do so while you are not wearing it.</description>
+            <description requirements="[warsmith:warplate:1]">You can set additional conditions when your armor will take control of your movement and actions, and can maintain this control of up to a 1 minute. While acting in this mode, it can take any action you could take (including attacking), but can only cast spells granted by Upgrades. It uses your ability scores. The triggering event can by a preset condition, a verbal command, or a specified time. Your armor is immune to the charmed, blinded, frightened, paralyzed, and poisoned conditions, and does not suffer from exhaustion, ignoring these effects if you are under them. This counts as a use of your Emergency Protocol, and it cannot control the armor again (in either way) until you complete a short or long rest. In non-combat situations in which you are not wearing your armor, it can exert a lesser control of the armor to move it about and perform simple tasks. During this time it has the statistics of an unseen servant, though it looks like your suit of armor. It's ability to do this is not limited, but it takes 1 minute to assume this kind of control of your armor, and it can only do so while you are not wearing it.
             Your Warplate can act in this way even when you are not wearing it (or dead). When doing so, it uses the game statistics of animated armor with the following modifications: It has an intelligence of 12; It can cast any spells that come from Upgrades with a DC equal to your spell save DC.</description>
         </sheet>
     </element>
@@ -1929,7 +1929,7 @@
     <element name="Extendable Arm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EXTENDABLE_ARM">
         <supports>Specialization Upgrade</supports>
         <prerequisite>Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor</em></p>
             <p>As a bonus action, you can extend your arms reach until the end of your turn. Your melee weapon attacks gain the reach property until the end of your turn.</p>
@@ -1942,7 +1942,7 @@
     <element name="Iron Fortitude" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_FORTITUDE">
         <supports>Specialization Upgrade</supports>
         <prerequisite>Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor</em></p>
             <p>You gain an unnatural durability. When damage reduces you to 0 hit points, you make Constitution saving throw with a DC of 5 + the damage taken, unless the damage from a critical hit. On a success, you drop to 1 hit point instead.</p>
@@ -1968,7 +1968,7 @@
     <element name="Powered Nervous System" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWERED_NERVOUS_SYSTEM">
         <supports>Specialization Upgrade</supports>
         <prerequisite>Integrated Armor, Resistance: Lightning</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR, ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1], ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor, Resistance: Lightning</em></p>
             <p>Once per turn when you take or deal lightning damage, you gain a d4. You can add this d4 to your next attack roll or saving throw before the end of your next turn. You can only have one d4 from this ability at a time. If you gain another d4 while you already have one, you immediately roll it and gain temporary hit points equal to the amount rolled.</p>
@@ -1981,7 +1981,7 @@
     <element name="Construct Constitution" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_CONSTRUCT_CONSTITUTION">
         <supports>Specialization Upgrade</supports>
         <prerequisite>Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor</em></p>
             <p>You gain resistance to poison damage and immunity to the poisoned condition. You have advantage on saving throws against diseases as well as spell effects that require a "humanoid" target.</p>
@@ -1997,7 +1997,7 @@
     <element name="Wire Acrobatics" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_WIRE_ACROBATICS">
         <supports>Specialization Upgrade</supports>
         <prerequisite>Warsuit, Grappling Reel</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_WARSUIT, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_GRAPPLING_REEL</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:warsuit:1], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_GRAPPLING_REEL</requirements>
         <description>
             <p><em>Prerequisite: Warsuit, Grappling Reel</em></p>
             <p>You can take your movement using your grappling reel instead of using it as an attack or action; you can only move yourself when using the grappling reel in this way.</p>
@@ -2011,7 +2011,7 @@
     <element name="Mechanical Overdrive" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_CONSTITUTION">
         <supports>Specialization Upgrade</supports>
         <prerequisite>Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor</em></p>
             <p>You overlord your integrated armor, driving you superhuman speeds. You can use this upgrade to cast <em>haste</em> targeting yourself. When you cast haste in this way, you have advantage on concentration checks to maintain it, but at the end of each of your turns take 1d4 fire damage that cannot be resisted from overheating.</p>
@@ -2162,7 +2162,7 @@
     <element name="Piloted Golem" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM">
         <supports>Specialization Upgrade</supports>
         <prerequisite>9th level, Warplate, Incompatible with Collapsible</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:9], ID_KTH_ARTIFICER_ARMOR_WARPLATE, !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_COLLAPSIBLE</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:9], [warsmith:warplate:1], !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_COLLAPSIBLE</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Warplate, Incompatible with Collapsible</em></p>
             <p>You enlarge your Warplate, turning it into a piloted mechanical golem. Your size category when wearing the armor increases by one.</p>
@@ -2212,6 +2212,179 @@
             <description>You count as three quarters cover for creatures within 5 feet (so long as you are between them and the attacker). Additionally, you cannot be moved against your will while in contact with the ground.</description>
         </sheet>
     </element>
+    
+    <element name="Variant Warsuit" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_WARSUIT_V">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>A magically enhanced set of gear.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="45">45 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">14 + Dex modifier (max 2)</set>
+            <set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARSUIT</set>
+		</setters>
+		<rules>
+            <stat name="ac:armored:armor" value="14" />
+            <select type="Class Feature" name="Specialization Upgrade (Variant Warsuit)" supports="Specialization Upgrade" />
+            <stat name="warsmith:warsuit" value="1" />
+		</rules>
+	</element>
+
+    <element name="Integrated Armor (Variant)" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR_V">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>You magically integrate your armor into your own body. Integrated armor cannot be removed, but does not confer any penalty when resting in it.</p>
+            <p>While wearing this armor, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="30">30 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="armorClass">14 + Dex modifier (max 2)</set>
+            <set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_INTEGRATED_ARMOR</set>
+		</setters>
+		<rules>
+            <stat name="ac:armored:armor" value="14" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+            <select type="Class Feature" name="Specialization Upgrade (Variant Integrated Armor)" supports="Specialization Upgrade" />
+            <stat name="warsmith:integratedarmor" value="1" />
+		</rules>
+	</element>
+
+    <element name="Wargear" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_WARGEAR">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Medium, interlocking plates of magically-reinforced metal.</p>
+            <p>While wearing Wargear armor, your Strength ability score increases by 2, and your maximum Strength ability score becomes 22. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="45">45 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="strength">-</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+            <set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARPLATE</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="15" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+            <stat name="strength" value="2" />
+            <stat name="strength:max" value="2" />
+            <stat name="warsmith:warplate" value="1" />
+		</rules>
+	</element>
+
+    <element name="Wargear (Variant)" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_WARGEAR_V">
+		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+		<description>
+			<p>Medium, interlocking plates of magically-reinforced metal.</p>
+            <p>While wearing Wargear armor, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="45">45 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Medium</set>
+			<set name="strength">-</set>
+			<set name="stealth">Disadvantage</set>
+			<set name="armorClass">15 + Dex modifier (max 2)</set>
+            <set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARPLATE</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+			<stat name="ac:armored:armor" value="15" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+            <select type="Class Feature" name="Specialization Upgrade (Variant Integrated Armor)" supports="Specialization Upgrade" />
+            <stat name="warsmith:warplate" value="1" />
+		</rules>
+	</element>
+    
+    <element name="Warskin" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_WARSKIN">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>A magically enhanced set of gear. While wearing Warskin armor, your Strength ability score increases by 2, and your maximum Strength ability score becomes 22.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">12 + Dex modifier</set>
+            <set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARSUIT</set>
+		</setters>
+		<rules>
+            <stat name="ac:armored:armor" value="14" />
+            <stat name="strength" value="2" />
+            <stat name="strength:max" value="2" />
+            <stat name="warsmith:warsuit" value="1" />
+		</rules>
+	</element>
+
+    <element name="Warskin (Variant)" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_WARSKIN_V">
+		<supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+		<description>
+			<p>A magically enhanced set of gear.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Light</set>
+			<set name="armorClass">12 + Dex modifier</set>
+            <set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARSUIT</set>
+		</setters>
+		<rules>
+            <stat name="ac:armored:armor" value="14" />
+            <select type="Class Feature" name="Specialization Upgrade (Variant Integrated Armor)" supports="Specialization Upgrade" />
+            <stat name="warsmith:warsuit" value="1" />
+		</rules>
+	</element>
+
+    <element name="Iron Shell" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_IRON_SHELL">
+		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+		<description>
+			<p>You magically integrate your armor into your own body. Integrated armor cannot be removed, but does not confer any penalty when resting in it.</p>
+            <p>While wearing an Iron Shell, your Strength ability score increases by 2, and your maximum Strength ability score becomes 22. You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="40">40 lb.</set>
+			<set name="slot">body</set>
+			<set name="armor">Heavy</set>
+            <set name="stealth">Disadvantage</set>
+			<set name="armorClass">18</set>
+            <set name="attunement">true</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_INTEGRATED_ARMOR</set>
+		</setters>
+		<rules>
+            <stat name="ac:armored:armor" value="18" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE" />
+            <stat name="strength" value="2" />
+            <stat name="strength:max" value="2" />
+            <stat name="warsmith:integratedarmor" value="1" />
+		</rules>
+	</element>
 
     <!--FLESHSMITH UPGRADES-->
 

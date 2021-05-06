@@ -476,7 +476,7 @@
     <element name="Collapsible" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_COLLAPSIBLE">
         <supports>Specialization Upgrade</supports>
         <prerequisite>5th level, Incompatible with Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], !ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], ![warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Incompatible with Integrated Armor</em></p>
             <p>Your Warsmith's armor can collapse into a case for easy storage. When transformed this way the armor is indistinguishable from a normal case and weighs 1/3 its normal weight. As an action you can don or doff the armor, allowing it to transform as needed.</p>
@@ -516,7 +516,7 @@
     <element name="Mechanical Enhancement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_MECHANICAL_ENHANCEMENT">
         <supports>Specialization Upgrade</supports>
         <prerequisite>5th level, Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], [warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Integrated Armor</em></p>
             <p>You improve every aspect of yourself ever so slightly. You gain +5 feet of movement, one additional hit point per Artificer level, and +1 to Strength, Dexterity, and Constitution saving throws.</p>
@@ -533,7 +533,7 @@
     <element name="Reactive Plating" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_REACTIVE_PLATING">
         <supports>Specialization Upgrade</supports>
         <prerequisite>5th level, Warplate</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], ID_KTH_ARTIFICER_ARMOR_WARPLATE</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], [warsmith:warplate:1]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Warplate</em></p>
             <p>Your armor partially deflects incoming blows. You can use your reaction when hit by an attack that deals bludgeoning, piercing, or slashing damage to reduce the damage of that attack by an amount equal to your proficiency bonus.</p>
@@ -737,7 +737,7 @@
     <element name="Sealed Suit" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SEALED_SUIT">
         <supports>Specialization Upgrade</supports>
         <prerequisite>5th level, Warplate</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], ID_KTH_ARTIFICER_ARMOR_WARPLATE</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:5], [warsmith:warplate:1]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Warplate</em></p>
             <p>As a bonus action on your turn you can environmentally seal your Warplate, giving you an air supply for up to 1 hour and making you immune to poison (but not curing you of existing poisoned conditions).</p>
@@ -818,7 +818,7 @@
     <element name="Phase Suit" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_BRUTE_PHASE_SUIT">
         <supports>Specialization Upgrade</supports>
         <prerequisite>9th level, Warsuit</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:9], ID_KTH_ARTIFICER_ARMOR_WARSUIT</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:9], [warsmith:warsuit:1]</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Warsuit</em></p>
             <p>You gain the ability to cast misty step and blink while wearing your Warsuit. Additionally, as an action, you can become intangible, and move through creatures or objects until the end of your turn. If you end your turn inside a creature or object, you are forced to the nearest unoccupied location, taking 10 force damage for each foot you are forced to move. Once you become intangible using this upgrade, you cannot do so again until you complete a short or long rest.</p>
@@ -913,7 +913,7 @@
     <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK">
         <supports>Specialization Upgrade</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], (ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR|ID_KTH_ARTIFICER_ARMOR_WARPLATE), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -929,7 +929,7 @@
     <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK2">
         <supports>Specialization Upgrade</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], (ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR|ID_KTH_ARTIFICER_ARMOR_WARPLATE), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -943,7 +943,7 @@
     <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK3">
         <supports>Specialization Upgrade</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], (ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR|ID_KTH_ARTIFICER_ARMOR_WARPLATE), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK2</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK2</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -957,7 +957,7 @@
     <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK4">
         <supports>Specialization Upgrade</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], (ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR|ID_KTH_ARTIFICER_ARMOR_WARPLATE), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK3</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK3</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -971,7 +971,7 @@
     <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK5">
         <supports>Specialization Upgrade</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], (ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR|ID_KTH_ARTIFICER_ARMOR_WARPLATE), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK4</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK4</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -986,7 +986,7 @@
     <element name="Iron Muscle" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_MUSCLE">
         <supports>Specialization Upgrade</supports>
         <prerequisite>11th level, Integrated Armor or Warplate</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], (ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR|ID_KTH_ARTIFICER_ARMOR_WARPLATE)</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1])</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate</em></p>
             <p>You reinforce the structure of your armor, giving it the strength of giants. While wearing your armor, your current Strength ability score is increased by 2, and your maximum Strength ability score becomes 24.</p>
@@ -1045,7 +1045,7 @@
     <element name="Phase Engine" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PHASE_ENGINE">
         <supports>Specialization Upgrade</supports>
         <prerequisite>15th level, Warsuit</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:15], ID_KTH_ARTIFICER_ARMOR_WARSUIT</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:15], [warsmith:warsuit:1]</requirements>
         <description>
             <p><em>Prerequisite: 15th level, Warsuit</em></p>
             <p>When you are attacked, you can use your reaction to become intangible, causing that attack to miss if it is a nonmagical attack, or to have disadvantage if it is a magical attack. Once you do so, you cannot do so again until you complete a short or long rest. This upgrade is refreshed every time you teleport or enter the ethereal plane.</p>
@@ -1058,7 +1058,7 @@
     <element name="Heavy Plating" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_HEAVY_PLATING">
         <supports>Specialization Upgrade</supports>
         <prerequisite>15th level, Warplate</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:15], ID_KTH_ARTIFICER_ARMOR_WARPLATE</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:15], [warsmith:warplate:1]</requirements>
         <description>
             <p><em>Prerequisite: 15th level, Warplate</em></p>
             <p>You install special heavy plating, giving you resistance to bludgeoning, piercing, and slashing damage from non-magical sources while wearing your Warplate.</p>
@@ -1147,6 +1147,7 @@
             <stat name="strength" value="2" />
             <stat name="strength:max" value="2" />
             <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="warsmith:warplate" value="1" />
 		</rules>
 	</element>
     <element name="Armor Proficiency (Warplate)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARPLATE">
@@ -1171,6 +1172,7 @@
             <stat name="ac:armored:armor" value="14" />
             <stat name="strength" value="2" />
             <stat name="strength:max" value="2" />
+            <stat name="warsmith:warsuit" value="1" />
 		</rules>
 	</element>
     <element name="Armor Proficiency (Warsuit)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARSUIT">
@@ -1197,6 +1199,7 @@
             <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
             <stat name="strength" value="2" />
             <stat name="strength:max" value="2" />
+            <stat name="warsmith:integratedarmor" value="1" />
 		</rules>
 	</element>
     <element name="Armor Proficiency (Integrated Armor)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_INTEGRATED_ARMOR">
