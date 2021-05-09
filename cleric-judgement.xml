@@ -70,7 +70,7 @@
         <sheet>
             <description>You gain the sacred flame cantrip if you don't already know it.</description>
         </sheet>
-        <grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" />
+        <grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" spellcasting="Cleric" />
     </element>
     <element name="Sacred Judgement" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_SACRED_JUDGEMENT">
         <description>
@@ -87,7 +87,7 @@
             <p>Starting at 2nd level, as an action you can present your holy symbol and invoke judgment upon your enemies. You crush a target within 60 feet under the weight of their sins. The target makes a Wisdom saving throw. On failure, the creature is knocked prone and their movement speed is dropped to zero for 1 minute. The creature can repeat their saving throw at the end of each of their turns. They make this save disadvantage if they have dealt damage since the start of their turn.</p>
             <p class="indent">You can apply the bonus damage of Sacred Judgement when dealing damage with a Cleric spell to a creature you have Invoked Judgement on regardless if they have damaged another creature. This persists for 1 minute regardless of their save.</p>
         </description>
-        <sheet alt="Invoke Judgement" usage="Channel Divinity">
+        <sheet alt="Invoke Judgement" usage="Channel Divinity" action="Action">
             <description>As an action you crush a target within 60 feet under the weight of their sins. The target makes a Wisdom saving throw. On failure, the creature is knocked prone and their movement speed is dropped to zero for 1 minute. The creature can repeat their saving throw at the end of each of their turns. They make this save disadvantage if they have dealt damage since the start of their turn.
             You can apply the bonus damage of Sacred Judgement when dealing damage with a Cleric spell to a creature you have Invoked Judgement on regardless if they have damaged another creature. This persists for 1 minute regardless of their save.</description>
         </sheet>
@@ -100,8 +100,12 @@
         <sheet>
             <description usage="{{wisdom:modifier}}/Long rest">When an allied creature within 60 feet of you is reduced to zero hit points or takes damage from another creature while under the effect of a sanctuary spell you cast, you can cast hellish rebuke against the attacker them without expending a spell slot.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" />
+        </rules>
     </element>
     <element name="Potent Cantrip" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_JUDGEMENT_DOMAIN_POTENT_CANTRIP">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
         <description>
             <p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
         </description>

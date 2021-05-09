@@ -19,6 +19,15 @@
             <description>An Infusionsmith can be a magical swordsman, a wandslinger, or bookish supporting character with a bag full of tricks that never quite runs dry.</description>
         </sheet>
         <rules>
+            <select type="Class Feature" name="Specialization Upgrade (3)" supports="Specialization Upgrade, Infusionsmith" level="3" />
+            <select type="Class Feature" name="Specialization Upgrade (5)" supports="Specialization Upgrade, Infusionsmith" level="5" />
+            <select type="Class Feature" name="Specialization Upgrade (7)" supports="Specialization Upgrade, Infusionsmith" level="7" />
+            <select type="Class Feature" name="Specialization Upgrade (9)" supports="Specialization Upgrade, Infusionsmith" level="9" />
+            <select type="Class Feature" name="Specialization Upgrade (11)" supports="Specialization Upgrade, Infusionsmith" level="11" />
+            <select type="Class Feature" name="Specialization Upgrade (13)" supports="Specialization Upgrade, Infusionsmith" level="13" />
+            <select type="Class Feature" name="Specialization Upgrade (15)" supports="Specialization Upgrade, Infusionsmith" level="15" />
+            <select type="Class Feature" name="Specialization Upgrade (17)" supports="Specialization Upgrade, Infusionsmith" level="17" />
+            <select type="Class Feature" name="Specialization Upgrade (19)" supports="Specialization Upgrade, Infusionsmith" level="19" />
             <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_FEATURE_INFUSIONSMITH_PROFICIENCY" level="1" />
             <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT" level="1" />
             <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_FEATURE_INFUSIONSMITH_SPELL_MANUAL" level="3" />
@@ -177,8 +186,7 @@
     <!--INFUSIONSMITH UPGRADES-->
 
     <element name="Animated Archer" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ANIMATED_ARCHER">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You master animation enchantments allowing you to use your Animate Weapon feature on a ranged weapon and a quiver of ammunition. An animated ranged weapon hovers near you, and can target anything inside the weapon's normal range with a ranged spell attack.</p>
             <p class="indent">This attack deals weapon damage + your intelligence modifier on hit. The weapon requires ammunition, and can carry up 30 pieces of ammunition at a time, after which it needs to be reloaded as an action.</p>
@@ -189,8 +197,7 @@
     </element>
 
     <element name="Animated Shield" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ANIMATED_SHIELD">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You apply your animating magic to a shield. At the end of a long rest, you can touch a shield, causing it to spring to life and protect you until you complete your next long rest. While it is protecting you, you gain the benefit if you had the shield equipped. You cannot benefit from both an animated shield and an equipped shield.</p>
             <p class="indent">While you have an animated shield, you can use your reaction to send it to defend an ally within 30 feet who is being attacked. You can impose disadvantage on that attack, but do not gain the benefits of having an animated shield until the start of your next turn.</p>
@@ -201,8 +208,7 @@
     </element>
 
     <element name="Arcane Armament" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ARCANE_ARMAMENT">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You master armoring yourself with magical enchantments. You learn the <em>mage armor</em> spell. While under the effect of mage armor, you can add your Intelligence modifier to your AC instead of your Dexterity modifier. You can only do this if you are not adding your Intelligence modifier to your AC from another source. Additionally you gain resistance to force damage.</p>
             <div class="reference">
@@ -213,14 +219,13 @@
             <description>You learn the <em>mage armor</em> spell. While under the effect of mage armor, you can add your Intelligence modifier to your AC instead of your Dexterity modifier. You can only do this if you are not adding your Intelligence modifier to your AC from another source. Additionally you gain resistance to force damage.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" spellcasting="KTHArtificer" />
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
         </rules>
     </element>
 
     <element name="Loyal Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_LOYAL_WEAPON">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You can cast the <em>returning weapon</em> spell as a first level spell without expending a spell slot, but if you cast it on a second weapon with this feature, the spell immediately fades from any previous use of this feature.</p>
             <div class="reference">
@@ -236,21 +241,127 @@
     </element>
 
     <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
             <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
             <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
         </description>
         <sheet>
-            <description>TODO</description>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF2">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF3">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF2</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF4">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF3</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF5">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF4</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF6">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF5</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF7">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF6</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF8">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF7</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF9">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF8</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Wand of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF0">
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_WAND_OF9</requirements>
+        <description>
+            <p>You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges.</p>
+            <p class="indent">You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="3/Long Rest">You create a new Wand that you can infuse with a spell of 1st level or higher that you have recorded in your Spell Manual. This wand does not require attunement, but can only be used by you. The spell must be of a level that you can cast as an Artificer (as of when you would get this upgrade). This wand has three charges. You can expend a charge to cast the selected spell at its base level. The wand regains all charges at the end of a long rest.</description>
         </sheet>
     </element>
 
     <element name="Skilled Animation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_SKILLED_ANIMATION">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You manage to make the magic of your Animated Weapons so potent that attacks made with them are made with a fighting style. Attacks made with one handed weapons gain Dueling, attacks made with two-handed weapons gain Great Weapon Fighting, and attacks made with ranged weapons gain Archery.</p>
         </description>
@@ -260,8 +371,7 @@
     </element>
 
     <element name="Soul Saving Bond" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_SOUL_SAVING_BOND">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You set up a special magical bond between you and another creature. When either creature bound by these abilities fails a Wisdom, Intelligence, Charisma, or Death saving throw, the other character can make their own saving throw, replacing the failed save with their own roll. If this ability is used on a death saving throw, the replacement roll is a 20. Once a roll is replaced by this feature, it cannot be used again until both creatures in the bond have completed a short or long rest.</p>
             <p class="indent">This bond can be set up with a different creature at the end of a long rest.</p>
@@ -272,8 +382,7 @@
     </element>
 
     <element name="Warding Stone" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_WARDING_STONE">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You learn how to weave a protective enchantment on an item. That item gains a pool of temporary hit points equal to your Artificer level. Whoever is carrying this item gains any temporary hit points remaining in this pool, but these are lost when that creature is no longer carrying this item.</p>
             <p class="indent">This pool of temporary hit points refreshes when the Artificer that created it completes a long rest.</p>
@@ -284,8 +393,7 @@
     </element>
 
     <element name="Worn Enhancement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_WORN_ENHANCEMENT">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You can enchant an item you are wearing, such as a scarf or cloak to animate and assist you with a task, be it climbing a wall, grappling an enemy, or picking a lock. You can expend a 1st level spell slot to gain proficiency in a Strength or Dexterity skill until you complete a long rest. You can use up all the magic in the item to gain advantage on one check of that skill, immediately ending the effect.</p>
         </description>
@@ -295,9 +403,9 @@
     </element>
 
     <element name="Arcane Ammunition" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ARCANE_AMMUNITION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You infuse a ranged weapon with special magic granting it magical ammunition. The weapons damage becomes force damage and it no longer requires ammunition to fire. If the weapon had the Loading property, it no longer has the Loading Property.</p>
@@ -308,9 +416,9 @@
     </element>
 
     <element name="Deflecting Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_DEFLECTING_WEAPON">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>While you have an animated melee weapon, if you are attacked by a weapon attack you can use your reaction to attempt to block the attack, rolling a d8 and adding it to your AC. You can decide to block after the attack is rolled, but before the outcome is determined. If you successfully block a melee weapon attack like this and the attack misses, you can immediately make one weapon attack against the target.</p>
@@ -322,9 +430,9 @@
     </element>
 
     <element name="Infuse Shadows" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_INFUSE_SHADOWS">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You learn the spell shadow blade. When you are wielding the blade conjured by shadow blade you can treat it as an Infused Weapon.</p>
@@ -336,14 +444,14 @@
             <description>You learn the spell shadow blade. When you are wielding the blade conjured by shadow blade you can treat it as an Infused Weapon.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_SHADOW_BLADE" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SHADOW_BLADE" spellcasting="KTHArtificer" />
         </rules>
     </element>
 
     <element name="Lesser Ring of Protection" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_LESSER_RING_OF_PROTECTION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You make a prototype Ring of Protection. Any creature wearing it can add +1 to their armor class.</p>
@@ -354,9 +462,9 @@
     </element>
 
     <element name="Malicious Infusion" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MALICIOUS_INFUSION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>As a reaction to being hit with a metal weapon, you can cast <em>heat metal</em> targeting the weapon that struck you. Additionally, you learn the spell <em>heat metal</em>.</p>
@@ -373,9 +481,9 @@
     </element>
 
     <element name="Ring of Reaction" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_RING_OF_REACTION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You make a minor magic ring. Any creature wearing it can add your Intelligence modifier to their Dexterity saving throws and initiative rolls.</p>
@@ -386,9 +494,9 @@
     </element>
 
     <element name="Translocation Binding" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_TRANSLOCATION_BINDING">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>As a bonus action while attacking with an Infused or Animated melee weapon, you can expend a first level spell slot and teleport to an unoccupied location within 5 feet of it before it returns to you. You can invoke this even if the attack misses the target.</p>
@@ -399,9 +507,9 @@
     </element>
 
     <element name="Weapon Enhancement Resonance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_WEAPON_ENHANCEMENT_RESONANCE">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>When you cast arcane weapon, magical weapon, elemental weapon, or vorpal weapon on a weapon Animated or Infused by you it affects all weapons Animated or Infused by you. Additionally, you can target a weapon with any arcane weapon, magical weapon, or elemental weapon even if the weapon is already magical.</p>
@@ -421,9 +529,9 @@
     </element>
 
     <element name="Weapon Enhancement Expertise" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_WEAPON_ENHANCEMENT_EXPERTISE">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>When you cast arcane weapon, magical weapon or vorpal weapon on a weapon, that weapon deals an additional 1d4 force damage. The damage of elemental weapon is increased by 1d4 of the elemental type chosen.</p>
@@ -444,9 +552,9 @@
     </element>
 
     <element name="Detonate Armament" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_WEAPON_DETONATE_ARMAMENT">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>9th level, Arcane Armament</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:9], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ARCANE_ARMAMENT</requirements>
+        <requirements>[level:9], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ARCANE_ARMAMENT</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Arcane Armament</em></p>
             <p>As a reaction to taking damage, you can end the effect of <em>mage armor</em> to cast <em>thunder step</em> without expending a spell slot. When you cast thunder step in this manner, it deals force damage instead of thunder damage.</p>
@@ -464,9 +572,9 @@
     </element>
 
     <element name="Dimensional Pockets" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_WEAPON_DIMENSIONAL_POCKETS">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You enchant a pocket on your gear to contain far more than it would appear. That pocket can hold any object that can fit through a 6 inch diameter opening, and up to 50 pounds. The pocket otherwise behaves in the same manner as a bag of holding.</p>
@@ -477,9 +585,9 @@
     </element>
 
     <element name="Invisibility Cloak" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_WEAPON_INVISIBILITY_CLOAK">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You make a cloak of invisibility. While wearing this a creature can cast invisibility once without expending a spell slot. When cast in this method it does not require concentration. It cannot be used again in that way until you complete a short or long rest.</p>
@@ -496,9 +604,9 @@
     </element>
 
     <element name="Prepared Enhancement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_WEAPON_PREPARED_ENHANCEMENT">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You bestow magical enchantments onto your gear, casting a limited version of <em>contingency</em> without expending a material component or spell slot. When cast in this way, the spell triggered by contingency must must a 2nd level or lower spell, and ends if you complete a long rest before the contingency is triggered.</p>
@@ -516,9 +624,9 @@
     </element>
 
     <element name="Spell Trapping Ring" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_SPELL_TRAPPING_RING">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You set a powerful magic into a non-magical ring. You can use this ring to cast counterspell without expending a spell slot. When you cast counterspell in this way and it succeeds, the spell countered is stored in the ring. You can then cast the stored spell without expending a spell slot, but the spell fades if it is not used before you complete a long rest.</p>
@@ -536,9 +644,9 @@
     </element>
 
     <element name="Enchanted Broom" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ENCHANTED_BROOM">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>You can enchant a broom (or broom like object) into a Broom of Flying. You set the command word for the broom, and the Broom only obeys you.</p>
@@ -549,9 +657,9 @@
     </element>
    
     <element name="Empower Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_EMPOWER_WEAPON">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>When you hit a creature with a weapon, you can infuse the weapon with arcane energy as a bonus action to deal 3d4 additional force damage. When infusing the weapon in this way you can expend a 1st level spell slot to increase the damage further. The extra damage is 3d4 for a 1st-level spell slot, plus 2d4 for each spell level higher than 1st.</p>
@@ -562,9 +670,9 @@
     </element>
 
     <element name="Mixed Technique" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MIXED_TECHNIQUE">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>If you use your action to cast a cantrip with a Blasting Rod, you can make a single weapon attack as a bonus action using an Animated or Infused weapon.</p>
@@ -575,9 +683,9 @@
     </element>
 
     <element name="Life Infusion" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_LIFE_INFUSION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>You learn a potent magical infusion that suffuses a creature with life energy. You can cast regenerate without expending a spell slot. Once you cast this spell in this manner, you cannot use it again until you complete a long rest.</p>
@@ -594,23 +702,88 @@
     </element>
 
     <element name="Magical Rod of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</p>
             <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
         </description>
         <sheet>
-            <description>TODO</description>
+            <description usage="1/Long Rest">You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Rod of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF2">
+        <supports>Specialization Upgrade, Infusionsmith</supports>
+        <prerequisite>11th level</prerequisite>
+        <requirements>[level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Rod of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF3">
+        <supports>Specialization Upgrade, Infusionsmith</supports>
+        <prerequisite>11th level</prerequisite>
+        <requirements>[level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF2</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Rod of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF4">
+        <supports>Specialization Upgrade, Infusionsmith</supports>
+        <prerequisite>11th level</prerequisite>
+        <requirements>[level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF3</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Rod of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF5">
+        <supports>Specialization Upgrade, Infusionsmith</supports>
+        <prerequisite>11th level</prerequisite>
+        <requirements>[level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF4</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Magical Rod of..." type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF6">
+        <supports>Specialization Upgrade, Infusionsmith</supports>
+        <prerequisite>11th level</prerequisite>
+        <requirements>[level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_MAGICAL_ROD_OF5</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</p>
+            <p class="indent">You can select this upgrade multiple times, selecting a different spell each time you take this upgrade.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You create a new Rod that you can infuse with a spell of 5th level or higher you have recorded in your Spell Manual. This rod does not require attunement, but can only be used by you. The spell level must be equal to half or less of your Artificer level (as of when you would get this upgrade), rounded down. This rod has one charge. You can expend the charge to cast the selected spell at its base level. The rod regains all charges at the end of a long rest.</description>
         </sheet>
     </element>
 
     <element name="Advanced Object Animation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ADVANCED_OBJECT_ANIMATION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>15th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:15]</requirements>
+        <requirements>[level:15]</requirements>
         <description>
             <p><em>Prerequisite: 15th level</em></p>
             <p>When you cast the animate objects spell, your animated objects add +1 to their attack and damage rolls per object it counts as (tiny objects gain +1, huge objects gain +8).</p>
@@ -624,9 +797,9 @@
     </element>
 
     <element name="Third Animated Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ADVANCED_OBJECT_ANIMATION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>15th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:15]</requirements>
+        <requirements>[level:15]</requirements>
         <description>
             <p><em>Prerequisite: 15th level</em></p>
             <p>Your mastery of weapon animation expands to greater breadth of control. If you have two animated weapons, you can animate a third weapon with your Animate Weapon feature. When you take the attack action with your other two animated weapons, you can make a single spell attack with your third animated weapon as part of the same action.</p>

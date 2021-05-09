@@ -2,6 +2,35 @@
 <elements>
     <!--UPDATE 2.1a-->
 
+    <!--Class Features-->
+
+    <element name="Shield Proficiency" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_SHIELD_PROFICIENCY">
+        <supports>Specialization Upgrade, Gadgetsmith, Fleshsmith, Potionsmith, Thundersmith, Warsmith, Cursesmith, Runesmith, Infusionsmith</supports>
+        <requirements>!ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS|ID_KIBBLESTASTY_ARTIFICER_UPGRADE_SHIELD_PROFICIENCY</requirements>
+        <description>
+            <p>You gain proficiency with shields.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+        </rules>
+    </element>
+
+    <element name="Tool Proficiency" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_TOOL_PROFICIENCY">
+        <supports>Specialization Upgrade, Gadgetsmith, Fleshsmith, Potionsmith, Thundersmith, Warsmith, Cursesmith, Runesmith, Infusionsmith</supports>
+        <description>
+            <p>You gain proficiency with a tool of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Tool Proficiency, (Artificer Upgrade)" supports="Artisan tools" />
+        </rules>
+    </element>
+
+    <append id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_WARPLATE_GAUNTLET">
+        <supports>Cross Disciplinary Knowledge</supports>
+    </append>
+
     <!--Cursesmith-->
 
     <element name="Cursesmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH">
@@ -20,6 +49,15 @@
             <description></description>
         </sheet>
         <rules>
+            <select type="Class Feature" name="Specialization Upgrade (3)" supports="Specialization Upgrade, Cursesmith" level="3" />
+            <select type="Class Feature" name="Specialization Upgrade (5)" supports="Specialization Upgrade, Cursesmith" level="5" />
+            <select type="Class Feature" name="Specialization Upgrade (7)" supports="Specialization Upgrade, Cursesmith" level="7" />
+            <select type="Class Feature" name="Specialization Upgrade (9)" supports="Specialization Upgrade, Cursesmith" level="9" />
+            <select type="Class Feature" name="Specialization Upgrade (11)" supports="Specialization Upgrade, Cursesmith" level="11" />
+            <select type="Class Feature" name="Specialization Upgrade (13)" supports="Specialization Upgrade, Cursesmith" level="13" />
+            <select type="Class Feature" name="Specialization Upgrade (15)" supports="Specialization Upgrade, Cursesmith" level="15" />
+            <select type="Class Feature" name="Specialization Upgrade (17)" supports="Specialization Upgrade, Cursesmith" level="17" />
+            <select type="Class Feature" name="Specialization Upgrade (19)" supports="Specialization Upgrade, Cursesmith" level="19" />
             <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_CURSESMITH_PROFICIENCY" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_CURSESMITH_FORBIDDEN_ARTIFACT" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_CURSESMITH_CURSED_PATH" level="3" />
@@ -187,8 +225,7 @@
         <!--Cursesmith Upgrades-->
 
     <element name="Abhorrent Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
             <p>Your Forbidden Artifact takes on a twisted new aspect, warping to a more disturbing and twisted form. Select on of the following mutations.</p>
             <p class="indent"><strong><em>Life.</em></strong> It attacks your targets with only mental direction, twist, writhing, lashing... you can apply your Intelligence modifier to the to attack and damage roll of the weapon where you usually apply your Strength or Dexterity modifier.</p>
@@ -204,8 +241,8 @@
         </rules>
     </element>
     <element name="Abhorrent Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION2">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION</requirements>
         <description>
             <p>Your Forbidden Artifact takes on a twisted new aspect, warping to a more disturbing and twisted form. Select on of the following mutations.</p>
             <p class="indent"><strong><em>Life.</em></strong> It attacks your targets with only mental direction, twist, writhing, lashing... you can apply your Intelligence modifier to the to attack and damage roll of the weapon where you usually apply your Strength or Dexterity modifier.</p>
@@ -221,8 +258,8 @@
         </rules>
     </element>
     <element name="Abhorrent Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION3">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION2</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION2</requirements>
         <description>
             <p>Your Forbidden Artifact takes on a twisted new aspect, warping to a more disturbing and twisted form. Select on of the following mutations.</p>
             <p class="indent"><strong><em>Life.</em></strong> It attacks your targets with only mental direction, twist, writhing, lashing... you can apply your Intelligence modifier to the to attack and damage roll of the weapon where you usually apply your Strength or Dexterity modifier.</p>
@@ -238,8 +275,8 @@
         </rules>
     </element>
     <element name="Abhorrent Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION4">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION3</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ABHORRENT_MUTATION3</requirements>
         <description>
             <p>Your Forbidden Artifact takes on a twisted new aspect, warping to a more disturbing and twisted form. Select on of the following mutations.</p>
             <p class="indent"><strong><em>Life.</em></strong> It attacks your targets with only mental direction, twist, writhing, lashing... you can apply your Intelligence modifier to the to attack and damage roll of the weapon where you usually apply your Strength or Dexterity modifier.</p>
@@ -292,8 +329,7 @@
     </element>
 
     <element name="Blood Rites" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_BLOOD_RITES">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
             <p>Delving your dark path, you formulate a way to form temporary containers of magical power using blood. Select three ritual spells from the Wizard spell list; you gain the ability to cast these spells as Ritual Spells. You can only take spells of a level you could normally cast at the level you take this talent.</p>
             <p class="indent">To cast these spells as rituals, you require fresh blood; this can be provided by an creature that has been slain in the last hour, or by a creature (including yourself) providing it at a cost of 1d4 slashing damage.</p>
@@ -307,8 +343,7 @@
     </element>
 
     <element name="Eldritch Lore" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ELDRITCH_LORE">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
             <p>Your pursuits teach you a language of Infernal, Abyssal, Deepspeech, or Primordial, and you gain advantage on History or Arcana checks concerning curses, dark or evil magic, undead, and creatures that speak the language you selected.</p>
             <p class="indent">Your knowledge of these things makes you innured to disturbing sights and revelations. You have advantage on saving throws against creature effects that seek to frighten, stun, confuse, incapacity or inflict insanity or madness if the creature is an aberration.</p>
@@ -322,8 +357,7 @@
     </element>
 
     <element name="Helm of Invulnerability" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_HELM_INVULNERABILITY">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
             <p><em>You can only wear 1 Helm at a time. Attunement, Cursed.</em></p>
             <p>You forge a helmet, making yourself invulnerable... almost. As reaction to taking to bludgeoning piercing or slashing damage, you can become immune to bludgeoning piercing and slashing damage until the start of your turn. Once you use this upgrade, you cannot use it again until you complete a short or long rest.</p>
@@ -340,8 +374,7 @@
     </element>
 
     <element name="Helm of Madness" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_HELM_MADNESS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
             <p><em>You can only wear 1 Helm at a time. Attunement, Cursed.</em></p>
             <p>With great madness comes great power. As a bonus action, you can allow the madness to take your mind. The next time you take the Attack action before the end of your turn, when you take an attack as part of the attack action, you can make an additional attack for each attack made. Once you use this upgrade, you cannot use it again until you complete a short or long rest.</p>
@@ -358,8 +391,7 @@
     </element>
 
     <element name="Helm of Fangs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_HELM_FANGS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
             <p><em>You can only wear 1 Helm at a time. Attunement, Cursed.</em></p>
             <p>You make an imposing helming with large stylized metal fangs. While wearing this helm, you can bite a bite a creature as a bonus action. This is a natural weapon the deals 1d4 piercing damage. You can use this upgrade a number of times equal to your Proficiency bonus after which you cannot use it again until you complete a short or long rest.</p>
@@ -376,8 +408,7 @@
     </element>
 
     <element name="Diary of Darkness" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_DIARY_DARKNESS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
             <p>You record some of the foulest effects your experiments have had, codifying them into magical spells. You learn the following spells:</p>
             <table>
@@ -421,8 +452,7 @@
     </element>
 
     <element name="Ring of Gilded Lies" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_RING_GILDED_LIES">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH</requirements>
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
             <p><em>Attunement, Cursed.</em></p>
             <p>You create a ring that magical enhances your social abilities. Some of them. When your roll Deception or Performance, roll a d4 and add it to the result.</p>
@@ -439,9 +469,9 @@
     </element>
 
     <element name="Ghostgrab Gloves" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_GHOSTGRAB_GLOVES">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p><em>You can only wear 1 set of Gauntlets at a time. Attunement, Cursed.</em></p>
@@ -459,9 +489,9 @@
     </element>
 
     <element name="Mantle of the Beast" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_MANTLE_BEAST">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p><em>Attunement, Cursed.</em></p>
@@ -479,9 +509,9 @@
     </element>
 
     <element name="Skeletal Gauntlets" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_SKELETAL_GAUNTLETS">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p><em>You can only wear 1 set of Gauntlets at a time.</em></p>
@@ -502,9 +532,9 @@
     </element>
 
     <element name="Soul Transfer Token" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_SOUL_TRANSFER_TOKEN">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You creature a dark magic object that allows you cast <em>possess corpse</em>. Once you use this upgrade, you cannot do so again until you complete a long rest.</p>
@@ -521,9 +551,9 @@
     </element>
 
     <element name="Vicious Effigy" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_VICIOUS_EFFIGY">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You learn the cruel puppetry spell and can cast it once without expending a spell slot. Once you use this upgrade, you cannot do so again until you complete a long rest.</p>
@@ -535,14 +565,14 @@
             <description usage="1/Long Rest">You learn the cruel puppetry spell and can cast it once without expending a spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_CRUEL_PUPPETRY" />
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_CRUEL_PUPPETRY" spellcasting="KTHArtificer" />
         </rules>
     </element>
 
     <element name="Whispers of the Night" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_WHISPERS_NIGHT">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>After tinkering with the properties of your Artifact, you can hear it... whisper. You can hear that too, right? You gain the ability to cast guidance. When you cast guidance in this way, it has a range of 20 feet, the target need not be willing, but unwilling targets can make a Wisdom saving throw. On failure, the spell effects them and you can choose if the roll is added or subtracted from the targets skill check; on success, they are not affected by the spell.</p>
@@ -564,9 +594,9 @@
     </element>
 
     <element name="Aspect of the Damned" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ASPECT_DAMNED">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>9th level, Curse Eater, 2 upgrades consumed</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:9], ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_CURSESMITH_CURSED_PATH_EATER, [cursesmith:curses:2]</requirements>
+        <requirements>[level:9], ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_CURSESMITH_CURSED_PATH_EATER, [cursesmith:curses:2]</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Curse Eater, 2 upgrades consumed</em></p>
             <p>The powers you have pilfered for your soul have tainted it... naturally this gives you great power. In addition to the powers you have gained from your upgrades, selected two of the following powers to permanently gain:</p>
@@ -621,7 +651,7 @@
             <description>You gain an unrestricted Fleshsmith upgrade.</description>
         </sheet>
         <rules>
-            <!-- todo: Figure out how this works in my workflow-->
+            <select type="Class Feature" name="Physical Mutation" supports="Specialization Upgrade, Fleshsmith, Unrestricted" />
         </rules>
     </element>
     <element name="Unlife" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_ASPECT_DAMNED_UNLIFE">
@@ -638,9 +668,9 @@
     </element>
 
     <element name="Chain of Agony" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_CHAIN_AGONY">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You forge a 10 feet of non-magical chains into a set of magical chains. Choosing a command word, when you speak it while carrying the chains, they spring to life, wrapping around Large or smaller creature of your choice within 15 feet. The target creature must make a Dexterity saving throw, or become restrained on failure.</p>
@@ -658,9 +688,9 @@
     </element>
 
     <element name="Spell Eating Ring" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_SPELL_EATING_RING">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You make a magical item that consumes magic around you. You can activate the item, casting counterspell or dispel magic against a target within 15 feet of you. Any spell you that is stopped or ended by the effect, you can choose to consume, restoring 1d4 hit points to you per level of the spell, or gain the effect of the spell stopped or ended yourself until the end of your next turn if it could effect a creature and had a duration other than instantaneous. A spell stolen in this way does not require concentration to maintain, but lasts only a number of turns equal to your Intelligence modifier or the spells duration, whichever is shorter.</p>
@@ -678,9 +708,9 @@
     </element>
 
     <element name="Ring of Nightmares" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_RING_NIGHTMARES">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p><em>Attunement, Cursed.</em></p>
@@ -714,9 +744,9 @@
     </element>
 
     <element name="Shadow Vessel" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_SHADOW_VESSEL">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You create a container filled with an inky shadow. You can open the container to cast summon shadowspawn without expending a spell slot. You can expend a spell slot of a higher level to cast the spell at the level of the expended spell slot plus one level. Once you use this ability, you cannot use it again until you complete long rest.</p>
@@ -733,9 +763,9 @@
     </element>
 
     <element name="Consuming Power" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_CONSUMING_POWER">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p><em>Attunement, Cursed.</em></p>
@@ -755,9 +785,9 @@
     </element>
 
     <element name="Weapon Apotheosis" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_WEAPON_APOTHEOSIS">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>When you awaken your weapon, once per turn when you deal damage with it, it deals an additional 1d6 necrotic damage and it gains an additional benefit based on its nature:</p>
@@ -777,9 +807,9 @@
     </element>
 
     <element name="Infused Power" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_INFUSED_POWER">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>11th level, Consuming Power</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:11], ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_CONSUMING_POWER</requirements>
+        <requirements>[level:11], ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_CONSUMING_POWER</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Consuming Power</em></p>
             <p>You make the Strength granted by the worn item your own; the maximum Strength you can draw from them by sacrificing Charisma becomes 22, and while activated you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, and your unarmed strikes become deal 1d4 bludgeoning damage.</p>
@@ -790,9 +820,9 @@
     </element>
 
     <element name="Incinerate Soul" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_INCINERATE_SOUL">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>In the blackest of rites envisioned only by the evilest of minds, you develop a new technique. As a reaction to killing a CR 1/4 with your Artifact, you can rip free part of the departing lifeforce, turning it into a flaming spectral form. Until the end of your next turn, you can make a ranged spell attack as bonus action to hurl this fragment of flaming power at another creature. On hit, it deals 1d10 fire damage and 1d10 necrotic damage.</p>
@@ -803,9 +833,9 @@
     </element>
 
     <element name="Ghost Cloak" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_GHOST_CLOAK">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p><em>You can only wear 1 cloak at a time. Attunement, Cursed.</em></p>
@@ -824,9 +854,9 @@
     </element>
 
     <element name="Blood Cloak" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_BLOOD_CLOAK">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p><em>You can only wear 1 cloak at a time. Attunement, Cursed.</em></p>
@@ -844,9 +874,9 @@
     </element>
 
     <element name="Amulet of Exiling" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_AMULET_OF_EXILING">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>15th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:15]</requirements>
+        <requirements>[level:15]</requirements>
         <description>
             <p><em>Prerequisite: 15th level</em></p>
             <p>You forge a magical amulet that causes creatures to phase from reality to varying degrees of permanency. You can use this amulet to cast banishment or blink without expending a spell slot. Once you use the amulet to cast a spell, you cannot use it to cast a spell against until you complete a short or long rest.</p>
@@ -870,9 +900,9 @@
     </element>
 
     <element name="Exude Darkness" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_EXUDE_DARKNESS">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>15th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:15]</requirements>
+        <requirements>[level:15]</requirements>
         <description>
             <p><em>Prerequisite: 15th level</em></p>
             <p>You allow the power of your artifact to leak out. Whenever you cast a spell of 1st level or higher, you gain the effect of shadow of moil for a number of turns equal to the level of the spell cast. This effect does not require concentration to maintain.</p>
@@ -889,9 +919,9 @@
     </element>
 
     <element name="True Artifact" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_CURSESMITH_TRUE_ARTIFACT">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>15th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_CURSESMITH, [level:15]</requirements>
+        <requirements>[level:15]</requirements>
         <description>
             <p><em>Prerequisite: 15th level</em></p>
             <p>So long ago you forged great power. Now you realize its full potential. Your cursed weapon becomes a true artifact, any bonus to attack and damage rolls lower than +3 it has is replaced by a bonus of +3, it gains two additional properties from the following list:</p>
@@ -1236,9 +1266,9 @@
     <!--THUNDERSMITH UPGRADES-->
 
     <element name="Lightning Arcs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_ARCS">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>Once per turn, when you deal Lightning damage with your Stormforged weapon, you can arc the lightning to strike another target within 5 feet. For each die of lightning damage you dealt to the first target, deal 1d4 lightning damage to the second target.</p>
@@ -1249,9 +1279,9 @@
     </element>
 
     <element name="Static Aura" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_STATIC_AURA">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>9th level, Thunder Cannon</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:9], ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON</requirements>
+        <requirements>[level:9], ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Thunder Cannon</em></p>
             <p>Your Thunder Cannon emits such a powerful charged aura after being fired, creatures within 5 feet must make a Dexterity saving throw. On failure they take 1d8 lightning damage and have disadvantage on their next attack made before the end of their turn.</p>
@@ -1262,9 +1292,9 @@
     </element>
 
     <element name="Railgun" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_RAILGUN">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>19th level, Thunder Cannon</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:19], ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON</requirements>
+        <requirements>[level:19], ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON</requirements>
         <description>
             <p><em>Prerequisite: 19th level, Thunder Cannon</em></p>
             <p>You upgrade the penetration power of your Thunder Cannon. Your Thunder Cannon gains the Siege weapon property, dealing double damage to structures. Additionally, targets can no longer gain the benefits of cover from wooden cover less than 2 feet thick or stone cover less than 1 foot thick, and such cover is destroyed when it would otherwise impede your Thunder Cannon's attack.</p>
@@ -1277,9 +1307,9 @@
     </element>
 
     <element name="Lightning Saber" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_SABER">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>19th level, Charged Blade</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH, [level:19], ID_KTH_ARTIFICER_WEAPON_CHARGED_BLADE</requirements>
+        <requirements>[level:19], ID_KTH_ARTIFICER_WEAPON_CHARGED_BLADE</requirements>
         <description>
             <p><em>Prerequisite: 19th level, Charged Blade</em></p>
             <p>You amplify lightning coursing through your weapon until it becomes a brilliant rod of near pure power. Your weapon casts bright light in a color of your choice for 30 feet, and dim light for additional 30 feet.</p>
@@ -1293,9 +1323,9 @@
     <!--GADGETSMITH UPGRADES-->
 
     <element name="Antimagical Shackle" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_ANTIMAGICAL_SHACKLE">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgetsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You create an antimagical shackle. When you are adjacent to a creature, as an action you can attempt to shackle them to yourself or a nearby object using these shackles. The you make a Dexterity (Sleight of Hand) check contested by a Strength (Athletics) or Dexterity (Acrobatics) check. On failure, they are shackled to the creature or object you attempted to shackle them to, and can move only by moving it if they are able to.</p>
@@ -1310,9 +1340,9 @@
     </element>
 
     <element name="Conductive Lightning" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_CONDUCTIVE_LIGHTNING">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgetsmith, Unrestricted</supports>
         <prerequisite>Lightning Baton</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_LIGHTNING_BATON</requirements>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_LIGHTNING_BATON</requirements>
         <description>
             <p><em>Prerequisite: Lightning Baton</em></p>
             <p>If you make an attack against a target wearing metal armor or wielding metal weapons, the target takes the lightning damage from your baton attack regardless if you hit or miss, and your Lightning Baton gains a special attack. If you are under the effect of <em>lightning charged</em>, missed attacks that deal lightning damage also generate an arc of lightning from the spell.</p>
@@ -1328,9 +1358,9 @@
     </element>
 
     <element name="Creature Container" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_CREATURE_CONTAINER">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgetsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You make a small ball like gadget that contains a magical replica of a beast. As an action, you can throw this ball to conjure forth the stored creature, casting summon beast without expend a spell slot. You can expend a spell slot of a higher level to cast the spell at the level of the expended spell slot plus one level.</p>
@@ -1348,9 +1378,9 @@
     </element>
 
     <element name="Death Ray" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_DEATH_RAY">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgetsmith</supports>
         <prerequisite>17th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:17]</requirements>
+        <requirements>[level:17]</requirements>
         <description>
             <p><em>Prerequisite: 17th level</em></p>
             <p>You build a death ray, as Artificers do. As an action, you can cast <em>finger of death</em> without expending a spell slot. Once you use this gadget, you cannot use it again until you complete a long rest.</p>
@@ -1367,9 +1397,9 @@
     </element>
 
     <element name="Flames and Fury" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_FLAMES_AND_FURY">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgetsmith, Unrestricted</supports>
         <prerequisite>Fire Spitter</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FIRE_SPITTER</requirements>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FIRE_SPITTER</requirements>
         <description>
             <p><em>Prerequisite: Fire Spitter</em></p>
             <p>Sometimes the world needs more fire, and you've developed ways to accommodate the world on that need. Tinkering with things of a more violtile nature has given you insight into more ways to burn and explode things with your spell slots at the following levels:</p>
@@ -1401,17 +1431,17 @@
             <description>You gain additional spells at certain levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
-            <grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" level="5" />
-            <grant type="Spell" id="ID_XGTE_SPELL_PYROTECHNICS" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" level="5" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_PYROTECHNICS" level="5" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" spellcasting="KTHArtificer" />
         </rules>
     </element>
 
     <element name="Multipurpose Investigation Tool" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_MULTIPURPOSE_INVESTIGATION_TOOL">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_MULTIPURPOSE_INVESTIGATION_TOOL</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith, Unrestricted</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_MULTIPURPOSE_INVESTIGATION_TOOL</requirements>
         <description>
             <p>You build a tool with a suite of gizmos and widgets for optimal examination. While using this device, you gain proficiency in Intelligence (Investigation) checks. If you already have proficiency in Intelligence (Investigation) you can add twice your proficiency bonus.</p>
         </description>
@@ -1437,8 +1467,8 @@
     </element>
 
     <element name="Spring Action Dagger" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_SPRING_ACTION_DAGGER">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SPRING_ACTION_DAGGER</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith, Unrestricted</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_SPRING_ACTION_DAGGER</requirements>
         <description>
             <p>You create a dagger capable of being deployed with sudden and brutal efficiency. You have proficiency in this weapon, and it has the Finesse, Light, and Thrown (30/90) properties. It deals 1d4 piercing damage. This weapon can be concealed as something else; a creature searching you will only determine it a weapon by making an Intelligence (Investigation) check with a DC equal to your Spell Save modifier.</p>
             <p class="indent">Special: The first time you attack a creature with this dagger, you have advantage on the attack roll. When thrown, it's damage die becomes a d8.</p>
@@ -1466,8 +1496,8 @@
     </element>
 
     <element name="Steelweave Nets" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_STEELWEAVE_NETS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_STEELWEAVE_NETS</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith, Unrestricted</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_STEELWEAVE_NETS</requirements>
         <description>
             <p>You thread your nets with metal reinforcement, making them tougher and more conductive. The net gains an AC of 15 and resistance to slashing damage. Whenever a creature restrained by the net takes Lightning damage, it takes an additional 1d6 lightning damage.</p>
             <p class="indent">When a net is turned into a Steelweave Net, only you have proficiency with it. You can have a number of them equal to your Intelligence modifier, replenishing your supply over the course of a long rest by forging normal nets into Steelweave Nets.</p>
@@ -1491,8 +1521,8 @@
     </element>
 
     <element name="Trick Shots" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_TRICK_SHOTS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, !ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_TRICK_SHOTS</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith, Unrestricted</supports>
+        <requirements>!ID_KIBBLESTASTY_ARTIFICER_XDISC_GADGETSMITH_TRICK_SHOTS</requirements>
         <description>
             <p>At the end of a short or long rest, you can add one of the following effects to a piece of ammunition or thrown weapon, turning it into a trick shot.</p>
             <ul>
@@ -1536,9 +1566,9 @@
     </element>
 
     <element name="Transmogrifier" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_TRANSMOGRIFIER">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgetsmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You build a device to channel the power of transmution able to cast <em>polymorph</em> without expending a spell slot... unfortunately without great precision. Roll a d8 to determine what beast the spell will transform the target into and a d4 to select an additional effect, and then pick a target for the spell. If you do not pick a target, you will be the target.</p>
@@ -1575,9 +1605,9 @@
     </element>
 
     <element name="Wild Detonation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_WILD_DETONATION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgetsmith</supports>
         <prerequisite>9th level, Fire Spitter or Flashbang</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:9], (ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FIRE_SPITTER|ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FLASHBANG)</requirements>
+        <requirements>[level:9], (ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FIRE_SPITTER|ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_FLASHBANG)</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Fire Spitter or Flashbang</em></p>
             <p>Now when you use your Fire Spitter, you can double the dimensions and damage of the spell effect. Additionally, creatures that fail the saving against your Flashbang by 5 or more are stunned as well as blinded until the end of their next turn.</p>
@@ -1588,9 +1618,9 @@
     </element>
 
     <element name="Violent Momentum" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_VIOLENT_MOMENTUM">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Gadgetsmith</supports>
         <prerequisite>11th level, Impact Gauntlet</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH, [level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET</requirements>
+        <requirements>[level:11], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Impact Gauntlet</em></p>
             <p>Once per turn, when you move 10 feet or more toward a target before attacking them with your Impact Gauntlet, you can use the special attack of your Impact Gauntlet without forgoing your hit bonus.</p>
@@ -1601,8 +1631,7 @@
     </element>
 
     <element name="Quick Smoke Bomb" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_GADGETSMITH_QUICK_SMOKE_BOMB">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_GADGETSMITH</requirements>
+        <supports>Specialization Upgrade, Gadgetsmith, Unrestricted</supports>
         <description>
             <p>You set aside one of your smoke bombs for rapid deployment. You can use a Smoke Bomb as a bonus action. Once you you use this smoke bomb, you most complete a short or long rest before you can use this feature again.</p>
             </description>
@@ -1614,8 +1643,7 @@
     <!--INFUSIONSMITH UPGRADES-->
 
     <element name="Enchanted Garments" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_ENCHANTED_GARMENTS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You enchant your clothes, granting you several benefits over mundane not-enchanted clothes:</p>
             <ul>
@@ -1638,8 +1666,7 @@
     </element>
 
     <element name="Infuse Elements" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_INFUSE_ELEMENTS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>You can infuse elements with your magic temporarily, granting you limited control of them. You learn the cantrips control flames, mold earth, and shape water.</p>
             <div class="reference">
@@ -1656,16 +1683,16 @@
             <description>You learn the cantrips control flames, mold earth, and shape water.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
-            <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
-            <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" spellcasting="KTHArtificer" />
         </rules>
     </element>
 
     <element name="Investiture of Soul" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_INVESTITURE_OF_SOUL">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>19th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:19]</requirements>
+        <requirements>[level:19]</requirements>
         <description>
             <p><em>Prerequisite: 19th level</em></p>
             <p>When you cast <em>animate object</em> spell, you can expend a hit die. If you do it no longer requires concentration, and lasts until the objects created are destroyed or you complete a long rest. If you cast animate objects again while you still have animated objects active, the previous spell immediately ends.</p>
@@ -1679,8 +1706,7 @@
     </element>
 
     <element name="Spinning Blades" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_SPINNING_BLADES">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH</requirements>
+        <supports>Specialization Upgrade, Infusionsmith, Unrestricted</supports>
         <description>
             <p>As an action, instead of attacking with your Animated Weapons, you cause them to whirl through the air in place. This has the effect of <em>cloud of daggers</em>, but does not require concentration and ends at the start of your next turn. For each animated weapon you have you can pick a different 5 foot cube, or send them to the same spot. For each weapon sent the same spot, the spell level of the effect is increased by one.</p>
             <div class="reference">
@@ -1696,9 +1722,9 @@
     </element>
 
     <element name="Translocation Binding" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_INFUSIONSMITH_TRANSLOCATION_BINDING">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Infusionsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>As a bonus action while attacking with an Animated Weapon or a weapon under the effect of <em>weapon of throwing</em>, you can expend a first level spell slot and teleport to it before it returns to you. You can invoke this even if the attack misses the target.</p>
@@ -1715,8 +1741,8 @@
 
     <element name="Collateral Damage" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_COLLATERAL_DAMAGE">
         <prerequisite>Explosive Reaction</prerequisite>
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH, ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_EXPLOSIVE_REACTION</requirements>
+        <supports>Specialization Upgrade, Potionsmith, Unrestricted</supports>
+        <requirements>ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_EXPLOSIVE_REACTION</requirements>
         <description>
             <p><em>Prerequisite: Explosive Reaction</em></p>
             <p>Your explosive reaction now deals half damage to creatures that pass the saving throw against it.</p>
@@ -1728,8 +1754,8 @@
 
     <element name="Carrier Familiar" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_CARRIER_FAMILIAR">
         <prerequisite>9th level, Homunculus Familiar</prerequisite>
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH, [level:9], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_HOMUNCULUS_FAMILIAR</requirements>
+        <supports>Specialization Upgrade, Potionsmith</supports>
+        <requirements>[level:9], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_HOMUNCULUS_FAMILIAR</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Homunculus Familiar</em></p>
             <p>You utilize your Familiar to deliver your instant reactions. As an action, you can hand off a semi-stablized instant reaction to your familiar. Until the end of your familiar's next turn, it can use your Instant Reaction as it's action, targeting a point within 10 feet of it or dropping it up to 20 feet before it takes effect.</p>
@@ -1741,8 +1767,7 @@
     </element>
     
     <element name="Dragon Draught" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_DRAGON_DRAUGHT">
-        <supports>Specialization Upgrade, Instant RXN</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <supports>Specialization Upgrade, Potionsmith, Instant RXN, Unrestricted</supports>
         <description>
             <p>As an action you quaff a vial of highly reactive liquid, allow you to immediately belch a blast of devastating elemental energy. You can select between cold, fire, acid, or lightning. Cold and fire effect a 10 foot cone. Lightning and Acid effect at 15 foot line. Creatures in that area have to make a Dexterity saving throw against your Spell Save DC, or take 1d8 damage of the elemental type chosen.</p>
             <p class="indent">The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
@@ -1774,8 +1799,7 @@
     </element>
 
     <element name="Extra Zest" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_EXTRA_ZEST">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <supports>Specialization Upgrade, Potionsmith, Unrestricted</supports>
         <description>
             <p>You've mastered a twist for infusion. Whenever a consumed potion restores health, it restores an additional 1d4 hit points per level of the spell slot used to infuse it. Whenever a thrown potion deals damage, it deals an additional 1d4 damage of its primary damage type to creatures effected by it.</p>
         </description>
@@ -1785,8 +1809,7 @@
     </element>
 
     <element name="Flaming Grease" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_FLAMING_GREASE">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <supports>Specialization Upgrade, Potionsmith, Unrestricted</supports>
         <description>
             <p>You tweak your grease formula to be flammable, as grease should be. When you cast <em>grease</em> or use it to make an Alchemical Infusion, the effect becomes flammable. If the area of effect is hit with 1 or more point of fire damage, the all creatures in the area of effect take 2d4 fire damage. The grease burns for 2 turns after being set on fire.</p>
             <p class="indent">Additionally, you can use the <em>grease</em> spell or Alchemical Infusion to coat a weapon; when ignited, that weapon deals 2d4 additional fire damage until the grease burns away (2 turns).</p>
@@ -1801,8 +1824,8 @@
 
     <element name="Mutation Mixture" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_MUTATION_MIXTURE">
         <prerequisite>13th level</prerequisite>
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH, [level:13]</requirements>
+        <supports>Specialization Upgrade, Potionsmith</supports>
+        <requirements>[level:13]</requirements>
         <description>
             <p><em>Prerequisite: 13th level</em></p>
             <p>You concoct an infused potion that warps your body, rapidly and temporary mutating it in extreme ways. You gain the <em>polymorph</em> spell as an option for Alchemical Infusion, and when when you consume this Infused Potion, the duration of the potion is one hour, though it can be ended early with an action.</p>
@@ -1820,8 +1843,8 @@
 
     <element name="Napalm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_NAPALM">
         <prerequisite>Alchemical Fire</prerequisite>
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH, ID_KTH_ARTIFICER_INSTANT_RXN_ALCHEMICAL_FIRE</requirements>
+        <supports>Specialization Upgrade, Potionsmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_INSTANT_RXN_ALCHEMICAL_FIRE</requirements>
         <description>
             <p><em>Prerequisite: Alchemical Fire</em></p>
             <p>Targets that fail their saving throw against your Alchemical Fire Instant Reaction take an additional 1d4 damage at the start of their turns for one minute. They can end the effect early with an action to put it out.</p>
@@ -1835,8 +1858,7 @@
     </element>
 
     <element name="Stabilizing Agent" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_STABILIZING_AGENT">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <supports>Specialization Upgrade, Potionsmith, Unrestricted</supports>
         <description>
             <p>You introduce a new compound to your instant reactions that temporary stablizes them. When you use an Instant reaction, you can give it a timer of 0 to 3 rounds. The instant reaction is treated a small clump of components until that point; if undisturbed (it can be moved or thrown, but any creature that touches it can intentionally deactivate it if they know what it is), it will trigger the effect of the instant reaction where it is when the number of specified rounds have passed.</p>
             <p class="indent">If set to 0 rounds, it will trigger the effect at the end of your turn.</p>
@@ -1847,8 +1869,7 @@
     </element>
 
     <element name="Goodlent Pellets" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_POTIONSMITH_GOODLENT_PELLETS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH</requirements>
+        <supports>Specialization Upgrade, Potionsmith, Unrestricted</supports>
         <description>
             <p>You devise a nutritionally complete and revitalizing compound. You can use your alchemy to expend a first level spell slot to cast goodberry, but any berries generated taste distinctly bland.</p>
             <div class="reference">
@@ -1866,9 +1887,9 @@
     <!--WARSMITH UPGRADES-->
 
     <element name="Assume Control" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ASSUME_CONTROL">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>9th level, Emergency Protocol</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:9], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EMERGENCY_PROTOCOL</requirements>
+        <requirements>[level:9], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EMERGENCY_PROTOCOL</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Emergency Protocol</em></p>
             <p>You expanded the control available to your armor's sentience. You can set additional conditions when your armor will take control of your movement and actions, and can maintain this control of up to a 1 minute.</p>
@@ -1890,9 +1911,9 @@
     </element>
 
     <element name="Barrier Capacitor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_BARRIER_CAPACITOR">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Incompatible with other Capacitors</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:11], ![has capacitor:1]</requirements>
+        <requirements>[level:11], ![has capacitor:1]</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Incompatible with other Capacitors</em></p>
             <p>You can store up arcane energy, discharging it in the form of a protective barrier. As an action you can cast <em>wall of force</em> without expending a spell slot or charges. You can use an action to reorient or move the wall up to your movement speed, but the movement is not strong enough to cause any damage.</p>
@@ -1912,9 +1933,9 @@
     </element>
 
     <element name="Contingent Response" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_CONTINGENT_RESPONSE">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Sentient Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
         <description>
             <p><em>Prerequisite: Sentient Armor</em></p>
             <p>Choose a spell of 2nd level that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell, expending a spell slot, but the spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs.</p>
@@ -1927,9 +1948,9 @@
     </element>
 
     <element name="Extendable Arm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EXTENDABLE_ARM">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1]</requirements>
+        <requirements>[warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor</em></p>
             <p>As a bonus action, you can extend your arms reach until the end of your turn. Your melee weapon attacks gain the reach property until the end of your turn.</p>
@@ -1940,9 +1961,9 @@
     </element>
 
     <element name="Iron Fortitude" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_FORTITUDE">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1]</requirements>
+        <requirements>[warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor</em></p>
             <p>You gain an unnatural durability. When damage reduces you to 0 hit points, you make Constitution saving throw with a DC of 5 + the damage taken, unless the damage from a critical hit. On a success, you drop to 1 hit point instead.</p>
@@ -1953,9 +1974,9 @@
     </element>
 
     <element name="Hyperspace Arsenal" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_HYPERSPACE_ARSENAL">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>19th level, Recall</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RECALL, [level:19]</requirements>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RECALL, [level:19]</requirements>
         <description>
             <p><em>Prerequisite: 19th level, Recall</em></p>
             <p>You expand the pocket dimension to store multiple sets of Wargear, as well as up to 100 lbs of weapons or items. As a bonus action, you can conjure and equip any weapon or item stored in the pocket dimension. Additionally, you can swap out your attuned Wargear for another set of Wargear with this upgrade in the pocket dimension during this bonus action, instantly unattuning to the set you were wearing and attuning to the new set. Once you swap your Wargear using this feature, you cannot do so again until you complete a short or long rest.</p>
@@ -1966,9 +1987,9 @@
     </element>
 
     <element name="Powered Nervous System" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWERED_NERVOUS_SYSTEM">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Integrated Armor, Resistance: Lightning</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1], ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING</requirements>
+        <requirements>[warsmith:integratedarmor:1], ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor, Resistance: Lightning</em></p>
             <p>Once per turn when you take or deal lightning damage, you gain a d4. You can add this d4 to your next attack roll or saving throw before the end of your next turn. You can only have one d4 from this ability at a time. If you gain another d4 while you already have one, you immediately roll it and gain temporary hit points equal to the amount rolled.</p>
@@ -1979,9 +2000,9 @@
     </element>
 
     <element name="Construct Constitution" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_CONSTRUCT_CONSTITUTION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1]</requirements>
+        <requirements>[warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor</em></p>
             <p>You gain resistance to poison damage and immunity to the poisoned condition. You have advantage on saving throws against diseases as well as spell effects that require a "humanoid" target.</p>
@@ -1995,9 +2016,9 @@
     </element>
 
     <element name="Wire Acrobatics" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_WIRE_ACROBATICS">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Warsuit, Grappling Reel</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:warsuit:1], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_GRAPPLING_REEL</requirements>
+        <requirements>[warsmith:warsuit:1], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_GRAPPLING_REEL</requirements>
         <description>
             <p><em>Prerequisite: Warsuit, Grappling Reel</em></p>
             <p>You can take your movement using your grappling reel instead of using it as an attack or action; you can only move yourself when using the grappling reel in this way.</p>
@@ -2009,9 +2030,9 @@
     </element>
 
     <element name="Mechanical Overdrive" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_CONSTITUTION">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Integrated Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [warsmith:integratedarmor:1]</requirements>
+        <requirements>[warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: Integrated Armor</em></p>
             <p>You overlord your integrated armor, driving you superhuman speeds. You can use this upgrade to cast <em>haste</em> targeting yourself. When you cast haste in this way, you have advantage on concentration checks to maintain it, but at the end of each of your turns take 1d4 fire damage that cannot be resisted from overheating.</p>
@@ -2028,9 +2049,9 @@
     </element>
 
     <element name="Searing Shell" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SEARING_SHELL">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Resistance: Fire</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE</requirements>
+        <requirements>ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE</requirements>
         <description>
             <p><em>Prerequisite: Resistance: Fire</em></p>
             <p>As a bonus action, you can heat your armor to searing temperatures. Anything grappling, restraining, or otherwise holding onto you within 5 feet takes Fire damage equal to your Intelligence modifier. You can end this at the start of your turn (no action required). Whenever you end your turn with this active, you take 1 fire damage that cannot be resisted.</p>
@@ -2049,8 +2070,7 @@
     </element>
 
     <element name="Vice Grip" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_VICE_GRIP">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH</requirements>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <description>
             <p>You upgrade the arm that your warplate gauntlet is installed with crushing power. If a creature ends turn while grappled by your Warplate Gauntlet, it takes damage equal to your Strength modifier.</p>
         </description>
@@ -2060,8 +2080,7 @@
     </element>
 
     <element name="Adaptable Armor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ADAPTABLE_ARMOR">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH</requirements>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <description>
             <p>You integrate deployable hooks and fins into your armor, augmenting its mobility. While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
             <p class="indent">Additionally, you gain a swim speed equal to your walking speed.</p>
@@ -2076,8 +2095,7 @@
     </element>
 
     <element name="Earth Projector" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EARTH_PROJECTOR">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH</requirements>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <description>
             <p>You gain the ability of elemental control of earth. While wearing your Warplate Gauntlet, you can cast <em>magic stone</em>, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
             <table>
@@ -2109,17 +2127,16 @@
             <description>While wearing your Warplate Gauntlet, you can cast <em>magic stone</em>, and gain access to additional spells at later levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_MAGIC_STONE" />
-            <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="3" />
-            <grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="5" />
-            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="9" />
-            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES" level="13" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MAGIC_STONE" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="3" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="5" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="9" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES" level="13" spellcasting="KTHArtificer" />
         </rules>
     </element>
 
     <element name="Water Projector" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_WATER_PROJECTOR">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH</requirements>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <description>
             <p>You gain the ability to elemental control of water. While wearing your Warplate Gauntlet, you can cast <em>ray of frost</em>, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
             <table>
@@ -2151,18 +2168,18 @@
             <description>While wearing your Warplate Gauntlet, you can cast ray of frost, and gain access to additional spells at later levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
-            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="3" />
-            <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="5" />
-            <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="9" />
-            <grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="3" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="5" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="9" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" level="13" spellcasting="KTHArtificer" />
         </rules>
     </element>
 
     <element name="Piloted Golem" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>9th level, Warplate, Incompatible with Collapsible</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, [level:9], [warsmith:warplate:1], !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_COLLAPSIBLE</requirements>
+        <requirements>[level:9], [warsmith:warplate:1], !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_COLLAPSIBLE</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Warplate, Incompatible with Collapsible</em></p>
             <p>You enlarge your Warplate, turning it into a piloted mechanical golem. Your size category when wearing the armor increases by one.</p>
@@ -2175,9 +2192,9 @@
     </element>
 
     <element name="Self-Repair Matrix" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SELF_REPAIR_MATRIX">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Ablative Armor</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ABLATIVE_ARMOR</requirements>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ABLATIVE_ARMOR</requirements>
         <description>
             <p><em>Prerequisite: Ablative Armor</em></p>
             <p>At the start of each turn, if you have no temporary hit points, you gain temporary hit points equal your proficiency modifier.</p>
@@ -2188,9 +2205,9 @@
     </element>
 
     <element name="Shield Arm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SHIELD_ARM">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Piloted Golem</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM</requirements>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM</requirements>
         <description>
             <p><em>Prerequisite: Piloted Golem</em></p>
             <p>You integrate a shield into one of your armor's arms. You have proficiency with that shield, and can deploy it as a bonus action. It requires the use of that arm while deployed. When shove a medium or smaller creature, you can shove it by slaming it with the attached shield causing it to take damage equal to your Strength modifier.</p>
@@ -2201,9 +2218,9 @@
     </element>
 
     <element name="Iron Fortress" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_FORTRESS">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <prerequisite>Piloted Golem</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM</requirements>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PILOTED_GOLEM</requirements>
         <description>
             <p><em>Prerequisite: Piloted Golem</em></p>
             <p>You count as three quarters cover for creatures within 5 feet (so long as you are between them and the attacker). Additionally, you cannot be moved against your will while in contact with the ground.</p>
@@ -2404,9 +2421,9 @@
     </element>
 
     <element name="Bathed in Blood" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BATHED_IN_BLOOD">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>11th level, Flaying Hook</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK, [level:11]</requirements>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK, [level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Flaying Hook</em></p>
             <p>You can determine when a creature you can see within 30 feet is bloodied just be looking at it. Once per turn, when you deal damage to a bloodied creature with your Flaying Hook (including any weapon it is integrated to) or Butcher's Knack, that creature takes an additional 1d12 damage.</p>
@@ -2417,9 +2434,9 @@
     </element>
 
     <element name="Butcher's Knack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BUTCHERS_KNACK">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <prerequisite>Perfection of Technique</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_TECHNIQUE</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_TECHNIQUE</requirements>
         <description>
             <p><em>Prerequisite: Perfection of Technique</em></p>
             <p>Your skill with butchering allows you inflict brutal ones. Once per turn when you deal piercing or slashing damage to a creature that is not a construct or undead, you can inflict a rending wound on it. Any movement speed the target has is reduced by 5 feet.</p>
@@ -2431,9 +2448,9 @@
     </element>
 
     <element name="Death Flail" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DEATH_FLAIL">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <prerequisite>Perfection of Technique</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_TECHNIQUE</requirements>
+        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_TECHNIQUE</requirements>
         <description>
             <p><em>Prerequisite: Perfection of Technique</em></p>
             <p>Rather than cast out the Flaying Hook, you master the art of spinning your attacked martial weapon by the chain in windmill of death. Your weapon gains the Reach property when used in this way.</p>
@@ -2451,8 +2468,7 @@
     </element>
 
     <element name="Flaying Hook" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>A metal hook attached to a chain. You a proficient with this weapon, and it has the Special property. It deals 1d6 piercing damage.</p>
             <p class="indent">Special: This weapon has a range of 20 feet. When you hit at a target that is more than 5 feet away from you, if the target is medium or smaller, you can make a Strength (Athletics) check contested by its Strength(Athletics) to pull the target toward you. On a successful check, a smaller or smaller target is pulled to you, and a medium target is pulled half the distance (rounding up) toward you. The creature takes 1 additional damage for each 5 feet it is pulled.</p>
@@ -2465,9 +2481,9 @@
     </element>
 
     <element name="Spiked Chain" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SPIKED_CHAIN">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <prerequisite>Flaying Hook</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK</requirements>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLAYING_HOOK</requirements>
         <description>
             <p><em>Prerequisite: Flaying Hook</em></p>
             <p>You lace the chain of your Flaying Hook with spikes. When you attack a creature within 5 with your Flaying Hook, you can opt to make a Spiked Chain attack. This attack deals 2d4 piercing damage on hit, and has the Special property.</p>
@@ -2480,9 +2496,9 @@
     </element>
 
     <element name="Acid Gland" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_ACID_GLAND">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>Realizing that putting something that oozes acid inside yourself could not possible go wrong, you do just that. You gain a pool of d4s equal to your Constitution modifier. As a bonus action, you can expend an amount of these d4s, adding them to the next damage roll you make with a natural weapon before the end of your turn. The pool of d4s recharge at the end of a short or long rest.</p>
@@ -2496,14 +2512,14 @@
             <description usage="{{constitution:modifier}}/Short/Long rest" action="Bonus Action">You gain a pool of {{constitution:modifier}} d4s. As a bonus action, you can expend an amount of these d4s, adding them to the next damage roll you make with a natural weapon before the end of your turn. The pool of d4s recharge at the end of a short or long rest. Additionally, you learn the <em>acid splash</em> cantrip. When casting it using this upgrade, it does not require verbal or somatic components and you can use your Constitution as your spell casting modifier for it instead of your Intelligence modifier. You can expend the d4s granted by Acid Gland on the damage roll of acid splash, following the same restrictions as natural weapons.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" />
+            <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" spellcasting="KTHArtificer" />
         </rules>
     </element>
 
     <element name="Amalgamated Form" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_AMALGAMATED_FORM">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>You modify yourself to gain a racial ability of another race. This can be used to gain one physical trait of a playable race, both in form and function. For example, adding the lower body of centaur may give you their movement, hooves, and poor climbing ability.</p>
@@ -2568,9 +2584,9 @@
     </element>
 
     <element name="Brimstone Bladder" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BRIMSTONE_BLADDER">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:5]</requirements>
+        <requirements>[level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>Why should dragons have all the fun? You can now exhale fire. You gain a pool of d12s equal to your Artificer level. As an action, you can exhale a cone of fire, expending d12s from this pool equal to your Proficiency modifier. Creatures in a 30 foot cone make a Dexterity saving throw, taking Fire damage equal to the d12s expended on a failure, and half as much damage on a successful saving throw. You recover all d12s on a long rest.</p>
@@ -2585,9 +2601,9 @@
     </element>
 
     <element name="Devouring Maw" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DEVOURING_MAW">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>9th level</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, [level:9]</requirements>
+        <requirements>[level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level</em></p>
             <p>Due to the inefficiency of having only one intake port, you build an additional one, properly equipped with razor sharp fangs and a special property. This maw becomes a natural weapon that deals 1d10 piecing damage.</p>
@@ -2601,9 +2617,9 @@
     </element>
 
     <element name="Soul Eater" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SOUL_EATER">
-        <supports>Specialization Upgrade</supports>
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <prerequisite>Extra Fangs or Devouring Maw</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH, (ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DEVOURING_MAW|ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS)</requirements>
+        <requirements>(ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DEVOURING_MAW|ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS)</requirements>
         <description>
             <p><em>Prerequisite: Extra Fangs or Devouring Maw</em></p>
             <p>When you kill a creature with a CR of 1/4 or higher with your Extra Fangs or Devouring Maw, it consumes part of the soul of the creature, nourishing you with its essence. You regain an expanded spell slot equal to half the creatures CR (minimum first level spell slot).</p>
@@ -2615,8 +2631,7 @@
     </element>
 
     <element name="Extra Quills" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_EXTRA_QUILLS">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>Do you know what monsters never eat? Hedgehogs. You become more like a hedgehog. When you are attacked by a melee attack or are the target of a grapple attempt, you can use your reaction to deal 1d6 piercing damage to the attacking creature. You can do this a number of times equal to your Constitution modifier, and regrow all expended quills (regaining all uses of the ability) after you complete a long rest.</p>
             <p class="indent">Alternatively, you as sometimes the best defense is a good offense, you can expend a use of quills as a ranged weapon attack with a range of 20/60, dealing 1d8 piercing damage on hit.</p>
@@ -2628,8 +2643,7 @@
     </element>
 
     <element name="Dogmatic Persistence" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DOGMATIC_PERSISTENCE">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>Your idealogical conviction in your Thesis is such that you gain an additional 2 uses of it (for Perfection of Form) or an addition two d8s (for Perfection of Mind).</p>
         </description>
@@ -2639,8 +2653,7 @@
     </element>
 
     <element name="Prehensile Feet" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_PREHENSILE_FEET">
-        <supports>Specialization Upgrade</supports>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH</requirements>
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>You tinker with your appendages, improving their flexibility and configuration. You gain a climbing speed equal to your walking speed. If you are prone or otherwise supported without your feet, your foot can count as a free hand for the purposes of grappling.</p>
         </description>
