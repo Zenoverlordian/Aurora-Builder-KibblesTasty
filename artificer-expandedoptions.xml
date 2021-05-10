@@ -1070,6 +1070,653 @@
             <stat name="charisma:max" value="1" />
         </rules>
     </element>
+
+    <!--Runesmith-->
+
+    <element name="Runesmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_RUNESMITH">
+        <supports>Artificer Specialization</supports>
+        <description>
+            <p>A Runesmith is an Artificer that has narrowed their focus to working a specific language of magic - powerful Runes that can channel long lasting power. These Runes come in many shapes and forms, the lore behind from many sources.</p>
+            <p class="indent">A Runesmith can be a knight, his runes splashed with gleaming power across his armor, or a scholar lending their power to the companions, marking potent runes on their weapons before standing back, or even a strange tatooed mystic, their runes tattooed across their very body.</p>
+            <p class="indent">Runesmiths are not inherently good or evil, though their rigorous attention to detail and patience tend to make them more inclined to a Lawful perspective.</p>
+            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_PROFICIENCY" />
+            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNIC_MARKS" />
+            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNIC_FLARE" />
+            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_TWIN_FLARES" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Specialization Upgrade (3)" supports="Specialization Upgrade, Runesmith" level="3" />
+            <select type="Class Feature" name="Specialization Upgrade (5)" supports="Specialization Upgrade, Runesmith" level="5" />
+            <select type="Class Feature" name="Specialization Upgrade (7)" supports="Specialization Upgrade, Runesmith" level="7" />
+            <select type="Class Feature" name="Specialization Upgrade (9)" supports="Specialization Upgrade, Runesmith" level="9" />
+            <select type="Class Feature" name="Specialization Upgrade (11)" supports="Specialization Upgrade, Runesmith" level="11" />
+            <select type="Class Feature" name="Specialization Upgrade (13)" supports="Specialization Upgrade, Runesmith" level="13" />
+            <select type="Class Feature" name="Specialization Upgrade (15)" supports="Specialization Upgrade, Runesmith" level="15" />
+            <select type="Class Feature" name="Specialization Upgrade (17)" supports="Specialization Upgrade, Runesmith" level="17" />
+            <select type="Class Feature" name="Specialization Upgrade (19)" supports="Specialization Upgrade, Runesmith" level="19" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNIC_MARKS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNIC_FLARE" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_TWIN_FLARES" level="14" />
+        </rules>
+    </element>
+
+    <element name="Runesmith Proficiency" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_PROFICIENCY">
+        <description>
+            <p>When you choose this specialization at 1st level, you gain proficiency with martial weapons as well as smith's tools or calligrapher's supplies (based on your preferred method of marking runes. You learn one additional exotic language of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <select type="Proficiency" name="Tool Proficiency (Runesmith)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+            <select type="Language" name="Language, Runesmith" supports="Exotic" />
+        </rules>
+    </element>
+
+    <element name="Runic Marks" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNIC_MARKS">
+        <description>
+            <p>Starting at 1st level, you can mark magical runes, imbuing the things they are marked onto with magic. A rune can be marked on a weapon, piece of armor, or directly onto yourself, as a type of runic tattoo. Each rune grants a passive ability based on what is marked on that enhances the ability of what it is marked on, and has an active ability that can be activated as an action or in place of an attack as part of the Attack action while it is marked.</p>
+            <p class="indent">Only a single rune can be marked on a piece of armor or a weapon, though you can mark multiple runes on yourself. The affected creature of a rune is the creature wielding the weapon or armor it is marked on, or you if the rune is directly marked on you.</p>
+            <p class="indent">When using a rune on yourself, you gain both the weapon effect (applied to your unarmed strikes and natural weapons) and the armor effect (as if you were wearing armor marked with that rune).</p>
+            <p class="indent">You know the following runes, and can learn more from upgrades. You can mark your runes during a long rest, and can have two runes marked at a time, gaining the ability to have an additional rune marked at 3rd level (to three runes), 5th level (to four runes), and 14th level (to five runes). These last until you mark a new rune, with the oldest rune fading when you mark a new one after reaching your maximum number of runes. Upgrades that grant a new Runes does not increase this number, just expands the range of Runes you can mark.</p>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_POWER" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_FIRE" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_LIGHTNING" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_PROFICIENCY" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_WARDING" />
+            </div>
+        </description>
+        <sheet>
+            <description level="1" usage="2/Long Rest">You know the following runes: Rune of Power, Rune of Fire, Rune of Lightning, Rune of Proficiency, and Rune of Warding.
+            A rune can be marked on a weapon, piece of armor, or directly onto yourself, as a type of runic tattoo. Each rune grants a passive ability based on what is marked on and has an active ability that can be activated as an action or in place of an attack as part of the Attack action while it is marked.
+            Only a single rune can be marked on a piece of armor or a weapon, though you can mark multiple runes on yourself. The affected creature of a rune is the creature wielding the weapon or armor it is marked on, or you if the rune is directly marked on you.
+            When using a rune on yourself, you gain both the weapon effect (applied to your unarmed strikes and natural weapons) and the armor effect (as if you were wearing armor marked with that rune).</description>
+            <description level="3" usage="3/Long Rest">You know the following runes: Rune of Power, Rune of Fire, Rune of Lightning, Rune of Proficiency, and Rune of Warding.
+            A rune can be marked on a weapon, piece of armor, or directly onto yourself, as a type of runic tattoo. Each rune grants a passive ability based on what is marked on and has an active ability that can be activated as an action or in place of an attack as part of the Attack action while it is marked.
+            Only a single rune can be marked on a piece of armor or a weapon, though you can mark multiple runes on yourself. The affected creature of a rune is the creature wielding the weapon or armor it is marked on, or you if the rune is directly marked on you.
+            When using a rune on yourself, you gain both the weapon effect (applied to your unarmed strikes and natural weapons) and the armor effect (as if you were wearing armor marked with that rune).</description>
+            <description level="5" usage="4/Long Rest">You know the following runes: Rune of Power, Rune of Fire, Rune of Lightning, Rune of Proficiency, and Rune of Warding.
+            A rune can be marked on a weapon, piece of armor, or directly onto yourself, as a type of runic tattoo. Each rune grants a passive ability based on what is marked on and has an active ability that can be activated as an action or in place of an attack as part of the Attack action while it is marked.
+            Only a single rune can be marked on a piece of armor or a weapon, though you can mark multiple runes on yourself. The affected creature of a rune is the creature wielding the weapon or armor it is marked on, or you if the rune is directly marked on you.
+            When using a rune on yourself, you gain both the weapon effect (applied to your unarmed strikes and natural weapons) and the armor effect (as if you were wearing armor marked with that rune).</description>
+            <description level="14" usage="5/Long Rest">You know the following runes: Rune of Power, Rune of Fire, Rune of Lightning, Rune of Proficiency, and Rune of Warding.
+            A rune can be marked on a weapon, piece of armor, or directly onto yourself, as a type of runic tattoo. Each rune grants a passive ability based on what is marked on and has an active ability that can be activated as an action or in place of an attack as part of the Attack action while it is marked.
+            Only a single rune can be marked on a piece of armor or a weapon, though you can mark multiple runes on yourself. The affected creature of a rune is the creature wielding the weapon or armor it is marked on, or you if the rune is directly marked on you.
+            When using a rune on yourself, you gain both the weapon effect (applied to your unarmed strikes and natural weapons) and the armor effect (as if you were wearing armor marked with that rune).</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_POWER" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_FIRE" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_LIGHTNING" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_PROFICIENCY" />
+            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_WARDING" />
+        </rules>
+    </element>
+    <element name="Rune of Power" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_POWER">
+        <description>
+            <p>An imposing rune that speaks to raw power. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>The base damage of the weapon becomes 1d6 (if it was lower), and the weapon adds +1 to damage rolls.</td></tr>
+                <tr><td>Armor</td><td>The base AC of the armor becomes 12 (if it was lower), and the armor's AC bonus is increased by +1.</td></tr>
+            </table>
+            <ul>
+                <li><em>Active </em><strong>(Empower):</strong> The next attack of the affected creature before the start of your next turn deals an additional 1d8 + Intelligence modifier force damage.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Rune of Fire" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_FIRE">
+        <description>
+            <p>An swirling rune that represents fire and burning. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>The first time per turn the weapon deals damage, that damage deals an additional 1d4 fire damage.</td></tr>
+                <tr><td>Armor</td><td>When the affected creature is by a melee weapon attack, they can use their reaction to deal 1d4 fire damage to the attacker.</td></tr>
+            </table>
+            <ul>
+                <li><em>Active </em><strong>(Explode):</strong> Creatures within a 5-foot radius of the affected creature must pass a Dexterity saving throw, or take 1d8 fire damage.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Rune of Lightning" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_LIGHTNING">
+        <description>
+            <p>A jagged rune that manipulates energy and controls lightning. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>The first time per turn the weapon deals damage, that damage deals an additional 1d4 lightning damage.</td></tr>
+                <tr><td>Armor</td><td>The effected creature gains 5 feet of movement speed.</td></tr>
+            </table>
+            <ul>
+                <li><em>Active </em><strong>(Hasten):</strong> During the affected creature's turn, they gain an additional action that can be used to attack (one weapon attack with a light weapon or unarmed strike only), dash, disengage, hide, or use an object.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Rune of Proficiency" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_PROFICIENCY">
+        <description>
+            <p>A mark that imbues competency and manipulates ability. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>Any creature wielding this weapon gains proficiency with it, and the affected creature can add +1 to attack rolls made with it.</td></tr>
+                <tr><td>Armor</td><td>Any creature wearing this armor (or holding in the case of a shield) gains proficiency with it. If the armor has a strength requirement, it is reduced to 10.</td></tr>
+            </table>
+            <ul>
+                <li><em>Active </em><strong>(Master):</strong> In a surge of skill, the next time the affected creature would add their proficiency bonus to an attack roll, they can add your intelligence modifier as well.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="Rune of Warding" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNE_WARDING">
+        <description>
+            <p>A stalwart rune that wards off harm. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>If the affected deals damage with this weapon on their turn, they gain 1d4 temporary hit points.</td></tr>
+                <tr><td>Armor</td><td>Damage taken by the affected creature is reduced by 1.</td></tr>
+            </table>
+            <ul>
+                <li><em>Active </em><strong>(Empower):</strong> The affected creature gains 1d4 + your intelligence modifier temporary hit points; the creature already has temporary hit points greater than this, the amount increases by your intelligence modifier.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+    </element>
+
+    <element name="Runic Flare" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_RUNIC_FLARE">
+        <description>
+            <p>Starting at 3rd level, you can activate a rune as a bonus action. You can do this a number of times equal to your proficiency bonus, and regain all uses when complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="{{proficiency}}/Short Rest">You can activate a rune as a bonus action. You can do this a number of times equal to your proficiency bonus, and regain all uses when complete a short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Extra Attack" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_EXTRA_ATTACK">
+        <description>
+            <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+            <p class="indent">You can use Runic Flare in place of either or both attacks.</p>
+        </description>
+        <sheet>
+            <description>You can attack twice, instead of once, whenever you take the Attack action on your turn. You can use Runic Flare in place of either or both attacks.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+        </rules>
+    </element>
+
+    <element name="Twin Flares" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_RUNESMITH_TWIN_FLARES">
+        <description>
+            <p>Starting at 14th level, the first time during your turn you use your Rune Flare feature, you can cause the Active effect of any two Runes or Glyphs</p>
+        </description>
+        <sheet>
+            <description>The first time during your turn you use your Rune Flare feature, you can cause the Active effect of any two Runes or Glyphs</description>
+        </sheet>
+    </element>
+
+    <!--Runesmith Uprgrades-->
+
+    <element name="Animate Inscription" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_ANIMATE_INSCRIPTION">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>You mark special inscription on yourself or an item in your position to represent a familiar. You can spend a hit die to give it life and cast find familiar using this rune. When you cast find familiar in this way it does not require a spell slot or require material components, and the casting time is one action.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_FIND_FAMILIAR" />
+            </div>
+        </description>
+        <sheet>
+            <description>You mark special inscription on yourself or an item in your position to represent a familiar. You can spend a hit die to give it life and cast find familiar using this rune. When you cast find familiar in this way it does not require a spell slot or require material components, and the casting time is one action.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
+        </rules>
+    </element>
+
+    <element name="Arcane Glyph" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_ARCANE_GLYPH">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>You learn how to translate a spell you know with a target of self into a glyph that can marked on a creature or piece of armor. As a special 1 minute ritual your can expend a spell slot of the spells level and mark this glyph on a creature. This glyph has no passive effect, but when activated with an action, it casts the stored spell as if the creature the glyph was marked on cast the spell.</p>
+            <p class="indent">Alternatively, the a creature marked with this glyph or wearing armor marked with this glyph that is aware of it's presence can use this glyph to cast the spell marked within as if they cast the spell stored using a magical item.</p>
+            <p class="indent">The glyph immediately fades after the spell has been cast (the spell lasts as normal). The glyph fades when the Runesmith that marked it completes a long rest.</p>
+        </description>
+        <sheet>
+            <description>You learn how to translate a spell you know with a target of self into a glyph that can marked on a creature or piece of armor. As a special 1 minute ritual your can expend a spell slot of the spells level and mark this glyph on a creature. This glyph has no passive effect, but when activated with an action, it casts the stored spell as if the creature the glyph was marked on cast the spell.
+            Alternatively, the a creature marked with this glyph or wearing armor marked with this glyph that is aware of it's presence can use this glyph to cast the spell marked within as if they cast the spell stored using a magical item.
+            The glyph immediately fades after the spell has been cast (the spell lasts as normal). The glyph fades when the Runesmith that marked it completes a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Channel Magic" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_CHANNEL_MAGIC">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>You can cast a spell of range Touch on a creature marked by one of your Runes, wearing armor marked by one of your Runes, or wielding a weapon marked by one of your Runes, regardless of the distance between you.</p>
+        </description>
+        <sheet>
+            <description>You can cast a spell of range Touch on a creature marked by one of your Runes, wearing armor marked by one of your Runes, or wielding a weapon marked by one of your Runes, regardless of the distance between you.</description>
+        </sheet>
+    </element>
+
+    <element name="Glyphs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>You learn the ability to cast a glyph. Each time you take this upgrade, select a glyph from the table below. If the glyph has a level requirement, this upgrade counts as that level for the purposes of taking this upgrade. You can take this upgrade mutiple times.</p>
+            <table>
+                <thead>
+                    <tr><td>Type</td><td>Effect</td><td>Level Requirement</td></tr>
+                </thead>
+                <tr><td>Absorption</td><td>You learn the glyph of absorption spell.</td><td>—</td></tr>
+                <tr><td>Fire</td><td>You learn the glyph of fire spell.</td><td>—</td></tr>
+                <tr><td>Frost</td><td>You learn the glyph of frost spell.</td><td>—</td></tr>
+                <tr><td>Translocation</td><td>You learn the glyph of translocation spell.</td><td>5</td></tr>
+                <tr><td>Nullification</td><td>You learn the glyph of nullication spell.</td><td>9</td></tr>
+                <tr><td>Gravity</td><td>You learn the glyph of gravity spell.</td><td>13</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Glyphs (1)" supports="KTHArt Glyph" spellcasting="KTHArtificer" />
+        </rules>
+    </element>
+    <element name="Glyphs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS2">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS</requirements>
+        <description>
+            <p>You learn the ability to cast a glyph. Each time you take this upgrade, select a glyph from the table below. If the glyph has a level requirement, this upgrade counts as that level for the purposes of taking this upgrade. You can take this upgrade mutiple times.</p>
+            <table>
+                <thead>
+                    <tr><td>Type</td><td>Effect</td><td>Level Requirement</td></tr>
+                </thead>
+                <tr><td>Absorption</td><td>You learn the glyph of absorption spell.</td><td>—</td></tr>
+                <tr><td>Fire</td><td>You learn the glyph of fire spell.</td><td>—</td></tr>
+                <tr><td>Frost</td><td>You learn the glyph of frost spell.</td><td>—</td></tr>
+                <tr><td>Translocation</td><td>You learn the glyph of translocation spell.</td><td>5</td></tr>
+                <tr><td>Nullification</td><td>You learn the glyph of nullication spell.</td><td>9</td></tr>
+                <tr><td>Gravity</td><td>You learn the glyph of gravity spell.</td><td>13</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Glyphs (2)" supports="KTHArt Glyph" spellcasting="KTHArtificer" />
+        </rules>
+    </element>
+    <element name="Glyphs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS3">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS2</requirements>
+        <description>
+            <p>You learn the ability to cast a glyph. Each time you take this upgrade, select a glyph from the table below. If the glyph has a level requirement, this upgrade counts as that level for the purposes of taking this upgrade. You can take this upgrade mutiple times.</p>
+            <table>
+                <thead>
+                    <tr><td>Type</td><td>Effect</td><td>Level Requirement</td></tr>
+                </thead>
+                <tr><td>Absorption</td><td>You learn the glyph of absorption spell.</td><td>—</td></tr>
+                <tr><td>Fire</td><td>You learn the glyph of fire spell.</td><td>—</td></tr>
+                <tr><td>Frost</td><td>You learn the glyph of frost spell.</td><td>—</td></tr>
+                <tr><td>Translocation</td><td>You learn the glyph of translocation spell.</td><td>5</td></tr>
+                <tr><td>Nullification</td><td>You learn the glyph of nullication spell.</td><td>9</td></tr>
+                <tr><td>Gravity</td><td>You learn the glyph of gravity spell.</td><td>13</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Glyphs (3)" supports="KTHArt Glyph" spellcasting="KTHArtificer" />
+        </rules>
+    </element>
+    <element name="Glyphs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS4">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS3,[level:5]</requirements>
+        <description>
+            <p>You learn the ability to cast a glyph. Each time you take this upgrade, select a glyph from the table below. If the glyph has a level requirement, this upgrade counts as that level for the purposes of taking this upgrade. You can take this upgrade mutiple times.</p>
+            <table>
+                <thead>
+                    <tr><td>Type</td><td>Effect</td><td>Level Requirement</td></tr>
+                </thead>
+                <tr><td>Absorption</td><td>You learn the glyph of absorption spell.</td><td>—</td></tr>
+                <tr><td>Fire</td><td>You learn the glyph of fire spell.</td><td>—</td></tr>
+                <tr><td>Frost</td><td>You learn the glyph of frost spell.</td><td>—</td></tr>
+                <tr><td>Translocation</td><td>You learn the glyph of translocation spell.</td><td>5</td></tr>
+                <tr><td>Nullification</td><td>You learn the glyph of nullication spell.</td><td>9</td></tr>
+                <tr><td>Gravity</td><td>You learn the glyph of gravity spell.</td><td>13</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Glyphs (4)" supports="KTHArt Glyph" spellcasting="KTHArtificer" />
+        </rules>
+    </element>
+    <element name="Glyphs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS5">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS4,[level:9]</requirements>
+        <description>
+            <p>You learn the ability to cast a glyph. Each time you take this upgrade, select a glyph from the table below. If the glyph has a level requirement, this upgrade counts as that level for the purposes of taking this upgrade. You can take this upgrade mutiple times.</p>
+            <table>
+                <thead>
+                    <tr><td>Type</td><td>Effect</td><td>Level Requirement</td></tr>
+                </thead>
+                <tr><td>Absorption</td><td>You learn the glyph of absorption spell.</td><td>—</td></tr>
+                <tr><td>Fire</td><td>You learn the glyph of fire spell.</td><td>—</td></tr>
+                <tr><td>Frost</td><td>You learn the glyph of frost spell.</td><td>—</td></tr>
+                <tr><td>Translocation</td><td>You learn the glyph of translocation spell.</td><td>5</td></tr>
+                <tr><td>Nullification</td><td>You learn the glyph of nullication spell.</td><td>9</td></tr>
+                <tr><td>Gravity</td><td>You learn the glyph of gravity spell.</td><td>13</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Glyphs (5)" supports="KTHArt Glyph" spellcasting="KTHArtificer" />
+        </rules>
+    </element>
+    <element name="Glyphs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS6">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <requirements>ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_GLYPHS5,[level:13]</requirements>
+        <description>
+            <p>You learn the ability to cast a glyph. Each time you take this upgrade, select a glyph from the table below. If the glyph has a level requirement, this upgrade counts as that level for the purposes of taking this upgrade. You can take this upgrade mutiple times.</p>
+            <table>
+                <thead>
+                    <tr><td>Type</td><td>Effect</td><td>Level Requirement</td></tr>
+                </thead>
+                <tr><td>Absorption</td><td>You learn the glyph of absorption spell.</td><td>—</td></tr>
+                <tr><td>Fire</td><td>You learn the glyph of fire spell.</td><td>—</td></tr>
+                <tr><td>Frost</td><td>You learn the glyph of frost spell.</td><td>—</td></tr>
+                <tr><td>Translocation</td><td>You learn the glyph of translocation spell.</td><td>5</td></tr>
+                <tr><td>Nullification</td><td>You learn the glyph of nullication spell.</td><td>9</td></tr>
+                <tr><td>Gravity</td><td>You learn the glyph of gravity spell.</td><td>13</td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Glyphs (6)" supports="KTHArt Glyph" spellcasting="KTHArtificer" />
+        </rules>
+    </element>
+
+    <element name="Paired Effects" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_PAIRED_EFFECTS">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>You formulate a special method to apply two Runes to a single suit of armor or weapon.</p>
+        </description>
+        <sheet>
+            <description>You may apply two Runes to a single suit of armor or weapon.</description>
+        </sheet>
+    </element>
+
+    <element name="Reckless Flare" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_RECKLESS_FLARE">
+        <prerequisite>15th level</prerequisite>
+        <supports>Specialization Upgrade, Runesmith</supports>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>As an action, you flare all of your marked runes and glyphs, after the active effect, all of your Runes fade and must be marked once again.</p>
+            <p class="indent">You cannot do this again until you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest" action="Action">As an action, you flare all of your marked runes and glyphs. After the active effect, all of your Runes fade and must be marked once again.</description>
+        </sheet>
+    </element>
+
+    <element name="Runic Magic" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_RUNIC_MAGIC">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>You can expend a spell slot to channel certain forms of magic through runes; the spell is cast as if by the affected creature of the rune, though it uses your spell casting modifiers and concentration (if applicable). The level of the spell slot expended is the level the spell is cast at.</p>
+            <table>
+                <thead>
+                    <tr><td>Rune</td><td>Cantrip</td></tr>
+                </thead>
+                <tr><td>Rune of Power</td><td>magic missile</td></tr>
+                <tr><td>Rune of Fire</td><td>burning hands</td></tr>
+                <tr><td>Rune of Lightning</td><td>lightning tendril</td></tr>
+                <tr><td>Rune of Proficiency</td><td>unlocked potential</td></tr>
+                <tr><td>Rune of Warding</td><td>armor of agathys</td></tr>
+                <tr><td>Rune of Gravity</td><td>fall</td></tr>
+                <tr><td>Rune of Blood</td><td>cure wounds</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You can expend a spell slot to channel certain forms of magic through runes; the spell is cast as if by the affected creature of the rune, though it uses your spell casting modifiers and concentration (if applicable). The level of the spell slot expended is the level the spell is cast at.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGIC_MISSILE" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_KTH_GS_SPELL_LIGHTNING_TENDRIL" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_UNLOCKED_POTENTIAL" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" spellcasting="KTHArtificer" />  
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_FALL" spellcasting="KTHArtificer" requirements="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_RUNIC_GRAVITY" />
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="KTHArtificer" requirements="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_RUNIC_BLOOD" />          
+        </rules>
+    </element>
+
+    <element name="Runic Touch" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_RUNIC_TOUCH">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>You gain the ability channel the runic power of runes that are on armor or weapons you are wearing, or on yourself. You can cast the following cantrips if you are the affected creature of the following runes:</p>
+            <table>
+                <thead>
+                    <tr><td>Rune</td><td>Cantrip</td></tr>
+                </thead>
+                <tr><td>Rune of Power</td><td>light</td></tr>
+                <tr><td>Rune of Fire</td><td>burn</td></tr>
+                <tr><td>Rune of Lightning</td><td>shocking grasp</td></tr>
+                <tr><td>Rune of Proficiency</td><td>guidance</td></tr>
+                <tr><td>Rune of Warding</td><td>blade ward</td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>You gain the ability channel the runic power of runes that are on armor or weapons you are wearing, or on yourself.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_BURN" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLADE_WARD" />
+        </rules>
+    </element>
+
+    <element name="Rune of Blood" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_RUNIC_BLOOD">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>An esoteric run that binds the essence of life. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>Each time the weapon deals damage to a creature, it stores one charge, up to a maximum number of charges equal to your Intelligence modifier.</td></tr>
+                <tr><td>Armor</td><td>If the affected creature is hit by a critical hit or reduced to zero hit points, the rune stores one charge, up to a maximum number of charges equal to your Intelligence modifier.</td></tr>
+            </table>
+            <ul>
+                <li><em>Active </em><strong>(Revitalize):</strong> The affected creature can immediately expend 1 hit dice, rolling it and regain health as normal. All charges of the rune are consumed, restoring additional hit points to the affected creature for 1d4 per charge consumed.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain the use of the Rune of Blood.</description>
+        </sheet>
+    </element>
+
+    <element name="Rune of Gravity" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_RUNESMITH_RUNIC_GRAVITY">
+        <supports>Specialization Upgrade, Runesmith, Unrestricted</supports>
+        <description>
+            <p>A complex run that manipulates the interactions of objects to change gravity. It has the following effects:</p>
+            <table>
+                <thead>
+                    <tr><td>Target</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Weapon</td><td>Marking this one a weapon adds or removes the heavy property. If you remove the heavy property from a melee weapon with this rune, you can also remove the two-handed property.</td></tr>
+                <tr><td>Armor</td><td>Any time the affected creature would be moved against their will, they can use their reaction to stay where they are, as long as the movement is not falling.</td></tr>
+            </table>
+            <ul>
+                <li><em>Active </em><strong>(Pull):</strong> All creatures within 20 feet of the affected creature are dragged 5 feet toward the affected creature.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain the use of the Rune of Gravity.</description>
+        </sheet>
+    </element>
+
+    <!--Runesmith Glyphs-->
+
+    <element name="Glyph of Absorption" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_GLYPH_ABSORPTION">
+        <supports>KTHArt Glyph</supports>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. Creatures within 10 feet of this glyph have resistance to all damage, but this glyphs damage equal to the damage those creature's take (after resistance). The Glyph has 10 hit points. If the glyph is destroyed, it fades without detonating and the spell ends.</p>
+            <p class="indent">As an action, you can detonate the glyph. Any creature within 15 feet of this glyph must make a Dexterity saving through, or take Force damage equal to half the amount of damage the Glyph has absorbed. After using this action, the spell ends.</p>
+            <p class="indent">The spell ends early if you until you deactivate it with a bonus action.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the glyph absorbs 5 additional hit points for each slot level above 1st</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school" addition="Glyph">Abjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Glyph of Fire" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_GLYPH_FIRE">
+        <supports>KTHArt Glyph</supports>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. Any creature that starts their turn within 5 feet of this glyph takes 1 fire damage.</p>
+            <p class="indent">As an action, you can force all creatures within 15 feet of this glyph must make a Dexterity saving through, taking 3d6 fire damage on failure, or half as much on success. After using this action, the spell ends.</p>
+            <p class="indent">The spell ends early if you until you deactivate it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school" addition="Glyph">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Glyph of Frost" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_GLYPH_FROST">
+        <supports>KTHArt Glyph</supports>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. The area within 5 feet of this Rune becomes difficult terrain.</p>
+            <p class="indent">As an action, you can force all creatures within 15 feet of this glyph must pass a Constitution saving through, or take 1d8 cold damage and become restrained, or half as much damage on success. After using this action, the spell ends.</p>
+            <p class="indent">The spell ends early if you until you deactivate it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school" addition="Glyph">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Glyph of Gravity" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_GLYPH_GRAVITY">
+        <requirements>[level:13]</requirements>
+        <supports>KTHArt Glyph</supports>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. Within 30 feet of this Glyph, moving away from it is requires twice as much movement, and any creature that ends its turn within 30 feet of it is pulled 10 feet closer to it if there is space available.</p>
+            <p class="indent">As an action, you can force all creatures within 30 feet of this Glyph to make a Strength saving throw or be flung 40 feet away from this Glyph, taking 4d6 damage and falling prone. After using this action, the spell ends.</p>
+            <p class="indent">The spell ends early if you until you deactivate it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school" addition="Glyph">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Glyph of Nullification" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_GLYPH_NULLIFICATION">
+        <requirements>[level:9]</requirements>
+        <supports>KTHArt Glyph</supports>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range. Creatures within 5 feet of this glyph have resistance to Force damage.</p>
+            <p class="indent">As an action for the duration of the spell, you can cause the glypg to form a globe of invulnerability centered on the glyph, which lasts until the start of your next turn, at which point the spell ends.</p>
+            <p class="indent">The spell ends early if you until you deactivate it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school" addition="Glyph">Abjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Glyph of Translocation" type="Spell" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_GLYPH_TRANSLOCATION">
+        <requirements>[level:5]</requirements>
+        <supports>KTHArt Glyph</supports>
+        <description>
+            <p>You draw an ethereal mark in the air at a point within range.</p>
+            <p class="indent">As an action for the duration of the spell, you instantly teleport a willing creature of your choice within 120 feet (of you) to the closest free space next to this Glyph (your choice if multiple free spaces are available). If you expend a higher level spell slot, the number of creatures you can teleport increased by 1 for each level above 2nd, at which point the spell ends.</p>
+            <p class="indent">The spell ends early if you until you deactivate it with a bonus action.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school" addition="Glyph">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">5 feet</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">false</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
     
     <!--SPELLS-->
 

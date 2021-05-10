@@ -366,7 +366,7 @@
     </element>
 
     <element name="Power Fist" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWER_FIST">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted, Warplate Gauntlet</supports>
+        <supports>Specialization Upgrade, Gadgetsmith, Gadgetsmith Weapon, Gadgeteer Deadly Surprise, Unrestricted, Warsmith, Warplate Gauntlet</supports>
         <description>
             <p>You upgrade your Warplate Gauntlet to better punch things. Your Warplate Gauntlet is upgraded to a magical weapon you have proficiency with dealing 1d8 bludgeoning damage and gains the Light and Special properties.</p>
             <p class="indent">Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</p>
@@ -376,7 +376,7 @@
         </sheet>
     </element>
     <element name="Second Power Fist" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWER_FIST_2">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted, Warplate Gauntlet</supports>
+        <supports>Specialization Upgrade, Gadgetsmith, Gadgetsmith Weapon, Gadgeteer Deadly Surprise, Unrestricted, Warsmith, Warplate Gauntlet</supports>
         <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWER_FIST</requirements>
         <description>
             <p>With Power Fist applied twice, you have a Power Fists for each hand that can be used for Two-Weapon Fighting.</p>

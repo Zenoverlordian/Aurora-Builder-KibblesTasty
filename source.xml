@@ -96,4 +96,24 @@
             <set name="release">20200118</set>
         </setters>
     </element>
+    <element name="KibblesTasty Generic Spells" type="Source" source="KibblesTasty Generic Spells" id="ID_KIBBLESTASTY_SOURCE_GENERIC_SPELLS">
+        <description>
+            <![CDATA[<p>One of the common things I see folks at my table and accross the D&D Community looking for all the time is spells that better fit elemental archetypes beyond fire. It feels as if the fire spell list was completed, and everything else got a few leftovers. This is the complete list that gives each element it's own buffet.</p>
+            <p>You can simple reflavor fire spells suit your needs - if that works for and your table, great! However, in my experience over the years of doing exactly that, it tends to rob the elements of the last vestige of unique flavor, subtle differences, and as consequent the world setting which should feel deep, mysterious, and magical, starts to feel more game like, more formulic.</p>
+            <p>In providing this wave of new spells and their possibilities, this document can help a world have that mystifying depth of magic that represents the true scope of elemental magic and the touch of the thousands of wizards that have come before leaving behind the research, a true basis and complete system of generic elemental magic.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTHGS</set>
+            <set name="url">https://www.gmbinder.com/share/-MW5r6wBJTW_lOU6gLyU</set>
+            <set name="image">https://www.gmbinder.com/images/kFvq43c.png</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
 </elements>

@@ -167,25 +167,26 @@
 			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list),0" level="5" spellcasting="Occultist"/>
 			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list),0" level="10" spellcasting="Occultist"/>
 
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="4" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Occultist"/>
-            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="12" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Occultist"/>
-            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Occultist"/>
-            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Occultist"/>
-			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Occultist"/>
-            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" spellcasting="Occultist"/>
-            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="4" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED" />
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Occultist" requirements="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED" />
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Occultist" requirements="(!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED|![level:3])"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="12" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="14" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="16" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="18" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
+            <select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Occultist" requirements="!ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED"/>
 		</rules>
     </element>
 
@@ -420,6 +421,51 @@
         <sheet>
             <description>The casting time of Divination spells that take 1 minute is reduced to 1 action for you. You cannot reveal the results of your divinations to others.</description>
         </sheet>
+    </element>
+
+    <element name="Frail" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_FRAIL">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>Your hit dice become d4s. Once per day when you complete a short rest, you can regain expended spell slots equal to half your Oracle level (rounded up).</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">Your hit dice become d4s. Once per day when you complete a short rest, you can regain {{level:occultist:half:up}} expended spell slots equal.</description>
+        </sheet>
+        <rules>
+            <stat name="hp" value="-2" level="1" />
+            <stat name="hp" value="-1" level="2" />
+            <stat name="hp" value="-1" level="3" />
+            <stat name="hp" value="-1" level="4" />
+            <stat name="hp" value="-1" level="5" />
+            <stat name="hp" value="-1" level="6" />
+            <stat name="hp" value="-1" level="7" />
+            <stat name="hp" value="-1" level="8" />
+            <stat name="hp" value="-1" level="9" />
+            <stat name="hp" value="-1" level="10" />
+            <stat name="hp" value="-1" level="11" />
+            <stat name="hp" value="-1" level="12" />
+            <stat name="hp" value="-1" level="13" />
+            <stat name="hp" value="-1" level="14" />
+            <stat name="hp" value="-1" level="15" />
+            <stat name="hp" value="-1" level="16" />
+            <stat name="hp" value="-1" level="17" />
+            <stat name="hp" value="-1" level="18" />
+            <stat name="hp" value="-1" level="19" />
+            <stat name="hp" value="-1" level="20" />
+        </rules>
+    </element>
+
+    <element name="Twice Gifted" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CURSE_TWICE_GIFTED">
+        <supports>Oracle Cursed Burden</supports>
+        <description>
+            <p>You bear more gifts than a mortal mind can comprehend. You can select an additional Mystery, but the spells granted by Mysteries now count against your spells known.</p>
+        </description>
+        <sheet>
+            <description>You can select an additional Mystery, but the spells granted by Mysteries now count against your spells known.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Twice Gifted" supports="Kibbles Oracle Mystery" />
+        </rules>
     </element>
 
     <!--MYSTERIES-->
@@ -997,6 +1043,9 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" />
+            <stat name="ac:markings protection" value="13" />
+            <stat name="ac:markings protection" value="dexterity:modifier" />
+            <stat name="ac:calculation" value="ac:markings protection" bonus="calculation" />
         </rules>
     </element>
 

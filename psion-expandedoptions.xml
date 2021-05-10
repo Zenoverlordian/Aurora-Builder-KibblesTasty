@@ -14,7 +14,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_PRESCIENCE" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_SEEING" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_SEEING" />
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_ALTERNATE_EFFECTS" />
         </rules>
     </element>
@@ -75,18 +75,18 @@
             <description>You can cast additional spells using Psi Points</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
-            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_FUTURE_INSIGHT" />
-            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_GLIMPSE_THE_FUTURE" />
-            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_OBJECT" />
-            <grant type="Spell" id="ID_PHB_SPELL_FEAR" />
-            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" />
-            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" />
-            <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" />
-            <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" />
-            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_IDENTIFY" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_FUTURE_INSIGHT" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_AUGURY" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_GLIMPSE_THE_FUTURE" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_LOCATE_OBJECT" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_FEAR" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_CLAIRVOYANCE" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DEATH_WARD" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DIVINATION" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_LEGEND_LORE" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_SCRYING" />
         </rules>
     </element>
 
@@ -100,7 +100,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATION_DISRUPTIVE_TOUCH" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATION_DENIAL" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATION_DENIAL" />
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATIONALTERNATE_EFFECTS" />
         </rules>
     </element>
@@ -162,13 +162,13 @@
             <description>You can cast additional spells using Psi Points</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_NULLIFY_EFFECT" />
-            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" />
-            <grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" />
-            <grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" />
-            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" />
-            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_SPELL_NULLIFY_EFFECT" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DISPEL_MAGIC" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_COUNTERSPELL" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_REMOVE_CURSE" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_BANISHMENT" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" />
         </rules>
     </element>
 
@@ -182,7 +182,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION_ADAPTIVE_HUNTER" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION_MIND_LEECH" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION_MIND_LEECH" />
         </rules>
     </element>
     <element name="Adaptive Hunter" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION_ADAPTIVE_HUNTER">
@@ -317,8 +317,8 @@
             <description>You gain the ability to cast planeshift and teleport. You can cast one of these spells per day once without expending a spell slot or use of innate psionics. Once you do this, you must complete a long rest before you can use them again, or use your 7th level or Higher use of Innate Psionics instead of the spell selected for that level to cast these spells again before completing a long rest. If you already have one of these spells selected for your 7th level Innate Psionic power, you can select a new 7th level spell from the Psion list for that slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_PLANE_SHIFT" />
-            <grant type="Spell" id="ID_PHB_SPELL_TELEPORT" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_PLANE_SHIFT" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_TELEPORT" />
         </rules>
     </element>
     <element name="Winding Paths" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_WINDING_PATHS">
@@ -373,7 +373,7 @@
             <description usage="Psi">You can expend 1 psi point to cast absorb elements. If you selected a specialization of the Psychokinetics discipline, you can only cast it when effected by that element's type (cold, fire or lightning), but casting it does not require any psi points.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
         </rules>
     </element>
     <element name="Living Power" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_ELEMENTAL_LIVING_POWER">
@@ -678,7 +678,7 @@
             <description usage="Psi">You gain the ability to cast <em>beam of annihilation</em> for 6 psi points. If you have a specialization of Psychokinentics, you can only select the related elemental damage type, but the beam's damage ignores resistance to that damage type any creatures caught in the beam might have.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_BEAM_OF_ANNIHILATION" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_SPELL_BEAM_OF_ANNIHILATION" />
         </rules>
     </element>
     <element name="Consuming Link" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_CONSUMING_LINK">
@@ -705,7 +705,7 @@
             <description usage="1/Long rest">You gain the ability to expend 6 psi points to cast antimagic field. Once you cast it this way, you cannot cast it again until you complete a long rest.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_ANTIMAGIC_FIELD" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_ANTIMAGIC_FIELD" />
         </rules>
     </element>
     <element name="Dreamwalker" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_DREAMWALKER">
@@ -723,7 +723,7 @@
             <description usage="1/Long rest">You can cast dream without expending a spell slot, but once casted cannot cast it again until you complete a long rest.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_DREAM" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DREAM" />
         </rules>
     </element>
     <element name="Elemental Shield" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_ELEMENTAL_SHIELD">
@@ -741,7 +741,7 @@
             <description usage="1/Long rest">You gain the ability to cast <em>fire shield</em> without expending psi points; if you have a specialization, it's damage type matches your specialization. Once you cast it this way, you cannot cast it again until you complete a long rest, or you must spend 4 Psi Points to cast it again early.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_FIRE_SHIELD" />
         </rules>
     </element>
     <element name="Elemental Emotions" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_ELEMENTAL_EMOTIONS">
@@ -811,7 +811,7 @@
             <description usage="1/Short/Long rest">You gain the ability to cast <em>phantom steed</em>. You do not need to expend spell slots or psi points to cast it. Casting this spell while an astral construct is active ends the astral construct power, and casting <em>astral construct</em> during the phantom steed duration ends the phantom steed spell.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_PHANTOM_STEED" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_PHANTOM_STEED" />
         </rules>
     </element>
     <element name="Iron Templar (M)" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_IRON_TEMPLAR1">
@@ -1084,7 +1084,7 @@
             <description action="Reaction" usage="Psi">As a reaction to a ranged weapon attack being made against a target within 60 feet of you, you can expend a psi point to add or subtract 2d4 to or from that attack roll. You can do this after the attack is rolled, but before you know the outcome of the roll.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_ANIMATE_OBJECTS" />
         </rules>
     </element>
     <element name="Unchecked Power" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_UNCHECKED_POWER">
@@ -1103,7 +1103,7 @@
             <description action="Reaction" usage="Psi">As a reaction to a melee attack being made against you, you can expend a psi point to shove the creature away. The creature must make a Strength saving throw, or be knocked 10 feet backwards. If this puts the attack out of reach, it automatically misses.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_SHOCKWAVE" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_SPELL_SHOCKWAVE" />
         </rules>
     </element>
     <element name="Vampiric Strength" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_VAMPIRIC_STRENGTH">
@@ -1228,12 +1228,12 @@
             <description>Unlike other spells cast by the Psionics feature, you need either material component of the spell, or a psionic crystal worth at least 100 gp x the number of psi points spent to cast the spell as the material component; the material component is not consumed by the casting of the spell. Additionally, any of the following spells that you are concentrating ends if you complete a short or long rest.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_BEAST" />
-            <grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_FEY" />
-            <grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" />
-            <grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ABERRATION" />
-            <grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_CELESTIAL" />
-            <grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_FIEND" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_WOTC_TCOE_SPELL_SUMMON_BEAST" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_WOTC_TCOE_SPELL_SUMMON_FEY" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_WOTC_TCOE_SPELL_SUMMON_ABERRATION" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_WOTC_TCOE_SPELL_SUMMON_CELESTIAL" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_WOTC_TCOE_SPELL_SUMMON_FIEND" />
         </rules>
     </element>
 
@@ -1281,7 +1281,7 @@
             <description>You can create a weapon with Projected Weapon as part of making an attack with it using Telekinetic Weapons, allowing you to project as many weapons in this manner as you make attacks (no additional action required). When you use weapons created by Projected Weaponry as the projectiles for your Telekinetic Weapons, the range you can fling the weapons is doubled. Additionally, if you expend 6 psi points on the Whirling modifier of Telekinetic Weapons, you can cast blade barrier instead of cloud of daggers, generating much larger number of ethereal blades as part of the casting.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_BLADE_BARRIER" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_BLADE_BARRIER" />
         </rules>
     </element>
 

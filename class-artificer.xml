@@ -693,7 +693,7 @@
     </element>
 
     <element name="Impact Gauntlet" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET">
-        <supports>Specialization Upgrade, Cross Disciplinary Knowledge, Gadgetsmith, Gadgetsmith Weapon, Gadgeteer Deadly Surprise, Unrestricted</supports>
+        <supports>Specialization Upgrade, Cross Disciplinary Knowledge, Gadgetsmith, Gadgetsmith Weapon, Gadgeteer Deadly Surprise, Unrestricted, Warsmith, Warplate Gauntlet</supports>
         <description>
             <p>You create a magic weapon capable of amplifying the impact of your blows. You have proficiency in this weapon, and it has the Finesse, Light and Special properties. It deals 1d6 bludgeoning damage.</p>
             <p class="indent">Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</p>
@@ -1106,7 +1106,7 @@
     <element name="Explosive Gauntlet" type="Class Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_EXPLOSIVE_GAUNTLET">
         <supports>Specialization Upgrade, Gadgetsmith, Gadgeteer Deadly Surprise</supports>
         <prerequisite>5th level, Impact Gauntlets</prerequisite>
-        <requirements>[level:5], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET</requirements>
+        <requirements>[level:5], ID_KIBBLESTASTY_ARTIFICER_UPGRADE_GADGETSMITH_IMPACT_GAUNTLET|ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWER_FIST</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Impact Gauntlets</em></p>
             <p>Your gauntlets can exert massive kinetic force when striking. When you make an attack with your Impact Gauntlet, you can choose to move 10 feet in the opposite direction, or, as a bonus action, force the target to make a Strength saving throw or be knocked 10 feet backward. This movement does not provoke attacks of opportunity.</p>

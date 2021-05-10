@@ -49,7 +49,7 @@
             <description>You gain the ability to cast thaumaturgy with your psionic powers. When you cast in this way, you have additional options: you cause up to 10 pounds of loose objects within 10 feet of you to start floating for 1 minute; you can force all targets within 5 feet to make a Strength saving throw, or be pushed by 5 feet away from you.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+            <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Rampaging Power" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_UNLEASHED_RAMPAGING_POWER">

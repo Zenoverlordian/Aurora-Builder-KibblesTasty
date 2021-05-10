@@ -111,6 +111,9 @@
                 <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
             </rules>
         </multiclass>
+        <spellcasting name="Psion_KTH" ability="Intelligence" prepare="false">
+            <list>Psion_KTH</list>
+        </spellcasting>
     </element>
     <element name="Psionic Archetype" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_CLASS_FEATURE_PSION_PSIONIC_ARCHETYPE">
         <description>
@@ -210,9 +213,6 @@
             <description level="15" usage="1 each/Long rest">Choose one 6th-level spell, one 7th-level spell, and one 8th-level spell from the Psion spell list as innate abilities. You can use these innate abilities to cast each spell once.</description>
             <description level="17" usage="1 each/Long rest">Choose one 6th-level spell, one 7th-level spell, one 8th-level spell, and one 9th-level spell from the Psion spell list as innate abilities. You can use these innate abilities to cast each spell once.</description>
         </sheet>
-        <spellcasting name="Psion_KTH" ability="Intelligence" prepare="false">
-            <list>Psion_KTH</list>
-        </spellcasting>
         <rules>
             <select type="Spell" name="Innate Psionics (11)" supports="$(spellcasting:list),6" level="11" spellcasting="Psion_KTH" />
             <select type="Spell" name="Innate Psionics (13)" supports="$(spellcasting:list),7" level="13" spellcasting="Psion_KTH" />
@@ -254,7 +254,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY_TELEPATHIC_COMMUNICATION" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY_TELEPATHIC_INTRUSION" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY_TELEPATHIC_INTRUSION" spellcasting="Psion_KTH" />
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY_ALTERNATE_EFFECTS" />
         </rules>
     </element>
@@ -310,22 +310,22 @@
             <description>You can cast additional spells using Psi Points</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_COMPELLED_QUERY" />
-            <grant type="Spell" id="ID_PHB_SPELL_COMMAND" />
-            <grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" />
-            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" />
-            <grant type="Spell" id="ID_XGTE_SPELL_MIND_SPIKE" />
-            <grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_DELVE_MIND" />
-            <grant type="Spell" id="ID_PHB_SPELL_FEAR" />
-            <grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" />
-            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" />
-            <grant type="Spell" id="ID_PHB_SPELL_COMPULSION" />
-            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" />
-            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" />
-            <grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" />
-            <grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" />
-            <grant type="Spell" id="ID_XGTE_SPELL_SYNAPTIC_STATIC" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_COMPELLED_QUERY" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMMAND" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_MIND_SPIKE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_SUGGESTION" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_DELVE_MIND" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ENEMIES_ABOUND" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_COMPULSION" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SYNAPTIC_STATIC" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Enhancement Discipline" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT">
@@ -338,7 +338,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SKILL" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SURGE" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SURGE" spellcasting="Psion_KTH" />
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT_ALTERNATE_EFFECTS" />
         </rules>
     </element>
@@ -394,18 +394,18 @@
             <description>You can cast additional spells using Psi Points</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" />
-            <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_UNLOCKED_POTENTIAL" />
-            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" />
-            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
-            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
-            <grant type="Spell" id="ID_XGTE_SPELL_CATNAP" />
-            <grant type="Spell" id="ID_PHB_SPELL_HASTE" />
-            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
-            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" />
-            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" />
-            <grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_LONGSTRIDER" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_UNLOCKED_POTENTIAL" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CATNAP" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_HASTE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SKILL_EMPOWERMENT" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Projection Discipline" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION">
@@ -418,7 +418,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_PROJECT_ITEM" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_ASTRAL_CONSTRUCT" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_ASTRAL_CONSTRUCT" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Project Item" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_PROJECT_ITEM">
@@ -468,7 +468,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS_HANDS" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS_FORCE" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS_FORCE" spellcasting="Psion_KTH" />
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS_ALTERNATE_EFFECTS" />
         </rules>
     </element>
@@ -526,18 +526,18 @@
             <description>You can cast additional spells using Psi Points</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_JUMP" />
-            <grant type="Spell" id="ID_XGTE_SPELL_CATAPULT" />
-            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" />
-            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
-            <grant type="Spell" id="ID_XGTE_SPELL_DUST_DEVIL" />
-            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" />
-            <grant type="Spell" id="ID_KTH_PSION_SPELL_ORBITAL_STONES" />
-            <grant type="Spell" id="ID_PHB_SPELL_FLY" />
-            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" />
-            <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" />
-            <grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" />
-            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" />
+            <grant type="Spell" id="ID_PHB_SPELL_JUMP" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CATAPULT" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_DUST_DEVIL" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_KTH_PSION_SPELL_ORBITAL_STONES" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_TELEKINESIS" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Transposition Discipline" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION">
@@ -550,7 +550,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION_PHASING_STEPS" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION_PHASE_RIFT" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION_PHASE_RIFT" spellcasting="Psion_KTH" />
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION_ALTERNATE_EFFECTS" />
         </rules>
     </element>
@@ -607,19 +607,19 @@
             <description>You can cast additional spells using Psi Points</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_FLICKER" />
-            <grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" />
-            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
-            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" />
-            <grant type="Spell" id="ID_PHB_SPELL_BLINK" />
-            <grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" />
-            <grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" />
-            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" />
-            <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" />
-            <grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" />
-            <grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" />
-            <grant type="Spell" id="ID_PHB_SPELL_BLUR" />
+            <grant type="Spell" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_FLICKER" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ZEPHYR_STRIKE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINK" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_THUNDER_STEP" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_FAR_STEP" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STEEL_WIND_STRIKE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLUR" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Psychokinetics Discipline" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS">
@@ -632,7 +632,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_ENERGY_MANIPULATION" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_ELEMENTAL_BLAST" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_ELEMENTAL_BLAST" spellcasting="Psion_KTH" />
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_ALTERNATE_EFFECTS" />
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_SPECIALIZATIONS" />
         </rules>
@@ -690,17 +690,17 @@
             <description>You can cast additional spells using Psi Points</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" />
-            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" />
-            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" />
-            <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" />
-            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" />
-            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" />
-            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" />
-            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" />
-            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" />
-            <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Specializations" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_SPECIALIZATIONS">
@@ -843,7 +843,7 @@
 			</div>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" />
+            <grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Aura Sight" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_AURA_SIGHT">
@@ -870,7 +870,7 @@
             <description usage="1/Long rest">You gain the ability to cast <em>awaken</em> without expending a spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_AWAKEN" />
+            <grant type="Spell" id="ID_PHB_SPELL_AWAKEN" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Body Control" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_BODY_CONTROL">
@@ -885,7 +885,7 @@
             <description>You gain the ability to use your <em>alter self</em> ability at-will without expending psi points. Additionally, you can cast <em>enlarge/reduce</em> on yourself for half the psi point cost it would normally cost.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
+            <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Controlled Power" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_CONTROLLED_POWER">
@@ -961,7 +961,7 @@
             <description usage="{{intelligence:modifier}}/Long rest">You can cast cure wounds, spending 1 psi point for each level of the spell. When you cast cure wounds on a creature, you can use Enhancing Surge on the target creature has a bonus action.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Kinetic Slam" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_KINETIC_SLAM">
@@ -994,8 +994,8 @@
             <description usage="Psi">You can cast <em>fabricate</em> and <em>wall of stone</em>, expending psi points equal to the spell level.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_FABRICATE" />
-            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" />
+            <grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Mental Image" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_MENTAL_IMAGE">
@@ -1022,10 +1022,10 @@
             <description>The spells <em>silent image, major image, hallucinatory terrain</em> and <em>seeming</em> are added to your Telepathic mastery alternate effects list.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" />
-            <grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" />
-            <grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" />
-            <grant type="Spell" id="ID_PHB_SPELL_SEEMING" />
+            <grant type="Spell" id="ID_PHB_SPELL_SILENT_IMAGE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_MAJOR_IMAGE" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_SEEMING" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Mental Might" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_MENTAL_MIGHT">
@@ -1055,7 +1055,7 @@
             <description usage="Psi">You gain the ability to cast <em>psychic drain</em> for 2 psi points. Additionally, whenever a creature within 10 feet of you that had an Intelligence score of 6 or higher dies, you can expend your reaction to draw in its psionic power, regaining 1d4 hit points and 1 expended psi point.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_PSYCHIC_DRAIN" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_SPELL_PSYCHIC_DRAIN" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Mind Rider" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_MIND_RIDER">
@@ -1250,9 +1250,9 @@
             <description usage="Psi" action="Action">You can expend a psi point to gain 10 additional feet of movement and the effect of <em>spiderclimb</em>, <em>feather fall</em>, or <em>levitate</em> until the start of your next turn. At the start of your next turn you can expend a psi point to maintain the effect before it would end.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" />
-            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
-            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPIDER_CLIMB" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" spellcasting="Psion_KTH" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEVITATE" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Telekinetic Weapons" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_TELEKINETIC_WEAPONS">
@@ -1270,7 +1270,7 @@
             <description>You gain the Telekinetic Weapon psionic power as part of your Telekinetic Discipline.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_POWER_TELEKINETIC_WEAPONS" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_POWER_TELEKINETIC_WEAPONS" spellcasting="Psion_KTH" />
         </rules>
     </element>
     <element name="Telekinetic Weapons" type="Spell" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_POWER_TELEKINETIC_WEAPONS">
