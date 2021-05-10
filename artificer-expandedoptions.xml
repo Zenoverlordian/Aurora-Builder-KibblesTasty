@@ -3160,6 +3160,7 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" spellcasting="KTHArtificer" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -3185,6 +3186,7 @@
         </sheet>
         <rules>
             <select type="Class Feature" name="Amalgamated Form" supports="Amalgamated Form" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -3244,6 +3246,7 @@
         </sheet>
         <rules>
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -3261,6 +3264,9 @@
         <sheet>
             <description>You build a second mouth. This maw becomes a natural weapon that deals 1d10 piecing damage. If you hit with an attack with this maw, you can chose to make a Grapple check against the target as a bonus action. Targets grappled by this maw take 1d4 piercing and 1d4 acid damage at the start of their turn. Attacks with this Maw are made with advantage against targets it is Grappling, but it cannot attack other creatures while grappling a creature. You can take apply a Fleshcrafted Enhancement to this Maw instead of Extra Fangs when taking that upgrades; this Maw can have a different upgrade than your Extra Fangs if you have both.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
 
     <element name="Soul Eater" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SOUL_EATER">
@@ -3287,6 +3293,9 @@
             <description usage="{{constitution:modifier}}/Long rest" action="Reaction">When you are attacked by a melee attack or are the target of a grapple attempt, you can use your reaction to deal 1d6 piercing damage to the attacking creature. You can do this {{constitution:modifier}} times, regaining all uses of the ability after you complete a long rest.
             Alternatively, you as sometimes the best defense is a good offense, you can expend a use of quills as a ranged weapon attack with a range of 20/60, dealing 1d8 piercing damage on hit.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
 
     <element name="Dogmatic Persistence" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DOGMATIC_PERSISTENCE">
@@ -3309,6 +3318,7 @@
         </sheet>
         <rules>
             <stat name="speed:climb" value="speed" bonus="base" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 

@@ -162,6 +162,7 @@
         <sheet display="false" />
         <rules>
             <select type="Class Feature" name="Better Eyes" supports="Better Eyes" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES2">
@@ -173,6 +174,7 @@
         <sheet display="false" />
         <rules>
             <select type="Class Feature" name="Better Eyes" supports="Better Eyes" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES3">
@@ -184,6 +186,7 @@
         <sheet display="false" />
         <rules>
             <select type="Class Feature" name="Better Eyes" supports="Better Eyes" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES4">
@@ -195,6 +198,7 @@
         <sheet display="false" />
         <rules>
             <select type="Class Feature" name="Better Eyes" supports="Better Eyes" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Blindsight, Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_BETTER_EYES_FLESHSMITH_BETTER_BLINDSIGHT">
@@ -259,6 +263,9 @@
         <sheet>
             <description>Creatures that are grappled or restrained by you have disadvantage on attempting to escape the condition. Additionally, you can choose to apply {{strength:modifier}} damage to any creature that starts its turn grappled or restrained by you.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />            
+        </rules>
     </element>
 
     <element name="Extra Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_EXTRA_EYES">
@@ -271,6 +278,7 @@
         </sheet>
         <rules>
             <stat name="perception:proficiency" value="proficiency" bonus="double" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -291,6 +299,7 @@
         <sheet display="false" />
         <rules>
             <select type="Class Feature" name="Fleshcrafted Mutation" supports="Fleshcrafted Mutation" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION2">
@@ -311,6 +320,7 @@
         <sheet display="false" />
         <rules>
             <select type="Class Feature" name="Fleshcrafted Mutation" supports="Fleshcrafted Mutation" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION3">
@@ -331,6 +341,7 @@
         <sheet display="false" />
         <rules>
             <select type="Class Feature" name="Fleshcrafted Mutation" supports="Fleshcrafted Mutation" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION4">
@@ -353,6 +364,7 @@
         </sheet>
         <rules>
             <select type="Class Feature" name="Fleshcrafted Mutation" supports="Fleshcrafted Mutation" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Extra Arm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_ARM">
@@ -436,6 +448,7 @@
         </sheet>
         <rules>
             <select type="Class Feature" name="Fleshcrafted Enhancement" supports="Fleshcrafted Enhancement" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
     <element name="Vampiric" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_FLESHCRAFTED_ENHANCEMENT_VAMPIRIC">
@@ -583,6 +596,7 @@
     <element name="Horrifying Abomination" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_HORRIFYING_ABOMINATION">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <prerequisite>At least 5 upgrades modifying your body</prerequisite>
+        <requirements>[mutation:upgrade:5]</requirements>
         <description>
             <p><em>Prerequisite: At least 5 upgrades modifying your body</em></p>
             <p><!-- todo: this entire upgrade -->
@@ -593,6 +607,7 @@
         </sheet>
         <rules>
             <stat name="intimidation:proficiency" value="proficiency" bonus="double" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -610,6 +625,7 @@
         <rules>
             <stat name="massive mutation:rounds" value="constitution:modifier" />
             <stat name="massive mutation:rounds" value="intelligence:modifier" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -622,6 +638,9 @@
         <sheet>
             <description usage="1/Long rest">When you make a Death Saving Throw, you can replace the results of that roll with a 20.</description>
         </sheet>
+        <rules>            
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
 
     <element name="Subdermal Plating" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SUBDERMAL_PLATING">
@@ -636,6 +655,7 @@
             <stat name="subdermal plating:natural armor" value="16" />
 			<stat name="subdermal plating:natural armor" value="dexterity:modifier" />
 			<stat name="ac:calculation" value="subdermal plating:natural armor" bonus="calculation" alt="Natural Armor (Subdermal Plating)" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -648,6 +668,9 @@
         <sheet>
             <description usage="1/Turn">When a creature hits you piercing or slashing damage while within 5 feet of you, they take {{constitution:modifier}} poison damage. If damage is from a biting attack, they take twice as much damage. You may also opt to make yourself take on a different skin hue.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
 
     <element name="Unnatural Health" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_UNNATURAL_HEALTH">
@@ -701,6 +724,7 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="KTHArtificer" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -784,6 +808,7 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="KTHArtificer" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -811,6 +836,9 @@
         <sheet>
             <description>You no longer have a limit to how long you can stay in larger form.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
 
         <!--11TH LEVEL UPGRADES-->
@@ -867,6 +895,7 @@
         </sheet>
         <rules>
             <stat name="speed:fly" value="{{speed}}" bonus="base" equipped="![armor:heavy]" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
@@ -881,6 +910,9 @@
         <sheet>
             <description>You can hold a two-handed weapon in one hand or in the upgraded hand.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
     <element name="Uncanny Strength" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_UNCANNY_STRENGTH2">
         <supports>Specialization Upgrade, Fleshsmith</supports>
@@ -893,6 +925,9 @@
         <sheet>
             <description>You can hold a two-handed weapon in one hand or in the upgraded hand.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
 
     <element name="Vivisection" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_VIVISECTION">
@@ -936,6 +971,9 @@
         <sheet>
             <description usage="1/Short/Long rest" action="Reaction">As a reaction, you can end a condition or disease affecting you as the result of failing a saving throw, even if you would normally not be able to take reactions due to the condition.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
 
     <element name="Best Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BEST_EYES">
@@ -949,6 +987,9 @@
         <sheet>
             <description>You gain truesight of 30 feet in addition to your normal vision.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
 
     <element name="Flesh Shaper" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESH_SHAPER">
@@ -981,6 +1022,9 @@
         <sheet>
             <description>When you drop to zero hit points, rather than falling conscious, you make a Constitution saving throw equal to the amount of damage over your current hit points taken. On success, your hit points become 1 instead of zero, and you remain conscious.</description>
         </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
+        </rules>
     </element>
     
 </elements>
