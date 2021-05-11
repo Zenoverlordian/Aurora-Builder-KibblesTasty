@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.4..">
+        <update version="1.4.0">
             <file name="psion-shaper.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-shaper.xml" />
         </update>
     </info>
