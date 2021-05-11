@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.1.0">
+        <update version="2.1.1">
             <file name="class-artificer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-artificer.xml" />
         </update>
     </info>
@@ -1980,6 +1980,24 @@
     <append id="ID_PHB_SPELL_WALL_OF_STONE">
 		<supports>KTHArtificer</supports>
 	</append>
+
+    <!--FEATS-->
+
+    <element name="Mental Adaptability" type="Feat" source="KibblesTasty's Artificer" id="ID_KIBBLESTASTY_ARTIFICER_FEAT_MENTAL_ADAPTABILITY">
+        <description>
+            <p>You've found ways to think outside the box, making connections that other - lesser - minds can never seem to understand.</p>
+            <ul>
+                <li>When you have to make an Intelligence, Wisdom or Charisma saving throw, you can roll all three and pick the highest result. Once you do this, you cannot do it again until you complete a long rest.</li>
+                <li>You can select an additional upgrade that is not from your subclass list, so long as you can apply it to something in your possession. This upgrade cannot be a level restricted upgrade.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">When you have to make an Intelligence, Wisdom or Charisma saving throw, you can roll all three and pick the highest result. Once you do this, you cannot do it again until you complete a long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Specialization Upgrade (Mental Adaptability)" supports="Specialization Upgrade, Unrestricted" />
+        </rules>
+    </element>
 
     <!--SOURCE-->
     <element name="KibblesTasty's Artificer" type="Source" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_SOURCE_ARTIFICER">

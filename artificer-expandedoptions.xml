@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.1.1">
+        <update version="2.1.2">
             <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-expandedoptions.xml" />
         </update>
     </info>
@@ -3325,6 +3325,42 @@
         <rules>
             <stat name="speed:climb" value="speed" bonus="base" />
             <stat name="mutation:upgrade" value="1" />
+        </rules>
+    </element>
+
+    <!--FEATS-->
+
+    <element name="Artificial Metamagic" type="Feat" source="KibblesTasty's Artificer" id="ID_KIBBLESTASTY_ARTIFICER_FEAT_ARTIFICIAL_METAMAGIC">
+        <requirements>ID_KIBBLESTASTY_CLASS_ARTIFICER</requirements>
+        <prerequisite>Artificer</prerequisite>
+        <description>
+            <p><em>Prerequisite: Artificer</em></p>
+            <p>Magic is great and all, but what if it was... better? You modify an arcane focus in your position. Select a Metamagic Option from the Sorcerer's list of Metamagic options.</p>
+            <p class="indent">The device has 2 charges. When you cast a spell using this arcane focus, you can use the devices charges to power applying the metamagic option to the spell cast as 1 charge per Sorcery point spent.</p>
+            <p class="indent">The device regains all charges when you finish a short or long rest. As an action, you can expend a first level spell to recharge the Arcane Focus to use it again before completing a rest.</p>
+        </description>
+        <sheet>
+            <description usage="2/Short Rest">You modify an arcane focus in your position. Select a Metamagic Option from the Sorcerer's list of Metamagic options. The device has 2 charges. When you cast a spell using this arcane focus, you can use the devices charges to power applying the metamagic option to the spell cast as 1 charge per Sorcery point spent. The device regains all charges when you finish a short or long rest. As an action, you can expend a first level spell to recharge the Arcane Focus to use it again before completing a rest.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Artificial Metamagic" supports="Metamagic" />
+        </rules>
+    </element>
+
+    <element name="Warforged Customization" type="Feat" source="KibblesTasty's Artificer" id="ID_KIBBLESTASTY_ARTIFICER_FEAT_WARFORGED_CUSTOMIZATION">
+        <requirements>ID_WOTC_ERLW_RACE_WARFORGED</requirements>
+        <prerequisite>Warforged</prerequisite>
+        <description>
+            <p><em>Prerequisite: Warforged</em></p>
+            <p>Other people have to exercise to improve their bodies. You've found that yours is just upgradeable.</p>
+            <p class="indent">You can select an upgrade from the Golemsmith or Warsmith upgrade lists, and apply it to yourself as if you were the golem or warplate. This upgrade cannot be a level restricted upgrade.</p>
+        </description>
+        <sheet>
+            <description>You can select an upgrade from the Golemsmith or Warsmith upgrade lists, and apply it to yourself as if you were the golem or warplate. This upgrade cannot be a level restricted upgrade.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Artificial Metamagic" supports="Unrestricted, Specialization Upgrade, Warsmith" />
+            <stat name="warsmith:warplate" value="1" />
         </rules>
     </element>
 
