@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.1.0">
+        <update version="2.1.1">
             <file name="artificer-infusionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-infusionsmith.xml" />
         </update>
     </info>
@@ -98,7 +98,7 @@
             <description action="Action">Select one Evocation Cantrip from the Wizard spell list that does not require concentration. Thereafter, as an action, you can use the Blasting rod to cast that cantrip. Once per turn, when you deal damage to a creature or object with your Blasting Rod, you can add {{intelligence:modifier}} to damage dealt to that target.</description>
         </sheet>
         <rules>
-            <select type="Spell" name="Blasting Rod Cantrip" supports="0,Wizard,Evocation" />
+            <select type="Spell" name="Blasting Rod Cantrip" supports="0,Wizard,Evocation" spellcasting="KTHArtificer" />
         </rules>
     </element>
     <element name="Infused Weapon" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_FEATURE_INFUSIONSMITH_INFUSED_ARMAMENT_INFUSED">
