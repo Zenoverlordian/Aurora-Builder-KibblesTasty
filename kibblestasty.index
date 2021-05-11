@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="kibblestasty.index" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/kibblestasty.index" />
+		</update>
+	</info>
+	<files>
+    <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-expandedoptions.xml" />
+    <file name="artificer-fleshsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-fleshsmith.xml" />
+    <file name="artificer-infusionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-infusionsmith.xml" />
+    <file name="artificer-potionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-potionsmith.xml" />
+    <file name="artificer-thundersmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-thundersmith.xml" />
+    <file name="artificer-warsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-warsmith.xml" />
+    <file name="barbarian-bladestorm.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/barbarian-bladestorm.xml" />
+    <file name="barbarian-dragon.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/barbarian-dragon.xml" />
+    <file name="bloodhunter-orderofthehunger.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/bloodhunter-orderofthehunger.xml" />
+    <file name="class-artificer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-artificer.xml" />
+    <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-occultist.xml" />
+    <file name="class-psion.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-psion.xml" />
+    <file name="class-warlord.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-warlord.xml" />
+    <file name="cleric-judgement.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/cleric-judgement.xml" />
+    <file name="druid-woad.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/druid-woad.xml" />
+    <file name="fighter-tech-knight.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/fighter-tech-knight.xml" />
+    <file name="generic-spells.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/generic-spells.xml" />
+    <file name="monk-outcast.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/monk-outcast.xml" />
+    <file name="monk-soulknife.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/monk-soulknife.xml" />
+    <file name="occultist-shaman.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-shaman.xml" />
+    <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-witch.xml" />
+    <file name="paladin-sanity.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/paladin-sanity.xml" />
+    <file name="psion-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-expandedoptions.xml" />
+    <file name="psion-shaper.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-shaper.xml" />
+    <file name="psion-transcended.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-transcended.xml" />
+    <file name="psion-unleashed.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-unleashed.xml" />
+    <file name="rogue-divineagent.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/rogue-divineagent.xml" />
+    <file name="rogue-gadgeteer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/rogue-gadgeteer.xml" />
+    <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/sorcerer-aetherheart.xml" />
+    <file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/source.xml" />
+    <file name="warlock-darkwaters.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/warlock-darkwaters.xml" />
+    <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/warlock-tempest.xml" />
+    <file name="warlord-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/warlord-expandedoptions.xml" />
+    <file name="wizard-pathology.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/wizard-pathology.xml" />
+	</files>
+</index>
