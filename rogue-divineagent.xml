@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Divine Agent</name>
-        <update version="0.0.1">
-            <file name="rogue-divineagent.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/rogue-divineagent.xml" />
+        <name></name>
+        <update version="1.0.0">
+            <file name="rogue-divineagent.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/rogue-divineagent.xml" />
         </update>
     </info>
+
     <element name="Divine Agent" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_DIVINE_AGENT">
         <supports>Roguish Archetype</supports>
         <description>
@@ -52,12 +53,12 @@
     </element>
     <element name="Sanctification" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_DIVINE_AGENT_SANCTIFICATION">
         <description>
-            <p>At 9th, you learn the spells <i>protection from good &amp; evil</i>, <i>divine favor</i>, and <i>shield of faith</i>. You can cast these spells without consuming a spell lot a number of times equal to your Wisdom modifier (combining all uses of these spells). You regain all uses after completing a long rest. You can use a Holy Symbol as your focus for these spells.</p>
+            <p>At 9th, you learn the spells <i>protection from good &amp; evil</i>, <i>divine favor</i>, and <i>shield of faith</i>. You can cast these spells without consuming a spell slot a number of times equal to your Wisdom modifier (combining all uses of these spells). You regain all uses after completing a long rest. You can use a Holy Symbol as your focus for these spells.</p>
             <p class="indent">Additionally, during a short or long rest, you can create one use of Holy Water from normal water expending 25 gold of components by reciting a ten minute ritual.</p>
         </description>
         <sheet>
-            <description usage="{{wisdom:modifier}}/Long rest" level="9">You can cast <i>protection from good &amp; evil</i>, <i>divine favor</i>, and <i>shield of faith</i> without consuming a spell lot a number of times equal to your Wisdom modifier (combining all uses of these spells). Additionally, during a short or long rest, you can create one use of Holy Water from normal water expending 25 gold of components by reciting a ten minute ritual.</description>
-            <description usage="{{wisdom:modifier}}/Long rest" level="17">You can cast <i>protection from good &amp; evil</i>, <i>divine favor</i>, <i>flame strike</i>, <i>flame shield</i>, and <i>shield of faith</i> without consuming a spell lot a number of times equal to your Wisdom modifier (combining all uses of these spells). Additionally, during a short or long rest, you can create one use of Holy Water from normal water expending 25 gold of components by reciting a ten minute ritual.</description>
+            <description usage="{{wisdom:modifier}}/Long rest" level="9">You can cast <i>protection from good &amp; evil</i>, <i>divine favor</i>, and <i>shield of faith</i> without consuming a spell slot {{wisdom:modifier}} times (combining all uses of these spells). Additionally, during a short or long rest, you can create one use of Holy Water from normal water expending 25 gold of components by reciting a ten minute ritual.</description>
+            <description usage="{{wisdom:modifier}}/Long rest" level="17">You can cast <i>protection from good &amp; evil</i>, <i>divine favor</i>, <i>flame strike</i>, <i>flame shield</i>, and <i>shield of faith</i> without consuming a spell slot {{wisdom:modifier}} times (combining all uses of these spells). Additionally, during a short or long rest, you can create one use of Holy Water from normal water expending 25 gold of components by reciting a ten minute ritual.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--Version 2.1-->
 <elements>
+    <info>
+        <name></name>
+        <update version="2.1.0">
+            <file name="artificer-infusionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-infusionsmith.xml" />
+        </update>
+    </info>
+
     <element name="Infusionsmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_INFUSIONSMITH">
         <supports>Artificer Specialization</supports>
         <description>

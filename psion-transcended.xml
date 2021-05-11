@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--Version 1.4-->
 <elements>
+    <info>
+        <name></name>
+        <update version="1.4.0">
+            <file name="psion-transcended.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-transcended.xml" />
+        </update>
+    </info>
+
     <element name="Transcended Mind" type="Archetype" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_TRANSCENDED">
         <supports>Psionic Archetype</supports>
         <description>

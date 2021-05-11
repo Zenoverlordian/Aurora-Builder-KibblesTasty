@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--Version 2.1-->
 <elements>
+    <info>
+        <name></name>
+        <update version="2.1.0">
+            <file name="artificer-thundersmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-thundersmith.xml" />
+        </update>
+    </info>
+
     <element name="Thundersmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH">
         <supports>Artificer Specialization</supports>
         <description>

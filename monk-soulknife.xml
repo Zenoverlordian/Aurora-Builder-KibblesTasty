@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="1.0.0">
+            <file name="monk-soulknife.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/monk-soulknife.xml" />
+        </update>
+    </info>
+
     <element name="Way of the Soul Knife" type="Archetype" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_WAY_SOUL_KNIFE">
         <supports>Monastic Tradition</supports>
         <description>
@@ -31,7 +38,6 @@
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SOUL_KNIFE_KTH" />
-            <grant type="Weapon" id="ID_KIBBLESTASTY_KTH_WEAPON_SOUL_KNIFE" />
         </rules>
     </element>
     <element name="Soul Knife" type="Weapon" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_KTH_WEAPON_SOUL_KNIFE">

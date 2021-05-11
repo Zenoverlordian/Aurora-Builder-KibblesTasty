@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="1.4.1">
+            <file name="class-warlord.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-warlord.xml" />
+        </update>
+    </info>
+
     <!--VERSION 1.4.1-->
     <element name="Warlord" type="Class" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_WARLORD">
         <description>
@@ -899,7 +906,7 @@
 
     <!--TACTICIAN-->
 
-    <element name="Tactician" type="Archetype" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_PARAGON">
+    <element name="Tactician" type="Archetype" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_TACTICIAN">
         <supports>Warlords Presence</supports>
         <description>
             <p>A Tactician may very well tell you they would just as soon not be close enough to the battle to be considered a combatant, preferring to win their fights before it ever gets to that stage, but one would be a fool to underestimate how dangerous they are once on the battlefield.</p>

@@ -2,10 +2,11 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
-            <file name="barbarian-dragon.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/barbarian-dragon.xml" />
+        <update version="1.0.0">
+            <file name="barbarian-dragon.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/barbarian-dragon.xml" />
         </update>
     </info>
+
     <element name="Path of the Dragon" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_PATH_OF_THE_DRAGON">
         <supports>Primal Path</supports>
         <description>

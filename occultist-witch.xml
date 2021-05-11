@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="1.1.0">
+            <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-witch.xml" />
+        </update>
+    </info>
     
     <!--VERSION 1.1-->
     
@@ -34,7 +40,7 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
-            <select type="Spell" name="Witch's Magic" supports="0,Occultist" number="2" />
+            <select type="Spell" name="Witch's Magic" supports="0,Occultist" number="2" spellcasting="Occultist" />
         </rules>
     </element>
     <element name="Coven" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_COVEN">
@@ -429,11 +435,11 @@
             <description>You gain additional spells at certain levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
-            <grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" />
-            <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" />
-            <grant type="Spell" id="ID_XGTE_SPELL_WALL_OF_LIGHT" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_TIDAL_WAVE" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_WALL_OF_LIGHT" level="9" spellcasting="Occultist" />
         </rules>
     </element>
 
@@ -464,12 +470,19 @@
         <supports>Occult Rite</supports>
         <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
         <description>
-            <p>During a short or long rest, you can infuse a spell with a casting time of one action or bonus action into a concoction, expending the spell slot on completion of the rest.</p>
-            <p class="indent">This spell can subsequently be cast by anyone carrying the potion by drinking the potion as an action, with the drinker as the target, acting as the caster of the spell, but using the Witch's spell casting ability modifier.</p>
-            <p class="indent">The potion remains potent until you complete a long rest and recharge the spell slot expended to create the potion.</p>
+            <p>You have found a way to skip most of the brewing process for alchemically creating potent magically effects by directly infusing the potion with your own magic. When you finish a short or long rest and have an empty vial on your person, you may choose one of the spells you know and use a spell slot to cast it.</p>
+            <p class="indent">When you cast spells in this way, the spell does not take effect immediately, but is infused into the potion.</p>
+            <p class="indent">If the spell grants an effect or restores health, the creature will gain the effect of the spell when the potion is consumed as an action. You can consume the contents particularly quickly due to practice as a bonus action if you choose to, or administer it to another willing creature as an action.</p>
+            <p class="indent">If the spell has an area of effect, that area of effect takes place when the vial is broken, with the effect centered on where the vial breaks.</p>
+            <p class="indent">If the spell has a persistent effect that requires concentration, it does not require concentration to maintain, but its duration is shortened to a number of rounds equal to your Wisdom modifier.</p>
+            <p class="indent">A spell that does not require concentration lasts its normal duration. An infused potion loses its potency if it is not used by the end of your next long rest.</p>
         </description>
         <sheet>
-            <description usage="1/Long rest">During a short or long rest, you can infuse a spell with a casting time of one action or bonus action into a concoction, expending the spell slot on completion of the rest. This spell can subsequently be cast by anyone carrying the potion by drinking the potion as an action, with the drinker as the target, acting as the caster of the spell, but using the Witch's spell casting ability modifier. The potion remains potent until you complete a long rest and recharge the spell slot expended to create the potion.</description>
+            <description usage="1/Short Rest">When you finish a short or long rest and have an empty vial on your person, you may choose one of the spells you know and use a spell slot to cast it.
+            If the spell grants an effect or restores health, the creature will gain the effect of the spell when the potion is consumed as an action. You can consume the contents particularly quickly due to practice as a bonus action if you choose to, or administer it to another willing creature as an action.
+            If the spell has an area of effect, that area of effect takes place when the vial is broken, centered on where the vial breaks.
+            If the spell requires concentration, it does not require concentration to maintain, but its duration is shortened to {{wisdom:modifier}} rounds.
+            A spell that does not require concentration lasts its normal duration. An infused potion loses its potency if it is not used by the end of your next long rest.</description>
         </sheet>
     </element>
 

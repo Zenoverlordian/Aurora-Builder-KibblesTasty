@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="1.0.0">
+            <file name="rogue-gadgeteer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/rogue-gadgeteer.xml" />
+        </update>
+    </info>
+
     <element name="Gadgeteer" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_ROGUE_GADGETEER">
         <supports>Roguish Archetype</supports>
         <description>

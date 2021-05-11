@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Oath of Sanity</name>
-        <update version="0.0.1">
-            <file name="paladin-sanity.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/paladin-sanity.xml" />
+        <name></name>
+        <update version="1.0.0">
+            <file name="paladin-sanity.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/paladin-sanity.xml" />
         </update>
     </info>
+
     <element name="Oath of Sanity" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_OATH_SANITY">
         <supports>Sacred Oath</supports>
         <description>

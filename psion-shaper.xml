@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--Version 1.4-->
 <elements>
+    <info>
+        <name></name>
+        <update version="1.4..">
+            <file name="psion-shaper.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-shaper.xml" />
+        </update>
+    </info>
+
     <element name="Shaper's Mind" type="Archetype" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_SHAPERS">
         <supports>Psionic Archetype</supports>
         <description>

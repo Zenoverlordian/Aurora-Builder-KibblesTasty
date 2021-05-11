@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>KibblesTasty Source</name>
+        <name></name>
         <update version="0.0.1">
-            <file name="source.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/source.xml" />
+            <file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/source.xml" />
         </update>
     </info>
+
     <element name="KibblesTasty's Subclasses" type="Source" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_SOURCE_KIBBLESTASTYS_SUBCLASSES">
         <description>
             <![CDATA[<p>KibblesTasty's homebrewed subclasses kept updated.</p>]]>

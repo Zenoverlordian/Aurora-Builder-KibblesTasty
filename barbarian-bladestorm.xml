@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Path of the Bladestorm</name>
-        <update version="0.0.1">
-            <file name="barbarian-bladestorm.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/barbarian-bladestorm.xml" />
+        <name></name>
+        <update version="1.0.0">
+            <file name="barbarian-bladestorm.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/barbarian-bladestorm.xml" />
         </update>
     </info>
+    
     <element name="Path of the Bladestorm" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_BLADESTORM">
         <supports>Primal Path</supports>
         <description>
@@ -80,8 +81,15 @@
             <p class="indent">On subsequent turns while raging, you can use your action to keep the Bladestorm going, forcing all creatures within 20 feet to make the save again. You can keep a Bladestorm going for a number of turns equal to your Strength modifier. You can use this feature once per rage. When a bladestorm ends, all included weapons fall to the ground around you.</p>
         </description>
         <sheet>
-            <description usage="1/Rage" action="Action">As an action when you are raging, you can start a Bladestorm. You can fling out up two light melee weapons you are carrying and whip any weapons animated by Whirling Death into it. All creatures of your choosing within 20 feet of you must make a Dexterity saving throw with a DC of 8 + {{proficiency}} + {{strength:modifier}}. On failure, they take 1d6 damage for each blade that is part of the bladestorm (up to 4d6) + {{strength:modifier}} + {{barbarian rage:damage}}.
+            <description usage="1/Rage" action="Action">As an action when you are raging, you can start a Bladestorm. You can fling out up two light melee weapons you are carrying and whip any weapons animated by Whirling Death into it. All creatures of your choosing within 20 feet of you must make a Dexterity saving throw with a DC of {{bladestorm:save}}. On failure, they take 1d6 damage for each blade that is part of the bladestorm (up to 4d6) + {{bladestorm:dmg}}.
             On subsequent turns while raging, you can use your action to keep the Bladestorm going, forcing all creatures within 20 feet to make the save again. You can keep a Bladestorm going for {{strength:modifier}} turns. You can use this feature once per rage. When a bladestorm ends, all included weapons fall to the ground around you.</description>
         </sheet>
+        <rules>
+            <stat name="bladestorm:save" value="8" />
+            <stat name="bladestorm:save" value="proficiency" />
+            <stat name="bladestorm:save" value="strength:modifier" />
+            <stat name="bladestorm:dmg" value="strength:modifier" />
+            <stat name="bladestorm:dmg" value="barbarian rage:damage" />
+        </rules>
     </element>
 </elements>

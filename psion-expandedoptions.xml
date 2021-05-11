@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="1.4.0">
+            <file name="psion-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-expandedoptions.xml" />
+        </update>
+    </info>
     <!--Version 1.4-->
     <!--DISCIPLINES-->
 

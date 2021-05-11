@@ -2,10 +2,11 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
-            <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/sorcerer-aetherheart.xml" />
+        <update version="1.0.0">
+            <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/sorcerer-aetherheart.xml" />
         </update>
     </info>
+
     <element name="Aether Heart Origin" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART">
         <supports>Sorcerous Origin</supports>
         <description>
@@ -37,8 +38,8 @@
             <description level="3">You have resistance to Force damage, and your heart can serve as your Arcane Focus. Additionally, you automatically gain the Empowered Spell metamagic option.</description>
         </sheet>
         <rules>
-            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" /> 
-            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL" level="3" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+            <select type="Class Feature" name="Aether Heart" supports="Metamagic" default="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL" level="3"/> 
         </rules>
     </element>
     <element name="Overcharged Metamagic" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_OVERCHARGED_METAMAGIC">
@@ -58,7 +59,7 @@
             <description>You gain immunity to Force damage. When you would take Force damage, you regain health equal to half the damage you would have taken. Additionally, you learn the spell <i>dispel magic</i> if you do not already know it. When you successfully <i>dispel magic</i>, you regain up to two expended Sorcerer points as you draw in the remnants of the broken magic.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Sorcerer" />
         </rules>
     </element>
     <element name="Tap Power" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_AETHER_HEART_TAP_POWER">

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>The Dark Waters Patron</name>
-        <description>The Dark Waters Patron</description>
-        <author>KibblesTasty</author>
-        <update version="0.0.1">
-            <file name="warlock-darkwaters.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/warlock-darkwaters.xml" />
+        <name></name>
+        <update version="1.0.0">
+            <file name="warlock-darkwaters.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/warlock-darkwaters.xml" />
         </update>
     </info>
+
     <element name="The Dark Waters" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_ARCHETYPE_THEDARKWATERS">
         <supports>Otherworldly Patron</supports>
         <description>
@@ -190,6 +189,12 @@
 		<sheet display="true">
 			<description>You gain a swimming speed equal to your movement speed, and can leap from water as if leaping from land with a running start. If you already had a swimming speed, that speed is increased by 10 feet. While in water, bright light within 10 feet of you becomes dim light.</description>
 		</sheet>
+        <rules>
+            <stat name="gift dark:waters" value="-10" />
+            <stat name="gift dark:waters" value="speed" />
+            <stat name="speed:swim" value="gift dark:waters" bonus="base" />
+            <stat name="speed:swim" value="10" />
+        </rules>
 	</element>
     <element name="Eldritch Sacrifice" type="Class Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_THEDARKWATERS_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SACRIFICE">
 		<supports>Eldritch Invocation</supports>
@@ -213,7 +218,7 @@
 			<p>Your patron grants the ability to fade from sight. When you expend a Pact Magic spell slot, you can make a Dexterity (Stealth) check to hide as a bonus action until the end of your turn.</p>
 		</description>
 		<sheet display="true">
-			<description>Your patron grants the ability to fade from sight. When you expend a Pact Magic spell slot, you can make a Dexterity (Stealth) check to hide as a bonus action until the end of your turn.</description>
+			<description action="Bonus Action">Your patron grants the ability to fade from sight. When you expend a Pact Magic spell slot, you can make a Dexterity (Stealth) check to hide as a bonus action until the end of your turn.</description>
 		</sheet>
 	</element>
 </elements>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="1.4.0">
+            <file name="class-psion.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-psion.xml" />
+        </update>
+    </info>
+
     <!--VERSION 1.4-->
     <element name="Psion" type="Class" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_CLASS_PSION">
         <description>

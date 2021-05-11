@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="1.0.0">
+            <file name="wizard-pathology.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/wizard-pathology.xml" />
+        </update>
+    </info>
+
     <element name="School of Pathology" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_SCHOOL_PATHOLOGY">
         <supports>Arcane Tradition</supports>
         <description>
@@ -43,7 +50,7 @@
             <description usage="{{proficiency}}/Long rest">When you cast a spell of 1st level or higher that causes one or more creatures to make a saving throw, you can apply the effect of <em>malaise</em> to one or more creature that failed their saving throw. Each creature you apply this to counts as an application of this effect.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KIBBLESTASTY_KTH_SPELL_SCHOOL_PATHOLOGY_MALAISE" />
+            <grant type="Spell" id="ID_KIBBLESTASTY_KTH_SPELL_SCHOOL_PATHOLOGY_MALAISE" spellcasting="Wizard" />
         </rules>
     </element>
     <element name="Vaccination" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_VACCINATION">
@@ -56,7 +63,7 @@
             <description>You have advantage on all Constitution saving throws to save against disease. You automatically pass a Constitution saving throw against a disease you have either contracted or successfully saved from in the past. After encountering a disease, either by saving from it, recovering from it, or from making a successful Medicine check to identify it another creature, with 8 hours of work, you can prepare a dose of medicine that counter acts that disease, which can be consumed by up to 5 creatures. These creatures gain advantage on saving throws against that disease.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" />
+            <grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Wizard" />
         </rules>
     </element>
     <element name="Transmission" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_TRANSMISSION">
@@ -67,7 +74,7 @@
             <description>You learn the spell <em>contagion</em>. You know this spell by heart and it is always prepared, but does not count against your spells prepared spells. You record this spell to your Spellbook without expending any gold to do so.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" spellcasting="Wizard" />
         </rules>
     </element>
     <element name="Pandemic" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_SCHOOL_PATHOLOGY_PANDEMIC">

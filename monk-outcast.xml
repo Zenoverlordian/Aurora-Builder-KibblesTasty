@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Way of the Outcast</name>
-        <update version="0.0.1">
-            <file name="monk-outcast.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/monk-outcast.xml" />
+        <name></name>
+        <update version="1.0.0">
+            <file name="monk-outcast.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/monk-outcast.xml" />
         </update>
     </info>
+
     <element name="Way of the Outcast" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_WAY_OUTCAST">
         <supports>Monastic Tradition</supports>
         <description>
@@ -78,7 +79,11 @@
             <p>At 17th level, you have thrown your fair share of walloping hits, and know how to make them reliably. You can forgo adding your Proficiency bonus to an attack to add twice your Proficiency bonus to the damage it deals.</p>
         </description>
         <sheet>
-            <description>You can forgo adding your Proficiency bonus to an attack to add 2 x {{proficiency}} to the damage it deals.</description>
+            <description>You can forgo adding your Proficiency bonus to an attack to add {{lean into it:dmg}} to the damage it deals.</description>
         </sheet>
+        <rules>
+            <stat name="lean into it:dmg" value="proficiency" />
+            <stat name="lean into it:dmg" value="proficiency" />
+        </rules>
     </element>
 </elements>

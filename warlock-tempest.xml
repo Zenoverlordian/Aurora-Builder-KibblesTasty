@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>The Tempest</name>
-        <update version="0.0.1">
-            <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/warlock-tempest.xml" />
+        <name></name>
+        <update version="1.0.0">
+            <file name="warlock-tempest.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/warlock-tempest.xml" />
         </update>
     </info>
+
     <element name="The Tempest" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_THE_TEMPEST">
         <supports>Otherworldly Patron</supports>
         <description>
@@ -78,7 +79,7 @@
             <p class="indent">The storm loses 1 level each time you end your turn without casting a 1st level or higher spell. You can prevent the decay of storm by concentrating on maintaining the storm as if it were a spell for up to 1 minute after you last cast a spell 1st level or higher, provided you aren't concentrating on any other spells.</p>
         </description>
         <sheet>
-            <description level="1">When you cast a spell of first level or higher on your turn, your Storm Level increases by the level of the slot used (up to a maximum level of {{charisma:modifier}}. The storm loses 1 level each turn you don't cast a spell or concentrate on the storm. 
+            <description level="1">When you cast a spell of first level or higher on your turn, your Storm Level increases by the level of the slot used (up to a maximum level of {{charisma:modifier}}). The storm loses 1 level each turn you don't cast a spell or concentrate on the storm. 
             1) You can cast gust as a bonus action. 
             2) You can use your reaction to impose disadvantage on a ranged weapon attack made against a target within 15 feet of you. 
             3) You are under the effect of levitate. 
@@ -105,7 +106,7 @@
             <description action="Action">You learn the spell call lightning and while you have a Storm Level of 1 or higher, you can use your action to conjure bolts of lightning as per a 3rd level call lightning spell, treating your Building Storm as the storm cloud (even if you are indoors). If your Storm Level is 2 or higher, you are considered under "stormy conditions" as per the spell. If you cast call lightning expending a pact magic slot, your storm level does not decrease while concentrating on it.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" />
+            <grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" spellcasting="Warlock" />
         </rules>
     </element>
     <element name="Tempestuous Blasts" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_TEMPESTUOUS_BLASTS">
@@ -129,7 +130,7 @@
             <grant type="Spell" id="ID_PHB_SPELL_SCRYING" />
         </rules>
     </element>
-    <element name="name" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_EVERSTORM">
+    <element name="Everstorm" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_FEATURE_THE_TEMPEST_EVERSTORM">
         <description>
             <p>Starting at 14th level, the Storm Level of your Building Storm no longer decreases at the end of your turn. You can end the effect of your storm as an action. You can spend an action to start building a storm around you, or increase the storm level by one if you already have a storm.</p>
             <p class="indent">While the Storm Level is 1 or more, you can cast spells <i>feather fall</i> and <i>levitate</i> without expending spell slots as long as they are targeting creatures that are within 15 feet of you within the effect of the storm.</p>
@@ -168,7 +169,7 @@
             <description>You learn the spell control weather and can cast it without expending a spell slot. When you cast it in this way, and change the Precipitation or Wind, you can only increase the stage.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WEATHER" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WEATHER" spellcasting="Warlock" />
         </rules>
     </element>
 </elements>

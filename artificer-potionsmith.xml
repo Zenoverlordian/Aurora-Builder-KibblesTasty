@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--Version 2.1-->
 <elements>
+    <info>
+        <name></name>
+        <update version="2.1.0">
+            <file name="artificer-potionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-potionsmith.xml" />
+        </update>
+    </info>
+
     <element name="Potionsmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_ARCHETYPE_POTIONSMITH">
         <supports>Artificer Specialization</supports>
         <description>

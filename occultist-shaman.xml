@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name></name>
+        <update version="1.1.0">
+            <file name="occultist-shaman.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-shaman.xml" />
+        </update>
+    </info>
     
     <!--VERSION 1.1-->
 
@@ -68,7 +74,7 @@
             <description>When you call a spirit, you can expend a spell slot of 1st level or higher to empowered that spirit. An empowered spirit adds additional damage to your weapon and deals additional manifested damage. While the spirit is called and not manifested you gain temporary hit points equal to the level of the spell slot spent to empower at the start of each of your turns.</description>
         </sheet>
     </element>
-    <element name="name" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EXTRA_ATTACK">
+    <element name="Extra Attack" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EXTRA_ATTACK">
         <description>
             <p>Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. If you have a manifested spirit, you can replace one or both attacks with the special attack with it.</p>
         </description>
@@ -225,11 +231,11 @@
             <description>You gain additional spells at certain levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="1" />
-            <grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="3" />
-            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="5" />
-            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES" level="7" />
-            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ERUPTING_EARTH" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_ORBITAL_STONES" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_STONE" level="9" spellcasting="Occultist" />
         </rules>
     </element>
 
@@ -268,11 +274,11 @@
             <description>You gain additional spells at certain levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="1" />
-            <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" />
-            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" />
+            <grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SNILLOCS_SNOWBALL_SWARM" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="9" spellcasting="Occultist" />
         </rules>
     </element>
 
@@ -311,11 +317,11 @@
             <description>You gain additional spells at certain levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" />
-            <grant type="Spell" id="ID_XGTE_SPELL_PYROTECHNICS" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" />
-            <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_PYROTECHNICS" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" spellcasting="Occultist" />
         </rules>
     </element>
 
@@ -354,11 +360,11 @@
             <description>You gain additional spells at certain levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" />
-            <grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" />
-            <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="7" />
-            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_WINDS" level="9" spellcasting="Occultist" />
         </rules>
     </element>
 
@@ -377,6 +383,7 @@
 
     <element name="Rite of Prowess" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_RITE_OF_PROWESS">
         <supports>Occult Rite</supports>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
         <description>
             <p>You can select one fighting style from Dueling, Two-Weaponing Fighting, or Great Weapon Fighting.</p>
         </description>

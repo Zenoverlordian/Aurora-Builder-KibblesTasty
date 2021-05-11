@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
     <info>
-        <name>Circle of the Woad</name>
-        <update version="0.0.1">
-            <file name="druid-woad.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/druid-woad.xml" />
+        <name></name>
+        <update version="1.0.0">
+            <file name="druid-woad.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/druid-woad.xml" />
         </update>
     </info>
+
     <element name="Circle of the Woad" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_KTH_ARCHETYPE_CIRCLE_WOAD">
         <supports>Druid Circle</supports>
         <description>
