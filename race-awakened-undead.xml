@@ -616,7 +616,7 @@
 	</element>
     
 	<element name="Soulbinding" type="Feat" source="KibblesTasty's Races" id="ID_KTH_KTHRAC_FEAT_AWAKENED_UNDEAD_SOULBINDIN">
-		<requirements>ID_KTH_KTHRAC_RACE_AWAKENED_UNDEAD [level:13]</requirements>
+		<requirements>ID_KTH_KTHRAC_RACE_AWAKENED_UNDEAD, [level:13]</requirements>
         <prerequisite>13th level Awakened Undead</prerequisite>
         <description>
 			<p><em>Prerequisite: 13th level Awakened Undead</em></p>

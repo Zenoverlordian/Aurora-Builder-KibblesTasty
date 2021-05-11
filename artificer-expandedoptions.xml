@@ -3359,7 +3359,7 @@
             <description>You can select an upgrade from the Golemsmith or Warsmith upgrade lists, and apply it to yourself as if you were the golem or warplate. This upgrade cannot be a level restricted upgrade.</description>
         </sheet>
         <rules>
-            <select type="Class Feature" name="Artificial Metamagic" supports="Unrestricted, Specialization Upgrade, Warsmith" />
+            <select type="Class Feature" name="Warforged Customization" supports="Unrestricted, Specialization Upgrade, Warsmith" />
             <stat name="warsmith:warplate" value="1" />
         </rules>
     </element>
