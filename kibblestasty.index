@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="kibblestasty.index" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/kibblestasty.index" />
 		</update>
 	</info>
@@ -32,6 +32,7 @@
     <file name="psion-shaper.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-shaper.xml" />
     <file name="psion-transcended.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-transcended.xml" />
     <file name="psion-unleashed.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-unleashed.xml" />
+    <file name="race-awakened-undead" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/race-awakened-undead.xml" />
     <file name="rogue-divineagent.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/rogue-divineagent.xml" />
     <file name="rogue-gadgeteer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/rogue-gadgeteer.xml" />
     <file name="sorcerer-aetherheart.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/sorcerer-aetherheart.xml" />
