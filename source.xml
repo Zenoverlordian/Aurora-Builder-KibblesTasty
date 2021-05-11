@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/source.xml" />
         </update>
     </info>
@@ -13,6 +13,24 @@
         </description>
         <setters>
             <set name="abbreviation">KTHSub</set>
+            <set name="url"></set>
+            <set name="image">https://pbs.twimg.com/profile_banners/1075167519919493120/1600760061/1500x500</set>
+            <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">true</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
+    <element name="KibblesTasty's Races" type="Source" source="KibblesTasty's Races" id="ID_KIBBLESTASTY_KTH_SOURCE_KIBBLESTASTYS_RACES">
+        <description>
+            <![CDATA[<p>KibblesTasty's homebrewed races kept updated.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">KTHRac</set>
             <set name="url"></set>
             <set name="image">https://pbs.twimg.com/profile_banners/1075167519919493120/1600760061/1500x500</set>
             <set name="author" abbreviation="KTH" url="https://www.kthomebrew.com">KibblesTasty</set>
