@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.1.1">
+        <update version="2.1.2">
             <file name="class-artificer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-artificer.xml" />
         </update>
     </info>

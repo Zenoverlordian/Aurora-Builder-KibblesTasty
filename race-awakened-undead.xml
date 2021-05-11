@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.0.1">
+        <update version="1.0.2">
             <file name="race-awakened-undead.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/race-awakened-undead.xml" />
         </update>
     </info>
