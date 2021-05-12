@@ -2,13 +2,13 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.0.0">
+        <update version="1.0.1">
             <file name="bloodhunter-orderofthehunger.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/bloodhunter-orderofthehunger.xml" />
         </update>
     </info>
 
     <element name="Order of the Hunger" type="Archetype" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_BLOOD_HUNTER_ORDER_OF_THE_HUNGER">
-        <supports>Blood Hunter Order</supports>
+        <supports>Blood Hunter Order, Blood Hunter Order v2</supports>
         <description>
             <p>When one walks the path of using the power of evil to destroy evil, few options are drastic as those that introduce the Hunger into themselves to enhance their abilities.</p>
             <p class="indent">In an ancient and dark blood rite, Blood Hunters of this order consume that which consumes - they imbibe the blood of a vampire, mixing it with their own in a process that produces a cursed half-living half-undead hunter. Though horrific, the Hunger grants them strength and powers that allow them effective machines of destruction, hunting and destroying what haunts the shadows.</p>
