@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.1.3">
+        <update version="2.1.4">
             <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-expandedoptions.xml" />
         </update>
     </info>
@@ -3330,7 +3330,7 @@
 
     <!--FEATS-->
 
-    <element name="Artificial Metamagic" type="Feat" source="KibblesTasty's Artificer" id="ID_KIBBLESTASTY_ARTIFICER_FEAT_ARTIFICIAL_METAMAGIC">
+    <element name="Artificial Metamagic" type="Feat" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_FEAT_ARTIFICIAL_METAMAGIC">
         <requirements>ID_KIBBLESTASTY_CLASS_ARTIFICER</requirements>
         <prerequisite>Artificer</prerequisite>
         <description>
@@ -3347,7 +3347,7 @@
         </rules>
     </element>
 
-    <element name="Warforged Customization" type="Feat" source="KibblesTasty's Artificer" id="ID_KIBBLESTASTY_ARTIFICER_FEAT_WARFORGED_CUSTOMIZATION">
+    <element name="Warforged Customization" type="Feat" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_ARTIFICER_FEAT_WARFORGED_CUSTOMIZATION">
         <requirements>ID_WOTC_ERLW_RACE_WARFORGED</requirements>
         <prerequisite>Warforged</prerequisite>
         <description>
