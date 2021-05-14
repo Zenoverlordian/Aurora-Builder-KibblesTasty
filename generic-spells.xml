@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.0.0">
+        <update version="1.0.1">
             <file name="generic-spells.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/generic-spells.xml" />
         </update>
     </info>
@@ -878,6 +878,165 @@
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <!--WIND-->
+    
+    <element name="Aero Barrage" type="Spell" source="KibblesTasty Generic Spells" id="ID_KTH_GS_SPELL_AERO_BARRAGE">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>You create four lances of rapidly spinning condensed wind and hurl them at targets within range. You can hurl them at one target or several.</p>
+            <p class="indent">Make a ranged spell attack for each lance. On a hit, the target takes 2d8 slashing damage and is knocked 10 feet backwards.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, you create one additional lance for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Gale Bolt" type="Spell" source="KibblesTasty Generic Spells" id="ID_KTH_GS_SPELL_GALE_BOLT">
+        <supports>Druid, Occultist, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>A blast of concentrated wind streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On hit, the target takes 2d8 bludgeoning damage and is knocked 10 feet away from you if it is Large or smaller.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell lot of 2nd level or higher, the damage increases by 1d8 for each level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Windborne Weapon" type="Spell" source="KibblesTasty Generic Spells" id="ID_KTH_GS_SPELL_WINDBORNE_WEAPON">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>Make an attack with a weapon with the ammunition or thrown property as part of the action used to cast this spell, turning it into a ranged spell attack. This attack ignores cover. On hit, it deals 1d8 damage of the weapon's damage type.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">150 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Hurricane Slash" type="Spell" source="KibblesTasty Generic Spells" id="ID_KTH_GS_SPELL_HURRICANE_SLASH">
+        <supports>Druid, Occultist, Ranger, Sorcerer, Wizard</supports>
+        <description>
+            <p>You condense wind into a razor sharp blast that shreds a 30 foot long 5 feet wide line. Creatures in the area must make a Dexterity saving throw. A creature takes 3d8 slashing damage on a failed save and half as much on a success.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 3rd level or higher, you can create an additional line of effect. A creature in the area of more than one slash is affected only once</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot line)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Suffocate" type="Spell" source="KibblesTasty Generic Spells" id="ID_KTH_GS_SPELL_SUFFOCATE">
+        <supports>Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You create a whirling sphere of air around a target that causes them to struggle to breathe. The target must make a Constitution saving throw. On failure, the target loses 5d8 hit points due to lack of air, has disadvantage on all ability checks, and cannot speak. On success, the target takes half as damage and suffers no other effects. If a target fails a saving throw against this ability on their turn 3 turns in a row, they become incapacitated until they pass a save against this spell or do not have to make one since the end of their last turn.</p>
+            <p class="indent">For the duration, as an action, you can force the creation to make a saving throw against the ability again.</p>
+            <p class="indent">A creature that does not breath the atmosphere is unaffected by this spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Tornado" type="Spell" source="KibblesTasty Generic Spells" id="ID_KTH_GS_SPELL_TORNADO">
+        <supports>Sorcerer, Wizard</supports>
+        <description>
+            <p>A whirling tornado erupts filling a 20-foot-radius, 40-foot-high cylinder centered on a point within range.</p>
+            <p class="indent">Any creature that starts its turn within the tornado must make a Strength saving throw. On a failed save, the creature takes 4d8 bludgeoning damage and is pushed 10 feet away and 40 feet up. On a successful save, the creature takes half as much damage and isn't pushed.</p>
+            <p class="indent">As a bonus action, you can move the tornado up to 30 feet in any direction. Any ranged weapon attack against a target within 20 feet of the tornado has disadvantage, and any ranged attack that passes through it automatically misses.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    
+    <element name="Vortex Blast" type="Spell" source="KibblesTasty Generic Spells" id="ID_KTH_GS_SPELL_VORTEX_BLAST">
+        <supports>Occultist, Sorcerer, Wizard</supports>
+        <description>
+            <p>You create a sudden violent vortex that blasts outwards in a cone, tossing characters and objects within the area. Creatures take 2d6 bludgeoning damage and must make a Strength saving throw. On a failed save be knocked 20 feet backward and 40 feet upward.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot cone)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
