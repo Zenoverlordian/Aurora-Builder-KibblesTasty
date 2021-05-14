@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.1.0">
+        <update version="1.1.1">
             <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-occultist.xml" />
         </update>
     </info>
@@ -328,13 +328,13 @@
             <description>You gain additional spells from this tradition.</description>
         </sheet>
         <rules>
-            <grant type="type" id="ID_PHB_SPELL_GUIDANCE" level="1" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_THAUMATURGY" level="1" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_LOCATE_OBJECT" level="3" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_OBJECT" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLAIRVOYANCE" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Occultist" />
             <select type="Archetype Feature" name="Cursed Burden" supports="Oracle Cursed Burden" optional="true" />
         </rules>
     </element>
@@ -510,11 +510,11 @@
             <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="type" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Occultist" />
-            <grant type="type" id="ID_KTH_OCCULTIST_SPELL_WITHER" level="5" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Occultist" />
-            <grant type="type" id="ID_KTH_OCCULTIST_SPELL_KILLING_CURSE" level="9" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_WITHER" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_KILLING_CURSE" level="9" spellcasting="Occultist" />
         </rules>
     </element>
     <element name="Mystery of Life" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_LIFE">
@@ -551,11 +551,11 @@
             <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="type" id="ID_PHB_SPELL_HEALING_WORD" level="1" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_WARDING_BOND" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_AURA_OF_LIFE" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Occultist" />
         </rules>
     </element>
     <element name="Mystery of Fire" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_FIRE">
@@ -592,11 +592,11 @@
             <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="type" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_CONTINUAL_FLAME" level="3" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Occultist" />
-            <grant type="type" id="ID_XGTE_SPELL_IMMOLATION" level="9" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTINUAL_FLAME" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="9" spellcasting="Occultist" />
         </rules>
     </element>
     <element name="Mystery of War" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_WAR">
@@ -633,11 +633,11 @@
             <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="type" id="ID_PHB_SPELL_THUNDEROUS_SMITE" level="1" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_BRANDING_SMITE" level="3" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_BLINDING_SMITE" level="5" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_STAGGERING_SMITE" level="7" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_BANISHING_SMITE" level="9" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDEROUS_SMITE" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDING_SMITE" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_STAGGERING_SMITE" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" level="9" spellcasting="Occultist" />
         </rules>
     </element>
     <element name="Mystery of Souls" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MYSTERY_SOULS">
@@ -674,11 +674,11 @@
             <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="type" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="1" spellcasting="Occultist" />
-            <grant type="type" id="ID_XGTE_SPELL_HEALING_SPIRIT" level="3" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Occultist" />
-            <grant type="type" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="1" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_XGTE_SPELL_HEALING_SPIRIT" level="3" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPIRIT_GUARDIANS" level="5" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Occultist" />
+            <grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" level="9" spellcasting="Occultist" />
         </rules>
     </element>
 
