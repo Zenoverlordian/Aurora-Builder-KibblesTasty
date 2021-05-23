@@ -2,23 +2,23 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.1.0">
+        <update version="2.2.0">
             <file name="artificer-fleshsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-fleshsmith.xml" />
         </update>
     </info>
 
-    <element name="Fleshsmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FLESHSMITH">
-        <supports>Artificer Specialization</supports>
+    <element name="Fleshsmith" type="Archetype" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FLESHSMITH">
+        <supports>Inventor Specialization</supports>
         <description>
             <p>A Fleshsmith is the sort of person that makes people uncomfortable. Even when encountered in the most ideal circumstances, they simply have the sort of gaze that makes one think they may be thinking "how could I improve that" as they look at you.</p>
-            <p class="indent">A particular path of Artificer that has turned their creative talents... inward. They seek to understand and improve the limitations of flesh. All too frequently they place a slightly different value on aesthetic than others might, tending to find beauty primarily in efficiency.</p>
+            <p class="indent">A particular path of Inventor that has turned their creative talents... inward. They seek to understand and improve the limitations of flesh. All too frequently they place a slightly different value on aesthetic than others might, tending to find beauty primarily in efficiency.</p>
             <p class="indent">A Fleshsmith tends to be more eccentric than inclined to any particular alignment, though even the most benevolent one may find that the only reason their activities wouldn't be illegal is that no one considered them possible.</p>
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_PROFICIENCY" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_UNCANNY_VITALITY" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_ARCANE_BIOENGINEERING" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_EXTRA_ATTACK" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_PERFECTION_OF_THESIS" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_PROFICIENCY" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_UNCANNY_VITALITY" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_ARCANE_BIOENGINEERING" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_PERFECTION_OF_THESIS" />
         </description>
         <sheet display="false">
             <description>Fleshsmiths seek to understand and improve the limitations of flesh.</description>
@@ -33,15 +33,15 @@
             <select type="Class Feature" name="Specialization Upgrade (15)" supports="Specialization Upgrade, Fleshsmith" level="15" />
             <select type="Class Feature" name="Specialization Upgrade (17)" supports="Specialization Upgrade, Fleshsmith" level="17" />
             <select type="Class Feature" name="Specialization Upgrade (19)" supports="Specialization Upgrade, Fleshsmith" level="19" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_PROFICIENCY" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_UNCANNY_VITALITY" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_ARCANE_BIOENGINEERING" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_EXTRA_ATTACK" level="5" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_PERFECTION_OF_THESIS" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_UNCANNY_VITALITY" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_ARCANE_BIOENGINEERING" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_PERFECTION_OF_THESIS" level="14" />
         </rules>
     </element>
-    <element name="Fleshsmith Proficiency" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_PROFICIENCY">
+    <element name="Fleshsmith Proficiency" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_PROFICIENCY">
         <description>
             <p>When you choose this specialization at 1st level, you gain proficiency in the Medicine skill, as well as proficiency with Leatherworker's tools (it's best if you don't think about the details on that one too much...)</p>
             <p class="indent">Additionally, you can make all Medicine checks as Intelligence (Medicine) check. When you take an Intelligence (Medicine) check to stabilize a creature, they regain 1 hit point.</p>
@@ -54,49 +54,49 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" />
         </rules>
     </element>
-    <element name="Thesis of Flesh" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH">
+    <element name="Thesis of Flesh" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH">
         <description>
             <p>At first level, you select an approach to your work, a specialization to your art form. Select on the following options:</p>
             <h5>Perfection of Form</h5>
             <p>Nature had its chance to make your form, now it's your turn to improve it. When you take this path, you gain the <strong>Fleshcrafted Mutation</strong> upgrade, and it does not count against your upgrade total.</p>
-            <p class="indent">When you take the attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Artificer level. You regain all uses at the end of a long rest.</p>
+            <p class="indent">When you take the attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Inventor level. You regain all uses at the end of a long rest.</p>
             <h5>Perfection of Mind</h5>
             <p>You know that perfection is an aspect of knowledge, a perfect understanding of the mechanics of the Body, inside and out. But particularly inside. You gain the <strong>Dissection</strong> upgrade, and it does not count against your upgrade total.</p>
-            <p class="indent">You have a pool of d8s equal to your Artificer level. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend a number equal to Proficiency modifier at a time. You regain this pool of d8s at the end of a long rest.</p>
+            <p class="indent">You have a pool of d8s equal to your Inventor level. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend a number equal to Proficiency modifier at a time. You regain this pool of d8s at the end of a long rest.</p>
         </description>
         <sheet display="false" />
         <rules>
             <select type="Archetype Feature" name="Thesis of Flesh" supports="Thesis of Flesh" />
         </rules>
     </element>
-    <element name="Perfection of Form" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_FORM">
+    <element name="Perfection of Form" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_FORM">
         <supports>Thesis of Flesh</supports>
         <description>
             <p>Nature had its chance to make your form, now it's your turn to improve it. When you take this path, you gain the <strong>Fleshcrafted Mutation</strong> upgrade, and it does not count against your upgrade total.</p>
-            <p class="indent">When you take the attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Artificer level. You regain all uses at the end of a long rest.</p>
+            <p class="indent">When you take the attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Inventor level. You regain all uses at the end of a long rest.</p>
         </description>
         <sheet>
-            <description usage="{{level:artificer}}/Long rest" action="Bonus Action">When you take the attack action, you can use your bonus action to make a single additional attack with Fleshcrafted Mutation.</description>
+            <description usage="{{level:inventor}}/Long rest" action="Bonus Action">When you take the attack action, you can use your bonus action to make a single additional attack with Fleshcrafted Mutation.</description>
         </sheet>
         <rules>
-            <grant type="Class Feature" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION" />
+            <grant type="Class Feature" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION" />
         </rules>
     </element>
-    <element name="Perfection of Mind" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_MIND">
+    <element name="Perfection of Mind" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_MIND">
         <supports>Thesis of Flesh</supports>
         <description>
             <p>You know that perfection is an aspect of knowledge, a perfect understanding of the mechanics of the Body, inside and out. But particularly inside. You gain expertise in Medicine. Additionally, you gain the <strong>Dissection</strong> upgrade, and it does not count against your upgrade total.</p>
-            <p class="indent">You have a pool of d8s equal to your Artificer level. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend a number equal to Proficiency modifier at a time. You regain this pool of d8s at the end of a long rest.</p>
+            <p class="indent">You have a pool of d8s equal to your Inventor level. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend a number equal to Proficiency modifier at a time. You regain this pool of d8s at the end of a long rest.</p>
         </description>
         <sheet>
-            <description usage="{{level:artificer}}/Long rest">You have a pool of {{level:artificer}} d8s. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend up to {{proficiency}} at a time. You regain this pool of d8s at the end of a long rest.</description>
+            <description usage="{{level:inventor}}/Long rest">You have a pool of {{level:inventor}} d8s. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend up to {{proficiency}} at a time. You regain this pool of d8s at the end of a long rest.</description>
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_EXPERTISE_SKILL_MEDICINE" />
-            <grant type="Class Feature" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DISSECTION" />
+            <grant type="Class Feature" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_DISSECTION" />
         </rules>
     </element>
-    <element name="Uncanny Vitality" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_UNCANNY_VITALITY">
+    <element name="Uncanny Vitality" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_UNCANNY_VITALITY">
         <description>
             <p>Starting at 3rd level, your body has such vitality that it is constantly able to restore itself. While you have 1 or more hit points, at the start of your turn, you can choose to expend a hit die and regain the value rolled + your Constitution modifier health (as normal for expending a hit die). If you have zero hit points, you can use this feature at the end of your turn.</p>
             <p class="indent">Additionally, you regain hit dice equal to your Constitution modifier on a short or long rest (in addition to normal hit dice recovery on a long rest).</p>
@@ -106,7 +106,7 @@
             <description>While you have 1 or more hit points, at the start of your turn, you can choose to expend a hit die and regain the value rolled + {{constitution:modifier}} health. If you have zero hit points, you can use this feature at the end of your turn. Additionally, you regain {{constitution:modifier}} hit dice on a short or long rest (in addition to normal hit dice recovery on a long rest). If you are missing any limbs at the start of a long rest, at the end of the long rest the missing limb is regenerated.</description>
         </sheet>
     </element>
-    <element name="Arcane Bioengineering" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_ARCANE_BIOENGINEERING">
+    <element name="Arcane Bioengineering" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_ARCANE_BIOENGINEERING">
         <description>
             <p>Additionally at 3rd level, you can use Arcane Retrofit to transmute a bonus to attack or damage rolls on a weapon to natural weapons gained from this subclass.</p>
         </description>
@@ -114,7 +114,7 @@
             <description>You can use Arcane Retrofit to transmute a bonus to attack or damage rolls on a weapon to natural weapons gained from this subclass.</description>
         </sheet>
     </element>
-    <element name="Extra Attack" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_EXTRA_ATTACK">
+    <element name="Extra Attack" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_EXTRA_ATTACK">
         <description>
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
@@ -125,7 +125,7 @@
             <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
         </rules>
     </element>
-    <element name="Perfection of Thesis" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_PERFECTION_OF_THESIS">
+    <element name="Perfection of Thesis" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_PERFECTION_OF_THESIS">
         <description>
             <p>Starting at 14th level, your understanding of Thesis of Flesh grows; you regain uses of the resource it provides equal to your Intelligence modifier when you complete a short rest.</p>
         </description>
@@ -138,29 +138,22 @@
         
         <!--UNRESTRICTED UPGRADES-->
 
-    <element name="Adorable Critter" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_ADORABLE_CRITTER">
+    <element name="Adorable Critter" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_ADORABLE_CRITTER">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
-            <p>You experiment on creating an adorable critter. You create - or modify - a CR 0 tiny creature. This creature serves as a familiar as per the <em>find familiar</em> spell, and you can resuscitate it (or rebuild it, as necessary) at the end of a short or long rest should anything untoward happen to it.</p>
-            <p class="indent">You can use your bonus action to make your adorable critter cast <em>primal savagery</em> as a first level caster using its reaction. You can do this a number of times equal to your Intelligence modifier. It uses your Spell Attack modifier. It regains all uses of this after completing a long rest.</p>
+            <p>You experiment on creating an adorable critter. You create - or modify - a CR 0 tiny creature. This creature serves as a familiar as per the find familiar spell, but does not disappear when reduced to zero hit points, and simply becomes Unconscious. It cannot fully die unless destroyed. If it starts its turn unconscious, it regains its full hit points and regains consciousness. It can do this a number of times equal to your Intelligence modifier.</p>
+            <p class="indent">You can resuscitate it (or rebuild it, as necessary) at the end of a short or long rest should anything untoward happen to it without expending a spell slot or material component. It's creature type is Construct.</p>
             <div class="reference">
                 <div element="ID_PHB_SPELL_FIND_FAMILIAR" />
             </div>
-            <div class="reference">
-                <div element="ID_XGTE_SPELL_PRIMAL_SAVAGERY" />
-            </div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Bonus Action">You create - or modify - a CR 0 tiny creature. This creature serves as a familiar as per the <em>find familiar</em> spell, and you can resuscitate it (or rebuild it, as necessary) at the end of a short or long rest should anything untoward happen to it.
-            You can use your bonus action to make your adorable critter cast <em>primal savagery</em> as a first level caster using its reaction. You can do this a number of times equal to your Intelligence modifier. It uses your Spell Attack modifier. It regains all uses of this after completing a long rest.</description>
+            <description>You create - or modify - a CR 0 tiny creature. This creature serves as a familiar as per the find familiar spell, but does not disappear when reduced to zero hit points, and simply becomes Unconscious. It cannot fully die unless destroyed. If it starts its turn unconscious, it regains its full hit points and regains consciousness. It can do this {{intelligence:modifier}} times.
+            You can resuscitate it (or rebuild it, as necessary) at the end of a short or long rest should anything untoward happen to it without expending a spell slot or material component. It's creature type is Construct.</description>
         </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
-            <grant type="Spell" id="ID_XGTE_SPELL_PRIMAL_SAVAGERY" />
-        </rules>
     </element>
 
-    <element name="Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES">
+    <element name="Better Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BETTER_EYES">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>Your eyes did not see everything you wanted them to, so you replace them with eyes that do. You gain a benefit to your vision, selecting one of following enhancements: Blindsight (10 feet), Darkvision (60 feet), the ability to see clearly twice as far as your natural vision range, or proficiency in the Perception skill. If you select this upgrade again, you must select a different benefit.</p>
@@ -171,9 +164,9 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES2">
+    <element name="Better Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BETTER_EYES2">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BETTER_EYES</requirements>
         <description>
             <p>Your eyes did not see everything you wanted them to, so you replace them with eyes that do. You gain a benefit to your vision, selecting one of following enhancements: Blindsight (10 feet), Darkvision (60 feet), the ability to see clearly twice as far as your natural vision range, or proficiency in the Perception skill. If you select this upgrade again, you must select a different benefit.</p>
         </description>
@@ -183,9 +176,9 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES3">
+    <element name="Better Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BETTER_EYES3">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES2</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BETTER_EYES2</requirements>
         <description>
             <p>Your eyes did not see everything you wanted them to, so you replace them with eyes that do. You gain a benefit to your vision, selecting one of following enhancements: Blindsight (10 feet), Darkvision (60 feet), the ability to see clearly twice as far as your natural vision range, or proficiency in the Perception skill. If you select this upgrade again, you must select a different benefit.</p>
         </description>
@@ -195,9 +188,9 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES4">
+    <element name="Better Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BETTER_EYES4">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES3</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BETTER_EYES3</requirements>
         <description>
             <p>Your eyes did not see everything you wanted them to, so you replace them with eyes that do. You gain a benefit to your vision, selecting one of following enhancements: Blindsight (10 feet), Darkvision (60 feet), the ability to see clearly twice as far as your natural vision range, or proficiency in the Perception skill. If you select this upgrade again, you must select a different benefit.</p>
         </description>
@@ -207,7 +200,7 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Blindsight, Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_BETTER_EYES_FLESHSMITH_BETTER_BLINDSIGHT">
+    <element name="Blindsight, Better Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_BETTER_EYES_FLESHSMITH_BETTER_BLINDSIGHT">
         <supports>Better Eyes</supports>
         <description>
             <p>You gain Blindsight (10 feet)</p>
@@ -216,7 +209,7 @@
             <description>You gain Blindsight (10 feet)</description>
         </sheet>
     </element>
-    <element name="Darkvision, Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_BETTER_EYES_FLESHSMITH_BETTER_DARKVISION">
+    <element name="Darkvision, Better Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_BETTER_EYES_FLESHSMITH_BETTER_DARKVISION">
         <supports>Better Eyes</supports>
         <description>
             <p>You gain Darkvision (60 feet)</p>
@@ -228,7 +221,7 @@
             <grant type="Vision" id="ID_VISION_DARKVISION" />
         </rules>
     </element>
-    <element name="Farsight, Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_BETTER_EYES_FLESHSMITH_BETTER_FARSIGHT">
+    <element name="Farsight, Better Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_BETTER_EYES_FLESHSMITH_BETTER_FARSIGHT">
         <supports>Better Eyes</supports>
         <description>
             <p>Your natrual vision range is doubled.</p>
@@ -237,7 +230,7 @@
             <description>Your natrual vision range is doubled.</description>
         </sheet>
     </element>
-    <element name="Perception, Better Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_BETTER_EYES_FLESHSMITH_BETTER_PERCEPTION">
+    <element name="Perception, Better Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_BETTER_EYES_FLESHSMITH_BETTER_PERCEPTION">
         <supports>Better Eyes</supports>
         <description>
             <p>You gain proficiency in the Perception skill.</p>
@@ -250,7 +243,7 @@
         </rules>
     </element>
 
-    <element name="Dissection" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DISSECTION">
+    <element name="Dissection" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_DISSECTION">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>If you are holding a melee finesse weapon you have proficiency with, as an action you can make an Intelligence (Medicine) ability check against a creature within reach with a DC equal to its armor class. If you succeed the check, you can deal damage to that creature equal to your weapons damage dice plus your Intelligence modifier. On a roll of 20, the roll weapon damage dice are doubled.</p>
@@ -261,7 +254,7 @@
         </sheet>
     </element>
 
-    <element name="Crushing Grip" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_CRUSHING_GRIP">
+    <element name="Crushing Grip" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_CRUSHING_GRIP">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>You don't let things go once you have them in your grip. Creatures that are grappled or restrained by you have disadvantage on attempting to escape the condition. Additionally, you can choose to apply damage equal to your Strength modifier to any creature that starts its turn grappled or restrained by you.</p>
@@ -274,7 +267,7 @@
         </rules>
     </element>
 
-    <element name="Extra Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_EXTRA_EYES">
+    <element name="Extra Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_EXTRA_EYES">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>Why only see one direction? You add extra eyes. You have advantage on Wisdom (Perception) that contests a creature's Dexterity (Stealth) check. You gain proficiency in Wisdom (Perception) checks. If you already have proficiency in Perception, you can add double your proficiency bonus to your Wisdom (Perception) skill checks.</p>
@@ -288,7 +281,7 @@
         </rules>
     </element>
 
-    <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION">
+    <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>You enhance your body by crafting or mutating a new part through grotesque experimentation. Select one of the following mutations:</p>
@@ -308,9 +301,9 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION2">
+    <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION2">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION</requirements>
         <description>
             <p>You enhance your body by crafting or mutating a new part through grotesque experimentation. Select one of the following mutations:</p>
             <table>
@@ -329,9 +322,9 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION3">
+    <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION3">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION2</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION2</requirements>
         <description>
             <p>You enhance your body by crafting or mutating a new part through grotesque experimentation. Select one of the following mutations:</p>
             <table>
@@ -350,9 +343,9 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION4">
+    <element name="Fleshcrafted Mutation" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION4">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION3</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION3</requirements>
         <description>
             <p>You enhance your body by crafting or mutating a new part through grotesque experimentation. Select one of the following mutations:</p>
             <table>
@@ -373,7 +366,7 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Extra Arm" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_ARM">
+    <element name="Extra Arm" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_ARM">
         <supports>Fleshcrafted Mutation</supports>
         <description>
             <p>This arm is capable of doing things an arm can do, like holding and hitting things.</p>
@@ -382,7 +375,7 @@
             <description>This arm is capable of doing things an arm can do, like holding and hitting things.</description>
         </sheet>
     </element>
-    <element name="Extra Claws" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_CLAWS">
+    <element name="Extra Claws" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_CLAWS">
         <supports>Fleshcrafted Mutation</supports>
         <description>
             <p>You gain a natural weapon that deals 1d8 slashing damage, and counts a finesse weapon. You are proficient with these new claws.</p>
@@ -391,7 +384,7 @@
             <description>You gain a natural weapon that deals 1d8 slashing damage, and counts a finesse weapon. You are proficient with these new claws.</description>
         </sheet>
     </element>
-    <element name="Extra Fangs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS">
+    <element name="Extra Fangs" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_FANGS">
         <supports>Fleshcrafted Mutation</supports>
         <description>
             <p>Your mouth becomes a natural weapon that deals 1d10 piercing damage. You are proficient using these fangs as a weapon.</p>
@@ -400,7 +393,7 @@
             <description>Your mouth becomes a natural weapon that deals 1d10 piercing damage. You are proficient using these fangs as a weapon.</description>
         </sheet>
     </element>
-    <element name="Extra Tentacle" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_TENTACLE">
+    <element name="Extra Tentacle" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_TENTACLE">
         <supports>Fleshcrafted Mutation</supports>
         <description>
             <p>You gain a tentacle appendage that is a natural weapon the deals 1d6 bludgeoning damage with the reach property. You are proficient with this natural weapon. Using this tentacle, you can make a Strength (Athletic) check or object interaction with a reach of 10 feet.</p>
@@ -410,10 +403,10 @@
         </sheet>
     </element>
 
-    <element name="Fleshcrafted Enhancement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_ENHANCEMENT">
+    <element name="Fleshcrafted Enhancement" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_ENHANCEMENT">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <prerequisite>Fleshcrafted Mutation</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION</requirements>
         <description>
             <p><em>Prerequisite: Fleshcrafted Mutation</em></p>
             <p>You use the knowledge of inhuman anatomy or twisted powers you gain from to formulate an unnatural enhancement of your Fleshcrafted Mutation, granting it an additional power. The table below shows which enhancements can be applied to which mutations.</p>
@@ -431,14 +424,14 @@
                 <tr><td>Relentless</td><td>Extra Arm, Extra Tentacle</td></tr>
             </table>
             <h5>Vampiric</h5>
-            <p>Once per turn, on your turn, when dealing damage with your Extra Fangs, you can drain the life from your victim adding 1d4 damage roll. If the target is a living creature over CR 1/4, you regain health equal to the necrotic damage dealt.</p>
-            <p class="indent"><em>Empowered: </em>You gain a free extra d8 hit die that you can spend until the end of your next turn (after which it is lost).</p>
+            <p>Once per turn, on your turn, when dealing damage with your Extra Fangs, you can drain the life from your victim adding 1d4 necrotic damage roll. If the target is a living creature over CR 1/4, you regain health equal to the necrotic damage dealt.</p>
+            <p class="indent"><em>Empowered: </em>The hit points regained becomes 1d6 + your constitution modifier.</p>
             <h5>Ghoulish</h5>
             <p>Once per turn, on your turn, when make an attack roll (or ability check with Dissection) with your natural weapon, you can add d4 to the roll. If you've damaged the target with your natural weapons since the beginning of your last turn, you can add a d6 instead of a d4.</p>
             <p class="indent"><em>Empowered: </em>You get advantage on your next attack with a natural weapon against the target.</p>
             <h5>Infernal</h5>
-            <p>Once per turn, on your turn, when dealing damage with your Fangs or Claws you can ignite your claws with infernal flames, the attack deals an additional 1d8 fire damage.</p>
-            <p class="indent"><em>Empowered: </em>You deal an additional 1d8 fire damage.</p>
+            <p>Once per turn, on your turn, when dealing damage with your Fangs or Claws you can ignite your claws with infernal flames, the attack deals an additional 1d6 fire damage.</p>
+            <p class="indent"><em>Empowered: </em>You deal an additional 1d6 fire damage.</p>
             <h5>Poisonous</h5>
             <p>Once per turn, on your turn, when you hit a creature with your natural weapon you can inject venom, the attack deals an additional 1d8 poison damage.</p>
             <p class="indent"><em>Empowered: </em>The target must make a Constitution saving throw against your Spell Save DC or become poisoned for 1 minute. They can repeat their saving throw at the end of each of their turns.</p>
@@ -457,21 +450,21 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Vampiric" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_FLESHCRAFTED_ENHANCEMENT_VAMPIRIC">
+    <element name="Vampiric" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_FLESHCRAFTED_ENHANCEMENT_VAMPIRIC">
         <supports>Fleshcrafted Enhancement</supports>
-        <requirements>ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS</requirements>
+        <requirements>ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_FANGS</requirements>
         <description>
-            <p>Once per turn, on your turn, when dealing damage with your Extra Fangs, you can drain the life from your victim adding 1d4 damage roll. If the target is a living creature over CR 1/4, you regain health equal to the necrotic damage dealt.</p>
-            <p class="indent"><em>Empowered: </em>You gain a free extra d8 hit die that you can spend until the end of your next turn (after which it is lost).</p>
+            <p>Once per turn, on your turn, when dealing damage with your Extra Fangs, you can drain the life from your victim adding 1d4 necrotic damage roll. If the target is a living creature over CR 1/4, you regain health equal to the necrotic damage dealt.</p>
+            <p class="indent"><em>Empowered: </em>The hit points regained becomes 1d6 + your constitution modifier.</p>
         </description>
         <sheet>
-            <description>Once per turn, on your turn, when dealing damage with your Extra Fangs, you can drain the life from your victim adding 1d4 damage roll. If the target is a living creature over CR 1/4, you regain health equal to the necrotic damage dealt.
-            <em>Empowered: </em>You gain a free extra d8 hit die that you can spend until the end of your next turn (after which it is lost).</description>
+            <description>Once per turn, on your turn, when dealing damage with your Extra Fangs, you can drain the life from your victim adding 1d4 necrotic damage roll. If the target is a living creature over CR 1/4, you regain health equal to the necrotic damage dealt.
+            <em>Empowered: </em>The hit points regained becomes 1d6 + {{constitution:modifier}}.</description>
         </sheet>
     </element>
-    <element name="Ghoulish" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_FLESHCRAFTED_ENHANCEMENT_GHOULISH">
+    <element name="Ghoulish" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_FLESHCRAFTED_ENHANCEMENT_GHOULISH">
         <supports>Fleshcrafted Enhancement</supports>
-        <requirements>(ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
+        <requirements>(ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
         <description>
             <p>Once per turn, on your turn, when make an attack roll (or ability check with Dissection) with your natural weapon, you can add d4 to the roll. If you've damaged the target with your natural weapons since the beginning of your last turn, you can add a d6 instead of a d4.</p>
             <p class="indent"><em>Empowered: </em>You get advantage on your next attack with a natural weapon against the target.</p>
@@ -481,21 +474,21 @@
             <em>Empowered: </em>You get advantage on your next attack with a natural weapon against the target.</description>
         </sheet>
     </element>
-    <element name="Infernal" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_FLESHCRAFTED_ENHANCEMENT_INFERNAL">
+    <element name="Infernal" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_FLESHCRAFTED_ENHANCEMENT_INFERNAL">
         <supports>Fleshcrafted Enhancement</supports>
-        <requirements>(ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
+        <requirements>(ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
         <description>
-            <p>Once per turn, on your turn, when dealing damage with your Fangs or Claws you can ignite your claws with infernal flames, the attack deals an additional 1d8 fire damage.</p>
-            <p class="indent"><em>Empowered: </em>You deal an additional 1d8 fire damage.</p>
+            <p>Once per turn, on your turn, when dealing damage with your Fangs or Claws you can ignite your claws with infernal flames, the attack deals an additional 1d6 fire damage.</p>
+            <p class="indent"><em>Empowered: </em>You deal an additional 1d6 fire damage.</p>
         </description>
         <sheet>
-            <description>Once per turn, on your turn, when dealing damage with your Fangs or Claws you can ignite your claws with infernal flames, the attack deals an additional 1d8 fire damage.
-            <em>Empowered: </em>You deal an additional 1d8 fire damage.</description>
+            <description>Once per turn, on your turn, when dealing damage with your Fangs or Claws you can ignite your claws with infernal flames, the attack deals an additional 1d6 fire damage.
+            <em>Empowered: </em>You deal an additional 1d6 fire damage.</description>
         </sheet>
     </element>
-    <element name="Poisonous" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_FLESHCRAFTED_ENHANCEMENT_POISONOUS">
+    <element name="Poisonous" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_FLESHCRAFTED_ENHANCEMENT_POISONOUS">
         <supports>Fleshcrafted Enhancement</supports>
-        <requirements>(ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
+        <requirements>(ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
         <description>
             <p>Once per turn, on your turn, when you hit a creature with your natural weapon you can inject venom, the attack deals an additional 1d8 poison damage.</p>
             <p class="indent"><em>Empowered: </em>The target must make a Constitution saving throw against your Spell Save DC or become poisoned for 1 minute. They can repeat their saving throw at the end of each of their turns.</p>
@@ -505,9 +498,9 @@
             <em>Empowered: </em>The target must make a Constitution saving throw against your Spell Save DC or become poisoned for 1 minute. They can repeat their saving throw at the end of each of their turns.</description>
         </sheet>
     </element>
-    <element name="Razor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_FLESHCRAFTED_ENHANCEMENT_RAZOR">
+    <element name="Razor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_FLESHCRAFTED_ENHANCEMENT_RAZOR">
         <supports>Fleshcrafted Enhancement</supports>
-        <requirements>(ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
+        <requirements>(ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_FANGS| ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_CLAWS)</requirements>
         <description>
             <p>The damage die of your natural weapon becomes one step higher (for example, Extra Fangs go from 1d10 to 1d12).</p>
             <p class="indent"><em>Empowered: </em>You can maximize one damage die of your choice from damage dice of the damage roll.</p>
@@ -517,9 +510,9 @@
             <em>Empowered: </em>You can maximize one damage die of your choice from damage dice of the damage roll.</description>
         </sheet>
     </element>
-    <element name="Relentless" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_FLESHCRAFTED_ENHANCEMENT_RELENTLESS">
+    <element name="Relentless" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_FLESHCRAFTED_ENHANCEMENT_RELENTLESS">
         <supports>Fleshcrafted Enhancement</supports>
-        <requirements>(ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_ARM| ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_TENTACLE)</requirements>
+        <requirements>(ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_ARM| ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_TENTACLE)</requirements>
         <description>
             <p>You gain an additional reaction you can only use to make an attack of opportunity with that Fleshcrafted Mutation.</p>
             <p class="indent"><em>Empowered: </em>You can make an additional single attack with your Fleshcrafted addition. This attack only deals the weapon damage of the attack, and does not add your modifier to the damage dealt.</p>
@@ -530,17 +523,17 @@
         </sheet>
     </element>
 
-    <element name="Field Surgery" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FIELD_SURGERTY">
+    <element name="Field Surgery" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FIELD_SURGERTY">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
-            <p>Some say that not all medical problems require surgery. Not you. As an action, you can repair a body to its natural limits far more quickly than its natural limits. You can repair a willing creature within 5 feet, allowing them to expend hit dice up to half Artificer level (rounded up). Each hit dice spent is rolled as normal, but you can add the higher value of their Constitution modifier or your Intelligence modifier.</p>
+            <p>Some say that not all medical problems require surgery. Not you. As an action, you can repair a body to its natural limits far more quickly than its natural limits. You can repair a willing creature within 5 feet, allowing them to expend hit dice up to half Inventor level (rounded up). Each hit dice spent is rolled as normal, but you can add the higher value of their Constitution modifier or your Intelligence modifier.</p>
         </description>
         <sheet>
-            <description action="Action">As an action, you can repair a willing creature within 5 feet, allowing them to expend up to {{level:artificer:half:up}} hit dice. Each hit dice spent is rolled as normal, but you can add the higher value of their Constitution modifier or {{intelligence:modifier}}.</description>
+            <description action="Action">As an action, you can repair a willing creature within 5 feet, allowing them to expend up to {{level:inventor:half:up}} hit dice. Each hit dice spent is rolled as normal, but you can add the higher value of their Constitution modifier or {{intelligence:modifier}}.</description>
         </sheet>
     </element>
 
-    <element name="Fix Flesh" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FIX_FLESH">
+    <element name="Fix Flesh" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FIX_FLESH">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>Your expertise in the working of flesh makes you an artisan of fixing broken creatures. When you cast <em>cure wounds</em> you restore an additional amount of health equal to your Intelligence modifier.</p>
@@ -550,13 +543,13 @@
         </sheet>
     </element>
 
-    <element name="Forbidden Knowledge" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FORBIDDEN_KNOWLEDGE">
+    <element name="Forbidden Knowledge" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FORBIDDEN_KNOWLEDGE">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>You deliver into the arcane mechanics of how bodies work. Otherwise known as Necromancy. You learn additional spells as shown on the table below:</p>
             <table>
                 <thead>
-                    <tr><td>Artificer Level</td><td>Spells Learned</td></tr>
+                    <tr><td>Inventor Level</td><td>Spells Learned</td></tr>
                 </thead>
                 <tr><td>3</td><td>inflict wounds, false life</td></tr>
                 <tr><td>5</td><td>blindness/deafness, gentle repose</td></tr>
@@ -589,17 +582,17 @@
             <description>You learn additional spells at certain levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="3" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="5" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="5" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_XGTE_SPELL_LIFE_TRANSFERENCE" level="9" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="9" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="13" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="3" spellcasting="KTHInventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" level="3" spellcasting="KTHInventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" level="5" spellcasting="KTHInventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="5" spellcasting="KTHInventor" />
+            <grant type="Spell" id="ID_XGTE_SPELL_LIFE_TRANSFERENCE" level="9" spellcasting="KTHInventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" level="9" spellcasting="KTHInventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="13" spellcasting="KTHInventor" />
         </rules>
     </element>
 
-    <element name="Horrifying Abomination" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_HORRIFYING_ABOMINATION">
+    <element name="Horrifying Abomination" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_HORRIFYING_ABOMINATION">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <prerequisite>At least 5 upgrades modifying your body</prerequisite>
         <requirements>[mutation:upgrade:5]</requirements>
@@ -617,15 +610,15 @@
         </rules>
     </element>
 
-    <element name="Massive Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_MASSIVE_MUTATION">
+    <element name="Massive Mutation" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_MASSIVE_MUTATION">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
-            <p>You develop a method to suddenly mutate. As an action, you can become a large sized creature. Any creature that witnesses this must make a Wisdom Save against your Spell Save DC or become frightened of you until the end of their turn.</p>
-            <p class="indent">While you are large, your attack deals additional 1d4 damage with your natural weapons and weapons sized for medium creatures, and you have advantage on Strength (Athletics) checks. You can revert to normal size as bonus action.</p>
+            <p>You develop a method to suddenly mutate. As a bonus action, you can become a large sized creature. Creatures of your choice within 30 feet of you that witnesses this must make a Wisdom Save against your Spell Save DC or become frightened of you until the end of their turn.</p>
+            <p class="indent">While you are large, you deal an 1d4 damage with your natural weapons and weapons sized for medium creatures, and you have advantage on Strength (Athletics) checks. You can revert to normal size as bonus action.</p>
             <p class="indent">You can spend a number of rounds equal to your Constitution modifier + Intelligence modifier as a large creature before you must revert and can not become large until you complete a short or long rest. After a short or long rest, you regain all rounds of duration you can remain as a large creature.</p>
         </description>
         <sheet>
-            <description usage="{{massive mutation:rounds}} rounds/Short/Long rest">As an action, you can become a large sized creature. Any creature that witnesses this must make a Wisdom Save against your Spell Save DC or become frightened of you until the end of their turn. While you are large, your attack deals additional 1d4 damage with your natural weapons and weapons sized for medium creatures, and you have advantage on Strength (Athletics) checks. You can revert to normal size as bonus action.
+            <description action="Bonus Action" usage="{{massive mutation:rounds}} rounds/Short rest">As a bonus action, you can become a large sized creature. Creatures of your choice within 30 feet of you that witnesses this must make a Wisdom Save against your Spell Save DC or become frightened of you until the end of their turn. While you are large, you deal an 1d4 damage with your natural weapons and weapons sized for medium creatures, and you have advantage on Strength (Athletics) checks. You can revert to normal size as bonus action.
             You can spend {{massive mutation:rounds}} rounds as a large creature before you must revert and can not become large until you complete a short or long rest.</description>
         </sheet>
         <rules>
@@ -635,37 +628,37 @@
         </rules>
     </element>
 
-    <element name="Secondary Life Organs" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SECONDARY_LIFE_ORGANS">
+    <element name="Secondary Life Organs" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_SECONDARY_LIFE_ORGANS">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
-            <p>Realizing the fragility of mortal life, you modify yourself with additional necessary functions. When you make a Death Saving Throw, you can replace the results of that roll with a 20.</p>
+            <p>Realizing the fragility of mortal life, you modify yourself with additional necessary functions. You are no longer take extra damage from critical strikes. Additionally, when you make a Death Saving Throw, you can replace the results of that roll with a 20.</p>
             <p class="indent">Once you do this, you cannot do this again until you complete a long rest.</p>
         </description>
         <sheet>
-            <description usage="1/Long rest">When you make a Death Saving Throw, you can replace the results of that roll with a 20.</description>
+            <description usage="1/Long rest">You are no longer take extra damage from critical strikes. Additionally, when you make a Death Saving Throw, you can replace the results of that roll with a 20.</description>
         </sheet>
         <rules>            
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
-    <element name="Subdermal Plating" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SUBDERMAL_PLATING">
+    <element name="Subdermal Plating" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_SUBDERMAL_PLATING">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
-            <p>Exoskeletons are bulky, and endoskeletons just don't offer enough protection, so you compromise. You gain natural armor granting you a base AC of 16 + your Dexterity modifier (maximum 2).</p>
+            <p>Exoskeletons are bulky, and endoskeletons just don't offer enough protection, so you compromise. You gain natural armor granting you a base AC of 17. This increases to 18 when you reach 5th level.</p>
         </description>
         <sheet>
-            <description>You gain natural armor granting you a base AC of {{subdermal plating:natural armor}} (maximum 18).</description>
+            <description>You gain natural armor granting you a base AC of {{subdermal plating:natural armor}}.</description>
         </sheet>
         <rules>
-            <stat name="subdermal plating:natural armor" value="16" />
-			<stat name="subdermal plating:natural armor" value="dexterity:modifier" />
+            <stat name="subdermal plating:natural armor" value="17" level="1" />
+            <stat name="subdermal plating:natural armor" value="1" level="5" />
 			<stat name="ac:calculation" value="subdermal plating:natural armor" bonus="calculation" alt="Natural Armor (Subdermal Plating)" />
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
-    <element name="Toxicity" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_TOXICITY">
+    <element name="Toxicity" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_TOXICITY">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
             <p>Copying certain frog species, you make your blood poisonous. Once per turn, when a creature hits you piercing or slashing damage while within 5 feet of you, they take poison damage equal to your Constitution modifier. If damage is from a biting attack, they take twice as much damage.</p>
@@ -679,23 +672,23 @@
         </rules>
     </element>
 
-    <element name="Unnatural Health" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_UNNATURAL_HEALTH">
+    <element name="Unnatural Health" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_UNNATURAL_HEALTH">
         <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
         <description>
-            <p>You're a shining beacon of vitality. You gain an additional 1 maximum hit point for each level of Artificer you have.</p>
+            <p>You're a shining beacon of vitality. You gain an additional 1 maximum hit point for each level of Inventor you have.</p>
             <p class="indent">Additionally, When you roll a 1 or 2 on a hit die for recovering health, you can reroll the die and must use the new roll, even if it is a 1 or a 2.</p>
         </description>
         <sheet>
             <description>When you roll a 1 or 2 on a hit die for recovering health, you can reroll the die and must use the new roll, even if it is a 1 or a 2.</description>
         </sheet>
         <rules>
-            <stat name="hp" value="level:artificer" />
+            <stat name="hp" value="level:inventor" />
         </rules>
     </element>
     
         <!--5TH LEVEL UPGRADES-->
 
-    <element name="Life Merchant" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_LIFE_MERCHANT">
+    <element name="Life Merchant" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_LIFE_MERCHANT">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>5th level</prerequisite>
         <requirements>[level:5]</requirements>
@@ -710,11 +703,11 @@
             <description usage="1/Short/Long rest">You learn the spell <em>life transference</em>, and you can cast it without expending a spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_XGTE_SPELL_LIFE_TRANSFERENCE" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_XGTE_SPELL_LIFE_TRANSFERENCE" spellcasting="KTHInventor" />
         </rules>
     </element>
 
-    <element name="Mutation Mastery" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_MUTATION_MASTERY">
+    <element name="Mutation Mastery" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_MUTATION_MASTERY">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>5th level</prerequisite>
         <requirements>[level:5]</requirements>
@@ -729,15 +722,15 @@
             <description usage="1/Short/Long rest">You learn the spell <em>alter self</em>, and you can cast it without expending a spell slot.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" spellcasting="KTHInventor" />
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
-    <element name="Pressure Points" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_PRESSURE_POINTS">
+    <element name="Pressure Points" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_PRESSURE_POINTS">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>5th level, Perfection of Mind</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_MIND, [level:5]</requirements>
+        <requirements>ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_MIND, [level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Perfection of Mind</em></p>
             <p>You extensive knowledge of anatomy allows you to target critical spots. When you deal damage to a target with a melee weapon, as a bonus action you can force them to roll a Constitution Saving Throw against your spell save DC.</p>
@@ -751,10 +744,10 @@
         </sheet>
     </element>
 
-    <element name="Reflexive Twitch" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_REFLEXIVE_TWITCH">
+    <element name="Reflexive Twitch" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_REFLEXIVE_TWITCH">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>5th level, Extra Arm</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_MUTATION_FLESHSMITH_EXTRA_ARM, [level:5]</requirements>
+        <requirements>ID_KTH_INVENTOR_MUTATION_FLESHSMITH_EXTRA_ARM, [level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Extra Arm</em></p>
             <p>When you take damage from a target within 5 feet of you, you can use your reaction to reflexively attack them with your Extra Arm. This attack does not add your Strength or Dexterity modifier to damage dealt, unless that modifier is negative.</p>
@@ -764,10 +757,10 @@
         </sheet>
     </element>
 
-    <element name="Safe Revival Technique" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_SAFE_REVIVAL_TECHNIQUE">
+    <element name="Safe Revival Technique" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_SAFE_REVIVAL_TECHNIQUE">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>5th level, Field Surgery</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FIELD_SURGERTY, [level:5]</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FIELD_SURGERTY, [level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Field Surgery</em></p>
             <p>You can cast <em>revivify</em> without expending a spell slot or material component. For some reason the target gains a level exhaustion, and is frightened of you for one minute upon reviving.</p>
@@ -783,25 +776,12 @@
         </rules>
     </element>
 
-    <element name="Zombie Critter?!" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_ZOMBIE_CRITTER">
-        <supports>Specialization Upgrade, Fleshsmith</supports>
-        <prerequisite>5th level, Adorable Critter</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_ADORABLE_CRITTER, [level:5]</requirements>
-        <description>
-            <p><em>Prerequisite: 5th level, Adorable Critter</em></p>
-            <p>If your Adorable Critter dies, it comes back to life at the end of its next turn. It can do this a number of times equal to your Intelligence modifier, and regains all lives after you complete a long rest and repair or rebuild it.</p>
-        </description>
-        <sheet>
-            <description usage="{{intelligence:modifier}}/Long rest">If your Adorable Critter dies, it comes back to life at the end of its next turn. It can do this {{intelligence:modifier}} times, and regains all lives after you complete a long rest and repair or rebuild it.</description>
-        </sheet>
-    </element>
-
         <!--9TH LEVEL UPGRADES-->
 
-    <element name="Extreme Mutation" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_EXTREME_MUTATION">
+    <element name="Extreme Mutation" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_EXTREME_MUTATION">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>9th level, Mutation Mastery</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_MUTATION_MASTERY, [level:9]</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_MUTATION_MASTERY, [level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Mutation Mastery</em></p>
             <p>You can push your mutation to the limits and well beyond using a touch of magic. You learn the spell <em>polymorph</em>, but unless you know this spell from another source, you can only target yourself. Additionally, you can cast this spell without expending a spell slot, but once you do so, you cannot do so again until you complete a long rest.</p>
@@ -813,15 +793,15 @@
             <description usage="1/Long rest">You learn the spell <em>polymorph</em>, but unless you know this spell from another source, you can only target yourself. Additionally, you can cast this spell without expending a spell slot, but once you do so, you cannot do so again until you complete a long rest.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_POLYMORPH" spellcasting="KTHInventor" />
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
-    <element name="Life Void" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_LIFE_VOID">
+    <element name="Life Void" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_LIFE_VOID">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>9th level, Life Merchant</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_LIFE_MERCHANT, [level:9]</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_LIFE_MERCHANT, [level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Life Merchant</em></p>
             <p>You hunger for missing vitality. After casting life transference the first time you damage a living creature within the next minute, you deal an additional 3d8 necrotic damage, and regain hit points equal to the necrotic damage dealt.</p>
@@ -831,10 +811,10 @@
         </sheet>
     </element>
 
-    <element name="Massive Hulk" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_MASSIVE_HULK">
+    <element name="Massive Hulk" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_MASSIVE_HULK">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>9th level, Massive Mutation</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_MASSIVE_MUTATION, [level:9]</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_MASSIVE_MUTATION, [level:9]</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Massive Mutation</em></p>
             <p>You no longer have a limit to how long you can stay in larger form.</p>
@@ -849,20 +829,7 @@
 
         <!--11TH LEVEL UPGRADES-->
 
-    <element name="Adorable Critter?!" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_ADORABLE_CRITTER13">
-        <supports>Specialization Upgrade, Fleshsmith</supports>
-        <prerequisite>11th level, Adorable Critter</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_ADORABLE_CRITTER, [level:11]</requirements>
-        <description>
-            <p><em>Prerequisite: 11th level, Adorable Critter</em></p>
-            <p>You upgrade your Adorable Critter. When your Adorable Critter uses primal savagery it grows to medium size and gains temporary hit points equal to your Artificer level until the end of its turn. It now casts primal savagery as an 11th level spell caster.</p>
-        </description>
-        <sheet>
-            <description>When your Adorable Critter uses primal savagery it grows to medium size and gains {{level:artificer}} temporary hit points until the end of its turn. It now casts primal savagery as an 11th level spell caster.</description>
-        </sheet>
-    </element>
-
-    <element name="Dark Miracle" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_DARK_MIRACLE">
+    <element name="Dark Miracle" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_DARK_MIRACLE">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>11th level</prerequisite>
         <requirements>[level:11]</requirements>
@@ -875,10 +842,10 @@
         </sheet>
     </element>
 
-    <element name="Unrelenting Predator" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_UNRELENTING_PREDATOR">
+    <element name="Unrelenting Predator" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_UNRELENTING_PREDATOR">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>11th level, Fleshcrafted Enhancement</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESHCRAFTED_ENHANCEMENT, [level:11]</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_ENHANCEMENT, [level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Fleshcrafted Enhancement</em></p>
             <p>When you manually activate a Fleshcrafted Enhancement, you no longer need to spend a spell slot to do so (you can still only do so once per turn).</p>
@@ -888,7 +855,7 @@
         </sheet>
     </element>
 
-    <element name="Wings Seem Useful" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_WINGS_SEEM_USEFUL">
+    <element name="Wings Seem Useful" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_WINGS_SEEM_USEFUL">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>11th level</prerequisite>
         <requirements>[level:11]</requirements>
@@ -905,7 +872,7 @@
         </rules>
     </element>
 
-    <element name="Uncanny Strength" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_UNCANNY_STRENGTH">
+    <element name="Uncanny Strength" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_UNCANNY_STRENGTH">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>11th level, Strength 18</prerequisite>
         <requirements>[level:11], [str:18]</requirements>
@@ -920,10 +887,10 @@
             <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
-    <element name="Uncanny Strength" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_UNCANNY_STRENGTH2">
+    <element name="Uncanny Strength" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_UNCANNY_STRENGTH2">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>11th level, Strength 18</prerequisite>
-        <requirements>[level:11], [str:18], ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_UNCANNY_STRENGTH</requirements>
+        <requirements>[level:11], [str:18], ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_UNCANNY_STRENGTH</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Strength 18</em></p>
             <p>You don't see what the big deal is with two handed weapons. After some small improvements to one of your arm and grip, you can hold a two handed weapon in one-hand in the upgraded hand.</p>
@@ -936,10 +903,10 @@
         </rules>
     </element>
 
-    <element name="Vivisection" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_VIVISECTION">
+    <element name="Vivisection" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_VIVISECTION">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>11th level, Perfection of Mind</prerequisite>
-        <requirements>[level:11], ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_MIND</requirements>
+        <requirements>[level:11], ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_MIND</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Perfection of Mind</em></p>
             <p>When dissecting a creature using an Intelligence (Medicine) check granted by Perfection of Mind, if the creature's remaining hit points is lower than the result of your Intelligence (Medicine) check, you can choose to vivisect the creature, killing it instantly instead of dealing damage.</p>
@@ -952,20 +919,7 @@
 
         <!--15TH LEVEL UPGRADES-->
 
-    <element name="...Adorable Critter?" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_dotdotdotADORABLE_CRITTER3">
-        <supports>Specialization Upgrade, Fleshsmith</supports>
-        <prerequisite>15th level, Adorable Critter?!</prerequisite>
-        <requirements>[level:15], ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_ADORABLE_CRITTER13</requirements>
-        <description>
-            <p><em>Prerequisite: 15th level, Adorable Critter?!</em></p>
-            <p>Your Adorable Critter can become a medium or large creature at will, and no longer has a limit to how often it can cast primal savagery with its action.</p>
-        </description>
-        <sheet>
-            <description>Your Adorable Critter can become a medium or large creature at will, and no longer has a limit to how often it can cast primal savagery with its action.</description>
-        </sheet>
-    </element>
-
-    <element name="Autoimmune Response" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_AUTOIMMUNE_RESPONSE">
+    <element name="Autoimmune Response" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_AUTOIMMUNE_RESPONSE">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>15th level</prerequisite>
         <requirements>[level:15]</requirements>
@@ -982,10 +936,10 @@
         </rules>
     </element>
 
-    <element name="Best Eyes" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BEST_EYES">
+    <element name="Best Eyes" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BEST_EYES">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>15th level, Better Eyes</prerequisite>
-        <requirements>[level:15], ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_BETTER_EYES</requirements>
+        <requirements>[level:15], ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BETTER_EYES</requirements>
         <description>
             <p><em>Prerequisite: 15th level, Better Eyes</em></p>
             <p>Despite your high quality eyes, you've noticed somethings still see better than you, so you take their eyes and use those instead. You gain truesight of 30 feet in addition to your normal vision.</p>
@@ -998,7 +952,7 @@
         </rules>
     </element>
 
-    <element name="Flesh Shaper" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_FLESH_SHAPER">
+    <element name="Flesh Shaper" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESH_SHAPER">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>15th level</prerequisite>
         <requirements>[level:15]</requirements>
@@ -1017,7 +971,7 @@
         </rules>
     </element>
 
-    <element name="Undying Fortitude" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_FLESHSMITH_UNDYING_FORTITUDE">
+    <element name="Undying Fortitude" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_UNDYING_FORTITUDE">
         <supports>Specialization Upgrade, Fleshsmith</supports>
         <prerequisite>15th level</prerequisite>
         <requirements>[level:15]</requirements>

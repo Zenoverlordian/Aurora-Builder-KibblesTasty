@@ -2,22 +2,22 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.1.0">
+        <update version="2.2.0">
             <file name="artificer-thundersmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-thundersmith.xml" />
         </update>
     </info>
 
-    <element name="Thundersmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_THUNDERSMITH">
-        <supports>Artificer Specialization</supports>
+    <element name="Thundersmith" type="Archetype" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_THUNDERSMITH">
+        <supports>Inventor Specialization</supports>
         <description>
-            <p>A Thundersmith is an Artificer who harnesses the primal force of elemental power, channeling its power into their great creation: a weapon of unmatched devastation. Spectacular and terrible, these weapons bring fear to their foes and awe to their allies.</p>
+            <p>A Thundersmith is an Inventor who harnesses the primal force of elemental power, channeling its power into their great creation: a weapon of unmatched devastation. Spectacular and terrible, these weapons bring fear to their foes and awe to their allies.</p>
             <p class="indent">Why an Thundersmith bends their mind to the task of making such a thing - some are coldly analytical about the destruction it causes, seeking to continually improve it, tweaking it for ever more optimized destruction, while others view it merely as a tool, a means to an end, while others still reveal in the crash of thunder that heralds the terrifying force of their weapon.</p>
             <p class="indent">While some may look at these weapons as the dawn of a new age, in truth wielding them is a tricky and arcane art no simpler than making them, something only the one who forged the device will every truly master, each weapon a unique piece of devastating art.</p>
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_PROFICIENCY" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_PROFICIENCY" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER" />
         </description>
         <sheet display="false">
             <description></description>
@@ -32,14 +32,14 @@
             <select type="Class Feature" name="Specialization Upgrade (15)" supports="Specialization Upgrade, Thundersmith" level="15" />
             <select type="Class Feature" name="Specialization Upgrade (17)" supports="Specialization Upgrade, Thundersmith" level="17" />
             <select type="Class Feature" name="Specialization Upgrade (19)" supports="Specialization Upgrade, Thundersmith" level="19" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_PROFICIENCY" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS" level="5" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER" level="14" />
         </rules>
     </element>
-    <element name="Thundersmith's Proficiency" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_PROFICIENCY">
+    <element name="Thundersmith's Proficiency" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_PROFICIENCY">
         <description>
             <p>When you choose this specialization at 1st level, you gain Proficiency with tinker's tools and smith's tools.</p>
             <p class="indent">If your weapon requires ammunition, you gain the knowledge of how to forge them, and create them with smithing tools during a long rest. You can create up to 50 rounds of ammunition during a long rest, with materials costing 1 gold piece per 10 rounds.</p>
@@ -52,7 +52,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
         </rules>
     </element>
-    <element name="Stormforged Weapon" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON">
+    <element name="Stormforged Weapon" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_STORMFORGED_WEAPON">
         <supports>Cross Disciplinary Knowledge</supports>
         <description>
             <p>Starting at 1st level, you harness the power of elemental power of thundering storms to create a powerful weapon. This weapon requires attunement and you are proficient with it while attuned. and you can only be attuned to one Stormforged Weapon at a time. If you have multiple Stormforged Weapons, you can change which one you are attuned to during a long rest.</p>
@@ -76,7 +76,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_STORMFORGED_WEAPONS" />
         </rules>
     </element>
-    <element name="Thundermonger" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER">
+    <element name="Thundermonger" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_THUNDERMONGER">
         <description>
             <p>At 3rd level, the elemental power of your weapon is so powerful its strikes deal bonus thunder damage.</p>
             <p class="indent">When you hit a target with your Stormforged Weapon, you can deal an extra 1d6 thunder damage. After discharging this bonus damage, you cannot deal this bonus damage again until the start of your next turn.</p>
@@ -94,7 +94,7 @@
             <description usage="1/Round" level="19">When you hit a target with your Stormforged Weapon, you can deal an extra 9d6 thunder damage.</description>
         </sheet>
     </element>
-    <element name="Devastating Blasts" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS">
+    <element name="Devastating Blasts" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_DEVASTATING_BLASTS">
         <description>
             <p>Beginning at 5th level, when you miss an attack with your Thundering Weapon, you can apply Thundermonger damage to the target creature you missed, but it deals only half the bonus damage. Dealing damage this way counts as applying Thundermonger damage.</p>
         </description>
@@ -102,7 +102,7 @@
             <description>When you miss an attack with your Thundering Weapon, you can apply Thundermonger damage to the target creature you missed, but it deals only half the bonus damage. Dealing damage this way counts as applying Thundermonger damage.</description>
         </sheet>
     </element>
-    <element name="Unleashed Power" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER">
+    <element name="Unleashed Power" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_THUNDERSMITH_UNLEASHED_POWER">
         <description>
             <p>Starting at 14th level, when rolling damage for Thundermonger or your Stormforged Weapon, you can expend a spell slot to reroll a number of the damage dice up to your Intelligence modifier (minimum of one) and maximize a number of dice equal to the level of the spell slot expended.</p>
             <p>You must use the new rolls.</p>
@@ -116,7 +116,7 @@
 
         <!--UNRESTRICTED-->
 
-    <element name="Adaptable Weapons" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_ADAPTABLE_WEAPONS">
+    <element name="Adaptable Weapons" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_ADAPTABLE_WEAPONS">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <description>
             <p>You can adapt a weapon without the Ammunition property to have a secondary attack type giving it the functionality of a Hand Cannon, or give a weapon with the Ammunition Property a secondary attack functioning as a Charged Blade.</p>
@@ -126,46 +126,53 @@
         </sheet>
     </element>
 
-    <element name="Arcane Lightning" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_ARCANE_LIGHTNING">
+    <element name="Lightning Magic" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_LIGHTNING_MAGIC">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <description>
-            <p>After long study of internal workings of your Stormforged Weapon, your mastery of lightning and Thunder Magic is such that you learn the following spells at the following levels and can cast them as Artificer Spells.</p>
+            <p>After a long study of the internal workings of your Stormforged Weapon, your mastery of lightning and thunder magic is such that you learn the following spells at the following levels and can cast them as Inventor Spells.</p>
             <table>
                 <thead>
-                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                    <tr><td>Inventor Level</td><td>Spell</td></tr>
                 </thead>
-                <tr><td>3</td><td>thunderwave</td></tr>
-                <tr><td>5</td><td>shatter</td></tr>
+                <tr><td>3</td><td>lightning tendril</td></tr>
+                <tr><td>5</td><td>crackle</td></tr>
                 <tr><td>9</td><td>lightning bolt</td></tr>
-                <tr><td>13</td><td>storm sphere</td></tr>
+                <tr><td>13</td><td>jumpin jolt</td></tr>
+                <tr><td>15</td><td>sky burstK</td></tr>
             </table>
+            <p class="indent">You can cast lightning tendril without expending a spell slot, after which you must complete a long rest before you can cast it without expanding a spell slot again. Starting at 5th level, you can choose to cast crackle without expending a spell slot instead.</p>
             <div class="reference">
-                <div element="ID_PHB_SPELL_THUNDERWAVE" />
+                <div element="ID_KTH_GS_SPELL_LIGHTNING_TENDRIL" />
             </div>
             <div class="reference">
-                <div element="ID_PHB_SPELL_SHATTER" />
+                <div element="ID_KTH_GS_SPELL_CRACKLE" />
             </div>
             <div class="reference">
                 <div element="ID_PHB_SPELL_LIGHTNING_BOLT" />
             </div>
             <div class="reference">
-                <div element="ID_XGTE_SPELL_STORM_SPHERE" />
+                <div element="ID_KTH_GS_SPELL_JUMPING_JOLT" />
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_GS_SPELL_SKY_BURST" />
             </div>
         </description>
         <sheet>
-            <description>Your list of known spells increases at certain levels.</description>
+            <description level="1" usage="1/Long Rest">You can cast lightning tendril without expending a spell slot, after which you must complete a long rest before you can cast it without expanding a spell slot again.</description>
+            <description level="5" usage="1/Long Rest">You can cast lightning tendril or crackle without expending a spell slot, after which you must complete a long rest before you can cast either without expanding a spell slot again.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="5" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="13" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_KTH_GS_SPELL_LIGHTNING_TENDRIL" level="3" spellcasting="KTHInventor" /> 
+            <grant type="Spell" id="ID_KTH_GS_SPELL_CRACKLE" level="5" spellcasting="KTHInventor" /> 
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="KTHInventor" />
+            <grant type="Spell" id="ID_KTH_GS_SPELL_JUMPING_JOLT" level="13" spellcasting="KTHInventor" /> 
+            <grant type="Spell" id="ID_KTH_GS_SPELL_SKY_BURST" level="15" spellcasting="KTHInventor" /> 
         </rules>
     </element>
 
-    <element name="Extended Reach" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_EXTENDED_REACH">
+    <element name="Extended Reach" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_EXTENDED_REACH">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
-        <requirements>!ID_KTH_ARTIFICER_WEAPON_CHARGED_BLADE</requirements>
+        <requirements>!ID_KTH_INVENTOR_WEAPON_CHARGED_BLADE</requirements>
         <description>
             <p>You extend the reach of your weapon. If your weapon has the Ammunition property, its range is extended normal range by 30 feet, and maximum range by 90 feet. If your weapon has the Two-Handed property, it gains the Reach property.</p>
         </description>
@@ -174,7 +181,7 @@
         </sheet>
     </element>
 
-    <element name="Lightning Burst" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_BURST">
+    <element name="Lightning Burst" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_LIGHTNING_BURST">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <description>
             <p>You upgrade your Stormforged Weapon to discharge its power within a 5-feet wide and 60-feet long line. If you have not dealt Thundermonger damage since the start of your turn, as an action, you can make a special attack. Each creature must make a Dexterity saving throw against your Spell Save DC or take damage equal to the bonus damage of Thundermonger as lightning damage on a failed save, half as much on a successful save.</p>
@@ -185,10 +192,10 @@
         </sheet>
     </element>
 
-    <element name="Point Blank" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_POINT_BLANK">
+    <element name="Point Blank" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_POINT_BLANK">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <prerequisite>Hand Cannon</prerequisite>
-        <requirements>ID_KTH_ARTIFICER_WEAPON_HAND_CANNON</requirements>
+        <requirements>ID_KTH_INVENTOR_WEAPON_HAND_CANNON</requirements>
         <description>
             <p><em>Prerequisite: Hand Cannon</em></p>
             <p>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls. Additionally, can use your Hand Cannon when making opportunity attacks.</p>
@@ -198,10 +205,10 @@
         </sheet>
     </element>
 
-    <element name="Silencer" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_SILENCER">
+    <element name="Silencer" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_SILENCER">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <prerequisite>Incompatible with Echoing Boom</prerequisite>
-        <requirements>!ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_ECHOING_BOOM</requirements>
+        <requirements>!ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_ECHOING_BOOM</requirements>
         <description>
             <p><em>Incompatible with Echoing Boom</em></p>
             <p>You upgrade your Stormforged Weapon with a sound dampening module. Your Stormforged Weapon loses the Loud property. Additionally, you can expend a 2nd level spell slot to overcharge the Silencer, casting the spell silence.</p>
@@ -217,7 +224,7 @@
         </rules>
     </element>
 
-    <element name="Shock Absorber" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_SHOCK_ABSORBER">
+    <element name="Shock Absorber" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_SHOCK_ABSORBER">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <description>
             <p>You add a reclamation device to your Stormforged Weapon to gather energy from the surroundings when it is present. As a reaction to taking Lightning or Thunder damage, you can cast absorb elements without expending a spell slot. When absorbed in this method, you can apply the bonus damage granted by absorb elements to your next weapon attack even if you make a ranged weapon attack.</p>
@@ -233,7 +240,7 @@
         </rules>
     </element>
 
-    <element name="Sonic Movement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_SONIC_MOVEMENT">
+    <element name="Sonic Movement" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_SONIC_MOVEMENT">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <description>
             <p>You reclaim and rebalance your weapon to leverage the backdraft of the force it exerts. When you deal Thunder damage on your turn with your Stormforged weapon, you can move 5 feet away from the target that was damaged. This movement does not provoke attacks of opportunity.</p>
@@ -243,7 +250,7 @@
         </sheet>
     </element>
 
-    <element name="Twin Thunder" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_TWIN_THUNDER">
+    <element name="Twin Thunder" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_TWIN_THUNDER">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <description>
             <p>You can attune to two one-handed Stormforged Weapons at the same time, so long as they either share the same Upgrades, or have total Upgrades equal to your maximum Upgrade count between them. If you make an attack with one of them while holding the other, you can attack with the other as a bonus action, however, both share the same use of Thundermonger. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative or you have the Two Weapon Fighting Fighting Style.</p>
@@ -254,7 +261,7 @@
         </sheet>
     </element>
 
-    <element name="Weapon Improvement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_WEAPON_IMPROVEMENT">
+    <element name="Weapon Improvement" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_WEAPON_IMPROVEMENT">
         <supports>Specialization Upgrade, Thundersmith, Unrestricted</supports>
         <description>
             <p>Your Stormforged weapon gains a +1 to attack and damage rolls. This does not stack with any benefit gained from Arcane Retrofit, and this upgrade can be replaced as part of applying a bonus to your Stormforged Weapon via Arcane Retrofit.</p>
@@ -266,10 +273,10 @@
 
         <!--5TH LEVEL UPGRADES-->
 
-    <element name="Echoing Boom" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_ECHOING_BOOM">
+    <element name="Echoing Boom" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_ECHOING_BOOM">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>5th level, Incompatible with Silencer</prerequisite>
-        <requirements>!ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_SILENCER, [level:5]</requirements>
+        <requirements>!ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_SILENCER, [level:5]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Incompatible with Silencer</em></p>
             <p>You pack extra power into your Thundermonger, increasing the damage it deals by 1d6.</p>
@@ -279,7 +286,7 @@
         </sheet>
     </element>
 
-    <element name="Harpoon Reel" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_HARPOON_REEL">
+    <element name="Harpoon Reel" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_HARPOON_REEL">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>5th level</prerequisite>
         <requirements>[level:5]</requirements>
@@ -299,10 +306,10 @@
         </sheet>
     </element>
 
-    <element name="Terrifying Thunder" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_TERRIFYING_THUNDER">
+    <element name="Terrifying Thunder" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_TERRIFYING_THUNDER">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>5th level, Echoing Boom</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_ECHOING_BOOM</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_ECHOING_BOOM</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Echoing Boom</em></p>
             <p>You add an additional amplifier to maximize the shock and awe value your cannon blasts. The first time a target takes damage from Thundermonger, they are deafened until the end of their next turn.</p>
@@ -314,7 +321,7 @@
         </sheet>
     </element>
 
-    <element name="Storm Blast" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_STORM_BLAST">
+    <element name="Storm Blast" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_STORM_BLAST">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>5th level</prerequisite>
         <requirements>[level:5]</requirements>
@@ -330,7 +337,7 @@
 
         <!--9TH LEVEL UPGRADES-->
 
-    <element name="Elemental Swapping" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_ELEMENTAL_SWAPPING">
+    <element name="Elemental Swapping" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_ELEMENTAL_SWAPPING">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>9th level</prerequisite>
         <requirements>[level:9]</requirements>
@@ -343,10 +350,10 @@
         </sheet>
     </element>
     
-    <element name="Mortar Shells" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_MORTAR_SHELLS">
+    <element name="Mortar Shells" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_MORTAR_SHELLS">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>9th level, Ammunition Property</prerequisite>
-        <requirements>[level:9], (ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON|ID_KTH_ARTIFICER_WEAPON_HAND_CANNON)</requirements>
+        <requirements>[level:9], (ID_KTH_INVENTOR_WEAPON_THUNDER_CANNON|ID_KTH_INVENTOR_WEAPON_HAND_CANNON)</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Ammunition Property</em></p>
             <p>You build a secondary fire mode allowing you to fire your cannon like a mortar. Pick a target point within range, and make an attack roll. Apply the attack roll to all creatures within a 5 foot radius of the target point. Creatures hit take weapon damage plus half of Thunder monger bonus damage. Dealing damage this way counts as applying Thundermonger damage for the turn.</p>
@@ -357,10 +364,10 @@
         </sheet>
     </element>
     
-    <element name="Ride the Lightning" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_RIDE_THE_LIGHTNING">
+    <element name="Ride the Lightning" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_RIDE_THE_LIGHTNING">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>9th level, Lightning Burst</prerequisite>
-        <requirements>[level:9], ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_BURST</requirements>
+        <requirements>[level:9], ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_LIGHTNING_BURST</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Lightning Burst</em></p>
             <p>When you use the Lightning Burst ability, you can opt to expend a spell slot of the first level or higher to infuse yourself into the burst of power. When you do so you are teleported up to 60 feet in the direction of the Lightning Burst (ending early if the Lighting Burst is blocked by an obstacle). You can stop anywhere along the path of the Lighting Burst, but the Lightning Burst will stop where you do.</p>
@@ -370,10 +377,10 @@
         </sheet>
     </element>
 
-    <element name="Shock Harpoon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_SHOCK_HARPOON">
+    <element name="Shock Harpoon" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_SHOCK_HARPOON">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>9th level, Harpoon Reel</prerequisite>
-        <requirements>[level:9], ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_HARPOON_REEL</requirements>
+        <requirements>[level:9], ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_HARPOON_REEL</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Harpoon Reel</em></p>
             <p>After hitting a creature with the Harpoon fire mode, you can use a bonus action to deliver a shock. If you have not dealt Thundermogner damage since the start of your turn, you can deal damage equal to your Thundermonger bonus damage as lightning damage. This counts as discharging your Thundermonger damage. Additionally, the target must make a Constitution saving throw against your spell save DC or be stunned until the end of its next turn.</p>
@@ -384,7 +391,7 @@
         </sheet>
     </element>
 
-    <element name="Synaptic Feedback" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_SYNAPTIC_FEEDBACK">
+    <element name="Synaptic Feedback" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_SYNAPTIC_FEEDBACK">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>9th level</prerequisite>
         <requirements>[level:9]</requirements>
@@ -398,7 +405,7 @@
         </sheet>
     </element>
 
-    <element name="Thunder Jump" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_THUNDER_JUMP">
+    <element name="Thunder Jump" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_THUNDER_JUMP">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>9th level</prerequisite>
         <requirements>[level:9]</requirements>
@@ -420,7 +427,7 @@
 
         <!--11TH LEVEL UPGRADES-->
 
-    <element name="Backblast" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_BACKBLAST">
+    <element name="Backblast" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_BACKBLAST">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>11th level</prerequisite>
         <requirements>[level:11]</requirements>
@@ -439,7 +446,7 @@
         </rules>
     </element>
 
-    <element name="Blast Radius" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_BLAST_RADIUS">
+    <element name="Blast Radius" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_BLAST_RADIUS">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>11th level</prerequisite>
         <requirements>[level:11]</requirements>
@@ -452,10 +459,10 @@
         </sheet>
     </element>
 
-    <element name="Stabilization" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_STABILIZATION">
+    <element name="Stabilization" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_STABILIZATION">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>[level:11], (ID_KTH_ARTIFICER_WEAPON_HAND_CANNON|ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON)</requirements>
+        <requirements>[level:11], (ID_KTH_INVENTOR_WEAPON_HAND_CANNON|ID_KTH_INVENTOR_WEAPON_THUNDER_CANNON)</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>Being prone no longer causes you to have disadvantage when making a ranged weapon attack with your Stormforged Weapon. If neither you nor a target creature has moved since you last made a ranged weapon attack against them, you have advantage on ranged weapon attacks against them.</p>
@@ -467,10 +474,10 @@
 
         <!--15TH LEVEL UPGRADES-->
 
-    <element name="Massive Overload" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_MASSIVE_OVERLOAD">
+    <element name="Massive Overload" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_MASSIVE_OVERLOAD">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>15th level, Storm Blast or Lightning Burst</prerequisite>
-        <requirements>[level:15], (ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_STORM_BLAST|ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_LIGHTNING_BURST) </requirements>
+        <requirements>[level:15], (ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_STORM_BLAST|ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_LIGHTNING_BURST) </requirements>
         <description>
             <p><em>Prerequisite: 15th level, Storm Blast or Lightning Burst</em></p>
             <p>Before taking a shot, you can expend a 3rd level or higher spell slot to use Storm Blast or Lightning Burst at the same time as making an attack; in this case the Storm Blast or Lightning Burst is powered by the spell slot and does not count as applying Thundermonger for that turn. The direction of this secondary ability is the same as your attack.</p>
@@ -482,10 +489,10 @@
         </sheet>
     </element>
 
-    <element name="Masterwork Weapon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_MASTERWORK_WEAPON">
+    <element name="Masterwork Weapon" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_MASTERWORK_WEAPON">
         <supports>Specialization Upgrade, Thundersmith</supports>
         <prerequisite>15th level, Weapon Improvement</prerequisite>
-        <requirements>[level:15], ID_KTH_ARTIFICER_UPGRADE_THUNDERSMITH_WEAPON_IMPROVEMENT</requirements>
+        <requirements>[level:15], ID_KTH_INVENTOR_UPGRADE_THUNDERSMITH_WEAPON_IMPROVEMENT</requirements>
         <description>
             <p><em>Prerequisite: 15th level, Weapon Improvement</em></p>
             <p>The bonus to attack and damage rolls for your Stormforged Weapon increases by +2 (stacking with any existing bonus from Weapon Improvement or Arcane Retrofit), up to a maximum of +4.</p>
@@ -497,8 +504,8 @@
 
     <!--STORMFORGED WEAPONS-->
 
-    <element name="Thunder Cannon" type="Weapon" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_WEAPON_THUNDER_CANNON">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_KTH_ARTIFICER_WEAPON_PROPERTY_LOUD, ID_KTH_ARTIFICER_WEAPON_PROPERTY_STORMCHARGED, Ranged</supports>
+    <element name="Thunder Cannon" type="Weapon" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_THUNDER_CANNON">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, ID_KTH_INVENTOR_WEAPON_PROPERTY_STORMCHARGED, Ranged</supports>
 		<description>
 			<p>You use the power of Thunder to launch a projectile with terrible power, if limited accuracy, over long distances. Ringing out with a booming crash, it brings fear to the battlefield.</p>
 		</description>
@@ -513,10 +520,10 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_THUNDER_CANNON</set>
 		</setters>
 	</element>
-    <element name="Weapon Proficiency (Thunder Cannon)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_THUNDER_CANNON">
+    <element name="Weapon Proficiency (Thunder Cannon)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_THUNDER_CANNON">
     </element>
-    <element name="Hand Cannon" type="Weapon" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_WEAPON_HAND_CANNON">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_KTH_ARTIFICER_WEAPON_PROPERTY_LOUD, ID_KTH_ARTIFICER_WEAPON_PROPERTY_STORMCHARGED, Ranged</supports>
+    <element name="Hand Cannon" type="Weapon" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_HAND_CANNON">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, ID_KTH_INVENTOR_WEAPON_PROPERTY_STORMCHARGED, Ranged</supports>
 		<description>
 			<p>Forgoing the guiding barrel, this pack uses the thundering power to launch a projectile with all the force of a Cannon, though its effective range is far more limited.</p>
 		</description>
@@ -531,10 +538,10 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_HAND_CANNON</set>
 		</setters>
 	</element>
-    <element name="Weapon Proficiency (Hand Cannon)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_HAND_CANNON">
+    <element name="Weapon Proficiency (Hand Cannon)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_HAND_CANNON">
     </element>
-    <element name="Kinetic Hammer" type="Weapon" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_WEAPON_KINETIC_HAMMER">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_DAMAGE_TYPE_THUNDER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KTH_ARTIFICER_WEAPON_PROPERTY_LOUD, Melee</supports>
+    <element name="Kinetic Hammer" type="Weapon" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_KINETIC_HAMMER">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_DAMAGE_TYPE_THUNDER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, Melee</supports>
 		<description>
 			<p>Rather than launching a projectile with the thundering force, you keep that force imbued in the weapon, allowing for devastating force to be applied to the attack. Extra damage is done as thunder damage.</p>
 		</description>
@@ -549,10 +556,10 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_KINETIC_HAMMER</set>
 		</setters>
 	</element>
-    <element name="Weapon Proficiency (Kinetic Hammer)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_KINETIC_HAMMER">
+    <element name="Weapon Proficiency (Kinetic Hammer)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_KINETIC_HAMMER">
     </element>
-    <element name="Charged Blade" type="Weapon" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_WEAPON_CHARGED_BLADE">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_KTH_ARTIFICER_WEAPON_PROPERTY_LOUD, Melee</supports>
+    <element name="Charged Blade" type="Weapon" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_CHARGED_BLADE">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, Melee</supports>
 		<description>
 			<p>You create a bladed weapon that channels the harnessed power of the elemental storm power directly into the blade, causing it to lay waste to all it strikes. This weapon deals Lightning damage when applying Thundermonger. Extra damage is done as lightning damage.</p>
 		</description>
@@ -567,10 +574,10 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_CHARGED_BLADE</set>
 		</setters>
 	</element>
-    <element name="Weapon Proficiency (Charged Blade)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_CHARGED_BLADE">
+    <element name="Weapon Proficiency (Charged Blade)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_CHARGED_BLADE">
     </element>
-    <element name="Lightning Pike" type="Weapon" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_WEAPON_LIGHTNING_PIKE">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_lightning, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_KTH_ARTIFICER_WEAPON_PROPERTY_LOUD, Melee</supports>
+    <element name="Lightning Pike" type="Weapon" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_LIGHTNING_PIKE">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_lightning, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, Melee</supports>
 		<description>
 			<p>You create a charged blade and stick it to the end of a pole, making it slightly more unwieldy, but giving it devastating reach. This weapon deals Lightning damage when applying Thundermonger. Extra damage is done as lightning damage.</p>
 		</description>
@@ -585,9 +592,9 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_LIGHTNING_PIKE</set>
 		</setters>
 	</element>
-    <element name="Weapon Proficiency (Lightning Pike)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_LIGHTNING_PIKE">
+    <element name="Weapon Proficiency (Lightning Pike)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_LIGHTNING_PIKE">
     </element>
-    <element name="Stormforged Weapon Proficiency" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_STORMFORGED_WEAPONS">
+    <element name="Stormforged Weapon Proficiency" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_STORMFORGED_WEAPONS">
     <sheet alt="Stormforged Weapons" />
     <rules>
         <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_THUNDER_CANNON" />
@@ -597,12 +604,12 @@
         <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_LIGHTNING_PIKE" />
     </rules>
     </element>
-    <element name="Stormcharged" type="Weapon Property" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_WEAPON_PROPERTY_STORMCHARGED">
+    <element name="Stormcharged" type="Weapon Property" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_PROPERTY_STORMCHARGED">
 		<description>
 			<p>When you use an action, bonus action, or reaction to attack with a Stormcharged Weapon, you can make only one Attack regardless of the number of attacks you can normally make. If you could otherwise make additional attacks with that action, the weapon deals an additional 3d6 lightning or thunder damage per attack that was foregone.</p>
 		</description>
 	</element>
-    <element name="Loud" type="Weapon Property" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_WEAPON_PROPERTY_LOUD">
+    <element name="Loud" type="Weapon Property" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD">
 		<description>
 			<p>Your weapon rings with thunder that is audible within 300 feet of you whenever it makes an attack.</p>
 		</description>

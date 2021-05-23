@@ -2,24 +2,24 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.1.0">
+        <update version="2.2.0">
             <file name="artificer-warsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-warsmith.xml" />
         </update>
     </info>
 
-    <element name="Warsmith" type="Archetype" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_WARSMITH">
-        <supports>Artificer Specialization</supports>
+    <element name="Warsmith" type="Archetype" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_WARSMITH">
+        <supports>Inventor Specialization</supports>
         <description>
-            <p>A Warsmith is an Artificer that has turned their wondrous talent of invention to a singular goal: making themselves a juggernaut of war. The reasons behind this could be benevolent or nefarious. Some Warsmiths seek to turn their invention into a machine of death and terror; others become the arbiter of justice and order, and others still perhaps merely seek to refine their craft in pursuit of pure innovation.</p>
+            <p>A Warsmith is an Inventor that has turned their wondrous talent of invention to a singular goal: making themselves a juggernaut of war. The reasons behind this could be benevolent or nefarious. Some Warsmiths seek to turn their invention into a machine of death and terror; others become the arbiter of justice and order, and others still perhaps merely seek to refine their craft in pursuit of pure innovation.</p>
             <p class="indent">Because few individuals would pursue such a wondrous invention without a driven purpose to their endeavor, Warsmiths tend to be Lawful, usually driven to their actions by a greater purpose they seek the power to accomplish, be it righting the wrongs of the world, or bringing it to heel beneath their ironshod boot.</p>
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_PROFICIENCY" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_WARPLATE_GAUNTLET" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_ARMOR" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_EXTRA_ATTACK" />
-            <div element="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_FULLY_CUSTOMIZED_GEAR" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_PROFICIENCY" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_WARPLATE_GAUNTLET" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_ARMOR" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_EXTRA_ATTACK" />
+            <div element="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_FULLY_CUSTOMIZED_GEAR" />
         </description>
         <sheet display="false">
-            <description>A Warsmith is an Artificer that has turned their wondrous talent of invention to a singular goal: making themselves a juggernaut of war.</description>
+            <description>A Warsmith is an Inventor that has turned their wondrous talent of invention to a singular goal: making themselves a juggernaut of war.</description>
         </sheet>
         <rules>
             <select type="Class Feature" name="Specialization Upgrade (3)" supports="Specialization Upgrade, Warsmith" level="3" />
@@ -31,14 +31,14 @@
             <select type="Class Feature" name="Specialization Upgrade (15)" supports="Specialization Upgrade, Warsmith" level="15" />
             <select type="Class Feature" name="Specialization Upgrade (17)" supports="Specialization Upgrade, Warsmith" level="17" />
             <select type="Class Feature" name="Specialization Upgrade (19)" supports="Specialization Upgrade, Warsmith" level="19" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_PROFICIENCY" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_WARPLATE_GAUNTLET" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_ARMOR" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_EXTRA_ATTACK" level="5" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_FULLY_CUSTOMIZED_GEAR" level="14" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_PROFICIENCY" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_WARPLATE_GAUNTLET" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_ARMOR" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_EXTRA_ATTACK" level="5" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_FULLY_CUSTOMIZED_GEAR" level="14" />
         </rules>
     </element>
-    <element name="Warsmith's Proficiency" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_PROFICIENCY">
+    <element name="Warsmith's Proficiency" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_PROFICIENCY">
         <description>
             <p>At 1st level, you gain proficiency with heavy armor, tinker's tools and smith's tools.</p>
         </description>
@@ -51,7 +51,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
         </rules>
     </element>
-    <element name="Warplate Gauntlet" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_WARPLATE_GAUNTLET">
+    <element name="Warplate Gauntlet" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_WARPLATE_GAUNTLET">
         <description>
             <p>At 1st level, when you take this specialization, you construct a Warplate Gauntlet. This is a specialized Wondrous Item that only you can attune to. When you create a Warplate Gauntlet, you can add one of the following upgrades to it: <strong>Power Fist, Force Blast,</strong> or <strong>Martial Grip.</strong> This upgrade does not count against your upgrade total. You can make multiple gauntlets with different upgrades, but can only be attuned to one at a time.</p>
             <p class="indent">If you lose your Warplate Gauntlet, you can remake it during a long rest with 25 gold worth of materials, or can scavenge for materials and forge it over two days of work (eight hours a day) without the material expense.</p>
@@ -62,10 +62,10 @@
         </sheet>
         <rules>
             <select type="Class Feature" name="Warplate Gauntlet" supports="Warplate Gauntlet" />
-            <grant type="Archetype Feature" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_ARTIFICIAL_STRENGTH" />
+            <grant type="Archetype Feature" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_ARTIFICIAL_STRENGTH" />
         </rules>
     </element>
-    <element name="Artificial Strength" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_ARTIFICIAL_STRENGTH">
+    <element name="Artificial Strength" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_ARTIFICIAL_STRENGTH">
         <description>
             <p>When you don your Warplate Gauntlet or as an action while wearing it, you can dedicate some of your intelligence to fully controlling the power of the gauntlet. You can reduce your current and maximum Intelligence score to increase your current Strength ability score by the same amount, but you can only raise your Strength ability score up what your Intelligence ability score was before engaging Artificial Strength. You can stop using Artificial Strength at any time, and it automatically ends if your gauntlet is removed.</p>
         </description>
@@ -73,7 +73,7 @@
             <description action="Action">When you don your Warplate Gauntlet or as an action while wearing it, you can reduce your current and maximum Intelligence score to increase your current Strength ability score by the same amount. You can only raise your Strength ability score up what your Intelligence ability score was before engaging Artificial Strength. You can stop using Artificial Strength at any time, and it automatically ends if your gauntlet is removed.</description>
         </sheet>
     </element>
-    <element name="Warsmith's Armor" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_ARMOR">
+    <element name="Warsmith's Armor" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_ARMOR">
         <description>
             <p>At 3rd level, you've attained the knowledge of forging and arcane tinkering sufficient to create a set of armor that augments and expands your abilities from a standard, non-magical, set of heavy armor using resources you've gathered. This process takes 8 hours to complete, as well as a place to forge and incorporates a Warplate Gauntlet (they do not require separate attunement).</p>
             <p class="indent">While wearing your armor, your Strength ability score increases by 2, and your maximum Strength ability score becomes 22.</p>
@@ -90,7 +90,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_WARSMITH_ARMOR" />
         </rules>
     </element>
-    <element name="Extra Attack" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_EXTRA_ATTACK">
+    <element name="Extra Attack" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_EXTRA_ATTACK">
         <description>
             <p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
         </description>
@@ -101,7 +101,7 @@
             <stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
         </rules>
     </element>
-    <element name="Fully Customized Gear" type="Archetype Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARCHETYPE_FEATURE_WARSMITH_FULLY_CUSTOMIZED_GEAR">
+    <element name="Fully Customized Gear" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_WARSMITH_FULLY_CUSTOMIZED_GEAR">
         <description>
             <p>Starting at 14th level, you've mastered the customization of your Warsmith's armor. You can add one additional upgrade to your armor that does not count against your Upgrade total.</p>
             <p class="indent">Additionally, during a long rest, you can now swap out any one upgrade for any other upgrade of the same level, so long as you don't have an upgrade that requires the upgrade you are removing as a prerequisite, or an incompatible upgrade.</p>
@@ -118,8 +118,8 @@
 
         <!--UNRESTRICTED UPGRADES-->
 
-    <element name="Accelerated Movement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACCELERATED_MOVEMENT">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
+    <element name="Accelerated Movement" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ACCELERATED_MOVEMENT">
+        <supports>Specialization Upgrade, Warsmith, Unrestricted, Specialized Armor</supports>
         <description>
             <p>You reduce the weight of your armor by 15 lbs. While wearing your armor your speed increases by 10 feet. This applies to all movement speeds you have while wearing your armor.</p>
         </description>
@@ -131,9 +131,9 @@
         </rules>
     </element>
 
-    <element name="Accelerated Movement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACCELERATED_MOVEMENT_2">
+    <element name="Accelerated Movement" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ACCELERATED_MOVEMENT_2">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACCELERATED_MOVEMENT</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_WARSMITH_ACCELERATED_MOVEMENT</requirements>
         <description>
             <p>You reduce the weight of your armor by 15 lbs. While wearing your armor your speed increases by 10 feet. This applies to all movement speeds you have while wearing your armor.</p>
         </description>
@@ -145,8 +145,8 @@
         </rules>
     </element>
 
-    <element name="Arcane Visor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
+    <element name="Arcane Visor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR">
+        <supports>Specialization Upgrade, Warsmith, Unrestricted, Specialized Armor</supports>
         <description>
             <p>You magically enchant your visor. You gain one of the following effects while wearing your armor; you pick the effect when selecting the upgrade.</p>
             <ul>
@@ -163,9 +163,9 @@
             <select type="Class Feature" name="Arcane Visor" supports="Arcane Visor" />
         </rules>
     </element>
-    <element name="Arcane Visor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_2">
+    <element name="Arcane Visor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR_2">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR</requirements>
         <description>
             <p>You magically enchant your visor. You gain one of the following effects while wearing your armor; you pick the effect when selecting the upgrade.</p>
             <ul>
@@ -180,9 +180,9 @@
             <select type="Class Feature" name="Arcane Visor" supports="Arcane Visor" />
         </rules>
     </element>
-    <element name="Arcane Visor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_3">
+    <element name="Arcane Visor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR_3">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_2</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR_2</requirements>
         <description>
             <p>You magically enchant your visor. You gain one of the following effects while wearing your armor; you pick the effect when selecting the upgrade.</p>
             <ul>
@@ -197,7 +197,7 @@
             <select type="Class Feature" name="Arcane Visor" supports="Arcane Visor" />
         </rules>
     </element>
-    <element name="Darkvision, Arcane Visor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_DARKVISION">
+    <element name="Darkvision, Arcane Visor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR_DARKVISION">
         <supports>Arcane Visor</supports>
         <description>
             <p>You gain darkvision to a range of 60 feet. If you already have darkvision, the range of that darkvision is increased by 60 feet.</p>
@@ -209,7 +209,7 @@
             <grant type="Vision" id="ID_VISION_DARKVISION" />
         </rules>
     </element>
-    <element name="Sensitivity, Arcane Visor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_SENSITIVITY">
+    <element name="Sensitivity, Arcane Visor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR_SENSITIVITY">
         <supports>Arcane Visor</supports>
         <description>
             <p>You can ignore Sunlight Sensitivity.</p>
@@ -218,7 +218,7 @@
             <description>You can ignore Sunlight Sensitivity.</description>
         </sheet>
     </element>
-    <element name="Divination, Arcane Visor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR_DIVINATION">
+    <element name="Divination, Arcane Visor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR_DIVINATION">
         <supports>Arcane Visor</supports>
         <description>
             <p>Divination spells no longer require your Concentration to maintain. You can only use this effect one spell at a time.</p>
@@ -228,28 +228,32 @@
         </sheet>
     </element>
 
-    <element name="Faraday Helmet" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_FARADAY_HELMET">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
+    <element name="Collapsible" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ACTIVE_COLLAPSIBLE">
+        <supports>Specialization Upgrade, Warsmith, Unrestricted, Specialized Armor</supports>
+        <prerequisite>Incompatible with Integrated Armor</prerequisite>
+        <requirements>![warsmith:integratedarmor:1]</requirements>
         <description>
-            <p>After casting a spell of first level or higher, you have advantage on Saving Throws to save against being charmed, mind controlled, stunned, or confused by magical means until the start of your next turn.</p>
+            <p><em>Incompatible with Integrated Armor</em></p>
+            <p>Your Warsmith's armor can collapse into a case for easy storage. When transformed this way the armor is indistinguishable from a normal case and weighs 1/3 its normal weight. As an action you can don or doff the armor, allowing it to transform as needed.</p>
         </description>
         <sheet>
-            <description>After casting a spell of first level or higher, you have advantage on Saving Throws to save against being charmed, mind controlled, stunned, or confused by magical means until the start of your next turn.</description>
+            <description>Your Warsmith's armor can collapse into a case for easy storage. When transformed this way the armor is indistinguishable from a normal case and weighs 1/3 its normal weight. As an action you can don or doff the armor, allowing it to transform as needed.</description>
         </sheet>
     </element>
 
-    <element name="Flame Projector" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_FLAME_PROJECTOR">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
+    <element name="Flame Projector" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_FLAME_PROJECTOR">
+        <supports>Specialization Upgrade, Warsmith, Unrestricted, Specialized Armor</supports>
         <description>
             <p>You gain the ability to unleash fire energy. While wearing your Warplate Gauntlet, you can cast <em>fire bolt,</em> and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
             <table>
                 <thead>
-                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                    <tr><td>Inventor Level</td><td>Spell</td></tr>
                 </thead>
                 <tr><td>3</td><td>burning hands</td></tr>
                 <tr><td>5</td><td>scorching ray</td></tr>
                 <tr><td>9</td><td>fireball</td></tr>
                 <tr><td>13</td><td>wall of fire</td></tr>
+                <tr><td>17</td><td>immolation</td></tr>
             </table>
             <div class="reference">
                 <div element="ID_PHB_SPELL_FIRE_BOLT" />
@@ -266,21 +270,25 @@
             <div class="reference">
                 <div element="ID_PHB_SPELL_WALL_OF_FIRE" />
             </div>
+            <div class="reference">
+                <div element="ID_XGTE_SPELL_IMMOLATION" /> 
+            </div>
         </description>
         <sheet>
             <description>While wearing your Warplate Gauntlet, you can cast <em>fire bolt,</em> and gain access to additional spells at higher levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_XGTE_SPELL_IMMOLATION" level="17" spellcasting="Inventor" />
         </rules>
     </element>
 
-    <element name="Force Blast" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_FORCE_BLAST">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted, Warplate Gauntlet</supports>
+    <element name="Force Blast" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_FORCE_BLAST">
+        <supports>Specialization Upgrade, Warsmith, Unrestricted, Warplate Gauntlet, Specialized Armor</supports>
         <description>
             <p>You upgrade your Warplate Gauntlet to deliver special ranged attacks. These attacks are a ranged spell attack that deals 1d8 + your Intelligence modifier force damage, and has a range of 60 feet.</p>
             <p class="indent">You are proficient in this weapon. When you take the attack action, you can use this ranged spell attack in place of any attack made.</p>
@@ -290,9 +298,12 @@
         </sheet>
     </element>
 
-    <element name="Grappling Reel" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_GRAPPLING_REEL">
+    <element name="Grappling Reel" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_GRAPPLING_REEL">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
+        <prerequisite>Warplate or Integrated Armor</prerequisite>
+        <requirements>[warsmith:integratedarmor:1] | [warsmith:warplate:1]</requirements>
         <description>
+            <p><em>Prerequisite: Warplate or Integrated Armor</em></p>
             <p>Your Warsmith's armor gains an integrated grappling reel set into your gauntlet. As 1 attack or 1 action, you may target a surface, object or creature within 30 feet. If the target is Large or Smaller, you can make a Grapple check to pull it to you and Grapple it on success. Alternatively, if the target is Large or larger, you can choose to be pulled to it, this does not grapple it.</p>
         </description>
         <sheet>
@@ -300,65 +311,80 @@
         </sheet>
     </element>
 
-    <element name="Lightning Channel" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_LIGHTNING_CHANNEL">
+    <element name="Grappling Hook" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_GRAPPLING_HOOK">
+        <supports>Specialization Upgrade, Warsmith, Unrestricted, Specialized Armor</supports>
+        <prerequisite>Warsuit</prerequisite>
+        <requirements>[warsmith:warsuit:1]</requirements>
+        <description>
+            <p><em>Prerequisite: Warsuit</em></p>
+            <p>Your Warsuit's gains an integrated grappling hook set into your gauntlet. As an attack or as an action, you may target a surface, object or creature within 20 feet. If the target is Small or Smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it. Alternatively, if the target is Medium or larger, you can choose to be pulled to it, however, this does not grapple it. Attacks of opportunity generated by this movement have disadvantage.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an attack or as an action, you may target a surface, object or creature within 20 feet. If the target is Small or Smaller, you can make a Strength (Athletics) grappling check to pull it to you and grapple it. Alternatively, if the target is Medium or larger, you can choose to be pulled to it, however, this does not grapple it. Attacks of opportunity generated by this movement have disadvantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Lightning Channel" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_LIGHTNING_CHANNEL">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <description>
             <p>You are able to funnel your suits' power into your attacks. You can use this upgrade to cast <em>lightning charged</em> as a bonus action without expending a spell slot. Once used, this upgrade cannot be used until you complete a short or long rest.</p>
             <p class="indent">Additionally, you can apply the damage from lightning charged on your Force Blast ranged spell attacks.</p>
             <div class="reference">
-                <div element="ID_KTH_ARTIFICER_SPELL_LIGHTNING_CHARGED" />
+                <div element="ID_KTH_INVENTOR_SPELL_LIGHTNING_CHARGED" />
             </div>
         </description>
         <sheet>
             <description action="Bonus Action" usage="1/Short/Long rest">You can use this upgrade to cast <em>lightning charged</em> as a bonus action without expending a spell slot. Additionally, you can apply the damage from lightning charged on your Force Blast ranged spell attacks if you have the upgrade.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_LIGHTNING_CHARGED" />
+            <grant type="Spell" id="ID_KTH_INVENTOR_SPELL_LIGHTNING_CHARGED" />
         </rules>
     </element>
 
-    <element name="Lightning Projector" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_LIGHTNING_PROJECTOR">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
+    <element name="Lightning Projector" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_LIGHTNING_PROJECTOR">
+        <supports>Specialization Upgrade, Warsmith, Unrestricted, Specialized Armor</supports>
         <description>
             <p>YYou gain the ability to unleash lightning energy. While wearing your Warplate Gauntlet, you can cast shocking grasp, and gain access to the following spells at the following levels while wearing your Warplate Gauntlet:</p>
             <table>
                 <thead>
-                    <tr><td>Artificer Level</td><td>Spell</td></tr>
+                    <tr><td>Inventor Level</td><td>Spell</td></tr>
                 </thead>
-                <tr><td>3</td><td>thunderwave</td></tr>
+                <tr><td>3</td><td>lightning tendril</td></tr>
                 <tr><td>5</td><td>lightning charged</td></tr>
                 <tr><td>9</td><td>lightning bolt</td></tr>
-                <tr><td>13</td><td>storm sphere</td></tr>
+                <tr><td>13</td><td>jumping jolt</td></tr>
+                <tr><td>17</td><td>sky burst</td></tr>
             </table>
             <div class="reference">
-                <div element="ID_PHB_SPELL_SHOCKING_GRASP" />
+                <div element="ID_KTH_GS_SPELL_LIGHTNING_TENDRIL" /> 
             </div>
             <div class="reference">
-                <div element="ID_PHB_SPELL_THUNDERWAVE" />
-            </div>
-            <div class="reference">
-                <div element="ID_KTH_ARTIFICER_SPELL_LIGHTNING_CHARGED" />
+                <div element="ID_KTH_INVENTOR_SPELL_LIGHTNING_CHARGED" />
             </div>
             <div class="reference">
                 <div element="ID_PHB_SPELL_LIGHTNING_BOLT" />
             </div>
             <div class="reference">
-                <div element="ID_XGTE_SPELL_STORM_SPHERE" />
+                <div element="ID_KTH_GS_SPELL_JUMPING_JOLT" /> 
+            </div>
+            <div class="reference">
+                <div element="ID_KTH_GS_SPELL_SKY_BURST" /> 
             </div>
         </description>
         <sheet>
             <description>While wearing your Warplate Gauntlet, you can cast <em>shocking grasp,</em> and gain access to additional spells at higher levels.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_KTH_ARTIFICER_SPELL_LIGHTNING_CHARGED" level="5" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="KTHArtificer" />
-            <grant type="Spell" id="ID_XGTE_SPELL_STORM_SPHERE" level="13" spellcasting="KTHArtificer" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_GS_SPELL_LIGHTNING_TENDRIL" level="3" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_INVENTOR_SPELL_LIGHTNING_CHARGED" level="5" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_PHB_SPELL_LIGHTNING_BOLT" level="9" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_GS_SPELL_JUMPING_JOLT" level="13" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_GS_SPELL_SKY_BURST" level="17" spellcasting="Inventor" />
         </rules>
     </element>
 
-    <element name="Martial Grip" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_MARTIAL_GRIP">
+    <element name="Martial Grip" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_MARTIAL_GRIP">
         <supports>Specialization Upgrade, Warsmith, Unrestricted, Warplate Gauntlet</supports>
         <description>
             <p>Your Warplate Gauntlet grants the ability to wield a wide variety of powerful weapons. You gain proficiency with martial weapons while wearing your Warplate Gauntlet.</p>
@@ -371,7 +397,7 @@
         </rules>
     </element>
 
-    <element name="Power Fist" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWER_FIST">
+    <element name="Power Fist" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_POWER_FIST">
         <supports>Specialization Upgrade, Gadgetsmith, Gadgetsmith Weapon, Gadgeteer Deadly Surprise, Unrestricted, Warsmith, Warplate Gauntlet</supports>
         <description>
             <p>You upgrade your Warplate Gauntlet to better punch things. Your Warplate Gauntlet is upgraded to a magical weapon you have proficiency with dealing 1d8 bludgeoning damage and gains the Light and Special properties.</p>
@@ -381,9 +407,9 @@
             <description>Your Warplate Gauntlet is upgraded to a magical weapon you have proficiency with dealing 1d8 bludgeoning damage and gains the Light and Special properties. Special: When you make an attack roll, you can choose to forgo adding your Proficiency modifier to the attack roll. If the attack hits, you can add double your Proficiency modifier to the damage roll.</description>
         </sheet>
     </element>
-    <element name="Second Power Fist" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWER_FIST_2">
+    <element name="Second Power Fist" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_POWER_FIST_2">
         <supports>Specialization Upgrade, Gadgetsmith, Gadgetsmith Weapon, Gadgeteer Deadly Surprise, Unrestricted, Warsmith, Warplate Gauntlet</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWER_FIST</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_WARSMITH_POWER_FIST</requirements>
         <description>
             <p>With Power Fist applied twice, you have a Power Fists for each hand that can be used for Two-Weapon Fighting.</p>
         </description>
@@ -392,7 +418,7 @@
         </sheet>
     </element>
 
-    <element name="Reinforced Armor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_REINFORCED_ARMOR">
+    <element name="Reinforced Armor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_REINFORCED_ARMOR">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <description>
             <p>You reinforce the structure and materials that make up your Warsmith's armor. Your Warsmith's armor Armor Class (AC) increases by 1.</p>
@@ -404,9 +430,9 @@
             <stat name="ac:misc" value="1" />
         </rules>
     </element>
-    <element name="Reinforced Armor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_REINFORCED_ARMOR_2">
+    <element name="Reinforced Armor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_REINFORCED_ARMOR_2">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_REINFORCED_ARMOR</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_WARSMITH_REINFORCED_ARMOR</requirements>
         <description>
             <p>You reinforce the structure and materials that make up your Warsmith's armor. Your Warsmith's armor Armor Class (AC) increases by 1.</p>
         </description>
@@ -417,9 +443,9 @@
             <stat name="ac:misc" value="1" />
         </rules>
     </element>
-    <element name="Reinforced Armor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_REINFORCED_ARMOR_3">
+    <element name="Reinforced Armor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_REINFORCED_ARMOR_3">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
-        <requirements>ID_KTH_ARTIFICER_UPGRADE_WARSMITH_REINFORCED_ARMOR_2</requirements>
+        <requirements>ID_KTH_INVENTOR_UPGRADE_WARSMITH_REINFORCED_ARMOR_2</requirements>
         <description>
             <p>You reinforce the structure and materials that make up your Warsmith's armor. Your Warsmith's armor Armor Class (AC) increases by 1.</p>
         </description>
@@ -431,7 +457,7 @@
         </rules>
     </element>
 
-    <element name="Sentient Armor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR">
+    <element name="Sentient Armor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_SENTIENT_ARMOR">
         <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
         <description>
             <p>You create an artificial personality integrated into your armor, giving it limited sentience. This sentience assists you in many ways. While wearing your armor, your Intelligence ability score and maximum Intelligence ability score are increased by 2.</p>
@@ -447,10 +473,10 @@
 
         <!--5th LEVEL UPGRADES-->
 
-    <element name="Artificial Guidance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARTIFICIAL_GUIDANCE">
+    <element name="Artificial Guidance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARTIFICIAL_GUIDANCE">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You upgrade the artificial personality integrated into your armor to assist with a new skill. While able to communicate with your armor, you can gain the effect of guidance when making an Intelligence or Wisdom ability check.</p>
@@ -463,7 +489,7 @@
         </sheet>
     </element>
     
-    <element name="Active Camouflage" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_CAMOUFLAGE">
+    <element name="Active Camouflage" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ACTIVE_CAMOUFLAGE">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
         <requirements>[level:5]</requirements>
@@ -476,23 +502,10 @@
         </sheet>
     </element>
 
-    <element name="Collapsible" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_COLLAPSIBLE">
-        <supports>Specialization Upgrade, Warsmith</supports>
-        <prerequisite>5th level, Incompatible with Integrated Armor</prerequisite>
-        <requirements>[level:5], ![warsmith:integratedarmor:1]</requirements>
-        <description>
-            <p><em>Prerequisite: 5th level, Incompatible with Integrated Armor</em></p>
-            <p>Your Warsmith's armor can collapse into a case for easy storage. When transformed this way the armor is indistinguishable from a normal case and weighs 1/3 its normal weight. As an action you can don or doff the armor, allowing it to transform as needed.</p>
-        </description>
-        <sheet>
-            <description>Your Warsmith's armor can collapse into a case for easy storage. When transformed this way the armor is indistinguishable from a normal case and weighs 1/3 its normal weight. As an action you can don or doff the armor, allowing it to transform as needed.</description>
-        </sheet>
-    </element>
-
-    <element name="Emergency Protocol" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_EMERGENCY_PROTOCOL">
+    <element name="Emergency Protocol" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_EMERGENCY_PROTOCOL">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level, Sentient Armor</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Sentient Armor</em></p>
             <p>The intelligence in your armor will attempt to preserve your life. If you are Incapacitated or Unconscious and cannot take your action, it will cast a spell or take the dodge action. It can only cast spells using your armor's upgrades. It can act in this way up a number of turns equal to your Intelligence modifier, but this control strains its abilities, and it cannot take control again until you complete a short or long rest. You automatically resume control if you are no longer Incapacitated or Unconscious.</p>
@@ -502,10 +515,10 @@
         </sheet>
     </element>
 
-    <element name="Force Accumulator" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_FORCE_ACCUMULATOR">
+    <element name="Force Accumulator" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_FORCE_ACCUMULATOR">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level, Force Blast</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_FORCE_BLAST</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_FORCE_BLAST</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Force Blast</em></p>
             <p>Every time you expend a spell slot of 1st level or higher, you accumulate charges to your Force Blast equal to the level of spell slot spent, up to a maximum number of Charges equal to half of your Intelligence modifier (rounded down). When you deal damage with Force Blast, you can expend the accumulated charges to deal an additional 1d6 damage or to move the target 5 feet directly away away from you, per charge spent.</p>
@@ -516,24 +529,24 @@
         </sheet>
     </element>
 
-    <element name="Mechanical Enhancement" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_MECHANICAL_ENHANCEMENT">
+    <element name="Mechanical Enhancement" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_MECHANICAL_ENHANCEMENT">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level, Integrated Armor</prerequisite>
         <requirements>[level:5], [warsmith:integratedarmor:1]</requirements>
         <description>
             <p><em>Prerequisite: 5th level, Integrated Armor</em></p>
-            <p>You improve every aspect of yourself ever so slightly. You gain +5 feet of movement, one additional hit point per Artificer level, and +1 to Strength, Dexterity, and Constitution saving throws.</p>
+            <p>You improve every aspect of yourself ever so slightly. You gain +5 feet of movement, one additional hit point per Inventor level, and +1 to Strength, Dexterity, and Constitution saving throws.</p>
         </description>
         <sheet>
-            <description>You gain +5 feet of movement, one additional hit point per Artificer level, and +1 to Strength, Dexterity, and Constitution saving throws.</description>
+            <description>You gain +5 feet of movement, one additional hit point per Inventor level, and +1 to Strength, Dexterity, and Constitution saving throws.</description>
         </sheet>
         <rules>
             <stat name="innate speed:misc" value="5" />
-            <stat name="hp" value="level:artificer" />
+            <stat name="hp" value="level:inventor" />
         </rules>
     </element>
 
-    <element name="Reactive Plating" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_REACTIVE_PLATING">
+    <element name="Reactive Plating" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_REACTIVE_PLATING">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level, Warplate</prerequisite>
         <requirements>[level:5], [warsmith:warplate:1]</requirements>
@@ -547,7 +560,7 @@
     </element>
 
 
-    <element name="Resistance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE">
+    <element name="Resistance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
         <requirements>[level:5]</requirements>
@@ -562,10 +575,10 @@
             <select type="Class Feature" name="Resistance" supports="Warsmith Resistance" />
         </rules>
     </element>
-    <element name="Resistance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE2">
+    <element name="Resistance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE2">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
@@ -575,10 +588,10 @@
             <select type="Class Feature" name="Resistance" supports="Warsmith Resistance" />
         </rules>
     </element>
-    <element name="Resistance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE3">
+    <element name="Resistance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE3">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE2</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE2</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
@@ -588,10 +601,10 @@
             <select type="Class Feature" name="Resistance" supports="Warsmith Resistance" />
         </rules>
     </element>
-    <element name="Resistance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE4">
+    <element name="Resistance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE4">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE3</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE3</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
@@ -601,10 +614,10 @@
             <select type="Class Feature" name="Resistance" supports="Warsmith Resistance" />
         </rules>
     </element>
-    <element name="Resistance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE5">
+    <element name="Resistance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE5">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE4</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE4</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
@@ -614,10 +627,10 @@
             <select type="Class Feature" name="Resistance" supports="Warsmith Resistance" />
         </rules>
     </element>
-    <element name="Resistance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE6">
+    <element name="Resistance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE6">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE5</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE5</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
@@ -627,24 +640,10 @@
             <select type="Class Feature" name="Resistance" supports="Warsmith Resistance" />
         </rules>
     </element>
-    <element name="Resistance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE7">
+    <element name="Resistance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE7">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE6</requirements>
-        <description>
-            <p><em>Prerequisite: 5th level</em></p>
-            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
-        </description>
-        <sheet display="false" />
-        <rules>
-            <select type="Class Feature" name="Resistance" supports="Warsmith Resistance" />
-        </rules>
-    </element>
-
-    <element name="Resistance" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE8">
-        <supports>Specialization Upgrade, Warsmith</supports>
-        <prerequisite>5th level</prerequisite>
-        <requirements>[level:5], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE7</requirements>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE6</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
@@ -655,7 +654,21 @@
         </rules>
     </element>
 
-    <element name="Acid" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE_ACID">
+    <element name="Resistance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE8">
+        <supports>Specialization Upgrade, Warsmith</supports>
+        <prerequisite>5th level</prerequisite>
+        <requirements>[level:5], ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE7</requirements>
+        <description>
+            <p><em>Prerequisite: 5th level</em></p>
+            <p>You tune your armor against certain forms of damage. Choose acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage. While wearing your Warplate you have resistance to that type of damage. If you apply this upgrade more than once you must choose a different damage type.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Resistance" supports="Warsmith Resistance" />
+        </rules>
+    </element>
+
+    <element name="Acid" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE_ACID">
         <supports>Warsmith Resistance</supports>
         <description>
             <p>While wearing your Warplate you have resistance to acid damage.</p>
@@ -665,7 +678,7 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
         </rules>
     </element>
-    <element name="Cold" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE_COLD">
+    <element name="Cold" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE_COLD">
         <supports>Warsmith Resistance</supports>
         <description>
             <p>While wearing your Warplate you have resistance to cold damage.</p>
@@ -675,7 +688,7 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
         </rules>
     </element>
-    <element name="Fire" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE_FIRE">
+    <element name="Fire" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE_FIRE">
         <supports>Warsmith Resistance</supports>
         <description>
             <p>While wearing your Warplate you have resistance to fire damage.</p>
@@ -685,7 +698,7 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
         </rules>
     </element>
-    <element name="Force" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE_FORCE">
+    <element name="Force" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE_FORCE">
         <supports>Warsmith Resistance</supports>
         <description>
             <p>While wearing your Warplate you have resistance to force damage.</p>
@@ -695,7 +708,7 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
         </rules>
     </element>
-    <element name="Lightning" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE_LIGHTNING">
+    <element name="Lightning" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE_LIGHTNING">
         <supports>Warsmith Resistance</supports>
         <description>
             <p>While wearing your Warplate you have resistance to lightning damage.</p>
@@ -705,7 +718,7 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
         </rules>
     </element>
-    <element name="Necrotic" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE_NECROTIC">
+    <element name="Necrotic" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE_NECROTIC">
         <supports>Warsmith Resistance</supports>
         <description>
             <p>While wearing your Warplate you have resistance to necrotic damage.</p>
@@ -715,7 +728,7 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
         </rules>
     </element>
-    <element name="Radiant" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE_RADIANT">
+    <element name="Radiant" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE_RADIANT">
         <supports>Warsmith Resistance</supports>
         <description>
             <p>While wearing your Warplate you have resistance to radiant damage.</p>
@@ -725,7 +738,7 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
         </rules>
     </element>
-    <element name="Thunder" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RESISTANCE_THUNDER">
+    <element name="Thunder" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RESISTANCE_THUNDER">
         <supports>Warsmith Resistance</supports>
         <description>
             <p>While wearing your Warplate you have resistance to thunder damage.</p>
@@ -737,7 +750,7 @@
     </element>
 
 
-    <element name="Sealed Suit" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SEALED_SUIT">
+    <element name="Sealed Suit" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_SEALED_SUIT">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>5th level, Warplate</prerequisite>
         <requirements>[level:5], [warsmith:warplate:1]</requirements>
@@ -753,7 +766,7 @@
 
         <!--9TH LEVEL UPGRADES-->
 
-    <element name="Ether Reactor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ETHER_REACTOR">
+    <element name="Ether Reactor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ETHER_REACTOR">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>9th level</prerequisite>
         <requirements>[level:9]</requirements>
@@ -767,10 +780,10 @@
         </sheet>
     </element>
 
-    <element name="Heads Up Display" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_HEADS_UP_DISPLAY">
+    <element name="Heads Up Display" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_HEADS_UP_DISPLAY">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>9th level, Arcane Visor, Sentient Armor</prerequisite>
-        <requirements>[level:9], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ARCANE_VISOR, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <requirements>[level:9], ID_KTH_INVENTOR_UPGRADE_WARSMITH_ARCANE_VISOR, ID_KTH_INVENTOR_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
         <description>
             <p><em>Prerequisite: 9th level, Arcane Visor, Sentient Armor</em></p>
             <p>You can delegate displaying and tracking things in your sight to your Sentient armor, granting you the following benefits:</p>
@@ -793,7 +806,7 @@
         </rules>
     </element>
 
-    <element name="Brute Force Style" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_BRUTE_FORCE_STYLE">
+    <element name="Brute Force Style" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_BRUTE_FORCE_STYLE">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>9th level</prerequisite>
         <requirements>[level:9]</requirements>
@@ -805,20 +818,20 @@
             <description>You gain a Fighting Style while wearing your armor.</description>
         </sheet>
         <rules>
-            <select type="Class Feature" name="Fighting Style" supports="Fighting Style, Artificer" />
+            <select type="Class Feature" name="Fighting Style" supports="Fighting Style, Inventor" />
         </rules>
     </element>   
     <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
-		<supports>Artificer</supports>
+		<supports>Inventor</supports>
 	</append>
     <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
-		<supports>Artificer</supports>
+		<supports>Inventor</supports>
 	</append>
     <append id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
-		<supports>Artificer</supports>
+		<supports>Inventor</supports>
 	</append>
 
-    <element name="Phase Suit" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_BRUTE_PHASE_SUIT">
+    <element name="Phase Suit" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_BRUTE_PHASE_SUIT">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>9th level, Warsuit</prerequisite>
         <requirements>[level:9], [warsmith:warsuit:1]</requirements>
@@ -839,14 +852,28 @@
             <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
             <grant type="Spell" id="ID_PHB_SPELL_BLINK" />
         </rules>
+    </element>   
+
+    <element name="Recall" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_RECALL">
+        <supports>Specialization Upgrade, Warsmith</supports>
+        <prerequisite>9th level</prerequisite>
+        <requirements>[level:9]</requirements>
+        <description>
+            <p><em>Prerequisite: 9th level</em></p>
+            <p>When not being worn you can hide your Warsmith's armor in a pocket dimension. As an action you can magically summon the armor and don it. You can use a bonus action to return the armor to the pocket dimension.</p>
+            <p class="indent">While in the pocket dimension the armor cannot be affected by other abilities and cannot be interacted with in any way.</p>
+        </description>
+        <sheet>
+            <description>As an action you can magically summon the armor and don it. You can use a bonus action to return the armor to the pocket dimension. While in the pocket dimension the armor cannot be affected by other abilities and cannot be interacted with in any way.</description>
+        </sheet>
     </element>
 
         <!--11TH LEVEL UPGRADES-->
 
-    <element name="Cloaking Device" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_CLOAKING_DEVICE">
+    <element name="Cloaking Device" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_CLOAKING_DEVICE">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Active Camouflage</prerequisite>
-        <requirements>[level:11], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_ACTIVE_CAMOUFLAGE</requirements>
+        <requirements>[level:11], ID_KTH_INVENTOR_UPGRADE_WARSMITH_ACTIVE_CAMOUFLAGE</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Active Camouflage</em></p>
             <p>If you do not move during your turn with active camouflage engaged, you can use your reaction to take the Hide action using an Intelligence (Stealth) check. You make this check with disadvantage if you are within 5 feet of another creature or you attacked during your turn.</p>
@@ -863,10 +890,10 @@
         </rules>
     </element>
 
-    <element name="Lightning Rod" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_LIGHTNING_ROD">
+    <element name="Lightning Rod" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_LIGHTNING_ROD">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Lightning Channel</prerequisite>
-        <requirements>[level:11], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_LIGHTNING_CHANNEL</requirements>
+        <requirements>[level:11], ID_KTH_INVENTOR_UPGRADE_WARSMITH_LIGHTNING_CHANNEL</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Lightning Channel</em></p>
             <p>Whenever you cast lightning charged, you can treat the spell as if it was cast by a spell slot one level higher.</p>
@@ -876,7 +903,7 @@
         </sheet>
     </element>
 
-    <element name="Flash Freeze Capacitor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_FLASH_FREEZE_CAPACITOR">
+    <element name="Flash Freeze Capacitor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_FLASH_FREEZE_CAPACITOR">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Incompatible with other Capacitors</prerequisite>
         <requirements>[level:11], ![has capacitor:1]</requirements>
@@ -897,7 +924,7 @@
         </rules>
     </element>
 
-    <element name="Flight" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_FLIGHT">
+    <element name="Flight" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_FLIGHT">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level</prerequisite>
         <requirements>[level:11]</requirements>
@@ -913,10 +940,10 @@
         </rules>
     </element>
 
-    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK">
+    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP</requirements>
+        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_INVENTOR_UPGRADE_WARSMITH_IRON_GRIP</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -929,10 +956,10 @@
             When you activate your integrated weapon, you can immediately make one attack with it. While it is active, if you take the attack action on your turn, you can make an one additional weapon attack with your integrated weapon using your bonus action.</description>
         </sheet>
     </element>
-    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK2">
+    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK2">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK</requirements>
+        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_INVENTOR_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -943,10 +970,10 @@
             <description>You integrate a second weapon.</description>
         </sheet>
     </element>
-    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK3">
+    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK3">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK2</requirements>
+        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_INVENTOR_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK2</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -957,10 +984,10 @@
             <description>You integrate a third weapon.</description>
         </sheet>
     </element>
-    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK4">
+    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK4">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK3</requirements>
+        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_INVENTOR_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK3</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -971,10 +998,10 @@
             <description>You integrate a fourth weapon.</description>
         </sheet>
     </element>
-    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK5">
+    <element name="Integrated Attack" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK5">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</prerequisite>
-        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK4</requirements>
+        <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1]), !ID_KTH_INVENTOR_UPGRADE_WARSMITH_IRON_GRIP, ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK4</requirements>
         <description>
             <p><em>Prerequisite: 11th level, Integrated Armor or Warplate, Incompatible with Iron Grip</em></p>
             <p>You integrate a melee weapon into your Warsmith's Armor. When you apply this upgrade you must have a weapon to integrate, and you must choose where on your armor the weapon is located. The weapon cannot have the Heavy property. You are proficient with this weapon. As a bonus action you can activate the weapon.</p>
@@ -986,7 +1013,7 @@
         </sheet>
     </element>
 
-    <element name="Iron Muscle" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_MUSCLE">
+    <element name="Iron Muscle" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_IRON_MUSCLE">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Integrated Armor or Warplate</prerequisite>
         <requirements>[level:11], ([warsmith:integratedarmor:1]|[warsmith:warplate:1])</requirements>
@@ -1003,7 +1030,7 @@
         </rules>
     </element>
 
-    <element name="Power Slam Capacitor" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_POWER_SLAM_CAPACITOR">
+    <element name="Power Slam Capacitor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_POWER_SLAM_CAPACITOR">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>11th level, Incompatible with other Capacitors</prerequisite>
         <requirements>[level:11], ![has capacitor:1]</requirements>
@@ -1026,26 +1053,24 @@
 
         <!--15TH LEVEL UPGRADES-->
 
-    <element name="Iron Grip" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_GRIP">
+    <element name="Iron Grip" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_IRON_GRIP">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>15th level, Iron Muscle, Incompatible with Integrated Attack</prerequisite>
-        <requirements>[level:15], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_IRON_MUSCLE, !ID_KTH_ARTIFICER_UPGRADE_WARSMITH_INTEGRATED_ATTACK</requirements>
+        <requirements>[level:15], ID_KTH_INVENTOR_UPGRADE_WARSMITH_IRON_MUSCLE, !ID_KTH_INVENTOR_UPGRADE_WARSMITH_INTEGRATED_ATTACK</requirements>
         <description>
             <p><em>Prerequisite: 15th level, Iron Muscle, Incompatible with Integrated Attack</em></p>
             <p>You improve your grip strength and control of one of your gauntlets beyond the limits of flesh. While wearing your suit, you gain the following benefits:</p>
             <ul>
                 <li>You can wield Large sized weapons without a penalty as a medium sized creature.</li>
-                <li>You can wield a two-handed weapon in one hand.</li>
                 <li>One handed weapons you wield count as if being wielded with two hands.</li>
-                <li>You can wield a lance as if mounted while not being mounted.</li>
             </ul>
         </description>
         <sheet>
-            <description>You can wield Large sized weapons without a penalty as a medium sized creature. You can wield a two-handed weapon in one hand. One handed weapons you wield count as if being wielded with two hands. You can wield a lance as if mounted while not being mounted.</description>
+            <description>You can wield Large sized weapons without a penalty as a medium sized creature. One handed weapons you wield count as if being wielded with two hands.</description>
         </sheet>
     </element>  
 
-    <element name="Phase Engine" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_PHASE_ENGINE">
+    <element name="Phase Engine" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_PHASE_ENGINE">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>15th level, Warsuit</prerequisite>
         <requirements>[level:15], [warsmith:warsuit:1]</requirements>
@@ -1058,7 +1083,7 @@
         </sheet>
     </element>  
 
-    <element name="Heavy Plating" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_HEAVY_PLATING">
+    <element name="Heavy Plating" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_HEAVY_PLATING">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>15th level, Warplate</prerequisite>
         <requirements>[level:15], [warsmith:warplate:1]</requirements>
@@ -1074,23 +1099,9 @@
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
             <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
         </rules>
-    </element>   
-
-    <element name="Recall" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_RECALL">
-        <supports>Specialization Upgrade, Warsmith</supports>
-        <prerequisite>15th level</prerequisite>
-        <requirements>[level:15]</requirements>
-        <description>
-            <p><em>Prerequisite: 15th level</em></p>
-            <p>When not being worn you can hide your Warsmith's armor in a pocket dimension. As an action you can magically summon the armor and don it. You can use a bonus action to return the armor to the pocket dimension.</p>
-            <p class="indent">While in the pocket dimension the armor cannot be affected by other abilities and cannot be interacted with in any way.</p>
-        </description>
-        <sheet>
-            <description>As an action you can magically summon the armor and don it. You can use a bonus action to return the armor to the pocket dimension. While in the pocket dimension the armor cannot be affected by other abilities and cannot be interacted with in any way.</description>
-        </sheet>
     </element>
 
-    <element name="Sun Cannon" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SUN_CANNON">
+    <element name="Sun Cannon" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_SUN_CANNON">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>15th level</prerequisite>
         <requirements>[level:15]</requirements>
@@ -1110,10 +1121,10 @@
         </rules>
     </element> 
 
-    <element name="Virtual Interface" type="Class Feature" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_UPGRADE_VIRTUAL_INTERFACE">
+    <element name="Virtual Interface" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_VIRTUAL_INTERFACE">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>15th level, Sentient Armor</prerequisite>
-        <requirements>[level:15], ID_KTH_ARTIFICER_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
+        <requirements>[level:15], ID_KTH_INVENTOR_UPGRADE_WARSMITH_SENTIENT_ARMOR</requirements>
         <description>
             <p><em>Prerequisite: 15th level, Sentient Armor</em></p>
             <p>When you use Artificial Strength to raise your Strength ability score, you no longer lower your Intelligence ability score below your natural maximum (not counting Sentient Armor).</p>
@@ -1125,7 +1136,7 @@
     
     <!--WARSMITH ARMOR-->
     
-    <element name="Warplate" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_WARPLATE">
+    <element name="Warplate" type="Armor" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARMOR_WARPLATE">
 		<supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
 		<description>
 			<p>Heavy, interlocking plates of magically-reinforced metal.</p>
@@ -1134,7 +1145,7 @@
 		<setters>
 			<set name="category">Armor</set>
 			<set name="cost" currency="gp">2000</set>
-			<set name="weight" lb="75">75 lb.</set>
+			<set name="weight" lb="65">65 lb.</set>
 			<set name="slot">body</set>
 			<set name="armor">Heavy</set>
 			<set name="strength">-</set>
@@ -1153,10 +1164,10 @@
             <stat name="warsmith:warplate" value="1" />
 		</rules>
 	</element>
-    <element name="Armor Proficiency (Warplate)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARPLATE">
+    <element name="Armor Proficiency (Warplate)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARPLATE">
     </element>
     
-    <element name="Warsuit" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_WARSUIT">
+    <element name="Warsuit" type="Armor" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARMOR_WARSUIT">
 		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
 		<description>
 			<p>A magically enhanced set of gear. While wearing Warsuit armor, your Strength ability score increases by 2, and your maximum Strength ability score becomes 22.</p>
@@ -1164,7 +1175,7 @@
 		<setters>
 			<set name="category">Armor</set>
 			<set name="cost" currency="gp">2000</set>
-			<set name="weight" lb="45">45 lb.</set>
+			<set name="weight" lb="20">20 lb.</set>
 			<set name="slot">body</set>
 			<set name="armor">Medium</set>
 			<set name="armorClass">14 + Dex modifier (max 2)</set>
@@ -1178,10 +1189,10 @@
             <stat name="warsmith:warsuit" value="1" />
 		</rules>
 	</element>
-    <element name="Armor Proficiency (Warsuit)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARSUIT">
+    <element name="Armor Proficiency (Warsuit)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARSUIT">
     </element>
 
-    <element name="Integrated Armor" type="Armor" source="KibblesTasty Artificer" id="ID_KTH_ARTIFICER_ARMOR_INTEGRATED_ARMOR">
+    <element name="Integrated Armor" type="Armor" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARMOR_INTEGRATED_ARMOR">
 		<supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
 		<description>
 			<p>You magically integrate your armor into your own body. Integrated armor cannot be removed, but does not confer any penalty when resting in it.</p>
@@ -1190,7 +1201,7 @@
 		<setters>
 			<set name="category">Armor</set>
 			<set name="cost" currency="gp">2000</set>
-			<set name="weight" lb="30">30 lb.</set>
+			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">body</set>
 			<set name="armor">Medium</set>
 			<set name="armorClass">14 + Dex modifier (max 2)</set>
@@ -1205,10 +1216,10 @@
             <stat name="warsmith:integratedarmor" value="1" />
 		</rules>
 	</element>
-    <element name="Armor Proficiency (Integrated Armor)" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_INTEGRATED_ARMOR">
+    <element name="Armor Proficiency (Integrated Armor)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_INTEGRATED_ARMOR">
     </element>
 
-    <element name="Warsmith Armor Proficiency" type="Proficiency" source="KibblesTasty Artificer" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_WARSMITH_ARMOR">
+    <element name="Warsmith Armor Proficiency" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_WARSMITH_ARMOR">
         <sheet alt="Warsmith Armor" />
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_KTH_WARPLATE" />
@@ -1217,7 +1228,7 @@
         </rules>
     </element>
 
-    <element name="KibblesTasty Artificer" type="Source" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_SOURCE_ARTIFICER">
+    <element name="KibblesTasty Inventor" type="Source" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_SOURCE_INVENTOR">
         <description>
             <![CDATA[<p>Forge armor, wield cannons, enchant swords, infuse potions... the power to innovate is in your hands! Magic item retrofitting, balance tweaks, streamlined mutations, and more!</p>]]>
         </description>

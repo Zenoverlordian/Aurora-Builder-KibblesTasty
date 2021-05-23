@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="source.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/source.xml" />
         </update>
     </info>
@@ -43,7 +43,7 @@
             <set name="release">20200118</set>
         </setters>
     </element>
-    <element name="KibblesTasty Artificer" type="Source" source="KibblesTasty Artificer" id="ID_KIBBLESTASTY_SOURCE_ARTIFICER">
+    <element name="KibblesTasty Inventor" type="Source" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_SOURCE_ARTIFICER">
         <description>
             <![CDATA[<p>Forge armor, wield cannons, enchant swords, infuse potions... the power to innovate is in your hands! Magic item retrofitting, balance tweaks, streamlined mutations, and more!</p>]]>
         </description>
