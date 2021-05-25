@@ -2,11 +2,11 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.0">
+        <update version="2.2.1">
             <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-expandedoptions.xml" />
         </update>
     </info>
-    <!--UPDATE 2.1a-->
+    <!--UPDATE 2.2-->
 
     <!--Class Features-->
 
@@ -453,20 +453,20 @@
         </rules>
     </element>
 
-    <element name="Diary of Darkness" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_CURSESMITH_DIARY_DARKNESS">
+    <element name="Dark Magic" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_CURSESMITH_DARK_MAGIC">
         <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
         <description>
-            <p>You record some of the foulest effects your experiments have had, codifying them into magical spells. You learn the following spells:</p>
+            <p>You record some of the foulest effects your experiments have had, codifying them into magical spells. You learn the following spells. They are Inventor spells for you, but do not count against your spells known.</p>
             <table>
                 <thead>
                     <tr><td>Spell Level</td><td>Spells Learned</td></tr>
                 </thead>
-                <tr><td>1st</td><td>necrotic rot, cause fear</td></tr>
+                <tr><td>1st</td><td>crippling agony, cause fear</td></tr>
                 <tr><td>2nd</td><td>blindness/deafness, ray of enfeeblement</td></tr>
                 <tr><td>3rd</td><td>rain of spiders, hungar of hadar</td></tr>
             </table>
             <div class="reference">
-                <div element="ID_KTH_INVENTOR_SPELL_NECROTIC_ROT" />
+                <div element="ID_KTH_OCCULTIST_SPELL_CRIPPLING_AGONY" /> 
             </div>
             <div class="reference">
                 <div element="ID_XGTE_SPELL_CAUSE_FEAR" />
@@ -488,7 +488,7 @@
             <description>You learn additional spells.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_KTH_INVENTOR_SPELL_NECROTIC_ROT" spellcasting="Inventor" />
+            <grant type="Spell" id="ID_KTH_OCCULTIST_SPELL_CRIPPLING_AGONY" spellcasting="Inventor" />
             <grant type="Spell" id="ID_XGTE_SPELL_CAUSE_FEAR" spellcasting="Inventor" />
             <grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" spellcasting="Inventor" />
             <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" spellcasting="Inventor" />
@@ -508,6 +508,23 @@
             <description>Attunement, Cursed.
             When your roll Deception or Performance, roll a d4 and add it to the result.
             Curse. When you roll for Persuasion, roll a d4 and subtract it from the result.</description>
+        </sheet>
+        <rules>
+            <stat name="cursesmith:curses" value="1" />
+        </rules>
+    </element>
+
+    <element name="Shadowed Shades" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_CURSESMITH_SHADOWED_SHADES">
+        <supports>Specialization Upgrade, Cursesmith, Unrestricted</supports>
+        <description>
+            <p><em>Cursed.</em></p>
+            <p>You make a set of specticles. While wearing them, you can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.</p>
+            <p class="indent"><strong>Curse. </strong>You treat all light as dim light for the purposes of vision while wearing them.</p>
+        </description>
+        <sheet>
+            <description>Cursed.
+            You make a set of specticles. While wearing them, you can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
+            Curse. You treat all light as dim light for the purposes of vision while wearing them.</description>
         </sheet>
         <rules>
             <stat name="cursesmith:curses" value="1" />
@@ -818,26 +835,6 @@
         </rules>
     </element>
 
-    <element name="Chain of Agony" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_CURSESMITH_CHAIN_AGONY">
-        <supports>Specialization Upgrade, Cursesmith</supports>
-        <prerequisite>9th level</prerequisite>
-        <requirements>[level:9]</requirements>
-        <description>
-            <p><em>Prerequisite: 9th level</em></p>
-            <p>You forge a 10 feet of non-magical chains into a set of magical chains. Choosing a command word, when you speak it while carrying the chains, they spring to life, wrapping around Large or smaller creature of your choice within 15 feet. The target creature must make a Dexterity saving throw, or become restrained on failure.</p>
-            <p class="indent">The target is restrained for 1d6 turns. For each turn it is restrained, it takes 1d4 * the number of turns it has been restrained necrotic damage. The creature can make an athletics or acrobatics check against your spell save DC to try to end the effect early.</p>
-            <p class="indent">The chains have an AC of 16, hit points equal to twice your Inventor level, and resistance to non-magical bludgeoning and piercing damage. If they are destroyed, a restrain creature is freed.</p>
-            <p class="indent">Once the chains have been used, they fall to the ground as mundane chains their magic does not recharge until you complete a short or long rest. Destroyed chains are restored to on completing a short or long rest.</p>
-        </description>
-        <sheet>
-            <description usage="1/Short Rest">You forge a 10 feet of non-magical chains into a set of magical chains. Choosing a command word, when you speak it while carrying the chains, they spring to life, wrapping around Large or smaller creature of your choice within 15 feet. The target creature must make a Dexterity saving throw, or become restrained on failure. The target is restrained for 1d6 turns. For each turn it is restrained, it takes 1d4 * the number of turns it has been restrained necrotic damage. The creature can make an athletics or acrobatics check against your spell save DC to try to end the effect early. The chains have an AC of 16, {{chains:hp}} hit points, and resistance to non-magical bludgeoning and piercing damage. If they are destroyed, a restrained creature is freed. Once the chains have been used, they fall to the ground as mundane chains their magic does not recharge until you complete a short or long rest. Destroyed chains are restored to on completing a short or long rest.</description>
-        </sheet>
-        <rules>
-            <stat name="chains:hp" value="level:inventor" />
-            <stat name="chains:hp" value="level:inventor" />
-        </rules>
-    </element>
-
     <element name="Spell Eating Ring" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_CURSESMITH_SPELL_EATING_RING">
         <supports>Specialization Upgrade, Cursesmith</supports>
         <prerequisite>9th level</prerequisite>
@@ -945,19 +942,6 @@
         </description>
         <sheet>
             <description>When you awaken your weapon, it deals an additional 1d6 necrotic damage on damage rolls.</description>
-        </sheet>
-    </element>
-
-    <element name="Infused Power" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_CURSESMITH_INFUSED_POWER">
-        <supports>Specialization Upgrade, Cursesmith</supports>
-        <prerequisite>11th level, Consuming Power</prerequisite>
-        <requirements>[level:11], ID_KTH_INVENTOR_UPGRADE_CURSESMITH_CONSUMING_POWER</requirements>
-        <description>
-            <p><em>Prerequisite: 11th level, Consuming Power</em></p>
-            <p>You make the Strength granted by the worn item your own; the maximum Strength you can draw from them by sacrificing Charisma becomes 22, and while activated you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, and your unarmed strikes become deal 1d4 bludgeoning damage.</p>
-        </description>
-        <sheet>
-            <description>You make the Strength granted by the worn item your own; the maximum Strength you can draw from them by sacrificing Charisma becomes 22, and while activated you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift, and your unarmed strikes become deal 1d4 bludgeoning damage.</description>
         </sheet>
     </element>
 
@@ -1110,7 +1094,8 @@
             <description usage="1/Short Rest">While attuned to this artifact, you can cast a 1st or 2nd level spell of your choice once per short rest without expended a spell slot.</description>
         </sheet>
         <rules>
-            <select type="Spell" name="Innate Magics" supports="2" />
+            <select type="Spell" name="Innate Magics (1)" supports="1" optional="true" />
+            <select type="Spell" name="Innate Magics (2)" supports="2" optional="true" />
         </rules>
     </element>
     <element name="Death Defiant" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_CURSESMITH_TRUE_ARTIFACT_DEATH">
@@ -2982,6 +2967,21 @@
 
     <!--WARSMITH UPGRADES-->
 
+    <element name="Adaptable Armor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ADAPTABLE_ARMOR">
+        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
+        <description>
+            <p>You integrate deployable hooks and fins into your armor, augmenting its mobility. While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+            <p class="indent">Additionally, you gain a swim speed equal to your walking speed.</p>
+        </description>
+        <sheet>
+            <description>While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. Additionally, you gain a swim speed equal to your walking speed.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="speed" bonus="base" />
+            <stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+
     <element name="Assume Control" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ASSUME_CONTROL">
         <supports>Specialization Upgrade, Warsmith</supports>
         <prerequisite>9th level, Emergency Protocol</prerequisite>
@@ -3173,21 +3173,6 @@
         <sheet>
             <description>If a creature ends turn while grappled by your Warplate Gauntlet, it takes {{strength:modifier}} damage.</description>
         </sheet>
-    </element>
-
-    <element name="Adaptable Armor" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_ADAPTABLE_ARMOR">
-        <supports>Specialization Upgrade, Warsmith, Unrestricted</supports>
-        <description>
-            <p>You integrate deployable hooks and fins into your armor, augmenting its mobility. While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
-            <p class="indent">Additionally, you gain a swim speed equal to your walking speed.</p>
-        </description>
-        <sheet>
-            <description>While wearing your armor you gain a climbing speed equal to your walking speed, and you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. Additionally, you gain a swim speed equal to your walking speed.</description>
-        </sheet>
-        <rules>
-            <stat name="speed:climb" value="speed" bonus="base" />
-            <stat name="speed:swim" value="speed" bonus="base" />
-        </rules>
     </element>
 
     <element name="Earth Projector" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_WARSMITH_EARTH_PROJECTOR">
@@ -3777,6 +3762,23 @@
         <rules>
             <grant type="Racial Trait" id="ID_WOTC_TOA_RACIAL_TRAIT_TORTLE_NATURAL_ARMOR" />
             <grant type="Racial Trait" id="ID_WOTC_TOA_RACIAL_TRAIT_TORTLE_SHELL_DEFENSE" />
+        </rules>
+    </element>
+
+    <element name="Adaptive Response" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_ADAPTIVE_RESPONSE">
+        <supports>Specialization Upgrade, Fleshsmith</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>You attain full mastery of your body and its functionality, able to detect when it malfunctions. As a reaction to failing a saving throw against becoming paralyzed, blinded, deafened, poisoned or infected by a disease as the result of failing a constitution saving throw, you can end the effect, even if you would normally not be able to take reactions due to the effect.</p>
+            <p class="indent">Once you do this, you cannot do this again until you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short rest" action="Reaction">As a reaction to failing a saving throw against becoming paralyzed, blinded, deafened, poisoned or infected by a disease as the result of failing a constitution saving throw, you can end the effect, even if you would normally not be able to take reactions due to the effect.</description>
+        </sheet>
+        <rules>
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
