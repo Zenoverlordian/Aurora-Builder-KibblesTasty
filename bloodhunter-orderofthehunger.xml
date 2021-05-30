@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.0.1">
+        <update version="1.0.2">
             <file name="bloodhunter-orderofthehunger.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/bloodhunter-orderofthehunger.xml" />
         </update>
     </info>
@@ -32,6 +32,10 @@
             <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_MIST_WALK" level="15" />
             <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_DARK_LIFE" level="15" />
             <grant type="Archetype Feature" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_INESCAPABLE_PURSUIT" level="18" />
+            <stat name="crimson rite:damage die" value="4" bonus="crimson rite" level="1" />
+            <stat name="crimson rite:damage die" value="6" bonus="crimson rite" level="6" />
+            <stat name="crimson rite:damage die" value="8" bonus="crimson rite" level="11" />
+            <stat name="crimson rite:damage die" value="10" bonus="crimson rite" level="16" />
         </rules>
     </element>
     <element name="Cursed Halflife" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_CURSED_HALFLIFE">
