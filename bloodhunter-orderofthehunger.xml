@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.0.2">
+        <update version="1.0.3">
             <file name="bloodhunter-orderofthehunger.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/bloodhunter-orderofthehunger.xml" />
         </update>
     </info>
@@ -58,7 +58,7 @@
             <p class='indent'>This form suffers from some aspects of a vampire's cursed nature. If you start your turn in sunlight you take 1d4 radiant damage, and if you start your turn in running water, you take 1d4 acid damage. Any magical healing you receive from non-Necromancy spells is reduced by half.</p>
         </description>
         <sheet>
-            <description action="Bonus Action">You gain the ability to use a dark rite as a bonus action, awakening your vampiric blood. When you activate this rite, you lose 1d{{crimson rite:damage die}} hit points, and assume a vampiric form for 1 minute, or until you end it as an action. For the duration, your visage becomes pallid and vampiric, fangs lengthening and eyes turning a glowing red. You can see in dim light or darkness as if it is bright light, gain a climbing speed of {{speed}}, and your fangs become a natural weapon, which you can use once per turn to make an unarmed strike. If you hit with it, you deal piercing damage equal to 1d6 + {strength:modifier}, and necrotic damage equal to 2d{{crimson rite:damage die}}. You have advantage with this attack against targets you are grappling. If the target was a living creature of CR 1/4 or more that has blood, you regain hit points equal to the necrotic damage dealt up to the amount of hit points you had the end of your last turn. If you start your turn in sunlight you take 1d4 radiant damage, and if you start your turn in running water, you take 1d4 acid damage. Any magical healing you receive from non-Necromancy spells is reduced by half.</description>
+            <description action="Bonus Action">You gain the ability to use a dark rite as a bonus action, awakening your vampiric blood. When you activate this rite, you lose 1d{{crimson rite:damage die}} hit points, and assume a vampiric form for 1 minute, or until you end it as an action. For the duration, your visage becomes pallid and vampiric, fangs lengthening and eyes turning a glowing red. You can see in dim light or darkness as if it is bright light, gain a climbing speed of {{speed}}, and your fangs become a natural weapon, which you can use once per turn to make an unarmed strike. If you hit with it, you deal piercing damage equal to 1d6 + {{strength:modifier}}, and necrotic damage equal to 2d{{crimson rite:damage die}}. You have advantage with this attack against targets you are grappling. If the target was a living creature of CR 1/4 or more that has blood, you regain hit points equal to the necrotic damage dealt up to the amount of hit points you had the end of your last turn. If you start your turn in sunlight you take 1d4 radiant damage, and if you start your turn in running water, you take 1d4 acid damage. Any magical healing you receive from non-Necromancy spells is reduced by half.</description>
         </sheet>
     </element>
     <element name="Predator's Connection" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_PREDATORS_CONNECTION">
@@ -98,8 +98,12 @@
             <p>Additionally at 15th, at the start of your turn while in your vampiric form or under the effect of gaseous form, you regain hit points equal to 1 + your Constitution modifier (minimum of one) if you have at least 1 hit point and no more than half of your hit points left.</p>
         </description>
         <sheet>
-            <description>At the start of your turn while in your vampiric form or under the effect of gaseous form, you regain hit points equal to 1 + {{constitution:modifier}} (minimum of one) if you have at least 1 hit point and no more than half of your hit points left.</description>
+            <description>At the start of your turn while in your vampiric form or under the effect of gaseous form, you regain {{dark life:hp}} hit points (minimum of one) if you have at least 1 hit point and no more than half of your hit points left.</description>
         </sheet>
+        <rules>
+            <stat name="dark life:hp" value="1" />
+            <stat name="dark life:hp" value="constitution:modifier" />
+        </rules>
     </element>
     <element name="Inescapable Pursuit" type="Archetype Feature" source="KibblesTasty's Subclasses" id="ID_KIBBLESTASTY_ARCHETYPE_FEATURE_ORDER_OF_THE_HUNGER_INESCAPABLE_PURSUIT">
         <description>
