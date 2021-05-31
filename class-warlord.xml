@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.4.1">
+        <update version="1.4.2">
             <file name="class-warlord.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-warlord.xml" />
         </update>
     </info>
@@ -101,6 +101,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
             <select type="Proficiency" name="Skill Proficiency, Warlord" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INTIMIDATION" number="3" requirements="!ID_KTH_WARLORD_MULTICLASS_WARLORD" />
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_WARLORD_SPECIALIZATION" level="1" />
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_BATTLEFIELD_PRESENCE" level="1" />
