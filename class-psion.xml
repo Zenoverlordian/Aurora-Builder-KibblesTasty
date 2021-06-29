@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.5.0">
+        <update version="1.5.1">
             <file name="class-psion.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-psion.xml" />
         </update>
     </info>
@@ -257,6 +257,9 @@
         <supports>Psionic Discipline</supports>
         <description>
             <p>Enhancement is the ability to interact with a creature's nature and abilities with your Psionic power.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SKILL" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT_ENHANCING_SURGE" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_ENHANCEMENT_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Enhancement is the ability to interact with a creature's nature and abilities with your Psionic power.</description>
@@ -339,6 +342,9 @@
         <supports>Psionic Discipline</supports>
         <description>
             <p>Projection is the ability to project what is in your mind to the outside world with your Psionic power.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_PROJECT_ITEM" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_ASTRAL_CONSTRUCT" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Projection is the ability to project what is in your mind to the outside world with your Psionic power.</description>
@@ -346,7 +352,7 @@
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_PROJECT_ITEM" />
             <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_ASTRAL_CONSTRUCT" spellcasting="Psion_KTH" />
-            <grant type="Spell" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_ALTERNATE_EFFECTS" spellcasting="Psion_KTH" />
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_ALTERNATE_EFFECTS" />
         </rules>
     </element>
     <element name="Project Item" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION_PROJECT_ITEM">
@@ -420,6 +426,9 @@
         <supports>Psionic Discipline</supports>
         <description>
             <p>Telekinesis is the ability to interact with physical objects and energy with your psionic powers.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS_HANDS" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS_FORCE" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEKINESIS_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Telekinesis is the ability to interact with physical objects and energy with your psionic powers.</description>
@@ -506,6 +515,9 @@
         <supports>Psionic Discipline</supports>
         <description>
             <p>Telepathy is the ability to interact with the minds of other creatures using your psionic abilities.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY_TELEPATHIC_COMMUNICATION" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY_TELEPATHIC_INTRUSION" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Telepathy is the ability to interact with the minds of other creatures using your psionic abilities.</description>
@@ -590,6 +602,9 @@
         <supports>Psionic Discipline</supports>
         <description>
             <p>Transposition is the ability to modify the properties of space and manipulate dimensional boundaries with your psionic powers.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION_FLICKER_STEP" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION_PHASE_RIFT" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Transposition is the ability to modify the properties of space and manipulate dimensional boundaries with your psionic powers.</description>
@@ -678,6 +693,9 @@
         <supports>Psionic Discipline</supports>
         <description>
             <p>Psychokinetics is the mental art of spontaneously creating and controlling energy; sapping energy to freeze or spontaneously creating bursts of fire or arcs of lightning. Dangerous and destructive, it provides devastating power.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_ENERGY_MANIPULATION" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_ELEMENTAL_BLAST" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PSYCHOKINETICS_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Psychokinetics is the mental art of spontaneously creating and controlling energy.</description>
@@ -866,6 +884,9 @@
         <description>
             <p>Precognition is the ability to see what lies ahead, piercing the veil of the future. Seeing things that most people cannot a Psion with Precognitive abilites can, to a limited extent, know the future; such a future is known by tracing it's roots from the present, and grows more mysterious and cloudy as such roots grow distance.</p>
             <p class="indent">Such a future can be changed by the actions of the present, particularly by knowledge of said future and action to prevent or change it. This is the function most often leveraged by Precognitive Psions, peering into the future to steer around courses they seek to prevent or steer toward a possible outcome they seek.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_PRESCIENCE" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_SEEING" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Precognition is the ability to see what lies ahead, piercing the veil of the future.</description>
@@ -954,6 +975,9 @@
         <supports>Psionic Discipline</supports>
         <description>
             <p>Nullification is the ability to interfere with the supernatural effects of the world, reverting reality back it's original state.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATION_DISRUPTIVE_TOUCH" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATION_DENIAL" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATIONALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Nullification is the ability to interfere with the supernatural effects of the world, reverting reality back it's original state.</description>
@@ -1039,6 +1063,9 @@
         <supports>Psionic Discipline</supports>
         <description>
             <p>Your psychic powers are that of a predator, and your prey is the minds of others. Their thoughts, their feelings, their vital psionic energies are your food.</p>
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION_ADAPTIVE_HUNTER" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION_MIND_LEECH" />
+            <div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION_ALTERNATE_EFFECTS" />
         </description>
         <sheet>
             <description>Your prey is the minds of others. Their thoughts, their feelings, their vital psionic energies are your food.</description>
