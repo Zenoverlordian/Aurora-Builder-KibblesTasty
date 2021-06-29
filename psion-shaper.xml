@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.4.0">
+        <update version="1.5.0">
             <file name="psion-shaper.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-shaper.xml" />
         </update>
     </info>
@@ -87,7 +87,7 @@
             <p class="indent">Once you create an additional duplicate, you cannot do so again until you complete a short or long rest.</p>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">When you use Replicate, one additional Astral Construct is created and can be controlled with your action (commands only affect one of your choice). This additional construct lasts until the start of your next turn and cannot be sustained.</description>
+            <description usage="1/Short rest">When you use Replicate, one additional Astral Construct is created and can be controlled with your action (commands only affect one of your choice). This additional construct lasts until the start of your next turn and cannot be sustained.</description>
         </sheet>
     </element>
     <element name="Projected Nightmares" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_PROJECTED_NIGHTMARES">

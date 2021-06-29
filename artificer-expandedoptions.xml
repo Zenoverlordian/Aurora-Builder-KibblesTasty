@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.1">
+        <update version="2.2.3">
             <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-expandedoptions.xml" />
         </update>
     </info>
@@ -1094,8 +1094,7 @@
             <description usage="1/Short Rest">While attuned to this artifact, you can cast a 1st or 2nd level spell of your choice once per short rest without expended a spell slot.</description>
         </sheet>
         <rules>
-            <select type="Spell" name="Innate Magics (1)" supports="1" optional="true" />
-            <select type="Spell" name="Innate Magics (2)" supports="2" optional="true" />
+            <select type="Spell" name="Innate Magics" supports="(1||2)" level="15" />
         </rules>
     </element>
     <element name="Death Defiant" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_CURSESMITH_TRUE_ARTIFACT_DEATH">
@@ -3689,7 +3688,7 @@
             </div>
         </description>
         <sheet>
-            <description usage="{{constitution:modifier}}/Short/Long rest" action="Bonus Action">You gain a pool of {{constitution:modifier}} d4s. As a bonus action, you can expend an amount of these d4s, adding them to the next damage roll you make with a natural weapon before the end of your turn. The pool of d4s recharge at the end of a short or long rest. Additionally, you learn the <em>acid splash</em> cantrip. When casting it using this upgrade, it does not require verbal or somatic components and you can use your Constitution as your spell casting modifier for it instead of your Intelligence modifier. You can expend the d4s granted by Acid Gland on the damage roll of acid splash, following the same restrictions as natural weapons.</description>
+            <description usage="{{constitution:modifier}}/Short rest" action="Bonus Action">You gain a pool of {{constitution:modifier}} d4s. As a bonus action, you can expend an amount of these d4s, adding them to the next damage roll you make with a natural weapon before the end of your turn. The pool of d4s recharge at the end of a short or long rest. Additionally, you learn the <em>acid splash</em> cantrip. When casting it using this upgrade, it does not require verbal or somatic components and you can use your Constitution as your spell casting modifier for it instead of your Intelligence modifier. You can expend the d4s granted by Acid Gland on the damage roll of acid splash, following the same restrictions as natural weapons.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" spellcasting="Inventor" />
@@ -3829,7 +3828,7 @@
             <p class="indent">Once you've benefited from this nourishment, you must take a short or long rest before you can benefit from it again. If you have no spell slots remaining, you can benefit from this nourishment again even without resting.</p>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">When you kill a creature with a CR of 1/4 or higher with your Extra Fangs or Devouring Maw, you regain an expanded spell slot equal to half the creatures CR (minimum first level spell slot). Once you've benefited from this nourishment, you must take a short or long rest before you can benefit from it again. If you have no spell slots remaining, you can benefit from this nourishment again even without resting.</description>
+            <description usage="1/Short rest">When you kill a creature with a CR of 1/4 or higher with your Extra Fangs or Devouring Maw, you regain an expanded spell slot equal to half the creatures CR (minimum first level spell slot). Once you've benefited from this nourishment, you must take a short or long rest before you can benefit from it again. If you have no spell slots remaining, you can benefit from this nourishment again even without resting.</description>
         </sheet>
     </element>
 

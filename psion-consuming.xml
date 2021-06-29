@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="1.5.0">
+            <file name="psion-consuming.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-consuming.xml" />
+        </update>
+    </info>
+
+    <element name="Consuming Mind" type="Archetype" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_CONSUMING">
+        <supports>Psionic Archetype</supports>
+        <description>
+            <p>A dangerous branch of psionics that are born from the ability to sap energy from other creatures, tearing from them their thoughts, their mind, and ultimately their vitality for your own consumption. A feared branch of power, it is often believed to be one of the roots of psionic power as it is a branch of power found in many of the most ancient and terrible practitioners of psionics, such as Illithids and Aboleths.</p>
+            <p class="indent">It has been refined by those that seek greater power either from ambition or desperation, and unlocks a terrible but effective path. One example of mortal creatures walking this path is the drow House Oblodra, who developed their dark powers from their study of feral vampiric mindflayers.</p>
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_PSIONIC_PREDATOR" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_DARK_LURKER" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_RAVENOUS_POWERS" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_EMPOWERED_PSIONICS" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_MIND_VAMPIRE" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_SHATTERED_HUSKS" />
+        </description>
+        <sheet display="false">
+            <description>A dangerous branch of psionics that are born from the ability to sap energy from other creatures, tearing from them their thoughts, their mind, and ultimately their vitality for your own consumption.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_PSIONIC_PREDATOR" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_DARK_LURKER" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_RAVENOUS_POWERS" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_EMPOWERED_PSIONICS" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_MIND_VAMPIRE" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_SHATTERED_HUSKS" level="14" />
+        </rules>
+    </element>
+    <element name="Psionic Predator" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_PSIONIC_PREDATOR">
+        <description>
+            <p>At 1st level when you select this archetype, you gain the ability to consume the psionic power of others. You gain the psionic discipline of Consumption.</p>
+        </description>
+        <sheet>
+            <description>You gain the psionic discipline of Consumption.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION" />
+        </rules>
+    </element>
+    <element name="Dark Lurker" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_DARK_LURKER">
+        <description>
+            <p>Additionally at 1st level, your powers grant you intuition that allows you to better adapt and survive as a mind hunter. You gain proficiency in Stealth and Deception.</p>
+            <p class="indent">When you use psionic abilities, you can make an Intelligence (Deception) check contested by a target's Wisdom (Insight) to conceal your use of psionic powers, suppressing their usual visible indicators. If you spend psi points on the ability, you must subtract the psi points spent from your Intelligence (Deception) roll result (concealing greater uses of psionics being more difficult).</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in Stealth and Deception. When you use psionic abilities, you can make an Intelligence (Deception) check contested by a target's Wisdom (Insight) to conceal your use of psionic powers, suppressing their usual visible indicators. If you spend psi points on the ability, you must subtract the psi points spent from your Intelligence (Deception) roll result.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+        </rules>
+    </element>
+    <element name="Ravenous Powers" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_RAVENOUS_POWERS">
+        <description>
+            <p>Starting at 3rd level, you gain the psionic talent Mind Devourer; this talent ignores the normal level restriction, and does not count against your Psionic Talents known, but cannot be switched out on leveling up.</p>
+            <p class="indent">Additionally, you can gain the benefit of this talent from a range of 30 feet when the creature is killed by one of your Psionic powers.</p>
+        </description>
+        <sheet>
+            <description>You gain the psionic talent Mind Devourer; this talent ignores the normal level restriction, and does not count against your Psionic Talents known, but cannot be switched out on leveling up. Additionally, you can gain the benefit of this talent from a range of 30 feet when the creature is killed by one of your Psionic powers.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_TALENT_MIND_DEVOURER" />
+        </rules>
+    </element>
+    <element name="Empowered Psionics" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_EMPOWERED_PSIONICS">
+        <description>
+            <p>Starting at 6th level, when you deal damage with a Psionic Discipline power you can add your Intelligence modifier to the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>When you deal damage with a Psionic Discipline power you can add {{intelligence:modifier}} to the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Mind Vampire" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_MIND_VAMPIRE">
+        <description>
+            <p>Starting at 10th level, you can trigger Mind Devourer anytime you deal psychic damage to a target within 30 feet, regardless if it kills the target or not.</p>
+            <p class="indent">Further, you can have additional psi points (over your normal limit) equal to your half your Intelligence modifier (rounded down) when gaining psi points from Mind Devourer, but any additional psi points are lost when you complete a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>You can trigger Mind Devourer anytime you deal psychic damage to a target within 30 feet, regardless if it kills the target or not. Further, you can have additional {{intelligence:modifier:half}} psi points (over your normal limit) when gaining psi points from Mind Devourer, but any additional psi points are lost when you complete a short or long rest.</description>
+        </sheet>
+    </element>
+    <element name="Shattered Husks" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_CONSUMING_SHATTERED_HUSKS">
+        <description>
+            <p>Starting at 14th level, your Mind Leech ability always gains the Shredding modifier, and it does not cost a psi point to add the modifier.</p>
+            <p class="indent">Further, you can use additional power to leave their mind further vulnerable. You can spend additional psi points on the Shredding modifier to further reduce their next Wisdom, Intelligence or Charisma saving throw (up to 2 additional points to reduce it by a total of 3d4). Once this is effect has been applied to a creature, you cannot spend additional psi points on the Shredding modifier against the creature until 1 hour has passed.</p>
+        </description>
+        <sheet>
+            <description>Your Mind Leech ability always gains the Shredding modifier, and it does not cost a psi point to add the modifier. You can spend additional psi points on the Shredding modifier to further reduce their next Wisdom, Intelligence or Charisma saving throw (up to 2 additional points to reduce it by a total of 3d4). Once this is effect has been applied to a creature, you cannot spend additional psi points on the Shredding modifier against the creature until 1 hour has passed.</description>
+        </sheet>
+    </element>
+
+</elements>

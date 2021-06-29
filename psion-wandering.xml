@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="1.5.0">
+            <file name="psion-wandering.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-wandering.xml" />
+        </update>
+    </info>
+
+    <element name="Wandering Mind" type="Archetype" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_WANDERING">
+        <supports>Psionic Archetype</supports>
+        <description>
+            <p>A Wandering Mind is among the more mysterious incarnates of psions, these are individuals that just aren't quite rooted in the same reality everyone else is... they find it more pliable and slippery, and prone to jumping right through it on occasion.</p>
+            <p class="indent">How they get their powers varies. Some were born in the ethereal plane or went through a portal too young. Sometimes it is just that their mind just works along an axis most people cannot understand. No matter its source, they manifest a truly unique ability to treat certain aspects of the metaphysical with a certain mundanity, and are prone to treating their powers as absolutely natural things as one might use an arm or a leg.</p>
+            <p class="indent">They tend toward curious and chaotic, unbounded and hard to pin down, they are natural wanderings in mind and body.</p>
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_SPACIAL_MANIPULATION" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_NOMADS_GEAR" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_CURIOUS_MIND" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_CUNNING_STRIKES" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_PHASE_DANCER" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_FLICKERING_PRESENCE" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_PLANESWALKER" />
+            <div element="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_WINDING_PATHS" />
+        </description>
+        <sheet display="false">
+            <description>A Wandering Mind is among the more mysterious incarnates of psions, these are individuals that just aren't quite rooted in the same reality everyone else is.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_SPACIAL_MANIPULATION" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_NOMADS_GEAR" level="1" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_CURIOUS_MIND" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_CUNNING_STRIKES" level="3" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_PHASE_DANCER" level="6" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_FLICKERING_PRESENCE" level="10" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_PLANESWALKER" level="14" />
+            <grant type="Archetype Feature" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_WINDING_PATHS" level="14" />
+        </rules>
+    </element>
+    <element name="Spatial Manipulation" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_SPACIAL_MANIPULATION">
+        <description>
+            <p>At 1st level when you select this archetype, you mind grows a greater perspective on the nature of space and dimensions, allowing you to manipulate it and your relation to it, granting you the psionic discipline of Transposition.</p>
+            <p class="indent">Additionally, your connected to your transdimensional powers are such that you can slide through the spaces you see in dimensions as another might slip through a tight space, without conscious thought or effort. You can use your Dexterity ability score in place of your Intelligence ability score calculating the DC or attack roll modifier of Transpositional powers, alternate effects, or talents that require the Transpositional discipline.</p>
+        </description>
+        <sheet>
+            <description>You can use your Dexterity ability score in place of your Intelligence ability score calculating the DC or attack roll modifier of Transpositional powers, alternate effects, or talents that require the Transpositional discipline.</description>
+        </sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION" />
+        </rules>
+    </element>
+    <element name="Nomad's Gear" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_NOMADS_GEAR">
+        <description>
+            <p>Additionally at 1st level, you gain proficiency with martial weapons and medium armor.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency with martial weapons and medium armor.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+        </rules>
+    </element>
+    <element name="Cunning Strikes" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_CUNNING_STRIKES">
+        <description>
+            <p>Starting at 3rd level, you gain the Rift Strike talent. If you already have the Phase Slash talent. It does not count against your Psionic Talents known, but cannot be switched out on leveling up.</p>
+        </description>
+        <sheet display="false">
+            <description>Starting at 3rd level, you gain the Rift Strike talent. If you already have the Phase Slash talent. It does not count against your Psionic Talents known, but cannot be switched out on leveling up.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Cunning Strikes" supports="Psionic Talent" default="ID_KIBBLESTASTY_PSION_TALENT_RIFT_STRIKE" />
+        </rules>
+    </element>
+    <element name="Curious Mind" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_CURIOUS_MIND">
+        <description>
+            <p>Starting at 3rd level, your wandering mind adapts to new situations constantly. At the end of a long rest select two skills you do not have proficiency in, until the end of your next long rest, you can add half your proficiency modifier (rounded down) to ability checks for those skills.</p>
+        </description>
+        <sheet>
+            <description>At the end of a long rest select two skills you do not have proficiency in, until the end of your next long rest, you can add {{proficiency:half}} to ability checks for those skills.</description>
+        </sheet>
+    </element>
+    <element name="Phase Dancer" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_PHASE_DANCER">
+        <description>
+            <p>Starting at 6th level, you automatically gain one illusory duplicate as per the blurring modifier when using your Phase Rift power and your first attack roll before the end of your turn after using Phase Rift gains advantage.</p>
+        </description>
+        <sheet>
+            <description>You automatically gain one illusory duplicate as per the blurring modifier when using your Phase Rift power and your first attack roll before the end of your turn after using Phase Rift gains advantage.</description>
+        </sheet>
+    </element>
+    <element name="Flickering Presence" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_FLICKERING_PRESENCE">
+        <description>
+            <p>Starting at 10th level, your unspent Psionic Mastery points are not lost until the start of your next turn, but can only be used to cast <em>flicker</em>.</p>
+            <p class="indent">Additionally, when you roll for the effect of <em>flicker</em> or <em>blink</em> you can expend 1 psi point to reroll the result. You can select which of the two results you would like to use.</p>
+        </description>
+        <sheet>
+            <description usage="Psi">Your unspent Psionic Mastery points are not lost until the start of your next turn, but can only be used to cast <em>flicker. Additionally, when you roll for the effect of <em>flicker</em> or <em>blink</em> you can expend 1 psi point to reroll the result. You can select which of the two results you would like to use.</em>.</description>
+        </sheet>
+    </element>
+    <element name="Planeswalker" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_PLANESWALKER">
+        <description>
+            <p>Starting at 14th level, your understanding of how to traverse space expands to a previously incomprehensible scale. You gain the ability to cast planeshift and teleport. You can cast one of these spells per day once without expending a spell slot or use of innate psionics. Once you do this, you must complete a long rest before you can use them again, or use your 7th level or Higher use of Innate Psionics instead of the spell selected for that level to cast these spells again before completing a long rest. If you already have one of these spells selected for your 7th level Innate Psionic power, you can select a new 7th level spell from the Psion list for that slot.</p>
+        </description>
+        <sheet>
+            <description>You gain the ability to cast planeshift and teleport. You can cast one of these spells per day once without expending a spell slot or use of innate psionics. Once you do this, you must complete a long rest before you can use them again, or use your 7th level or Higher use of Innate Psionics instead of the spell selected for that level to cast these spells again before completing a long rest. If you already have one of these spells selected for your 7th level Innate Psionic power, you can select a new 7th level spell from the Psion list for that slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_PLANE_SHIFT" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_TELEPORT" />
+        </rules>
+    </element>
+    <element name="Winding Paths" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_WINDING_PATHS">
+        <description>
+            <p>Additionally at 14th level, your phase rift no longer has to go in a straight line, though it can only pass through a creature's space once.</p>
+        </description>
+        <sheet>
+            <description>Your phase rift no longer has to go in a straight line, though it can only pass through a creature's space once.</description>
+        </sheet>
+    </element>
+
+</elements>

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.1.1">
+        <update version="1.1.2">
             <file name="class-occultist.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-occultist.xml" />
         </update>
     </info>
@@ -959,7 +959,7 @@
             </div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">You can cast speak with dead without expending a spell slot.</description>
+            <description usage="1/Short rest">You can cast speak with dead without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
@@ -1015,7 +1015,7 @@
             <p>You learn of a ritual lost to time. Select on occultist spell you know of 5th level or lower. This spell becomes a ritual spell for you. You can cast this spell as a ritual once, and must complete a short or long rest before casting it as a ritual again.</p>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">Select on occultist spell you know of 5th level or lower. This spell becomes a ritual spell for you. You can cast this spell as a ritual once, and must complete a short or long rest before casting it as a ritual again.</description>
+            <description usage="1/Short rest">Select on occultist spell you know of 5th level or lower. This spell becomes a ritual spell for you. You can cast this spell as a ritual once, and must complete a short or long rest before casting it as a ritual again.</description>
         </sheet>
     </element>
 

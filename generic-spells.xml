@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.0.1">
+        <update version="1.0.2">
             <file name="generic-spells.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/generic-spells.xml" />
         </update>
     </info>
@@ -1037,6 +1037,32 @@
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <!--FIRE-->
+    
+    <element name="Fire Cyclone" type="Spell" source="KibblesTasty Generic Spells" id="ID_KTH_GS_SPELL_FIRE_CYCLONE">
+        <supports>Druid, Sorcerer, Wizard</supports>
+        <description>
+            <p>Targeting a point you can see, you cause a cyclone made of whipping flames with a radius of 5 feet and height of 30 feet to form.</p>
+            <p class="indent">When a creature starts its turn inside the cyclone's radius or enters it for the first time during a turn, it must make a Strength saving throw. On a failed saving throw, it takes 3d6 fire damage and, if it is entirely inside the cyclone's area, it's also flung 15 feet upwards and lands 15 feet in a randomly determined horizontal direction. On a successful save, the creature takes half as much damage and is not flung. When a creature is not entirely inside the cyclone's radius but within 30 feet of its center at the start of its turn, it still feels the intense draw of the raging cyclone, and must spend 2 feet (or 3 feet if it is flying) of movement for every 1 foot it moves away from the cyclone.</p>
+            <p class="indent">If a creature starts its turn outside of the cyclone's radius but within 10 feet of its center, it must make a Strength saving throw or be pulled 5 feet toward the center of it.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 and the height of the cyclone as well as the distance a creature is thrown upward increases by 5 feet for each level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration, up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a pinch of ashes from a forest fire</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>

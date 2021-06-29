@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.0">
+        <update version="2.2.1">
             <file name="class-artificer.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-artificer.xml" />
         </update>
     </info>
@@ -499,7 +499,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">You can use this device to cast shatter or thunderburst mine without expending a spell slot.</description>
+            <description usage="1/Short rest">You can use this device to cast shatter or thunderburst mine without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_SHATTER" />
@@ -518,7 +518,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">You can use this device to cast shatter or thunderburst mine without expending a spell slot.</description>
+            <description usage="1/Short rest">You can use this device to cast shatter or thunderburst mine without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_SHATTER" />
@@ -535,7 +535,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">While you are wearing this belt, you can use an action to cast <em>Enlarge/Reduce</em> on yourself without expending a spell slot.</description>
+            <description usage="1/Short rest" action="Action">While you are wearing this belt, you can use an action to cast <em>Enlarge/Reduce</em> on yourself without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
@@ -550,7 +550,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">While you are wearing this belt, you can use an action to cast <em>Enlarge/Reduce</em> on yourself without expending a spell slot.</description>
+            <description usage="1/Short rest" action="Action">While you are wearing this belt, you can use an action to cast <em>Enlarge/Reduce</em> on yourself without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_ENLARGE_REDUCE" />
@@ -566,7 +566,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">You can activate this device and cast absorb elements without expending a spell slot.</description>
+            <description usage="1/Short rest" action="Action">You can activate this device and cast absorb elements without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
@@ -581,7 +581,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">You can activate this device and cast absorb elements without expending a spell slot.</description>
+            <description usage="1/Short rest" action="Action">You can activate this device and cast absorb elements without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
@@ -607,7 +607,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">You can activate this device and cast Aganazzar's Scorcher without expending a spell slot.</description>
+            <description usage="1/Short rest" action="Action">You can activate this device and cast Aganazzar's Scorcher without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" />
@@ -622,7 +622,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">You can activate this device and cast Aganazzar's Scorcher without expending a spell slot.</description>
+            <description usage="1/Short rest" action="Action">You can activate this device and cast Aganazzar's Scorcher without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" />
@@ -635,7 +635,7 @@
             <p>You create a high luminary discharge device. As an action, you can target a point within 30 feet. Any creature within 20 feet of the targeted point must make a Dexterity saving throw or be blinded until the end of its next turn. Once you use this gadget, you cannot use it again until you complete a short or long rest.</p>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">As an action, you can target a point within 30 feet. Any creature within 20 feet of the targeted point must make a Dexterity saving throw or be blinded until the end of its next turn.</description>
+            <description usage="1/Short rest" action="Action">As an action, you can target a point within 30 feet. Any creature within 20 feet of the targeted point must make a Dexterity saving throw or be blinded until the end of its next turn.</description>
         </sheet>
     </element>
     <element name="Flashbang" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_XDK_GADGETSMITH_FLASHBANG">
@@ -644,7 +644,7 @@
             <p>You create a high luminary discharge device. As an action, you can target a point within 30 feet. Any creature within 20 feet of the targeted point must make a Dexterity saving throw or be blinded until the end of its next turn. Once you use this gadget, you cannot use it again until you complete a short or long rest.</p>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">As an action, you can target a point within 30 feet. Any creature within 20 feet of the targeted point must make a Dexterity saving throw or be blinded until the end of its next turn.</description>
+            <description usage="1/Short rest" action="Action">As an action, you can target a point within 30 feet. Any creature within 20 feet of the targeted point must make a Dexterity saving throw or be blinded until the end of its next turn.</description>
         </sheet>
     </element>
 
@@ -657,7 +657,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">You can activate this device and cast fall without expending a spell slot.</description>
+            <description usage="1/Short rest" action="Action">You can activate this device and cast fall without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_KTH_INVENTOR_SPELL_FALL" />
@@ -672,7 +672,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest" action="Action">You can activate this device and cast fall without expending a spell slot.</description>
+            <description usage="1/Short rest" action="Action">You can activate this device and cast fall without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_KTH_INVENTOR_SPELL_FALL" />
@@ -1105,7 +1105,7 @@
             <p>You create a rope that is capable of animating and binding a target. As an action, choose a target creature within 30 feet. The target must make a Dexterity saving throw against your Spell Save DC or become restrained until the end of your next turn. If you are currently grappling the target, it makes the Dexterity saving throw with disadvantage. The rope can only restrain one target at a time.</p>
         </description>
         <sheet>
-            <description action="Action" usage="1/Short/Long rest">As an action, choose a target creature within 30 feet. The target must make a Dexterity saving throw against your Spell Save DC or become restrained until the end of your next turn. If you are currently grappling the target, it makes the Dexterity saving throw with disadvantage. The rope can only restrain one target at a time.</description>
+            <description action="Action" usage="1/Short rest">As an action, choose a target creature within 30 feet. The target must make a Dexterity saving throw against your Spell Save DC or become restrained until the end of your next turn. If you are currently grappling the target, it makes the Dexterity saving throw with disadvantage. The rope can only restrain one target at a time.</description>
         </sheet>
     </element>
 
@@ -1135,7 +1135,7 @@
 			</div>
         </description>
         <sheet>
-            <description action="Bonus Action" usage="1/Short/Long rest">When you use a Smoke Bomb, you can use a bonus action to cast mirror image without expending a spell slot.</description>
+            <description action="Bonus Action" usage="1/Short rest">When you use a Smoke Bomb, you can use a bonus action to cast mirror image without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
@@ -1154,7 +1154,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">When you use a Smoke Bomb you can cast misty step without expending a spell slot.</description>
+            <description usage="1/Short rest">When you use a Smoke Bomb you can cast misty step without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" />
@@ -1176,7 +1176,7 @@
 			</div>
         </description>
         <sheet>
-            <description action="Action" usage="1/Short/Long rest">You can use this device to cast dispel magic without expending a spell slot.</description>
+            <description action="Action" usage="1/Short rest">You can use this device to cast dispel magic without expending a spell slot.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" />
@@ -1219,7 +1219,7 @@
 			</div>
         </description>
         <sheet>
-            <description usage="1/Short/Long rest">When you use a Smoke Bomb, you can choose to cast stinking cloud rather than fog cloud, following the same rules.</description>
+            <description usage="1/Short rest">When you use a Smoke Bomb, you can choose to cast stinking cloud rather than fog cloud, following the same rules.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" />
