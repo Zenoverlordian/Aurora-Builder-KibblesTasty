@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.5.0">
+        <update version="1.5.1">
             <file name="psion-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-expandedoptions.xml" />
         </update>
     </info>
@@ -67,18 +67,6 @@
             <description>If you take a short or long rest while having access to the corpse of a fallen foe that died in the last hour and that had an Intelligence of 8 or higher, you can consume part of their mind, gaining extra psi points over your normal limit equal to the creature's CR (up to {{proficiency}}).</description>
         </sheet>
     </element>
-    <element name="Mind Thief" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_MIND_THIEF">
-        <supports>Psionic Talent</supports>
-        <prerequisite>Consumption Discipline</prerequisite>
-        <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_CONSUMPTION</requirements>
-        <description>
-            <p><em>Prerequisite: Consumption Discipline</em></p>
-            <p>You can gain an additional number of skill, tool, or language proficiencies from Adaptive Hunter equal to half your proficiency bonus (rounded down) before losing the previously gained proficiency. If you would gain an additional proficiency from it beyond that, the first one you gained is lost.</p>
-        </description>
-        <sheet>
-            <description>You can gain an additional {{proficiency:half}} skill, tool, or language proficiencies from Adaptive Hunter before losing the previously gained proficiency. If you would gain an additional proficiency from it beyond that, the first one you gained is lost.</description>
-        </sheet>
-    </element>
     <element name="Tranquil Meditation" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TRANQUIL_MEDITATION">
         <supports>Psionic Talent</supports>
         <prerequisite>Enhancement Discipline</prerequisite>
@@ -89,19 +77,6 @@
         </description>
         <sheet>
             <description>When you take a short rest and expend hit dice, both you and any allied creatures that takes a short rest within 60 feet of you regains additional hit points equal to the number of hit dice you expend + {{intelligence:modifier}}.</description>
-        </sheet>
-    </element>
-    <element name="Vampiric Strength" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_VAMPIRIC_STRENGTH">
-        <supports>Psionic Talent</supports>
-        <prerequisite>Consuming Mind Subclass</prerequisite>
-        <requirements>ID_KIBBLESTASTY_PSION_ARCHETYPE_CONSUMING</requirements>
-        <description>
-            <p><em>Prerequisite: Consuming Mind Subclass</em></p>
-            <p>A creature that is grappled by you has disadvantage on saving throws against your Mind Leech psionic power.</p>
-            <p class="indent">Additionally, a creature that fails its saving throw against Mind Leech has disadvantage on Strength (Athletics) and Dexterity (Acrobatics) checks to contest grapples against you until the start of your next turn.</p>
-        </description>
-        <sheet>
-            <description>A creature that is grappled by you has disadvantage on saving throws against your Mind Leech psionic power. Additionally, a creature that fails its saving throw against Mind Leech has disadvantage on Strength (Athletics) and Dexterity (Acrobatics) checks to contest grapples against you until the start of your next turn.</description>
         </sheet>
     </element>
 
