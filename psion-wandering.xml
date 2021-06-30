@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.5.0">
+        <update version="1.5.1">
             <file name="psion-wandering.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-wandering.xml" />
         </update>
     </info>
@@ -42,10 +42,14 @@
             <p class="indent">Additionally, your connected to your transdimensional powers are such that you can slide through the spaces you see in dimensions as another might slip through a tight space, without conscious thought or effort. You can use your Dexterity ability score in place of your Intelligence ability score calculating the DC or attack roll modifier of Transpositional powers, alternate effects, or talents that require the Transpositional discipline.</p>
         </description>
         <sheet>
-            <description>You can use your Dexterity ability score in place of your Intelligence ability score calculating the DC or attack roll modifier of Transpositional powers, alternate effects, or talents that require the Transpositional discipline.</description>
+            <description>The DC or attack roll modifier of Transpositional powers, alternate effects, or talents that require the Transpositional discipline is {{spatial manip:dc}}.</description>
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KIBBLESTASTY_PSION_DISCIPLINE_TRANSPOSITION" />
+            <stat name="spatial manip:dc" value="8" />
+            <stat name="spatial manip:dc" value="proficiency" />
+            <stat name="spatial manip:dc" value="intelligence:modifier" bonus="stat" />
+            <stat name="spatial manip:dc" value="dexterity:modifier" bonus="stat" />
         </rules>
     </element>
     <element name="Nomad's Gear" type="Archetype Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_ARCHETYPE_FEATURE_WANDERING_NOMADS_GEAR">
