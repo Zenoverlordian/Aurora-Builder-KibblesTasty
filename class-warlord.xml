@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.4.2">
+        <update version="1.4.3">
             <file name="class-warlord.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-warlord.xml" />
         </update>
     </info>
@@ -535,11 +535,11 @@
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DESTINED_LEADER" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CALL_TO_ARMS" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRING_LEADER" />
-            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_STRIKE_THEM_DOWN" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHARISMATIC_LEADERSHIP" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DIVINE_RIGHT" />
-            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_STRIKE" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_ORDER" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRED_ZEAL" />
-            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHOSEN_COMPANIONS" />
+            <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_WORDS_OF_CONVICTION" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_UNTOUCHABLE_PRESENCE" />
             <div element="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_GRAND_DECREE" />
         </description>
@@ -550,12 +550,12 @@
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DESTINED_LEADER" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CALL_TO_ARMS" level="1" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRING_LEADER" level="1" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_STRIKE_THEM_DOWN" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHARISMATIC_LEADERSHIP" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_DIVINE_RIGHT" level="3" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_STRIKE" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_ORDER" level="7" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_INSPIRED_ZEAL" level="11" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_UNTOUCHABLE_PRESENCE" level="15" />
-            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHOSEN_COMPANIONS" level="7" />
+            <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_WORDS_OF_CONVICTION" level="7" />
             <grant type="Archetype Feature" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_GRAND_DECREE" level="18" />
         </rules>
     </element>
@@ -610,7 +610,27 @@
             <stat name="ac:misc" value="ac:divine right" equipped="![armor:heavy],[shield:none]" />
         </rules>
     </element>
-    <element name="Imperative Order" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_STRIKE">
+    <element name="Charismatic Leadership" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHARISMATIC_LEADERSHIP">
+        <description>
+            <p>Additionally at 3rd level, you can add your Charisma modifier to the damage done by Rallying Mark, the temporary hit points granted by Urgent Orders, and the attack roll of a creature that gains advantage from Helpful Word.</p>
+        </description>
+        <sheet>
+            <description>You can add {{charisma:modifier}} to the damage done by Rallying Mark, the temporary hit points granted by Urgent Orders, and the attack roll of a creature that gains advantage from Helpful Word.</description>
+        </sheet>
+    </element>
+    <element name="Words of Conviction" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_WORDS_OF_CONVICTION">
+        <description>
+            <p>Starting at 7th level, you can use Leadership Dice to cast <em>bless</em> or <em>heroism</em> without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</p>
+        </description>
+        <sheet>
+            <description usage="Leadership Dice">You can use Leadership Dice to cast <em>bless</em> or <em>heroism</em> without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BLESS" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" />
+        </rules>
+    </element>
+    <element name="Imperative Order" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_IMPERATIVE_ORDER">
         <description>
             <p>Starting at 7th level, when you spend 2 or more Leadership Dice on target with Urgent Orders, you can allow the target to make a single weapon attack with their reaction instead of moving. If you spend 3 or more Leadership Dice, they can both move and make a single weapon attack with their reaction.</p>
         </description>
@@ -627,18 +647,6 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_CRUSADERS_MANTLE" />
-        </rules>
-    </element>
-    <element name="Words of Conviction" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_CHOSEN_COMPANIONS">
-        <description>
-            <p>Starting at 7th level, you can use Leadership Dice to cast <em>bless</em> or <em>heroism</em> without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</p>
-        </description>
-        <sheet>
-            <description usage="Leadership Dice">You can use Leadership Dice to cast <em>bless</em> or <em>heroism</em> without providing material components. The level of the spell is equal to the number of Leadership Dice spent.</description>
-        </sheet>
-        <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_BLESS" />
-            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" />
         </rules>
     </element>
     <element name="Untouchable Presence" type="Archetype Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_ARCHETYPE_FEATURE_NOBLE_UNTOUCHABLE_PRESENCE">
