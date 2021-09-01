@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.5.1">
+        <update version="1.5.2">
             <file name="class-psion.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-psion.xml" />
         </update>
     </info>
@@ -642,7 +642,7 @@
             <set name="level">0</set>
             <set name="school">Psionic Power</set>
             <set name="time">1 action</set>
-            <set name="range">10 feet</set>
+            <set name="range">Self</set>
             <set name="duration">1 round</set>
             <set name="hasVerbalComponent">false</set>
             <set name="hasSomaticComponent">true</set>
@@ -943,28 +943,26 @@
                 <thead>
                     <tr><td>Point Cost</td><td>Alternate Effects</td></tr>
                 </thead>
-                <tr><td>1</td><td>detect good and evil, identify, future insight</td></tr>
-                <tr><td>2</td><td>augury, glimpse the future, locate object</td></tr>
-                <tr><td>3</td><td>fear, clairvoyance</td></tr>
-                <tr><td>4</td><td>death ward, divination</td></tr>
-                <tr><td>5</td><td>legend lore, scrying</td></tr>
+                <tr><td>1</td><td>detect good and evil, future insight</td></tr>
+                <tr><td>2</td><td>augury†, glimpse the future</td></tr>
+                <tr><td>3</td><td>clairvoyance</td></tr>
+                <tr><td>4</td><td>death ward†, divination</td></tr>
+                <tr><td>5</td><td>scrying</td></tr>
             </table>
+            <p class="indent">† augury has the same effect, but does not consult a specific entity when cast in this way.</p>
+            <p class="indent">† death ward has the same effect, but gives a forewarning to a creature allowing them to avoid death when cast in this way.</p>
         </description>
         <sheet>
             <description>You can cast additional spells using Psi Points</description>
         </sheet>
         <rules>
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
-            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_IDENTIFY" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_FUTURE_INSIGHT" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_AUGURY" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_GLIMPSE_THE_FUTURE" />
-            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_LOCATE_OBJECT" />
-            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_FEAR" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_CLAIRVOYANCE" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DEATH_WARD" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_DIVINATION" />
-            <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_LEGEND_LORE" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_SCRYING" />
         </rules>
     </element>
@@ -1123,7 +1121,7 @@
                 <tr><td>2</td><td>psychic drain</td></tr>
                 <tr><td>3</td><td>vampiric touch</td></tr>
                 <tr><td>4</td><td>blight</td></tr>
-                <tr><td>5</td><td>-</td></tr>
+                <tr><td>5</td><td>devouring darkness</td></tr>
             </table>
             <p class="indent">If a spell can be cast at a higher level, you can spend an additional psi point to cast it at that higher level.</p>
         </description>
@@ -1135,6 +1133,7 @@
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_SPELL_PSYCHIC_DRAIN" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" />
             <grant type="Spell" spellcasting="Psion_KTH" id="ID_PHB_SPELL_BLIGHT" />
+            <grant type="Spell" spellcasting="Psion_KTH" id="ID_KIBBLESTASTY_PSION_SPELL_DEVOURING_DARKNESS" />
         </rules>
     </element>
 
@@ -1397,6 +1396,45 @@
         </rules>
     </element>
 
+    <element name="Astral Swap" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_ASTRAL_SWAP">
+        <supports>Psionic Talent</supports>
+        <prerequisite>Projection Discipline</prerequisite>
+        <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION</requirements>
+        <description>
+            <p><em>Prerequisite: Projection Discipline</em></p>
+            <p>As a bonus action, you can expend 1 psi point to swap places with your astral construct.</p>
+        </description>
+        <sheet>
+            <description usage="Psi" action="Bonus Action">As a bonus action, you can expend 1 psi point to swap places with your astral construct.</description>
+        </sheet>
+    </element>
+
+    <element name="Life Link" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_LIFE_LINK">
+        <supports>Psionic Talent</supports>
+        <prerequisite>Projection Discipline</prerequisite>
+        <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_PROJECTION</requirements>
+        <description>
+            <p><em>Prerequisite: Projection Discipline</em></p>
+            <p>When a solidified construct takes damage, you can choose to take that damage yourself instead. You have resistance to the damage taken.</p>
+        </description>
+        <sheet>
+            <description>When a solidified construct takes damage, you can choose to take that damage yourself instead. You have resistance to the damage taken.</description>
+        </sheet>
+    </element>
+
+    <element name="Unlimited Imagination" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_UNLIMITED_IMAGINATION">
+        <supports>Psionic Talent</supports>
+        <requirements>ID_KIBBLESTASTY_PSION_ARCHETYPE_SHAPERS</requirements>
+        <prerequisite>Shaper's Mind Archetype</prerequisite>
+        <description>
+            <p><em>Prerequisite: Shaper's Mind Archetype</em></p>
+            <p>When you manifest a construct, you can select all two options from Boundless Imagination.</p>
+        </description>
+        <sheet>
+            <description>When you manifest a construct, you can select two options from Boundless Imagination.</description>
+        </sheet>
+    </element>
+
     <!--TELEKINESIS TALENTS-->
     
     <element name="Kinetic Slam" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_KINETIC_SLAM">
@@ -1550,6 +1588,20 @@
     </element>
 
     <!--TELEPATHY TALENTS-->
+
+    <element name="Empathy" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_EMPATHY">
+        <supports>Psionic Talent</supports>
+        <prerequisite>Telepathy Discipline</prerequisite>
+        <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY</requirements>
+        <description>
+            <p>You can psionically link yourself to other creatures. As a reaction to a creature you can see within 120 taking damage you can grant them resistance to the damage taken, but take Pyschic damage equal to the damage they take (after resistance). The damage you take cannot cannot be reduced in any way.</p>
+            <p class="indent">If the damage would inflict any further negative status effect on the target, you can choose for that effect to affect you instead.</p>
+            <p class="indent">If you have a telepathic bond with the creature taking damage, the range is unlimited and you do not need to be able to see them.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">As a reaction to a creature you can see within 120 taking damage you can grant them resistance to the damage taken, but take Pyschic damage equal to the damage they take (after resistance). The damage you take cannot cannot be reduced in any way. If the damage would inflict any further negative status effect on the target, you can choose for that effect to affect you instead. If you have a telepathic bond with the creature taking damage, the range is unlimited and you do not need to be able to see them.</description>
+        </sheet>
+    </element>
     
     <element name="Mental Image" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_MENTAL_IMAGE">
         <supports>Psionic Talent</supports>
@@ -1597,6 +1649,18 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
             <stat name="persuasion:proficiency" value="proficiency" bonus="double" />
         </rules>
+    </element>
+    
+    <element name="Reflected Agony" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_REFLECTED_AGONY">
+        <supports>Psionic Talent</supports>
+        <prerequisite>Telepathy Discipline</prerequisite>
+        <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_TELEPATHY</requirements>
+        <description>
+            <p>When a creature within 120 feet that you can see deals damage to you you can use your reaction spend 1 or more psi points (up to your psi limit) to share the pain you experienced back at them, dealing 1d10 psychic damage per point spent. The damage this deals cannot exceed the damage taken from the attack.</p>
+        </description>
+        <sheet>
+            <description usage="Psi" action="Reaction">When a creature within 120 feet that you can see deals damage to you you can use your reaction spend 1 or more psi points (up to your psi limit) to share the pain you experienced back at them, dealing 1d10 psychic damage per point spent. The damage this deals cannot exceed the damage taken from the attack.</description>
+        </sheet>
     </element>
     
     <element name="Tactical Opening" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_TACTICAL_OPENING">
@@ -1745,17 +1809,17 @@
                 <thead>
                     <tr><td>Element</td><td>Effect</td></tr>
                 </thead>
-                <tr><td>Cold</td><td>You can add 1d4 to Wisdom saving throws or ability checks.</td></tr>
-                <tr><td>Fire</td><td>You can add 1d4 to Strength or Charisma saving throws or ability checks.</td></tr>
-                <tr><td>Lightning</td><td>You can add 1d4 to Dexterity saving throws and gain 5 ft. of movement speed.</td></tr>
+                <tr><td>Cold</td><td>You can add 1d4 to Wisdom saving throws.</td></tr>
+                <tr><td>Fire</td><td>You can add 1d4 to Constitution saving throws.</td></tr>
+                <tr><td>Lightning</td><td>You can add 1d4 to Dexterity saving throws.</td></tr>
             </table>
-            <p class="indent">If you are specialized in an element, you can instead add 1d6.</p>
+            <p class="indent">If you are specialized in an element, you can instead add 1d6 to the related saving throw.</p>
         </description>
         <sheet>
             <description>When you deal elemental damage, you gain the related mental property until the start of your next turn.
-            Cold: You can add 1d4 to Wisdom saving throws or ability checks.
-            Fire: You can add 1d4 to Strength or Charisma saving throws or ability checks.
-            Lightning: You can add 1d4 to Dexterity saving throws and gain 5 ft. of movement speed.
+            Cold: You can add 1d4 to Wisdom saving throws.
+            Fire: You can add 1d4 to Constitution saving throws.
+            Lightning: You can add 1d4 to Dexterity saving throws.
             If you are specialized in an element, you can instead add 1d6.</description>
         </sheet>
     </element>
@@ -1814,13 +1878,13 @@
         <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION</requirements>
         <description>
             <p><em>Prerequisite: Precognition Discipline</em></p>
-            <p>When you use Seeing with yourself as the beneficiary, you can use it as a bonus action.</p>
+            <p>When you use Seeing with yourself as the beneficiary, you can use it as a bonus action. When you use Seeing as a bonus action in this way, it does not grant additional damage to the attack, or reduce damage taken when hit.</p>
             <div class="reference">
 				<div element="ID_KIBBLESTASTY_PSION_DISCIPLINE_PRECOGNITION_SEEING" />
 			</div>
         </description>
         <sheet>
-            <description action="Bonus Action">When you use Seeing with yourself as the beneficiary, you can use it as a bonus action.</description>
+            <description action="Bonus Action">When you use Seeing with yourself as the beneficiary, you can use it as a bonus action. When you use Seeing as a bonus action in this way, it does not grant additional damage to the attack, or reduce damage taken when hit.</description>
         </sheet>
     </element>
     
@@ -1845,7 +1909,7 @@
         <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATION,!ID_KIBBLESTASTY_PSION_TALENT_IRON_TEMPLAR2,(!ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR|ID_KIBBLESTASTY_PSION_TALENT_IRON_TEMPLAR1)</requirements>
         <description>
             <p><em>Prerequisite: Nullification Discipline</em></p>
-            <p>You gain proficiency with medium armor.</p>
+            <p>You gain proficiency with medium armor and shields. You can perform somatic components for psionic powers with a hand carrying a weapon.</p>
             <p class="indent">Additionally, when you hit a creature with an melee weapon attack or with a spell attack with the range of touch, you can use your Denial power as a bonus action targeting that creature.</p>
         </description>
         <sheet>
@@ -1853,6 +1917,7 @@
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
         </rules>
     </element>
     <element name="Iron Templar" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_IRON_TEMPLAR2">
@@ -1861,7 +1926,7 @@
         <requirements>ID_KIBBLESTASTY_PSION_DISCIPLINE_NULLIFICATION, !ID_KIBBLESTASTY_PSION_TALENT_IRON_TEMPLAR1, ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
         <description>
             <p><em>Prerequisite: Nullification Discipline</em></p>
-            <p>You gain proficiency with heavy armor.</p>
+            <p>You gain proficiency with heavy armor and shields. You can perform somatic components for psionic powers with a hand carrying a weapon.</p>
             <p class="indent">Additionally, when you hit a creature with an melee weapon attack or with a spell attack with the range of touch, you can use your Denial power as a bonus action targeting that creature.</p>
         </description>
         <sheet>
@@ -1869,6 +1934,7 @@
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
         </rules>
     </element>
     
@@ -2078,21 +2144,12 @@
         <requirements>ID_KIBBLESTASTY_PSION_ARCHETYPE_ELEMENTAL</requirements>
         <description>
             <p><em>Prerequisite: Elemental Mind Subclass</em></p>
-            <p>When you use a psionic power that deals elemental damage, you can expend 1 psi point to make the power ignore resistance to that elemental damage damage type. You can spend psi points granted by Psionic Mastery on this ability. If you have a specialization of Psychokinentics, if the target has immunity to the damage type chosen, this instead turns immunity into resistance for that power.</p>
+            <p>When you use a psionic power or spell that deals elemental damage, you can expend 1 psi point to make the power ignore resistance to that elemental damage damage type.</p>
+            <p class="indent">If you have a specialization of Psychokinentics, if the target has immunity to the damage type chosen, this instead turns immunity into resistance for that power.</p>
+            <p class="indent">You can spend psi points granted by Psionic Mastery on this ability.</p>
         </description>
         <sheet>
-            <description usage="Psi">When you use a psionic power that deals elemental damage, you can expend 1 psi point to make the power ignore resistance to that elemental damage damage type. You can spend psi points granted by Psionic Mastery on this ability. If you have a specialization of Psychokinentics, if the target has immunity to the damage type chosen, this instead turns immunity into resistance for that power.</description>
-        </sheet>
-    </element>
-
-    <element name="Empathy" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_EMPATHY">
-        <supports>Psionic Talent</supports>
-        <description>
-            <p>You can psionically link yourself to other creatures. As a reaction to a creature taking psychic, necrotic, or radiant damage you can grant them resistance to the damage taken, but take damage equal to the damage they take (after resistance).</p>
-            <p class="indent">If the damage would inflict any further negative status effect on the target, you can choose for that effect to affect you instead.</p>
-        </description>
-        <sheet>
-            <description action="Reaction">As a reaction to a creature taking psychic, necrotic, or radiant damage you can grant them resistance to the damage taken, but take damage equal to the damage they take (after resistance). If the damage would inflict any further negative status effect on the target, you can choose for that effect to affect you instead.</description>
+            <description usage="Psi">When you use a psionic power or spell that deals elemental damage, you can expend 1 psi point to make the power ignore resistance to that elemental damage damage type. If you have a specialization of Psychokinentics, if the target has immunity to the damage type chosen, this instead turns immunity into resistance for that power. You can spend psi points granted by Psionic Mastery on this ability.</description>
         </sheet>
     </element>
 
@@ -2266,19 +2323,6 @@
             <description action="Bonus Action" usage="Psi" level="17">You can expend up to 4 psi points to imbue a weapon you are holding with psionic energy. For 1 minute, once per turn when you deal damage with that weapon, you can deal an additional 1d6 psychic damage per psi point spent.</description>
         </sheet>
     </element>
-    
-    <element name="Reflected Suffering" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_REFLECTED_SUFFERING">
-        <supports>Psionic Talent</supports>
-        <prerequisite>Empathy Talent</prerequisite>
-        <requirements>ID_KIBBLESTASTY_PSION_TALENT_EMPATHY</requirements>
-        <description>
-            <p><em>Prerequisite: Empathy Talent</em></p>
-            <p>When a creature deals damage to you, you can spend expend 1 or more psi points (up to your psi limit) to share the pain you experienced back at them, dealing 1d10 psychic damage per point spent. The damage this deals cannot exceed the damage taken from the attack.</p>
-        </description>
-        <sheet>ID_KIBBLESTASTY_PSION_TALENT_EMPATHY
-            <description usage="Psi" action="Reaction">When a creature deals damage to you, you can spend expend 1 or more psi points (up to your psi limit) to deal 1d10 psychic damage per point spent, up to the damage taken from the attack.</description>
-        </sheet>
-    </element>
 
     <element name="Schism" type="Class Feature" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_TALENT_SCHISM">
         <supports>Psionic Talent</supports>
@@ -2409,6 +2453,28 @@
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent" />
             <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+
+    <element name="Devouring Darkness" type="Spell" source="KibblesTasty Psion" id="ID_KIBBLESTASTY_PSION_SPELL_DEVOURING_DARKNESS">
+        <supports>Occultist, Warlock, Wizard</supports>
+        <description>
+            <p>Dark tendrils burst out from you in all directions. Creatures of your choice within must make a Constitution saving throw. On failure, they take 6d8 necrotic damage, and you can move them in a straight line to within 5 feet of you if there is an empty space they can be pulled to. On success, they take half as much damage and are not moved. You regain hit points equal to one quarter (rounded down) of the necrotic damage taken by all targets effected by the spell.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (20-foot radius)</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent" />
+            <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
