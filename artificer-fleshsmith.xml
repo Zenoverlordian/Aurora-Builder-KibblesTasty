@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.0">
+        <update version="2.2.1">
             <file name="artificer-fleshsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-fleshsmith.xml" />
         </update>
     </info>
@@ -58,8 +58,8 @@
         <description>
             <p>At first level, you select an approach to your work, a specialization to your art form. Select on the following options:</p>
             <h5>Perfection of Form</h5>
-            <p>Nature had its chance to make your form, now it's your turn to improve it. When you take this path, you gain the <strong>Fleshcrafted Mutation</strong> upgrade, and it does not count against your upgrade total.</p>
-            <p class="indent">When you take the attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Inventor level. You regain all uses at the end of a long rest.</p>
+            <p>Nature had its chance to make your form, now it’s your turn to improve it. When you take this path, you gain the Fleshcrafted Mutation upgrade, and it does not count against your upgrade total. Additionally, when an upgrade calls to use your spell save DC, you can instead use 8 + your Constitution modifier + your proficiency bonus.</p>
+            <p class="indent">When you take the Attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Inventor level. You regain all uses at the end of a long rest.</p>
             <h5>Perfection of Mind</h5>
             <p>You know that perfection is an aspect of knowledge, a perfect understanding of the mechanics of the Body, inside and out. But particularly inside. You gain the <strong>Dissection</strong> upgrade, and it does not count against your upgrade total.</p>
             <p class="indent">You have a pool of d8s equal to your Inventor level. When you restore hit points to a creature or use an Intelligence (Medicine) check to deal damage to a creature, you can expend these d8s to restore additional health or deal additional damage. You can spend a number equal to Proficiency modifier at a time. You regain this pool of d8s at the end of a long rest.</p>
@@ -72,13 +72,17 @@
     <element name="Perfection of Form" type="Archetype Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_ARCHETYPE_FEATURE_FLESHSMITH_THESIS_OF_FLESH_FORM">
         <supports>Thesis of Flesh</supports>
         <description>
-            <p>Nature had its chance to make your form, now it's your turn to improve it. When you take this path, you gain the <strong>Fleshcrafted Mutation</strong> upgrade, and it does not count against your upgrade total.</p>
-            <p class="indent">When you take the attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Inventor level. You regain all uses at the end of a long rest.</p>
+            <p>Nature had its chance to make your form, now it’s your turn to improve it. When you take this path, you gain the Fleshcrafted Mutation upgrade, and it does not count against your upgrade total. Additionally, when an upgrade calls to use your spell save DC, you can instead use 8 + your Constitution modifier + your proficiency bonus.</p>
+            <p class="indent">When you take the Attack action, you can use your bonus action to make a single additional attack with this upgrade. You can make this additional attack a number of times equal to your Inventor level. You regain all uses at the end of a long rest.</p>
         </description>
         <sheet>
-            <description usage="{{level:inventor}}/Long rest" action="Bonus Action">When you take the attack action, you can use your bonus action to make a single additional attack with Fleshcrafted Mutation.</description>
+            <description usage="{{level:inventor}}/Long rest" action="Bonus Action">Your spell save DC for purposes of upgrades is {{perfection form:dc}}. When you take the Attack action, you can use your bonus action to make a single additional attack with this upgrade.</description>
         </sheet>
         <rules>
+            <stat name="perfection form:dc" value="8" />
+            <stat name="perfection form:dc" value="proficiency" />
+            <stat name="perfection form:dc" value="intelligence:modifier" bonus="perfection form dc" />
+            <stat name="perfection form:dc" value="constitution:modifier" bonus="perfection form dc" />
             <grant type="Class Feature" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_FLESHCRAFTED_MUTATION" />
         </rules>
     </element>
@@ -240,6 +244,24 @@
         </sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        </rules>
+    </element>
+
+    <element name="Brimstone Bladder" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_FLESHSMITH_BRIMSTONE_BLADDER">
+        <supports>Specialization Upgrade, Fleshsmith, Unrestricted</supports>
+        <description>
+            <p>Why should dragons have all the fun? You can now exhale fire. As an action, or as an attack as part of the Attack action, you can exhale a gout of flames in a 30 foot line or 15 foot cone. Creatures in the area must make a Dexterity saving throw against your spell save DC, or take 3d6 fire damage. You can expend a spell slot to empower this fire breath, dealing a number of additional d6 equal to the level of the spell slot spent.</p>
+            <p class="indent">Once you use the option, you cannot use it again until you complete a short or long rest. The damage increases by 1d6 at 5th level (4d6) and again at 11th level (5d6), and 17th level (6d6).</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest" action="Action" level="1">As an action, or as an attack as part of the Attack action, you can exhale a gout of flames in a 30 foot line or 15 foot cone. Creatures in the area must make a Dexterity saving throw against your spell save DC, or take 3d6 fire damage. You can expend a spell slot to empower this fire breath, dealing a number of additional d6 equal to the level of the spell slot spent. </description>
+            <description usage="1/Short Rest" action="Action" level="5">As an action, or as an attack as part of the Attack action, you can exhale a gout of flames in a 30 foot line or 15 foot cone. Creatures in the area must make a Dexterity saving throw against your spell save DC, or take 4d6 fire damage. You can expend a spell slot to empower this fire breath, dealing a number of additional d6 equal to the level of the spell slot spent. </description>
+            <description usage="1/Short Rest" action="Action" level="11">As an action, or as an attack as part of the Attack action, you can exhale a gout of flames in a 30 foot line or 15 foot cone. Creatures in the area must make a Dexterity saving throw against your spell save DC, or take 5d6 fire damage. You can expend a spell slot to empower this fire breath, dealing a number of additional d6 equal to the level of the spell slot spent. </description>
+            <description usage="1/Short Rest" action="Action" level="17">As an action, or as an attack as part of the Attack action, you can exhale a gout of flames in a 30 foot line or 15 foot cone. Creatures in the area must make a Dexterity saving throw against your spell save DC, or take 6d6 fire damage. You can expend a spell slot to empower this fire breath, dealing a number of additional d6 equal to the level of the spell slot spent. </description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <stat name="mutation:upgrade" value="1" />
         </rules>
     </element>
 
