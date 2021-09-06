@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="kibblestasty.index" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/kibblestasty.index" />
 		</update>
 	</info>
 	<files>
+    <file name="artificer-cursesmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-cursesmith.xml" />
     <file name="artificer-expandedoptions.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-expandedoptions.xml" />
     <file name="artificer-fleshsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-fleshsmith.xml" />
     <file name="artificer-infusionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-infusionsmith.xml" />
     <file name="artificer-potionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-potionsmith.xml" />
+    <file name="artificer-relicsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-relicsmith.xml" />
+    <file name="artificer-runesmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-runesmith.xml" />
     <file name="artificer-thundersmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-thundersmith.xml" />
     <file name="artificer-warsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-warsmith.xml" />
     <file name="barbarian-bladestorm.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/barbarian-bladestorm.xml" />
