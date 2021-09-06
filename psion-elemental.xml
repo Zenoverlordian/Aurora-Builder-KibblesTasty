@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.5.1">
+        <update version="1.5.2">
             <file name="psion-elemental.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-elemental.xml" />
         </update>
     </info>
@@ -105,7 +105,7 @@
             </div>
         </description>
         <sheet>
-            <description usage="Psi" usage="1/Short Rest">You can expend 5 psi points to cast shapechange to assume elemental forms. When you cast shapechange in this way it has nor verbal or material components, but you can only assume the form of a Water Elemental, Fire Elemental, or Air Elemental. If you are specialized in an element, the cost is reduced to 3 psi points, but you can only assume the form associated with your specialization (Water Elemental for cold, Fire Elemental for fire, or Air Elemental for lightning). A Water Elemental assumed with this form does not have the Freeze property.</description>
+            <description usage="1/Short Rest">You can expend 5 psi points to cast shapechange to assume elemental forms. When you cast shapechange in this way it has nor verbal or material components, but you can only assume the form of a Water Elemental, Fire Elemental, or Air Elemental. If you are specialized in an element, the cost is reduced to 3 psi points, but you can only assume the form associated with your specialization (Water Elemental for cold, Fire Elemental for fire, or Air Elemental for lightning). A Water Elemental assumed with this form does not have the Freeze property.</description>
         </sheet>
         
     </element>
