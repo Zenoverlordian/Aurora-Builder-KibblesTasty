@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.1.0">
+        <update version="1.1.1">
             <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-witch.xml" />
         </update>
     </info>
@@ -354,6 +354,22 @@
         <sheet>
             <description>As a ritual that takes 1 hour, you can form a coven bond with one willing creature that has spell slots. While both of your are conscious and within 120 feet of each other, you gain the ability to share spell slots up to a spell slot level of your Witch level divided by four (rounded down), minimum of 1st level slots. While this bond is active, you can use your Spellcasting feature to cast using their spell slots (consuming them as normal), and they can use their Spellcasting feature (if they have one) to cast using your qualifying spell slots (consuming them as normal).
             Additionally, you know their location at all times while they are part of your coven and within 120 feet of you. You can only be bonded to one creature with this bond at a time. You can end this coven at any time.</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Presence" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DIVINE_PRESENCE">
+        <supports>Occult Rite</supports>
+        <prerequisite>White Coven</prerequisite>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH,ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_COVEN_WHITE</requirements>
+        <description>
+            <p><em>Prerequisite: White Coven</em></p>
+            <p>Your familiar is always under the effect of <em>Sanctuary</em>. If it deals damage (such as channeling one of your spells), the effect is suppressed until the start of its next turn.</p>
+            <div class="reference">
+                <div element="ID_PHB_SPELL_SANCTUARY" />
+            </div>
+        </description>
+        <sheet>
+            <description>Your familiar is always under the effect of <em>Sanctuary</em>. If it deals damage (such as channeling one of your spells), the effect is suppressed until the start of its next turn.</description>
         </sheet>
     </element>
 
