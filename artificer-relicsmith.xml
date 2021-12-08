@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.1">
+        <update version="2.2.2">
             <file name="artificer-relicsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-relicsmith.xml" />
         </update>
     </info>
@@ -533,6 +533,19 @@
         </sheet>
     </element>
 
+    <element name="Reflected Radiance" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_RELICSMITH_REFLECTED_RADIANCE">
+        <supports>Specialization Upgrade, Relicsmith</supports>
+        <prerequisite>5th Level, Relic Lantern</prerequisite>
+        <requirements>[level:5],ID_KIBBLESTASTY_INVENTOR_ARCHETYPE_FEATURE_RELICSMITH_INGENIOUS_RELIQUARY_LANTERN</requirements>
+        <description>
+            <p><em>Prerequisite: 5th Level, Relic Lantern</em></p>
+            <p>While a creature has temporary hit points gained from your Relic Lantern, whenever they are hit by a melee attack, the attacking creature takes radiant damage equal to your Intelligence modifier.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Constitution saving throws to maintain concentration on spells granted by your Ordained Path.</description>
+        </sheet>
+    </element>
+
     <element name="Silver Bullet" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_RELICSMITH_SILVER_BULLET">
         <supports>Specialization Upgrade, Relicsmith</supports>
         <prerequisite>5th Level</prerequisite>
@@ -622,6 +635,20 @@
         </description>
         <sheet>
             <description usage="{{intelligence:modifier}}/Long Rest">You can make a number of pieces of ammunition imbued with special divine power. On hit, these rounds do deal an additional 1d6 radiant damage. If the creature is undead or a fiend and the damage from this round reduces its hit points to less than {{level:Inventor}}, it has to make a Charisma saving throw. On failure, it dies and explodes to ash.</description>
+        </sheet>
+    </element>
+
+    <element name="Quench the Light" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_RELICSMITH_QUENCH_THE_LIGHT">
+        <supports>Specialization Upgrade, Relicsmith</supports>
+        <prerequisite>9th Level, Relic Lantern</prerequisite>
+        <requirements>[level:9],ID_KIBBLESTASTY_INVENTOR_ARCHETYPE_FEATURE_RELICSMITH_INGENIOUS_RELIQUARY_LANTERN</requirements>
+        <description>
+            <p><em>Prerequisite: 9th Level, Relic Lantern</em></p>
+            <p>You snuff the light of your lantern, plunging the area around you into darkness. Creatures of your choice within the area that was illuminated by your lanter must make a Wisdom saving throw. On failure, they take 8d6 necrotic damage, or half as much on a success. If extinguishing your lantern would leave the creature blinded by darkness, they make the saving throw with disadvantage. Your lantern does not emit light until the start of your next turn.</p>
+            <p class="indent">Once you use this feature, you cannot do so again until you complete a long rest. </p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You snuff the light of your lantern, plunging the area around you into darkness. Creatures of your choice within the area that was illuminated by your lanter must make a Wisdom saving throw. On failure, they take 8d6 necrotic damage, or half as much on a success. If extinguishing your lantern would leave the creature blinded by darkness, they make the saving throw with disadvantage. Your lantern does not emit light until the start of your next turn.</description>
         </sheet>
     </element>
 
@@ -762,6 +789,32 @@
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_BLESS" />
         </rules>
+    </element>
+
+    <element name="Burning Brand" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_RELICSMITH_BURNING_BRAND">
+        <supports>Specialization Upgrade, Relicsmith</supports>
+        <prerequisite>15th Level, Relic Melee Weapon</prerequisite>
+        <requirements>[level:15],ID_KIBBLESTASTY_INVENTOR_ARCHETYPE_FEATURE_RELICSMITH_INGENIOUS_RELIQUARY_MELEE</requirements>
+        <description>
+            <p><em>Prerequisite: 15th Level, Relic Melee Weapon</em></p>
+            <p>When you hit a creature with your ignited relic melee weapon, it lights the creature on fire. At the start of each of its turns, it takes 1d6 fire damage, until someone takes an action to douse the fire.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with your ignited relic melee weapon, it lights the creature on fire. At the start of each of its turns, it takes 1d6 fire damage, until someone takes an action to douse the fire.</description>
+        </sheet>
+    </element>
+
+    <element name="Divine Illumination" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_RELICSMITH_DIVINE_ILLUMINATION">
+        <supports>Specialization Upgrade, Relicsmith</supports>
+        <prerequisite>15th Level, Relic Range Weapon</prerequisite>
+        <requirements>[level:15],ID_KIBBLESTASTY_INVENTOR_ARCHETYPE_FEATURE_RELICSMITH_INGENIOUS_RELIQUARY_RANGED</requirements>
+        <description>
+            <p><em>Prerequisite: 15th Level, Relic Range Weapon</em></p>
+            <p>Once per turn on your turn, when you hit a creature with your relic ranged weapon, you can cause the next attack against the creature to have advantage.</p>
+        </description>
+        <sheet>
+            <description>Once per turn on your turn, when you hit a creature with your relic ranged weapon, you can cause the next attack against the creature to have advantage.</description>
+        </sheet>
     </element>
 
     <element name="Favored Relic" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_RELICSMITH_FAVORED_RELIC">

@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.1">
+        <update version="2.2.2">
             <file name="artificer-runesmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-runesmith.xml" />
         </update>
     </info>
@@ -599,7 +599,7 @@
         </sheet>
     </element>
 
-    <element name="Perfected Form" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_RUNESMITH_PERFECTED_FORM">
+    <element name="Efficient Language" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_RUNESMITH_EFFICIENT_LANGUAGE">
         <supports>Specialization Upgrade, Runesmith</supports>
         <prerequisite>9th level</prerequisite>
         <requirements>[level:9]</requirements>
@@ -684,7 +684,7 @@
         </rules>
     </element>
 
-    <element name="Efficient Language" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_RUNESMITH_EFFICIENT_LANGUAGE">
+    <element name="Perfected Form" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_RUNESMITH_PERFECTED_FORM">
         <supports>Specialization Upgrade, Runesmith</supports>
         <prerequisite>11th level</prerequisite>
         <requirements>[level:11]</requirements>
@@ -707,6 +707,19 @@
         </description>
         <sheet>
             <description>The size damage dice of runes that deal Lightning, Cold, or Fire damage increases by one step (for example from a d4 to a d6). This applies to both their passive and flared effect.</description>
+        </sheet>
+    </element>
+
+    <element name="Runic Formation" type="Class Feature" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_UPGRADE_RUNESMITH_RUNIC_FORMATION">
+        <supports>Specialization Upgrade, Runesmith</supports>
+        <prerequisite>11th level</prerequisite>
+        <requirements>[level:11]</requirements>
+        <description>
+            <p><em>Prerequisite: 11th level</em></p>
+            <p>As a reaction to a creature within 120 feet of you that is marked by one of your runes taking damage, you can expend a 2nd level or higher spell slot to transfer that damage to another willing creature marked by your one of your runes within 120 feet.</p>
+        </description>
+        <sheet>
+            <description action="Reaction">As a reaction to a creature within 120 feet of you that is marked by one of your runes taking damage, you can expend a 2nd level or higher spell slot to transfer that damage to another willing creature marked by your one of your runes within 120 feet.</description>
         </sheet>
     </element>
 

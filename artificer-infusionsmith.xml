@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.0">
+        <update version="2.2.2">
             <file name="artificer-infusionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-infusionsmith.xml" />
         </update>
     </info>
@@ -812,6 +812,46 @@
         </description>
         <sheet>
             <description>If you have two animated weapons, you can animate a third weapon with your Animate Weapon feature. When you take the attack action with your other two animated weapons, you can make a single spell attack with your third animated weapon as part of the same action.</description>
+        </sheet>
+    </element>
+
+    <element name="Seeking Shots" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_INFUSIONSMITH_SEEKING_SHOTS">
+        <supports>Specialization Upgrade, Infusionsmith</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>When you infuse a ranged weapon with your Infused Weapon feature, the potent magic infuses the ammunition used. The first attack you make with that weapon on your turn gains advantage.</p>
+        </description>
+        <sheet>
+            <description>When you infuse a ranged weapon with your Infused Weapon feature, the potent magic infuses the ammunition used. The first attack you make with that weapon on your turn gains advantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Transcendent Infusion" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_INFUSIONSMITH_TRANSCENDENT_INFUSION">
+        <supports>Specialization Upgrade, Infusionsmith</supports>
+        <prerequisite>15th level</prerequisite>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>When you infuse a melee weapon, you can cause the weapon to radiate pure arcane energy. The weapon shines bright light in a 10-foot radius, and an additional 10 feet of dim light. </p>
+            <p class="indent">If the weapon is a melee weapon, when you swing the weapon, pure arcane energy extends the weapon, increasing its reach by 5 feet. Additionally, the weapon swipes through its target with ease. Once per turn, when you hit a creature, you can make an additional attack against another within the reach of the weapon.</p>
+        </description>
+        <sheet>
+            <description>When you infuse a melee weapon, you can cause the weapon to radiate pure arcane energy. The weapon shines bright light in a 10-foot radius, and an additional 10 feet of dim light. If the weapon is a melee weapon, when you swing the weapon, pure arcane energy extends the weapon, increasing its reach by 5 feet. Additionally, the weapon swipes through its target with ease. Once per turn, when you hit a creature, you can make an additional attack against another within the reach of the weapon.</description>
+        </sheet>
+    </element>
+
+    <element name="Perfected Technique" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_INFUSIONSMITH_PERFECTED_TECHNIQUE">
+        <supports>Specialization Upgrade, Infusionsmith</supports>
+        <prerequisite>15th level, Mixed Technique</prerequisite>
+        <requirements>[level:15],ID_KIBBLESTASTY_INVENTOR_UPGRADE_INFUSIONSMITH_MIXED_TECHNIQUE</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level, Mixed Technique</em></p>
+            <p>When you use your action to cast a spell, using a Magical Wand, Rod, or your Blasting Rod, you can make one weapon attack with an Animated or Infused Weapon as a bonus action. </p>
+        </description>
+        <sheet>
+            <description>When you use your action to cast a spell, using a Magical Wand, Rod, or your Blasting Rod, you can make one weapon attack with an Animated or Infused Weapon as a bonus action. </description>
         </sheet>
     </element>
 

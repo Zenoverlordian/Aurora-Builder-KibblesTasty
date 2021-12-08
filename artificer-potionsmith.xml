@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.0">
+        <update version="2.2.2">
             <file name="artificer-potionsmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-potionsmith.xml" />
         </update>
     </info>
@@ -614,6 +614,19 @@
             <description>You create a Philosopher's Stone allowing you to recreate wonders of alchemy. So long as you have a supply of non-gold metal, you can create up to one pound of gold a day (50 gold pieces worth). Additionally, the Philosopher's Stone can be used in place of a diamond costing 500gp or less as spell's Material Component, and is not consumed when used in such a way, but loses its powers for 24 hours.
             You can brew a special potion using your Philosopher stone called an Elixir of Life. Brewing this potion takes 8 hours and requires crushing a diamond worth at least 2,000 gold pieces. An Elixir of Life causes a creature that drinks it ceases to age for 4d4 years. A creature drinks this Elixir gains a death ward effect that lasts until triggered.
             A more potent elixir can be created, adding an additional 1d4 years for regained for each diamond spent.</description>
+        </sheet>
+    </element>
+
+    <element name="Volatile Reactions" type="Class Feature" source="KibblesTasty Inventor" id="ID_KIBBLESTASTY_INVENTOR_UPGRADE_POTIONSMITH_VOLATILE_REACTIONS">
+        <prerequisite>15th level</prerequisite>
+        <supports>Specialization Upgrade, Potionsmith</supports>
+        <requirements>[level:15]</requirements>
+        <description>
+            <p><em>Prerequisite: 15th level</em></p>
+            <p>When you throw an instant reaction that affects a radius, you can opt to throw an extra volatile formulation. The radius of the effect is expanded by 5 feet</p>
+        </description>
+        <sheet>
+            <description>When you throw an instant reaction that affects a radius, you can opt to throw an extra volatile formulation. The radius of the effect is expanded by 5 feet</description>
         </sheet>
     </element>
 
