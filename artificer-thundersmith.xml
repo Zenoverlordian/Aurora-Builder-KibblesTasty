@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="2.2.0">
+        <update version="2.2.1">
             <file name="artificer-thundersmith.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/artificer-thundersmith.xml" />
         </update>
     </info>
@@ -505,7 +505,7 @@
     <!--STORMFORGED WEAPONS-->
 
     <element name="Thunder Cannon" type="Weapon" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_THUNDER_CANNON">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, ID_KTH_INVENTOR_WEAPON_PROPERTY_STORMCHARGED, Ranged</supports>
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, ID_KTH_INVENTOR_WEAPON_PROPERTY_STORMCHARGED, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
 		<description>
 			<p>You use the power of Thunder to launch a projectile with terrible power, if limited accuracy, over long distances. Ringing out with a booming crash, it brings fear to the battlefield.</p>
 		</description>
@@ -523,7 +523,7 @@
     <element name="Weapon Proficiency (Thunder Cannon)" type="Proficiency" source="KibblesTasty Inventor" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_KTH_THUNDER_CANNON">
     </element>
     <element name="Hand Cannon" type="Weapon" source="KibblesTasty Inventor" id="ID_KTH_INVENTOR_WEAPON_HAND_CANNON">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, ID_KTH_INVENTOR_WEAPON_PROPERTY_STORMCHARGED, Ranged</supports>
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_KTH_INVENTOR_WEAPON_PROPERTY_LOUD, ID_KTH_INVENTOR_WEAPON_PROPERTY_STORMCHARGED, Ranged, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED</supports>
 		<description>
 			<p>Forgoing the guiding barrel, this pack uses the thundering power to launch a projectile with all the force of a Cannon, though its effective range is far more limited.</p>
 		</description>
