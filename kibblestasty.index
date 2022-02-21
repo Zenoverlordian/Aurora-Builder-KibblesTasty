@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="kibblestasty.index" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/kibblestasty.index" />
 		</update>
 	</info>
@@ -30,6 +30,7 @@
     <file name="monk-soulknife.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/monk-soulknife.xml" />
     <file name="occultist-shaman.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-shaman.xml" />
     <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-witch.xml" />
+    <file name="occultist-hedge-mage.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-hedge-mage.xml" />
     <file name="paladin-sanity.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/paladin-sanity.xml" />
     <file name="psion-consuming.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-consuming.xml" />
     <file name="psion-elemental.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/psion-elemental.xml" />
