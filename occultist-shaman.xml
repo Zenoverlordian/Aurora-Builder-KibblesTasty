@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.1.0">
+        <update version="1.2.0">
             <file name="occultist-shaman.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-shaman.xml" />
         </update>
     </info>
@@ -29,6 +29,13 @@
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EMPOWERED_SPIRITS" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EXTRA_ATTACK" level="6" />
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_SPIRITUAL_EMPOWERMENT" level="14" />
+            <select type="Class Feature" name="Occult Rites (2)" supports="Occult Rite,(Shaman||Occultist)" level="2" number="2" />
+            <select type="Class Feature" name="Occult Rites (5)" supports="Occult Rite,(Shaman||Occultist)" level="5" />
+            <select type="Class Feature" name="Occult Rites (7)" supports="Occult Rite,(Shaman||Occultist)" level="7" />
+            <select type="Class Feature" name="Occult Rites (9)" supports="Occult Rite,(Shaman||Occultist)" level="9" />
+            <select type="Class Feature" name="Occult Rites (12)" supports="Occult Rite,(Shaman||Occultist)" level="12" />
+            <select type="Class Feature" name="Occult Rites (15)" supports="Occult Rite,(Shaman||Occultist)" level="15" />
+            <select type="Class Feature" name="Occult Rites (18)" supports="Occult Rite,(Shaman||Occultist)" level="18" />
         </rules>
     </element>
     <element name="Spiritual Warrior" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_SPIRITUAL_WARRIOR">
@@ -97,9 +104,9 @@
     <!--SHAMAN RITES-->
 
     <element name="Avatar of the Elements" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_AVATAR_OF_THE_ELEMENTS">
-        <supports>Occult Rite</supports>
+        <supports>Occult Rite, Shaman</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:11]</requirements>
+        <requirements>[level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>You learn the investiture of flame, investiture of ice, and investiture of stone spells. These are Occultist spells for you. When you cast one of these spells, you can choose to shorten the duration of the spell to to 1 minute. When you do so, these spells do not require concentration.</p>
@@ -124,9 +131,9 @@
     </element>
 
     <element name="Dance of the Spirits" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DANCE_OF_THE_SPIRITS">
-        <supports>Occult Rite</supports>
+        <supports>Occult Rite, Shaman</supports>
         <prerequisite>5th level</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:5], (ID_PHB_SPELL_SPIRIT_GUARDIANS|ID_XGTE_SPELL_HEALING_SPIRIT)</requirements>
+        <requirements>[level:5], (ID_PHB_SPELL_SPIRIT_GUARDIANS|ID_XGTE_SPELL_HEALING_SPIRIT)</requirements>
         <description>
             <p><em>Prerequisite: 5th level</em></p>
             <p>When you cast spirit guardians, you can choose what damage type it does from any of Fire, Cold, Lightning, Radiant or Necrotic, regardless of your alignment.</p>
@@ -137,10 +144,21 @@
         </sheet>
     </element>
 
+    <element name="Detonate Spirit" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DETONANTE_SPIRIT">
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
+        <description>
+            <p>As an action you can detonate manifested spirit, causing it to erupt in flare of power. All creatures within 10 feet of it must make a Dexterity saving throw. A target takes damage equal to twice the manifested damage of spirit on a failed save. If the spirit was empowered with a spell slot, a target takes half as much damage on a successful one. The spirit is immediately released and disappears.</p>
+        </description>
+        <sheet>
+            <description action="Action">As an action you can detonate manifested spirit, causing it to erupt in flare of power. All creatures within 10 feet of it must make a Dexterity saving throw. A target takes damage equal to twice the manifested damage of spirit on a failed save. If the spirit was empowered with a spell slot, a target takes half as much damage on a successful one. The spirit is immediately released and disappears.</description>
+        </sheet>
+    </element>
+
     <element name="Elemental Weapons" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ELEMENTAL_WEAPONS">
-        <supports>Occult Rite</supports>
+        <supports>Occult Rite, Shaman</supports>
         <prerequisite>fists of fire or ice weapon cantrip</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, (ID_KTH_OCCULTIST_SPELL_FISTS_OF_FIRE|ID_KTH_OCCULTIST_SPELL_ICE_WEAPON)</requirements>
+        <requirements>(ID_KTH_OCCULTIST_SPELL_FISTS_OF_FIRE|ID_KTH_OCCULTIST_SPELL_ICE_WEAPON)</requirements>
         <description>
             <p><em>Prerequisite: fists of fire or ice weapon cantrip</em></p>
             <p>When you create a weapon with fists of fire or ice weapon the damage die of the weapon is increased by one size (for example, from a d6 to a d8).</p>
@@ -151,8 +169,8 @@
     </element>
 
     <element name="Energized Weapon" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ENERGIZED_WEAPON">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>You gain the ability to infuse your weapon with the power granted to you by the spirits. While you have an empowered spirit bonded, you can pour all of it's energy into your weapon (recalling it if it is manifested). The next attack with that weapon adds twice the additional damage from the spirit, but the bond immediately expires.</p>
         </description>
@@ -162,8 +180,8 @@
     </element>
 
     <element name="Guidance of the Spirits" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_GUIDANCE_OF_THE_SPIRITS">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>When you expend a spell slot to empower a spirit with your Call Spirit feature, you can select a number of skills equal to the spell slot expended that the spirit is proficient in. While it is not manifested, you gain proficiency with these skills. If you expend a spell slot of 5th level or higher, you can exchange three of the skills the spirit gaining expertise in one skill.</p>
         </description>
@@ -173,8 +191,8 @@
     </element>
 
     <element name="Mistwalker" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MISTWALKER">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>You can see through heavy obscurement when the obscurement is caused by fog, mist, or smoke, natural or otherwise. While you are shrouded by fog, mist, or smoke, you have half cover.</p>
         </description>
@@ -184,8 +202,8 @@
     </element>
 
     <element name="Enhanced Bond" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ENHANCED_BOND">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:occultist:7]</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements>[level:occultist:7]</requirements>
         <prerequisite>7th level</prerequisite>
         <description>
             <p><em>Prerequisite: 7th level</em></p>
@@ -197,8 +215,8 @@
     </element>
 
     <element name="Primal Earth" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRIMAL_EARTH">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>You harness the primal elemental powers of the earth and stone to your call, you learn the following spells at the following list, but they do not count against your spells known. These are Occultist spells for you.</p>
             <table>
@@ -240,8 +258,8 @@
     </element>
 
     <element name="Primal Ice" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRIMAL_ICE">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>You harness the primal elemental powers of ice to your call, you learn the following spells at the following list, but they do not count against your spells known. These are Occultist spells for you.</p>
             <table>
@@ -283,8 +301,8 @@
     </element>
 
     <element name="Primal Fire" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRIMAL_FIRE">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>You harness the primal elemental powers of fire to your call, you learn the following spells at the following list, but they do not count against your spells known. These are Occultist spells for you.</p>
             <table>
@@ -326,8 +344,8 @@
     </element>
 
     <element name="Primal Storms" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRIMAL_STORMS">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>You harness the primal elemental powers of storms and lightning to your call, you learn the following spells at the following list. This are Occultist spells for you.</p>
             <table>
@@ -369,9 +387,9 @@
     </element>
 
     <element name="Radiate Power" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_RADIATE_POWER">
-        <supports>Occult Rite</supports>
+        <supports>Occult Rite, Shaman</supports>
         <prerequisite>15th level</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:15]</requirements>
+        <requirements>[level:15]</requirements>
         <description>
             <p><em>Prerequisite: 15th level</em></p>
             <p>While you have a spirit bonded to you, as a bonus action you can cause it to emanate power, causing all creatures within 5 feet of you (or it if it is manifested at another location) to make a Wisdom saving throw against your spell save DC, or take damage equal to its manifested damage.</p>
@@ -382,8 +400,8 @@
     </element>
 
     <element name="Rite of Prowess" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_RITE_OF_PROWESS">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>You can select one fighting style from Dueling, Two-Weaponing Fighting, or Great Weapon Fighting.</p>
         </description>
@@ -396,21 +414,21 @@
     </element>
 
     <element name="Shaman's Touch" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SHAMANS_TOUCH">
-        <supports>Occult Rite</supports>
+        <supports>Occult Rite, Shaman</supports>
         <prerequisite>7th level</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN, [level:7]</requirements>
+        <requirements>[level:7]</requirements>
         <description>
             <p><em>Prerequisite: 7th level</em></p>
-            <p>When you take the attack action, you can replace one attack with a cantrip with a range of touch.</p>
+            <p>When you use your action to cast a cantrip with range of touch, you can make one weapon attack as a bonus action.</p>
         </description>
         <sheet>
-            <description>When you take the attack action, you can replace one attack with a cantrip with a range of touch.</description>
+            <description action="Bonus Action">When you use your action to cast a cantrip with range of touch, you can make one weapon attack as a bonus action.</description>
         </sheet>
     </element>
 
     <element name="Warding Power" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_WARDING_POWER">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_SHAMAN</requirements>
+        <supports>Occult Rite, Shaman</supports>
+        <requirements></requirements>
         <description>
             <p>You learn the spell shield, and it becomes an Occultist spell for you.</p>
             <div class="reference">

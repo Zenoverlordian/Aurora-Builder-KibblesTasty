@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name></name>
+        <update version="1.2.0">
+            <file name="occultist-hedge-mage.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-hedge-mage.xml" />
+        </update>
+    </info>
+    
+    <!--VERSION 1.2-->
+
+    <element name="Hedge Mage" type="Archetype" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_HEDGE_MAGE">
+        <supports>Occult Tradition</supports>
+        <description>
+            <p>This tradition is a loose collection of magic users that benefit from a wide array of traditions and practical knowledge to build up a collection of eccentric magical knowledge. Their methods are often frowned upon by those of more studied routes, but their practical skills cannot be denied, and their unique understanding of magic that they have developed with their own hands and minds should not be underestimated.</p>
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PRACTICAL_SKILLS" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CASTING_STYLE" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PERSONALIZED_PATH" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_IMPROVISED_RITUAL" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_STOLEN_TECHNIQUES" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EMPOWERED_CANTRIPS" />
+            <div element="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CANTRIP_MASTERY" />
+        </description>
+        <sheet display="false">
+            <description>A loose collection of magic users that benefit from a wide array of traditions and practical knowledge to build up a collection of eccentric magical knowledge.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PRACTICAL_SKILLS" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CASTING_STYLE" level="1" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PERSONALIZED_PATH" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_IMPROVISED_RITUAL" level="3" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_STOLEN_TECHNIQUES" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EMPOWERED_CANTRIPS" level="6" />
+            <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CANTRIP_MASTERY" level="14" />
+            <select type="Class Feature" name="Occult Rites (2)" supports="Occult Rite,(Hedge||Occultist)" level="2" number="2" />
+            <select type="Class Feature" name="Occult Rites (5)" supports="Occult Rite,(Hedge||Occultist)" level="5" />
+            <select type="Class Feature" name="Occult Rites (7)" supports="Occult Rite,(Hedge||Occultist)" level="7" />
+            <select type="Class Feature" name="Occult Rites (9)" supports="Occult Rite,(Hedge||Occultist)" level="9" />
+            <select type="Class Feature" name="Occult Rites (12)" supports="Occult Rite,(Hedge||Occultist)" level="12" />
+            <select type="Class Feature" name="Occult Rites (15)" supports="Occult Rite,(Hedge||Occultist)" level="15" />
+            <select type="Class Feature" name="Occult Rites (18)" supports="Occult Rite,(Hedge||Occultist)" level="18" />
+        </rules>
+    </element>
+    <element name="Practical Skills" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PRACTICAL_SKILLS">
+        <description>
+            <p>You gain proficiency in your choice of one of the following skills: Arcana, Animal Handling, Medicine, Nature, or Survival. Additionally you can select 1 additional cantrips of your choice from the occultist list, or from the following expanded cantrip spell list: blade ward, firebolt, mage hand, prestidigitation, friends, ray of frost, shillelagh, spare the dying, thaumaturgy, true strike. When you learn a new cantrip, you can select from the above expanded list in addition to the Occultst list.</p>
+            <p class="indent">You learn your magic through self-discovery, often encompassing trial and error. Not knowing what is supposed to be impossible or impractical, your magic develops unique aspects. You can modify spells you learn with the following feature.</p>
+            <h5>The Way I Learned It</h5>
+            <p>When you learn a new spell, you can modify some its properties representing your unique way of casting that spell. These changes permanently effect the spell for you, but when you swap out a spell when gaining a level in the class, you can instead modify these properties from a spell you know. You can learn the same spell multiple times with different selections (i.e. "ranged cure wounds")</p>
+            <ul>
+                <li><strong>Damage Type.</strong> You can change any of the following damage types into another the damage types. Acid, Cold, Fire, Lightning, Poison.</li>
+                <li><strong>Range.</strong> You can make a spell with a range of 10 feet or more have a range of Touch, or give a spell with a range of Touch a range of up 10 feet (if it was a melee spell attack and it becomes a ranged spell attack if the range is greater than Touch).</li>
+                <li><strong>Components.</strong> You can exchange a verbal, somatic, or material component of a spell for another type of component the spell does not normally have. Material components with a cost cannot be replaced, but can be exchanged for a different material component of equal cost.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you learn a new spell, you can modify some its properties representing your unique way of casting that spell. These changes permanently effect the spell for you, but when you swap out a spell when gaining a level in the class, you can instead modify these properties from a spell you know. You can learn the same spell multiple times with different selections (i.e. "ranged cure wounds"):
+            You can change any of the following damage types into another the damage types. Acid, Cold, Fire, Lightning, Poison.
+            You can make a spell with a range of 10 feet or more have a range of Touch, or give a spell with a range of Touch a range of up 10 feet (if it was a melee spell attack and it becomes a ranged spell attack if the range is greater than Touch).
+            You can exchange a verbal, somatic, or material component of a spell for another type of component the spell does not normally have. Material components with a cost cannot be replaced, but can be exchanged for a different material component of equal cost.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency, Practical Skills" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" level="1" />
+            <select type="Spell" name="Spell, Practical Skills" supports="0,Occultist" number="1" level="1" prepared="true" spellcasting="Occultist" />
+        </rules>
+		<spellcasting name="Occultist" extend="true">
+			<extend>ID_PHB_SPELL_BLADE_WARD</extend>
+			<extend>ID_PHB_SPELL_FIRE_BOLT</extend>
+			<extend>ID_PHB_SPELL_MAGE_HAND</extend>
+			<extend>ID_PHB_SPELL_PRESTIDIGITATION</extend>
+			<extend>ID_PHB_SPELL_FRIENDS</extend>
+			<extend>ID_PHB_SPELL_RAY_OF_FROST</extend>
+			<extend>ID_PHB_SPELL_SHILLELAGH</extend>
+			<extend>ID_PHB_SPELL_SPARE_THE_DYING</extend>
+			<extend>ID_PHB_SPELL_THAUMATURGY</extend>
+			<extend>ID_PHB_SPELL_TRUE_STRIKE</extend>
+		</spellcasting>
+    </element>
+    <element name="Casting Style" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CASTING_STYLE">
+        <description>
+            <p>Additionally, your self-taught casting style has resulted in some practical advantages. Select one of the following casting styles:</p>
+            <p class="indent"><strong><em>Reliable Casting.</em></strong> When you roll a 1 or 2 on a damage die for an Occultist cantrip, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</p>
+            <p class="indent"><strong><em>Habitual Casting.</em></strong> When you cast an Occultist cantrip that requires concentration, you can instead cause the effect to persist without concentration a number of rounds equal to your Occultist level (for example, as 1st level Occultist, it would end at the start of your next turn). You can end a spell persisting in this way early as an action.</p>
+            <p class="indent"><strong><em>Tactical Casting.</em></strong> When you take the Ready action with an Occultist cantrip, it does not require concentration to keep the spell readied.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Archetype Feature" name="Casting Style" supports="Hedge Casting Style" number="1" />
+        </rules>
+    </element>
+    <element name="Reliable Casting" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CASTING_STYLE_RELIABLE">
+        <supports>Hedge Casting Style</supports>
+        <description>
+            <p class="indent"><strong><em>Reliable Casting.</em></strong> When you roll a 1 or 2 on a damage die for an Occultist cantrip, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</p>
+        </description>
+        <sheet>
+            <description>When you roll a 1 or 2 on a damage die for an Occultist cantrip, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</description>
+        </sheet>
+    </element>
+    <element name="Habitual Casting" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CASTING_STYLE_HABITUAL">
+        <supports>Hedge Casting Style</supports>
+        <description>
+            <p class="indent"><strong><em>Habitual Casting.</em></strong> When you cast an Occultist cantrip that requires concentration, you can instead cause the effect to persist without concentration a number of rounds equal to your Occultist level (for example, as 1st level Occultist, it would end at the start of your next turn). You can end a spell persisting in this way early as an action.</p>
+        </description>
+        <sheet>
+            <description>When you cast an Occultist cantrip that requires concentration, you can instead cause the effect to persist without concentration for {{level:occultist}} rounds (for example, as 1st level Occultist, it would end at the start of your next turn). You can end a spell persisting in this way early as an action.</description>
+        </sheet>
+    </element>
+    <element name="Tactical Casting" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CASTING_STYLE_TACTICAL">
+        <supports>Hedge Casting Style</supports>
+        <description>
+            <p class="indent"><strong><em>Tactical Casting.</em></strong> When you take the Ready action with an Occultist cantrip, it does not require concentration to keep the spell readied.</p>
+        </description>
+        <sheet>
+            <description>When you take the Ready action with an Occultist cantrip, it does not require concentration to keep the spell readied.</description>
+        </sheet>
+    </element>
+
+    <element name="Personalized Path" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_PERSONALIZED_PATH">
+        <description>
+            <p>At 3rd level, you gain one additional Occult Rite. This can come from the Hedge Mage Rites or from the general Occultist Rites.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Occult Rites, Personalized Path" supports="Occult Rite,(Hedge||Occultist)" level="3" />
+        </rules>
+    </element>
+    <element name="Improvised Ritual" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_IMPROVISED_RITUAL">
+        <description>
+            <p>Starting at 3rd level, you can cast a spell with the ritual tag without knowing that spell. When you do so, it takes the additional time as if casting it as a ritual, but still consumes a spell slot. You can improvise spells of a level equal to one-third of your Occultist level (for example, a 3rd level Occultist can improvise 1st level rituals).</p>
+            <p class="indent">Spells improvised this way can be from any spell list, but if it is not on the Occultist list, you must have the spell in a written form (such as a wizard's spellbook or a scroll).</p>
+        </description>
+        <sheet>
+            <description>You can cast a spell with the ritual tag without knowing that spell. When you do so, it takes the additional time as if casting it as a ritual, but still consumes a spell slot. You can improvise spells of a level equal to one-third of your Occultist level. Spells improvised this way can be from any spell list, but if it is not on the Occultist list, you must have the spell in a written form (such as a wizard's spellbook or a scroll).</description>
+        </sheet>
+    </element>
+    <element name="Stolen Techniques" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_STOLEN_TECHNIQUES">
+        <description>
+            <p>At 6th level, you can learn one new 1st or 2nd level spell from the Cleric, Bard, Druid, or Wizard spell list. The spell becomes an Occultist spell for you, but does not count against your spells known.</p>
+            <p class="indent">Additionally, you can delve the rites of another tradition. You learn one additional Occult Rite that does not count against your rites known. This rite can be selected from any occultist subclass or from the general Occultist Rites, but cannot be a rite with a prerequisite.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Stolen Techniques" supports="(Cleric||Bard||Druid||Wizard),(1||2)" prepared="true" level="6" spellcasting="Occultist" />
+            <select type="Class Feature" name="Occult Rites, Stolen Techniques" supports="Occult Rite" level="6" />
+        </rules>
+    </element>
+    <element name="Empowered Cantrips" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_EMPOWERED_CANTRIPS">
+        <description>
+            <p>Starting, at 6th level, once per turn when you roll damage for an Occultist cantrip, you can add your Wisdom modifier to the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>Once per turn when you roll damage for an Occultist cantrip, you can add {{wisdom:modifier}} to the damage dealt.</description>
+        </sheet>
+    </element>
+    <element name="Cantrip Mastery" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_CANTRIP_MASTERY">
+        <description>
+            <p>Starting at 14th level, you can cast an Occultist cantrip with a casting time of one action as a bonus action. When you cast a cantrip in this way, it is cast as if you are a 1st level caster.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">You can cast an Occultist cantrip with a casting time of one action as a bonus action. When you cast a cantrip in this way, it is cast as if you are a 1st level caster.</description>
+        </sheet>
+    </element>
+    
+    <!--HEDGE RITES-->
+
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_1">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_2">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_1</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_3">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_2</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_10">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_9</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_4">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_3</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_5">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_4</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_6">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_5</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_7">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_6</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_8">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_7</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+    <element name="Hedge Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_9">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>ID_KTH_OCCULTIST_RITE_HEDGE_MAGIC_8</prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You learn an additional cantrip from the Occultist list or from the expanded list provided by the Practical Skills feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell, Hedge Magic" supports="0,Occultist" />
+        </rules>
+    </element>
+
+    <element name="I Know that One!" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_I_KNOW_THAT_ONE">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>When you make a saving throw against a spell you know, or make a spellcasting ability check to use counterspell or dispel magic against a spell you know, you have advantage on the saving throw or spellcasting ability check.</p>
+        </description>
+        <sheet>
+            <description>When you make a saving throw against a spell you know, or make a spellcasting ability check to use counterspell or dispel magic against a spell you know, you have advantage on the saving throw or spellcasting ability check.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Manipulate Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MANIPULATE_MAGIC">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>5th level Hedge Mage</prerequisite>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+        <p>You learn one metamagic option from a Sorcerer. You can use this metamagic option once, regaining the ability to use it again after completing a long rest. You can use it again by expending a spell slot of a level equal to the number of Sorcery Points the metamagic costs.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">You learn one metamagic option from a Sorcerer. You can use this metamagic option once, regaining the ability to use it again after completing a long rest. You can use it again by expending a spell slot of a level equal to the number of Sorcery Points the metamagic costs.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Metamagic, Manipulate Magic" supports="Metamagic" level="5"/>
+        </rules>
+    </element>
+
+    <element name="Mass Cantrip" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MASS_CANTRIP">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>When you cast an Occultist cantrip that targets one or more creatures, you can make the cantrip target a number additional creatures with in range equal to your proficiency bonus with the spell. Once you do so, you cannot do so again until you complete a long rest. You can expend a spell slot to gain a similar effect, causing the cantrip to target a number of additional creatures equal to the level of spell slot spent.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">When you cast an Occultist cantrip that targets one or more creatures, you can make the cantrip target {{proficiency}} additional creatures within range. Once you do so, you cannot do so again until you complete a long rest. You can expend a spell slot to gain a similar effect, causing the cantrip to target a number of additional creatures equal to the level of spell slot spent.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Mastered Basics" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_MASTERED_BASICS">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>15th level Hedge Mage</prerequisite>
+        <requirements>[level:occultist:15]</requirements>
+        <description>
+        <p>When you cast a 1st level Occultist spell you know, it is cast as if you spend a 2nd level spell slot on it.</p>
+        </description>
+        <sheet>
+            <description>When you cast a 1st level Occultist spell you know, it is cast as if you spend a 2nd level spell slot on it.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Practice Makes Perfect" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRACTICE_MAKES_PERFECT">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>You've cast a spell so many times it has become second nature. Select a 1st level Occulist spell you know. You can cast this spell without expending a spell slot a number of times equal to your half your proficiency modifier (rounded up), regaining all uses when you complete a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="{{proficiency:half}}/Long Rest">Select a 1st level Occulist spell you know. You can cast this spell without expending a spell slot {{proficiency:half}} times (rounded up), regaining all uses when you complete a long rest.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Practiced Reach" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_PRACTICED_REACH">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>When you use the Way I Learned It feature to add range, you can make the range of the spell up to 30 feet.</p>
+        </description>
+        <sheet>
+            <description>When you use the Way I Learned It feature to add range, you can make the range of the spell up to 30 feet.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Potent Cantrip" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_POTENT_CANTRIP">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>7th level Hedge Mage</prerequisite>
+        <requirements>[level:occultist:7]</requirements>
+        <description>
+        <p>Your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip.</p>
+        </description>
+        <sheet>
+            <description>When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Savant Focus" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SAVANT_FOCUS">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>7th level Hedge Mage</prerequisite>
+        <requirements>[level:occultist:7]</requirements>
+        <description>
+        <p>You can focus all of your experience into using your most magic potently. As a bonus action you can enter a state of focused concentration, as if concentrating on a spell. When you so, you gain advantage on attack rolls made for cantrips for 1 minute, or until you end your concentration on this state of focus.</p>
+        </description>
+        <sheet>
+            <description action="Bonus Action">As a bonus action you can enter a state of focused concentration, as if concentrating on a spell. When you so, you gain advantage on attack rolls made for cantrips for 1 minute, or until you end your concentration on this state of focus.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Simple Magic" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SIMPLE_MAGIC">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>5th level Hedge Mage</prerequisite>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+        <p>Even as you gain power, you are adept with using it small bursts for simple magic. You can sacrifice a spell slot of 3rd level or higher to gain two 1st level spell slots. If the spell slot is 5th level or higher, you can gain 2nd level spell slots. You cannot store more than twice your usual maximum number of any spell slot level this way.</p>
+        </description>
+        <sheet>
+            <description>You can sacrifice a spell slot of 3rd level or higher to gain two 1st level spell slots. If the spell slot is 5th level or higher, you can gain 2nd level spell slots. You cannot store more than twice your usual maximum number of any spell slot level this way.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE1">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements></requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE2">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE1</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE3">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE2</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE4">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE3</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE5">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE4</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE6">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE5</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE7">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE6</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE8">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE7</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE9">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE8</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+    <element name="Studious Mage" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE10">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite></prerequisite>
+        <requirements>ID_KTH_OCCULTIST_RITE_STUDIOUS_MAGE9</requirements>
+        <description>
+        <p>Your spells known increases by one.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Spell" name="Spell (Occultist), Studious Mage" supports="$(spellcasting:list),$(spellcasting:slots)" spellcasting="Occultist"/>
+        </rules>
+    </element>
+
+    <element name="Utility Master" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_UTILITY_MASTER">
+        <supports>Occult Rite, Hedge</supports>
+        <prerequisite>5th level Hedge Mage</prerequisite>
+        <requirements>[level:occultist:5]</requirements>
+        <description>
+        <p>When you cast utility cantrips that can lift weight, effect areas of elements, target area on the ground, or cause minor instantaneous effects, you life twice as much, target twice as much area, or maintain an additional instantaneous effects.</p>
+        </description>
+        <sheet>
+            <description>When you cast utility cantrips that can lift weight, effect areas of elements, target area on the ground, or cause minor instantaneous effects, you life twice as much, target twice as much area, or maintain an additional instantaneous effects.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+
+    <p class="indent"></p>
+
+</elements>

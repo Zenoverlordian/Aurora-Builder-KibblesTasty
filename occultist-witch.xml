@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.1.1">
+        <update version="1.2.0">
             <file name="occultist-witch.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/occultist-witch.xml" />
         </update>
     </info>
@@ -29,6 +29,13 @@
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_FAMILIAR_BOND" level="3" />
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_WITCHS_TOUCH" level="6" />
             <grant type="Archetype Feature" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MASTER_OF_CURSES" level="14" />
+            <select type="Class Feature" name="Occult Rites (2)" supports="Occult Rite,(Witch||Occultist)" level="2" number="2" />
+            <select type="Class Feature" name="Occult Rites (5)" supports="Occult Rite,(Witch||Occultist)" level="5" />
+            <select type="Class Feature" name="Occult Rites (7)" supports="Occult Rite,(Witch||Occultist)" level="7" />
+            <select type="Class Feature" name="Occult Rites (9)" supports="Occult Rite,(Witch||Occultist)" level="9" />
+            <select type="Class Feature" name="Occult Rites (12)" supports="Occult Rite,(Witch||Occultist)" level="12" />
+            <select type="Class Feature" name="Occult Rites (15)" supports="Occult Rite,(Witch||Occultist)" level="15" />
+            <select type="Class Feature" name="Occult Rites (18)" supports="Occult Rite,(Witch||Occultist)" level="18" />
         </rules>
     </element>
     <element name="Witch's Magic" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_WITCHS_MAGIC">
@@ -284,20 +291,20 @@
     </element>
     <element name="Witch's Touch" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_WITCHS_TOUCH">
         <description>
-            <p>Starting at 6th level, whenever you cast a spell of 1st level or higher with a range of touch (including through your familiar), you can add one of the following modifiers to the spell:</p>
+            <p>Starting at 6th level, whenever you cast a spell with a range of touch (including through your familiar), you can add one of the following modifiers to the spell:</p>
             <ul>
                 <li>It grants one affected target temporary hit points equal to your Wisdom modifier. Only one creature can have these temporary hit points at a time.</li>
                 <li>It deals additional damage equal to your Wisdom modifier to one affected creature.</li>
                 <li>It adds or subtracts 1d4 from the target's next attack roll or saving throw before the start of your next turn.</li>
             </ul>
-            <p class="indent">You can also confer these effects to another spell with a range longer than touch by making its range touch, or confer these effects as an action without casting a spell by touching a target (making a melee spell attack to do if the target is an unwilling creature).</p>
+            <p class="indent">You can also confer these effects to another spell with a range longer than touch by making its range touch, or confer these effects as an action without casting a spell by touching a target (making a melee spell attack to do if the target is an unwilling creature). If you make the range of a curse spell touch, you no longer need the material component for the spell.</p>
         </description>
         <sheet>
             <description>Whenever you cast a spell of 1st level or higher with a range of touch (including through your familiar), you can add one of the following modifiers to the spell:
             It grants one affected target {{wisdom:modifier}} temporary hit points. Only one creature can have these temporary hit points at a time.
             It deals an additional {{wisdom:modifier}} damage to one affected creature.
             It adds or subtracts 1d4 from the target's next attack roll or saving throw before the start of your next turn.
-            You can also confer these effects to another spell with a range longer than touch by making its range touch, or confer these effects as an action without casting a spell by touching a target (making a melee spell attack to do if the target is an unwilling creature).</description>
+            You can also confer these effects to another spell with a range longer than touch by making its range touch, or confer these effects as an action without casting a spell by touching a target (making a melee spell attack to do if the target is an unwilling creature). If you make the range of a curse spell touch, you no longer need the material component for the spell.</description>
         </sheet>
     </element>
     <element name="Master of Curses" type="Archetype Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_MASTER_OF_CURSES">
@@ -313,9 +320,9 @@
     <!--WITCH RITES-->
 
     <element name="Animate Broom" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ANIMATE_BROOM">
-        <supports>Occult Rite</supports>
+        <supports>Occult Rite, Witch</supports>
         <prerequisite>11th level</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH, [level:11]</requirements>
+        <requirements> [level:11]</requirements>
         <description>
             <p><em>Prerequisite: 11th level</em></p>
             <p>You infuse an object - traditionally a broom, but can be any vaguely broom-shaped object (like a spear, staff, or similar) - with flying magic, turning it into a Broom of Flying (basic rules, pg. 156). If your broom is lost or destroyed, you can create a new one during 8 hours of work. If a previous broom still exists when you make a new one, it loses its magic upon the completion of the new one.</p>
@@ -326,8 +333,8 @@
     </element>
 
     <element name="Animate Hair" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_ANIMATE_HAIR">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>As a bonus action, you can expend a 1st level spell slot to cause your hair to lengthen, strengthen, and spring to life for 1 minute. While it is animated, you can use your action to make a melee spell attack with a range of 5 feet with it, dealing 1d8 bludgeoning damage on hit. This increases by 1d8 when you reach 5th Level (2d8), 11th level (3d8), and 17th level (4d8). If you hit a Large or smaller creature with this attack, as a bonus action you can attempt to grapple the creature with your hair using your Wisdom modifier in palce of your Strength modifier to initiate and maintain grapple.</p>
             <p class="indent">A grappled creature can contest the grapple as normal, or deal 5 slashing, fire, or acid damage to the hair to free themselves. The hair has an AC of 12, and you take no damage when it is attacked.</p>
@@ -345,8 +352,8 @@
     </element>
 
     <element name="Companion Coven" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_COMPANION_COVEN">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>As a ritual that takes 1 hour, you can form a coven bond with one willing creature that has spell slots. While both of your are conscious and within 120 feet of each other, you gain the ability to share spell slots up to a spell slot level of your Witch level divided by four (rounded down), minimum of 1st level slots. While this bond is active, you can use your Spellcasting feature to cast using their spell slots (consuming them as normal), and they can use their Spellcasting feature (if they have one) to cast using your qualifying spell slots (consuming them as normal).</p>
             <p class="indent">Additionally, you know their location at all times while they are part of your coven and within 120 feet of you. You can only be bonded to one creature with this bond at a time. You can end this coven at any time.</p>
@@ -358,9 +365,9 @@
     </element>
 
     <element name="Divine Presence" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_DIVINE_PRESENCE">
-        <supports>Occult Rite</supports>
+        <supports>Occult Rite, Witch</supports>
         <prerequisite>White Coven</prerequisite>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH,ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_COVEN_WHITE</requirements>
+        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_FEATURE_COVEN_WHITE</requirements>
         <description>
             <p><em>Prerequisite: White Coven</em></p>
             <p>Your familiar is always under the effect of <em>Sanctuary</em>. If it deals damage (such as channeling one of your spells), the effect is suppressed until the start of its next turn.</p>
@@ -374,8 +381,8 @@
     </element>
 
     <element name="Evil Eye" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_EVIL_EYE">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>You gain the ability to lay the most unsettling of gaze upon a creature. As a reaction to a creature hitting you with a melee attack, you can unleash a terrifying glare at them. The target creature must make a Wisdom saving throw or become frightened of you until the end of your next turn. Once a creature has passed a save against this ability, they are immune to it for 24 hours.</p>
             <p class="indent">Additionally, you gain proficiency in the Intimidation skill.</p>
@@ -389,8 +396,8 @@
     </element>
 
     <element name="Familiar Swap" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_FAMILIAR_SWAP">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>If your familiar is within 60 feet of you, as an action, you can swap places with your familiar. If you cannot fit into the space where your familiar is, the ability fails and you take 1d6 force damage. Once you do this, you cannot do so again until you complete a short or long rest.</p>
         </description>
@@ -400,8 +407,8 @@
     </element>
 
     <element name="Form of the Familiar" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_FORM_OF_THE_FAMILIAR">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>You learn the <em>form of familiar</em> spell, and gain the ability to cast it once without expending a spell slot as an action. You regain the ability to cast it in this way again after completing a short or long rest.</p>
             <div class="reference">
@@ -417,8 +424,8 @@
     </element>
 
     <element name="Rites of the Moon" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_RITES_OF_THE_MOON">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>You learn the ancient rites of the moon and the powers that holds, opening new pathways of magic to you. You learn the following spells at the following levels. This are Occultist spells for you.</p>
             <table>
@@ -460,8 +467,8 @@
     </element>
 
     <element name="Riding Familiar" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_RIDING_FAMILIAR">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>If you have a familiar without a flying speed, as an action you can make them become a creature one size larger than you (up to Large sized) for 8 hours. As an action, you can revert your familiar to it's normal size. At 12th level, you can use this ability on familiar with flying speed. Once you do this, you cannot do so again until you complete a short or long rest.</p>
         </description>
@@ -472,8 +479,8 @@
     </element>
 
     <element name="Skulking Familiar" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_SKULKING_FAMILIAR">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>Any familiar summoned by you gains proficiency in the Stealth skill, and its movement doesn't provoke opportunity attacks.</p>
         </description>
@@ -483,8 +490,8 @@
     </element>
 
     <element name="Witch's Brew" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_WITCHS_BREW">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>You have found a way to skip most of the brewing process for alchemically creating potent magically effects by directly infusing the potion with your own magic. When you finish a short or long rest and have an empty vial on your person, you may choose one of the spells you know and use a spell slot to cast it.</p>
             <p class="indent">When you cast spells in this way, the spell does not take effect immediately, but is infused into the potion.</p>
@@ -503,8 +510,8 @@
     </element>
 
     <element name="Witch's Claws" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_WITCHS_CLAWS">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>You learn the cantrip <em>primal savagery</em>. When you deal damage to a creature with primal savagery, you can add your Wisdom modifier to the damage dealt. At 6th level, when you hit with primal savagery you can apply the effects of Witch's Touch as a bonus action.</p>
             <div class="reference">
@@ -521,8 +528,8 @@
     </element>
 
     <element name="Witch's Hat" type="Class Feature" source="KibblesTasty Occultist" id="ID_KTH_OCCULTIST_RITE_WITCHS_HAT">
-        <supports>Occult Rite</supports>
-        <requirements>ID_KTH_OCCULTIST_ARCHETYPE_WITCH</requirements>
+        <supports>Occult Rite, Witch</supports>
+        <requirements></requirements>
         <description>
             <p>You invest some of your magic, turning a hat (traditionally a floppy wide brimmed black witch's hat) into a hat of disguise. If your hat is lost or destroyed, you can create a new one with 2 hours of work. If a previous hat still exists when you make a new one, it loses its magic upon the completion of the new one.</p>
         </description>
