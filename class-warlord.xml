@@ -2,12 +2,12 @@
 <elements>
     <info>
         <name></name>
-        <update version="1.4.3">
+        <update version="1.4.3.1">
             <file name="class-warlord.xml" url="https://raw.githubusercontent.com/Zenoverlordian/Aurora-Builder-KibblesTasty/main/class-warlord.xml" />
         </update>
     </info>
 
-    <!--VERSION 1.4.1-->
+    <!--VERSION 1.4.2-->
     <element name="Warlord" type="Class" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_WARLORD">
         <description>
     <p>Two vast armies stand across the field of death, fear gripping the heart of every soldier. From their ranks, the banner is carried forth - a shining beacon without fear. Before they even know it, their feet pound across the ground, their fear left behind as they follow their symbol of hope to victory.</p>
@@ -170,7 +170,7 @@
         </sheet>
         <rules>
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_RALLY" />
-            <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_OVERWHELM" />
+            <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_URGENT" />
             <grant type="Class Feature" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_HELPFUL" />
             <stat name="leadership:num" value="level:warlord" />
             <stat name="leadership:size" value="6" level="2" />
@@ -187,13 +187,13 @@
             <description action="Bonus Action" usage="Leadership Dice">You can expend a number of Leadership Dice (up to your per turn limit) rally your allies to attack a hostile creature within 60 feet of you. The next time damage is rolled against that target by an allied creature before the start of your next turn, they can add the Leadership Dice to the damage roll, and the attacking creature regains hit points equal to amount rolled on the Leadership Dice.</description>
         </sheet>
     </element>
-    <element name="Urgent Orders" type="Class Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_OVERWHELM">
+    <element name="Urgent Orders" type="Class Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_URGENT">
         <description>
             <p>As a bonus action, you can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action.</p>
-            <p class="indent">Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to 30 feet without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</p>
+            <p class="indent">Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to its movement speed (up to a maximum of 30 feet) without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</p>
         </description>
         <sheet>
-            <description action="Bonus Action" usage="Leadership Dice">You can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action. Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to 30 feet without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</description>
+            <description action="Bonus Action" usage="Leadership Dice">You can expend a number of Leadership Dice (up to your per turn limit) to guide your allies in expeditious action. Target an allied creature within 60 feet of you that can see or hear you, that creature can immediately use its reaction to move up to its movement speed (up to a maximum of 30 feet) without provoking opportunity attacks. Roll the leadership dice expended, the target gains temporary hit points equal to the value rolled.</description>
         </sheet>
     </element>
     <element name="Helpful Word" type="Class Feature" source="KibblesTasty's Warlord" id="ID_KTH_WARLORD_CLASS_FEATURE_LEADERSHIP_DICE_HELPFUL">
